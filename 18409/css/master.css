@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+.top{height:40px;width:1200px;margin:15px auto;}
+.logo{width:200px;height:40px;float:left;}
+.button_go{width:98px;height:38px;line-height:38px;background:#fff;float:right;border:1px solid #e1e1e1;font-size:14px;color:#666;text-align:center;margin-left:15px;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.button_go:hover{background:#ea4848;color:#fff;border:1px solid #ea4848;}
+.search{width:450px;height:40px;float:right;}
+.search_text{width:384px;height:34px;border:3px solid #ea4848;background:#fff;color:#999;padding:0 10px;float:left;outline:none;line-height:38px;}
+.search_submit{width:40px;height:40px;background:url(../images/search_ipunt.jpg) -4px -2px;float:left;outline:none;cursor:pointer;}
+
+.nav{width:1200px;height:50px;margin:0 auto;background:#ea4848;overflow:hidden;}
+.nav a{width:100px;height:50px;line-height:50px;font-size:14px;color:#fff;float:left;text-align:center;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.nav a:hover{background:#d23;color:#fff!important;}
+.nav_in{background:#d23;color:#fff!important;}
+
+.login_top{width:100%;height:80px;position:relative;}
+.login_top img{width:200px;height:40px;position:absolute;left:50%;top:20px;margin-left:-490px;}
+.login_box{width:982px;height:372px;margin:0 auto;background:url(../images/login/box_bg.png);position:relative;}
+.login_boxs{width:970px;height:360px;margin:5px;border:1px solid #ccc;float:left;background:#fff;position:relative;}
+.login_left{width:530px;height:440px;position:absolute;top:0;left:0;margin:-40px 0 -40px -40px;}
+.login_right{width:480px;height:360px;float:right;}
+.login_txt{width:360px;height:50px;border:1px solid #e1e1e1;margin:0 59px;float:left;position:relative;}
+.login_txt img{width:20px;height:20px;margin:15px;float:left;}
+.login_yan{width:100px!important;height:50px!important;border-left:1px solid #ccc;position:absolute;right:0;top:0;margin:0!important;}
+.login_duan{width:140px!important;height:50px!important;position:absolute;right:0;top:0;margin:0!important;background:#09f!important;color:#fff!important;}
+.login_txt input{width:260px;height:30px;margin:10px;float:left;outline:none;color:#666;line-height:30px;}
+.login_jz{width:360px;height:20px;float:left;margin:23px 60px;position:relative;}
+.login_jz span{width:auto;height:20px;float:left;padding-left:25px;line-height:20px;cursor:pointer;}
+.login_jz input{position:absolute;left:0;top:2px;width:16px;height:16px;background:#fff;cursor:pointer;}
+.login_jz a{float:right;line-height:20px;}
+.login_jz em{margin-left:10px;font-style:normal;float:left;line-height:20px;color:#ea4848;display:none;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.login_button{width:360px;height:50px;background:#ea4848;color:#fff;margin:0 59px;float:left;font-size:16px;border-radius:4px;outline:none;cursor:pointer;border:1px solid #ea4848;}
+.go_login{position:absolute;lin-height:30px;color:#fff;background:#ea4848;right:0px;top:-35px;font-size:14px;height:30px;padding:7px 12px;border-radius:2px;border:6px solid #ddd;}
+.go_login:hover{color:#fff;}
+
+.bottom{background:#313131 url(../images/bottom.png);height:220px;width:100%;border-top:2px solid #585858;position:relative;border-bottom:#292929 solid 1px;margin-top:100px;}
+.bottom_left{width:160px;height:250px;position:absolute;top:-80px;left:50%;margin-left:-600px;background:#292929 url(../images/bottom_left.png);}
+.bottom_logo{width:160px;height:100px;float:left;}
+.bottom_city{width:700px;height:80px;position:absolute;top:-80px;right:50%;margin-right:-600px;background:url(../images/city.png);}
+.bottom_center{width:1200px;margin:0 auto;height:220px;}
+.bottom_tab{height: 220px;float: left;margin-left:320px;width:880px;}
+.bottom_tab dl{float:left;width:170px;height:220px;overflow:hidden;margin-left:50px;}
+.bottom_tab dd{height:40px;width:100%;margin:10px 0 5px 0;float:right;font-size:20px;line-height:40px;color:#CCC;}
+.bottom_tab dt{float:left;height:24px;width:100%;overflow:hidden;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;float:left;height:24px;line-height:24px;font-size:12px;}
+.bottom_tab dt a{padding-left:0px;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;color:#FFF;}
+.bottom_tab dt a:hover{padding-left:10px;color:#ea4848;}

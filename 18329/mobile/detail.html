@@ -1,0 +1,139 @@
+<!DOCTYPE html >
+<head>
+<title>省心购幼教品</title>
+<meta name="keywords" content="省心购幼教品"/>
+<meta name="description" content="省心购幼教品"/>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/share.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<style>
+   .swiper-container{ padding:1.8em 0 3em 0;}
+   .swiper-container .pagination{ bottom:0.8em;}
+   .crumbs{height: 3em;line-height: 3em;width: 100%;padding-left: 1em;font-family: microsoft yahei;font-size: 1.5em;color: #696666;}
+	.crumbs a{color:#65BAF1;} 
+</style>
+</head>
+
+<body>
+<div id="wrap" class="clearfix overflow mg-auto">
+<!--------------------顶部---------------------->
+   <div class="apply-nav overflow mg-auto area">
+      <div class="overflow clearfix apply-top border-bom">
+        <a href="index.html" class="apply-return">返回</a>
+        <h2>产品详情</h2>
+        <a href="#" class="apply-sou" id="apply-sou">搜索</a>
+      </div>    
+   </div>
+
+   <div class="crumbs">
+   	<a href="index.html">首页</a> > <a href="#">夏装</a> > 丘比熊
+   </div>
+
+<!--------------------图片切换---------------------->
+<div class="roll-slide clearfix overflow border">
+  <div class="swiper-container swiper-free-mode" id="roll-wrap">
+        <div class="swiper-wrapper" id="roll-img">
+            <div class="swiper-slide"><img src="images/pro.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/pro.jpg" alt=""></div>
+        </div>
+		<div class="pagination"></div>
+        
+      <script type="text/javascript">  		   
+		 var newSlideSize = function slideSize(){
+			var w = Math.ceil($(".swiper-container").width());
+			$(".swiper-container,.swiper-slide").height('15em');								
+		 };
+		 newSlideSize();
+		 $(window).resize(function(){
+		   newSlideSize();
+		 });
+	  </script>
+ 
+  </div>
+</div>
+
+<div class="hot-detail clearfix overflow">
+  <h2>产品介绍:</h2>
+  <div class="clearfix hot-detail-wrap" id="hot-detail">
+  	 <p>丘比熊</p>
+      <b class='detail-more'>查看更多</b>
+   </div>
+</div>
+<script type="text/javascript">
+window.onload = function(){   
+  var mySwiper = new Swiper('.swiper-container',{
+		pagination: '.pagination',
+		paginationClickable: true,
+		freeMode: false,
+		freeModeFluid: true
+  }); 
+  //内容提要 点击加载更多
+  var more = true;
+  $(".detail-more").click(function(){
+	  if(more == true){
+	  	  $('#short').css('display','none');
+	  	  $('#all').css('display','block');
+		  $(this).addClass("detail-more2");
+		  more = false; 
+	  }
+	  else{		
+		  $(this).removeClass("detail-more2");
+		  $('#short').css('display','block');
+	  	  $('#all').css('display','none');
+		  more = true; 
+	  }
+  });  
+}; 	
+</script>   
+
+<div class="title2 clearfix area mg-auto" >
+  <h2>猜你喜欢</h2>
+  <a href="javascript:void(0);" class="title-Swap" id="huan">换一换</a>
+</div>
+
+<div class="hot-icon mg-auto overflow area clearfix">
+   <ul class="clearfix" id="smore">
+       <li><a href="detail.html" class="i-icon-tao"><img src="images/pro.jpg" title=" " alt=" "><span>丘比熊</span></a></li>
+       <li><a href="detail.html" class="i-icon-tao"><img src="images/pro.jpg" title=" " alt=" "><span>丘比熊</span></a></li>
+       <li><a href="detail.html" class="i-icon-tao"><img src="images/pro.jpg" title=" " alt=" "><span>丘比熊</span></a></li>
+       <li><a href="detail.html" class="i-icon-tao"><img src="images/pro.jpg" title=" " alt=" "><span>丘比熊</span></a></li>
+	</ul>
+</div>
+ 
+
+
+   
+
+
+ 
+   <!--底部-->
+  <div style="margin-top:15px;display: block;border-bottom: solid 1px #FFF;border-top: solid 1px #cacaca;text-indent: -9999px;height: 0px;">line</div>
+  <div style="width: 100%; height: 3.8em; line-height: 3.8em; text-align: center; color:#666">省心购幼教品手机版</div>
+    
+</div>
+
+<!--<div class="info-nr">
+    <div id="info-nr-phone" class="info-nr-phone">
+      <section id="toMenu"></section>
+      <div class="menu_01"> <a href="bibei/default.htm"></a> </div>
+      <div class="menu_02"> <a href="search/default.htm"></a> </div>
+      <div class="menu_03"> <a href="topic/list_1000.html"></a> </div>
+      <div class="menu_04"> <a href="wallpaper/default.htm"></a> </div>    
+      <div class="menu_05"> <a href="biwan/default.htm"></a> </div>    
+    </div>
+</div>-->
+
+
+
+
+</body> 
+
+<script type="text/javascript" src="js/com.js"></script> 
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script> 
+<script type="text/javascript" src="js/swiper-2.1.min.js"></script> 
+
+</html>

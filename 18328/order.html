@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="hb-loaded" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>提交订单</title>
+<meta name="generator" content="化妆品 B2B - www.chinahzp.wang">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="bookmark" type="image/x-icon" href="images/favicon.ico">
+<link rel="archives" title="化妆品[中国]" href="http://chinahzp.wang/archiver/">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/home_header.css" rel="stylesheet" type="text/css">
+<link href="css/base1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/mall.css"><script src="js/hm.js"></script><script type="text/javascript">window.onerror=function(){return true;}</script><script type="text/javascript" src="js/lang.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+<script type="text/javascript">
+var searchid = 16;
+
+
+</script>
+        <!--[if lt IE 8]>
+          <div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+            <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+            <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+              <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+              <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+                <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>您在使用过时的浏览器</div>
+                <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>为了您获得更好的体验，请升级您的浏览器(见右侧列表)!</div>
+              </div>
+              <div style='width: 75px; float: left;'><a href='http://www.firefox.com.cn' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+              <div style='width: 75px; float: left;'><a href='http://windows.microsoft.com/en-us/internet-explorer/download-ie/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+              <div style='float: left;'><a href='http://www.google.cn/intl/zh-CN/chrome/browser/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+            </div>
+          </div>
+        <![endif]-->
+<script type="text/javascript">
+$(function(){
+//search
+var act = "index";
+if (act == "store_list"){
+$("#search").children('ul').children('li:eq(1)').addClass("current");
+$("#search").children('ul').children('li:eq(0)').removeClass("current");
+}
+$("#search").children('ul').children('li').click(function(){
+$(this).parent().children('li').removeClass("current");
+$(this).addClass("current");
+$('#search_act').attr("value",$(this).attr("act"));
+$('#keyword').attr("placeholder",$(this).attr("title"));
+});
+$("#keyword").blur();
+ 
+});
+</script>
+<!--[if IE 7]>
+  <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+<![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+ 
+<body>
+ 
+<div class="public-top-layout w">
+  <div class="topbar wrapper">
+    <div class="user-entry">
+            您好，欢迎来到 <a href="index.html" title="首页" alt="首页">中国化妆品网 </a> 【<span id="destoon_member"><span class="f_b" title="批发商">黄金</span> <a href="http://chinahzp.wang/member/line.php" title="在线，点击隐身"><img src="images/user_online.png" align="absmiddle" height="10" width="10"></a> | <a href="http://chinahzp.wang/member/">商务中心</a> | <a href="http://chinahzp.wang/member/member_message.html">站内信(<span class="head_t" id="destoon_message"><strong>1</strong><div style="float:left;"><embed src="images/message_1.swf" quality="high" type="application/x-shockwave-flash" height="0" hidden="true" width="0"></div></span>)</a> | <a href="http://chinahzp.wang/member/chat.php">新对话(<span class="head_t" id="destoon_chat">0</span>)</a> | <a href="http://chinahzp.wang/member/logout.php">退出</a></span>】
+           </div>
+    <div class="quick-menu">
+      <dl>
+        <dt><a href="member_order.html" rel="nofollow">我的订单</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="member_order.html?action=order&amp;fields=0&amp;kw=&amp;status=1&amp;fromtime=&amp;totime=&amp;itemid=0&amp;mallid=0&amp;seller=" rel="nofollow">待付款订单</a></li>
+            <li><a href="member_order.html?action=order&amp;fields=0&amp;kw=&amp;status=3&amp;fromtime=&amp;totime=&amp;itemid=0&amp;mallid=0&amp;seller=" rel="nofollow">待确认收货</a></li>
+            <li><a href="member_order.html?action=order&amp;fields=0&amp;kw=&amp;status=4&amp;fromtime=&amp;totime=&amp;itemid=0&amp;mallid=0&amp;seller=" rel="nofollow">成功交易</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="http://chinahzp.wang/member/favorite.php" rel="nofollow">我的收藏</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="http://chinahzp.wang/member/favorite.php" rel="nofollow">商机收藏</a></li>
+            
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>客户服务<i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="http://chinahzp.wang/about/" rel="nofollow">帮助中心</a></li>
+            <li><a href="http://chinahzp.wang/about/" rel="nofollow">售后服务</a></li>
+            <li><a href="http://chinahzp.wang/about/" rel="nofollow">客服中心</a></li>
+          </ul>
+        </dd>
+      </dl>
+            <dl>
+        <dt>站点导航<i></i></dt>
+        <dd>
+          <ul>
+                        <li><a target="_blank" href="index.html" rel="nofollow">资讯频道</a></li>
+                        <li><a target="_blank" href="index.html" rel="nofollow">社区圈子</a></li>
+                        <li><a target="_blank" href="index.html" rel="nofollow">微商城</a></li>
+                        <li><a target="_blank" href="index.html" rel="nofollow">商城首页</a></li>
+                      </ul>
+        </dd>
+      </dl>
+                    <dl class="weixin">
+        <dt>关注我们<i></i></dt>
+        <dd>
+          <h4>扫描二维码<br>
+            关注商城微信号</h4>
+          <img src="images/18-01-43-98-1.jpg" rel="nofollow"> </dd>
+        </dl>
+         </div>
+  </div>
+</div>
+<script type="text/javascript">
+//动画显示边条内容区域
+$(function() {
+$(function() {
+$('#activator').click(function() {
+$('#content-cart').animate({'right': '-250px'});
+$('#content-compare').animate({'right': '-150px'});
+$('#ncToolbar').animate({'right': '-60px'}, 300,
+function() {
+$('#ncHideBar').animate({'right': '59px'},300);
+});
+        $('div[nctype^="bar"]').hide();
+});
+$('#ncHideBar').click(function() {
+$('#ncHideBar').animate({
+'right': '-79px'
+},
+300,
+function() {
+$('#content-cart').animate({'right': '-250px'});
+$('#content-compare').animate({'right': '-250px'});
+$('#ncToolbar').animate({'right': '0'},300);
+});
+});
+});
+    $("#compare").click(function(){
+    if ($("#content-compare").css('right') == '-210px') {
+    loadCompare(false);
+    $('#content-cart').animate({'right': '-210px'});
+     $("#content-compare").animate({right:'50px'});
+    } else {
+    $(".close").click();
+    $(".chat-list").css("display",'none');
+        }
+});
+    $("#rtoolbar_cart").click(function(){
+        if ($("#content-cart").css('right') == '-210px') {
+         $('#content-compare').animate({'right': '-210px'});
+    $("#content-cart").animate({right:'50px'});
+    if (!$("#rtoolbar_cartlist").html()) {
+    $("#rtoolbar_cartlist").load('index.php?act=cart&op=ajax_load&type=html');
+    }
+        } else {
+        $(".close").click();
+        $(".chat-list").css("display",'none');
+        }
+});
+$(".close").click(function(){
+$(".content-box").animate({right:'-210px'});
+      });
+$(".quick-menu dl").hover(function() {
+$(this).addClass("hover");
+},
+function() {
+$(this).removeClass("hover");
+});
+ 
+    $('a[nctype="close-barLoginBox"]').click(function(){
+        $('div[nctype="barLoginBox"]').toggle();
+    });
+    });
+</script> 
+<!-- PublicHeadLayout Begin -->
+<div class="header-wrap">
+  <header class="public-head-layout wrapper">
+    <h1 class="site-logo"><a href="index.html"><img src="images/logo.png" class="pngFix" title="中国化妆品网" alt="化妆品中国"></a></h1>
+<div class="head-app"><span class="pic"></span>
+      <div class="download-app">
+       <div class="qrcode"><img src="images/mb_app.htm" rel="nofollow"></div>
+        <div class="hint">
+          <h4>扫描二维码</h4>
+          下载手机客户端</div>
+        <div class="addurl">
+                        <a href="order.html?itemid=25&amp;s1=0&amp;s2=0&amp;s3=0" target="_blank" rel="nofollow"><i class="icon-android"></i>Android</a>
+                                    <a href="order.html?itemid=25&amp;s1=0&amp;s2=0&amp;s3=0" target="_blank" rel="nofollow"><i class="icon-apple"></i>iPhone</a>
+                        </div>
+      </div>
+    </div>
+<script type="text/javascript">var searchid = 16;</script>
+<div class="head-search-bar search-form ">
+<!--商品和店铺-->
+<form id="destoon_search" action="list.htmlsearch.php" class="search-form" onsubmit="return Dsearch();">
+<input name="moduleid" value="16" id="destoon_moduleid" type="hidden">
+<input name="spread" value="0" id="destoon_spread" type="hidden">
+<div id="search">
+      <ul class="tab">
+        </ul> 
+      <input name="kw" id="destoon_kw" class="input-text" value="请输入关键词" onfocus="if(this.value=='请输入关键词') this.value='';" onkeyup="STip(this.value);" autocomplete="off" type="text">
+        <input value="搜索" class="input-submit" type="submit"> </div>
+      </form>
+  <!--搜索关键字-->
+      <div class="keyword">热门搜索： <ul>
+                   
+<li><a href="list.htmlsearch.php?kw=%E9%98%B2%E6%99%92" rel="nofollow">防晒</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E9%9D%A2%E8%86%9C" rel="nofollow">面膜</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E6%B4%97%E9%9D%A2%E5%A5%B6" rel="nofollow">洗面奶</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E5%85%B6%E4%BB%96" rel="nofollow">其他</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E5%8C%96%E5%A6%86%E5%93%81" rel="nofollow">化妆品</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E5%8C%96%E5%A6%86" rel="nofollow">化妆</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=Mistine" rel="nofollow">Mistine</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E9%9F%A9%E5%9B%BD" rel="nofollow">韩国</a></li>
+                  </ul>
+      </div>
+ </div>
+    <div class="head-user-menu">
+      <dl class="my-mall">
+ <dt><span class="ico"></span><a href="http://chinahzp.wang/member/my.php?mid=5&amp;action=add" rel="nofollow">发布货源</a></dt>       
+      </dl>
+      <dl class="my-cart">
+         <dt><span class="ico"></span><a href="cart.html" rel="nofollow">购物车</a> (<span class="head_t" id="destoon_cart">0</span>)</dt>      </dl>
+    </div>
+  </header>
+</div>
+<!-- PublicHeadLayout End -->
+<!-- publicNavLayout Begin -->
+<nav class="public-nav-layout ">
+  <div class="wrapper">
+    <div class="all-category">
+      
+      <div class="title"><i></i>
+        <h3><a href="http://chinahzp.wang/sitemap/">全部分类</a></h3>
+        </div> 
+ </div>
+     <ul class="site-menu">
+      <li><a href="index.html">首页</a></li>
+    <li><a href="list.html" class="current">一件代发专区</a></li><li><a href="sell.html">找货源</a></li><li><a href="buy.html">看求购</a></li><li><a href="company.html">批发商</a></li><li><a href="invest.html">招代理</a></li><li><a href="brand.html">品牌汇</a></li><li><a href="news.html">资讯圈</a></li>     </ul>
+  </div>
+</nav>
+<style type="text/css">
+.head-app { display: none; }
+.public-nav-layout { width: 1000px; }
+.public-nav-layout .site-menu { max-width: 788px;}
+.wrapper { width: 1000px !important; }
+.no-content { font: normal 16px/20px Arial, "microsoft yahei"; color: #999999; text-align: center; padding: 150px 0; }
+</style>
+<div class="m b10">&nbsp;</div><script type="text/javascript">var errimg = 'http://chinahzp.wang/skin/shangshop/image/nopic50.gif';</script>
+<div class="m">
+<div class="left_box">
+<div class="pos">
+您的位置: <a href="index.html">首页</a> 
+» <a href="list.html">一件代发专区</a>
+» 提交订单
+</div>
+<div class="b10">&nbsp;</div>
+<form method="post" action="order.html" onsubmit="return check();">
+<input name="submit" value="1" type="hidden">
+<div>
+<div class="f_r" style="padding:10px 50px 0 0;"><a href="cart.html" class="b">返回购物车重新挑选</a></div>
+&nbsp;&nbsp;<img src="images/buy_1.gif" alt="" height="30" width="160"> 
+</div>
+<div style="margin:10px 40px 10px 40px;" class="c_b">
+<table bgcolor="#E4E4E4" cellpadding="6" cellspacing="1" width="100%">
+<tbody><tr align="center" bgcolor="#EEEEEE">
+<td width="60">图片</td>
+<td>商品</td>
+<td width="60">库存</td>
+<td width="60">价格</td>
+<td width="100">数量</td>
+<td width="60">物流</td>
+<td width="60">运费</td>
+<td width="90">小计</td>
+    <td width="90">现金券可用</td>
+</tr>
+<tr align="center" bgcolor="#FFFFFF">
+<td><a href="list.htmlshow-25.html" target="_blank"><img src="images/13-27-35-94-1.jpg" alt="bynanda来自星星的你彩妆正品 口红防水不掉色唇彩" onerror="this.src=errimg;" width="50"></a></td>
+<td style="/* line-height:24px; */color:#666666;" align="left">
+<a href="list.htmlshow-25.html" target="_blank" class="b" title="bynanda来自星星的你彩妆正品 口红防水不掉色唇彩">bynanda来自星星的你彩妆正品 口红防水不..</a><br>
+<img src="images/vip_1.gif" alt="一站通" title="一站通:1级" align="absmiddle"> <a href="http://chinahzp.wang/m/xileimaoyi/" target="_blank">上海曦蕾贸易有限公司</a>
+<div style="padding:3px 0 3px 0;">备注：<input name="post[25-0-0-0][note]" size="20" style="border:#CCCCCC 1px solid;" maxlength="100" title="限100字以内" type="text">&nbsp;
+<a href="http://chinahzp.wang/member/chat.php?touser=xileimaoyi&amp;mid=16&amp;itemid=25" target="_blank" rel="nofollow"><img src="images/online_002.gif" title="点击交谈/留言" alt="" onerror="this.src=DTPath+'file/image/web-off.gif';" align="absmiddle"></a>&nbsp;<a href="http://amos.alicdn.com/msg.aw?v=2&amp;uid=%E6%B1%9F%E6%95%8F%E8%95%BE&amp;site=cnalichn&amp;s=6&amp;charset=UTF-8" target="_blank" rel="nofollow"><img src="images/online.gif" title="点击旺旺交谈/留言" alt="" onerror="this.src=DTPath+'file/image/ali-off.gif';" onload="if(this.width>20)this.src=SKPath+'image/ali-off.gif';" align="absmiddle"></a>&nbsp;</div>
+品牌:bynanda&nbsp;</td>
+<td>1500<span class="dsn" id="amount_25-0-0-0">1500</span></td>
+<td><span class="f_price" id="price_25-0-0-0">3.50</span></td>
+<td><img src="images/arrow_l.gif" alt="减少" class="c_p" onclick="alter('25-0-0-0', '-')" height="8" width="16"> <input name="post[25-0-0-0][number]" value="1" size="3" class="cc_inp" id="number_25-0-0-0" onblur="calculate();" type="text"> <img src="images/arrow_r.gif" alt="增加" class="c_p" onclick="alter('25-0-0-0', '+')" height="8" width="16"><span class="dsn" id="amount_25-0-0-0">1500</span></td>
+<td>
+<select name="post[25-0-0-0][express]" id="express_25-0-0-0" onchange="calculate();Dd('receive').value=this.options[selectedIndex].innerHTML;">
+<option selected="selected" value="1">快递</option></select>
+<input id="fee_start_25-0-0-0_1" value="10.00" type="hidden">
+<input id="fee_step_25-0-0-0_1" value="0.00" type="hidden">
+<input id="fee_start_25-0-0-0_2" value="0.00" type="hidden">
+<input id="fee_step_25-0-0-0_2" value="0.00" type="hidden">
+<input id="fee_start_25-0-0-0_3" value="0.00" type="hidden">
+<input id="fee_step_25-0-0-0_3" value="0.00" type="hidden">
+</td>
+<td><span class="f_price" id="fee_25-0-0-0">10.00</span></td>
+<td><span class="f_price" id="total_25-0-0-0">13.50</span></td>
+    <td><span style="display: none;" id="percent_25-0-0-0">0.00</span><span class="f_price" id="cashcoupon_25-0-0-0">0.00</span></td>
+</tr>
+</tbody></table>
+<div class="b10">&nbsp;</div>
+<div class="cart_foot" style="text-align:left;">
+        <span class="f_r">共选中 <span class="f_red f_b px16" id="total_good">1</span> 种商品&nbsp;&nbsp;&nbsp;&nbsp; 总价：<span class="f_red f_b px16" id="total_amount">13.50</span> 元
+        <br> <br>可使用现金券: <span class="f_red f_b px16" id="total_cashcoupon_usable">0.00</span> 元
+<br> <br><input name="use_cashcoupon" id="use_cashcoupon" checked="checked" onclick="calculate_cc();" type="checkbox">使用现金券   (可用余额：<span class="f_red f_b" id="cashcoupon_balance" name="cashcoupon_balance">0.00</span> 元)
+<br> <br>最终需要支付: <span class="f_red f_b px16" id="total_needpay">13.5</span> 元 
+        </span>
+&nbsp;&nbsp;提示：实际的运费可能因为收货地址的不同而有差异，具体以提交之后系统计算或与卖家协商为准<br><br>
+    &nbsp;&nbsp;在本店领取的优惠券:
+                <select name="couponid" id="couponid" onchange="calculate_cc();">
+            <option selected="selected" value="0">选择要使用的优惠券</option>
+                    </select>
+        </div>
+</div>
+<div class="b10">&nbsp;</div>
+<div>&nbsp;&nbsp;<img src="images/buy_2.gif" alt="" height="30" width="160"></div>
+<div style="padding:20px;margin:10px 40px 20px 40px;background:#F4F4F4;" class="c_b px13">
+<table cellpadding="10" cellspacing="0" width="100%">
+<tbody><tr>
+<td width="100"><span class="f_red">&nbsp;</span> 常用地址：</td>
+<td class="px13" bgcolor="#F9F9F9">
+<strong>暂无常用收货地址</strong>&nbsp;&nbsp;<a href="http://chinahzp.wang/member/address.php?action=add" target="_blank">[新增地址]</a>&nbsp;&nbsp;<a href="http://chinahzp.wang/member/address.php" target="_blank">[管理地址]</a>
+</td>
+</tr>
+<tr>
+<td><span class="f_red">*</span> 收货地址：</td>
+<td><span id="addr_areaid"><input name="add[areaid]" id="areaid_1" value="3" type="hidden"><span id="load_area_1"><select onchange="load_area(this.value, 1);"><option value="0">请选择</option><option value="1">北京</option><option value="2">上海</option><option value="3" selected="selected">天津</option><option value="4">重庆</option><option value="5">河北</option><option value="6">山西</option><option value="7">内蒙古</option><option value="8">辽宁</option><option value="9">吉林</option><option value="10">黑龙江</option><option value="11">江苏</option><option value="12">浙江</option><option value="13">安徽</option><option value="14">福建</option><option value="15">江西</option><option value="16">山东</option><option value="17">河南</option><option value="18">湖北</option><option value="19">湖南</option><option value="20">广东</option><option value="21">广西</option><option value="22">海南</option><option value="23">四川</option><option value="24">贵州</option><option value="25">云南</option><option value="26">西藏</option><option value="27">陕西</option><option value="28">甘肃</option><option value="29">青海</option><option value="30">宁夏</option><option value="31">新疆</option><option value="32">台湾</option><option value="33">香港</option><option value="34">澳门</option></select> </span><script type="text/javascript">var area_title = new Array;area_title[1]='请选择';var area_extend = new Array;area_extend[1]='';var area_areaid = new Array;area_areaid[1]='3';var area_deep = new Array;area_deep[1]='0';</script><script type="text/javascript" src="js/area.js"></script> </span><input size="60" name="add[address]" id="address" type="text"> <span id="daddress" class="f_red"></span></td>
+</tr>
+<tr>
+<td><span class="f_red">*</span> 邮政编码：</td>
+<td><input size="10" name="add[postcode]" id="postcode" type="text"> <span id="dpostcode" class="f_red"></span></td>
+</tr>
+<tr>
+<td><span class="f_red">*</span> 真实姓名：</td>
+<td><input size="10" name="add[truename]" id="truename" value="黄金" type="text"> <span id="dtruename" class="f_red"></span></td>
+</tr>
+<tr>
+<td><span class="f_red">*</span> 手机号码：</td>
+<td><input size="20" name="add[mobile]" id="mobile" type="text"> <span id="dmobile" class="f_red"></span></td>
+</tr>
+<tr>
+<td><span class="f_red">&nbsp;</span> 电话号码：</td>
+<td><input size="20" name="add[telephone]" id="telephone" value="025-87423050" type="text"> <span id="dtelephone" class="f_red"></span></td>
+</tr>
+<tr>
+<td><span class="f_red">*</span> 期望物流：</td>
+<td>
+<input size="10" name="add[receive]" id="receive" value="快递" type="text">
+<select onchange="Dd('receive').value=this.value;">
+<option selected="selected" value="">常用物流类型</option>
+<option value="不需要物流">不需要物流</option>
+<option value="平邮">平邮</option>
+<option value="EMS">EMS</option>
+<option value="顺丰快递">顺丰快递</option>
+<option value="申通E物流">申通E物流</option>
+<option value="圆通速递">圆通速递</option>
+<option value="中通速递">中通速递</option>
+<option value="宅急送">宅急送</option>
+<option value="韵达快运">韵达快运</option>
+<option value="天天快递">天天快递</option>
+<option value="联邦快递">联邦快递</option>
+<option value="汇通快运">汇通快运</option>
+<option value="华强物流">华强物流</option>
+<option value="其它">其它</option>
+</select> <span id="dreceive" class="f_red"></span>
+</td>
+</tr>
+</tbody></table>
+</div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr align="center">
+<td width="480"><input src="images/btn_buynow.gif" title="提交订单" type="image"></td>
+<td width="480"><a href="list.html" onclick="return confirm('订单尚未完成，确定要离开此页面吗？');"><img src="images/btn_browse.gif" alt="继续购物" height="33" width="106"></a></td>
+<td>&nbsp;</td>
+</tr>
+<tr align="center">
+<td class="f_gray">提交订单待卖家确认后，支付费用</td>
+<td class="f_gray">您也可以返回到一件代发专区首页，继续挑选商品</td>
+<td height="50">&nbsp;</td>
+</tr>
+</tbody></table>
+</form>
+</div>
+</div>
+<script type="text/javascript" src="js/guest.js"></script><script type="text/javascript">
+function check() {
+if(Dd('total_amount').innerHTML == '0.00') {
+alert('订单总额为0.00，请检查商品数量');
+window.scroll(0, 0);
+return false;
+}
+var l;
+var f;
+f = 'address';
+l = Dd(f).value.length;
+if(l < 5) {
+Dmsg('请填写街道地址', f);
+return false;
+}
+f = 'postcode';
+l = Dd(f).value.length;
+if(l < 6) {
+Dmsg('请填写邮政编码', f);
+return false;
+}
+f = 'truename';
+l = Dd(f).value.length;
+if(l < 2) {
+Dmsg('请填写真实姓名', f);
+return false;
+}
+f = 'mobile';
+l = Dd(f).value.length;
+if(l < 11) {
+Dmsg('请填写手机号码', f);
+return false;
+}
+f = 'receive';
+l = Dd(f).value.length;
+if(l < 2) {
+Dmsg('请填写期望物流', f);
+return false;
+}
+return confirm('您确认商品及收货地址无误，提交此订单吗？');
+}
+function Adr(s) {
+var t = s.split('|');
+try {
+Dd('areaid_1').value = 0;
+Dh('addr_areaid');
+Dd('address').value = t[0];
+Dd('postcode').value = t[1];
+Dd('truename').value = t[2];
+Dd('mobile').value = t[3];
+Dd('telephone').value = t[4];
+}
+catch (e) {}
+}
+function alter(i, t) {
+if(t == '+') {
+var maxa = parseFloat(Dd('amount_'+i).innerHTML);
+if(maxa && Dd('number_'+i).value >= maxa) return;
+Dd('number_'+i).value =  parseInt(Dd('number_'+i).value) + 1;
+} else {
+var mina = 1;
+if(Dd('number_'+i).value <= mina) return;
+Dd('number_'+i).value =  parseInt(Dd('number_'+i).value) - 1;
+}
+calculate();
+}
+function calculate() {
+var itemids = ['25-0-0-0'];
+var _good = _cashcoupon = itemid = 0;
+for(var i = 0; i < itemids.length; i++) {
+itemid = itemids[i];
+var num, good, maxa, mina, cashcoupon;
+num = parseInt(Dd('number_'+itemid).value);
+maxa = parseFloat(Dd('amount_'+itemid).innerHTML);
+mina = 1;
+if(num < mina) Dd('number_'+itemid).value = num = mina;
+if(maxa && num > maxa) Dd('number_'+itemid).value = num = maxa;
+if(isNaN(num) || num < 0) Dd('number_'+itemid).value = num = mina;
+good = parseFloat(Dd('price_'+itemid).innerHTML)*num;
+        cashcoupon = parseFloat(Dd('price_'+itemid).innerHTML)*num*parseFloat(Dd('percent_'+itemid).innerHTML);
+Dd('total_'+itemid).innerHTML = good.toFixed(2);
+        Dd('cashcoupon_'+itemid).innerHTML = cashcoupon.toFixed(2);
+if(Dd('express_'+itemid).value > 0) {
+var fee = parseFloat(Dd('fee_start_'+itemid+'_'+Dd('express_'+itemid).value).value) + parseFloat(Dd('fee_step_'+itemid+'_'+Dd('express_'+itemid).value).value)*(num-1);
+Dd('fee_'+itemid).innerHTML = fee.toFixed(2);
+Dd('total_'+itemid).innerHTML = (good+fee).toFixed(2);
+_good += fee;
+}
+        _cashcoupon += cashcoupon;
+_good += good;
+}
+Dd('total_amount').innerHTML = _good.toFixed(2);
+    Dd('total_cashcoupon_usable').innerHTML = _cashcoupon.toFixed(2);
+
+calculate_cc();
+}
+function calculate_cc(){
+var cashc_balance = parseFloat(Dd('cashcoupon_balance').innerHTML);
+var total_amount = parseFloat(Dd('total_amount').innerHTML);
+var total_cc_usable = parseFloat(Dd('total_cashcoupon_usable').innerHTML);
+
+var coupons = new Array();
+var coupon_id = Dd('couponid').value;
+if(coupon_id > 0){
+total_amount = total_amount - coupons[coupon_id];
+}
+if(Dd('use_cashcoupon').checked){
+if(cashc_balance > total_cc_usable){
+Dd('total_needpay').innerHTML = (total_amount- total_cc_usable);
+}else{
+Dd('total_needpay').innerHTML = total_amount- cashc_balance;
+}
+}else{
+Dd('total_needpay').innerHTML = total_amount ;
+}
+}
+calculate();</script>
+<br>
+<div id="faq">
+<div id="footer" class="wrapper">
+  (c)2014-2015 CHINAHZP.WANG SYSTEM All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.<br>
+  Powered by <span><a href="index.html" target="_self" title="化妆品批发">中国化妆品网</a></span>  | <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow">苏ICP备XXX号-3</a><br>
+   </div>
+<script type="text/javascript">
+var destoon_userid = 35;
+var destoon_username = 'hjl416148489';
+var destoon_message = 1;
+var destoon_chat = 0;
+var destoon_cart = substr_count(get_cookie('cart'), ',');
+var destoon_member = '';
+destoon_member += '<span class="f_b" title="批发商">黄金</span> <a href="http://chinahzp.wang/member/line.php" title="在线，点击隐身"><img src="js/image/user_online.png" width="10" height="10" align="absmiddle"/></a> | <a href="http://chinahzp.wang/member/">商务中心</a> | <a href="http://chinahzp.wang/member/member_message.html">站内信(<span class="head_t" id="destoon_message"><strong>1</strong>'+sound('message_1')+'</span>)</a> | <a href="http://chinahzp.wang/member/chat.php">新对话(<span class="head_t" id="destoon_chat">0</span>)</a> | <a href="http://chinahzp.wang/member/logout.php">退出</a>';
+$('#destoon_member').html(destoon_member);
+$('#destoon_cart').html(destoon_cart ? '<strong>'+destoon_cart+'</strong>' : 0);
+$('#back2top').click(function() {
+$("html, body").animate({scrollTop:0}, 200);
+});
+</script>
+<div style="display:none;"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d4a56a89b79f7e34b6b8f7001c8f9055";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div> 
+
+</div></body></html>

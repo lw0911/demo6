@@ -1,0 +1,1 @@
+var DTPath = "http://chinahzp.wang/";var SKPath = "http://chinahzp.wang/skin/shangshop/";var MEPath = "http://chinahzp.wang/member/";var EXPath = "http://chinahzp.wang/extend/";var CKDomain = "";var CKPath = "/";var CKPrex = "DB5_";

@@ -1,0 +1,309 @@
+.brand-but{
+	display:block;
+	width:240px;
+	height:48px;
+	text-align:center;
+	font:16px/48px 'microsoft yahei';
+	color:#fff;
+	background-color:#f30;
+	margin:25px auto 60px auto;
+	border-radius:24px;
+	transition-duration:0.2s;
+}
+.brand-but:hover{
+	background-color:#d82e03;
+	font:18px/48px 'microsoft yahei';
+}
+.brand-t1{
+	width:1200px;
+	height:50px;
+	margin:30px auto 0 auto;
+}
+.brand-t1 span{
+	display:block;
+	height:50px;
+	float:left;
+	font:24px/50px 'microsoft yahei';
+	color:#333;
+	margin-left:10px;
+}
+.brand-t1 dl{
+	display:block;
+	height:50px;
+	float:left;
+	font:15px/52px 'microsoft yahei';
+	color:#555;
+	margin-left:14px;
+}
+.brand-t2{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin:30px auto 30px auto;
+}
+.brand-t2 span{
+	display:block;
+	width:350px;
+	height:30px;
+	border-bottom:1px solid #222;
+	position:relative;
+	margin:0 auto 30px auto;
+}
+.brand-t2 span dl{
+	display:block;
+	width:150px;
+	height:40px;
+	position:absolute;
+	top:10px;
+	left:100px;
+	text-align:center;
+	background-color:#fff;
+	margin:0 auto 0 auto;
+	font:28px/40px 'microsoft yahei';
+	color:#333;
+	z-index:1;
+}
+
+.brand-shangbiao{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto 0 auto;
+	text-align:center;
+}
+.brand-shangbiao .item{
+	display:inline-block;
+	vertical-align: middle;
+	width:274px;
+	height:180px;
+	margin:10px 10px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:4px;
+	transition-duration:0.2s;
+}
+.brand-shangbiao .item:hover{
+	border:1px solid #F30;
+}
+.brand-shangbiao .item img{
+	display:block;
+	width:142px;
+	height:86px;
+	margin:30px auto 0 auto;
+	transition-duration:0.2s;
+}
+.brand-shangbiao .item:hover img{
+	width:180px;
+	height:108px;
+	margin:18px auto 0 auto;
+}
+.brand-shangbiao .item span{
+	display:block;
+	width:100%;
+	height:24px;
+	margin:12px auto 0 auto;
+	text-align:center;
+	font:16px/24px 'microsoft yahei';
+	color:#333;
+	transition-duration:0.2s;
+}
+.brand-shangbiao .item:hover span{
+	color:#f30;
+}
+
+.brand-required-datum{
+	width:1200px;
+	height:347px;
+	margin:40px auto 50px auto;
+	text-align:center;
+}
+.brand-required-datum .item{
+	display:inline-block;
+	vertical-align: middle;
+	width:415px;
+	height:347px;
+	background-image: url(img/required1.png);
+	margin:0 50px;
+}
+.brand-required-datum .item .br1{
+	background-color:#EE6A65;
+}
+.brand-required-datum .item .br2{
+	background-color:#01AF94;
+}
+.brand-required-datum .item i{
+	display:block;
+	width:90px;
+	height:90px;
+	border-radius:45px;
+	text-align:center;
+	font:50px/80px 'microsoft yahei';
+	color:#fff;
+	margin:36px 0 0 160px;
+}
+.brand-required-datum .item span{
+	display:block;
+	width:300px;
+	height:30px;
+	text-align:center;
+	font:18px/30px 'microsoft yahei';
+	color:#222;
+	margin:12px 0 0 56px;
+}
+.brand-required-datum .item ul{
+	display:block;
+	width:300px;
+	height:auto;
+	overflow:hidden;
+	text-align:left;
+	font:16px/30px 'microsoft yahei';
+	color:#222;
+	margin:20px 0 0 56px;
+}
+.brand-required-datum .item ul li{
+	display:block;
+	width:300px;
+	height:auto;
+	overflow:hidden;
+	text-align:left;
+	font:16px/30px 'microsoft yahei';
+	color:#222;
+}
+
+.brand-flow{
+	width:1200px;
+	height:136px;
+	margin:0 auto 60px auto;
+	text-align:center;
+	position:relative;
+}
+.brand-flow i{
+	display:inline-block;
+	vertical-align: middle;
+	width:96px;
+	height:96px;
+	text-align:center;
+	font:50px/96px 'microsoft yahei';
+	color:#999999;
+	border:2px solid #999999;
+	border-radius:48px;
+	transition-duration:0.2s;
+}
+.brand-flow i:hover{
+	font:58px/96px 'microsoft yahei';
+	border:2px solid #f30;
+	color:#f30;
+}
+.brand-flow dl{
+	display:inline-block;
+	vertical-align: middle;
+	width:51px;
+	height:33px;
+	margin:0 14px;
+	background-image: url(img/right-jian.png);
+}
+.brand-flow span{
+	display:block;
+	width:180px;
+	height:30px;
+	text-align:center;
+	font:15px/30px 'microsoft yahei';
+	color:#333;
+	position:absolute;
+	bottom:0;
+}
+.brand-flow .fr1{
+	left:28px;
+}
+.brand-flow .fr2{
+	left:220px;
+}
+.brand-flow .fr3{
+	left:412px;
+}
+.brand-flow .fr4{
+	left:604px;
+}
+.brand-flow .fr5{
+	left:794px;
+}
+.brand-flow .fr6{
+	left:984px;
+}
+
+
+.brand-significance{
+	width:1100px;
+	height:410px;
+	margin:0 auto;
+	position:relative;
+}
+.brand-significance img{
+	display:block;
+	width:396px;
+	height:408px;
+	position:absolute;  
+    left:50%;  
+    top:50%;  
+    margin:-204px 0 0 -198px 
+}
+.brand-significance .fl1{
+	top:20px;
+	left:0px;
+}
+.brand-significance .item .br1{
+	background:url(img/brand-tiao.png) 0px 0px;
+}
+.brand-significance .fl2{
+	top:284px;
+	left:0px;
+}
+.brand-significance .item .br2{
+	background:url(img/brand-tiao.png) 0px 36px;
+}
+.brand-significance .fl3{
+	top:20px;
+	right:0px;
+}
+.brand-significance .item .br3{
+	background:url(img/brand-tiao.png) 0px 76px;
+}
+.brand-significance .fl4{
+	top:284px;
+	right:0px;
+}
+.brand-significance .item .br4{
+	background:url(img/brand-tiao.png) 0px 117px;
+}
+.brand-significance .item{
+	display:block;
+	width:248px;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+}
+
+.brand-significance .item span{
+	display:block;
+	width:181px;
+	height:36px;
+	padding-left:15px;
+	font:16px/36px 'microsoft yahei';
+	color:#fff;
+	float:left;
+}
+.brand-significance .item dl{
+	display:block;
+	width:248px;
+	height:auto;
+	overflow:hidden;
+	text-align:left;
+	font:16px/24px 'microsoft yahei';
+	color:#444;
+	padding-top:12px;
+}
+
+
+
+
+

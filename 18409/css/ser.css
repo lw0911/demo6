@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ser{width:1200px;height:auto;margin:20px auto;}
+.ser_left{width:220px;height:auto;float:left;margin-right:20px;}
+.ser_right{width:960px;height:auto;float:left;}
+.ser_sed{width:220px;height:auto;float:left;border-top:2px solid #ea4848;background:#fff;}
+.ser_sed em{font-style:normal;font-size:16px;text-indent:1em;line-height:30px;float:left;width:100%;margin-top:3px;}
+.ser_sed li{width:100%;height:auto;float:left;padding:5px 0;border-bottom:1px dashed #e1e1e1;}
+.ser_sed li img{width:220px;height:220px;float:left;}
+.ser_sed li span{line-height:20px;width:200px;height:auto;max-height:40px;overflow:hidden;margin:5px 10px 0 10px;float:left;}
+
+.ser_right{width:960px;height:auto;float:left;}
+.ser_top{width:100%;height:50px;float:left;background:#fff;}
+.ser_top span{width:auto;height:50px;line-height:50px;float:left;padding:0 15px;}
+.ser_top li{padding:0 15px;height:30px;line-height:30px;margin:10px 10px 0 0;float:left;border-radius:4px;cursor:pointer;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.ser_top li:hover{background:#ea4848;color:#fff;}
+.ser_top_li{background:#ea4848;color:#fff;}
+.ser_page{height:50px;float:right;}
+.ser_page a{line-height:28px;height:28px;float:left;padding:0 12px;background:#fff;margin:10px 0px 10px 10px;border-radius:3px;border:1px solid #e1e1e1;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.ser_page a:hover{background:#ea4848;border:1px solid #ea4848;color:#fff;}
+.ser_page span{height:50px;line-height:50px;float:left;margin:0 0 0 10px;padding:0;}
+.ser_tips{width:100%;height:20px;line-height:20px;float:left;padding:15px 0;}
+.ser_tips span{color:#ea4848;}
+.ser_con{width:960px;height:auto;float:left;}
+.ser_con ul{width:985px;height:auto;float:left;margin:-20px 0 0 -20px;}
+.ser_con li{border-radius:3px; overflow:hidden;width:225px;height:auto;float:left;background:#fff;margin:20px 0 0 20px;border-top:2px solid #fff;border-bottom:1px solid #fff;}
+.ser_con li:hover{border-top:2px solid #ea4848!important;border-bottom:1px dashed #e1e1e1;-moz-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s;}
+.ser_con li img{width:225px;height:225px;float:left;}
+.ser_con li span{width:205px;max-height:40px;line-height:20px;float:left;margin:5px 10px 0 10px;overflow:hidden;}
+.ser_moy{width:205px;height:30px;float:left;margin:0 10px;line-height:30px;}
+.ser_moy em{color:#ea4848;float:left;font-size:16px;font-style:normal;height:30px;}
+.ser_moy span{float:right!important;height:30px!important;width:auto!important;margin:0!important;padding:0!important;line-height:30px!important;}

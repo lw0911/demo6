@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="邓裕朋">
+  <meta name="Keywords" content="Ecshop商城开发">
+  <meta name="Description" content="一个月开发商城——邓裕朋">
+  <title>echsop商城首页</title>
+  <!--引入外部css样式 start-->
+   <link href="css/basic.css" style="text/css" rel="stylesheet">
+   <link href="css/web.css" style="text/css" rel="stylesheet">
+  <!--引入外部css样式 end-->
+ </head>
+ <style type="text/css">
+
+ </style>
+ <body>
+  
+  <div id="TopMain"><!--用来包d="Top"和d="Header的大盒子 便于吸顶效果计算 吸顶盒效果时 计算的高度 这样就自适应了"-->
+	  <!--头部广告开始  target="_blank" 在新窗口打开-->
+	  <div id="Top">
+			 <a href="http://www.baidu.com" class="adv" target="_blank">
+				<img src="images/adv.jpg" />
+			 </a>
+			 <img src="images/close.png" class="close" /><!--头部广告右上角-->
+	  </div>
+	  <!--头部广告开始-->
+
+	 <!--标题开始-->
+	  <div id="Header">
+			<!--Logo 图片start-->
+			<div class="Logo"><a href=""><img src="images/logo.png"></a></div>
+			<!--Logo 图片end-->
+			
+			<!--Search start-->
+			<div class="Search">
+				  <form action="" method="">
+						<input type="text" class="Sea" />
+						<input type="submit" class="But" value="" />
+				  </form>
+			</div>
+			<!--Search end-->
+
+			<!--User start-->
+			<div class="User">
+			   <!--用户注册登录 start-->
+
+				   <!--用户注册登录前 start-->
+					<!--<a href=""><font class="iconfont">&#xe7d4;</font>登录</a><a href=""><font class="iconfont">&#xf0073;</font>注册</a><a href=""><font class="iconfont">&#xe69d;</font>加入购物车</a>-->
+					<!--用户注册登录前 end-->
+					
+          
+					<!--用户注册登录后 start-->
+					  <span>您好，dyp123,欢迎你回来! <a href="">用户中心</a>|<a href="">退出</a></span>
+					<font class="iconfont">&#xe69d;</font><a href="">加入购物车</a>
+					<!--用户注册登录后 end-->
+				<!--用户注册登录 start-->
+			</div>
+			<!--User end-->
+	  </div>
+	 <!--标题结束-->
+ </div>
+
+<!--网站导航 start -->
+<div id="Logo" ><!-- 吸顶盒导航：滚动到一定高度 给<div id="Logo" ></div>导航加上class="gd"-->
+		<ul>
+		    <li class="frist"><font class="iconfont">&#xe637;</font>全部商品分类
+				<div class="Menu">
+					<ol>
+						<li>
+						    <h3>节日礼物</h3>
+						    <p><a href="">生日</a><a href="">表白</a><a href="">订婚</a><a href="">结婚</a></p>
+						    <div class="moreNav"></div>
+							<div class="border_top"></div>
+							<div class="border_bottom"></div>
+							<div class="border_right"></div>
+						</li>
+						<li>
+						    <h3>生日礼物</h3>
+						    <p><a href="">生日</a><a href="">表白</a><a href="">订婚</a><a href="">结婚</a></p> 
+							<div class="moreNav"></div>
+							<div class="border_top"></div>
+							<div class="border_bottom"></div>
+							<div class="border_right"></div>
+							</li>
+						<li>
+						    <h3>蛋糕</h3>
+						    <p><a href="">生日</a><a href="">表白</a><a href="">订婚</a><a href="">结婚</a></p> 
+							<div class="moreNav"></div>
+							<div class="border_top"></div>
+							<div class="border_bottom"></div>
+							<div class="border_right"></div>
+							</li>
+						<li>
+							<h3>商务礼物</h3>
+						    <p><a href="">生日</a><a href="">表白</a><a href="">订婚</a><a href="">结婚</a></p> 
+							<div class="moreNav"></div>
+							<div class="border_top"></div>
+							<div class="border_bottom"></div>
+							<div class="border_right"></div>
+							</li>
+						<li>
+							<h3>节个性定制</h3>
+						    <p><a href="">生日</a><a href="">表白</a><a href="">订婚</a><a href="">结婚</a></p> 
+							<div class="moreNav"></div>
+							<div class="border_top"></div>
+							<div class="border_bottom"></div>
+							<div class="border_right"></div>
+							</li>
+						<li>
+							<h3>鲜花</h3>
+						    <p><a href="">生日</a><a href="">表白</a><a href="">订婚</a><a href="">结婚</a></p> 
+							<div class="moreNav"></div>
+							<div class="border_top"></div>
+							<div class="border_bottom"></div>
+							<div class="border_right"></div>
+							</li>
+					</ol>
+				</div>
+			</li>
+			<li><a href="">首页</li>
+			<li><a href="">节日礼物</a></li>
+			<li><a href="">生日礼物</a></li>
+			<li><a href="">蛋糕</a></li>
+			<li><a href="">商物礼物</a></li>
+			<li><a href="">个性定制</a></li>
+			<li><a href="">鲜花</a></li>
+			<li class="last"></li>
+		</ul>
+</div>
+
+<!--网站导航   end-->
+
+
+<!--第一部分 start-->
+<div id="Part1">
+		<div class="PartCon">
+
+		   <!--news strat-->
+			<div class="news">
+			<!--
+			1、在News大盒子里面，构建两个大小一模一样大小的长方形，一个用来设置背景透明，一个利用绝对定位，盖在透明图层上面，来用放内容
+			-->
+				<div class="newsOpacity"></div>
+				<div class="newsCon">
+					<!--咨询快讯 start-->
+						<div class="newsKx">
+							<h3>最新快讯</h3>
+							<ul>
+								<li><a href="" class="frist"><font>[ 特惠 ]</font> 1月1店庆趴 爆品嗨抢</a></li>
+								<li><a href=""><font>[ 公告 ]</font>“让爱飘香”公益</a></li>
+								<li><a href=""><font>[ 特惠 ]</font> 1月1商品全场五折</a></li>
+								<li><a href=""><font>[ 特惠 ]</font> 1月1店庆趴 爆品嗨抢</a></li>
+								<li><a href=""><font>[ 公告 ]</font>“让爱飘香”公益</a></li>
+							</ul>
+						</div>
+					<!--咨询快讯   end-->
+
+                        <div class="newsKx Datatx">
+							<h3>节日提醒</h3>
+							<ul>
+								<li><a href="" title="[ 6.21 ] 父亲节如何选择礼物"><font>[ 6.21 ] 父亲节</font> 进入专题页</a></li>
+								<li><a href="" title="[ 6.21 ] 七夕节如何选择礼物"><font>[ 8.21 ] 七夕</font> 进入专题页</a></li>
+								<li><a href="" title="[ 6.21 ] 光棍节如何选择礼物"><font>[ 11.11 ] 光棍节</font> 进入专题页</a></li>
+								<li><a href="" title="[ 6.21 ] 光棍节如何选择礼物"><font>[ 11.11 ] 光棍节</font> 进入专题页</a></li>
+							</ul>
+						</div>
+
+
+
+				</div>
+			</div>
+			<!--news end-->
+
+			<!--flash  start-->
+			<div class="flash">
+				<!--左右切换按钮 start-->
+					<a href="javascript:void(0)" class="prev"></a>
+					<a href="javascript:void(0)" class="next"></a>
+				<!--左右切换按钮 end-->
+
+				<!--图片滚动 start-->
+					<div class="scroll">
+						<img style="left:0;" src="images/flash1.jpg" />
+						<img src="images/flash2.jpg" />
+						<img src="images/flash3.jpg" />
+						<img src="images/flash4.jpg" />
+						<img src="images/flash5.png" />
+						<img src="images/flash6.jpg" />
+					</div>
+			   <!--图片滚动 end-->
+			   
+			   <!--滚动按钮 start-->
+					<div class="But">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					<div>
+			   <!--滚动按钮  end-->
+			</div>
+		<!--flash   end-->
+		</div>
+</div>
+
+<!--第一部分  end-->
+
+<div style="clear:both"></div>
+<!--主题内容start-->
+<div id="Main">
+  <!--今日新品 start-->
+	<div id="NewProduct">
+		<div class="title">
+			<font class="datexp">&#xe62a;</font><!--今日新品图标-->
+			<span class="new">今日新品</span>
+			<span class="data">每天8:00新品特卖</span>
+			
+			<span class="go"><font class="gohyp">&#xe609;</font>换一批</span>
+            <div style="clear:both"></div>
+            <div class="Product">
+				<div class="imgList"  style="display:block;">
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/bimg.png" width="190px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg_img1.jpg" width="190px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg_img2.jpg" width="190px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg19.jpg" width="190px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg17.jpg" width="200px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+				</div>
+				<div class="imgList">
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg24.jpg" width="190px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg27.jpg" width="190px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg23.jpg" width="190px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg26.jpg" width="190px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+					<dl>
+						<dt><font class="iconfont">&#xe60b;</font>距离结束:<font>2</font>天<font>16</font>时<font>53</font>分<font>31</font>秒</dt>
+						<dd><img src="images/dg25.jpg" width="200px" height="183px" /></dd>
+						<dd><font class="iconfont">&#xe6b2;</font>共有<font>1000</font>个人购买</dd>
+					</dl>
+				</div>
+			</div>
+
+		</div>
+	</div>
+  <!--今日新品 end-->
+   <!--鲜花展示开始-->
+  <div class="xianhua">
+		<ul class="xianhuaNav">
+			<li class="frist"><span>白玫瑰</span></li>
+			<li><span>红玫瑰</span></li>
+			<li class="hover"><span>郁金香</span></li>
+			<li><span>牡丹花</span></li>
+			<li><span>法国玫瑰</span></li>
+			<li class="last"><span>香槟玫瑰</span></li>
+			<li class="xh_nav"><font class="iconfont">&#xe600;</font>&nbsp;<span>鲜花</span></li>
+		</ul>
+
+		<div class="xianhuaCon">
+			<!--鲜花左边开始-->
+			<div class="xianhuaLeft">
+					<!--鲜花动画开始-->
+				<div class="xianhuaFlash">
+				<img src="images/yg.jpg" height="360px" width="642px">
+				
+				</div>
+				    <!--鲜花动画结束-->
+
+
+					<!--手风琴动画开始-->
+				<div class="xianhuaType">
+					<ul>
+						<li class="active">
+							<h3 class="hover">白玫瑰</h3>
+							<div class="opacity"></div>
+							<div class="text">内容1</div>
+						</li>
+						<li><h3>红玫瑰</h3>
+							<div class="opacity"></div>
+							<div class="text">内容1</div>
+							</li>
+						<li><h3>郁金香</h3>
+							<div class="opacity"></div>
+							<div class="text">内容1</div>
+							</li>
+						<li><h3>法国玫瑰</h3>
+							<div class="opacity"></div>
+							<div class="text">内容1</div>
+							</li>
+						<li class="last">
+						   <h3>香槟玫瑰</h3>
+							<div class="opacity"></div>
+							<div class="text">内容1</div>
+							</li>
+					</ul>
+				
+				</div>
+				   <!--手风琴动画结束-->
+			</div>
+			<!--鲜花左边结束-->
+
+			<!--选项卡部分开始-->
+			<div class="xianhuaRight">
+				<div class="xianhuaCom">
+					<ul>
+						<li><a href=""><img src="images/xh_img9.png" width="180px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/webpic2.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/webpic1.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh21.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh22.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh23.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh24.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh25.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh26.jpg" width="181px" height="165spx" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+					</ul>
+                </div>
+				<div class="xianhuaCom">红玫瑰</div>
+				<div class="xianhuaCom" style="display:block;">
+					<ul>
+						<li><a href=""><img src="images/xh_img11.jpg" width="180px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh_img10.png" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh16.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><img src="images/xh17.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh18.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh22.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh23.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh24.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh5.jpg" width="181px" height="165spx" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+					</ul>
+				</div>
+				<div class="xianhuaCom">牡丹花</div>
+				<div class="xianhuaCom">法国玫瑰</div>
+				<div class="xianhuaCom" ><ul>
+						<li><a href=""><img src="images/xh_img9.png" width="180px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/webpic2.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/webpic1.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh21.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh22.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh23.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh24.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh25.jpg" width="181px" height="165px" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+						<li><a href=""><img src="images/xh26.jpg" width="181px" height="165spx" /></a><p>白玫瑰 寓意你最美丽！</p></li>
+					</ul></div>
+			</div>
+			<!--选项卡部分结束-->
+		</div>
+  </div>
+  <!--鲜花展示结束-->
+
+
+  <!--生日展示开始-->
+  <div class="dgTitle">
+   <font class="iconfont">&#xe621;</font><span>生日蛋糕</span> | 安逸静谧的晚年，一种休息，一种愉悦，一种至高的享受！祝你福如东海长流水、寿比南山不老松！
+  </div>
+
+  <div id="dgCon">
+  <!--蛋糕展示 start-->
+	<div class="dgConL">
+		<ul>
+			<li><IMG SRC="images/dg_img1.jpg" width="231px" height="231px" />
+				<!--重复循环调用 start-->
+				<div style="display:none">
+					<a class="buyUrl" href="http://www.baidu.com"></a>
+					<h3 class="ti"> 重新赋值的 :生日蛋糕配送</h3>
+					<p class="Info">
+					 重新赋值的 :
+					礼物简介:我为你搭建的，是光彩缤纷的世界，是畅想甜蜜的世界，是欢乐的爱心世界！蛋糕在哪里</p>
+					<p class="type">款式一,款式二,款式三</p>
+					<p class="money">价格: ￥258.00/p>
+				</div>
+				<!--重复循环调用 end-->
+			</li>
+			<li><IMG SRC="images/dg13.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg_img2.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg_img4.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg22.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg23.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg24.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg13.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg26.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg27.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg28.jpg" width="231px" height="231px" /></li>
+			<li><IMG SRC="images/dg29.jpg" width="231px" height="231px" /></li>
+		</ul>
+
+			<!--详情展示 start-->
+			<div class="gray">
+				<!--关闭按钮 start-->
+				<font class="iconfont">&#xe666;</font>
+				<!--关闭按钮   end-->
+			</div>
+			  <div class="showImg">
+				  <!--切换按钮 start-->		
+					<span class="prev">＞</span>
+					<span class="next">＜</span>
+				  <!--切换按钮   end-->
+				  <img src="images/dg24.jpg" class="bigImg" />
+					<div class="moreInfo">
+						<h3>   
+							生日蛋糕配送 蛋糕鲜花快速递 巧克力水果奶油蛋糕双层
+						</h3>
+							 <p class="col">选择颜色:</p>
+								<div class="dg_col">
+									<div class="dgtype">
+										<!--款式是动态添加的  <dl class="seclect">
+											<dt><img src="images/dg24.jpg" width="24px" height="26px" /></dt>
+											<dd>款式一</dd>
+										</dl>
+										<dl>
+											<dt><img src="images/dg25.jpg" width="24px" height="26px" /></dt>
+											<dd>款式二</dd>
+										</dl>
+										<dl>
+											<dt><img src="images/dg26.jpg" width="24px" height="26px" /></dt>
+											<dd>款式三</dd>
+										</dl>
+										<dl>
+											<dt><img src="images/dg27.jpg" width="24px" height="26px" /></dt>
+											<dd>款式四</dd>
+										</dl>-->
+									</div>
+						<div style="clear:both"></div>
+						       </div>
+					 <p class="Info">礼物简介:</p> 
+					 <p class="xq">我为你搭建的，是光彩缤纷的世界，是畅想甜蜜的世界，是欢乐的爱心世界！蛋糕在哪里
+					 </p>
+					 <p class="but">
+						 <a href="" class="buy">立即购买</a>
+						 <a href="" class="join">加入购物车</a>
+					 </p>
+				  </div>
+				</div>
+		  <!--详情展示 end-->
+	</div>
+	<!--蛋糕展示   end-->
+	<div class="dgConR">
+		<h3><font class="iconfont">&#xe7f8;</font>精品推荐</h3>
+		<dl>
+			<dt><a href=""><img src="images/dg24.jpg" width="94px" height="96px" /></a></dt>
+			<dd class="ti"><a href="" title="元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸">元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸</a></dd>
+			<dd><a href="" class="price">价格: ￥258.00</a></dd>
+			
+		</dl>
+		<dl>
+			<dt><a href=""><img src="images/bimg.png" width="94px" height="96px" /></a></dt>
+			<dd title="元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸"><a href="">元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸</a></dd>
+			<dd><a href="" class="price">价格: ￥258.00</a></dd>
+			
+		</dl>
+		<dl>
+			<dt><a href=""><img src="images/webpic2.jpg" width="94px" height="96px" /></a></dt>
+			<dd title="元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸"><a href="">元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸</a></dd>
+			<dd><a href="" class="price">价格: ￥258.00</a></dd>
+			
+		</dl>
+		<dl>
+			<dt><a href=""><img src="images/dg29.jpg" width="94px" height="96px" /></a></dt>
+			<dd title="元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸"><a href="">元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸</a></dd>
+			<dd><a href="" class="price">价格: ￥258.00</a></dd>
+			
+		</dl>
+		<dl>
+			<dt><a href=""><img src="images/dg26.jpg" width="94px" height="96px" /></a></dt>
+			<dd title="元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸"><a href="">元祖 鲜牛奶蛋糕 课指定日期送到 玫瑰圆舞曲 10寸</a></dd>
+			<dd><a href="" class="price">价格: ￥258.00</a></dd>
+			
+		</dl>
+	</div>
+  </div>
+  <!--生日展示结束-->
+
+
+
+  <!--生日礼物开始-->
+  <!--下面好几个部分一样 可以样式从用-->
+  <div class="CommProduct" id="Louti1">
+		<!--CommNav start-->
+			 <div class="CommNav L">
+				<img src="images/jrlw.jpg" />
+				<img src="images/f1_pic.jpg" class="adv" />
+				<p class="ti">如何选择节日蛋糕</p>
+				<ul>
+					<li><a href="" title="不同蛋糕的寓意？">不同蛋糕的寓意？</a></li>
+					<li><a href="" title="不同蛋糕的含意？">不同蛋糕的含意？</a></li>
+					<li><a href="" title="送女朋友送什么样的蛋糕呢？">送女朋友送什么样的蛋糕呢？</a></li>
+					<li><a href="" title="送爸妈送什么样的蛋糕呢？">送爸妈送什么样的蛋糕呢？</a></li>
+				</ul>
+			 </div>
+		<!--CommNav end-->
+
+		<!--CommFlash start-->
+			<div class="CommFlash L">
+			            <span class="prev">＜</span>
+					    <span class="next">＞</span>
+				  <div class="commFlash">
+						<ul class="But">
+							<li class="hover"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+
+						<ul class="scroll">
+							<li><img src="images/dg_flash1.jpg" /></li>
+							<li><img src="images/dg_flash2.jpg" /></li>
+							<li><img src="images/dg_flash3.jpg" /></li>
+							<li><img src="images/dg_flash4.jpg" /></li>
+						</ul>
+
+				  </div>
+			</div>
+		<!--CommFlash end-->
+		<div class="CommList R">
+			<ul class="sr">
+				<li><img src="images/srpic1.jpg" WIDTH="180PX" height="180px" /><h3>乖乖熊给你倒茶<font>￥30.0</font></h3></li>
+				<li><img src="images/srpic2.jpg" WIDTH="180PX" height="180px" /><h3>一生一意真情砖戒<font>￥30.0</font></h3></li>
+				<li><img src="images/srpic3.jpg" WIDTH="180PX" height="180px" /><h3>真爱一生玫<font>￥30.0</font></h3></li>
+				<li><img src="images/srpic4.jpg" WIDTH="180PX" height="180px" /><h3>懂你心的熊猫<font>￥30.0</font></h3></li>
+			</ul>
+		</div>
+  </div>
+  <!--生日礼物结束-->
+
+
+  <!--节日礼物开始-->
+  <div class="CommProduct" id="Louti2">
+         <!--CommNav start-->
+			 <div class="CommNav L">
+				<img src="images/srlw.jpg" />
+				<img src="images/lw.jpg" class="adv"  width="100px" height="190px"/>
+				<p class="ti">如何选择生日蛋糕</p>
+				<ul>
+					<li><a href="" title="不同蛋糕的寓意？">不同蛋糕的寓意？</a></li>
+					<li><a href="" title="不同蛋糕的含意？">不同蛋糕的含意？</a></li>
+					<li><a href="" title="送女朋友送什么样的蛋糕呢？">送女朋友送什么样的蛋糕呢？</a></li>
+					<li><a href="" title="送爸妈送什么样的蛋糕呢？">送爸妈送什么样的蛋糕呢？</a></li>
+				</ul>
+			 </div>
+		<!--CommNav end-->
+		<div class="CommFlash R">
+			<div class="CommFlash L">
+			            <span class="prev">＜</span>
+					    <span class="next">＞</span>
+				  <div class="commFlash">
+						<ul class="But">
+							<li class="hover"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+
+						<ul class="scroll">
+							<li><img src="images/dg_flash1.jpg"  /></li>
+							<li><img src="images/dg_flash2.jpg" /></li>
+							<li><img src="images/dg_flash3.jpg" /></li>
+							<li><img src="images/dg_flash4.jpg" /></li>
+							<li><img src="images/dg_flash5.jpg" /></li>
+						</ul>
+
+				  </div>
+			</div>
+		</div>
+		<div class="CommList L">
+			<ul class="jr">
+				<li><img src="images/srpic5.jpg" WIDTH="180PX" height="180px" /><h3>瞌睡兔音乐枕<font>￥30.0</font></h3></li>
+				<li><img src="images/srpic6.jpg" WIDTH="180PX" height="180px" /><h3>吉祥高贵项链<font>￥30.0</font></h3></li>
+				<li><img src="images/jr_img4.jpg" WIDTH="180PX" height="180px" /><h3>淘气乖乖<font>￥30.0</font></h3></li>
+				<li><img src="images/jr_img1.jpg" WIDTH="180PX" height="180px" /><h3>和你玩<font>￥30.0</font></h3></li>
+			</ul>
+		</div>
+  </div>
+  <!--节日礼物结束-->
+
+</div>
+
+
+<div style="clear:both"></div>
+<!--主题内容  end-->
+
+
+
+<!--商城底部 footer start-->
+<img src="images/f.jpg" class="fbg" />
+<div id="Footer2">
+	<dl class="frist">
+		<dt><a href="#">关于我们</a></dt>
+		<dd><a href="#">诚聘英才</a></dd>
+		<dd><a href="#">品牌入驻</a></dd>
+		<dd><a href="#">友情链接</a></dd>
+	</dl>
+	<dl>
+		<dt><a href="#">关于我们</a></dt>
+		<dd><a href="#">诚聘英才</a></dd>
+		<dd><a href="#">品牌入驻</a></dd>
+		<dd><a href="#">友情链接</a></dd>
+	</dl>
+	<dl>
+		<dt><a href="#">关于我们</a></dt>
+		<dd><a href="#">诚聘英才</a></dd>
+		<dd><a href="#">品牌入驻</a></dd>
+		<dd><a href="#">友情链接</a></dd>
+	</dl>
+	<dl>
+		<dt><a href="#">关于我们</a></dt>
+		<dd><a href="#">诚聘英才</a></dd>
+		<dd><a href="#">品牌入驻</a></dd>
+		<dd><a href="#">友情链接</a></dd>
+	</dl>
+	<dl>
+		<dt><a href="#">关于我们</a></dt>
+		<dd><a href="#">诚聘英才</a></dd>
+		<dd><a href="#">品牌入驻</a></dd>
+		<dd><a href="#">友情链接</a></dd>
+	</dl>
+	<dl>
+		<dt><a href="#">关于我们</a></dt>
+		<dd><a href="#">诚聘英才</a></dd>
+		<dd><a href="#">品牌入驻</a></dd>
+		<dd><a href="#">友情链接</a></dd>
+	</dl>
+	<dl class="last">
+		<dt>客服在线</dt>
+		<dd>4006-600-00</dd>
+		<dd> <a href="http://wpa.qq.com/msgrd?v=3&uin=1209885250&site=qq&menu=yes" target="_blank"><img src="images/QQ.jpg" /></a></dd>
+	</dl>
+	<div style="clear:both"></div>
+</div>
+
+<!--版权 start-->
+<p class="copy">Copyright © 2015-2017  XXX All Rights Reserved  版权所有：武汉亲友有限公司 备案号：备XXX号</p>
+<!--版权 end-->
+
+
+<!--商城底部 footer end-->
+
+
+
+<!--引入jQuery官方类库-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!--引入外部js-->
+<script type="text/javascript" src="js/index.js"></script>
+
+<style>
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+<div class="copyrights">
+	Collect from <a href="http://www.cssmoban.com/"  title="网站模板">模板之家</a>
+	<a href="http://cooco.net.cn/" title="组卷网">组卷网</a>
+</div>
+ </body>
+</html>

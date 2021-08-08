@@ -1,0 +1,156 @@
+.about-title1{
+	width:100%;
+	height:60px;
+	padding-top:60px;
+	margin:0 auto 0 auto;
+	text-align:center;
+} 
+.about-title1 span{
+	display:inline-block;
+	vertical-align: middle;
+	height:60px;
+	font:50px/60px 'microsoft yahei';
+	color:#946B37;
+}
+.about-title1 em{
+	display:inline-block;
+	vertical-align: middle;
+	height:60px;
+	font:50px/60px 'microsoft yahei';
+	color:#f30;
+}
+.about-title1 i{
+	display:inline-block;
+	vertical-align: middle;
+	height:60px;
+	font:12px/64px 'microsoft yahei';
+	color:#946B37;
+	margin:0 15px;
+}
+
+.about-title2{
+	width:100%;
+	height:30px;
+	overflow:hidden;
+	text-align:center;
+	margin:10px auto 30px auto;
+}
+.about-title2 span{
+	display:inline-block;
+	vertical-align: middle;
+	width:200px;
+	height:15px;
+	border-bottom:1px solid #999;
+}
+.about-title2 dl{
+	display:inline-block;
+	vertical-align: middle;
+	height:30px;
+	text-align:center;
+	margin:0 15px;
+	font:20px/40px 'microsoft yahei';
+	color:#999;
+	text-transform:uppercase;
+}
+
+
+.about-info{
+	width:100%;
+	min-height:1086px;
+	margin:-20px auto 0 auto;
+	padding-top:50px;
+}
+.about-info .main{
+	width:1200px;
+	min-height:1086px;
+	margin:0 auto;
+}
+.about-info .main .title1{
+	width:100%;
+	height:60px;
+	margin:0 auto;
+	text-align:center;
+}
+.about-info .main .text1{
+	width:674px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	font:16px/26px 'microsoft yahei';
+	color:#333;
+	text-align:center;
+}
+.about-info .main .text2{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:560px auto 0 auto;
+}
+.about-info .main .text2 p{
+	display:block;
+	width:650px;
+	height:auto;
+	overflow:hidden;
+	float:left;
+	text-align:left;
+	font:16px/26px 'microsoft yahei';
+	color:#333;
+	margin-left:40px;
+	margin-top:230px;
+}
+.about-info .main .text2 img{
+	display:block;
+	width:436px;
+	height:387px;
+	float:right;
+	margin:0px 56px 0 0;
+}
+
+
+
+.about-yibang{
+	width:1200px;
+	height:880px;
+	margin:20px auto 0 auto;
+}
+.about-yibang .text{
+	width:900px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	font:16px/26px 'microsoft yahei';
+	color:#333;
+}
+
+
+.about-rongyu{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:20px auto 50px auto;
+}
+.about-rongyu .list{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	text-align:center;
+}
+.about-rongyu .list a{
+	display:inline-block;
+	vertical-align: middle;
+	width:250px;
+	height:250px;
+	padding:10px;
+	margin:10px;
+	border:1px dashed #449FFF;
+	transition-duration:0.2s;
+}
+.about-rongyu .list a:hover{
+	border:1px dashed #956B36;
+}
+.about-rongyu .list a img{
+	display:block;
+	width:250px;
+	height:250px;
+}

@@ -1,0 +1,1 @@
+document.write('<img src="http://chinahzp.wang/file/upload/201504/18/16-41-10-73-1.jpg" width="777" height="110" alt=""/>');

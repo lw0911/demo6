@@ -1,0 +1,797 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>优选天猫商城</title>
+<meta name="keywords" content="天猫入驻"/>
+<meta name="description" content="天猫入驻"/>
+<meta name="author" content="huaiyustu.cn" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
+<context:component-scan base-package="com.th.action"></context:component-scan>
+<mvc:default-servlet-handler/>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/shop.css" rel="stylesheet" type="text/css">
+<link href="css/iconfont/Rjdaoico.css" rel="stylesheet" type="text/css">
+<!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--图片延迟加载 S-->
+<script src="js/lyz.delayLoading.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+	$("img").delayLoading({
+		defaultImg: "images/picture-loading.jpg",           // 预加载前显示的图片
+		errorImg: "images/picture-loading.jpg",                        // 读取图片错误时替换图片(默认：与defaultImg一样)
+		imgSrcAttr: "originalSrc",           // 记录图片路径的属性(默认：originalSrc，页面img的src属性也要替换为originalSrc)
+		beforehand: 0,                       // 预先提前多少像素加载图片(默认：0)
+		event: "scroll",                     // 触发加载图片事件(默认：scroll)
+		duration: "5000",                  // 三种预定淡出(入)速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认:"normal"
+		container: window,                   // 对象加载的位置容器(默认：window)
+		success: function (imgObj) { },      // 加载图片成功后的回调函数(默认：不执行任何操作)
+		error: function (imgObj) { }         // 加载图片失败后的回调函数(默认：不执行任何操作)
+	});
+});
+</script>
+<!--图片延迟加载 E-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.countUp.js"></script>
+<!--幻灯片 S-->
+<link rel="stylesheet" href="css/responsiveslides.css">
+<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	// Slideshow 
+	$("#slider").responsiveSlides({
+		auto: true,
+		pager: false,
+		nav: true,
+		speed: 500,
+		timeout:4000,
+		pager: true, 
+		pauseControls: true,
+		namespace: "callbacks"
+	});
+});
+</script>
+<!--幻灯片 E-->
+<!--下拉动画-->
+<link rel="stylesheet" href="wow/animate.min.css"/>
+<script type="text/javascript" src="wow/wow.min.js"></script>
+<script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		new WOW().init();
+	};
+	$(function(){
+		
+	});
+</script>
+<!--下拉动画-->
+</head>
+
+<body>
+
+<!--HEADER S-->
+<header class="header">
+	<div class="container">
+    	<div class="tel"><span>全国热线：</span><em>400-0000-000</em></div>
+        <a class="kefu"><i class="icon-ee1b"></i><span>在线客服</span></a>
+        <div class="right">
+        	<div class="login">
+            	<a href="login.html">登录</a><em></em>
+                <a href="regist.html">注册</a>
+            </div>
+        	<div class="option">
+            	<a href="chushou_shop.html" class="h2">快速出售网店</a><em></em>
+            	<a href="">真假客服验证</a><em></em>
+                <a href="">用户中心</a><em></em>
+                <a href="">在线问答</a><em></em>
+                <a href="">帮助</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="top-search">
+    	<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        <a href="/" class="logo wow flipInY"><img src="images/logo2.png" alt=""></a>
+        <div class="search-box">
+            <div class="select">
+            	<span id="serachValue">天猫商城</span>
+                <input id="serachClass" type="hidden" name="serachClass" value="1">
+            	<ul class="select-list">
+                    <li id="Se-shangcheng" value="1">天猫商城</li>
+                    <li id="Se-qita" value="2">其他商城</li>
+                    <li id="Se-xindian" value="3">天猫新店</li>
+                </ul>
+                <i class="icon-eedb jian"></i>
+                <em></em>
+                <div id="serachKeyInfo" class="wow zoomIn"><i class="icon-eed7"></i><dl>搜索关键词不能为空</dl></div>
+            </div>
+            <input type="text" class="serachKey" placeholder="请输入关键词，如：女装，母婴" id="serachKey" />
+            
+            <div class="searchbtn" id="serachText"><i class="icon-ef61"></i></div>
+        </div>
+        <div class="hotkey">
+            <span>本周热搜：</span>
+            <a href="">3C数码 </a>
+            <a href="">服饰鞋包 </a>
+        </div>
+        <div class="right">
+        	<a href="" class="seal">
+                <img src="images/DAJ-seal.png" id="showImg" />
+            </a>
+            <div class="person">
+            	<i class="icon-ef54 userico"></i>
+                <em></em>
+                <div class="person-select">
+                	<h2>我的XXX</h2>
+                </div>
+                <div class="person-option">
+                      <p>
+                          <span>您好，</span>
+                          <a href="login.html" class="p-login">请登录</a>
+                          <a href="regist.html" class="p-regist">注册</a>
+                      </p>
+                      <div class="con">
+                      <a href="user.html" class="ui">我购买的网店</a>
+                      <a href="" class="ui">我出售的网店</a>
+                      <a href="" class="ui">我收藏的网店</a>
+                      <a href="" class="ui">我要出售网店</a>
+                      <a href="" class="ui">账号充值</a>
+                      <a href="" class="ui">资金提现</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<nav class="nav">
+	<div class="con">
+    	<div class="topmain">
+        
+        	<div class="mainnav">
+            	<div class="mv-but">
+                	<span>热门网店类目</span>
+                    <i class="icon-eeee lumn"></i>
+                </div>
+                <div class="column">
+                	<ul>
+                    	<li><i><img src="images/ci1.png" alt=""></i><a href="">服饰配件/皮带/帽子/围巾</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">奶粉/辅食/营养品/零食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">彩妆/香水/美妆工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">零食/坚果/特产</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">数码相机/单反相机/摄像机</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">书籍/杂志/报纸工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">运动/瑜伽/健身/球迷用品</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">汽车/用品/配件/改装</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">餐饮美食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">珠宝/钻石/翡翠/黄金</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">影音电器</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">居家日用</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">家装主材</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">流行男鞋</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">OTC药品/医疗器械/计生用品</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sonclass">
+            	<a href="index.html"><span>首页</span></a>
+                <a href="ruzhu.html"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+                <a href="shop_list.html"><span>优选天猫商城<div class="hotico"><img src="images/new.png" alt=""></div></span></a>
+                <a href="daiyunying.html"><span>天猫代运营</span></a>
+                <a href="gujia.html"><span>网店估价</span></a>
+                <a href="web.html"><span>网站搭建</span></a>
+                <a href="shangbiao.html"><span>商标服务</span></a>
+                <a href="zhixin.html"><span>知心购店</span></a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+<!--HEADER E-->
+<!--副导航 S-->
+<div id="SubHeader">
+	<div class="main">
+		<a href="" class="logo"><img src="images/logo-sub.png" alt=""></a>
+        <div class="mnav">
+        	<a href="" class="son"><span>首页</span></a>
+            <a href="" class="son"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+            <a href="" class="son"><span>优选天猫商城</span><div class="hotico"><img src="images/new.png" alt=""></div></a>
+            <a href="" class="son"><span>天猫代运营</span></a>
+            <a href="" class="son"><span>网店估价</span></a>
+            <a href="" class="son"><span>网站搭建</span></a>
+            <a href="" class="son"><span>商标服务</span></a>
+            <a href="" class="son"><span>知心购店</span></a>
+            <div class="stel"><span>全国热线：</span><em>400-0000-000</em></div>
+        </div>
+    </div>
+</div>
+<!--副导航 E-->
+
+
+<div class="cur-location">
+	<i class="icon-edf4"></i><a>XXX</a><dl>></dl><a>优选天猫</a>
+</div>
+
+<div class="selectList">
+	<div class="sitem">
+    	<span>经营类目：</span>
+        <div class="class">
+            <a href="" class="cur">全部</a>
+            <a href="">服饰鞋包</a>
+            <a href="">美容护理</a>
+            <a href="">3C数码</a>
+            <a href="">游戏/话费</a>
+            <a href="">食品/保健</a>
+            <a href="">母婴用品</a>
+            <a href="">运动户外</a>
+            <a href="">家装家饰</a>
+            <a href="">家居用品</a>
+            <a href="">珠宝/首饰</a>
+            <a href="">生活服务</a>
+            <a href="">书籍音像</a>
+            <a href="">玩乐收藏</a>
+            <a href="">家用电器</a>
+            <a href="">其他行业</a>
+        </div>
+    </div>
+    <div class="sitem">
+    	<span>单价范围：</span>
+        <div class="class">
+            <a href="" class="cur">全部</a>
+            <a href="">3~5万</a>
+            <a href="">5~10万</a>
+            <a href="">10~20万</a>
+            <a href="">20~30万</a>
+            <a href="">30万以上</a>
+        </div>
+    </div>
+    <div class="sitem">
+    	<span>商城类型：</span>
+        <div class="class">
+            <a href="" class="cur">全部</a>
+            <a href="">旗舰店</a>
+            <a href="">专卖店</a>
+            <a href="">专营店</a>
+            <a href="">天猫国际</a>
+        </div>
+    </div>
+    <div class="sitem">
+    	<span>商标类型：</span>
+        <div class="class">
+            <a href="">全部</a>
+            <a href="" class="cur">R商标</a>
+            <a href="">TM商标</a>
+            <a href="">没有商标</a>
+        </div>
+    </div>
+</div>
+
+<div class="select-item">
+    <div class="sitem">
+    	<span>其他筛选：</span>
+        <div class="sx">
+        	<!--
+            <div class="select">
+            	<span id=""><dl>所在地区</dl><i class="icon-eedb"></i></span>
+                <ul>
+                	<li><a href="">不限</a></li>
+                    <li><a href="">不限</a></li>
+                    <li><a href="">不限</a></li>
+                    <li><a href="">不限</a></li>
+                    <li><a href="">不限</a></li>
+                    <li><a href="">不限</a></li>
+                </ul>
+            </div>
+            -->
+            <select name="select" id="select" class="select">
+              <option value="">所在地区</option>
+            </select>
+            <select name="select" id="select" class="select">
+              <option value="">商标类型</option>
+            </select>
+            <select name="select" id="select" class="select">
+              <option value="">纳税类型</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="shop-main">
+	
+    <div class="left">
+    	<!--Item S-->
+        <div class="item">
+        	<div class="recommend"></div>
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">纳税类型</span><dl class="rw1">一般纳税人</dl></h3>
+                    <h3 class="w2"><span class="lw2">现有DSR评分情况</span><dl class="rw2">行业平均水平</dl></h3>
+                    <h3 class="w3"><span class="lw3">行业平均水平</span><dl class="rw3">596</dl></h3>
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+        	<div class="recommend"></div>
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">纳税类型</span><dl class="rw1">一般纳税人</dl></h3>
+                    <h3 class="w2"><span class="lw2">现有DSR评分情况</span><dl class="rw2">行业平均水平</dl></h3>
+                    <h3 class="w3"><span class="lw3">行业平均水平</span><dl class="rw3">596</dl></h3>
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+        	<div class="recommend"></div>
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">纳税类型</span><dl class="rw1">一般纳税人</dl></h3>
+                    <h3 class="w2"><span class="lw2">现有DSR评分情况</span><dl class="rw2">行业平均水平</dl></h3>
+                    <h3 class="w3"><span class="lw3">行业平均水平</span><dl class="rw3">596</dl></h3>
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">纳税类型</span><dl class="rw1">一般纳税人</dl></h3>
+                    <h3 class="w2"><span class="lw2">现有DSR评分情况</span><dl class="rw2">行业平均水平</dl></h3>
+                    <h3 class="w3"><span class="lw3">行业平均水平</span><dl class="rw3">596</dl></h3>
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">纳税类型</span><dl class="rw1">一般纳税人</dl></h3>
+                    <h3 class="w2"><span class="lw2">现有DSR评分情况</span><dl class="rw2">行业平均水平</dl></h3>
+                    <h3 class="w3"><span class="lw3">行业平均水平</span><dl class="rw3">596</dl></h3>
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">纳税类型</span><dl class="rw1">一般纳税人</dl></h3>
+                    <h3 class="w2"><span class="lw2">现有DSR评分情况</span><dl class="rw2">行业平均水平</dl></h3>
+                    <h3 class="w3"><span class="lw3">行业平均水平</span><dl class="rw3">596</dl></h3>
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">纳税类型</span><dl class="rw1">一般纳税人</dl></h3>
+                    <h3 class="w2"><span class="lw2">现有DSR评分情况</span><dl class="rw2">行业平均水平</dl></h3>
+                    <h3 class="w3"><span class="lw3">行业平均水平</span><dl class="rw3">596</dl></h3>
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+    </div>
+    
+    <div class="right">
+    	<a href="" class="advertising">
+        	<img src="images/right-adver1.gif" alt="">
+        </a>
+        <div class="outerFrame">
+        	<h2><i class="icon-ee6e"></i><span>超高性价比网店推荐</span></h2>
+            <div class="item">
+            	<div class="watermark wow flipInY"><img src="images/watermark-logo.png" alt=""></div>
+            	<a href="shop_vist.html" class="pic"><img src="images/s1.png" alt=""></a>
+                <a href="shop_vist.html" class="title"><img src="images/ly-Tmall.png" alt=""><span>华东地区收纳整理个人清洁专营店新店可贴牌诚心出售</span></a>
+                <div class="info">
+                	<p title="旗舰店">店铺类型：旗舰店</p>
+                	<p title="21类商标">商标种类：21类商标</p>
+                    <dl>一级类目：家庭/个人清洁工具,收纳整理</dl>
+                </div>
+                <h3>
+                	<span>￥6.7万</span>
+                    <a href="shop_vist.html">网店详情</a>
+                </h3>
+            </div>
+            <div class="item">
+            	<div class="watermark wow flipInY"><img src="images/watermark-logo.png" alt=""></div>
+            	<a href="shop_vist.html" class="pic"><img src="images/s1.png" alt=""></a>
+                <a href="shop_vist.html" class="title"><img src="images/ly-Tmall.png" alt=""><span>华东地区收纳整理个人清洁专营店新店可贴牌诚心出售</span></a>
+                <div class="info">
+                	<p title="旗舰店">店铺类型：旗舰店</p>
+                	<p title="21类商标">商标种类：21类商标</p>
+                    <dl>一级类目：家庭/个人清洁工具,收纳整理</dl>
+                </div>
+                <h3>
+                	<span>￥6.7万</span>
+                    <a href="shop_vist.html">网店详情</a>
+                </h3>
+            </div>
+            <div class="item">
+            	<div class="watermark wow flipInY"><img src="images/watermark-logo.png" alt=""></div>
+            	<a href="shop_vist.html" class="pic"><img src="images/s1.png" alt=""></a>
+                <a href="shop_vist.html" class="title"><img src="images/ly-Tmall.png" alt=""><span>华东地区收纳整理个人清洁专营店新店可贴牌诚心出售</span></a>
+                <div class="info">
+                	<p title="旗舰店">店铺类型：旗舰店</p>
+                	<p title="21类商标">商标种类：21类商标</p>
+                    <dl>一级类目：家庭/个人清洁工具,收纳整理</dl>
+                </div>
+                <h3>
+                	<span>￥6.7万</span>
+                    <a href="shop_vist.html">网店详情</a>
+                </h3>
+            </div>
+            <div class="item">
+            	<div class="watermark wow flipInY"><img src="images/watermark-logo.png" alt=""></div>
+            	<a href="shop_vist.html" class="pic"><img src="images/s1.png" alt=""></a>
+                <a href="shop_vist.html" class="title"><img src="images/ly-Tmall.png" alt=""><span>华东地区收纳整理个人清洁专营店新店可贴牌诚心出售</span></a>
+                <div class="info">
+                	<p title="旗舰店">店铺类型：旗舰店</p>
+                	<p title="21类商标">商标种类：21类商标</p>
+                    <dl>一级类目：家庭/个人清洁工具,收纳整理</dl>
+                </div>
+                <h3>
+                	<span>￥6.7万</span>
+                    <a href="shop_vist.html">网店详情</a>
+                </h3>
+            </div>
+            <div class="item">
+            	<div class="watermark wow flipInY"><img src="images/watermark-logo.png" alt=""></div>
+            	<a href="shop_vist.html" class="pic"><img src="images/s1.png" alt=""></a>
+                <a href="shop_vist.html" class="title"><img src="images/ly-Tmall.png" alt=""><span>华东地区收纳整理个人清洁专营店新店可贴牌诚心出售</span></a>
+                <div class="info">
+                	<p title="旗舰店">店铺类型：旗舰店</p>
+                	<p title="21类商标">商标种类：21类商标</p>
+                    <dl>一级类目：家庭/个人清洁工具,收纳整理</dl>
+                </div>
+                <h3>
+                	<span>￥6.7万</span>
+                    <a href="shop_vist.html">网店详情</a>
+                </h3>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+<div class="pageType-9">
+<ul class="pagination">
+<style type="text/css">
+.pageType-9{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:20px auto 40px auto;
+}
+.pageType-9 .pagination{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+}
+.pageType-9 .pagination li{
+	display:inline-block;
+	height:34px;
+}
+
+.pageType-9 .pagination li a{
+	display:block;
+	height:34px;
+	margin:0 3px;
+	padding:0 18px;
+	border-radius:4px;
+	background-color:#fff;
+	color:#888;
+	transition-duration:0.2s;
+	border:1px solid #ccc;
+	font-size: 15px;
+	line-height:34px;
+	height:34px;
+}
+.pageType-9 .pagination li a:hover{
+	background-color:#272727;
+	color:#FFF;
+}
+
+.pageType-9 .pagination li dl{
+	display:block;
+	height:34px;
+	margin:0 3px;
+	padding:0 18px;
+	border-radius:4px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	color:#888;
+	transition-duration:0.2s;
+	font-size: 15px;
+	line-height:34px;
+	height:34px;
+}
+.pageType-9 .pagination li span{
+	display:block;
+	height:34px;
+	margin:0 3px;
+	padding:0 18px;
+	background-color:#F30;
+	transition-duration:0.2s;
+	border-radius:4px;
+	border:1px solid #ccc;
+	font-size: 15px;
+	line-height:34px;
+	height:34px;
+	color:#fff;
+}
+.pageType-9 .pagination li.pageRemark{
+	color:#666;
+}
+.pageType-9 .pagination li.pageRemark b{
+	color:#f30;
+	font-weight: bold;
+}
+</style>
+<li class="disabled"><dl>上一页</dl></li>
+<li class="active"><span>1</span></li>
+<li><a href="?page=2">2</a></li>
+<li><a href="?page=2">3</a></li>
+<li><a href="?page=2">4</a></li>
+<li><a href="?page=2">5</a></li>
+<li><a href="?page=2">6</a></li>
+<li><a href="?page=2">下一页</a></li>
+<li class='pageRemark'>共<b>2</b>页 <b>18</b>条数据</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+<!--FOOTER S-->
+<footer class="footer" style="background:url(images/foot-bj.jpg) no-repeat center top;">
+	<div class="textMian">
+    	<div class="content">
+        	<div class="left">
+            	<ul>
+                	<h2>关于我们</h2>
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">诚聘英寸</a></li>
+                </ul>
+                <ul>
+                	<h2>体现充值</h2>
+                    <li><a href="">如何充值</a></li>
+                    <li><a href="">如何提现</a></li>
+                    <li><a href="">收费标准</a></li>
+                </ul>
+                <ul>
+                	<h2>服务流程</h2>
+                    <li><a href="">购买流程</a></li>
+                    <li><a href="">出售流程</a></li>
+                    <li><a href="">寄出流程</a></li>
+                </ul>
+                <ul>
+                	<h2>安全保障</h2>
+                    <li><a href="">店铺转让保证</a></li>
+                    <li><a href="">担保交易</a></li>
+                    <li><a href="">合同如何签写</a></li>
+                </ul>
+                <ul>
+                	<h2>帮助中心</h2>
+                    <li><a href="">买家帮助</a></li>
+                    <li><a href="">卖家帮助</a></li>
+                    <li><a href="">隐私保护</a></li>
+                </ul>
+                <ul>
+                	<h2>客服中心</h2>
+                    <li><a href="">客服咨询</a></li>
+                    <li><a href="">建议中心</a></li>
+                    <li><a href="">在线回答</a></li>
+                </ul>
+            </div>
+            <div class="right">
+            	<div class="fewm">
+                	<img src="images/ewm1.png" alt="">
+                    <span>微信二维码</span>
+                </div>
+                <div class="fewm" style="margin-right:38px;">
+                	<img src="images/ewm2.png" alt="">
+                    <span>公众号二维码</span>
+                </div>
+            </div>
+        </div>
+        <div class="anquan">
+        	<a href=""><img src="images/aq1.png" alt=""></a>
+            <a href=""><img src="images/aq2.png" alt=""></a>
+            <a href=""><img src="images/aq3.png" alt=""></a>
+            <a href=""><img src="images/aq4.png" alt=""></a>
+        </div>
+        <div class="copyright">
+        	<p>总机：0571-63832281 &nbsp;&nbsp; 分机：XXX</p>
+            <p>工作时间：周一~周五 &nbsp; 9:00-17:00</p>
+            <p>Copyright &copy; 2019 XXX All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<!--FOOTER E-->
+
+
+</body>
+</html>
+    

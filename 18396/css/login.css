@@ -1,0 +1,188 @@
+﻿.page-login{
+	width:100%;
+	height:650px;
+	position:relative;
+	overflow:hidden;
+}
+.page-login .container{
+	width: 100wh; height: 90vh;
+	color: #fff;background: linear-gradient(-45deg, rgba(9,69,138,0.9), rgba(68,155,255,0.7), rgba(117,113,251,0.7), rgba(68,155,255,0.7), rgba(9,69,138,0.2));background-size: 400% 400%;-webkit-animation: Gradient 15s ease infinite;-moz-animation: Gradient 15s ease infinite;animation: Gradient 15s ease infinite;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+.page-login .container{width: 100%; height: 100%;}
+
+
+.page-login .main{
+	width:1200px;
+	height:650px;
+	margin:0 auto;
+	position:absolute;
+	top:0;
+	left:50%;
+	z-index:2;
+	margin:0 0 0 -600px;
+}
+
+.page-login .main .leftdiv{
+	width:800px;
+	height:540px;
+	float:left;
+	margin-top:55px;
+}
+
+.page-login .main .leftdiv h1{
+	width:100%;
+	height:80x;
+	display:block;
+	text-align:left;
+	font:45px/80px 'microsoft yahei';
+	color:#fff;
+	font-weight: bold;
+	margin-top:100px;
+	text-shadow:#666 0px 1px 2px;
+}
+.page-login .main .leftdiv p{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	display:block;
+	text-align:left;
+	font:18px/28px 'microsoft yahei';
+	color:#fff;
+	text-shadow:#000 0px 1px 0px;
+}
+.page-login .main .frame{
+	width:400px;
+	background: rgba(255,255,255, 0.8);
+	float:right;
+	margin-top:55px;
+}
+.page-login .main .reg{
+	height:530px;
+}
+.page-login .main .log{
+	height:380px;
+}
+.page-login .main .frame h2{
+	display:block;
+	width:320px;
+	height:40px;
+	text-align:left;
+	margin:30px auto 30px auto;
+	font:20px/40px 'microsoft yahei';
+	color:#333;
+	border-bottom:1px solid #999;
+}
+.page-login .main .frame .label{
+	display:block;
+	width:320px;
+	height:auto;
+	overflow:hidden;
+	margin:10px auto 0 auto;
+}
+.page-login .main .frame .label .input{
+	border:0;outline:none;
+	border:1px solid #ccc;
+	width:298px;
+	height:40px;
+	padding:0 10px;
+	font:15px/40px 'microsoft yahei';
+	color:#333;
+}
+.page-login .main .frame .label .input2{
+	border:0;outline:none;
+	border:1px solid #ccc;
+	width:140px;
+	height:40px;
+	float:left;
+	padding:0 10px;
+	font:15px/40px 'microsoft yahei';
+	color:#333;
+}
+.page-login .main .frame .label .getcode{
+	border:0;outline:none;
+	display:block;
+	float:right;
+	width:150px;
+	height:42px;
+	background-color:#F63C3C;
+	font:15px/42px 'microsoft yahei';
+	color:#fff;
+	border-radius:3px;
+	cursor:pointer;
+}
+.page-login .main .frame p{
+	display:block;
+	width:320px;
+	height:auto;
+	overflow:hidden;
+	font:14px/32px 'microsoft yahei';
+	color:#666;
+	margin:10px auto 10px auto;
+}
+.page-login .main .frame p a{color:#F30;}
+
+.page-login .main .frame .button{
+	border:0;outline:none;
+	width:320px;
+	display:block;
+	height:42px;
+	background-color:#F63C3C;
+	font:15px/42px 'microsoft yahei';
+	color:#fff;
+	border-radius:3px;
+	cursor:pointer;
+	margin:0 auto;
+}
+.page-login .main .frame .text{
+	display:block;
+	width:320px;
+	height:auto;
+	overflow:hidden;
+	font:14px/32px 'microsoft yahei';
+	color:#666;
+	margin:10px auto 10px auto;
+	text-align:right;
+}
+.page-login .main .frame .text a{color:#09F;}
+
+
+

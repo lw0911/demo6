@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+		<title>用户中心-委托采购</title>
+	</head>
+	<body>
+			<!-- 顶部 开始 -->
+	<div class="index_head1">
+		<div class="w1200 clearFloat">
+			<div class="head1_left fl">
+				<span>欢迎来到贵州肉交所!</span>
+				<a class="a1" href="javascript:;">立即登录</a>
+				<a class="a2" href="javascript:;">免费注册</a>
+			</div>
+			<div class="head1_right fr">
+				<a class="a1" href="javascript:;">我的账户</a>
+				<a class="a2">关注手机端</a>
+				<span class="sp1">客服热线：400-123-1213</span>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部 结束 -->
+	<!-- 头部logo 开始 -->
+	<div class="index_head2">
+		<div class="w1200 clearFloat">
+			<div class="head2_left fl">
+				<a href="index.html">
+					<img src="images/index1.png" />
+					<img src="images/index2.png" />
+				</a>
+			</div>
+			<div class="head2_right fr clearFloat">
+				<div class="sub_box clearFloat fl">
+					<div class="sub1 fl">
+						<span class="sp1">商品</span>
+						<div class="sub" style="display: none;">
+							<span>商品</span>
+							<span>供应</span>
+							<span>采购</span>
+						</div>
+					</div>
+					<input class="txt1 fl" type="text" name="keyword" placeholder="输入货品名称" id="keyword"  />
+					<input class="btn1 fr" type="button" value="搜索"  onclick="searchproduct();"/>
+				</div>
+				<div class="a1 fl" href="javascript:;">
+					<span>发布求购信息</span>
+					<dl class="a1_slide">
+						<dd><a href="javascript:;">发布供应信息</a></dd>
+						<dd><a href="javascript:;">发布采购信息</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 头部logo 结束 -->
+	<!-- 导航 开始 -->
+	<div class="index_nav">
+		<div class="w1200 clearFloat">
+			<div class="nav_left fl">
+				<div class="top1">
+					<span>产品分类</span>
+				</div>
+			</div>
+			<div class="nav_center fl">
+				<ul>
+					<li>
+						<a class="add_bg" href="wholesale.html">批发首页</a>
+					</li>
+					<li>
+						<a href="selected-Meat.html">精选肉类</a>
+					</li>
+					<li>
+						<a href="wholesale.html">供应大厅</a>
+					</li>
+					<li>
+						<a href="buy-information.html">采购大厅</a>
+					</li>
+					<li>
+						<a href="market-condition.html">市场行情</a>
+					</li>
+					<li>
+						<a href="industry-new.html">行业资讯</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav_right fr">
+				<div class="top3"><a href="javascript:;"><img src="images/index7.png" />委托采购</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- 导航 结束 -->
+	<!--内容 开始-->
+	<div class="u_releasebuy_body">
+	<!--左侧 开始-->
+		<div class="u_releasebuy">
+			<div class="u_releasebuy_left">
+			
+			</div>
+	<!--左侧 结束-->
+	<!--右侧 开始-->
+			<div class="u_releasebuy_right">
+				<div class="u_releasebuy_r_top">
+					<ul class="u_releasebuy_card">
+						<li>已发布 （<span>0</span>）</li>
+						<li>审核中 （<span>0</span>）</li>
+					</ul>
+					<button>新增委托采购</button>
+				</div>
+				<div class="u_releasebuy_r_sel">
+					<div class="u_releasebuy_r_out">
+						<select name="">
+							<option value="">行业分类</option>
+							<option value="">1</option>
+							<option value="">2</option>
+						</select>
+						<input type="text" />
+						<button>搜索</button><button>重置</button>
+					</div>
+				</div>
+				<ul class="u_releasebuy_r_list">
+					<li>
+						<ul class="u_releasebuy_r_content u_releasebuy_first">
+							<li class="u_releasebuy_list1"><input type="checkbox" name="" id="" value=""/></li>
+							<li class="u_releasebuy_list2">采购产品名称</li>
+							<li class="u_releasebuy_list3">所属类型</li>
+							<li class="u_releasebuy_list4">跟新时间</li>
+							<li class="u_releasebuy_list5">发布时间</li>
+							<li class="u_releasebuy_list6">操作管理</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="u_releasebuy_r_content">
+							<li class="u_releasebuy_list1"></li>
+							<li class="u_releasebuy_list2">急购贵州黑毛猪肉</li>
+							<li class="u_releasebuy_list3">猪肉</li>
+							<li class="u_releasebuy_list4">2017年10月20日</li>
+							<li class="u_releasebuy_list5">2017年10月20日</li>
+							<li class="u_releasebuy_list6 u_releasebuy_caozuo">
+								<div class="u_releasebuy_a">
+									<a href="javascript:;">修改</a>
+									<a href="javascript:;">刷新</a>
+									<a href="javascript:;">详情</a>
+									<a href="javascript:;">删除</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="u_releasebuy_r_content">
+							<li class="u_releasebuy_list1"></li>
+							<li class="u_releasebuy_list2">急购贵州黑毛猪肉</li>
+							<li class="u_releasebuy_list3">猪肉</li>
+							<li class="u_releasebuy_list4">2017年10月20日</li>
+							<li class="u_releasebuy_list5">2017年10月20日</li>
+							<li class="u_releasebuy_list6 u_releasebuy_caozuo">
+								<div class="u_releasebuy_a">
+									<a href="javascript:;">修改</a>
+									<a href="javascript:;">刷新</a>
+									<a href="javascript:;">详情</a>
+									<a href="javascript:;">删除</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="u_releasebuy_r_content">
+							<li class="u_releasebuy_list1"></li>
+							<li class="u_releasebuy_list2">急购贵州黑毛猪肉</li>
+							<li class="u_releasebuy_list3">猪肉</li>
+							<li class="u_releasebuy_list4">2017年10月20日</li>
+							<li class="u_releasebuy_list5">2017年10月20日</li>
+							<li class="u_releasebuy_list6 u_releasebuy_caozuo">
+								<div class="u_releasebuy_a">
+									<a href="javascript:;">修改</a>
+									<a href="javascript:;">刷新</a>
+									<a href="javascript:;">详情</a>
+									<a href="javascript:;">删除</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="u_releasebuy_r_content">
+							<li class="u_releasebuy_list1"></li>
+							<li class="u_releasebuy_list2">急购贵州黑毛猪肉</li>
+							<li class="u_releasebuy_list3">猪肉</li>
+							<li class="u_releasebuy_list4">2017年10月20日</li>
+							<li class="u_releasebuy_list5">2017年10月20日</li>
+							<li class="u_releasebuy_list6 u_releasebuy_caozuo">
+								<div class="u_releasebuy_a">
+									<a href="javascript:;">修改</a>
+									<a href="javascript:;">刷新</a>
+									<a href="javascript:;">详情</a>
+									<a href="javascript:;">删除</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="u_releasebuy_r_content">
+							<li class="u_releasebuy_list1"></li>
+							<li class="u_releasebuy_list2">急购贵州黑毛猪肉</li>
+							<li class="u_releasebuy_list3">猪肉</li>
+							<li class="u_releasebuy_list4">2017年10月20日</li>
+							<li class="u_releasebuy_list5">2017年10月20日</li>
+							<li class="u_releasebuy_list6 u_releasebuy_caozuo">
+								<div class="u_releasebuy_a">
+									<a href="javascript:;">修改</a>
+									<a href="javascript:;">刷新</a>
+									<a href="javascript:;">详情</a>
+									<a href="javascript:;">删除</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="u_releasebuy_r_content">
+							<li class="u_releasebuy_list1"></li>
+							<li class="u_releasebuy_list2">急购贵州黑毛猪肉</li>
+							<li class="u_releasebuy_list3">猪肉</li>
+							<li class="u_releasebuy_list4">2017年10月20日</li>
+							<li class="u_releasebuy_list5">2017年10月20日</li>
+							<li class="u_releasebuy_list6 u_releasebuy_caozuo">
+								<div class="u_releasebuy_a">
+									<a href="javascript:;">修改</a>
+									<a href="javascript:;">刷新</a>
+									<a href="javascript:;">详情</a>
+									<a href="javascript:;">删除</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="u_releasebuy_r_content">
+							<li class="u_releasebuy_list1"></li>
+							<li class="u_releasebuy_list2">急购贵州黑毛猪肉</li>
+							<li class="u_releasebuy_list3">猪肉</li>
+							<li class="u_releasebuy_list4">2017年10月20日</li>
+							<li class="u_releasebuy_list5">2017年10月20日</li>
+							<li class="u_releasebuy_list6 u_releasebuy_caozuo">
+								<div class="u_releasebuy_a">
+									<a href="javascript:;">修改</a>
+									<a href="javascript:;">刷新</a>
+									<a href="javascript:;">详情</a>
+									<a href="javascript:;">删除</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="u_releasebuy_all">
+						<input type="checkbox" name="" id="" value="" />
+						<button>批量下架</button>
+						<button>删除选中</button>
+					</li>
+				</ul>
+				<p class="u_releasebuy_suomin">无需重复发送相同内容，点击刷新后使前台显示靠前</p>
+			</div>
+	<!--右侧 结束-->
+		</div>
+	</div>
+	<!--内容 结束-->
+	<!-- 底部 开始 -->
+	<div class="foot">
+		<div class="foot1">
+			<div class="w1200 clearFloat">
+				<div class="det fl">
+					<div class="tit"><img src="images/index38.png" /><span>关于我们</span></div>
+					<ul>
+						<li><a href="javascript:;">公司介绍</a></li>
+						<li><a href="javascript:;">联系我们</a></li>
+						<li><a href="javascript:;">合作邀请</a></li>
+					</ul>
+				</div>
+				<div class="det fl">
+					<div class="tit"><img src="images/index39.png" /><span>我要采购</span></div>
+					<ul>
+						<li><a href="javascript:;">如何发布供货信息</a></li>
+						<li><a href="javascript:;">如何发布采购信息</a></li>
+						<li><a href="javascript:;">如何委托交易</a></li>
+					</ul>
+				</div>
+				<div class="det fl">
+					<div class="tit"><img src="images/index40.png" /><span>帮助中心</span></div>
+					<ul>
+						<li><a href="javascript:;">注册流程</a></li>
+						<li><a href="javascript:;">无法登陆/忘记密码</a></li>
+						<li><a href="javascript:;">修改账号信息</a></li>
+					</ul>
+				</div>
+				<div class="det det4 fl">
+					<div class="tit"><img src="images/index41.png" /><span>关注我们</span></div>
+					<div class="erma">
+						<img src="images/index42.png" />
+						<p>关注微信公众号</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot2">
+			<div class="w1200 clearFloat">
+				<div class="link">
+					<a href="javascript:;">网站首页</a>|
+					<a href="javascript:;">公司介绍</a>|
+					<a href="javascript:;">联系我们</a>|
+					<a href="javascript:;">合作邀请</a>|
+					<a href="javascript:;">资质证件</a>|
+					<a href="javascript:;">商城入驻</a>|
+					<a href="javascript:;">基本帮助</a>
+				</div>
+				<div class="copy">COPYRIGHT © 贵州肉交所 版权所有 贵州黔牧出山农牧科技有限公司 联系电话：<a href="javascript:;">XXX</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 结束 -->
+	</body>
+</html>
+<script>
+	//搜索
+	 function searchproduct(){
+	   var keyword = document.getElementById("keyword").value;
+	   if(keyword == undefined || keyword==null ||keyword ==""){
+	     alert("请输入关键字！");
+	     return false;
+	   }
+	   document.getElementById("searchform").submit();
+	}
+</script>

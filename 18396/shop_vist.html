@@ -1,0 +1,817 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网店详情</title>
+<meta name="keywords" content="天猫入驻"/>
+<meta name="description" content="天猫入驻"/>
+<meta name="author" content="huaiyustu.cn" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
+<context:component-scan base-package="com.th.action"></context:component-scan>
+<mvc:default-servlet-handler/>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/shop.css" rel="stylesheet" type="text/css">
+<link href="css/iconfont/Rjdaoico.css" rel="stylesheet" type="text/css">
+<!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--图片延迟加载 S-->
+<script src="js/lyz.delayLoading.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+	$("img").delayLoading({
+		defaultImg: "images/picture-loading.jpg",           // 预加载前显示的图片
+		errorImg: "images/picture-loading.jpg",                        // 读取图片错误时替换图片(默认：与defaultImg一样)
+		imgSrcAttr: "originalSrc",           // 记录图片路径的属性(默认：originalSrc，页面img的src属性也要替换为originalSrc)
+		beforehand: 0,                       // 预先提前多少像素加载图片(默认：0)
+		event: "scroll",                     // 触发加载图片事件(默认：scroll)
+		duration: "5000",                  // 三种预定淡出(入)速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认:"normal"
+		container: window,                   // 对象加载的位置容器(默认：window)
+		success: function (imgObj) { },      // 加载图片成功后的回调函数(默认：不执行任何操作)
+		error: function (imgObj) { }         // 加载图片失败后的回调函数(默认：不执行任何操作)
+	});
+});
+</script>
+<!--图片延迟加载 E-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.countUp.js"></script>
+<!--幻灯片 S-->
+<link rel="stylesheet" href="css/responsiveslides.css">
+<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	// Slideshow 
+	$("#slider").responsiveSlides({
+		auto: true,
+		pager: false,
+		nav: true,
+		speed: 500,
+		timeout:4000,
+		pager: true, 
+		pauseControls: true,
+		namespace: "callbacks"
+	});
+});
+</script>
+<!--幻灯片 E-->
+<!--下拉动画-->
+<link rel="stylesheet" href="wow/animate.min.css"/>
+<script type="text/javascript" src="wow/wow.min.js"></script>
+<script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		new WOW().init();
+	};
+	$(function(){
+		
+	});
+</script>
+<!--下拉动画-->
+</head>
+
+<body>
+
+<!--HEADER S-->
+<header class="header">
+	<div class="container">
+    	<div class="tel"><span>全国热线：</span><em>400-0000-000</em></div>
+        <a class="kefu"><i class="icon-ee1b"></i><span>在线客服</span></a>
+        <div class="right">
+        	<div class="login">
+            	<a href="login.html">登录</a><em></em>
+                <a href="regist.html">注册</a>
+            </div>
+        	<div class="option">
+            	<a href="chushou_shop.html" class="h2">快速出售网店</a><em></em>
+            	<a href="">真假客服验证</a><em></em>
+                <a href="">用户中心</a><em></em>
+                <a href="">在线问答</a><em></em>
+                <a href="">帮助</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="top-search">
+    	<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        <a href="/" class="logo wow flipInY"><img src="images/logo2.png" alt=""></a>
+        <div class="search-box">
+            <div class="select">
+            	<span id="serachValue">天猫商城</span>
+                <input id="serachClass" type="hidden" name="serachClass" value="1">
+            	<ul class="select-list">
+                    <li id="Se-shangcheng" value="1">天猫商城</li>
+                    <li id="Se-qita" value="2">其他商城</li>
+                    <li id="Se-xindian" value="3">天猫新店</li>
+                </ul>
+                <i class="icon-eedb jian"></i>
+                <em></em>
+                <div id="serachKeyInfo" class="wow zoomIn"><i class="icon-eed7"></i><dl>搜索关键词不能为空</dl></div>
+            </div>
+            <input type="text" class="serachKey" placeholder="请输入关键词，如：女装，母婴" id="serachKey" />
+            
+            <div class="searchbtn" id="serachText"><i class="icon-ef61"></i></div>
+        </div>
+        <div class="hotkey">
+            <span>本周热搜：</span>
+            <a href="">3C数码 </a>
+            <a href="">服饰鞋包 </a>
+        </div>
+        <div class="right">
+        	<a href="" class="seal">
+                <img src="images/DAJ-seal.png" id="showImg" />
+            </a>
+            <div class="person">
+            	<i class="icon-ef54 userico"></i>
+                <em></em>
+                <div class="person-select">
+                	<h2>我的XXX</h2>
+                </div>
+                <div class="person-option">
+                      <p>
+                          <span>您好，</span>
+                          <a href="login.html" class="p-login">请登录</a>
+                          <a href="regist.html" class="p-regist">注册</a>
+                      </p>
+                      <div class="con">
+                      <a href="user.html" class="ui">我购买的网店</a>
+                      <a href="" class="ui">我出售的网店</a>
+                      <a href="" class="ui">我收藏的网店</a>
+                      <a href="" class="ui">我要出售网店</a>
+                      <a href="" class="ui">账号充值</a>
+                      <a href="" class="ui">资金提现</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<nav class="nav">
+	<div class="con">
+    	<div class="topmain">
+        
+        	<div class="mainnav">
+            	<div class="mv-but">
+                	<span>热门网店类目</span>
+                    <i class="icon-eeee lumn"></i>
+                </div>
+                <div class="column">
+                	<ul>
+                    	<li><i><img src="images/ci1.png" alt=""></i><a href="">服饰配件/皮带/帽子/围巾</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">奶粉/辅食/营养品/零食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">彩妆/香水/美妆工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">零食/坚果/特产</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">数码相机/单反相机/摄像机</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">书籍/杂志/报纸工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">运动/瑜伽/健身/球迷用品</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">汽车/用品/配件/改装</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">餐饮美食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">珠宝/钻石/翡翠/黄金</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">影音电器</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">居家日用</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">家装主材</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">流行男鞋</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">OTC药品/医疗器械/计生用品</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sonclass">
+            	<a href="index.html"><span>首页</span></a>
+                <a href="ruzhu.html"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+                <a href="shop_list.html"><span>优选天猫商城<div class="hotico"><img src="images/new.png" alt=""></div></span></a>
+                <a href="daiyunying.html"><span>天猫代运营</span></a>
+                <a href="gujia.html"><span>网店估价</span></a>
+                <a href="web.html"><span>网站搭建</span></a>
+                <a href="shangbiao.html"><span>商标服务</span></a>
+                <a href="zhixin.html"><span>知心购店</span></a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+<!--HEADER E-->
+<!--副导航 S-->
+<div id="SubHeader">
+	<div class="main">
+		<a href="" class="logo"><img src="images/logo-sub.png" alt=""></a>
+        <div class="mnav">
+        	<a href="" class="son"><span>首页</span></a>
+            <a href="" class="son"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+            <a href="" class="son"><span>优选天猫商城</span><div class="hotico"><img src="images/new.png" alt=""></div></a>
+            <a href="" class="son"><span>天猫代运营</span></a>
+            <a href="" class="son"><span>网店估价</span></a>
+            <a href="" class="son"><span>网站搭建</span></a>
+            <a href="" class="son"><span>商标服务</span></a>
+            <a href="" class="son"><span>知心购店</span></a>
+            <div class="stel"><span>全国热线：</span><em>400-0000-000</em></div>
+        </div>
+    </div>
+</div>
+<!--副导航 E-->
+
+
+<div class="cur-location">
+	<i class="icon-edf4"></i><a>XXX</a><dl>></dl><a>优选天猫</a><dl>></dl><a>网店详情</a>
+</div>
+
+
+
+
+<div class="ly-dshopMsg">
+
+	<div class="ly-l">
+    	<a href="" class="pic"><img src="images/s1.png" alt=""></a>
+        <div class="info">
+        	<div class="title"><i class="t"></i><h1>华东地区女装旗舰店无贷款无扣分月考核全部达标诚意出售 核全部达标诚意出售</h1></div>
+            <div class="time">
+            	<dt>2019-07-23 13:33 更新 185次预览</dt>
+                <img src="images/baozhengj.png">
+                <img src="images/shouhou.png">
+                <span><i class="icon-ee69 cur"></i><em class="cur">已收藏</em></span>
+                <span><i class="icon-ee69"></i><em>收藏</em></span>
+            </div>
+            <div class="price"><span>售价</span><em>￥52.3万</em></div>
+            <div class="label">
+            	<span>无贷款</span>
+                <span>无扣分</span>
+                <span>商标公司名下</span>
+            </div>
+            <div class="num"><dl>网店编号 </dl><em>132083335829605090</em></div>
+            <div class="type">
+            	<h2><dl>网店类型</dl><span>旗舰店</span></h2>
+                <h2><dl>商标类型</dl><span>R商标</span></h2>
+                <h2><dl>经营类目</dl><span>服饰鞋包</span></h2>
+                <h2><dl>纳税类型</dl><span>一般纳税人</span></h2>
+            </div>
+        </div>
+        <div class="text">
+        	<ul class="left">
+            	<li class="i1">极速匹配</li>
+                <li class="i2">专属客服</li>
+                <li class="i3">交易随行</li>
+                <li class="i4">服务升级</li>
+                <li class="i5">实地付款</li>
+                <li class="i6">免过户费</li>
+                <li class="i7">极速退款</li>
+                <li class="i8">全额赔付</li>
+            </ul>
+            <ul class="right">
+            	<li><dl>一级类目</dl><dd>服饰配件/皮带/帽子/围巾,女装/女士精品</dd></li>
+                <li><dl>商标类别</dl><dd>25类商标</dd></li>
+            </ul>
+        </div>
+        <div class="purchase">
+        	<a href="payment.html" class="but">立即购买</a>
+        </div>
+    </div>
+    
+    <div class="ly-r">
+    	<div class="gfkefu">
+        	<h2>官方客服</h2>
+            <div class="neir">
+            	<img src="images/user-p.jpeg" alt="">
+                <p>服务顾问：许潇翔</p>
+                <a href="" class="but br2"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                <a href="" class="but br1"><i class="icon-eebf"></i><span>18049424662</span></a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="ly-Nav">
+	<ul>
+    	<li><i class="icon-ee4c cur"></i><span class="cur">网店信息</span><dl class="cur-bc"></dl></li>
+        <li><i class="icon-ecd1"></i><span>网店截图</span><dl></dl></li>
+        <li><i class="icon-ecb2"></i><span>测评报告</span><dl></dl></li>
+        <li><i class="icon-bb56"></i><span>服务保障</span><dl></dl></li>
+    </ul>
+</div>
+
+<div class="ly-title">网店信息</div>
+
+
+
+<div class="ly-dcShopmsg">
+
+<div class="ly-dcsCommont">
+    <div></div>
+    <div>基本信息</div>
+</div>
+
+<table class="ly-dscTable1">
+<tr>
+    <td>网店编号</td>
+    <td colspan="3">132083335829605090</td>
+    <td>店铺类型</td>
+
+    <td colspan="3">旗舰店</td>
+</tr>
+<tr>
+    <td>经营类目</td>
+    <td>服饰鞋包</td>
+    <td>商标类型</td>
+    <td>R商标</td>
+    <td>一般违规</td>
+    <td>0</td>
+    <td>宝贝与描述相符</td>
+
+    <td class="ly-dscGreen">4.* 低于平均水平  &nbsp; &darr;</td>
+</tr>
+<tr>
+    <td>所在地区</td>
+    <td>华东地区</td>
+    <td>消保金</td>
+    <td>110000</td>
+    <td>严重违规</td>
+    <td>0</td>
+    <td>卖家的服务态度</td>
+
+    <td class="ly-dscRed">4.* 高出平均水平  &nbsp; &uarr;</td>
+</tr>
+<tr>
+    <td>收藏人气</td>
+    <td>20000</td>
+    <td>创店时间</td>
+    <td>2013年</td>
+    <td>售假违规</td>
+    <td>0</td>
+    <td>卖家的发货速度</td>
+
+    <td class="ly-dscGreen">4.* 低于平均水平  &nbsp; &darr;</td>
+</tr>
+<tr>
+    <td>商标类别</td>
+    <td colspan="3" title="25类商标">25类商标</td>
+    <td>一级类目 </td>
+    <td colspan="3" title="服饰配件/皮带/帽子/围巾,女装/女士精品">服饰配件/皮带/帽子/围巾,女装/女士精品</td>
+</tr>
+</table>
+
+<div class="ly-dcsCommont">
+<div></div>
+<div>公司信息</div>
+</div>
+<table class="ly-dscTable1">
+<tr>
+    <td>公司类型</td>
+    <td>个人独资企业</td>
+    <td>公司经营状态</td>
+    <td>存续</td>
+    <td>注册资本</td>
+    <td>/</td>
+    <td>股东人数</td>
+    <td>/</td>
+</tr>
+<tr>
+    <td>公司成立时间</td>
+    <td>2011年</td>
+    <td>纳税类型</td>
+    <td>一般纳税人</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+
+<div class="ly-dcsCommont">
+<div></div>
+<div>商标信息</div>
+</div>
+<table class="ly-dscTable1">
+<tr>
+    <td>商标类型</td>
+    <td>R商标</td>
+    <td>商标归属</td>
+    <td>公司名下</td>
+    <td>归属类型</td>
+    <td>自有商标</td>
+    <td>商标是否过户</td>
+    <td>过户</td>
+</tr>
+<tr>
+    <td>商标是否可贴牌</td>
+    <td>可贴牌</td>
+    <td>申请时间</td>
+    <td>2011年</td>                   
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+
+
+</div>
+
+
+<div class="ly-title">网店截图</div>
+<div class="ly-wdjietu">
+<div id="flash">
+     <div id="prev"></div>
+     <div id="next"></div>
+	 <ul id="play">
+	 	<li style="display: block;"><img src="images/jt1.png" alt="" /></li>
+	 	<li><img src="images/jt2.png" alt="" /></li>
+	 	<li><img src="images/jt3.png" alt="" /></li>
+	 	<li><img src="images/jt4.png" alt="" /></li>
+	 	<li><img src="images/jt5.png" alt="" /></li>
+	 	<li><img src="images/jt6.png" alt="" /></li>
+	 </ul>
+	 <ul id="button" style=" display:none;">
+	 	<li><div style="background: #A10000;"></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 	<li><div></div></li>
+	 </ul>
+ </div>
+
+</div>
+
+
+
+
+<div class="ly-title">测评报告</div>
+<div class="ly-pingce">
+<img originalsrc="images/4e7a5e5b-3467-4f1b-9b0c-8ba9ebb66a59.png" alt="">
+</div>
+
+
+<div class="ly-title">卖家描述</div>
+<div class="ly-maijia">
+	<i class="icon-ef5c"></i>
+    <div class="info">
+    	<p>XXX有话对您说：</p>
+        <p>签约前:  精准匹配您的要求，多站在您的角度考虑问题（相信我们的专业与能力）</p>
+        <p>签约中：见面签署三方合同保障您的利益，交易随行服务。（相信我们的服务与品质）</p>
+        <p>签约后：负责后续三证和银行账户变更的督办工作，确保安全无误过户成功。（相信我们的售后与坚持）</p>
+        <p><img originalsrc="images/4e7a5e5b-3467-4f1b-9b0c-8ba9ebb66a59.png" alt=""></p>
+        <p>我有话对您说：</p>
+        <p>我常常换位思考，如果我需要买一个店铺，我会担心哪些，</p>
+        <p>所以我希望我能多站在您的角度考虑问题</p>
+    </div>
+</div>
+
+<div class="ly-title">服务保障</div>
+<div class="ly-fuwu">
+	<ul class="left">
+    	<li>
+        	<i class="icon-ee0b"></i>
+            <div class="txt">
+            	<em>Service experience</em>
+                <h2>服务体验</h2><dl></dl>
+                <p>专属顾问跟踪服务，工作期间10分钟内未回复客户消息， 或对服务人员态度不满意，现金赔付。</p>
+            </div>
+        </li>
+        <li>
+        	<i class="icon-ef46"></i>
+            <div class="txt">
+            	<em>Give compensation</em>
+                <h2>为我们的失误买单</h2><dl></dl>
+                <p>网店交易服务期间，若网店类目匹配错误，导致买家不能 正常发布宝贝，全额赔付！</p>
+            </div>
+        </li>
+        <li>
+        	<i class="icon-ef37"></i>
+            <div class="txt">
+            	<em>Free</em>
+                <h2>免过户费</h2><dl></dl>
+                <p>在XXX购店金额超过10万，网店过户时，由XXX承担全部过户手续费，让您交易更舒心。</p>
+            </div>
+        </li>
+        <li>
+        	<i class="icon-ec92"></i>
+            <div class="txt">
+            	<em>Service upgrading</em>
+                <h2>服务升级</h2><dl></dl>
+                <p>网店交易结束后，免费为您提供五款产品美工设计和专业的 运营指导服务。</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="right">
+    	<li>
+        	<i class="icon-edb2"></i>
+            <div class="txt">
+            	<em>Fast matching</em>
+                <h2>网店急速匹配</h2><dl></dl>
+                <p>支付网店交易定金后，3个工作日内完成网店匹配。若匹 配失败，现金赔付。</p>
+            </div>
+        </li>
+        <li>
+        	<i class="icon-e988"></i>
+            <div class="txt">
+            	<em>Face to face</em>
+                <h2>实地付款</h2><dl></dl>
+                <p>XXX全国多家公司就地考察（接机、专车接送、五星酒店入住等），全程凭票免单，实地付款，安心更放心。</p>
+            </div>
+        </li>
+        <li>
+        	<i class="icon-ed3b"></i>
+            <div class="txt">
+            	<em>Trade accompanying</em>
+                <h2>交易随行</h2><dl></dl>
+                <p>无论去哪交易，XXX天猫外访部同事随时待命出发，全程 协助您办理过户手续，助您交易无忧。资金安全不放心？店 安家当面付你钱！</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="bannerWide"><img originalsrc="images/ly-purchase.png" alt=""></div>
+
+
+
+<div class="ly-title">推荐网店</div>
+<div class="ly-shoplist">
+    	<!--Item S-->
+        <div class="item">
+        	<div class="recommend"></div>
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    <h3 class="w4"><span class="lw4">日均访客量</span><dl class="rw4">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    <h3 class="w4"><span class="lw4">平均客单价</span><dl class="rw4">152</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    <h3 class="w4"><span class="lw4">自然搜索流量</span><dl class="rw4">25</dl></h3>
+                    
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+        	<div class="recommend"></div>
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    <h3 class="w4"><span class="lw4">日均访客量</span><dl class="rw4">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    <h3 class="w4"><span class="lw4">平均客单价</span><dl class="rw4">152</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    <h3 class="w4"><span class="lw4">自然搜索流量</span><dl class="rw4">25</dl></h3>
+                    
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+        	<div class="recommend"></div>
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    <h3 class="w4"><span class="lw4">日均访客量</span><dl class="rw4">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    <h3 class="w4"><span class="lw4">平均客单价</span><dl class="rw4">152</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    <h3 class="w4"><span class="lw4">自然搜索流量</span><dl class="rw4">25</dl></h3>
+                    
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+        <!--Item S-->
+        <div class="item">
+        	<div class="recommend"></div>
+            <div class="picinfo">
+            	<img src="images/s1.png" alt="">
+                <span>￥16.7万</span>
+            </div>
+            <div class="textinfo">
+            	<a href="shop_vist.html" class="title"><i></i><h2>华北地区的玩具母婴专营店店铺优质哦欢迎来谈</h2></a>
+                <div class="class"><span>一级类目：</span>服饰配件/皮带/帽子/围巾,女装/女士精品</div>
+                <div class="list">
+					<h3 class="w1"><span class="lw1">商城类型</span><dl class="rw1">旗舰店</dl></h3>
+                    <h3 class="w2"><span class="lw2">网店行业级别</span><dl class="rw2">第一层级</dl></h3>
+                    <h3 class="w3"><span class="lw3">月销售额</span><dl class="rw3">4396</dl></h3>
+                    <h3 class="w4"><span class="lw4">日均访客量</span><dl class="rw4">4396</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">经营类目</span><dl class="rw1">经营类目</dl></h3>
+                    <h3 class="w2"><span class="lw2">续签考核情况</span><dl class="rw2">第一阶段考核中</dl></h3>
+                    <h3 class="w3"><span class="lw3">日均访客量</span><dl class="rw3">623</dl></h3>
+                    <h3 class="w4"><span class="lw4">平均客单价</span><dl class="rw4">152</dl></h3>
+                    
+                    <h3 class="w1"><span class="lw1">商标类型</span><dl class="rw1">R商标</dl></h3>
+                    <h3 class="w2"><span class="lw2">半年内5分好评率</span><dl class="rw2">90%</dl></h3>
+                    <h3 class="w3"><span class="lw3">平均客单价</span><dl class="rw3">210.00</dl></h3>
+                    <h3 class="w4"><span class="lw4">自然搜索流量</span><dl class="rw4">25</dl></h3>
+                    
+                </div>
+				<div class="butinfo">
+                	<div class="coll"><i class="icon-ee6d"></i><span>收藏此网店</span></div>
+                    <a href="shop_vist.html" class="qqkefu"><i class="icon-ee0f"></i><span>查看网店详情</span></a>
+                    <a href="" class="qqkefu"><i class="icon-ef96"></i><span>联系在线客服</span></a>
+                </div>
+            </div>
+        </div>
+        <!--Item E-->
+</div>
+
+
+
+
+
+<!--FOOTER S-->
+<footer class="footer" style="background:url(images/foot-bj.jpg) no-repeat center top;">
+	<div class="textMian">
+    	<div class="content">
+        	<div class="left">
+            	<ul>
+                	<h2>关于我们</h2>
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">诚聘英寸</a></li>
+                </ul>
+                <ul>
+                	<h2>体现充值</h2>
+                    <li><a href="">如何充值</a></li>
+                    <li><a href="">如何提现</a></li>
+                    <li><a href="">收费标准</a></li>
+                </ul>
+                <ul>
+                	<h2>服务流程</h2>
+                    <li><a href="">购买流程</a></li>
+                    <li><a href="">出售流程</a></li>
+                    <li><a href="">寄出流程</a></li>
+                </ul>
+                <ul>
+                	<h2>安全保障</h2>
+                    <li><a href="">店铺转让保证</a></li>
+                    <li><a href="">担保交易</a></li>
+                    <li><a href="">合同如何签写</a></li>
+                </ul>
+                <ul>
+                	<h2>帮助中心</h2>
+                    <li><a href="">买家帮助</a></li>
+                    <li><a href="">卖家帮助</a></li>
+                    <li><a href="">隐私保护</a></li>
+                </ul>
+                <ul>
+                	<h2>客服中心</h2>
+                    <li><a href="">客服咨询</a></li>
+                    <li><a href="">建议中心</a></li>
+                    <li><a href="">在线回答</a></li>
+                </ul>
+            </div>
+            <div class="right">
+            	<div class="fewm">
+                	<img src="images/ewm1.png" alt="">
+                    <span>微信二维码</span>
+                </div>
+                <div class="fewm" style="margin-right:38px;">
+                	<img src="images/ewm2.png" alt="">
+                    <span>公众号二维码</span>
+                </div>
+            </div>
+        </div>
+        <div class="anquan">
+        	<a href=""><img src="images/aq1.png" alt=""></a>
+            <a href=""><img src="images/aq2.png" alt=""></a>
+            <a href=""><img src="images/aq3.png" alt=""></a>
+            <a href=""><img src="images/aq4.png" alt=""></a>
+        </div>
+        <div class="copyright">
+        	<p>总机：0571-63832281 &nbsp;&nbsp; 分机：XXX</p>
+            <p>工作时间：周一~周五 &nbsp; 9:00-17:00</p>
+            <p>Copyright &copy; 2019 XXX All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<!--FOOTER E-->
+<script type="text/javascript">
+window.onload=function()
+{
+		 var oPlay=document.getElementById('play');
+		 var aLi=oPlay.getElementsByTagName('li');
+		 var oButton=document.getElementById('button');
+		 var aDiv=oButton.getElementsByTagName('div');
+		 var oPrev=document.getElementById('prev');
+		 var oNext=document.getElementById('next');
+		 var oFlash=document.getElementById('flash');
+		 var now=0;
+		 var timer2=null;
+		 for(var i=0; i<aDiv.length; i++) {
+		 	aDiv[i].index=i;
+		 	aDiv[i].onmouseover=function(){
+		 		if(now==this.index) return;
+		 		now=this.index;
+		 		tab();
+		 	}
+		 }
+		 oPrev.onclick=function(){
+		 	now--;
+		 	if(now==-1){
+		 		now=aDiv.length-1;
+		 	}
+		 	tab();
+		 }
+		 oNext.onclick=function(){
+		 	now++;
+		 	if(now==aDiv.length){
+		 		now=0;
+		 	}
+		 	tab();
+		 }
+		 oFlash.onmouseover=function()
+		{
+		    clearInterval(timer2);
+		}
+		 oFlash.onmouseout=function()
+		{
+			timer2=setInterval(oNext.onclick,4000);
+		}
+		 timer2=setInterval(oNext.onclick,5000);
+		 function tab(){
+		 	for(var i=0; i<aLi.length; i++){
+		 		aLi[i].style.display='none';
+		 	}
+		 	for(var i=0; i<aDiv.length; i++) {
+		 		aDiv[i].style.background="#DDDDDD";
+		 	}
+		 	aDiv[now].style.background='#A10000';
+		 	aLi[now].style.display='block';
+		 	aLi[now].style.opacity=0;
+		 	aLi[now].style.filter="alpha(opacity=0)";
+		 	jianbian(aLi[now]);
+		 }
+		function jianbian(obj){
+			var alpha=0;
+			clearInterval(timer);
+			var timer=setInterval(function(){
+				alpha++;
+				obj.style.opacity=alpha/100;
+				obj.style.filter="alpha(opacity="+alpha+")";
+				if(alpha==100) {
+					clearInterval(timer);
+				}
+			},10);
+		}
+}
+</script>
+
+</body>
+</html>
+    

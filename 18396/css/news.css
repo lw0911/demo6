@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+.news-main{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:20px auto 40px auto;
+}
+.news-main .left{
+	width:860px;
+	height:auto;
+	overflow:hidden;
+	float:left;
+}
+.news-main .left .item{
+	display:block;
+	width:860px;
+	height:auto;
+	overflow:hidden;
+	margin:14px auto;
+	padding-bottom:8px;
+	border-bottom:1px dotted #999;
+}
+.news-main .left .item .time{
+	display:block;
+	width:80px;
+	height:80px;
+	float:left;
+	margin-top:5px;
+}
+.news-main .left .item .time span{
+	display:block;
+	background-color:#956C38;
+	width:80px;
+	height:50px;
+	font:38px/50px 'microsoft yahei';
+	color:#fff;
+	text-align:center;
+	font-weight: bold;
+	border-bottom:1px solid #BA8441;
+	transition-duration:0.2s;
+}
+.news-main .left .item:hover .time span{
+	font:42px/50px 'microsoft yahei';
+}
+.news-main .left .item .time dl{
+	display:block;
+	background-color:#956C38;
+	width:80px;
+	height:29px;
+	font:14px/26px 'microsoft yahei';
+	color:#fff;
+	text-align:center;
+}
+.news-main .left .item .text{
+	display:block;
+	width:754px;
+	height:auto;
+	overflow:hidden;
+	float:right;
+}
+.news-main .left .item .text .title{
+	display:block;
+	width:100%;
+	height:46px;
+	font:24px/40px 'microsoft yahei';
+	color:#333;
+	text-align:left;
+	overflow:hidden;
+	transition-duration:0.2s;
+}
+.news-main .left .item .text .title:hover{
+	color:#F23A26;
+}
+.news-main .left .item .text span{
+	display:block;
+	width:100%;
+	height:auto;
+	max-height:66px;
+	overflow:hidden;
+	font:14px/22px 'microsoft yahei';
+	color:#777;
+}
+.news-main .left .item .text .info{
+	display:block;
+	width:754px;
+	height:40px;
+	float:right;
+}
+.news-main .left .item .text .info em{
+	display:block;
+	height:40px;
+	float:left;
+	overflow:hidden;
+	font:14px/38px 'microsoft yahei';
+	color:#777;
+}
+.news-main .left .item .text .info a{
+	display:block;
+	height:28px;
+	float:right;
+	margin-top:8px;
+	font:14px/28px 'microsoft yahei';
+	color:#444;
+	padding:0 15px;
+	background-color:#ddd;
+	transition-duration:0.2s;
+}
+.news-main .left .item:hover .text .info a{
+	margin-top:0px;
+}
+
+.news-main .left .newsvist{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+.news-main .left .newsvist h1{
+	display:block;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	font:26px/32px 'microsoft yahei';
+	color:#222;
+	text-align:center;
+	padding-bottom:15px;
+	padding-top:10px;
+	border-bottom:1px solid #ddd;
+}
+.news-main .left .newsvist .info{
+	width:98%;
+	height:26px;
+	margin:6px auto 0 auto;
+}
+.news-main .left .newsvist .info span{
+	display:block;
+	height:26px;
+	font:14px/26px 'microsoft yahei';
+	color:#666;
+}
+.news-main .left .newsvist .info span a{
+	font:14px/26px 'microsoft yahei';
+	color:#09F;
+}
+.news-main .left .newsvist .content{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin-top:20px;
+	text-align:left;
+	font:16px/24px 'microsoft yahei';
+	color:#333;
+}
+.news-main .left .newsvist .content p{
+	width:100%;
+	margin:8px 0;
+	font:16px/24px 'microsoft yahei';
+	color:#333;
+}
+.news-main .left .newsvist .content img{
+max-width:860px;
+height:auto;
+zoom:expression( function(elm)
+       {     if (elm.width>860) 
+               {  var oldVW = elm.width; elm.width=860;             
+                   elm.height = elm.height*(860 /oldVW);        
+                }         elm.style.zoom = '1';     
+      }
+(this));
+}
+
+.news-main .left .newsvist .content .newscoll{
+	width:160px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	text-align:center;
+}
+.news-main .left .newsvist .content .newscoll i{
+	display:block;
+	width:58px;
+	height:50px;
+	margin:20px auto 0 auto;
+	font-size:50px;
+	line-height:58px;
+	color:#999;
+	text-align:center;
+	cursor:pointer;
+	transition-duration:0.2s;
+}
+.news-main .left .newsvist .content .newscoll img{
+	display:block;
+	width:30px;
+	height:30px;
+	margin:20px auto 0 auto;
+}
+.news-main .left .newsvist .content i:hover{
+	font-size:58px;
+	color:#F95151;
+}
+.news-main .left .newsvist .content span{
+	display:block;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	font:15px/30px 'microsoft yahei';
+	color:#444;
+	text-align:center;
+}
+
+
+
+.news-main .right{
+	width:310px;
+	height:auto;
+	overflow:hidden;
+	float:right;
+}
+.news-main .right h2{
+	display:block;
+	width:100%;
+	height:40px;
+	border-top:4px solid #CF0610;
+	background-color:#fff;
+}
+.news-main .right h2 span{
+	display:block;
+	height:40px;
+	float:left;
+	margin-left:8px;
+	font:16px/40px 'microsoft yahei';
+	color:#444;
+	font-weight: bold;
+}
+.news-main .right h2 a{
+	display:block;
+	height:40px;
+	float:right;
+	margin-right:8px;
+	font:15px/40px 'microsoft yahei';
+	color:#777;
+}
+.news-main .right .newslist{
+	width:96%;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto 30px auto;
+}
+.news-main .right .newslist .title{
+	display:block;
+	width:100%;
+	height:38px;
+	transition-duration:0.2s;
+	border-bottom:1px solid #ddd;
+}
+.news-main .right .newslist .title dl{
+	display:block;
+	width:208px;
+	height:38px;
+	float:left;
+	overflow:hidden;
+	font:14px/38px 'microsoft yahei';
+	color:#555;
+	transition-duration:0.2s;
+}
+.news-main .right .newslist .title:hover dl{
+	color:#CF0610;
+}
+.news-main .right .newslist .title em{
+	display:block;
+	width:85px;
+	height:38px;
+	float:right;
+	overflow:hidden;
+	text-align:right;
+	font:13px/38px 'microsoft yahei';
+	color:#888;
+}
+
+/*==提示框==*/
+.TipsInfo{
+	width:600px;
+	height:auto;
+	padding:10px;
+	border:1px solid #FAAD94;
+	background-color:#fbe5dd;
+	margin:0 auto;
+	text-align:center;
+	font:14px/24px 'microsoft yahei';
+}
+.TipsInfo a{
+	color:#06F;
+}
+
+
+
+/*焦点图*/
+.news-focus{position:relative;width:860px;height:360px;margin:0px auto 0 auto; padding-bottom:10px;}  
+.news-focus img{width:860px;height:360px;} 
+.news-focus .shadow .title{width:260px;height:65px;padding-left:30px;padding-top:20px;}
+.news-focus .shadow .title a{text-decoration:none;color:#fff;font-size:14px;font-weight:bolder;overflow:hidden;}
+.news-focus .btn{position:absolute;bottom:34px;left:510px;overflow:hidden;zoom:1;} 
+.news-focus .btn a{position:relative;display:inline;width:13px;height:13px;border-radius:7px;margin:0 5px;color:#B0B0B0;font:12px/15px "\5B8B\4F53";text-decoration:none;text-align:center;outline:0;float:left;background:#D9D9D9;}  
+.news-focus .btn a:hover,.focus .btn a.current{cursor:pointer;background:#fc114a;}  
+.news-focus .fPic{position:absolute;left:0px;top:0px;}  
+.news-focus .D1fBt{overflow:hidden;zoom:1;height:16px;z-index:10;}  
+.news-focus .shadow{width:100%;position:absolute;bottom:0;left:0px;z-index:10;height:80px;line-height:80px;background:rgba(0,0,0,0.6);  
+filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#80000000',endColorstr = '#80000000')\9;display:block;text-align:left;}  
+.news-focus .shadow a{text-decoration:none;color:#fff;font-size:20px;overflow:hidden;margin-left:10px;font-family:"\5FAE\8F6F\96C5\9ED1";}  
+.news-focus .fcon{position:relative;width:100%;float:left;display:none;background:#000  }  
+.news-focus .fcon img{display:block;}  
+.news-focus .fbg{bottom:25px;right:40px;position:absolute;height:21px;text-align:center;z-index:200;}  
+.news-focus .fbg div{margin:4px auto 0;overflow:hidden;zoom:1;height:14px}    
+.news-focus .D1fBt a{position:relative;display:inline;width:12px;height:12px;border-radius:7px;margin:0 5px;color:#B0B0B0;font:12px/15px "\5B8B\4F53";text-decoration:none;text-align:center;outline:0;float:left;background:#D9D9D9;}    
+.news-focus .D1fBt .current,.focus .D1fBt a:hover{background:#fc114a;}    
+.news-focus .D1fBt img{display:none}    
+.news-focus .D1fBt i{display:none;font-style:normal;}    
+.news-focus .prev,.focus .next{position:absolute;width:40px;height:74px;background:url(../images/focus_btn.png) no-repeat;}
+.news-focus .prev{top:50%;margin-top:-37px;left:0;background-position:0 -74px;cursor:pointer;}  
+.news-focus .next{top:50%;margin-top:-37px;right:0;background-position:-40px -74px;cursor:pointer;}  
+.news-focus .prev:hover{background-position:0 0;}  
+.news-focus .next:hover{background-position:-40px 0;}  

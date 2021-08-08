@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="order by dede58.com"/><title>个人中心 - 商铺设置</title>
+<meta name="robots" content="nofollow"/>
+<meta name="generator" content="DESTOON B2B - www.destoon.com"/>
+<meta http-equiv="x-ua-compatible" content="IE=7"/>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="bookmark" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="http://chinahzp.wang/member/image/style.css"/>
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6.css"/>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css">
+.head_user em {margin:-4px 0 0 -4px;}
+#profile {margin:20px 0 0 -140px;}
+</style>
+<![endif]-->
+<script type="text/javascript">window.onerror= function(){return true;}</script><script type="text/javascript" src="js/lang.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/admin.js"></script>
+<script type="text/javascript" src="js/member.js"></script>
+</head>
+<body>
+<div id="msgbox" style="display:none;"></div>
+<div class="head" id="head">
+<div class="head_m">
+<div class="head_logo"><a href="member_index.html"><img src="http://chinahzp.wang/member/image/logo.png" alt="商务中心"/></a></div>
+<div class="head_main">
+<ul>
+<li class="menu_1" id="menu_0" onclick="c(0);">会员服务</li>
+<li class="menu_2" id="menu_1" onclick="c(1);">信息管理</li>
+<li class="menu_2" id="menu_2" onclick="c(2);">交易管理</li>
+<li class="menu_2" id="menu_3" onclick="c(3);">商铺管理</li>
+<li class="menu_2" onclick="Go('http://chinahzp.wang/');">网站首页</li>
+</ul>
+</div>
+<div class="head_user">
+<ul>
+<li onmouseover="Ds('profile');" onmouseout="Dh('profile');"><a href="avatar.php"><img src="http://chinahzp.wang/api/avatar/show.php?username=hjl416148489&amp;size=small" width="20" height="20" id="myavatar"/></a>
+<div id="profile" style="display:none;">
+<div>
+<dl>
+<dt><span class="f_r"><a href="edit.php"><img src="http://chinahzp.wang/member/image/setting.gif" width="10" height="10" align="absmiddle" title="资料设置"/></a></span>欢迎，<span class="f_black" title="hjl416148489">黄金</span> (<a href="line.php" title="点击隐身"><span class="f_green">在线</span></a>)</dt>
+<dt><a href="http://chinahzp.wang/m/hjl416148489/" target="_blank" title="江苏南京玄门网络科技"><span class="f_black">江苏南京玄门网络科技</span></a></dt>
+<dt><a href="record.php"><span class="f_black">RMB(0.00)</span></a> <span class="f_gray">|</span> 
+<a href="credit.php"><span class="f_black">硬币(30)</span></a></dt>
+</dl>
+</div>
+</div>
+</li>
+<li id="destoon_message"><a href="member_message.html">消息</a><em>1</em></li>
+<li id="destoon_chat"><a href="chat.php">对话</a></li><li><a href="logout.php?forward=">退出</a></li>
+</ul>
+
+</div>
+<div class="c_b"></div>
+</div>
+</div>
+<div class="head_s" id="destoon_space">&nbsp;</div>
+<div class="main_tb">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top" class="side" id="side">
+<div id="sub_0" style="display:">
+<div class="side_head" id="h_0"><div>会员服务</div></div>
+<div class="side_body" id="b_0">
+<ul>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="message"><span class="f_r"><a href="member_message.html?action=send" class="m">发信</a></span><a href="member_message.html" class="n">站内信件</a><em>1</em></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="chats"><span class="f_r"><a href="chat.php?action=add" class="m">查看</a></span><a href="chat.php" class="n">站内交谈</a></li>
+
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="friend"><span class="f_r"><a href="friend.php?action=add" class="m">添加</a></span><a href="friend.php" class="n">我的商友</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="favorite"><span class="f_r"><a href="favorite.php?action=add" class="m">添加</a></span><a href="favorite.php" class="n">商机收藏</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="alert"><span class="f_r"><a href="alert.php?action=add" class="m">添加</a></span><a href="alert.php" class="n">贸易提醒</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="mail"><span class="f_r"><a href="sendmail.php" class="m">电邮</a></span><a href="mail.php" class="n">邮件订阅</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="spread"><span class="f_r"><a href="spread.php?action=add" class="m">购买</a></span><a href="spread.php" class="n">排名推广</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="ad"><span class="f_r"><a href="ad.php?action=add" class="m">购买</a></span><a href="ad.php" class="n">广告预定</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="oauth"><span class="f_r"><a href="oauth.php" class="m">绑定</a></span><a href="oauth.php" class="n">一键登录</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="edit"><span class="f_r"><a href="avatar.php" class="m">头像</a></span><a href="edit.php" class="n">修改资料</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="ask"><span class="f_r"><a href="ask.php?action=add" class="m">提问</a></span><a href="ask.php" class="n">客服中心</a></li>
+</ul>
+</div>
+</div>
+<div id="sub_1" style="display:none">
+<div class="side_head" id="h_1"><div>信息管理</div></div>
+<div class="side_body" id="b_1">
+<ul>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);"  id="mid_5"><span class="f_r"><a href="my.php?mid=5&action=add" class="m">发布</a></span><a href="my.php?mid=5" class="n">找货源管理</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);"  id="mid_6"><span class="f_r"><a href="my.php?mid=6&action=add" class="m">发布</a></span><a href="my.php?mid=6" class="n">看求购管理</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);"  id="mid_8"><span class="f_r"><a href="my.php?mid=8&action=add" class="m">发布</a></span><a href="my.php?mid=8" class="n">展销会管理</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);"  id="mid_22"><span class="f_r"><a href="my.php?mid=22&action=add" class="m">发布</a></span><a href="my.php?mid=22" class="n">招代理管理</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);"  id="mid_13"><span class="f_r"><a href="my.php?mid=13&action=add" class="m">发布</a></span><a href="my.php?mid=13" class="n">品牌汇管理</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);"  id="mid_21"><span class="f_r"><a href="my.php?mid=21&action=add" class="m">发布</a></span><a href="my.php?mid=21" class="n">资讯圈管理</a></li>
+</ul>
+</div>
+</div>
+<div id="sub_2" style="display:none;">
+<div class="side_head" id="h_2"><div>交易管理</div></div>
+<div class="side_body" id="b_2">
+<ul>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="trade"><span class="f_r"><a href="member_order.html?action=order" class="m">买家</a></span><a href="member_order.html" class="n">我的订单</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="record"><span class="f_r"><a href="record.php?action=pay" class="m">站内</a></span><a href="record.php" class="n">RMB流水</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="charge"><span class="f_r"><a href="charge.php?action=pay" class="m">充值</a></span><a href="charge.php?action=record" class="n">充值记录</a></li>
+            <li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="cashcoupon"><span class="f_r"><a href="cashcoupon.php?action=add" class="m">添加</a></span><a href="cashcoupon.php" class="n">现金券管理</a></li>
+            <li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="coupon"><a href="coupon.php" class="n">优惠券管理</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="cash"><span class="f_r"><a href="cash.php" class="m">提现</a></span><a href="cash.php?action=record" class="n">RMB提现</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="credit"><span class="f_r"><a href="credit.php?action=buy" class="m">购买</a></span><a href="credit.php" class="n">硬币管理</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="addr"><span class="f_r"><a href="address.php?action=add" class="m">添加</a></span><a href="address.php" class="n">收货地址</a></li>
+</ul>
+</div>
+</div>
+<div id="sub_3" style="display:none;">
+<div class="side_head" id="h_3"><div>商铺管理</div></div>
+<div class="side_body" id="b_3">
+<ul>
+            <li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="homepage"><span class="f_r"><a href="http://chinahzp.wang/index.php?homepage=hjl416148489&update=1" class="m" target="_blank">预览</a></span><a href="home.php" class="n">商铺设置</a></li>
+                        <li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="home_coupon"><span class="f_r"><a href="home_coupon.php?action=home_add" class="m">添加</a></span><a href="home_coupon.php?action=home" class="n">优惠券设置</a></li>
+            <li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="style"><span class="f_r"><a href="style.php?action=view" class="m">查看</a></span><a href="style.php" class="n">模板设置</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="news"><span class="f_r"><a href="news.php?action=add" class="m">发布</a></span><a href="news.php" class="n">公司新闻</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="page"><span class="f_r"><a href="page.php?action=add" class="m">添加</a></span><a href="page.php" class="n">公司单页</a></li>
+<li class="side_a" onmouseover="v(this.id);" onmouseout="t(this.id);" id="honor"><span class="f_r"><a href="honor.php?action=add" class="m">添加</a></span><a href="honor.php" class="n">荣誉资质</a></li>
+</ul>
+</div>
+</div>
+</td>
+<td class="side_h" onclick="oh(this);" title="点击展开/隐藏侧栏" id="side_oh">&nbsp;</td>
+<td valign="top" class="main" id="main"><script type="text/javascript">c(3);</script>
+<div class="menu">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td class="tab" id="Tab0"><a href="javascript:Tab(0);"><span>常用设置</span></a></td>
+<td class="tab_nav">&nbsp;</td>
+<td class="tab" id="Tab1"><a href="javascript:Tab(1);"><span>导航菜单</span></a></td>
+<td class="tab_nav">&nbsp;</td>
+<td class="tab" id="Tab2"><a href="javascript:Tab(2);"><span>侧边栏</span></a></td>
+<td class="tab_nav">&nbsp;</td>
+<td class="tab" id="Tab3"><a href="javascript:Tab(3);"><span>首页设置</span></a></td>
+<td class="tab_nav">&nbsp;</td>
+<td class="tab" id="Tab4"><a href="javascript:Tab(4);"><span>其他设置</span></a></td>
+<td class="tab_nav">&nbsp;</td>
+</tr>
+</table>
+</div>
+<form method="post" action="home.php" id="dform">
+<input type="hidden" name="tab" id="tab" value="0"/>
+<div id="Tabs0" style="display:;">
+<table cellspacing="1" cellpadding="6" class="tb">
+<tr>
+<td class="tl">自定义背景色</td>
+<td class="tr f_gray"><input name="setting[bgcolor]" type="text" size="10" id="bgcolor" value=""/>&nbsp; 例如红色为 red 或者 #FF0000</td>
+</tr>
+<tr>
+<td class="tl">自定义背景图</td>
+<td class="tr"><input name="setting[background]" type="text" size="60" id="background" value="" readonly/>&nbsp;&nbsp;<span onclick="Dthumb(2,0,0, Dd('background').value, true, 'background');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="_preview(Dd('background').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('background').value='';" class="jt">[删除]</span></td>
+</tr>
+<tr>
+<td class="tl">自定义LOGO</td>
+<td class="tr"><input name="setting[logo]" type="text" size="60" id="logo" value="" readonly/>&nbsp;&nbsp;<span onclick="Dthumb(2,0,0, Dd('logo').value, true, 'logo');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="_preview(Dd('logo').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('logo').value='';" class="jt">[删除]</span></td>
+</tr>
+<tr>
+<td class="tl">自定义CSS</td>
+<td class="tr"><textarea name="setting[css]" id="css" style="width:500px;height:60px;overflow:visible;font-family:Fixedsys"></textarea></td>
+</tr>
+<tr>
+<td class="tl">横幅宽度</td>
+<td class="tr">
+<input type="text" size="5" name="setting[bannerw]" value="960" id="bannerw"/> px
+&nbsp;&nbsp;&nbsp;&nbsp;高度
+<input type="text" size="5" name="setting[bannerh]" value="200" id="bannerh"/> px
+</td>
+</tr>
+<tr>
+<td class="tl">横幅显示方式</td>
+<td class="tr">
+<input name="setting[bannert]" type="radio" id="bannert_0" value="0" checked onclick="Ds('bt_0');Dh('bt_1');Dh('bt_2');"/> <label for="bannert_0">图片</label>&nbsp;&nbsp;
+<input name="setting[bannert]" type="radio" id="bannert_1" value="1" onclick="Dh('bt_0');Ds('bt_1');Dh('bt_2');"/> <label for="bannert_1">Flash</label>&nbsp;&nbsp;
+<input name="setting[bannert]" type="radio" id="bannert_2" value="2" onclick="Dh('bt_0');Dh('bt_1');Ds('bt_2');"/> <label for="bannert_2">幻灯片</label>&nbsp;&nbsp;
+</td>
+</tr>
+<tr id="bt_0" style="display:;">
+<td class="tl">横幅图片地址</td>
+<td class="tr"><input name="setting[banner]" type="text" size="60" id="banner" value="" readonly/>&nbsp;&nbsp;<span onclick="Dthumb(2,0,0, Dd('banner').value, true, 'banner');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="_preview(Dd('banner').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('banner').value='';" class="jt">[删除]</span></td>
+</tr>
+<tr id="bt_1" style="display:none;">
+<td class="tl">横幅Flash地址</td>
+<td class="tr"><input name="setting[bannerf]" type="text" size="60" id="bannerf" value="" readonly/>&nbsp;&nbsp;<span onclick="Dfile(2, Dd('bannerf').value, 'bannerf', 'swf');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="if(Dd('bannerf').value) window.open(Dd('bannerf').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('bannerf').value='';" class="jt">[删除]</span> <span id="dflash" class="f_red"></span></td>
+</tr>
+<tbody id="bt_2" style="display:none;">
+<tr>
+<td class="tl f_red">系统提示</td>
+<td class="tr f_gray">&nbsp;仅支持jpg格式图片，且最少上传2张</td>
+</tr>
+<tr>
+<td class="tl">横幅图片地址1</td>
+<td class="tr"><input name="setting[banner1]" type="text" size="60" id="banner1" value="" readonly/>&nbsp;&nbsp;<span onclick="Dthumb(2,Dd('bannerw').value,Dd('bannerh').value, Dd('banner1').value, true, 'banner1', 'jpg');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="_preview(Dd('banner1').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('banner1').value='';" class="jt">[删除]</span></td>
+</tr>
+<tr>
+<td class="tl">横幅图片地址2</td>
+<td class="tr"><input name="setting[banner2]" type="text" size="60" id="banner2" value="" readonly/>&nbsp;&nbsp;<span onclick="if(Dd('banner1').value==''){alert('请先上传横幅图片地址1');return false;}Dthumb(2,Dd('bannerw').value,Dd('bannerh').value, Dd('banner2').value, true, 'banner2');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="_preview(Dd('banner2').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('banner2').value='';" class="jt">[删除]</span></td>
+</tr>
+<tr>
+<td class="tl">横幅图片地址3</td>
+<td class="tr"><input name="setting[banner3]" type="text" size="60" id="banner3" value="" readonly/>&nbsp;&nbsp;<span onclick="if(Dd('banner2').value==''){alert('请先上传横幅图片地址2');return false;}Dthumb(2,Dd('bannerw').value,Dd('bannerh').value, Dd('banner3').value, true, 'banner3');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="_preview(Dd('banner3').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('banner3').value='';" class="jt">[删除]</span></td>
+</tr>
+<tr>
+<td class="tl">横幅图片地址4</td>
+<td class="tr"><input name="setting[banner4]" type="text" size="60" id="banner4" value="" readonly/>&nbsp;&nbsp;<span onclick="if(Dd('banner3').value==''){alert('请先上传横幅图片地址3');return false;}Dthumb(2,Dd('bannerw').value,Dd('bannerh').value, Dd('banner4').value, true, 'banner4');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="_preview(Dd('banner4').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('banner4').value='';" class="jt">[删除]</span></td>
+</tr>
+<tr>
+<td class="tl">横幅图片地址5</td>
+<td class="tr"><input name="setting[banner5]" type="text" size="60" id="banner5" value="" readonly/>&nbsp;&nbsp;<span onclick="if(Dd('banner4').value==''){alert('请先上传横幅图片地址4');return false;}Dthumb(2,Dd('bannerw').value,Dd('bannerh').value, Dd('banner5').value, true, 'banner5');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="_preview(Dd('banner5').value);" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('banner5').value='';" class="jt">[删除]</span></td>
+</tr>
+</tbody>
+<tr>
+<td class="tl">形象视频地址</td>
+<td class="tr"><input name="setting[video]" type="text" size="60" id="video" value="" onblur="UpdateURL();"/>&nbsp;&nbsp;<span onclick="Dfile(2, Dd('video').value, 'video', 'mp4|flv|wma|wav');" class="jt">[上传]</span>&nbsp;&nbsp;<span onclick="vs();" class="jt">[预览]</span>&nbsp;&nbsp;<span onclick="Dd('video').value='';" class="jt">[删除]</span>
+<div id="v_player"></div>
+<script type="text/javascript" src="js/player.js"></script><script type="text/javascript" src="js/url2video.js"></script><script type="text/javascript">
+function vs() {
+UpdateURL();
+if(Dd('video').value.length > 5) {
+Ds('v_player');
+Inner('v_player', player(Dd('video').value,480,400,'',1)+'<br/><a href="javascript:" onclick="vh();" class="t">[关闭预览]</a>');
+} else {
+vh();
+}
+}
+function vh() {Inner('v_player', '');Dh('v_player');}
+function UpdateURL() {
+var str = url2video(Dd('video').value);
+if(str) Dd('video').value = str;
+}
+</script>
+</td>
+</tr>
+<tr>
+<td class="tl">网站公告</td>
+<td class="tr f_gray"><textarea name="setting[announce]" id="announce" style="width:500px;height:60px;"></textarea><br/>支持HTML语法</td>
+</tr>
+<tr>
+<td class="tl">访问次数</td>
+<td class="tr">
+<input type="radio" name="setting[show_stats]" value="1" id="s_s_1" checked/><label for="s_s_1"> 显示</label>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="setting[show_stats]" value="0" id="s_s_0"/><label for="s_s_0"> 不显示</label> 
+</td>
+</tr>
+</table>
+</div>
+<div id="Tabs1" style="display:none;">
+<table cellspacing="1" cellpadding="6" class="tb">
+<tr style="display:;">
+<td class="tl">菜单设置<br/><br/><br/><a href="home.php?action=reset&item=menu" class="t" onclick="return confirm('确定要恢复菜单设置为默认吗？');">恢复默认</a></td>
+<td class="tr">
+<table cellpadding="3" cellspacing="3">
+<tr align="center">
+<td width="50">显示</td>
+<td width="50">排序</td>
+<td width="100">名称</td>
+<td width="50">分页</td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="0" checked onclick="Dd('menu_show_0').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[menu_show][0]" value="1" id="menu_show_0"/>
+</td>
+<td><input type="text" name="setting[menu_order][0]" size="3" value="0"/></td>
+<td><input type="text" name="setting[menu_name][0]" size="20" value="公司介绍"/></td>
+<td><input type="text" name="setting[menu_num][0]" size="3" value="1"/>
+<input type="hidden" name="setting[menu_file][0]" value="introduce"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="1" checked onclick="Dd('menu_show_1').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[menu_show][1]" value="1" id="menu_show_1"/>
+</td>
+<td><input type="text" name="setting[menu_order][1]" size="3" value="10"/></td>
+<td><input type="text" name="setting[menu_name][1]" size="20" value="供应产品"/></td>
+<td><input type="text" name="setting[menu_num][1]" size="3" value="16"/>
+<input type="hidden" name="setting[menu_file][1]" value="sell"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="2" onclick="Dd('menu_show_2').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[menu_show][2]" value="0" id="menu_show_2"/>
+</td>
+<td><input type="text" name="setting[menu_order][2]" size="3" value="20"/></td>
+<td><input type="text" name="setting[menu_name][2]" size="20" value="采购清单"/></td>
+<td><input type="text" name="setting[menu_num][2]" size="3" value="30"/>
+<input type="hidden" name="setting[menu_file][2]" value="buy"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="3"/><input type="hidden" name="setting[menu_show][3]" value="0" id="menu_show_3"/>
+</td>
+<td><input type="text" name="setting[menu_order][3]" size="3" value="30"/></td>
+<td><input type="text" name="setting[menu_name][3]" size="20" value="新闻中心"/></td>
+<td><input type="text" name="setting[menu_num][3]" size="3" value="30"/>
+<input type="hidden" name="setting[menu_file][3]" value="news"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="4"/><input type="hidden" name="setting[menu_show][4]" value="0" id="menu_show_4"/>
+</td>
+<td><input type="text" name="setting[menu_order][4]" size="3" value="40"/></td>
+<td><input type="text" name="setting[menu_name][4]" size="20" value="荣誉资质"/></td>
+<td><input type="text" name="setting[menu_num][4]" size="3" value="10"/>
+<input type="hidden" name="setting[menu_file][4]" value="honor"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="5"/><input type="hidden" name="setting[menu_show][5]" value="0" id="menu_show_5"/>
+</td>
+<td><input type="text" name="setting[menu_order][5]" size="3" value="50"/></td>
+<td><input type="text" name="setting[menu_name][5]" size="20" value="人才招聘"/></td>
+<td><input type="text" name="setting[menu_num][5]" size="3" value="30"/>
+<input type="hidden" name="setting[menu_file][5]" value="job"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="6" checked onclick="Dd('menu_show_6').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[menu_show][6]" value="1" id="menu_show_6"/>
+</td>
+<td><input type="text" name="setting[menu_order][6]" size="3" value="60"/></td>
+<td><input type="text" name="setting[menu_name][6]" size="20" value="联系方式"/></td>
+<td><input type="text" name="setting[menu_num][6]" size="3" value="1"/>
+<input type="hidden" name="setting[menu_file][6]" value="contact"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="7"/><input type="hidden" name="setting[menu_show][7]" value="0" id="menu_show_7"/>
+</td>
+<td><input type="text" name="setting[menu_order][7]" size="3" value="70"/></td>
+<td><input type="text" name="setting[menu_name][7]" size="20" value="公司相册"/></td>
+<td><input type="text" name="setting[menu_num][7]" size="3" value="12"/>
+<input type="hidden" name="setting[menu_file][7]" value="photo"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="8" checked onclick="Dd('menu_show_8').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[menu_show][8]" value="1" id="menu_show_8"/>
+</td>
+<td><input type="text" name="setting[menu_order][8]" size="3" value="80"/></td>
+<td><input type="text" name="setting[menu_name][8]" size="20" value="招商代理"/></td>
+<td><input type="text" name="setting[menu_num][8]" size="3" value="12"/>
+<input type="hidden" name="setting[menu_file][8]" value="info"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="9" onclick="Dd('menu_show_9').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[menu_show][9]" value="0" id="menu_show_9"/>
+</td>
+<td><input type="text" name="setting[menu_order][9]" size="3" value="90"/></td>
+<td><input type="text" name="setting[menu_name][9]" size="20" value="品牌展示"/></td>
+<td><input type="text" name="setting[menu_num][9]" size="3" value="12"/>
+<input type="hidden" name="setting[menu_file][9]" value="brand"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="10"/><input type="hidden" name="setting[menu_show][10]" value="0" id="menu_show_10"/>
+</td>
+<td><input type="text" name="setting[menu_order][10]" size="3" value="100"/></td>
+<td><input type="text" name="setting[menu_name][10]" size="20" value="公司视频"/></td>
+<td><input type="text" name="setting[menu_num][10]" size="3" value="12"/>
+<input type="hidden" name="setting[menu_file][10]" value="video"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="11"/><input type="hidden" name="setting[menu_show][11]" value="0" id="menu_show_11"/>
+</td>
+<td><input type="text" name="setting[menu_order][11]" size="3" value="110"/></td>
+<td><input type="text" name="setting[menu_name][11]" size="20" value="友情链接"/></td>
+<td><input type="text" name="setting[menu_num][11]" size="3" value="30"/>
+<input type="hidden" name="setting[menu_file][11]" value="link"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="12" checked onclick="Dd('menu_show_12').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[menu_show][12]" value="1" id="menu_show_12"/>
+</td>
+<td><input type="text" name="setting[menu_order][12]" size="3" value="120"/></td>
+<td><input type="text" name="setting[menu_name][12]" size="20" value="商城"/></td>
+<td><input type="text" name="setting[menu_num][12]" size="3" value="12"/>
+<input type="hidden" name="setting[menu_file][12]" value="mall"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="menu_show_tmp" value="13" onclick="Dd('menu_show_13').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[menu_show][13]" value="0" id="menu_show_13"/>
+</td>
+<td><input type="text" name="setting[menu_order][13]" size="3" value="130"/></td>
+<td><input type="text" name="setting[menu_name][13]" size="20" value="诚信档案"/></td>
+<td><input type="text" name="setting[menu_num][13]" size="3" value="1"/>
+<input type="hidden" name="setting[menu_file][13]" value="credit"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div id="Tabs2" style="display:none;">
+<table cellspacing="1" cellpadding="6" class="tb">
+<tr>
+<td class="tl">侧栏宽度</td>
+<td class="tr"><input type="text" size="5" name="setting[side_width]" value="200"/> px</td>
+</tr>
+<tr>
+<td class="tl">侧栏位置</td>
+<td class="tr">
+<table>
+<tr align="center">
+<td width="100"><img src="http://chinahzp.wang/member/image/side_l.gif" title="侧栏在左" onclick="Dd('s_p_0').checked=true;"/></td>
+<td width="100"><img src="http://chinahzp.wang/member/image/side_r.gif" title="侧栏在右" onclick="Dd('s_p_1').checked=true;"/></td>
+</tr>
+<tr align="center">
+<td><input type="radio" name="setting[side_pos]" value="0" id="s_p_0" checked/><label for="s_p_0">侧栏在左</label></td>
+<td><input type="radio" name="setting[side_pos]" value="1" id="s_p_1"/><label for="s_p_1">侧栏在右</label></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="display:;">
+<td class="tl">侧栏设置<br/><br/><br/><a href="home.php?action=reset&item=side" class="t" onclick="return confirm('确定要恢复侧栏位置为默认吗？');">恢复默认</a></td>
+<td class="tr">
+<table cellpadding="3" cellspacing="3">
+<tr align="center">
+<td width="50">显示</td>
+<td width="50">排序</td>
+<td width="100">名称</td>
+<td width="50">数量</td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="side_show_tmp" value="0" checked onclick="Dd('side_show_0').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[side_show][0]" value="1" id="side_show_0"/></td>
+<td><input type="text" name="setting[side_order][0]" size="3" value="0"/></td>
+<td><input type="text" name="setting[side_name][0]" size="20" value="网站公告"/></td>
+<td><input type="text" name="setting[side_num][0]" size="3" value="1"/>
+<input type="hidden" name="setting[side_file][0]" size="3" value="announce"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="side_show_tmp" value="1"/><input type="hidden" name="setting[side_show][1]" value="0" id="side_show_1"/></td>
+<td><input type="text" name="setting[side_order][1]" size="3" value="10"/></td>
+<td><input type="text" name="setting[side_name][1]" size="20" value="新闻中心"/></td>
+<td><input type="text" name="setting[side_num][1]" size="3" value="5"/>
+<input type="hidden" name="setting[side_file][1]" size="3" value="news"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="side_show_tmp" value="2" checked onclick="Dd('side_show_2').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[side_show][2]" value="1" id="side_show_2"/></td>
+<td><input type="text" name="setting[side_order][2]" size="3" value="20"/></td>
+<td><input type="text" name="setting[side_name][2]" size="20" value="产品分类"/></td>
+<td><input type="text" name="setting[side_num][2]" size="3" value="10"/>
+<input type="hidden" name="setting[side_file][2]" size="3" value="type"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="side_show_tmp" value="3" checked onclick="Dd('side_show_3').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[side_show][3]" value="1" id="side_show_3"/></td>
+<td><input type="text" name="setting[side_order][3]" size="3" value="30"/></td>
+<td><input type="text" name="setting[side_name][3]" size="20" value="联系方式"/></td>
+<td><input type="text" name="setting[side_num][3]" size="3" value="1"/>
+<input type="hidden" name="setting[side_file][3]" size="3" value="contact"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="side_show_tmp" value="4" checked onclick="Dd('side_show_4').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[side_show][4]" value="1" id="side_show_4"/></td>
+<td><input type="text" name="setting[side_order][4]" size="3" value="40"/></td>
+<td><input type="text" name="setting[side_name][4]" size="20" value="站内搜索"/></td>
+<td><input type="text" name="setting[side_num][4]" size="3" value="1"/>
+<input type="hidden" name="setting[side_file][4]" size="3" value="search"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="side_show_tmp" value="5"/><input type="hidden" name="setting[side_show][5]" value="0" id="side_show_5"/></td>
+<td><input type="text" name="setting[side_order][5]" size="3" value="50"/></td>
+<td><input type="text" name="setting[side_name][5]" size="20" value="荣誉资质"/></td>
+<td><input type="text" name="setting[side_num][5]" size="3" value="5"/>
+<input type="hidden" name="setting[side_file][5]" size="3" value="honor"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="side_show_tmp" value="6"/><input type="hidden" name="setting[side_show][6]" value="0" id="side_show_6"/></td>
+<td><input type="text" name="setting[side_order][6]" size="3" value="60"/></td>
+<td><input type="text" name="setting[side_name][6]" size="20" value="友情链接"/></td>
+<td><input type="text" name="setting[side_num][6]" size="3" value="5"/>
+<input type="hidden" name="setting[side_file][6]" size="3" value="link"/></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div id="Tabs3" style="display:none;">
+<table cellspacing="1" cellpadding="6" class="tb"><tr style="display:;">
+<td class="tl">首页主栏设置<br/><br/><br/><a href="home.php?action=reset&item=main" class="t" onclick="return confirm('确定要恢复首页主栏为默认吗？');">恢复默认</a></td>
+<td class="tr">
+<table cellpadding="3" cellspacing="3">
+<tr align="center">
+<td width="50">显示</td>
+<td width="50">排序</td>
+<td width="100">名称</td>
+<td width="50">数量</td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="main_show_tmp" value="0" onclick="Dd('main_show_0').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[main_show][0]" value="0" id="main_show_0"/></td>
+<td><input type="text" name="setting[main_order][0]" size="3" value="0"/></td>
+<td><input type="text" name="setting[main_name][0]" size="20" value="推荐产品"/></td>
+<td><input type="text" name="setting[main_num][0]" size="3" value="10"/>
+<input type="hidden" name="setting[main_file][0]" size="3" value="elite"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="main_show_tmp" value="1" checked onclick="Dd('main_show_1').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[main_show][1]" value="1" id="main_show_1"/></td>
+<td><input type="text" name="setting[main_order][1]" size="3" value="10"/></td>
+<td><input type="text" name="setting[main_name][1]" size="20" value="公司介绍"/></td>
+<td><input type="text" name="setting[main_num][1]" size="3" value="1"/>
+<input type="hidden" name="setting[main_file][1]" size="3" value="introduce"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="main_show_tmp" value="2" checked onclick="Dd('main_show_2').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[main_show][2]" value="1" id="main_show_2"/></td>
+<td><input type="text" name="setting[main_order][2]" size="3" value="20"/></td>
+<td><input type="text" name="setting[main_name][2]" size="20" value="最新供应"/></td>
+<td><input type="text" name="setting[main_num][2]" size="3" value="10"/>
+<input type="hidden" name="setting[main_file][2]" size="3" value="sell"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="main_show_tmp" value="3" onclick="Dd('main_show_3').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[main_show][3]" value="0" id="main_show_3"/></td>
+<td><input type="text" name="setting[main_order][3]" size="3" value="30"/></td>
+<td><input type="text" name="setting[main_name][3]" size="20" value="招商代理"/></td>
+<td><input type="text" name="setting[main_num][3]" size="3" value="5"/>
+<input type="hidden" name="setting[main_file][3]" size="3" value="info"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="main_show_tmp" value="4" onclick="Dd('main_show_4').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[main_show][4]" value="0" id="main_show_4"/></td>
+<td><input type="text" name="setting[main_order][4]" size="3" value="40"/></td>
+<td><input type="text" name="setting[main_name][4]" size="20" value="品牌展示"/></td>
+<td><input type="text" name="setting[main_num][4]" size="3" value="3"/>
+<input type="hidden" name="setting[main_file][4]" size="3" value="brand"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="main_show_tmp" value="5"/><input type="hidden" name="setting[main_show][5]" value="0" id="main_show_5"/></td>
+<td><input type="text" name="setting[main_order][5]" size="3" value="50"/></td>
+<td><input type="text" name="setting[main_name][5]" size="20" value="公司相册"/></td>
+<td><input type="text" name="setting[main_num][5]" size="3" value="4"/>
+<input type="hidden" name="setting[main_file][5]" size="3" value="photo"/></td>
+</tr>
+<tr style="display:none;">
+<td>
+<input type="checkbox" name="main_show_tmp" value="6"/><input type="hidden" name="setting[main_show][6]" value="0" id="main_show_6"/></td>
+<td><input type="text" name="setting[main_order][6]" size="3" value="60"/></td>
+<td><input type="text" name="setting[main_name][6]" size="20" value="公司视频"/></td>
+<td><input type="text" name="setting[main_num][6]" size="3" value="4"/>
+<input type="hidden" name="setting[main_file][6]" size="3" value="video"/></td>
+</tr>
+<tr align="center">
+<td>
+<input type="checkbox" name="main_show_tmp" value="7" checked onclick="Dd('main_show_7').value=this.checked ? 1 : 0;"/><input type="hidden" name="setting[main_show][7]" value="1" id="main_show_7"/></td>
+<td><input type="text" name="setting[main_order][7]" size="3" value="70"/></td>
+<td><input type="text" name="setting[main_name][7]" size="20" value="热卖商品"/></td>
+<td><input type="text" name="setting[main_num][7]" size="3" value="5"/>
+<input type="hidden" name="setting[main_file][7]" size="3" value="mall"/></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="tl">公司简介显示</td>
+<td class="tr"><input type="text" size="5" name="setting[intro_length]" value="1000"/> 字符</td>
+</tr>
+</table>
+</div>
+<div id="Tabs4" style="display:none;">
+<table cellspacing="1" cellpadding="6" class="tb">
+<tr>
+<td class="tl">首页SEO标题</td>
+<td class="tr f_gray"><input type="text" size="60" name="setting[seo_title]" value=""/>&nbsp; 留空则显示公司名称</td>
+</tr>
+<tr>
+<td class="tl">网站关键词</td>
+<td class="tr"><input type="text" size="80" name="setting[seo_keywords]" value=""/></td>
+</tr>
+<tr>
+<td class="tl">网站描述</td>
+<td class="tr"><input type="text" size="80" name="setting[seo_description]" value=""/></td>
+</tr>
+<tr>
+<td class="tl">公司地图标注</td>
+<td class="tr">
+<input type="text" name="setting[map]" id="map" value="" readonly size="50" onclick="MapMark();"/>&nbsp;&nbsp;
+<a href="javascript:MapMark();" class="t">标注</a>&nbsp;|&nbsp;<a href="javascript:DelMark();" class="t">清空</a>
+<script type="text/javascript">
+function MapMark() {
+	Dwidget(DTPath+'api/map/baidu/mark.php?map='+Dd('map').value, '百度地图 - 在地图上双击鼠标完成标注');
+}
+function DelMark() {
+	Dd('map').value='';
+}
+</script>
+</td>
+</tr><tr>
+<td class="tl">流量统计地址</td>
+<td class="tr">
+<input type="text" name="setting[stats]" id="stats" value="" size="70"/>&nbsp;&nbsp;
+<a href="http://www.cnzz.com/" class="t" target="_blank">帐号申请</a>
+<br/><br/>
+提示：注册后获取的统计代码形式为：<br/>&lt;script src="<span class="f_red">http://s21.cnzz.com/stat.php?id=1234567&web_id=1234567</span>" language="JavaScript"&gt;&lt;/script&gt;<br/>
+其中 <span class="f_red">http://s21.cnzz.com/stat.php?id=1234567&web_id=1234567</span> 即为统计地址
+</td>
+</tr></table>
+</div>
+<table cellspacing="1" cellpadding="6" class="tb">
+<tr>
+<td class="tl">&nbsp;</td>
+<td class="tr" height="30"><input type="submit" name="submit" value=" 保 存 " class="btn"/>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit" value=" 恢复默认 " class="btn" onclick="if(confirm('确定要恢复默认设置吗？商铺所有设置将被清空')){this.form.action='home.php?reset=1';}else{return false;}"/></td>
+</tr>
+</table>
+</form>
+<script type="text/javascript" src="js/clear.js"></script><script type="text/javascript">
+s('homepage');
+m('Tab0');
+</script>
+</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript">
+if(document.body.clientHeight > Dd('main').scrollHeight) Dd('main').style.height=document.body.clientHeight+'px';
+if(get_cookie('m_side') == 11 && Dd('side_oh').className == 'side_h') {Dh('side');Dd('side_oh').className = 'side_s';}
+var destoon_message = 1;
+var destoon_chat = 0;
+if(window.location.href.indexOf('member_message.html') == -1) $('#destoon_space').html(sound('message_1'));
+</script>
+</body>
+</html>

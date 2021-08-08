@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0; margin:0; text-decoration:none; list-style:none;}
+.login{width:1200px; height:900px; margin:0 auto;}
+.login .imgs01{wdith:184px; height:62px; margin-top:80px;}
+.content{width:1200px; height:600px; margin-top:60px; overflow:hidden;}
+.content>.imgs02{width:800px; height:600px; float:left;}
+.content>.kuang{width:400px; height:600px; background:#eee; float:left;}
+.content>.kuang>p{ font-size:24px; font-family:"微软雅黑", "宋体", "黑体"; margin-top:80px; margin-left:40px; color:#000;}
+.con01{ width:320px; height:50px; overflow:hidden; margin-left:40px; margin-top:40px;}
+.con01 input{width:260px; line-height:48px; border:1px solid #999; padding:0 15px; font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#999; float:left;}
+.con01>img{width:60px; height:50px; float:left;}
+.con02{ width:320px; height:50px; overflow:hidden; margin-left:40px; margin-top:60px;}
+.con02 input{width:260px; line-height:48px; border:1px solid #999; padding:0 15px; font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#999; float:left;}
+.con02>img{width:60px; height:50px; float:left;}
+.con03 input{width:320px; height:50px; margin-left:40px; margin-top:60px; background:#fe294d; border:none; font-size:20px; font-family:"微软雅黑", "宋体", "黑体"; text-align:center; line-height:50px; color:#fff; cursor:pointer;}
+.word{ margin-left:200px; margin-top:40px; overflow:hidden; line-height:50px;}
+.word>a{ font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; float:left; padding-left:16px; color:#333; text-decoration:none;}
+.word>a:hover{color:#fe294d;}

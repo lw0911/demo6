@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jsAddress.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+		<title>我发布的采购-详情信息</title>
+	</head>
+	<body>
+			<!-- 顶部 开始 -->
+	<div class="index_head1">
+		<div class="w1200 clearFloat">
+			<div class="head1_left fl">
+				<span>欢迎来到贵州肉交所!</span>
+				<a class="a1" href="javascript:;">立即登录</a>
+				<a class="a2" href="javascript:;">免费注册</a>
+			</div>
+			<div class="head1_right fr">
+				<a class="a1" href="javascript:;">我的账户</a>
+				<a class="a2">关注手机端</a>
+				<span class="sp1">客服热线：400-123-1213</span>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部 结束 -->
+	<!-- 头部logo 开始 -->
+	<div class="index_head2">
+		<div class="w1200 clearFloat">
+			<div class="head2_left fl">
+				<a href="index.html">
+					<img src="images/index1.png" />
+					<img src="images/index2.png" />
+				</a>
+			</div>
+			<div class="head2_right fr clearFloat">
+				<div class="sub_box clearFloat fl">
+					<div class="sub1 fl">
+						<span class="sp1">商品</span>
+						<div class="sub" style="display: none;">
+							<span>商品</span>
+							<span>供应</span>
+							<span>采购</span>
+						</div>
+					</div>
+					<input class="txt1 fl" type="text" name="keyword" placeholder="输入货品名称" id="keyword"  />
+					<input class="btn1 fr" type="button" value="搜索"  onclick="searchproduct();"/>
+				</div>
+				<div class="a1 fl" href="javascript:;">
+					<span>发布求购信息</span>
+					<dl class="a1_slide">
+						<dd><a href="javascript:;">发布供应信息</a></dd>
+						<dd><a href="javascript:;">发布采购信息</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 头部logo 结束 -->
+	<!-- 导航 开始 -->
+	<div class="index_nav">
+		<div class="w1200 clearFloat">
+			<div class="nav_left fl">
+				<div class="top1">
+					<span>产品分类</span>
+				</div>
+			</div>
+			<div class="nav_center fl">
+				<ul>
+					<li>
+						<a class="add_bg" href="wholesale.html">批发首页</a>
+					</li>
+					<li>
+						<a href="selected-Meat.html">精选肉类</a>
+					</li>
+					<li>
+						<a href="wholesale.html">供应大厅</a>
+					</li>
+					<li>
+						<a href="buy-information.html">采购大厅</a>
+					</li>
+					<li>
+						<a href="market-condition.html">市场行情</a>
+					</li>
+					<li>
+						<a href="industry-new.html">行业资讯</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav_right fr">
+				<div class="top3"><a href="javascript:;"><img src="images/index7.png" />委托采购</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- 导航 结束 -->
+	<!--内容 开始-->
+	<div class="release">
+		<h1>求购单详情</h1>
+		<div class="release_content">
+			<div class="buy_produt buy_p">
+				<p>求购产品</p>
+				<hr style="width: 1120px;margin: 0 auto;"/>
+				<div class="buydetail_title">
+					求购单标题：<input type="text" value="" placeholder="请输入你本次求购的信息标题"/>
+				</div>
+				<ul class="buydetail_style">
+					<li>
+						<span>采购商品</span>
+						<span>数量</span>
+						<span>目标单价（元）</span>
+					</li>
+					<li class="buydetail_list">
+						<span>猪肉</span>
+						<span>20斤</span>
+						<span>20斤</span>
+					</li>
+					<li><button><img src="images/index76.png"/><a>采购产品管理</a></button></li>
+				</ul>
+			</div>
+			<div class="buy_tel buy_p">				
+				<p>采购商联系方式<span><img src="images/index76.png"/></span></p>
+				<hr style="width: 1120px;margin: 0 auto;color: #666;"/>				
+	 			<div class="tel_list1">
+	 				<span>姓名：</span>
+	 				<input type="text" value="" class="tel_same"/>
+	 				<input type="radio" name="a"  value="1" class="tel_radio" checked="checked"/> 男士
+	 				<input type="radio" name="a"  value="2" class="tel_radio"/> 女士
+	 			</div>
+ 				<div class="tel_list2">
+ 					<span>联系电话：</span>
+ 					<input type="text" value="" class="tel_same"/>
+ 				</div>
+ 				<div class="tel_list3">
+ 					<span>电子邮箱：</span>
+ 					<input type="text" value="" class="tel_same" />
+ 				</div>
+			</div>
+			<div class="buy_need buy_p">				
+				<p>采购需求<span><img src="images/index76.png"/></span></p>
+				<hr style="width: 1120px;margin: 0 auto;color: #666;"/>
+ 				<div class="need_list1">
+ 					<span>采购截止日期：</span>
+ 					<input type="text" value="2017年10月24日 10:00" class="tel_same need_time"/>
+ 				</div>
+ 				<div class="need_list2">
+ 					<span>是否需要发票：</span>
+	 				<input type="radio" name="a"  value="1" class="tel_radio" checked="checked"/> 不需要
+ 				</div>
+ 				<div class="need_list3">
+ 					<span class="area">收货地区：</span>
+ 					<input type="text" placeholder="贵州省"/>
+ 					<input type="text" placeholder="贵阳市"/>
+ 					<input type="text" placeholder="观山湖区"/> 
+ 				</div>
+ 				<div style="clear: both;"></div>
+ 				<div class="detail_list4">
+ 					<span>详细地址：</span>
+ 					<input type="text" placeholder="贵州省贵阳市观山湖区贵阳国家高新区大学生创业园" class="tel_same"/>
+ 				</div>
+	 			<div class="detail_list5">
+	 				<span style="display: block;float: left;">补充说明：</span><textarea name="" rows="8" cols="60" style="display: block;float: left;border-radius: 3px;" placeholder="这个地方是发布采购的补充说明..."></textarea>
+	 			</div>
+	 			<div class="detail_list6">
+	 				<p>点击编辑后，回到的页面效果和发布采购一样</p>
+	 			</div>
+			</div>
+		</div>
+	</div>
+	<!--内容 结束-->
+	<!-- 底部 开始 -->
+	<div class="foot">
+		<div class="foot1">
+			<div class="w1200 clearFloat">
+				<div class="det fl">
+					<div class="tit"><img src="images/index38.png" /><span>关于我们</span></div>
+					<ul>
+						<li><a href="javascript:;">公司介绍</a></li>
+						<li><a href="javascript:;">联系我们</a></li>
+						<li><a href="javascript:;">合作邀请</a></li>
+					</ul>
+				</div>
+				<div class="det fl">
+					<div class="tit"><img src="images/index39.png" /><span>我要采购</span></div>
+					<ul>
+						<li><a href="javascript:;">如何发布供货信息</a></li>
+						<li><a href="javascript:;">如何发布采购信息</a></li>
+						<li><a href="javascript:;">如何委托交易</a></li>
+					</ul>
+				</div>
+				<div class="det fl">
+					<div class="tit"><img src="images/index40.png" /><span>帮助中心</span></div>
+					<ul>
+						<li><a href="javascript:;">注册流程</a></li>
+						<li><a href="javascript:;">无法登陆/忘记密码</a></li>
+						<li><a href="javascript:;">修改账号信息</a></li>
+					</ul>
+				</div>
+				<div class="det det4 fl">
+					<div class="tit"><img src="images/index41.png" /><span>关注我们</span></div>
+					<div class="erma">
+						<img src="images/index42.png" />
+						<p>关注微信公众号</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot2">
+			<div class="w1200 clearFloat">
+				<div class="link">
+					<a href="javascript:;">网站首页</a>|
+					<a href="javascript:;">公司介绍</a>|
+					<a href="javascript:;">联系我们</a>|
+					<a href="javascript:;">合作邀请</a>|
+					<a href="javascript:;">资质证件</a>|
+					<a href="javascript:;">商城入驻</a>|
+					<a href="javascript:;">基本帮助</a>
+				</div>
+				<div class="copy">COPYRIGHT © 贵州肉交所 版权所有 贵州黔牧出山农牧科技有限公司 联系电话：<a href="javascript:;">XXX</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 结束 -->
+	</body>
+</html>
+<script>
+	//搜索
+	 function searchproduct(){
+	   var keyword = document.getElementById("keyword").value;
+	   if(keyword == undefined || keyword==null ||keyword ==""){
+	     alert("请输入关键字！");
+	     return false;
+	   }
+	   document.getElementById("searchform").submit();
+	}
+		//	日期四级联动
+	addressInit('area','cmbProvince','cmbCity','cmbArea','西北地区', '北京', '市辖区', '东城区');
+</script>

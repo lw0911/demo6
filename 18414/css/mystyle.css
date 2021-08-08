@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* reset css */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,img,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{ font-family: "微软雅黑",Arial, Helvetica, sans-serif; font-size: 12px; line-height: 1; color: #7c7c7c; background-image: url(../images/bg.png); background-repeat: no-repeat; background-position: center 0px; }
+img{border:none;}
+em,strong{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+h1{font-size:18px;}
+h2{font-size:16px;}
+h3{font-size:14px;}
+h4, h5, h6{font-size:100%;}
+q:before,q:after{content:'';}/* 消除q前后的内容 */
+button,input,select,textarea{font-size:100%;}/* 使得表单元素在 ie 下能继承字体大小 */
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+address,cite,dfn,em,var{font-style:normal;} /* 将斜体扶正 */
+a,a:hover{ text-decoration: none; }
+.clear { clear: both; }
+.content { width: 1220px; margin-right: auto; margin-left: auto; }
+/* link */
+#top-bar { background-image: url(../images/top-bar-bg.png); }
+#top-bar .content { padding-top: 10px; padding-bottom: 10px; overflow: hidden; }
+#top-bar .content ul { float: right; width: 460px; }
+#top-bar .content ul li { float: left; }
+#top-bar .content ul li a { color: #FFF; display: inline-block; }
+#top-bar .content ul li a:hover { text-decoration: underline; }
+#top-bar .content ul li span { color: #FFF; margin-right: 8px; margin-left: 8px; }
+#logo { padding-top: 20px; padding-bottom: 15px; }
+#logo img { margin-right: 20px; float: left; }
+#logo p { float: right; font-size: 22px; font-weight: bold; color: #FFF; font-style: italic; margin-top: 13px; line-height: 0.8; text-shadow:1px 1px 5px rgba(0,0,0,.5); }
+#logo p img { margin-right: 10px; }
+#logo p span { font-size: 12px; font-weight: normal; }
+#logo .nav-searchbar { border: 2px solid #e11127; height: 38px; width: 455px; margin-top: 13px; margin-right: auto; margin-left: auto; }
+#logo .nav-searchSelect { line-height: 38px; background-color: #f9f9f9; height: 38px; border-top-width: 0px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 0px; border-right-style: solid; border-right-color: #efeeea; font-size: 14px; width: 96px; outline: none; cursor: pointer; float: left; }
+#logo .nav-searchSelect:hover { background-color: #f3f3f3; }
+#logo .nav-input { height: 38px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; width: 274px; outline: none; padding-left: 10px; float: left; padding-right: 10px; }
+#logo .nav-search { height: 38px; width: 65px; background-color: #e11127; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; font-size: 16px; color: #FFF; cursor: pointer; outline: none; float: left; }
+#logo .nav-search:hover { background-color: #F03; }
+#nav { background-color: #e11127; font-size: 18px; }
+#nav ul li { float: left; font-size: 16px; }
+#nav a { padding-right: 25px; padding-left: 25px; line-height: 50px; display: inline-block; height: 50px; color: #FFF; background-image: url(../images/nav-line.png); background-repeat: no-repeat; background-position: right center; }
+#nav a:hover { background-color: #F03; }
+#nav .nav-home { background-image: none; font-size: 18px; }
+#nav .nav-affiliate { float: right; background-image: none; }
+#banner { padding-top: 18px; }
+#banner .banner-left { border-top-width: 2px; border-right-width: 2px; border-left-width: 2px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: #FFF; border-right-color: #FFF; border-left-color: #FFF; float: left; width: 900px; }
+#banner .banner-left .news { background-color: #f0efeb; font-size: 14px; line-height: 40px; padding-left: 20px; }
+#banner .banner-left .news p { float: left; }
+#banner .banner-left .news p small { font-size: 14px; font-weight: bold; }
+#banner .banner-left .news p span { margin-right: 40px; margin-left: 40px; }
+#banner .banner-left .news .announcement { height: 40px; overflow: hidden; }
+#banner .banner-left .news .announcement a { color: #7c7c7c; text-decoration: underline; }
+/*轮播的banner开始*/
+#banner .banner-left .play { width: 900px; height: 318px; overflow: hidden; position: relative; }
+#banner .banner-left .play ol {position:absolute;left:50%;margin-left:-20px;bottom:10px;z-index:99999;}
+#banner .banner-left .play ol li {float:left;margin-right:3px;display:inline;cursor:pointer;background-color:rgba(0,0,0,0.5);padding:5px 9px;color:#fff;font-family:arial;font-size:12px;border-radius:100px;}
+#banner .banner-left .play ol li.active {font-weight:bold;color:#ffffff;background-color:rgba(0,0,0,1);position:relative;}
+#banner .banner-left .play ul { position: absolute; top: 0; left: 0; z-index: 1; height: 318px; overflow: hidden; padding-top: 2px; background-color: #FFF; }
+#banner .banner-left .play ul li { float: left; width: 900px; height: 318px; }
+#banner .banner-left .play ul img { float: left; width: 900px; height: 318px; }
+#banner .banner-left .next { display: block; position: absolute; top: 45%; right: 0; width: 42px; height: 42px; z-index: 999; background-image: url(../images/prev.png); background-repeat: no-repeat; background-position: -42px 0px; }
+#banner .banner-left .prev { display: block; position: absolute; top: 45%; left: 0; width: 42px; height: 42px; z-index: 999; background-image: url(../images/prev.png); background-repeat: no-repeat; background-position: 0px 0px; }
+#banner .banner-left .prev:hover .prevImg,#banner .banner-left .next:hover .nextImg {display:block;}
+#banner .banner-left .prevImg {height:42px;width:118px;position:absolute;background-color:#fff;top:0;left:42px;display:none;}
+#banner .banner-left .nextImg {height:42px;width:118px;position:absolute;background-color:#fff;top:0;right:42px;display:none;}
+/*轮播的banner结束*/
+#banner .banner-right { border-top-width: 2px; border-right-width: 1px; border-top-style: solid; border-right-style: solid; border-top-color: #FFF; border-right-color: #FFF; float: left; background-color: #faf7f2; }
+#banner .banner-right p { line-height: 1.2; }
+#banner .banner-right a:hover { background-color: #f5f2ed; }
+#banner .banner-right .points-mall { padding-top: 20px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; display: inline-block; width: 275px; float: left; }
+#banner .banner-right .points-mall img { float: left; margin-right: 20px; }
+#banner .banner-right .points-mall h1 { font-size: 24px; color: #ff7f00; margin-top: 30px; font-weight: normal; }
+#banner .banner-right .points-mall p { color: #9c9c9a; margin-top: 8px; }
+#banner .banner-right .coupon { display: inline-block; width: 275px; float: left; border-top-width: 1px; border-top-style: solid; border-top-color: #FFF; padding: 20px; }
+#banner .banner-right .coupon img { float: right; }
+#banner .banner-right .coupon p { color: #9c9c9a; margin-top: 30px; }
+#banner .banner-right .coupon h1 { font-size: 24px; color: #bd8e64; margin-top: 8px; font-weight: normal; }
+#banner .banner-right .events { display: inline-block; width: 275px; float: left; border-top-width: 1px; border-top-style: solid; border-top-color: #FFF; padding-top: 10px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; }
+#banner .banner-right .events h1 { font-size: 24px; color: #649045; font-weight: normal; }
+#banner .banner-right .events p { color: #9c9c9a; margin-top: 10px; }
+#industry { border: 1px solid #eaeaea; margin-top: 18px; background-color: #f8f8f8; padding-left: 12px; width: 1194px; padding-top: 19px; padding-bottom: 29px; padding-right: 12px; }
+#industry ul li a { display: inline-block; width: 95px; padding-top: 106px; float: left; color: #333; margin-right: 12px; margin-left: 12px; text-align: center; background-image: url(../images/industry.png); background-repeat: no-repeat; -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
+#industry ul li a:hover { color: #c81622; -webkit-transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -ms-transition: all 0.3s ease 0s; -o-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; }
+#industry ul li .tableware { background-position: 0px 0px; }
+#industry ul li .tableware:hover { background-position: -95px 0px; }
+#industry ul li .mike { background-position: -190px 0px; }
+#industry ul li .mike:hover { background-position: -285px 0px; }
+#industry ul li .shop { background-position: -380px 0px; }
+#industry ul li .shop:hover { background-position: -475px 0px; }
+#industry ul li .brush { background-position: -570px 0px; }
+#industry ul li .brush:hover { background-position: -665px 0px; }
+#industry ul li .sever { background-position: -760px 0px; }
+#industry ul li .sever:hover { background-position: -855px 0px; }
+#industry ul li .cosmetology { background-position: -950px 0px; }
+#industry ul li .cosmetology:hover { background-position: -1045px 0px; }
+#industry ul li .camera { background-position: -1140px 0px; }
+#industry ul li .camera:hover { background-position: -1235px 0px; }
+#industry ul li .education { background-position: -1330px 0px; }
+#industry ul li .education:hover { background-position: -1425px 0px; }
+#industry ul li .health { background-position: -1520px 0px; }
+#industry ul li .health:hover { background-position: -1615px 0px; }
+#industry ul li .property { background-position: -1710px 0px; }
+#industry ul li .property:hover { background-position: -1805px 0px; }
+#business { margin-top: 30px; }
+#business span { float: right; font-size: 14px; line-height: 2.5; }
+#business span a { color: #333; }
+#business span a:hover { color: #c81622; text-decoration: underline; }
+#business h1 { font-weight: normal; color: #c81622; line-height: 2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #eaeaea; }
+#business h1 small { background-image: url(../images/floor.png); background-repeat: no-repeat; background-position: 0px 0px; color: #FFF; font-size: 14px; text-align: center; padding-top: 6px; padding-right: 10px; padding-bottom: 10px; padding-left: 3px; margin-right: 10px; }
+#business .item { width: 202px; border: 1px solid #eaeaea; float: left; margin-right: 27px; margin-top: 16px; padding-top: 13px; padding-right: 9px; padding-left: 9px; padding-bottom: 9px; }
+#business .item:hover { background-color: #f8f8f8; -webkit-box-shadow:0 0 10px 0px rgba(0, 0, 0, .3); -moz-box-shadow:0 0 10px 0px rgba(0, 0, 0, .3); box-shadow:0 0 10px 0px rgba(0, 0, 0, .3); }
+#business .item-nonemargin { margin-right: 0px; }
+#business .item img { padding-bottom: 12px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #eaeaea; }
+#business .item h2 { font-weight: normal; margin-top: 12px; margin-bottom: 10px; }
+#business .item h2 a { color: #c81622; }
+#business .item h2 a:hover { text-decoration: underline; }
+#business .item p { line-height: 1.5; }
+footer { text-align: center; padding-top: 30px; padding-bottom: 30px; }
+footer p { line-height: 2; }
+footer p a { color: #7c7c7c; padding-right: 5px; padding-left: 5px; border-right-width: 1px; border-right-style: solid; border-right-color: #C7c7c7; }
+footer p a:hover { text-decoration: underline; }
+footer p .a-noneborder,footer .copyright a { border-right-width: 0px; }
+#toTop{ display: none; position: fixed; cursor: pointer; width: 20px; text-align: center; background-color: #CCC; right: 30px; bottom: 30px; padding-top: 9px; padding-right: 4px; padding-bottom: 9px; padding-left: 4px; }
+#toTop{_position:absolute;_top:expression(documentElement.scrollTop + documentElement.clientHeight * 3/4 + "px")}/*用CSS表达式(expression)来实现ie6下position:fixed效果*/
+#toTop:hover{ background: #e11127; color: #fff; }

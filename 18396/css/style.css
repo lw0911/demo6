@@ -1,0 +1,240 @@
+.bannerPicture{
+	display:block;
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+}
+.bannerPicture img{
+	display:block;
+	width:1200px;
+}
+.bannerWide{
+	display:block;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.bannerWide img{
+	display:block;
+	width:100%;
+}
+
+
+.c-title{
+	width:1200px;
+	height:40px;
+	margin:10px auto;
+}
+.c-title i.TmallIco{
+	display:block;
+	height:40px;
+	height:40px;
+	border-radius:20px;
+	background-color:#b71c20;
+	overflow:hidden;
+	margin-right:15px;
+	float:left;
+}
+.c-title i.TmallIco img{
+	display:block;
+	width:40px;
+	height:40px;
+}
+.c-title .name{
+	height:40px;
+	float:left;
+}
+.c-title .name h2{
+	display:block;
+	height:40px;
+	float:left;
+	font:24px/40px 'microsoft yahei';
+	color:#333;
+}
+.c-title .name h3{
+	display:block;
+	height:40px;
+	float:left;
+	font:20px/40px 'microsoft yahei';
+	color:#999;
+	margin-left:6px;
+}
+
+
+/**/
+.thir-form-h1{
+	display:block;
+	width:968px;
+	height:70px;
+	margin:60px auto 0px auto;
+	font:48px/70px 'microsoft yahei';
+	color:#222;
+	text-align:center;
+	font-weight: bold;
+}
+.thir-form-h2{
+	display:block;
+	width:968px;
+	height:40px;
+	margin:0px auto 18px auto;
+	font:24px/40px 'microsoft yahei';
+	color:#444;
+	text-align:center;
+}
+.thir-form-h3{
+	width:968px;
+	height:22px;
+	margin:0 auto;
+	background:url(img/thir-t1.jpg) no-repeat center top;
+}
+.thir-form-con{
+	width:970px;
+	height:800px;
+	margin:40px auto 0px auto;
+}
+.thir-form-con .button {
+	display:block;
+    -webkit-appearance: none;
+    background:#F30;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font:20px/50px 'microsoft yahei';
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+    width:300px;
+	margin:10px auto;
+}
+.thir-form-con .strip{
+	width:100%;
+	height:100px;
+	margin-top:5px;
+}
+.thir-form-con .strip h3{
+	display:block;
+	width:100%;
+	height:40px;
+	text-align:left;
+	font:22px/40px 'microsoft yahei';
+	color:#222;
+	margin-bottom:6px;
+}
+.thir-form-con .strip .input{
+	border:0;outline:none;
+	border: 1px solid #ccc;
+	font:16px/40px 'microsoft yahei';
+	color:#444;
+	height: 40px;
+	width:630px;
+    padding: 0 16px;
+}
+
+
+/*留言板*/
+.f-message-form{
+	display:block;
+	width:100%;
+	height:560px;
+	background:url(img/f-message-bj.jpg) no-repeat center top;
+	padding-top:200px;
+	margin:15px auto 0 auto;
+}
+.f-message-form .maincon{
+	width:1200px;
+	height:500px;
+	margin:0 auto 0 auto;
+	background-color:#fff;
+}
+.f-message-form .maincon h2{
+	display:block;
+	width:100%;
+	height:50px;
+	font:30px/50px 'microsoft yahei';
+	color:#222;
+	text-align:center;
+	padding:30px 0 30px 0;
+}
+.f-message-form .maincon .row{
+	width:90%;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	text-align:center;
+}
+.f-message-form .maincon .row .input1{
+	display:inline-block;
+	vertical-align: middle;
+	border:0;outline:none;
+	font:18px/58px 'microsoft yahei';
+	width:320px;
+	height:58px;
+	background-color:#fff;
+	margin:0 10px;
+	border-bottom:1px solid #CCC;
+}
+.f-message-form .maincon .row .input2{
+	display:inline-block;
+	vertical-align: middle;
+	border:0;outline:none;
+	font:18px/58px 'microsoft yahei';
+	width:1008px;
+	height:58px;
+	background-color:#fff;
+	margin:15px 10px 0 10px;
+	border-bottom:1px solid #CCC;
+}
+.f-message-form .maincon .row .textarea{
+	display:inline-block;
+	vertical-align: middle;
+	border:0;outline:none;
+	font:18px/28px 'microsoft yahei';
+	width:1008px;
+	height:112px;
+	background-color:#fff;
+	margin:15px 10px 0 10px;
+	border-bottom:1px solid #CCC;
+}
+.f-message-form .maincon .row .button{
+	display:inline-block;
+	vertical-align: middle;
+	border:0;outline:none;
+	font:18px/58px 'microsoft yahei';
+	width:300px;
+	height:58px;
+	background-color:#956b37;
+	color:#fff;
+	margin-top:26px;
+	cursor: pointer;
+}
+
+#UpdateHint{
+	width:300px;
+	height:40px;
+	display:none;
+	margin:0 auto;
+	margin:-20px 0 0 -150px;
+	padding-bottom:20px;
+	position:fixed;
+	left:50%;
+	top:50%;
+	z-index:99999999;
+	text-align:center;
+}
+#UpdateHint span{
+	display:inline-block;
+	vertical-align: middle;
+	padding:0 20px;
+	background: rgba(0,0,0, 0.4);
+	font:16px/40px 'microsoft yahei';
+	text-align:center;
+	color:#fff;
+}
+#UpdateHint .ok{
+	font:16px/40px 'microsoft yahei';
+	color:#fff;
+	background: rgba(18,166,10, 0.5);
+}

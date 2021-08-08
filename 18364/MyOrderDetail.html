@@ -1,0 +1,664 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>个人中心- 订单详情 – 我要的，才是必要的 – 必要biyao.com</title>
+    <script type="text/javascript" src="pc/common/js/jquery-1.8.3.js?v=biyao_7d074dc"></script>
+    <script type="text/javascript" src="pc/minisite/byshoes/js/jquery.cookie.js?v=biyao_a5283b2"></script>
+    <script type="text/javascript" src="pc/common/js/jquery.extention.js?v=biyao_98daa33"></script>
+    <script type="text/javascript" src="pc/common/js/ui/dialog.js?v=biyao_130c013"></script>
+    <link href="pc/favicon.ico" rel="shortcut icon"
+          type="image/x-icon" />
+    <link href="pc/favicon.ico" rel="icon"
+          type="image/x-icon" />
+    <script type="text/javascript">
+        window.ApiSite = "http://api.biyao.com";
+        window.ControllerSite="";
+    </script>
+    <link href="pc/common/css/common.css?v=biyao_1227846" rel="stylesheet" />
+    <link href="pc/www/css/cm_www.css?v=biyao_3f1d92e" rel="stylesheet" />
+    <link type="text/css" href="pc/www/css/myCenter.css?v=biyao_5976431"
+          rel="stylesheet" />
+    <link type="text/css" href="pc/www/css/myCenter.css?v=biyao_5976431" rel="stylesheet" /></head>
+<body>
+<div class="pub_nav topBanner slideUp">
+    <div class="wrap clearfix bg_333">
+        <div class="f_l">
+            <ul class="pub_nav_list sizeZero">
+
+                <li class="inline"><a href="index.html">首页</a><span class="bg"></span></li>
+                <li class="inline"><a onclick='LT.skip_to()'>商家中心</a><span class="bg"></span></li>
+                <li class="inline"><a href="sjzx.html">平台政策</a><span class="bg"></span></li>
+                <!-- 					<li class="inline last"><a href="http://www.biyao.com/complaint/toAddComplaint">非法信息投诉</a><span class="bg"></span></li> -->
+                <li class="inline last newapp">
+                    <a href="#">必要手机版</a>
+                    <div class="app_box">
+                        <span class="inline upArre"></span>
+                        <div class="con">
+                            <p class="sj_evm"></p>
+                            <p class="lineH24 col_666 f14">必要手机版</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="f_r">
+            <ul class="pub_nav_list sizeZero">
+                <li class="inline">
+                    <a class="login"  href="MyOrder.html">
+                        Hi,by_3444810
+                    </a>
+                    <a class="regist mg_l10" href="#">[ 退出 ]</a>
+                    <span class="bg"></span>
+                </li>
+                <li class="inline last">
+                    <a href="javascript:void(0);" class="">个人中心<i class="inline pep_bg mg_l10"></i></a>
+                    <div class="app_box">
+                        <span class="inline upArre"></span>
+                        <div class="bg_fff down_list_box">
+                            <a class="inline" href="MyOrder.html">我的订单</a>
+                            <a class="inline" href="Profile.html">个人设置</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="inline last pd_r0 shopping_cart vTop">
+                    <a class="inline sizeZero" href="shopcars.html">
+                        <i class="inline"></i>
+                        <span id="shopcarNumID" class="inline">购物车 0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="index_bg_fff">
+    <div class="wrap pub_logo_box clearfix">
+        <div class="pub_logo f_l"><a href="index.html"><img alt="" src="pc/common/img/logo.png?v=biyao_4637d54"></a></div>
+        <div class="f_r">
+            <ul class="sizeZero menu_nav_list">
+                <li class="inline ">
+                    <a href="javascript:;">眼镜</a>
+                    <div class="sub_nav_list pos_pub">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://badge.biyao.com/man/index.html?f_upd=fc-27" class="escp ">男士</a>
+                        <a href="http://badge.biyao.com/women/index.html?f_upd=fc-28" class="escp last">女士</a>
+                    </div>
+                </li>
+                <li class="inline ">
+                    <a href="javascript:;">男装</a>
+                    <div class="sub_nav_list pos_pub">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://www.biyao.com/products/1300935002130200001-0.html?f_upd=fc-283" class="escp ">Bland单西</a>
+                        <a href="http://rzlzl.biyao.com/socks/index.html?f_upd=fc-278" class="escp ">RZLZL袜子</a>
+                        <a href="http://shengbohui.biyao.com/polo/index.html?f_upd=fc-237" class="escp ">亓口男装</a>
+                        <a href="http://vizman.biyao.com/belt/index.html?f_upd=fc-223" class="escp ">皮具</a>
+                        <a href="http://edition.biyao.com/mknitwear/index.html?f_upd=fc-214" class="escp ">针织短T</a>
+                        <a href="http://www.biyao.com/products/1300590001010100001-0.html?f_upd=fc-137" class="escp ">内裤</a>
+                        <a href="http://defarro.biyao.com/man/index.html?f_upd=fc-161" class="escp ">G＆M男装</a>
+                        <a href="http://defarro.biyao.com/man/index.html?f_upd=fc-164" class="escp ">G&M商务长裤</a>
+                        <a href="http://jeans.biyao.com/jeans/index.html?f_upd=fc-116" class="escp ">牛仔</a>
+                        <a href="http://jhm.biyao.com/man/index.html?f_upd=fc-122" class="escp last">GCMT POLO衫</a>
+                    </div>
+                </li>
+                <li class="inline ">
+                    <a href="javascript:;">户外</a>
+                    <div class="sub_nav_list pos_pub">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://rcoaste.biyao.com/man/index.html?f_upd=fc-258" class="escp ">RC男士户外服</a>
+                        <a href="http://rcoaste.biyao.com/women/index.html?f_upd=fc-257" class="escp ">RC女士户外服</a>
+                        <a href="http://jackjie.biyao.com/outside/index.html?f_upd=fc-224" class="escp last">户外鞋</a>
+                    </div>
+                </li>
+                <li class="inline ">
+                    <a href="javascript:;">运动</a>
+                    <div class="sub_nav_list pos_pub">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://redella.biyao.com/shoes/index.html?f_upd=fc-111" class="escp last">运动休闲鞋</a>
+                    </div>
+                </li>
+                <li class="inline ">
+                    <a href="javascript:;">鞋靴</a>
+                    <div class="sub_nav_list pos_pub">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://vizman.biyao.com/menshoes/index.html?f_upd=fc-44" class="escp ">VIZ男鞋</a>
+                        <a href="http://cm.biyao.com/womenshoes/index.html?f_upd=fc-45" class="escp ">C&M女鞋</a>
+                        <a href="http://viz.biyao.com/womenshoes/index.html?f_upd=fc-232" class="escp last">VIZ女鞋</a>
+                    </div>
+                </li>
+                <li class="inline ">
+                    <a href="javascript:;">个人护理</a>
+                    <div class="sub_nav_list pos_pub">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://friday.biyao.com/toothbrush/index.html?f_upd=fc-264" class="escp ">电动牙刷</a>
+                        <a href="http://friday.biyao.com/shaver/index.html?f_upd=fc-110" class="escp ">男士剃须刀</a>
+                        <a href="http://www.biyao.com/products/1300510001000000010-0.html?f_upd=fc-222" class="escp last">女士刮毛刀</a>
+                    </div>
+                </li>
+                <li class="inline ">
+                    <a href="javascript:;">箱包</a>
+                    <div class="sub_nav_list pos_pub">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://vizman.biyao.com/belt/index.html?f_upd=fc-290" class="escp ">男士钱包</a>
+                        <a href="http://www.biyao.com/products/1300895007050000001-0.html?f_upd=fc-265" class="escp ">RC双肩包</a>
+                        <a href="http://stayalive.biyao.com/backpack/index.html?f_upd=fc-218" class="escp ">stayalive双肩包</a>
+                        <a href="http://hobie.biyao.com/backpack/index.html?f_upd=fc-66" class="escp ">airleaf箱包</a>
+                        <a href="http://yinzuo.biyao.com/suitcase/index.html?f_upd=fc-148" class="escp last">GRIFFIN LAND拉杆箱</a>
+                    </div>
+                </li>
+                <li class="inline ">
+                    <a href="javascript:;">女装</a>
+                    <div class="sub_nav_list pos_pub">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://rzlzl.biyao.com/socks/index.html?f_upd=fc-279" class="escp ">RZLZL袜子</a>
+                        <a href="http://chunfeng.biyao.com/women/index.html?f_upd=fc-268" class="escp ">春风女装</a>
+                        <a href="http://jeans.biyao.com/jeanswomen/index.html?f_upd=fc-206" class="escp ">牛仔</a>
+                        <a href="http://ibuyfun.biyao.com/skirt/index.html?f_upd=fc-204" class="escp ">女裙</a>
+                        <a href="http://edition.biyao.com/knitwear/index.html?f_upd=fc-215" class="escp ">针织短T</a>
+                        <a href="http://jhm.biyao.com/women/index.html?f_upd=fc-205" class="escp ">POLO衫</a>
+                        <a href="http://zerowaist.biyao.com/women/index.html?f_upd=fc-203" class="escp ">婚纱礼服</a>
+                        <a href="http://zerowaist.biyao.com/children/index.html?f_upd=fc-261" class="escp ">儿童公主裙</a>
+                        <a href="http://bornwear.biyao.com/scarf/index.html?f_upd=fc-221" class="escp ">围巾</a>
+                        <a href="http://lebeautemps.biyao.com/women/index.html?f_upd=fc-246" class="escp last">内衣</a>
+                    </div>
+                </li>
+                <li class="inline last">
+                    <a href="javascript:;">家居生活</a>
+                    <div class="sub_nav_list pos_pub_last">
+                        <span class="sub_nav_jd"></span>
+                        <a href="http://straford.biyao.com/kettle/index.html?f_upd=fc-282" class="escp ">STRAFORD水具</a>
+                        <a href="http://behuge.biyao.com/kitchen/index.html?f_upd=fc-167" class="escp ">厨具</a>
+                        <a href="http://rongxuan.biyao.com/textiles/index.html?f_upd=fc-271" class="escp ">融暄家纺</a>
+                        <a href="http://beromance.biyao.com/textiles/index.html?f_upd=fc-201" class="escp ">必柔家纺</a>
+                        <a href="http://mn.biyao.com/textiles/index.html?f_upd=fc-240" class="escp ">M&N家纺</a>
+                        <a href="http://behuge.biyao.com/lamp/index.html?f_upd=fc-183" class="escp ">灯具</a>
+                        <a href="http://behuge.biyao.com/mattress/index.html?f_upd=fc-209" class="escp ">床垫</a>
+                        <a href="http://behuge.biyao.com/bedroom/index.html?f_upd=fc-155" class="escp ">卧室家具</a>
+                        <a href="http://behuge.biyao.com/livingroom/index.html?f_upd=fc-77" class="escp ">客厅家具</a>
+                        <a href="http://behuge.biyao.com/diningroom/index.html?f_upd=fc-78" class="escp ">餐厅家具</a>
+                        <a href="http://behuge.biyao.com/studyroom/index.html?f_upd=fc-79" class="escp last">书房家具</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrap  posR mg_t20 mH810 pd_b40">
+    <div class="per_left">
+        <div class="per_leftbox  pd_t14">
+            <ul class="per_leftul">
+                <li class="t_c">
+                    <a href="/MyCenter/Profile.html">
+                        <img src="pc/www/img/avatar/head_150.png" alt="" onerror="javascript:this.src='pc/www/img/avatar/head_150.png'" style="width: 150px; height: 150px"/>
+                    </a>
+                </li>
+                <li class="f14 col_fff mg_t10 t_c">by_3444810</li>
+            </ul>
+        </div>
+        <div class="per_leftbox">
+            <div class="perleft_menu pdtb_20">
+                <ul>
+                    <li class="a_check "><a href="MyOrder.html" ><i class="f_r mcMIcon3 inline"></i>我的订单</a> </li>
+                    <li class=" "><a href="MyRefunds.html" ><i class="f_r mcMIcon4 inline"></i>退款管理</a></li>
+                    <!--<li class=" "><a href="/MyCenter/MyIncomeRules.html" ><i class="f_r mcMIcon5 inline"></i>我的收益</a></li>-->
+                    <li class=" "><a href="Profile.html" ><i class="f_r mcMIcon8 inline"></i>个人设置</a></li>
+                    <!-- <div class="div_line"></div> -->
+                    <!-- <a href="#"><i class="f_r mcMIcon9 inline"></i>设计师主页</a> <a
+                        href="#"><i class="f_r mcMIcon10 inline"></i>设计师提现</a> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var order_status = 1;
+    </script>
+
+    <div class="per_right_out backg_fff mg_b20 ">
+        <div class="per_right ">
+            <h4 class="nTitle relative">
+                订单编号：122007043946180978<ul class="myOrder_r" id="left_ul">
+                <li class="inline col_666 mg_r20"><span id="left_time" class="col_f60"></span>订单将关闭</li>
+                <li class="inline mg_r20"><a href="http://buy.biyao.com/order/onlineCharge?order_id_list=MTIyMDA3MDQzOTQ2MTgwOTc4" class="inline pbBtn_30 pbBtn_f60 w80 col_fff f14">支付</a></li>
+                <li class="inline"><a orderid="122007043946180978" class="inline col_link cancelOrder" href="javascript:void(0)">取消订单</a></li>
+            </ul>
+            </h4>
+            <div class=" clearfix mb_30 mg_t20">
+                <div class="publicStepsbox overflow">
+                    <ul class="steps5 clearfix stepUlNum">
+                        <li class="step_checked first"><i class="inline spIcon sucBg"></i>
+                            <div class="f90_line"></div></li>
+                        <li><i class="inline spIcon numBg">2</i>
+                            <div class="gray_line"></div></li>
+                        <li class=""><i class="inline spIcon numBg">3</i>
+                            <div class="gray_line"></div></li>
+                        <li class=""><i class="inline spIcon numBg">4</i>
+                            <div class="gray_line"></div></li>
+                        <li class="last"><i class="inline spIcon numBg">5</i>
+                            <div class="gray_line"></div></li>
+                    </ul>
+                    <ul class="steps5 clearfix stepUlTxt">
+                        <li class="first">提交订单 <br /> <span class="inline col_999">2016-08-05 23:24:21</span></li>
+                        <li>在线付款</li>
+                        <li>商家生产</li>
+                        <li>商家发货</li>
+                        <li class="last">收货并评价</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="orderdetails_box1 border mg_t15">
+                <p class="sizeZero">
+                    <span class="inline"><span class="col_666 f18">当前订单状态：</span> <span class="col_f60 f18">商品订单已提交，请在2小时内付款，若未及时付款，系统将自动取消订单！</span></span>
+                </p>
+                <p class="mg_t10 f14">
+                    1.点击这里付款 &nbsp;&nbsp;<a
+                        class="btnComS btnBg2 btnH1 w80 inline mg_l10 "
+
+                        href="http://buy.biyao.com/order/onlineCharge?order_id_list=MTIyMDA3MDQzOTQ2MTgwOTc4"><span>立即付款</span></a><br>
+
+                    2.如果您不想购买，可以 <a orderid="122007043946180978"
+                                    class="f14 mg_l10 col_07a6df cancelOrder" href="javascript:void(0)">取消订单</a>
+                </p>
+
+            </div>
+
+            <div class="orderdetails_box1 border mg_t30 bg_f5">
+                <h3 class="f16 orderTxtn">订单信息</h3>
+                <div class="pd_t20 pd_b20">
+                    <dl class="order_msgn mg_b10">
+                        <dt class="inline col_666 w70">收货地址：</dt>
+                        <dd class="inline"><span class="mg_r20">阿茂
+			&nbsp;&nbsp;
+			</span><span class="mg_r30">13303032929</span>       北京市市辖区西城区网路1</dd>
+                    </dl>
+                </div>
+                <div class="pd_t20 pd_b20 bd_top_cc_dot">
+                    <dl class="order_msgn mg_b10">
+                        <dt class="inline col_666 w70">配送方式：</dt>
+                        <dd class="inline">顺丰快递</dd>
+                    </dl>
+                    <dl class="order_msgn">
+                        <dt class="inline col_666 w70">配送时间：</dt>
+                        <dd class="inline">
+                            工作日、双休日、假日均可送货
+                        </dd>
+                    </dl>
+                </div>
+                <div class="pd_t20 pd_b20 bd_top_cc_dot">
+                    <dl class="order_msgn mg_b10">
+                        <dt class="inline col_666 w70">商家信息：</dt>
+                        <dd class="inline">
+                            <!--暂时关闭IM入口，勿删-->
+                            <a>
+                                <span class="inline">商家：</span>
+                                <span id="J_product_name " class="inline col_666">Ginger皮具</span>
+                            </a>
+                        </dd>
+                    </dl>
+                    <dl class="order_msgn mg_b10">
+                        <dt class="inline col_666 w70"></dt>
+                        <dd class="inline">联系电话：400-890-6288</dd>
+                    </dl>
+                    <dl class="order_msgn">
+                        <dt class="inline col_666 w70"></dt>
+                        <dd class="inline">生产周期：25天</dd>
+                    </dl>
+                </div>
+
+
+            </div>
+            <div class="mg_t30  mg_b40">
+                <div class="order_title clearfix ">
+                    <table cellspacing="0" cellpadding="0" class="w100w order_titn_tab">
+                        <tbody>
+                        <tr>
+                            <th>商品信息</th>
+                            <!-- <th width="10%" align="center">可获积分
+                        </th> -->
+                            <th width="12%">单价</th>
+                            <th width="8%">数量</th>
+                            <th width="15%">优惠</th>
+                            <th width="12%">包装</th>
+                            <th width="14%">小计</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <table cellspacing="0" cellpadding="0" class="sop_table4 border">
+                    <tbody>
+
+                    <tr data-orderid="122007043946180978" data-supplierid="130091" data-unfacceptance="0">
+                        <td width="60%" class="bd_r J_popup_parent">
+                            <table width="100%" height="100px" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="http://www.biyao.com/products/1300910000000030000-1.html" target="_blank" class="perCmImg inline mg_l10">
+                                            <img src="http://img.biyao.com/files/temp/render_zs/result/1300910000/272079c5d789a84c_130091000000003_0_800_363/img_6_800_200.jpg" alt="" width="100" height="100">
+                                        </a>
+
+                                        <div class="inline mg_l10 vMiddle lineH20">
+                                            <a target="_blank" href="http://www.biyao.com/products/1300910000000030000-1.html" class="col_666">
+                                                <span class="col_666">女士丝印进口牛皮休闲购物包</span>
+                                            </a>
+                                            <br>
+                                            <span class=" col_999 inline">规格:标配<br/>签名:无</span>
+                                            <!--  </dl>	-->
+                                            <div class="refund_tips"></div>
+                                        </div>
+                                    </td>
+                                    <td width="15%" class="bd_l t_c">
+                                        <strong class="col_f60 f14">¥399</strong>
+                                    </td>
+                                    <td width="10%" class="bd_l t_c">
+                                        <span class="col_666">1</span>
+                                    </td>
+                                    <td width="15%" class="bd_l t_c">
+                                        <strong class="col_f60 f14">￥0</strong>
+                                    </td>
+                                    <td width="15%" align="center" class="bd_l lineH20">
+                                        <span class="col_666">普通包装</span><br>
+                                        <strong class="col_f60">免费</strong>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td width="10%" align="center" class="bd_l vMiddle lineH20">
+                            <strong class="col_f60 f14">¥399</strong><br>
+                            <span>免运费</span>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <div class="reality_box t_r sizeZero">
+                    <span class="inline col_666 f12">实付款：</span>
+                    <span class="inline col_f60 f18 fb">¥399</span>
+                    <span class="inline col_666 f12 mg_l10">优惠总金额：</span>
+                    <span class="inline col_f60 f18 fb">¥0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    $(function(){
+        hoverReservationpart();
+    })
+    function hoverReservationpart(){
+        $(".Reservationpart").hover(
+                function(){
+                    var $this=$(this);
+                    //判断 是否已经加载过
+                    if(($this.find(".Reservation_wl_w1")).length==0){
+                        $.ajax({
+                            type: "get",
+                            async: false,
+                            url:"/RequestAPI/PackageList?designId="+$this.attr("designid"),
+                            success: function (data) {//sunccess
+                                if(data.success==1){
+                                    var html='<div class="Reservation_wl_w1">\
+				                	<div class="wl_jd1"></div>\
+				                	<div class="c_wl_n">\
+				                	<div class="col_724 borderB c_wl_t">\
+					                	<span>'+data.data.standardPackage.name+' </span>\
+					                	<span class="f_r">￥'+data.data.standardPackage.price+'</span>\
+				                	</div>\
+				                	<div class=" col_666 masked-relative masked" style="line-height:25px">';
+                                    $.each(data.data.standardPackage.element,function(j,item){
+                                        html+='<div>\
+				                		<span class="w150">'+item+'</span><span class="f_r">包括</span>\
+				                		</div>';
+                                    });
+                                    $.each(data.data.comboPackage,function(j,item){
+                                        html+='<div class="col_724 borderB c_wl_t">\
+					                	<span>'+item.name+'</span><span class="f_r">￥'+item.price+'</span>\
+					                	</div>\
+					    				<div class=" col_666 masked-relative masked" style="line-height:25px">';
+                                        $.each(item.element,function(e,ite){
+                                            html+='<div>\
+					    					<span class="w150">'+ite+'</span><span class="f_r">包括</span>\
+					    					</div>';
+                                        })
+                                        html+='</div>';
+                                    })
+
+
+                                    html+='</div>\
+				                	</div></div>';
+                                    $this.append(html);
+                                }
+                            }//sunccess
+                        })
+                    }
+                    $this.find(".Reservation_wl_w").css("display","block");
+                }
+                ,function(){
+                    $(this).find(".Reservation_wl_w").css("display","none");
+                }
+        );
+
+    }
+</script>
+</div>
+<div data-selector="J_im" id="webIM_showDiv"></div>
+
+<div class="footer_links clearfix J_1200 auto">
+    <div class="content wrap sizeZero">
+        <div class="footer_nav_box inline">
+            <ul class="footer_nav_list clearfix">
+                <li>
+                    <a target="_blank" href="http://www.biyao.com/minisite/ljby">关于必要</a>
+                    <span class="bg_line"></span>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.biyao.com/help/8.html">加入必要</a>
+                    <span class="bg_line"></span>
+                </li>
+                <li>
+                    <a target="_blank" href="http://www.biyao.com/help/tel.html">联系我们</a>
+                    <span class="bg_line"></span>
+                </li>
+                <li class="none">
+                    <a target="_blank" href="http://www.biyao.com/list/39/list-1.html">网站地图</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://weibo.com/biyaoshangcheng">官方微博</a>
+                    <span class="bg_line"></span>
+                </li>
+
+            </ul>
+            <p class="col_999 lineH18 mg_t10">◎BIYAO.COM 2015 版权所有
+            </p>
+            <p class="col_999 lineH18 mg_t10"><i class="gwab_icon inline"></i><a class="col_999 inline mg_r5" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=XXX" target="_blank">粤公网安备XXX号</a> <a class="col_999 inline" href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">粤ICP备13088531号</a>
+            </p>
+        </div>
+        <div class="footer_evm sizeZero inline">
+            <div class="inline mg_r40 footer_evm_img">
+                <div class="an_bg inline mg_r15"></div>
+                <div class="inline evm_tit_msg">
+                    <span class="col_333 f14">扫描二维码下载</span><br/>
+                    <span class="col_724 f14">必要手机客户端</span>
+                </div>
+            </div>
+            <div class="inline mg_r10 footer_evm_img">
+                <div class="weixin_bg inline mg_r15"></div>
+                <div class="inline evm_tit_msg">
+                    <span class="col_333 f14">扫描二维码关注</span><br/>
+                    <span class="col_724 f14">必要官方微信</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="pc/common/js/lazyload.js?v=biyao_80d4f78"></script>
+<script type="text/javascript" src="pc/common/js/common.js?v=biyao_c83c46d"></script>
+<script type="text/javascript" src="pc/common/js/ui/select.js?v=biyao_1dcaa7c"></script>
+<script type="text/javascript" src="pc/common/js/ui/autocomplete.js?v=biyao_bd4725d"></script>
+<script type="text/javascript" src="pc/common/js/ui/jquery.pagination.js?v=biyao_1a0a135"></script>
+<script type="text/javascript" src="pc/common/js/ui/pages.js?v=biyao_5fd7a00"></script>
+<script type="text/javascript" src="pc/common/js/ui/jquery.validate.js?v=biyao_20c474d"></script>
+<script type="text/javascript" src="pc/www/js/mycenter/mycenter.js?v=biyao_63cad99"></script>
+<script type="text/javascript"	src="pc/www/js/common.js?v=biyao_bd8bd36"></script>
+<script type="text/javascript">
+
+    window.loginUserId=2444809;
+
+</script>
+
+<script src="pc/common/js/ui/dialog.js?v=biyao_130c013"
+        type="text/javascript"></script>
+<script src="pc/www/js/mycenter/cancelOrderDes.js?v=biyao_5fa2325"
+        type="text/javascript"></script>
+<script src="pc/common/js/ui/select.js?v=biyao_1dcaa7c"
+        type="text/javascript"></script>
+<script src="pc/www/js/mycenter/myOrder_refund4.js?v=biyao_cd89831"
+        type="text/javascript"></script>
+<script src="pc/www/js/mycenter/common.js?v=biyao_e44562c"
+        type="text/javascript"></script>
+<script src="pc/www/js/mycenter/myorderdetail.js?v=biyao_8626d58"
+        type="text/javascript"></script>
+<script src="pc/common/js/ui/jquery.validate.js?v=biyao_20c474d"
+        type="text/javascript"></script>
+<script src="pc/www/js/mycenter/myorderdetail-list.js?v=biyao_eb1ba46"
+        type="text/javascript"></script>
+<script src="pc/common/js/ui/loadmask.js?v=biyao_5aac5cc"
+        type="text/javascript"></script>
+<script src="pc/www/js/product/lazyloadIM.js?v=biyao_2f2a448"
+        type="text/javascript"></script>
+<script>
+
+    var left_seconds = 7012
+
+    var intcount;
+
+    $(function(){
+        //延长收货
+        if($('.ycsh_djs').length>0){
+            var clt=$('.ycsh_djs').attr('clts');
+            var formatTime=function(mstime){
+                var day = parseInt(mstime/60/60/24);
+                var hour = parseInt(mstime/60/60%24);
+                var min = parseInt(mstime/60%60);
+                var sec = parseInt(mstime%60);
+                return '还剩 '+day+'天'+hour+"时"+min+"分"+sec+"秒";
+            }
+            var djs=setInterval(function(){
+                if(clt>0){
+                    $('.ycsh_djs').html(formatTime(clt));
+                    clt=clt-1;
+                }else{
+                    window.location.reload();
+                }
+            },1000);
+            $('.ycshck').click(function(){
+                var orderid=$(this).attr('orderid')
+                if(clt>3*24*60*60){
+                    LT.alertSmall('您可以在离超时结束还剩最后<span class="col_f60">3</span>天时，申请延长确认收货时间！');
+                    $('.J_pop').css('width','400px');
+                }else if(clt>0&&clt<=3*24*60*60){
+                    LT.confirmSmall('您可以延长该订单收货时间，将有更多的时间进行"确认收货"，延长天数为<span class="col_f60">5</span>天。<br><span class="col_link">提示：收货时间只能延长一次</span>', function (data) {
+                        if (data == true) {
+                            $.ajax({
+                                type:"post",
+                                url:"/MyCenter/ycsh",
+                                data:{orderId:orderid},
+                                success:function(data){
+                                    if(data.success == 1){
+                                        LT.alertSmall('您已成功将订单的收货时间延长<span class="col_f60">5</span>天！<br><span class="col_link">提示：如果您还是没收到货，请联系商家</span>',function(){window.location.reload();});
+                                    }else{LT.alertSmall('网络连接失败，请稍候重试');}},
+                                error:function(data){LT.alertSmall('网络连接失败，请稍候重试');}
+                            });
+                        }
+                    });
+                    $('.J_pop').css('width','470px');
+                }
+            });
+        }
+        //促销相关
+        $(".msgBtn").bind('click',function(){
+            var self = $(this);
+            var id = self.attr("dataid");
+            //预售
+            if(self.attr("datatype") == 2){
+                var preSaleDiv = "#preSaleDiv"+id;
+                //显示价格
+                var dataprice= parseFloat(self.attr("dataprice"));
+                $("td[name='promotionPrice']").each(function(index){
+                    var td = $(this);
+                    var discount = td.attr("discount");
+                    td.html(dataprice*parseFloat(discount)/100.0);
+                });
+                $(preSaleDiv).show();
+                $(preSaleDiv+" .pop_close,#iknow").unbind("click").bind("click",function(){
+                    $(preSaleDiv).hide();
+                });
+            }//分享免邮
+            else{
+                var sharePromotion = "#sharePromotion" + id;
+                $(sharePromotion).show();
+                $(sharePromotion+" .pop_close").unbind("click").bind("click",function(){
+                    $(sharePromotion).hide();
+                });
+            }
+        });
+        $('.wl_dl_w').mask(true);
+        $.post(window.ControllerSite+'/SfExpress/QueryExpressInfo','tarcking_number='+$('#wl_order').html() + '&orderId='+ $("[data-orderid]").attr("data-orderid"),function(wl_data){
+            var str = "";
+            try{
+                var jsons = eval('(' + wl_data.data + ')');
+                for(var i=0;i<jsons.length;i++)
+                {
+                    str = '<div class="wl_dl"><span class="w150">'+jsons[i].accept_time+'</span><span class="w650">'+jsons[i].remark+'</span></div>' + str;
+                }
+                $('.wl_dl_w').html(str);
+                if (jsons != null && jsons.length > 0) {
+                    if (jsons[jsons.length-1].opcode == 3) {
+                        $('.progress_box').html('<span class="inline active" style="width:' + jsons[jsons.length-1].rate + '%"></span>');
+                        $('.progress_box').next().html(jsons[jsons.length-1].rate + '%&nbsp;&nbsp;&nbsp;' + jsons[jsons.length-1].processname);
+                    }
+                }
+            }catch(e){
+                $('.wl_dl_w').css('background-image','none').html('<div class="pd_t10 pd_b10" align="left">获取信息错误  . . .<div>');
+            }
+        })
+
+        if (order_status == 1){
+            if (left_seconds > 0) {
+                intcount = self.setInterval("count()",1000);
+            } else {
+                self.clearInterval(intcount);
+                $("#left_ul").remove();
+                $(".orderdetails_box1 p:first").empty();
+                $(".orderdetails_box1 p:first").append("<span class='inline'><span class='col_666 f18'>当前订单状态：</span> <span class='col_f60 f18'>已关闭！</span></span>");
+                $(".orderdetails_box1 p:last").empty();
+                $(".orderdetails_box1 p:last").append("<span class='f14 col_666'>取消原因：超时未付款，自动取消订单</span><span class='f14 col_666'></span>");
+            }
+        }
+
+    })
+
+    function count(){
+        left_seconds--;
+        if (left_seconds < 0) {
+            self.clearInterval(intcount);
+            $("#left_ul").remove();
+            $(".orderdetails_box1 p:first").empty();
+            $(".orderdetails_box1 p:first").append("<span class='inline'><span class='col_666 f18'>当前订单状态：</span> <span class='col_f60 f18'>已关闭！</span></span>");
+            $(".orderdetails_box1 p:last").empty();
+            $(".orderdetails_box1 p:last").append("<span class='f14 col_666'>取消原因：超时未付款，自动取消订单</span><span class='f14 col_666'></span>");
+        } else {
+            var left_hour = Math.floor(left_seconds/3600);
+            var left_minute = Math.floor(left_seconds/60)%60;
+            $("#left_time").html(left_hour+ "小时"+ left_minute + "分钟后");
+        }
+    }
+</script>
+
+
+
+
+</body>
+</html>

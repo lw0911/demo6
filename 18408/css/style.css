@@ -1,0 +1,297 @@
+/*公共样式*/
+ul,li{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.g-width{
+    width: 1200px;
+}
+.g-center{
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+    font-size: 12px;
+    color: #787878;
+}
+
+#top-menu{
+    background: #eee;
+    height: 26px;
+}
+.top-menu-box{
+    height: 26px;
+}
+.top-menu-box ul li{
+    float: left;
+    line-height: 26px;
+    font-size: 12px;
+    margin: 0 5px;
+}
+.top-menu-box ul li b{
+    color: #c9c9c9;
+}
+.top-menu-box ul li a{
+    color: #787878;
+}
+
+#logo{
+    background: url(../images/logo.jpg);
+    background-position: center;
+    height: 280px;
+    overflow: hidden;
+}
+#logo .img{
+    height: 280px;
+    background: url(../images/logo.jpg);
+    background-position: center;
+}
+#logo-bt{
+    height: 235px;
+    background: url(../images/logo-bottom.jpg);
+    background-position: center;
+    overflow: hidden;
+}
+#logo-bt .img-bt{
+    height: 235px;
+    background: url(../images/logo-bottom.jpg);
+    background-position: center;
+}
+
+#goods{
+    background: url(../images/bg.jpg);
+    background-position:top center;
+    overflow: hidden;
+}
+#goods .gd-box{
+    height: 100%;
+    overflow: hidden;
+}
+#goods .gd-box ul{
+    width: 1300px;
+}
+#goods .gd-box ul li{
+    height: 384px;
+    width: 285px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    overflow: hidden;
+}
+#goods .gd-box ul li a{
+    margin-right: 20px;
+    float: left;
+    height: 384px;
+    width: 285px;
+    background: #fff;
+    overflow: hidden;
+}
+#goods .gd-box ul li a:hover .go{
+    color: #000000;
+}
+#goods .gd-box ul li a .box{
+    position: relative;
+    height: 302px;
+    width: 285px;
+}
+#goods .gd-box ul li a .box .title-box{
+    height: 30px;
+    width: 265px;
+    background: #f50e33;
+    position: absolute;
+    bottom: -15px;
+    margin-left: 10px;
+    line-height: 30px;
+}
+#goods .gd-box .box .title-box .t{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 14px;
+    width: 210px;
+    float: left;
+}
+#goods .gd-box .box .title-box .zhe{
+    width: 44px;
+    height: 30px;
+    float: right;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+}
+#goods .gd-box .box .title-box .zhe sh{
+    font-size: 20px;
+    letter-spacing: -2px;
+    margin:2px 2px;
+}
+#goods .gd-box .box .title-box z{
+    font-size: 12px;
+}
+#goods .gd-box ul li a .bt{
+    height: 82px;
+    width: 265px;
+    line-height: 82px;
+    padding: 0 10px;
+}
+#goods .gd-box ul li a .bt .s{
+    font-size: 24px;
+    color: #333;
+    font-weight: 800;
+}
+#goods .gd-box ul li a .bt .s b{
+    font-size: 18px;
+    color: #999;
+}
+#goods .gd-box ul li a .bt .y{
+    color: #999999;
+}
+#goods .gd-box ul li a .bt .go{
+    color: #e61e3e;
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+    font-weight: bold;
+    line-height: 85px;
+}
+
+/*包邮返邮费区*/
+.postage{
+    overflow: hidden;
+}
+.postage .title{
+    height: 101px;
+    line-height: 101px;
+    font-size: 65px;
+    color: #fff;
+    text-align: center;
+}
+.postage .title img{
+    width: 101px;
+    height: 95px;
+}
+.postage .title hh{
+    height: 101px;
+    line-height: 101px;
+    background-repeat: no-repeat;
+}
+.postage .c{
+    position: relative;
+    margin-top: 20px;
+    background: #fff;
+    padding: 80px;
+}
+.postage .c .er{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.postage .c p{
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    text-indent: 2em;
+}
+
+.postage .c h1{
+    color: #d21b3f;
+    line-height: 36px;
+    font-weight: bolder;
+}
+.bb{
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+/*右侧导航条*/
+#sidebar{
+    z-index: 999;
+    width: 134px;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    float: right;
+}
+#sidebar .side-box{
+    height: 292px;
+    float: left;
+    position: relative;
+    background: #e61e3e;
+}
+#sidebar .img{
+    width: 134px;
+    height: 149px;
+    overflow: hidden;
+    border-bottom: 1px solid #ffffff;
+}
+#sidebar .sd-menu ul li{
+    width: 132px;
+    height: 34px;
+    line-height: 34px;
+    background: #e61e3e;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+#sidebar .sd-menu ul li a{
+    height: 34px;
+    line-height: 34px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+#sidebar .sd-menu ul li:hover{
+    background: #000000;
+    color: #ffffff;
+}
+#sidebar .i{
+    position: absolute;
+    width: 100px;
+    right: 34px;
+    bottom: -245px;
+    overflow: hidden;
+}
+#sidebar .side-bar{
+    width: 35px;
+    height: 100%;
+    float: right;
+    background: #000000;
+    overflow: hidden;
+}
+
+/*楼层标题*/
+.l .title{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.l .title img{
+    width: 101px;
+    height: 95px;
+}
+.l .title hh{
+    font-size: 65px;
+    height: 101px;
+    line-height: 101px;
+    background-repeat: no-repeat;
+}
+
+
+
+

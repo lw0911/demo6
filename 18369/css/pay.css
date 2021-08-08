@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0; margin:0; text-decoration:none; list-style:none; font-weight:normal;}
+.box{width:100%; height:60px; background-color:#eee;}
+.title{width:1200px; height:60px; margin:0 auto; overflow:hidden; min-width:1200px;}
+.images01{width:24px; height:24px; margin-top:18px; float:left;}
+.title>a>p{ font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#000; float:left; line-height:60px; margin-left:26px;}
+.title>a>div{font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#000; float:left; line-height:60px; margin-left:10px;}
+.title>a>p>img{float:left;margin-top:22px; margin-right:6px;}
+.title span{margin-left:660px;}
+.title>a>p:hover{color:#fe294d;}
+.title>a>div:hover{color:#fe294d;}
+.imgs{ width:1200px; height:119px; margin:0 auto; min-width:1200px; border-bottom:1px solid #eee;}
+.imgs>img{width:170px; height:60px; margin-top:30px;}
+/******字********************/
+.con01{width:1200px; height:119px; margin:0 auto; min-width:1200px; border-bottom:1px solid #eee; overflow:hidden;}
+.word01{width:870px; height:120px; float:left; margin-left:30px;}
+.word01 h1{font-size:18px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin:30px 0 20px 0;}
+.word01 h1:hover{color:#fe294d;}
+.word01>p{font-size:14px; font-family:"微软雅黑", "宋体", "黑体"; color:#666;}
+.word02{width:300px; height:120px; float:left; overflow:hidden;}
+.word02>h1{font-size:18px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; float:left; margin-top:68px;}
+.word02>p{font-size:24px; font-family:"微软雅黑", "宋体", "黑体"; color:#fe294d; float:left; margin-top:64px;}
+/*****框*****************/
+.kuang{width:1200px; margin:0 auto; min-width:1200px;}
+.kuang>.kuang01{width:1094px; height:194px; border:3px solid #b5b5b5; margin:30px;}
+.kuang>.kuang01>.pay01{ margin-left:30px; overflow:hidden; margin-top:16px;}
+.kuang01>.pay01>img{width:24px; height:24px; float:left;}
+.kuang01>.pay01>h1{ font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin-left:20px; margin-top:4px; float:left;}
+.kuang01>.pay01>h2{ font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin-left:80px; margin-top:4px; float:left;}
+.kuang01>.pay01>h3{ font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin-left:560px; margin-top:4px; float:left;}
+.kuang01>.pay01>p{ font-size:20px; font-family:"微软雅黑", "宋体", "黑体"; color:#fe294d; float:left;}
+.kuang01>p{ font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin-left:30px; margin-top:20px;}
+.kuang>.kuang01>.pay02{ margin-left:30px; overflow:hidden; margin-top:10px;}
+.kuang01>.pay02>h1{ font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin-top:4px; float:left;}
+.kuang01>.pay02>input{ width:76px; height:24px; float:left;}
+.kuang01>.pay02 p{ font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#fe294d; margin-top:4px; margin-left:8px; float:left;}
+.kuang>.kuang01>input{width:100px; height:34px; margin-left:60px; margin-top:20px; background:#fe294d; font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; border:none; text-align:center; line-height:34px; color:#fff; cursor:pointer;}
+/******银行卡支付************/
+.kuang>.kuang02{width:1098px; height:58px; border:1px solid #e5e5e5; margin-left:30px; overflow:hidden;}
+.kuang>.kuang02 img{width:25px; height:18px; margin:22px; float:left;}
+.kuang>.kuang02 p{font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin-top:20px; float:left;}
+/*******微信支付************/
+.kuang>.kuang03{width:1098px; height:58px; border:1px solid #e5e5e5; margin-left:30px; margin-top:30px; overflow:hidden;}
+.kuang>.kuang03 img{width:24px; height:22px; margin-left:23px; margin-top:19px; float:left;}
+.kuang>.kuang03 p{font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin-top:20px; float:left; margin-left:22px;}
+/********支付宝支付*********/
+.kuang>.kuang04{width:1098px; height:58px; border:1px solid #e5e5e5; margin-left:30px; margin-top:30px; overflow:hidden;}
+.kuang>.kuang04 img{width:24px; height:24px; margin-left:23px; margin-top:18px; float:left;}
+.kuang>.kuang04 p{font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a; margin-top:20px; float:left; margin-left:22px;}
+.kuang>p{ margin-top:80px; margin-left:430px; font-size:16px; font-family:"微软雅黑", "宋体", "黑体"; color:#1a1a1a;}
+.kuang>.kuang02 p:hover{color:#fe294d;}
+.kuang>.kuang03 p:hover{color:#fe294d;}
+.kuang>.kuang04 p:hover{color:#fe294d;}

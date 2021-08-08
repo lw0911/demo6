@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+/*媒体查询的支持程度是IE9+以及其他现代的浏览器，Respond.js让IE6-8支持CSS3 Media Query媒体查询*/
+@media screen and (max-width: 1219px) {
+.content { width:1000px; }
+.img-responsive { height: auto; width: 100%; display: inline-block; }
+#logo .img-responsive { width: 11%; }
+#banner .banner-left { width: 737px; }
+#banner .banner-left .play { width: 737px; height: 260px; }
+#banner .banner-left .play ul img {  width: 737px; height: 260px; }
+#banner .banner-right .img-responsive { width: 40%; }
+#banner .banner-right .points-mall { width: 238px; padding-right: 10px; padding-left: 10px; padding-top: 10px; height: 80px; }
+#banner .banner-right .coupon { width: 238px; padding-right: 10px; padding-left: 10px; height: 70px; }
+#banner .banner-right .events { width: 238px; padding-right: 10px; padding-left: 10px; height: 60px; }
+#industry ul li a { margin-bottom: 20px; }
+#industry { width: 974px; }
+#industry ul li a { margin-right: 1px; margin-left: 1px; }
+#business .item { width: 158px; }
+#business .item img { height: auto; width: 100%; display: inline-block; }
+}
+@media screen and (max-width: 979px) {
+.content { width:750px; }
+#logo p { display: none; }
+#logo .img-responsive { width: 15%; }
+#logo .nav-searchbar { float: right; }
+#banner .banner-left { width: 746px; }
+#banner .banner-left .play { width: 746px; height: 263px; }
+#banner .banner-left .play ul img {  width: 746px; height: 263px; }
+#banner .banner-left .next { top: 43%; }
+#banner .banner-left .prev { top: 43%; }
+#banner .banner-right { width: 750px; }
+#banner .banner-right .clear { display: none; }
+#banner .banner-right .img-responsive { width: 40%; }
+#banner .banner-right .points-mall { width: 30.6%; padding-right: 10px; padding-bottom: 20px; padding-left: 10px; padding-top: 20px; height: 70px; }
+#banner .banner-right .points-mall h1 { margin-top: 10px; }
+#banner .banner-right .coupon { width: 30.6%; padding-right: 10px; padding-left: 10px; height: 70px; }
+#banner .banner-right .coupon p { margin-top: 10px; }
+#banner .banner-right .events { width: 30.6%; padding-top: 20px; padding-right: 10px; padding-left: 10px; height: 70px; }
+#industry { width: 708px; padding-right: 20px; padding-left: 20px; }
+#industry ul li a { margin-right: 22px; margin-left: 22px; }
+#business .item { width: 200px; padding-right: 15px; padding-left: 15px; }
+#business .item-responsive1 { margin-right: 0px; }
+}
+@media screen and (max-width: 767px) {
+.content { width:460px; }  
+#logo .img-responsive { width: 28%; }
+#logo p { display: block; font-size: 14px; }
+#logo p .img-responsive { width: 15%; }
+#nav { font-size: 14px; }
+#nav ul li { font-size: 12px; }
+#nav a { padding-right: 10px; padding-left: 10px; line-height: 40px; height: 40px; }
+#nav .nav-home { font-size: 14px; }
+#banner .banner-left { width: 456px; }
+#banner .banner-left .news {  font-size: 12px; padding-left: 10px; }
+#banner .banner-left .news p small { font-size: 12px; }
+#banner .banner-left .news p span { margin-right: 10px; margin-left: 10px; }
+#banner .banner-left .play { width: 456px; height: 160px; }
+#banner .banner-left .play ul img {  width: 456px; height: 160px; }
+#banner .banner-left .next { top: 38%; }
+#banner .banner-left .prev { top: 38%; }
+#banner .banner-right { width: 460px; }
+#banner .banner-right .img-responsive { width: 40%; }
+#banner .banner-right .points-mall { width: 28.9%; height: 90px; }
+#banner .banner-right .points-mall img { float: none; }
+#banner .banner-right .coupon { width: 28.9%; height: 90px; }
+#banner .banner-right .coupon img { float: none; }
+#banner .banner-right .events { width: 28.9%; height: 90px; }
+#industry { width: 434px; }
+#industry ul li a { margin-right: 6px; margin-left: 6px; }
+#business .item { width: 201px; padding-right: 6px; padding-left: 6px; }
+#business .item-responsive1 { margin-right: 27px; }
+#business .item-responsive2 { margin-right: 0px; }
+}
+@media screen and (max-width: 479px) { 
+.content { width:308px; }
+#top-bar .content { padding-top: 5px; padding-bottom: 5px; }
+#top-bar .content ul { width: 260px; }
+#top-bar .content ul li { line-height: 1.8; }
+#top-bar .content ul .li-responsive { float: right; }
+#top-bar .content ul li .span-responsive { visibility: hidden; }
+#logo .noneimg { display: none; }
+#logo .img-responsive { width: 40%; }
+#logo .nav-searchbar { height: 38px; width: 304px; }
+#logo .nav-input { width: 123px; }
+#logo .nav-search { width: 65px; }
+#nav a { padding-right: 15px; padding-left: 14px; }
+#nav .a-responsive { background-image: none; }
+#nav .nav-home { margin-right: 100px; }
+#banner .banner-left { width: 304px; }
+#banner .banner-left .news p em { display: none; }
+#banner .banner-left .play { width: 304px; height: 106px; }
+#banner .banner-left .play ul img {  width: 304px; height: 106px; }
+#banner .banner-left .next { top: 30%; }
+#banner .banner-left .prev { top: 30%; }
+#banner .banner-left .prev:hover .prevImg,#banner .banner-left .next:hover .nextImg { display:none; }
+#banner .banner-right { width: 308px; }
+#banner .banner-right .img-responsive { width: 80%; }
+#banner .banner-right .points-mall { width: 26.8%; height: 120px; }
+#banner .banner-right .points-mall h1 { font-size: 18px; }
+#banner .banner-right .points-mall img { float: none; }
+#banner .banner-right .coupon { width: 26.8%; height: 120px; }
+#banner .banner-right .coupon h1 { font-size: 18px; }
+#banner .banner-right .coupon img { float: none; }
+#banner .banner-right .events { width: 26.8%; height: 120px; }
+#banner .banner-right .events h1 { font-size: 18px; }
+#industry { width: 296px; padding-right: 5px; padding-left: 5px; }
+#industry ul li a { margin-right: 2px; margin-left: 1px; }
+#business .item { width: 266px; padding-right: 20px; padding-left: 20px; }
+}

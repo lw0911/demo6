@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>代运营</title>
+<meta name="keywords" content="天猫入驻"/>
+<meta name="description" content="天猫入驻"/>
+<meta name="author" content="huaiyustu.cn" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
+<context:component-scan base-package="com.th.action"></context:component-scan>
+<mvc:default-servlet-handler/>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/thirdpartnar.css" rel="stylesheet" type="text/css">
+<link href="css/iconfont/Rjdaoico.css" rel="stylesheet" type="text/css">
+<!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!--图片延迟加载 S-->
+<script src="js/lyz.delayLoading.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+	$("img").delayLoading({
+		defaultImg: "images/picture-loading.jpg",           // 预加载前显示的图片
+		errorImg: "images/picture-loading.jpg",                        // 读取图片错误时替换图片(默认：与defaultImg一样)
+		imgSrcAttr: "originalSrc",           // 记录图片路径的属性(默认：originalSrc，页面img的src属性也要替换为originalSrc)
+		beforehand: 0,                       // 预先提前多少像素加载图片(默认：0)
+		event: "scroll",                     // 触发加载图片事件(默认：scroll)
+		duration: "5000",                  // 三种预定淡出(入)速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认:"normal"
+		container: window,                   // 对象加载的位置容器(默认：window)
+		success: function (imgObj) { },      // 加载图片成功后的回调函数(默认：不执行任何操作)
+		error: function (imgObj) { }         // 加载图片失败后的回调函数(默认：不执行任何操作)
+	});
+});
+</script>
+<!--图片延迟加载 E-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.countUp.js"></script>
+<!--幻灯片 S-->
+<link rel="stylesheet" href="css/responsiveslides.css">
+<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	// Slideshow 
+	$("#slider").responsiveSlides({
+		auto: true,
+		pager: false,
+		nav: true,
+		speed: 500,
+		timeout:4000,
+		pager: true, 
+		pauseControls: true,
+		namespace: "callbacks"
+	});
+});
+</script>
+<!--幻灯片 E-->
+<!--下拉动画-->
+<link rel="stylesheet" href="wow/animate.min.css"/>
+<script type="text/javascript" src="wow/wow.min.js"></script>
+<script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		new WOW().init();
+	};
+	$(function(){
+		
+	});
+</script>
+<!--下拉动画-->
+</head>
+
+<body>
+
+<!--HEADER S-->
+<header class="header">
+	<div class="container">
+    	<div class="tel"><span>全国热线：</span><em>400-0000-000</em></div>
+        <a class="kefu"><i class="icon-ee1b"></i><span>在线客服</span></a>
+        <div class="right">
+        	<div class="login">
+            	<a href="login.html">登录</a><em></em>
+                <a href="regist.html">注册</a>
+            </div>
+        	<div class="option">
+            	<a href="chushou_shop.html" class="h2">快速出售网店</a><em></em>
+            	<a href="">真假客服验证</a><em></em>
+                <a href="">用户中心</a><em></em>
+                <a href="">在线问答</a><em></em>
+                <a href="">帮助</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="top-search">
+    	<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        <a href="/" class="logo wow flipInY"><img src="images/logo2.png" alt=""></a>
+        <div class="search-box">
+            <div class="select">
+            	<span id="serachValue">天猫商城</span>
+                <input id="serachClass" type="hidden" name="serachClass" value="1">
+            	<ul class="select-list">
+                    <li id="Se-shangcheng" value="1">天猫商城</li>
+                    <li id="Se-qita" value="2">其他商城</li>
+                    <li id="Se-xindian" value="3">天猫新店</li>
+                </ul>
+                <i class="icon-eedb jian"></i>
+                <em></em>
+                <div id="serachKeyInfo" class="wow zoomIn"><i class="icon-eed7"></i><dl>搜索关键词不能为空</dl></div>
+            </div>
+            <input type="text" class="serachKey" placeholder="请输入关键词，如：女装，母婴" id="serachKey" />
+            
+            <div class="searchbtn" id="serachText"><i class="icon-ef61"></i></div>
+        </div>
+        <div class="hotkey">
+            <span>本周热搜：</span>
+            <a href="">3C数码 </a>
+            <a href="">服饰鞋包 </a>
+        </div>
+        <div class="right">
+        	<a href="" class="seal">
+                <img src="images/DAJ-seal.png" id="showImg" />
+            </a>
+            <div class="person">
+            	<i class="icon-ef54 userico"></i>
+                <em></em>
+                <div class="person-select">
+                	<h2>我的XXX</h2>
+                </div>
+                <div class="person-option">
+                      <p>
+                          <span>您好，</span>
+                          <a href="login.html" class="p-login">请登录</a>
+                          <a href="regist.html" class="p-regist">注册</a>
+                      </p>
+                      <div class="con">
+                      <a href="user.html" class="ui">我购买的网店</a>
+                      <a href="" class="ui">我出售的网店</a>
+                      <a href="" class="ui">我收藏的网店</a>
+                      <a href="" class="ui">我要出售网店</a>
+                      <a href="" class="ui">账号充值</a>
+                      <a href="" class="ui">资金提现</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<nav class="nav">
+	<div class="con">
+    	<div class="topmain">
+        
+        	<div class="mainnav">
+            	<div class="mv-but">
+                	<span>热门网店类目</span>
+                    <i class="icon-eeee lumn"></i>
+                </div>
+                <div class="column">
+                	<ul>
+                    	<li><i><img src="images/ci1.png" alt=""></i><a href="">服饰配件/皮带/帽子/围巾</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">奶粉/辅食/营养品/零食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">彩妆/香水/美妆工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">零食/坚果/特产</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">数码相机/单反相机/摄像机</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">书籍/杂志/报纸工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">运动/瑜伽/健身/球迷用品</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">汽车/用品/配件/改装</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">餐饮美食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">珠宝/钻石/翡翠/黄金</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">影音电器</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">居家日用</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">家装主材</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">流行男鞋</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">OTC药品/医疗器械/计生用品</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sonclass">
+            	<a href="index.html"><span>首页</span></a>
+                <a href="ruzhu.html"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+                <a href="shop_list.html"><span>优选天猫商城<div class="hotico"><img src="images/new.png" alt=""></div></span></a>
+                <a href="daiyunying.html"><span>天猫代运营</span></a>
+                <a href="gujia.html"><span>网店估价</span></a>
+                <a href="web.html"><span>网站搭建</span></a>
+                <a href="shangbiao.html"><span>商标服务</span></a>
+                <a href="zhixin.html"><span>知心购店</span></a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+<!--HEADER E-->
+<!--副导航 S-->
+<div id="SubHeader">
+	<div class="main">
+		<a href="" class="logo"><img src="images/logo-sub.png" alt=""></a>
+        <div class="mnav">
+        	<a href="" class="son"><span>首页</span></a>
+            <a href="" class="son"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+            <a href="" class="son"><span>优选天猫商城</span><div class="hotico"><img src="images/new.png" alt=""></div></a>
+            <a href="" class="son"><span>天猫代运营</span></a>
+            <a href="" class="son"><span>网店估价</span></a>
+            <a href="" class="son"><span>网站搭建</span></a>
+            <a href="" class="son"><span>商标服务</span></a>
+            <a href="" class="son"><span>知心购店</span></a>
+            <div class="stel"><span>全国热线：</span><em>400-0000-000</em></div>
+        </div>
+    </div>
+</div>
+<!--副导航 E-->
+
+<!-- Slideshow -->
+<div class="callbacks_container">
+	<ul class="index-rslides" id="slider">
+		<li><a href=""><img src="images/s01.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/s02.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/s01.jpg" alt=""></a></li>
+		<li><a href=""><img src="images/s02.jpg" alt=""></a></li>
+	</ul>
+</div>
+<div style="width:100%;height:110px;"></div>
+
+
+
+<div class="thir-whyus">
+	<h2>为什么选择我们<span>优秀的电商运营推广团队，顶尖的技术，超具性价比的服务</span></h2>
+    <div class="list">
+    	<div class="item">
+        	<h3>多年店铺运营经验 成熟运营体系</h3>
+            <div class="text">
+            	<p>XXX多年专注电商运营推广服务</p>
+                <p>积累了吩咐的平台资源和网络营销经验</p>
+                <p>从品牌到平台运营推广，助你轻松玩转电商</p>
+                <dl>operation</dl>
+            </div>
+        </div>
+        <div class="item">
+        	<h3>官方认证服务商</h3>
+            <div class="text">
+            	<p>淘宝天猫是滴认证服务商</p>
+                <p>平台担保交易，服务更优保障</p>
+                <p>按效果付费，签订合同，法律包装，全称无忧</p>
+                <dl>gold medal</dl>
+            </div>
+        </div>
+        <div class="item">
+        	<h3>创新服务模式 十里领袖行业</h3>
+            <div class="text">
+            	<p>独创电商货架理论，零成本流量迅速飙升</p>
+                <p>托管+培训"双T"合作模式，品牌和销售两不误</p>
+                <p>依托大数据优秀和站外渠道联盟，带来大量精准流量</p>
+                <dl>OFFICIAL</dl>
+            </div>
+        </div>
+        <div class="item">
+        	<h3>大客户服务能力</h3>
+            <div class="text">
+            	<p>300人团队电商运营推广到时团，资深设计师，专业</p>
+                <p>客服在电商运营、用户体验、搜索优化等经验丰富</p>
+                <p>专项小组全程一对一操作，确保服务品质</p>
+                <dl>key account</dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="thir-service" style="background:url(images/thirdpartnar-bj1.jpg) no-repeat center top;">
+	<h2>一站式电商运营服务</h2>
+    <h3>更专业的电商代运营服务，即刻打造销量奇迹</h3>
+    <div class="itemlist">
+    	<div class="item">
+        	<i class="icon-e988"></i>
+            <h2>天猫/京东托管代运营</h2>
+            <dl></dl>
+            <span>丰富的电商实战经验，全方位运营管理</span>
+        </div>
+        <div class="item">
+        	<i class="icon-ecc8"></i>
+            <h2>数据分析</h2>
+            <dl></dl>
+            <span>大数据平台支撑，行业分析，产品定位，市场诊断，竞争预测，消费洞察</span>
+        </div>
+        <div class="item">
+        	<i class="icon-ed59"></i>
+            <h2>营销推广</h2>
+            <dl></dl>
+            <span>运营团队把关，站内外优化，直通车、钻展推广，广告投放，活动策划</span>
+        </div>
+        <div class="item">
+        	<i class="icon-ed53"></i>
+            <h2>视觉设计</h2>
+            <dl></dl>
+            <span>一流设计师团队，主流设计风格，打造极致交互体验，提升品牌价值</span>
+        </div>
+        <div class="item">
+        	<i class="icon-eead"></i>
+            <h2>爆款打造</h2>
+            <dl></dl>
+            <span>店铺全面分析，制定产品营销策略，多渠引流推广，轻松打造爆款</span>
+        </div>
+        <div class="item">
+        	<i class="icon-ee0b"></i>
+            <h2>客服管理</h2>
+            <dl></dl>
+            <span>专业客服团队，订单、评价、投诉维权处理、客户回访，有效提高妆化率</span>
+        </div>
+    </div>
+</div>
+
+<div class="thir-whyus" style=" padding-top:60px;">
+	<h2>合作流程<span>优秀的电商运营推广团队，顶尖的技术，超具性价比的服务</span></h2>
+    <div class="cooperation-process">
+    	<div class="item fl1">
+        	<div class="t">初步沟通</div>
+            <i>1</i>
+            <span>店铺负责人和客服初步沟通店铺目前情况，如有意向，开通店铺子账号</span>
+        </div>
+        <div class="item fl2">
+        	<div class="t">店铺诊断</div>
+            <i>2</i>
+            <span>运营团队通过店铺后台数据对店铺进行诊断，进行数据分析，以书面形式发给店铺方</span>
+        </div>
+        <div class="item fl3">
+        	<div class="t">深度沟通</div>
+            <i>3</i>
+            <span>运营团队通过数据分析情况与店铺方进行深入沟通，对店铺方深入了解情况，并提出接下的运营方案</span>
+        </div>
+        <div class="item fl4">
+        	<div class="t">合作模式</div>
+            <i>4</i>
+            <span>沟通双方最佳合作模式，深入探讨店铺运营方向，制定店铺销售目标</span>
+        </div>
+        <div class="item fl5">
+        	<div class="t">签订合同</div>
+            <i>5</i>
+            <span>双方达成合作协议，就合作情况签订相应的代运营服务合同</span>
+        </div>
+        <div class="item fl6">
+        	<div class="t">正式启动</div>
+            <i>6</i>
+            <span>成立运营小组，制定店铺规划，正式运营店铺</span>
+        </div>
+    	<div class="tiao"></div>
+    </div>
+</div>
+
+
+
+<div style="width:100%;height:376px; margin:60px auto 0 auto;background:url(images/bpic1.jpg) no-repeat center top;">
+</div>
+
+
+<div class="thir-form-h1">请准确填写</div>
+<div class="thir-form-h2">以便于我们安排合适的运营经理为您诊断店铺</div>
+<div class="thir-form-h3"></div>
+<div class="thir-form-con">
+<style type="text/css">
+.RadioStyle input {
+	display: none
+	}
+.RadioStyle label {
+	border: 1px solid #999;
+	padding: 2px 15px 2px 15px;
+	line-height: 28px;
+	min-width:60px;
+	text-align: center;
+	float: left;
+	margin:2px 16px 0 0;
+	font:16px/28px 'microsoft yahei';
+	border-radius:1px;
+	cursor:pointer;
+	color:#666;
+	}
+.RadioStyle input:checked + label {
+	background: url(images/ico_checkon.svg) no-repeat right bottom;
+	background-size: 21px 21px;
+	border: 1px solid #F30;
+	color:#F30;
+	}
+</style>
+<form id="form1" name="form1" method="post" action="">
+	<div class="strip">
+    	<h3>您的店铺在以下哪个平台</h3>
+        <div class="RadioStyle">
+        	<div class="Block PaddingL">
+                <input type="radio" name="Storage" id="model1" value="天猫" checked/>
+                <label for="model1">天猫</label>
+                <input type="radio" name="Storage" id="model2" value="淘宝">
+                <label for="model2">淘宝</label>
+                <input type="radio" name="Storage" id="model3" value="京东">
+                <label for="model3">京东</label>
+            </div>
+        </div>
+    </div>
+    <div class="strip">
+    	<h3>有没有想要了解的服务？</h3>
+        <div class="RadioStyle">
+            <div class="Block PaddingL">
+                <input type="checkbox" id="love1" name="checkbox[]" value="店铺诊断" checked />
+                <label for="love1">店铺诊断</label>
+                <input type="checkbox" id="love2" name="checkbox[]" value="网店运营推广">
+                <label for="love2">网店运营推广</label>
+                <input type="checkbox" id="love3" name="checkbox[]" value="店铺装修设计">
+                <label for="love3">店铺装修设计</label>
+                <input type="checkbox" id="love4" name="checkbox[]" value="直通车、钻展">
+                <label for="love4">直通车、钻展</label>
+                <input type="checkbox" id="love5" name="checkbox[]" value="内容营销">
+                <label for="love5">内容营销</label>
+                <input type="checkbox" id="love6" name="checkbox[]" value="其它">
+                <label for="love6">其它</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="strip">
+    	<h3>您的店铺名称</h3>
+        <input type="text" name="text" class="input" placeholder="请输入您的店铺名称..." autocomplete="off">
+    </div>
+    <div class="strip">
+    	<h3>您的店铺地址</h3>
+        <input type="text" name="text" class="input" placeholder="请输入您的店铺链接..." autocomplete="off">
+    </div>
+    <div class="strip">
+    	<h3>怎么称呼您</h3>
+        <input type="text" name="text" class="input" placeholder="请输入您的姓名..." autocomplete="off">
+    </div>
+    <div class="strip">
+    	<h3>您的手机号</h3>
+        <input type="text" name="text" class="input" placeholder="请输入您的手机号..." autocomplete="off">
+    </div>
+	<input type="submit" class="button" value="提交信息 免费诊断">
+<!--
+<?php
+//复选框PHP传值
+if($_POST){
+	$val = $_POST['checkbox'];
+	echo '你选择了:'.implode('/',$val);
+    //checkbox[]，这样php才能读取，以数据形式,否则不能正确的读取checkbox复选框的值哦。
+}
+?> 
+-->
+</form>
+</div>
+
+
+
+
+<!--FOOTER S-->
+<footer class="footer" style="background:url(images/foot-bj.jpg) no-repeat center top;">
+	<div class="textMian">
+    	<div class="content">
+        	<div class="left">
+            	<ul>
+                	<h2>关于我们</h2>
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">诚聘英寸</a></li>
+                </ul>
+                <ul>
+                	<h2>体现充值</h2>
+                    <li><a href="">如何充值</a></li>
+                    <li><a href="">如何提现</a></li>
+                    <li><a href="">收费标准</a></li>
+                </ul>
+                <ul>
+                	<h2>服务流程</h2>
+                    <li><a href="">购买流程</a></li>
+                    <li><a href="">出售流程</a></li>
+                    <li><a href="">寄出流程</a></li>
+                </ul>
+                <ul>
+                	<h2>安全保障</h2>
+                    <li><a href="">店铺转让保证</a></li>
+                    <li><a href="">担保交易</a></li>
+                    <li><a href="">合同如何签写</a></li>
+                </ul>
+                <ul>
+                	<h2>帮助中心</h2>
+                    <li><a href="">买家帮助</a></li>
+                    <li><a href="">卖家帮助</a></li>
+                    <li><a href="">隐私保护</a></li>
+                </ul>
+                <ul>
+                	<h2>客服中心</h2>
+                    <li><a href="">客服咨询</a></li>
+                    <li><a href="">建议中心</a></li>
+                    <li><a href="">在线回答</a></li>
+                </ul>
+            </div>
+            <div class="right">
+            	<div class="fewm">
+                	<img src="images/ewm1.png" alt="">
+                    <span>微信二维码</span>
+                </div>
+                <div class="fewm" style="margin-right:38px;">
+                	<img src="images/ewm2.png" alt="">
+                    <span>公众号二维码</span>
+                </div>
+            </div>
+        </div>
+        <div class="anquan">
+        	<a href=""><img src="images/aq1.png" alt=""></a>
+            <a href=""><img src="images/aq2.png" alt=""></a>
+            <a href=""><img src="images/aq3.png" alt=""></a>
+            <a href=""><img src="images/aq4.png" alt=""></a>
+        </div>
+        <div class="copyright">
+        	<p>总机：0571-63832281 &nbsp;&nbsp; 分机：XXX</p>
+            <p>工作时间：周一~周五 &nbsp; 9:00-17:00</p>
+            <p>Copyright &copy; 2019 XXX All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<!--FOOTER E-->
+
+</body>
+</html>
+    

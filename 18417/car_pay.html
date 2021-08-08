@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" contect="http://www.baidu.com">
+<title>XXX</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link type="text/css" href="css/css.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript">
+ //导航定位
+ $(function(){
+	 //$(".nav li:eq(3) a:first").addClass("navCur")
+	 })
+</script>
+<!--产品滚动-->
+<script type="text/javascript" src="js/jquery.DB_gallery.js"></script>
+</head>
+
+<body>
+ <div class="header">
+  <div class="web-width">
+   <h1 class="logo fl"><a href="index.html"><img src="images/logo.png" width="133" height="59" /></a></h1>
+   <div class="phone fl"><span>免费咨询热线：</span><strong class="blue">400-081-6686</strong></div>
+   <div class="login-reg fl"><a href="reg.html">注册</a> / <a href="login.html">登录</a></div>
+   <div class="my-account fl">
+    <h2>我的账户</h2>
+    <ul>
+     <li><a href="user.html">个人中心</a></li>
+     <li><a href="user-oreder.html">已买宝贝</a></li>
+     <li><a href="user-address.html">收货地址</a></li>
+     <li><a href="user-pwd.html">修改密码</a></li>
+    </ul>
+   </div><!--my-account/-->
+   <div class="head-car fr"><a href="car.html" class="c">购物车(0)</a></div>
+   <div class="clears"></div>
+  </div><!--web-width/-->
+ </div><!--header/-->
+ <div class="nav-search">
+  <div class="web-width">
+   <ul class="nav fl">
+    <li class="nav-index"><a href="index.html">首页</a></li>
+    <li><a href="shopping.html">快速选购</a></li>
+    <li><a href="design.html">专业设计</a></li>
+    <li><a href="products.html">所有产品</a>
+     <div class="chilNav">
+      <a href="products.html">音响</a>
+      <a href="products.html">功放</a>
+      <a href="products.html">投影机</a>
+      <a href="products.html">投影幕</a>
+     </div>
+    </li>
+    <li><a href="case.html">关于我们</a>
+     <div class="chilNav">
+      <a href="case.html">成功案例</a>
+      <a href="designer.html">设计师团队</a>
+      <a href="engineer.html">工程师团队</a>
+      <a href="service.html">服务流程</a>
+      <a href="major.html">专业保障</a>
+     </div>
+    </li>
+    <li class="nav-last"><a href="video.html">影音社区</a></li>
+    <div class="clears"></div>
+   </ul>
+   <form action="#" method="get" class="search fr">
+    <input type="text" placeholder="请输入你所需的内容" class="sea-text border-radiuss" />
+    <input type="submit" value="搜索" class="sea-sub border-radiuss" />
+   </form>
+   <div class="clears"></div>
+  </div><!--web-width/-->
+ </div><!--nav-search/-->
+ <div class="nei-ban" style="background:url(images/neiban.jpg) center center no-repeat;"></div>
+  <div class="content">
+   <div class="web-width">
+    <div class="positions">
+     <a href="index.html">首页</a> &gt; <a href="javascript:;">购物车</a>
+    </div><!--positions/-->
+    <div class="height3"></div>
+    <div class="car-pay-box">
+     <h2 class="car-title2">收货地址</h2>
+     <table class="car-address trclick">
+      <tr class="acr-trclick-cur">
+       <th width="115"><input type="radio" name="1" /> 家里</th>
+       <td>狗蛋路256弄，春君君 13654702155</td>
+       <td align="right" class="xiu-shan"><a href="javascript:;" class="add-address">修改</a><a href="javascript:;">删除</a></td>
+      </tr>
+      <tr>
+       <th width="115"><input type="radio"  name="1"/> 家里</th>
+       <td>狗蛋路256弄，春君君 13654702155</td>
+       <td align="right" class="xiu-shan"><a href="javascript:;" class="add-address">修改</a><a href="javascript:;">删除</a></td>
+      </tr>
+     </table>
+     <div class="xinzeng"><a href="javascript:;" class="add-address2">+新增收货地址</a></div>
+     <form action="#" method="get" class="car-add-address">
+        <div class="addList">
+         <label><span class="red">* </span>选择地区:</label>
+         <select>
+          <option>请选择省</option>
+         </select>
+         <select>
+          <option>请选择市</option>
+         </select>
+         <select>
+          <option>请选择地区</option>
+         </select>
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>详细地址:</label>
+         <input type="text" />
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>邮政编码:</label>
+         <input type="text" />
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>收件人:</label>
+         <input type="text" />
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>手机号码:</label>
+         <input type="text" style="width:100px;" /> 或者固定电话 <input type="text" style="width:100px;" />
+        </div><!--addList--> 
+        <div class="addList2">
+         <input type="submit" class="submits" value="确认收货地址" />
+        </div><!--addList2/-->
+     </form><!--car-address/-->
+     
+     <form action="#" method="get" class="car-uppdate-address">
+        <div class="addList">
+         <label><span class="red">* </span>选择地区:</label>
+         <select>
+          <option>请选择省</option>
+         </select>
+         <select>
+          <option>请选择市</option>
+         </select>
+         <select>
+          <option>请选择地区</option>
+         </select>
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>详细地址:</label>
+         <input type="text" />
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>邮政编码:</label>
+         <input type="text" />
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>收件人:</label>
+         <input type="text" />
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>手机号码:</label>
+         <input type="text" style="width:100px;" /> 或者固定电话 <input type="text" style="width:100px;" />
+        </div><!--addList--> 
+        <div class="addList2">
+         <input type="submit" class="submits" value="确认收货地址" />
+        </div><!--addList2/-->
+     </form><!--car-address/-->
+    </div><!--car-pay-box/-->
+    
+    <div class="car-pay-box">
+     <h2 class="car-title2">支付方式</h2>
+     <table class="car-pay-fangshi trclick">
+      <tr class="acr-trclick-cur">
+       <th width="115"><input type="radio" name="2" /> 微信支付</th>
+       <td>用微信扫一扫就能支付！</td>
+      </tr>
+      <tr>
+       <th><input type="radio" name="2" /> 货到付款</th>
+       <td>送货上门后再付款，使用现金或刷银行卡。</td>
+      </tr>
+      <tr>
+       <th><input type="radio" name="2" /> 银行电汇</th>
+       <td>通过银行转账或现金直接存入XXX网指定帐号，需注明订单号。！</td>
+      </tr>
+      <tr class="zaixian">
+       <th><input type="radio" name="2" /> 在线支付</th>
+       <td>支持多家银行借记卡、信用卡支付；支持支付宝、财付通等多种支付平台。</td>
+      </tr>
+     </table><!--car-pay-fangshi/-->
+     <ul class="car-pay-s">
+      <li><input type="radio" /> <img src="images/zhifubao.jpg" /></li>
+      <li><input type="radio" /> <img src="images/caifutong.jpg" /></li>
+      <div class="clearfix"></div>
+     </ul>
+    </div><!--car-pay-box/-->
+    
+    <div class="car-pay-box">
+     <h2 class="car-title2">产品清单</h2>
+     <table class="car-qingdan">
+      <tr>
+       <td width="335">
+        <dl class="car-qingdan-dl">
+          <dt><a href="proinfo.html"><img src="images/pro3.jpg" /></a></dt>
+          <dd>
+           <a href="proinfo.html">漫步者（EDIFIER）R201T08 2.1声道 颜色：R201T08
+           多媒体音箱 褐色</a>
+          </dd>
+          <div class="clearfix"></div>
+         </dl>
+       </td>
+       <td width="95">X1</td>
+       <td width="95">XXX先生</td>
+       <td width="95"><strong>¥85</strong></td>
+      </tr>
+      <tr>
+       <td width="335">
+        <dl class="car-qingdan-dl">
+          <dt><a href="proinfo.html"><img src="images/pro1.jpg" /></a></dt>
+          <dd>
+           <a href="proinfo.html">漫步者（EDIFIER）R201T08 2.1声道 颜色：R201T08
+           多媒体音箱 褐色</a>
+          </dd>
+          <div class="clearfix"></div>
+         </dl>
+       </td>
+       <td width="95">X1</td>
+       <td width="95">XXX先生</td>
+       <td width="95"><strong>¥85</strong></td>
+      </tr>
+      <tr>
+       <td width="335">
+        <dl class="car-qingdan-dl">
+          <dt><a href="proinfo.html"><img src="images/pro2.jpg" /></a></dt>
+          <dd>
+           <a href="proinfo.html">漫步者（EDIFIER）R201T08 2.1声道 颜色：R201T08
+           多媒体音箱 褐色</a>
+          </dd>
+          <div class="clearfix"></div>
+         </dl>
+       </td>
+       <td width="95">X1</td>
+       <td width="95">XXX先生</td>
+       <td width="95"><strong>¥85</strong></td>
+      </tr>
+     </table><!--car-qingdan/-->
+    </div><!--car-pay-box/-->
+    <div class="car-pay-box">
+     <h2 class="car-title2">配送时间</h2>
+     <div class="dates"><input class="laydate-icon" onclick="laydate()"></div>
+    </div><!--car-pay-box/-->
+    
+    <div class="car-pay-box">
+     <h2 class="car-title2">发票信息</h2>
+     <table class="fapiao">
+      <tr>
+       <td>普通发票(电子) 个人  明细 <a href="javascript:;" class="uppdate-fapiao">修改</a></td>
+      </tr>
+     </table>
+     <form action="#" method="get" class="car-uppdate-fpiao">
+        <div class="addList">
+         <label><span class="red">* </span>发票类型:</label>
+         <select>
+          <option>普通发票</option>
+          <option>企业发票</option>
+         </select>
+        </div><!--addList-->
+        <div class="addList">
+         <label><span class="red">* </span>发票抬头:</label>
+         <select>
+          <option>个人</option>
+          <option>单位</option>
+         </select>
+         <input type="text" />
+        </div><!--addList-->
+        <div class="addList2">
+         <input type="submit" class="submits" value="保存发票信息" />
+        </div><!--addList2/-->
+     </form><!--car-address/-->
+    </div><!--car-pay-box/-->
+    
+    <div class="zongji"><span>总计</span> <strong>¥24780.00</strong></div>
+    <div class="lijitijiao"><a href="success.html">立即提交</a></div>
+   </div><!--web-width/-->
+  </div><!--content/-->
+  <div class="footNav">
+   <div class="web-width">
+    <ul>
+     <li class="ftTitle">成功案例</li>
+     <li><a href="javascript:;">家庭影院</a></li>
+     <li><a href="javascript:;">卡拉OK</a></li>
+     <li><a href="javascript:;">智能家居</a></li>
+     <li><a href="javascript:;">声学装修</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">影音定制</li>
+     <li><a href="javascript:;">入门级影院</a></li>
+     <li><a href="javascript:;">专业级影院</a></li>
+     <li><a href="javascript:;">发烧级影院</a></li>
+     <li><a href="javascript:;">奢品级影院</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">代理产品</li>
+     <li><a href="javascript:;">音响</a></li>
+     <li><a href="javascript:;">功放</a></li>
+     <li><a href="javascript:;">投影机</a></li>
+     <li><a href="javascript:;">投影幕</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">装修风格</li>
+     <li><a href="javascript:;">现代风格</a></li>
+     <li><a href="javascript:;">欧式风格</a></li>
+     <li><a href="javascript:;">美式风格</a></li>
+     <li><a href="javascript:;">中式风格</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">专业保障</li>
+     <li><a href="javascript:;">权威认证</a></li>
+     <li><a href="javascript:;">专业声学装修</a></li>
+     <li><a href="javascript:;">项目管理</a></li>
+     <li><a href="javascript:;">安装调试</a></li>
+     <li><a href="javascript:;">品质服务</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">关于我们</li>
+     <li><a href="javascript:;">公司简介</a></li>
+     <li><a href="javascript:;">XXX展厅</a></li>
+     <li><a href="javascript:;">服务流程</a></li>
+     <li><a href="javascript:;">XXX资讯</a></li>
+     <li><a href="javascript:;">联系我们</a></li>
+    </ul>
+    <div class="footgz">
+     <table>
+      <tr>
+       <th>关注XXX官方微博</th>
+       <td><a href="#" target="_blank"><img src="images/guanzhu.jpg" width="94" height="33" /></a></td>
+      </tr>
+      <tr>
+       <th>
+        扫一扫关注官方微信
+        <p>微信搜索“XXX”或<br />
+直接扫描右侧二维码</p>
+       </th>
+       <td><img src="images/erweima.jpg" width="114" height="114" /></td>
+      </tr>
+     </table>
+    </div><!--footgz/-->
+    <div class="clears"></div>
+   </div><!--web-width/-->
+  </div><!--footnav/-->
+  <div class="footLink">
+   <div class="web-width">
+   <strong>友情链接：</strong>
+   <a href="javascript:;">百度网络</a>
+   <a href="javascript:;">谷歌</a>
+   <a href="javascript:;">百度</a>
+   <a href="javascript:;">360</a>
+   <a href="javascript:;">百度网络</a>
+   <a href="javascript:;">谷歌</a>
+   <a href="javascript:;">百度</a>
+   <a href="javascript:;">360</a>
+   <a href="javascript:;">百度网络</a>
+   <a href="javascript:;">谷歌</a>
+   </div>
+  </div><!--footLink /-->
+  <div class="copy">
+   <div class="web-width">
+    <div class="fl">版权所有@XXX只能科技(上海)有限公司  Copyright (c)  2008-2014  沪ICP备XXX号-1</div>
+    <div class="fr">技术支持：<a href="http://www.baidu.com/" target="_blank">百度网络</a></div>
+    <div class="clears"></div>
+   </div>
+  </div><!--copy/-->
+  <!--日期插件-->
+  <script src="laydate/laydate.js"></script>
+  <script>
+	;!function(){
+	laydate({
+	   elem: '#demo'
+	})
+	}();
+ </script>
+</body>
+</html>

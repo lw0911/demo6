@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户首页</title>
+<meta name="keywords" content="XXX"/>
+<meta name="description" content="XXX"/>
+<meta name="author" content="huaiyustu.cn" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
+<context:component-scan base-package="com.th.action"></context:component-scan>
+<mvc:default-servlet-handler/>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/user.css" rel="stylesheet" type="text/css">
+<link href="css/iconfont/Rjdaoico.css" rel="stylesheet" type="text/css">
+<!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/common.js"></script>
+<!--下拉动画-->
+<link rel="stylesheet" href="wow/animate.min.css"/>
+<script type="text/javascript" src="wow/wow.min.js"></script>
+<script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		new WOW().init();
+	};
+	$(function(){
+		
+	});
+</script>
+<!--下拉动画-->
+</head>
+
+<body>
+
+<!--HEADER S-->
+<header class="header">
+	<div class="container">
+    	<div class="tel"><span>全国热线：</span><em>400-0000-000</em></div>
+        <a class="kefu"><i class="icon-ee1b"></i><span>在线客服</span></a>
+        <div class="right">
+        	<div class="login">
+            	<div class="userinfo">你好，xiezhengyi</div>
+            	<em></em>
+                <a href="login.html">退出</a>
+                
+            </div>
+        	<div class="option">
+            	<a href="chushou_shop.html" class="h2">快速出售网店</a><em></em>
+            	<a href="">真假客服验证</a><em></em>
+                <a href="">用户中心</a><em></em>
+                <a href="">在线问答</a><em></em>
+                <a href="">帮助</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="top-search">
+    	<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+        <a href="/" class="logo wow flipInY"><img src="images/logo2.png" alt=""></a>
+        <div class="search-box">
+            <div class="select">
+            	<span id="serachValue">天猫商城</span>
+                <input id="serachClass" type="hidden" name="serachClass" value="1">
+            	<ul class="select-list">
+                    <li id="Se-shangcheng" value="1">天猫商城</li>
+                    <li id="Se-qita" value="2">其他商城</li>
+                    <li id="Se-xindian" value="3">天猫新店</li>
+                </ul>
+                <i class="icon-eedb jian"></i>
+                <em></em>
+                <div id="serachKeyInfo" class="wow zoomIn"><i class="icon-eed7"></i><dl>搜索关键词不能为空</dl></div>
+            </div>
+            <input type="text" class="serachKey" placeholder="请输入关键词，如：女装，母婴" id="serachKey" />
+            
+            <div class="searchbtn" id="serachText"><i class="icon-ef61"></i></div>
+        </div>
+        <div class="hotkey">
+            <span>本周热搜：</span>
+            <a href="">3C数码 </a>
+            <a href="">服饰鞋包 </a>
+        </div>
+        <div class="right">
+        	<a href="" class="seal">
+                <img src="images/DAJ-seal.png" id="showImg" />
+            </a>
+            <div class="person">
+            	<i class="icon-ef54 userico"></i>
+                <em></em>
+                <div class="person-select">
+                	<h2>我的XXX</h2>
+                </div>
+                <div class="person-option">
+                      <p>
+                          <span>您好，</span>
+                          <a href="user_index.html" class="p-login">xiezhengyi</a>
+                          <a href="login.html" class="p-regist">退出</a>
+                      </p>
+                      <div class="con">
+                      <a href="user.html" class="ui">我购买的网店</a>
+                      <a href="" class="ui">我出售的网店</a>
+                      <a href="" class="ui">我收藏的网店</a>
+                      <a href="" class="ui">我要出售网店</a>
+                      <a href="" class="ui">账号充值</a>
+                      <a href="" class="ui">资金提现</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<nav class="nav">
+	<div class="con">
+    	<div class="topmain">
+        
+        	<div class="mainnav">
+            	<div class="mv-but">
+                	<span>热门网店类目</span>
+                    <i class="icon-eeee lumn"></i>
+                </div>
+                <div class="column">
+                	<ul>
+                    	<li><i><img src="images/ci1.png" alt=""></i><a href="">服饰配件/皮带/帽子/围巾</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">奶粉/辅食/营养品/零食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">彩妆/香水/美妆工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">零食/坚果/特产</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">数码相机/单反相机/摄像机</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">书籍/杂志/报纸工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">运动/瑜伽/健身/球迷用品</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">汽车/用品/配件/改装</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">餐饮美食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">珠宝/钻石/翡翠/黄金</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">影音电器</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">居家日用</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">家装主材</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">流行男鞋</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">OTC药品/医疗器械/计生用品</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sonclass">
+            	<a href="index.html"><span>首页</span></a>
+                <a href="ruzhu.html"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+                <a href="shop_list.html"><span>优选天猫商城<div class="hotico"><img src="images/new.png" alt=""></div></span></a>
+                <a href="daiyunying.html"><span>天猫代运营</span></a>
+                <a href="gujia.html"><span>网店估价</span></a>
+                <a href="web.html"><span>网站搭建</span></a>
+                <a href="shangbiao.html"><span>商标服务</span></a>
+                <a href="zhixin.html"><span>知心购店</span></a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+<!--HEADER E-->
+<!--副导航 S-->
+<div id="SubHeader">
+	<div class="main">
+		<a href="" class="logo"><img src="images/logo-sub.png" alt=""></a>
+        <div class="mnav">
+        	<a href="" class="son"><span>首页</span></a>
+            <a href="" class="son"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+            <a href="" class="son"><span>优选天猫商城</span><div class="hotico"><img src="images/new.png" alt=""></div></a>
+            <a href="" class="son"><span>天猫代运营</span></a>
+            <a href="" class="son"><span>网店估价</span></a>
+            <a href="" class="son"><span>网站搭建</span></a>
+            <a href="" class="son"><span>商标服务</span></a>
+            <a href="" class="son"><span>知心购店</span></a>
+            <div class="stel"><span>全国热线：</span><em>400-0000-000</em></div>
+        </div>
+    </div>
+</div>
+<!--副导航 E-->
+
+
+
+
+<div class="user-main">
+<!--leftNav S-->
+	<div class="leftNav">
+    	<div class="userInfo">
+        	<a class="portrait"><img src="images/portrait1.png" alt=""></a>
+            <div class="name">xiezhengyi</div>
+            <div class="name">Tel：187****6615</div>
+            <div class="shim">
+            	<a href="" title="未实名认证" class="all"><i class="icon-ef5d"></i></a>
+                <a href="" title="已手机绑定" class="cur"><i class="icon-ed90"></i></a>
+            </div>
+        </div>
+        <ul class="mNav">
+        	<h2>我的XXX</h2>
+            <li><a href=""><i class="icon-edb2"></i><span>我要出售网店</span></a></li>
+            <li><a href=""><i class="icon-ee49"></i><span>我出售的网店</span></a></li>
+            <li><a href=""><i class="icon-edd4"></i><span>我购买的网店</span></a></li>
+            <li><a href=""><i class="icon-ee6b"></i><span>我收藏的网店</span></a></li>
+            <li><a href=""><i class="icon-ed33"></i><span>实名认证</span></a></li>
+            <li><a href=""><i class="icon-ef54"></i><span>我的个人资料</span></a></li>
+            <li><a href=""><i class="icon-ef54"></i><span>修改密码</span></a></li>
+            <li><a href=""><i class="icon-ece5"></i><span>注销用户</span></a></li>
+        </ul>
+    </div>
+<!--leftNav E-->
+<!--leftNav S-->
+	<div class="rightFrame">
+    	<div class="user-details">
+        <!--内容 S-->
+        <div class="topTitle">
+        	<dl></dl><h2>个人资料</h2>
+        </div>
+        
+        <div class="user_cur_portrait">
+        	<img id="userPortrait" src="images/portrait1.png">
+        </div>
+        
+        <div class="user_portrait_list">
+        	<!--
+        	<a onClick="shoenlistDiv(this)" src="images/portrait1.png"><img src="images/portrait1.png" alt=""></a>
+            <a onClick="shoenlistDiv(this)" src="images/portrait3.jpg"><img src="images/portrait3.jpg" alt=""></a>
+            -->
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model1" value="images/portrait1.jpg" checked/>
+            <label for="model1"><img src="images/portrait1.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model2" value="images/portrait2.jpg">
+            <label for="model2"><img src="images/portrait2.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model3" value="images/portrait3.jpg">
+            <label for="model3"><img src="images/portrait3.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model4" value="images/portrait4.jpg">
+            <label for="model4"><img src="images/portrait4.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model5" value="images/portrait5.jpg">
+            <label for="model5"><img src="images/portrait5.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model6" value="images/portrait6.jpg">
+            <label for="model6"><img src="images/portrait6.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model7" value="images/portrait7.jpg">
+            <label for="model7"><img src="images/portrait7.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model8" value="images/portrait8.jpg">
+            <label for="model8"><img src="images/portrait8.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model9" value="images/portrait9.jpg">
+            <label for="model9"><img src="images/portrait9.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model10" value="images/portrait10.jpg">
+            <label for="model10"><img src="images/portrait10.jpg" alt=""></label>
+            
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model11" value="images/portrait11.jpg">
+            <label for="model11"><img src="images/portrait11.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model12" value="images/portrait12.jpg">
+            <label for="model12"><img src="images/portrait12.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model13" value="images/portrait13.jpg">
+            <label for="model13"><img src="images/portrait13.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model14" value="images/portrait14.jpg">
+            <label for="model14"><img src="images/portrait14.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model15" value="images/portrait15.jpg">
+            <label for="model15"><img src="images/portrait15.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model16" value="images/portrait16.jpg">
+            <label for="model16"><img src="images/portrait16.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model17" value="images/portrait17.jpg">
+            <label for="model17"><img src="images/portrait17.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model18" value="images/portrait18.jpg">
+            <label for="model18"><img src="images/portrait18.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model19" value="images/portrait19.jpg">
+            <label for="model19"><img src="images/portrait19.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model20" value="images/portrait10.jpg">
+            <label for="model20"><img src="images/portrait20.jpg" alt=""></label>
+            
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model21" value="images/portrait21.jpg" checked/>
+            <label for="model21"><img src="images/portrait21.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model22" value="images/portrait22.jpg">
+            <label for="model22"><img src="images/portrait22.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model23" value="images/portrait23.jpg">
+            <label for="model23"><img src="images/portrait23.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model24" value="images/portrait24.jpg">
+            <label for="model24"><img src="images/portrait24.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model25" value="images/portrait25.jpg">
+            <label for="model25"><img src="images/portrait25.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model26" value="images/portrait26.jpg">
+            <label for="model26"><img src="images/portrait26.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model27" value="images/portrait27.jpg">
+            <label for="model27"><img src="images/portrait27.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model28" value="images/portrait28.jpg">
+            <label for="model28"><img src="images/portrait28.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model29" value="images/portrait29.jpg">
+            <label for="model29"><img src="images/portrait29.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model30" value="images/portrait30.jpg">
+            <label for="model30"><img src="images/portrait30.jpg" alt=""></label>
+            
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model82" value="images/portrait31.jpg">
+            <label for="model82"><img src="images/portrait82.jpg" alt=""></label>
+            <input onClick="shoenlistDiv(this)" type="radio" name="Storage" id="model32" value="images/portrait32.jpg">
+            <label for="model32"><img src="images/portrait32.jpg" alt=""></label>
+        </div>
+        <input id="Portrait" type="text" name="Portrait" value="">
+        
+        
+        
+        <div class="buttonStyle">
+        	<input type="submit" class="but" value="确定提交">
+        </div>
+        <!--内容 E-->
+        </div>
+    </div>
+<!--leftNav E-->
+</div>
+
+
+
+
+
+
+
+<!--FOOTER S-->
+<footer class="footer" style="background:url(images/foot-bj.jpg) no-repeat center top;">
+	<div class="textMian">
+    	<div class="content">
+        	<div class="left">
+            	<ul>
+                	<h2>关于我们</h2>
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">诚聘英寸</a></li>
+                </ul>
+                <ul>
+                	<h2>体现充值</h2>
+                    <li><a href="">如何充值</a></li>
+                    <li><a href="">如何提现</a></li>
+                    <li><a href="">收费标准</a></li>
+                </ul>
+                <ul>
+                	<h2>服务流程</h2>
+                    <li><a href="">购买流程</a></li>
+                    <li><a href="">出售流程</a></li>
+                    <li><a href="">寄出流程</a></li>
+                </ul>
+                <ul>
+                	<h2>安全保障</h2>
+                    <li><a href="">店铺转让保证</a></li>
+                    <li><a href="">担保交易</a></li>
+                    <li><a href="">合同如何签写</a></li>
+                </ul>
+                <ul>
+                	<h2>帮助中心</h2>
+                    <li><a href="">买家帮助</a></li>
+                    <li><a href="">卖家帮助</a></li>
+                    <li><a href="">隐私保护</a></li>
+                </ul>
+                <ul>
+                	<h2>客服中心</h2>
+                    <li><a href="">客服咨询</a></li>
+                    <li><a href="">建议中心</a></li>
+                    <li><a href="">在线回答</a></li>
+                </ul>
+            </div>
+            <div class="right">
+            	<div class="fewm">
+                	<img src="images/ewm1.png" alt="">
+                    <span>微信二维码</span>
+                </div>
+                <div class="fewm" style="margin-right:38px;">
+                	<img src="images/ewm2.png" alt="">
+                    <span>公众号二维码</span>
+                </div>
+            </div>
+        </div>
+        <div class="anquan">
+        	<a href=""><img src="images/aq1.png" alt=""></a>
+            <a href=""><img src="images/aq2.png" alt=""></a>
+            <a href=""><img src="images/aq3.png" alt=""></a>
+            <a href=""><img src="images/aq4.png" alt=""></a>
+        </div>
+        <div class="copyright">
+        	<p>总机：0571-63832281 &nbsp;&nbsp; 分机：XXX</p>
+            <p>工作时间：周一~周五 &nbsp; 9:00-17:00</p>
+            <p>Copyright &copy; 2019 XXX All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<!--FOOTER E-->
+
+
+
+</body>
+</html>
+    

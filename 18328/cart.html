@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="order by dede58.com"/><title>购物车</title>
+<meta name="generator" content="化妆品 B2B - www.chinahzp.wang"/>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="images/favicon.ico"/>
+<link rel="archives" title="化妆品[中国]" href="http://chinahzp.wang/archiver/"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link href="css/home_header.css" rel="stylesheet" type="text/css">
+<link href="css/base1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/mall.css"/><script type="text/javascript">window.onerror=function(){return true;}</script><script type="text/javascript" src="js/lang.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+<script type="text/javascript">
+var searchid = 16;
+</script>
+        <!--[if lt IE 8]>
+          <div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+            <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+            <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+              <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+              <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+                <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>您在使用过时的浏览器</div>
+                <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>为了您获得更好的体验，请升级您的浏览器(见右侧列表)!</div>
+              </div>
+              <div style='width: 75px; float: left;'><a href='http://www.firefox.com.cn' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+              <div style='width: 75px; float: left;'><a href='http://windows.microsoft.com/en-us/internet-explorer/download-ie/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+              <div style='float: left;'><a href='http://www.google.cn/intl/zh-CN/chrome/browser/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+            </div>
+          </div>
+        <![endif]-->
+<script type="text/javascript">
+$(function(){
+//search
+var act = "index";
+if (act == "store_list"){
+$("#search").children('ul').children('li:eq(1)').addClass("current");
+$("#search").children('ul').children('li:eq(0)').removeClass("current");
+}
+$("#search").children('ul').children('li').click(function(){
+$(this).parent().children('li').removeClass("current");
+$(this).addClass("current");
+$('#search_act').attr("value",$(this).attr("act"));
+$('#keyword').attr("placeholder",$(this).attr("title"));
+});
+$("#keyword").blur();
+ 
+});
+</script>
+<!--[if IE 7]>
+  <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+<![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+ 
+<body>
+ 
+<div class="public-top-layout w">
+  <div class="topbar wrapper">
+    <div class="user-entry">
+            您好，欢迎来到 <a href="/" title="首页" alt="首页">中国化妆品网 </a> 【<span id="destoon_member"> </span>】
+           </div>
+    <div class="quick-menu">
+      <dl>
+        <dt><a href="member_order.html"  rel="nofollow">我的订单</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="member_order.html?action=order&fields=0&kw=&status=1&fromtime=&totime=&itemid=0&mallid=0&seller=" rel="nofollow">待付款订单</a></li>
+            <li><a href="member_order.html?action=order&fields=0&kw=&status=3&fromtime=&totime=&itemid=0&mallid=0&seller=" rel="nofollow">待确认收货</a></li>
+            <li><a href="member_order.html?action=order&fields=0&kw=&status=4&fromtime=&totime=&itemid=0&mallid=0&seller=" rel="nofollow">成功交易</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><a href="http://chinahzp.wang/member/favorite.php" rel="nofollow">我的收藏</a><i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="http://chinahzp.wang/member/favorite.php" rel="nofollow">商机收藏</a></li>
+            
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>客户服务<i></i></dt>
+        <dd>
+          <ul>
+            <li><a href="http://chinahzp.wang/about/" rel="nofollow">帮助中心</a></li>
+            <li><a href="http://chinahzp.wang/about/" rel="nofollow">售后服务</a></li>
+            <li><a href="http://chinahzp.wang/about/" rel="nofollow">客服中心</a></li>
+          </ul>
+        </dd>
+      </dl>
+            <dl>
+        <dt>站点导航<i></i></dt>
+        <dd>
+          <ul>
+                        <li><a
+         target="_blank" href="index.html" rel="nofollow">资讯频道</a></li>
+                        <li><a
+         target="_blank" href="index.html" rel="nofollow">社区圈子</a></li>
+                        <li><a
+         target="_blank" href="index.html" rel="nofollow">微商城</a></li>
+                        <li><a
+         target="_blank" href="index.html" rel="nofollow">商城首页</a></li>
+                      </ul>
+        </dd>
+      </dl>
+                    <dl class="weixin">
+        <dt>关注我们<i></i></dt>
+        <dd>
+          <h4>扫描二维码<br/>
+            关注商城微信号</h4>
+          <img src="http://chinahzp.wang/file/upload/201504/20/18-01-43-98-1.jpg" rel="nofollow"> </dd>
+        </dl>
+         </div>
+  </div>
+</div>
+<script type="text/javascript">
+//动画显示边条内容区域
+$(function() {
+$(function() {
+$('#activator').click(function() {
+$('#content-cart').animate({'right': '-250px'});
+$('#content-compare').animate({'right': '-150px'});
+$('#ncToolbar').animate({'right': '-60px'}, 300,
+function() {
+$('#ncHideBar').animate({'right': '59px'},300);
+});
+        $('div[nctype^="bar"]').hide();
+});
+$('#ncHideBar').click(function() {
+$('#ncHideBar').animate({
+'right': '-79px'
+},
+300,
+function() {
+$('#content-cart').animate({'right': '-250px'});
+$('#content-compare').animate({'right': '-250px'});
+$('#ncToolbar').animate({'right': '0'},300);
+});
+});
+});
+    $("#compare").click(function(){
+    if ($("#content-compare").css('right') == '-210px') {
+    loadCompare(false);
+    $('#content-cart').animate({'right': '-210px'});
+     $("#content-compare").animate({right:'50px'});
+    } else {
+    $(".close").click();
+    $(".chat-list").css("display",'none');
+        }
+});
+    $("#rtoolbar_cart").click(function(){
+        if ($("#content-cart").css('right') == '-210px') {
+         $('#content-compare').animate({'right': '-210px'});
+    $("#content-cart").animate({right:'50px'});
+    if (!$("#rtoolbar_cartlist").html()) {
+    $("#rtoolbar_cartlist").load('index.php?act=cart&op=ajax_load&type=html');
+    }
+        } else {
+        $(".close").click();
+        $(".chat-list").css("display",'none');
+        }
+});
+$(".close").click(function(){
+$(".content-box").animate({right:'-210px'});
+      });
+$(".quick-menu dl").hover(function() {
+$(this).addClass("hover");
+},
+function() {
+$(this).removeClass("hover");
+});
+ 
+    $('a[nctype="close-barLoginBox"]').click(function(){
+        $('div[nctype="barLoginBox"]').toggle();
+    });
+    });
+</script> 
+<!-- PublicHeadLayout Begin -->
+<div class="header-wrap">
+  <header class="public-head-layout wrapper">
+    <h1 class="site-logo"><a href="index.html"><img src="images/logo.png" class="pngFix" title="中国化妆品网" alt="化妆品中国"></a></h1>
+<div class="head-app"><span class="pic"></span>
+      <div class="download-app">
+       <div class="qrcode"><img src="http://chinahzp.wang/mb_app.png" rel="nofollow"></div>
+        <div class="hint">
+          <h4>扫描二维码</h4>
+          下载手机客户端</div>
+        <div class="addurl">
+                        <a href=" " target="_blank" rel="nofollow"><i class="icon-android"></i>Android</a>
+                                    <a href=" " target="_blank" rel="nofollow"><i class="icon-apple"></i>iPhone</a>
+                        </div>
+      </div>
+    </div>
+<script type="text/javascript">var searchid = 16;</script>
+<div class="head-search-bar search-form ">
+<!--商品和店铺-->
+<form id="destoon_search" action="list.htmlsearch.php" class="search-form" onsubmit="return Dsearch();">
+<input type="hidden" name="moduleid" value="16" id="destoon_moduleid"/>
+<input type="hidden" name="spread" value="0" id="destoon_spread"/>
+<div id="search">
+      <ul class="tab">
+        </ul> 
+      <input name="kw" id="destoon_kw" type="text" class="input-text" value="请输入关键词" onfocus="if(this.value=='请输入关键词') this.value='';" onkeyup="STip(this.value);" autocomplete="off"/>
+        <input type="submit" value="搜索" class="input-submit"> </div>
+      </form>
+  <!--搜索关键字-->
+      <div class="keyword">热门搜索： <ul>
+                   
+<li><a href="list.htmlsearch.php?kw=%E9%98%B2%E6%99%92" rel="nofollow">防晒</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E9%9D%A2%E8%86%9C" rel="nofollow">面膜</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E6%B4%97%E9%9D%A2%E5%A5%B6" rel="nofollow">洗面奶</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E5%85%B6%E4%BB%96" rel="nofollow">其他</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E5%8C%96%E5%A6%86%E5%93%81" rel="nofollow">化妆品</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E5%8C%96%E5%A6%86" rel="nofollow">化妆</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=Mistine" rel="nofollow">Mistine</a></li>
+ 
+<li><a href="list.htmlsearch.php?kw=%E9%9F%A9%E5%9B%BD" rel="nofollow">韩国</a></li>
+                  </ul>
+      </div>
+ </div>
+    <div class="head-user-menu">
+      <dl class="my-mall">
+ <dt><span class="ico"></span><a href="member_sell_add.html" rel="nofollow">发布货源</a></dt>       
+      </dl>
+      <dl class="my-cart">
+         <dt><span class="ico"></span><a href="cart.html" rel="nofollow">购物车</a> (<span class="head_t" id="destoon_cart">0</span>)</dt>      </dl>
+    </div>
+  </header>
+</div>
+<!-- PublicHeadLayout End -->
+<!-- publicNavLayout Begin -->
+<nav class="public-nav-layout ">
+  <div class="wrapper">
+    <div class="all-category">
+      
+      <div class="title"><i></i>
+        <h3><a href="http://chinahzp.wang/sitemap/">全部分类</a></h3>
+        </div> 
+ </div>
+     <ul class="site-menu">
+      <li><a href="index.html" >首页</a></li>
+    <li><a href="list.html" class="current">一件代发专区</a></li><li><a href="sell.html" >找货源</a></li><li><a href="buy.html" >看求购</a></li><li><a href="company.html" >批发商</a></li><li><a href="invest.html" >招代理</a></li><li><a href="brand.html" >品牌汇</a></li><li><a href="news.html" >资讯圈</a></li>     </ul>
+  </div>
+</nav>
+<style type="text/css">
+.head-app { display: none; }
+.public-nav-layout { width: 1000px; }
+.public-nav-layout .site-menu { max-width: 788px;}
+.wrapper { width: 1000px !important; }
+.no-content { font: normal 16px/20px Arial, "microsoft yahei"; color: #999999; text-align: center; padding: 150px 0; }
+</style>
+<div class="m b10">&nbsp;</div><script type="text/javascript">
+var errimg = 'http://chinahzp.wang/skin/shangshop/image/nopic50.gif';
+function check() {
+if(Dd('itemid').value == 0 || Dd('itemid').value == '') {
+alert('请输入商品ID');
+Dd('itemid').focus();
+return false;
+}
+return true;
+}
+</script>
+<div class="m">
+<div class="left_box">
+<div class="pos">
+<div class="f_r">
+<form action="cart.php" method="post" onsubmit="return check();">
+<input name="action" type="hidden" value="add"/>
+输入商品ID&nbsp;<input name="itemid" type="text" size="10" id="itemid"/>&nbsp;
+<input type="submit" value="加入购物车"/>&nbsp;
+<input type="button" value="清空购物车" onclick="if(confirm('确定要清空购物车吗？')) Go('?action=clear');"/>
+</form>
+</div>
+您的位置: <a href="index.html">首页</a> 
+&raquo; <a href="list.html">一件代发专区</a>
+&raquo; <a href="cart.html">购物车</a>
+</div>
+<form method="post" action="order.html" onsubmit="return check();">
+<input type="hidden" name="from" value="cart"/>
+<table cellpadding="10" cellspacing="0" width="100%">
+<tr align="center" bgcolor="#F6F6F6">
+<td width="20"><input type="checkbox" onclick="checkall(this.form);"/></td>
+<td width="60">图片</td>
+<td>商品</td>
+<td>库存</td>
+<td>价格</td>
+<td>数量</td>
+<td width="100">小计</td>
+<td width="40">操作</td>
+</tr>
+<tr align="center" id="tr_51-0-0-0">
+<td><input type="checkbox" name="itemid[]" value="51-0-0-0" checked onclick="calculate()" id="check_51-0-0-0"/><input type="hidden" name="keyid[]" value="51-0-0-0"/></td>
+<td><a href="list.htmlshow-51.html" target="_blank"><img src="http://chinahzp.wang/file/upload/201504/23/17-01-18-78-1.jpg.thumb.jpg" width="50" alt="MSQ/魅丝蔻 超柔纯棉双面双效化妆棉50片装"  onerror="this.src=errimg;"/></a></td>
+<td align="left" style="line-height:24px;color:#666666;"><a href="list.htmlshow-51.html" target="_blank" class="b" title="MSQ/魅丝蔻 超柔纯棉双面双效化妆棉50片装">MSQ/魅丝蔻 超柔纯棉双面双效化妆棉50片..</a><br/>
+<a href="http://chinahzp.wang/m/szmanmanli/" target="_blank">深圳蔓蔓莉化妆用具公司</a>
+<a href="http://chinahzp.wang/member/chat.php?touser=szmanmanli&mid=16&itemid=51" target="_blank" rel="nofollow"><img src="http://chinahzp.wang/api/online.png.php?username=szmanmanli&mid=16&itemid=51&style=0" title="点击交谈/留言" alt="" align="absmiddle" onerror="this.src=DTPath+'file/image/web-off.gif';"/></a>&nbsp;<a href="http://wpa.qq.com/msgrd?v=3&uin=240522311&site=qq&menu=yes" target="_blank" rel="nofollow"><img src="http://wpa.qq.com/pa?p=1:240522311:4" title="点击QQ交谈/留言" alt="" align="absmiddle" onerror="this.src=DTPath+'file/image/qq-off.gif';" onload="if(this.width==77){this.src=DTPath+'file/image/qq-off.gif';}else if(this.width==23){this.src=DTPath+'file/image/qq.gif';}"/></a>&nbsp;<a href="http://amos.alicdn.com/msg.aw?v=2&uid=%E8%94%93%E8%94%93%E8%8E%89%E5%8C%96%E5%A6%86%E7%94%A8%E5%85%B7&site=cnalichn&s=6&charset=UTF-8" target="_blank" rel="nofollow"><img src="http://amos.alicdn.com/online.aw?v=2&uid=%E8%94%93%E8%94%93%E8%8E%89%E5%8C%96%E5%A6%86%E7%94%A8%E5%85%B7&site=cnalichn&s=6&charset=UTF-8" title="点击旺旺交谈/留言" alt="" align="absmiddle" onerror="this.src=DTPath+'file/image/ali-off.gif';" onload="if(this.width>20)this.src=SKPath+'image/ali-off.gif';"/></a>&nbsp;<br/>品牌:魔法美人&nbsp;</td>
+<td>5000</td>
+<td><span class="f_price" id="price_51-0-0-0">1.10</span></td>
+<td><img src="js/image/arrow_l.gif" width="16" height="8" alt="减少" class="c_p" onclick="alter('51-0-0-0', '-')"/><input type="text" name="amounts[51-0-0-0]" value="1" id="number_51-0-0-0" size="3" onblur="calculate();" class="cc_inp"/> <img src="js/image/arrow_r.gif" width="16" height="8" alt="增加" class="c_p" onclick="alter('51-0-0-0', '+')"/><span class="dsn" id="amount_51-0-0-0">5000</span></td>
+<td><span class="f_price" id="total_51-0-0-0">1.10</span></td>
+<td class="c_p f_dblue" onclick="if(confirm('确定要移除此商品吗？')) move('51-0-0-0');">删除</td>
+</tr>
+</table>
+<div class="b10">&nbsp;</div>
+<div class="cart_foot">共选中 <span class="f_red f_b px16" id="total_good">1</span> 种商品&nbsp;&nbsp;&nbsp;&nbsp;总价： <span class="f_red f_b px16" id="total_amount">1.1</span> 元</div>
+<div class="b10">&nbsp;</div>
+<table cellpadding="0" cellspacing="0" width="100%">
+<tr align="center">
+<td height="60">&nbsp;</td>
+<td width="280"><a href="list.html"><img src="js/image/btn_browse.gif" width="106" height="33" alt="继续购物"/></a></td>
+<td width="280"><input type="image" src="js/image/btn_buynext.gif"/></td>
+</tr>
+<tr align="center">
+<td height="50">&nbsp;</td>
+<td class="f_gray">您也可以返回到一件代发专区首页，继续挑选商品</td>
+<td class="f_gray">如果您已经完成挑选，请您点下一步进入提交订单</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<script type="text/javascript">
+function check() {
+if(Dd('total_good').innerHTML == '0') {
+alert('最少需要挑选1件商品');
+window.scroll(0, 0);
+return false;
+}
+}
+function move(i) {
+Dd('check_'+i).checked = false;
+Dh('tr_'+i);
+calculate();
+makeRequest('action=clear&ajax=1&key='+i, 'cart.html', '_move');
+}
+function _move() {
+if(xmlHttp.readyState==4 && xmlHttp.status==200) {
+var cart_num = substr_count(get_cookie('cart'), ',');
+$('#destoon_cart').html(cart_num ? '<strong>'+cart_num+'</strong>' : '0');
+if(xmlHttp.responseText == 1 && Dd('total_good').innerHTML == '0') Go('?empty='+Math.random());
+}
+}
+function alter(i, t) {
+if(t == '+') {
+var maxa = parseFloat(Dd('amount_'+i).innerHTML);
+if(maxa && Dd('number_'+i).value >= maxa) return;
+Dd('number_'+i).value =  parseInt(Dd('number_'+i).value) + 1;
+} else {
+var mina = 1;
+if(Dd('number_'+i).value <= mina) return;
+Dd('number_'+i).value =  parseInt(Dd('number_'+i).value) - 1;
+}
+calculate();
+}
+function calculate() {
+var itemids = ['51-0-0-0'];
+var _good = _amount = _total = 0;
+for(var i = 0; i < itemids.length; i++) {
+if(Dd('check_'+itemids[i]).checked) {
+itemid = itemids[i];
+var num, good, maxa, mina;
+num = parseInt(Dd('number_'+itemid).value);
+maxa = parseFloat(Dd('amount_'+itemid).innerHTML);
+mina = 1;
+if(num < mina) Dd('number_'+itemid).value = num = mina;
+if(maxa && num > maxa) Dd('number_'+itemid).value = num = maxa;
+if(isNaN(num) || num < 0) Dd('number_'+itemid).value = num = mina;
+_good++;
+_total = parseFloat(Dd('price_'+itemid).innerHTML)*parseFloat(Dd('number_'+itemid).value);
+_amount += _total;
+Dd('total_'+itemids[i]).innerHTML = _total.toFixed(2);
+}
+}
+Dd('total_good').innerHTML = _good;
+Dd('total_amount').innerHTML = _amount.toFixed(2);
+}
+calculate();</script>
+<br />
+<div id="faq">
+<div id="footer" class="wrapper">
+  (c)2014-2015 CHINAHZP.WANG SYSTEM All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.<br />
+  Powered by <span><a href="http://chinahzp.wang" target="_self" title="化妆品批发">中国化妆品网</a></span>  | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">苏ICP备XXX号-3</a><br />
+   </div>
+<script type="text/javascript">
+var destoon_userid = 35;
+var destoon_username = 'hjl416148489';
+var destoon_message = 1;
+var destoon_chat = 0;
+var destoon_cart = substr_count(get_cookie('cart'), ',');
+var destoon_member = '';
+destoon_member += '<span class="f_b" title="批发商">黄金</span> <a href="http://chinahzp.wang/member/line.php" title="在线，点击隐身"><img src="js/image/user_online.png" width="10" height="10" align="absmiddle"/></a> | <a href="http://chinahzp.wang/member/">商务中心</a> | <a href="http://chinahzp.wang/member/member_message.html">站内信(<span class="head_t" id="destoon_message"><strong>1</strong>'+sound('message_1')+'</span>)</a> | <a href="http://chinahzp.wang/member/chat.php">新对话(<span class="head_t" id="destoon_chat">0</span>)</a> | <a href="http://chinahzp.wang/member/logout.php">退出</a>';
+$('#destoon_member').html(destoon_member);
+$('#destoon_cart').html(destoon_cart ? '<strong>'+destoon_cart+'</strong>' : 0);
+$('#back2top').click(function() {
+$("html, body").animate({scrollTop:0}, 200);
+});
+</script>
+<div style="display:none;"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?d4a56a89b79f7e34b6b8f7001c8f9055";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div> 
+</body>
+</html>

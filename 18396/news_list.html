@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新闻列表</title>
+<meta name="keywords" content="XXX"/>
+<meta name="description" content="XXX"/>
+<meta name="author" content="huaiyustu.cn" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
+<context:component-scan base-package="com.th.action"></context:component-scan>
+<mvc:default-servlet-handler/>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/news.css" rel="stylesheet" type="text/css">
+<link href="css/iconfont/Rjdaoico.css" rel="stylesheet" type="text/css">
+<!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>-->
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+
+<!--下拉动画-->
+<link rel="stylesheet" href="wow/animate.min.css"/>
+<script type="text/javascript" src="wow/wow.min.js"></script>
+<script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		new WOW().init();
+	};
+	$(function(){
+		
+	});
+</script>
+<!--下拉动画-->
+</head>
+
+<body>
+
+<!--HEADER S-->
+<header class="header">
+	<div class="container">
+    	<div class="tel"><span>全国热线：</span><em>400-0000-000</em></div>
+        <a class="kefu"><i class="icon-ee1b"></i><span>在线客服</span></a>
+        <div class="right">
+        	<div class="login">
+            	<a href="">登录</a><em></em>
+                <a href="">注册</a>
+            </div>
+        	<div class="option">
+            	<a href="" class="h2">快速出售网店</a><em></em>
+            	<a href="">真假客服验证</a><em></em>
+                <a href="">用户中心</a><em></em>
+                <a href="">在线问答</a><em></em>
+                <a href="">帮助</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="top-search">
+    	<a href="" class="logo"><img src="images/logo.png" alt=""></a>
+        <a href="" class="logo wow flipInY"><img src="images/logo2.png" alt=""></a>
+        <div class="search-box">
+            <div class="select">
+            	<span id="serachValue">天猫商城</span>
+                <input id="serachClass" type="hidden" name="serachClass" value="1">
+            	<ul class="select-list">
+                    <li id="Se-shangcheng" value="1">天猫商城</li>
+                    <li id="Se-qita" value="2">其他商城</li>
+                    <li id="Se-xindian" value="3">天猫新店</li>
+                </ul>
+                <i class="icon-eedb jian"></i>
+                <em></em>
+                <div id="serachKeyInfo" class="wow zoomIn"><i class="icon-eed7"></i><dl>搜索关键词不能为空</dl></div>
+            </div>
+            <input type="text" class="serachKey" placeholder="请输入关键词，如：女装，母婴" id="serachKey" />
+            
+            <div class="searchbtn" id="serachText"><i class="icon-ef61"></i></div>
+        </div>
+        <div class="hotkey">
+            <span>本周热搜：</span>
+            <a href="">3C数码 </a>
+            <a href="">服饰鞋包 </a>
+        </div>
+        <div class="right">
+        	<a href="" class="seal">
+                <img src="images/DAJ-seal.png" id="showImg" />
+            </a>
+            <div class="person">
+            	<i class="icon-ef54 userico"></i>
+                <em></em>
+                <div class="person-select">
+                	<h2>我的XXX</h2>
+                </div>
+                <div class="person-option">
+                      <p>
+                          <span>您好，</span>
+                          <a href="" class="p-login">请登录</a>
+                          <a href="" class="p-regist">注册</a>
+                      </p>
+                      <div class="con">
+                      <a href="" class="ui">我购买的网店</a>
+                      <a href="" class="ui">我出售的网店</a>
+                      <a href="" class="ui">我收藏的网店</a>
+                      <a href="" class="ui">我要出售网店</a>
+                      <a href="" class="ui">账号充值</a>
+                      <a href="" class="ui">资金提现</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<nav class="nav">
+	<div class="con">
+    	<div class="topmain">
+        
+        	<div class="mainnav">
+            	<div class="mv-but">
+                	<span>热门网店类目</span>
+                    <i class="icon-eeee lumn"></i>
+                </div>
+                <div class="column">
+                	<ul>
+                    	<li><i><img src="images/ci1.png" alt=""></i><a href="">服饰配件/皮带/帽子/围巾</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">奶粉/辅食/营养品/零食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">彩妆/香水/美妆工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">零食/坚果/特产</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">数码相机/单反相机/摄像机</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">书籍/杂志/报纸工具</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">运动/瑜伽/健身/球迷用品</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">汽车/用品/配件/改装</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">餐饮美食</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">珠宝/钻石/翡翠/黄金</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">影音电器</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">居家日用</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">家装主材</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">流行男鞋</a></li>
+                        <li><i><img src="images/ci1.png" alt=""></i><a href="">OTC药品/医疗器械/计生用品</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sonclass">
+            	<a href=""><span>首页</span></a>
+                <a href=""><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+                <a href=""><span>优选天猫商城<div class="hotico"><img src="images/new.png" alt=""></div></span></a>
+                <a href=""><span>天猫代运营</span></a>
+                <a href=""><span>网店估价</span></a>
+                <a href=""><span>网站搭建</span></a>
+                <a href=""><span>商标服务</span></a>
+                <a href=""><span>知心购店</span></a>
+            </div>
+            
+        </div>
+    </div>
+</nav>
+<!--HEADER E-->
+<!--副导航 S-->
+<div id="SubHeader">
+	<div class="main">
+		<a href="" class="logo"><img src="images/logo-sub.png" alt=""></a>
+        <div class="mnav">
+        	<a href="" class="son"><span>首页</span></a>
+            <a href="" class="son"><span>天猫入驻</span><div class="hotico"><img src="images/hot.png" alt=""></div></a>
+            <a href="" class="son"><span>优选天猫商城</span><div class="hotico"><img src="images/new.png" alt=""></div></a>
+            <a href="" class="son"><span>天猫代运营</span></a>
+            <a href="" class="son"><span>网店估价</span></a>
+            <a href="" class="son"><span>网站搭建</span></a>
+            <a href="" class="son"><span>商标服务</span></a>
+            <a href="" class="son"><span>知心购店</span></a>
+            <div class="stel"><span>全国热线：</span><em>400-0000-000</em></div>
+        </div>
+    </div>
+</div>
+<!--副导航 E-->
+
+
+<div class="cur-location">
+	<i class="icon-edf4"></i><a>XXX</a><dl>></dl><a>新闻频道</a>
+</div>
+
+
+
+<div class="news-main">
+
+	<div class="left">
+    <!--焦点幻灯片-->
+    <div id="NewsFocus" class="news-focus">
+    
+        <div id="D1pic1" class="fPic">
+            <div class="fcon">
+                <a href="http://www.17sucai.com"><img src="images/bimg1.jpg" /></a>
+                <span class="shadow"><a href="http://www.17sucai.com">红三代叶明子太庙办盛典 白色羽毛装高贵动人</a></span>
+            </div>
+            <div class="fcon">
+                <a href="http://www.17sucai.com"><img src="images/bimg2.jpg" /></a>
+                <span class="shadow"><a href="http://www.17sucai.com">佟大为登封面表情搞怪 成熟男人也是天真男孩</a></span>
+            </div>
+            <div class="fcon">
+                <a href="http://www.17sucai.com"><img src="images/bimg3.jpg" /></a>
+                <span class="shadow"><a href="http://www.17sucai.com">21岁出柜超模巴厘自曝搞笑全裸照</a></span>
+            </div>
+            <div class="fcon">
+                <a href="http://www.17sucai.com"><img src="images/bimg4.jpg" /></a>
+                <span class="shadow"><a href="http://www.17sucai.com">金喜善出道21年 皮肤白皙越长越"嫩"！</a></span>
+            </div>
+        </div>
+        
+        <div class="fbg">
+            <div class="D1fBt" id="D1fBt">
+                <a href="javascript:void(0)" class="current"><i>1</i></a>
+                <a href="javascript:void(0)"><i>2</i></a>
+                <a href="javascript:void(0)"><i>3</i></a>
+                <a href="javascript:void(0)"><i>4</i></a>
+            </div>
+        </div>
+        
+        <span class="prev"></span>
+        <span class="next"></span>
+        
+    </div>
+	<!--焦点幻灯片-->
+    <!--Item S-->
+    <div class="item">
+    	<div class="time"><span>24</span><dl>2019-06</dl></div>
+        <div class="text">
+        	<a href="news_vist.html" class="title">淘宝天猫的物流仓库费一年大概多少钱呢？</a>
+            <span>天猫淘宝店的物流费用和仓储代发费用一年是多少钱?想从事电商行业，就需要处理好物流仓储端的问题。那么，淘宝物流仓储代发货费用一年是多少钱?我想这是许多网店店长想要了解的，其实这个问题自身便是有问题的。因为物流仓储费用首要是依据产品品种</span>
+            <div class="info">
+            	<em>发布时间：2019年09月21日 21:15 &nbsp;&nbsp; 点击率：62 &nbsp;&nbsp; 分类：行业新闻</em>
+                <a href="news_vist.html">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <!--Item E-->
+    <!--Item S-->
+    <div class="item">
+    	<div class="time"><span>24</span><dl>2019-06</dl></div>
+        <div class="text">
+        	<a href="news_vist.html" class="title">淘宝天猫的物流仓库费一年大概多少钱呢？</a>
+            <span>天猫淘宝店的物流费用和仓储代发费用一年是多少钱?想从事电商行业，就需要处理好物流仓储端的问题。那么，淘宝物流仓储代发货费用一年是多少钱?我想这是许多网店店长想要了解的，其实这个问题自身便是有问题的。因为物流仓储费用首要是依据产品品种</span>
+            <div class="info">
+            	<em>发布时间：2019年09月21日 21:15 &nbsp;&nbsp; 点击率：62 &nbsp;&nbsp; 分类：行业新闻</em>
+                <a href="news_vist.html">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <!--Item E-->
+    <!--Item S-->
+    <div class="item">
+    	<div class="time"><span>24</span><dl>2019-06</dl></div>
+        <div class="text">
+        	<a href="news_vist.html" class="title">淘宝天猫的物流仓库费一年大概多少钱呢？</a>
+            <span>天猫淘宝店的物流费用和仓储代发费用一年是多少钱?想从事电商行业，就需要处理好物流仓储端的问题。那么，淘宝物流仓储代发货费用一年是多少钱?我想这是许多网店店长想要了解的，其实这个问题自身便是有问题的。因为物流仓储费用首要是依据产品品种</span>
+            <div class="info">
+            	<em>发布时间：2019年09月21日 21:15 &nbsp;&nbsp; 点击率：62 &nbsp;&nbsp; 分类：行业新闻</em>
+                <a href="news_vist.html">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <!--Item E-->
+    <!--Item S-->
+    <div class="item">
+    	<div class="time"><span>24</span><dl>2019-06</dl></div>
+        <div class="text">
+        	<a href="news_vist.html" class="title">淘宝天猫的物流仓库费一年大概多少钱呢？</a>
+            <span>天猫淘宝店的物流费用和仓储代发费用一年是多少钱?想从事电商行业，就需要处理好物流仓储端的问题。那么，淘宝物流仓储代发货费用一年是多少钱?我想这是许多网店店长想要了解的，其实这个问题自身便是有问题的。因为物流仓储费用首要是依据产品品种</span>
+            <div class="info">
+            	<em>发布时间：2019年09月21日 21:15 &nbsp;&nbsp; 点击率：62 &nbsp;&nbsp; 分类：行业新闻</em>
+                <a href="news_vist.html">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <!--Item E-->
+    <!--Item S-->
+    <div class="item">
+    	<div class="time"><span>24</span><dl>2019-06</dl></div>
+        <div class="text">
+        	<a href="news_vist.html" class="title">淘宝天猫的物流仓库费一年大概多少钱呢？</a>
+            <span>天猫淘宝店的物流费用和仓储代发费用一年是多少钱?想从事电商行业，就需要处理好物流仓储端的问题。那么，淘宝物流仓储代发货费用一年是多少钱?我想这是许多网店店长想要了解的，其实这个问题自身便是有问题的。因为物流仓储费用首要是依据产品品种</span>
+            <div class="info">
+            	<em>发布时间：2019年09月21日 21:15 &nbsp;&nbsp; 点击率：62 &nbsp;&nbsp; 分类：行业新闻</em>
+                <a href="news_vist.html">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <!--Item E-->
+    <!--Item S-->
+    <div class="item">
+    	<div class="time"><span>24</span><dl>2019-06</dl></div>
+        <div class="text">
+        	<a href="news_vist.html" class="title">淘宝天猫的物流仓库费一年大概多少钱呢？</a>
+            <span>天猫淘宝店的物流费用和仓储代发费用一年是多少钱?想从事电商行业，就需要处理好物流仓储端的问题。那么，淘宝物流仓储代发货费用一年是多少钱?我想这是许多网店店长想要了解的，其实这个问题自身便是有问题的。因为物流仓储费用首要是依据产品品种</span>
+            <div class="info">
+            	<em>发布时间：2019年09月21日 21:15 &nbsp;&nbsp; 点击率：62 &nbsp;&nbsp; 分类：行业新闻</em>
+                <a href="news_vist.html">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <!--Item E-->
+    <!--Item S-->
+    <div class="item">
+    	<div class="time"><span>24</span><dl>2019-06</dl></div>
+        <div class="text">
+        	<a href="news_vist.html" class="title">淘宝天猫的物流仓库费一年大概多少钱呢？</a>
+            <span>天猫淘宝店的物流费用和仓储代发费用一年是多少钱?想从事电商行业，就需要处理好物流仓储端的问题。那么，淘宝物流仓储代发货费用一年是多少钱?我想这是许多网店店长想要了解的，其实这个问题自身便是有问题的。因为物流仓储费用首要是依据产品品种</span>
+            <div class="info">
+            	<em>发布时间：2019年09月21日 21:15 &nbsp;&nbsp; 点击率：62 &nbsp;&nbsp; 分类：行业新闻</em>
+                <a href="news_vist.html">查看详情</a>
+            </div>
+        </div>
+    </div>
+    <!--Item E-->
+    
+<div class="pageType-9">
+<ul class="pagination">
+<style type="text/css">
+.pageType-9{
+	width:100%;
+	max-width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:20px auto 40px auto;
+}
+.pageType-9 .pagination{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+}
+.pageType-9 .pagination li{
+	display:inline-block;
+	height:34px;
+}
+
+.pageType-9 .pagination li a{
+	display:block;
+	height:34px;
+	margin:0 3px;
+	padding:0 18px;
+	border-radius:4px;
+	background-color:#fff;
+	color:#888;
+	transition-duration:0.2s;
+	border:1px solid #ccc;
+	font-size: 15px;
+	line-height:34px;
+	height:34px;
+}
+.pageType-9 .pagination li a:hover{
+	background-color:#272727;
+	color:#FFF;
+}
+
+.pageType-9 .pagination li dl{
+	display:block;
+	height:34px;
+	margin:0 3px;
+	padding:0 18px;
+	border-radius:4px;
+	border:1px solid #ccc;
+	background-color:#fff;
+	color:#888;
+	transition-duration:0.2s;
+	font-size: 15px;
+	line-height:34px;
+	height:34px;
+}
+.pageType-9 .pagination li span{
+	display:block;
+	height:34px;
+	margin:0 3px;
+	padding:0 18px;
+	background-color:#F30;
+	transition-duration:0.2s;
+	border-radius:4px;
+	border:1px solid #ccc;
+	font-size: 15px;
+	line-height:34px;
+	height:34px;
+	color:#fff;
+}
+.pageType-9 .pagination li.pageRemark{
+	color:#666;
+}
+.pageType-9 .pagination li.pageRemark b{
+	color:#f30;
+	font-weight: bold;
+}
+</style>
+<li class="disabled"><dl>上一页</dl></li>
+<li class="active"><span>1</span></li>
+<li><a href="?page=2">2</a></li>
+<li><a href="?page=2">3</a></li>
+<li><a href="?page=2">4</a></li>
+<li><a href="?page=2">5</a></li>
+<li><a href="?page=2">6</a></li>
+<li><a href="?page=2">下一页</a></li>
+<li class='pageRemark'>共<b>2</b>页 <b>18</b>条数据</li>
+</ul>
+</div>
+    
+    
+    </div>
+    
+    <div class="right">
+    	<h2><span>买家指南</span><a href="">更多》</a></h2>
+        <div class="newslist">
+        	<a href="" class="title"><dl>关键词——万能公式</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>天猫商城一年的费用是多少？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>公司过户后，税务，账目，发票怎么弄？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>天猫未到账的货款该怎么处理？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>购买商铺的订金是怎么确定的？</dl><em>2019-02-28</em></a>
+        </div>
+        <h2><span>卖家指南</span><a href="">更多》</a></h2>
+        <div class="newslist">
+        	<a href="" class="title"><dl>关键词——万能公式</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>天猫商城一年的费用是多少？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>公司过户后，税务，账目，发票怎么弄？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>天猫未到账的货款该怎么处理？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>购买商铺的订金是怎么确定的？</dl><em>2019-02-28</em></a>
+        </div>
+        <h2><span>新手指南</span><a href="">更多》</a></h2>
+        <div class="newslist">
+        	<a href="" class="title"><dl>关键词——万能公式</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>天猫商城一年的费用是多少？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>公司过户后，税务，账目，发票怎么弄？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>天猫未到账的货款该怎么处理？</dl><em>2019-02-28</em></a>
+            <a href="" class="title"><dl>购买商铺的订金是怎么确定的？</dl><em>2019-02-28</em></a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<!--FOOTER S-->
+<footer class="footer" style="background:url(images/foot-bj.jpg) no-repeat center top;">
+	<div class="textMian">
+    	<div class="content">
+        	<div class="left">
+            	<ul>
+                	<h2>关于我们</h2>
+                    <li><a href="">公司简介</a></li>
+                    <li><a href="">联系我们</a></li>
+                    <li><a href="">诚聘英寸</a></li>
+                </ul>
+                <ul>
+                	<h2>体现充值</h2>
+                    <li><a href="">如何充值</a></li>
+                    <li><a href="">如何提现</a></li>
+                    <li><a href="">收费标准</a></li>
+                </ul>
+                <ul>
+                	<h2>服务流程</h2>
+                    <li><a href="">购买流程</a></li>
+                    <li><a href="">出售流程</a></li>
+                    <li><a href="">寄出流程</a></li>
+                </ul>
+                <ul>
+                	<h2>安全保障</h2>
+                    <li><a href="">店铺转让保证</a></li>
+                    <li><a href="">担保交易</a></li>
+                    <li><a href="">合同如何签写</a></li>
+                </ul>
+                <ul>
+                	<h2>帮助中心</h2>
+                    <li><a href="">买家帮助</a></li>
+                    <li><a href="">卖家帮助</a></li>
+                    <li><a href="">隐私保护</a></li>
+                </ul>
+                <ul>
+                	<h2>客服中心</h2>
+                    <li><a href="">客服咨询</a></li>
+                    <li><a href="">建议中心</a></li>
+                    <li><a href="">在线回答</a></li>
+                </ul>
+            </div>
+            <div class="right">
+            	<div class="fewm">
+                	<img src="images/ewm1.png" alt="">
+                    <span>微信二维码</span>
+                </div>
+                <div class="fewm" style="margin-right:38px;">
+                	<img src="images/ewm2.png" alt="">
+                    <span>公众号二维码</span>
+                </div>
+            </div>
+        </div>
+        <div class="anquan">
+        	<a href=""><img src="images/aq1.png" alt=""></a>
+            <a href=""><img src="images/aq2.png" alt=""></a>
+            <a href=""><img src="images/aq3.png" alt=""></a>
+            <a href=""><img src="images/aq4.png" alt=""></a>
+        </div>
+        <div class="copyright">
+        	<p>总机：0571-63832281 &nbsp;&nbsp; 分机：XXX</p>
+            <p>工作时间：周一~周五 &nbsp; 9:00-17:00</p>
+            <p>Copyright &copy; 2019 XXX All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<!--FOOTER E-->
+
+<script type="text/javascript">
+Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+Qfast(false, 'widgets', function () {
+	K.tabs({
+		id: 'NewsFocus',   //焦点图包裹id  
+		conId: "D1pic1",  //** 大图域包裹id  
+		tabId:"D1fBt",  
+		tabTn:"a",
+		conCn: '.fcon', //** 大图域配置class       
+		auto: 1,   //自动播放 1或0
+		effect: 'fade',   //效果配置
+		eType: 'click', //** 鼠标事件
+		pageBt:true,//是否有按钮切换页码
+		bns: ['.prev', '.next'],//** 前后按钮配置class                          
+		interval: 3000  //** 停顿时间  
+	}) 
+})  
+</script>
+
+
+</body>
+</html>
+    

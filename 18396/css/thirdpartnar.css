@@ -1,0 +1,288 @@
+/*代运营CSS*/
+
+.thir-whyus{
+	width:1200px;
+	height:auto;
+	overflow:hidden;
+	margin:20px auto 0px auto;
+}
+.thir-whyus h2{
+	display:block;
+	width:908px;
+	height:90px;
+	margin:0 auto 50px auto;
+	font:48px/70px 'microsoft yahei';
+	color:#222;
+	text-align:center;
+	border-bottom:2px solid #333;
+	position:relative;
+}
+.thir-whyus h2 span{
+	display:block;
+	width:500px;
+	height:30px;
+	background-color:#fff;
+	font:16px/30px 'microsoft yahei';
+	color:#555;
+	position:absolute;
+	bottom:-15px;
+	left:204px;
+}
+.thir-whyus .list{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	text-align:center;
+}
+.thir-whyus .list .item{
+	display:inline-block;
+	vertical-align: middle;
+	width:480px;
+	height:300px;
+	margin:0 20px 40px 20px;
+}
+.thir-whyus .list .item h3{
+	display:block;
+	width:320px;
+	height:46px;
+	background-color:#000;
+	margin:0 auto;
+	font:20px/46px 'microsoft yahei';
+	color:#fff;
+	transition-duration:0.2s;
+}
+.thir-whyus .list .item:hover h3{
+	background-color:#956b37;
+}
+.thir-whyus .list .item .text{
+	width:476px;
+	height:158px;
+	padding-top:40px;
+	border:2px solid #333;
+	margin:18px auto 0 auto;
+	position:relative;
+}
+.thir-whyus .list .item .text p{
+	display:block;
+	width:86%;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	font:18px/30px 'microsoft yahei';
+	color:#444;
+	text-align:center;
+}
+.thir-whyus .list .item .text dl{
+	display:block;
+	width:174px;
+	height:32px;
+	position:absolute;
+	bottom:-16px;
+	left:152px;
+	background-color:#FFF;
+	font:18px/32px 'microsoft yahei';
+	color:#222;
+	text-transform:uppercase;
+	font-weight: bold;
+	transition-duration:0.2s;
+}
+.thir-whyus .list .item:hover .text dl{
+	color:#956b37;
+}
+
+
+/**/
+.thir-service{
+	width:100%;
+	height:790px;
+	padding-top:50px;
+}
+.thir-service h2{
+	display:block;
+	width:1200px;
+	height:auto;
+	margin:0 auto 0 auto;
+	text-align:center;
+	letter-spacing:2px;
+	font:60px/70px 'microsoft yahei';
+	font-weight: bold;
+	color:#fff;
+}
+.thir-service h3{
+	display:block;
+	width:1200px;
+	height:auto;
+	margin:0 auto 0 auto;
+	padding-top:10px;
+	text-align:center;
+	letter-spacing:4px;
+	font:30px/50px 'microsoft yahei';
+	color:#fff;
+}
+.thir-service .itemlist{
+	width:1200px;
+	height:536px;
+	margin:50px auto 0 auto;
+	text-align:center;
+}
+.thir-service .itemlist .item{
+	display:inline-block;
+	vertical-align: middle;
+	width:395px;
+	height:260px;
+	margin-bottom:5px;
+	background-color:#fff;
+	transition-duration:0.2s;
+	cursor:pointer;
+}
+.thir-service .itemlist .item:hover{
+	background-color:#956b37;
+}
+.thir-service .itemlist .item i{
+	display:block;
+	width:70px;
+	height:70px;
+	padding-top:20px;
+	margin:0 auto;
+	font:60px/70px 'microsoft yahei';
+	color:#999;
+	text-align:center;
+	transition-duration:0.2s;
+}
+.thir-service .itemlist .item:hover i{
+	color:#fff;
+	font:70px/70px 'microsoft yahei';
+}
+.thir-service .itemlist .item h2{
+	display:block;
+	width:80%;
+	height:30px;
+	padding-top:15px;
+	margin:0 auto;
+	font:26px/30px 'microsoft yahei';
+	color:#222;
+	text-align:center;
+	transition-duration:0.2s;
+}
+.thir-service .itemlist .item:hover h2{
+	color:#fff;
+	font:30px/30px 'microsoft yahei';
+}
+.thir-service .itemlist .item dl{
+	display:block;
+	width:90px;
+	height:6px;
+	margin:18px auto 10px auto;
+	background-color:#956b37;
+	transition-duration:0.2s;
+}
+.thir-service .itemlist .item:hover dl{
+	width:200px;
+	background-color:#fff;
+}
+.thir-service .itemlist .item span{
+	display:block;
+	width:80%;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	font:16px/24px 'microsoft yahei';
+	color:#666;
+	text-align:center;
+	transition-duration:0.2s;
+}
+.thir-service .itemlist .item:hover span{
+	color:#fff;
+}
+
+
+.cooperation-process{
+	width:1200px;
+	height:250px;
+	margin:0 auto;
+	position:relative;
+}
+.cooperation-process .tiao{
+	width:1024px;
+	height:43px;
+	position:absolute;
+	top:50px;
+	left:88px;
+	background:url(img/coop-bj.jpg) no-repeat center top;
+	z-index:1;
+}
+.cooperation-process .item{
+	display:block;
+	width:160px;
+	height:auto;
+	overflow:hidden;
+	position:absolute;
+	top:6px;
+	left:0;
+	z-index:2;
+	cursor:pointer;
+}
+.cooperation-process .item .t{
+	display:block;
+	width:100%;
+	height:30px;
+	text-align:center;
+	font:24px/30px 'microsoft yahei';
+	color:#222;
+	transition-duration:0.2s;
+}
+.cooperation-process .item:hover .t{
+	font:30px/30px 'microsoft yahei';
+	color:#b51a1e;
+}
+.cooperation-process .item i{
+	display:block;
+	width:44px;
+	height:44px;
+	margin:0 auto;
+	text-align:center;
+	font:24px/42px 'microsoft yahei';
+	color:#fff;
+	background-color:#956b37;
+	border-radius:22px;
+	margin-top:11px;
+	transition-duration:0.2s;
+}
+.cooperation-process .item:hover i{
+	background-color:#b51a1e;
+	font:30px/42px 'microsoft yahei';
+}
+.cooperation-process .item span{
+	display:block;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	font:15px/24px 'microsoft yahei';
+	color:#888;
+	margin-top:14px;
+	transition-duration:0.2s;
+}
+.cooperation-process .item:hover span{
+	color:#333;
+}
+.cooperation-process .fl1{
+	left:28px;
+}
+.cooperation-process .fl2{
+	left:220px;
+}
+.cooperation-process .fl3{
+	left:420px;
+}
+.cooperation-process .fl4{
+	left:616px;
+}
+.cooperation-process .fl5{
+	left:812px;
+}
+.cooperation-process .fl6{
+	left:1010px;
+}
+
+
+

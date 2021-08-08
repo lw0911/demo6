@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/page.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> 
+		<title>商家页面-联系我们</title>
+	</head>
+	<body>
+			<!-- 顶部 开始 -->
+	<div class="index_head1">
+		<div class="w1200 clearFloat">
+			<div class="head1_left fl">
+				<span>欢迎来到贵州肉交所!</span>
+				<a class="a1" href="javascript:;">立即登录</a>
+				<a class="a2" href="javascript:;">免费注册</a>
+			</div>
+			<div class="head1_right fr">
+				<a class="a1" href="javascript:;">我的账户</a>
+				<a class="a2">关注手机端</a>
+				<span class="sp1">客服热线：400-123-1213</span>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部 结束 -->
+	<!-- 头部logo 开始 -->
+	<div class="index_head2">
+		<div class="w1200 clearFloat">
+			<div class="head2_left fl">
+				<a href="index.html">
+					<img src="images/index1.png" />
+					<img src="images/index2.png" />
+				</a>
+			</div>
+			<div class="head2_right fr clearFloat">
+				<div class="sub_box clearFloat fl">
+					<div class="sub1 fl">
+						<span class="sp1">商品</span>
+						<div class="sub" style="display: none;">
+							<span>商品</span>
+							<span>供应</span>
+							<span>采购</span>
+						</div>
+					</div>
+					<input class="txt1 fl" type="text" name="keyword" placeholder="输入货品名称" id="keyword"  />
+					<input class="btn1 fr" type="button" value="搜索"  onclick="searchproduct();"/>
+				</div>
+				<div class="a1 fl" href="javascript:;">
+					<span>发布求购信息</span>
+					<dl class="a1_slide">
+						<dd><a href="javascript:;">发布供应信息</a></dd>
+						<dd><a href="javascript:;">发布采购信息</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 头部logo 结束 -->
+	<!-- 导航 开始 -->
+	<div class="index_nav">
+		<div class="w1200 clearFloat">
+			<div class="nav_left fl">
+				<div class="top1">
+					<span>产品分类</span>
+				</div>
+			</div>
+			<div class="nav_center fl">
+				<ul>
+					<li>
+						<a class="add_bg" href="wholesale.html">批发首页</a>
+					</li>
+					<li>
+						<a href="selected-Meat.html">精选肉类</a>
+					</li>
+					<li>
+						<a href="wholesale.html">供应大厅</a>
+					</li>
+					<li>
+						<a href="buy-information.html">采购大厅</a>
+					</li>
+					<li>
+						<a href="market-condition.html">市场行情</a>
+					</li>
+					<li>
+						<a href="industry-new.html">行业资讯</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav_right fr">
+				<div class="top3"><a href="javascript:;"><img src="images/index7.png" />委托采购</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- 导航 结束 -->
+	<!--内容 开始-->
+	<div class="contact">
+		<div class="contact_us">
+			<h2>联系我们</h2>
+			<p>CONTACT US</p>
+			<div class="contact_content">
+				<div class="contact_map">
+					<div style="border:#ccc solid 1px;" id="dituContent"></div>
+				</div>
+				<div class="contact_style">
+					<p>欢迎大家咨询（来电或在线留言），您的关注四我们的动力！</p>
+					<div class="contact_tel">
+						<p>某某五金有限公司</p>
+						<p>咨询热线：021-12345678</p>
+						<p>E-mail：12345678@qq.com</p>
+						<p>021-123-456</p>
+						<p>联系人：陈先生</p>
+						<p>企业QQ：123456789</p>
+						<p>地址：某某公司某某某某某某某某某某某某某某</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--内容 结束-->
+	<!-- 底部 开始 -->
+	<div class="foot">
+		<div class="foot1">
+			<div class="w1200 clearFloat">
+				<div class="det fl">
+					<div class="tit"><img src="images/index38.png" /><span>关于我们</span></div>
+					<ul>
+						<li><a href="javascript:;">公司介绍</a></li>
+						<li><a href="javascript:;">联系我们</a></li>
+						<li><a href="javascript:;">合作邀请</a></li>
+					</ul>
+				</div>
+				<div class="det fl">
+					<div class="tit"><img src="images/index39.png" /><span>我要采购</span></div>
+					<ul>
+						<li><a href="javascript:;">如何发布供货信息</a></li>
+						<li><a href="javascript:;">如何发布采购信息</a></li>
+						<li><a href="javascript:;">如何委托交易</a></li>
+					</ul>
+				</div>
+				<div class="det fl">
+					<div class="tit"><img src="images/index40.png" /><span>帮助中心</span></div>
+					<ul>
+						<li><a href="javascript:;">注册流程</a></li>
+						<li><a href="javascript:;">无法登陆/忘记密码</a></li>
+						<li><a href="javascript:;">修改账号信息</a></li>
+					</ul>
+				</div>
+				<div class="det det4 fl">
+					<div class="tit"><img src="images/index41.png" /><span>关注我们</span></div>
+					<div class="erma">
+						<img src="images/index42.png" />
+						<p>关注微信公众号</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot2">
+			<div class="w1200 clearFloat">
+				<div class="link">
+					<a href="javascript:;">网站首页</a>|
+					<a href="javascript:;">公司介绍</a>|
+					<a href="javascript:;">联系我们</a>|
+					<a href="javascript:;">合作邀请</a>|
+					<a href="javascript:;">资质证件</a>|
+					<a href="javascript:;">商城入驻</a>|
+					<a href="javascript:;">基本帮助</a>
+				</div>
+				<div class="copy">COPYRIGHT © 贵州肉交所 版权所有 贵州黔牧出山农牧科技有限公司 联系电话：<a href="javascript:;">XXX</a></div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 结束 -->
+	</body>
+</html>
+<script>
+	//搜索
+	 function searchproduct(){
+	   var keyword = document.getElementById("keyword").value;
+	   if(keyword == undefined || keyword==null ||keyword ==""){
+	     alert("请输入关键字！");
+	     return false;
+	   }
+	   document.getElementById("searchform").submit();
+	}
+    //创建和初始化地图函数：  
+    function initMap(){  
+        createMap();//创建地图  
+        setMapEvent();//设置地图事件  
+        addMapControl();//向地图添加控件  
+        addMarker();//向地图中添加marker  
+        }  
+  
+        //创建地图函数：  
+    function createMap(){  
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图  
+        var point = new BMap.Point(120.402934,36.325076);//定义一个中心点坐标  
+        map.centerAndZoom(point,14);//设定地图的中心点和坐标并将地图显示在地图容器中  
+        window.map = map;//将map变量存储在全局  
+        }  
+  
+        //地图事件设置函数：  
+    function setMapEvent(){  
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)  
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小  
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)  
+        map.enableKeyboard();//启用键盘上下左右键移动地图  
+        }  
+  
+        //地图控件添加函数：  
+    function addMapControl(){  
+        //向地图中添加缩放控件  
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});  
+        map.addControl(ctrl_nav);  
+        //向地图中添加缩略图控件  
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});  
+        map.addControl(ctrl_ove);  
+        //向地图中添加比例尺控件  
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});  
+        map.addControl(ctrl_sca);  
+    }  
+    //标注点数组  
+    var markerArr =  
+            [{title:"青岛农业大学李传涌",content:"我的备注",point:"120.402934|36.325076",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}];  
+    //创建marker  
+    function addMarker(){  
+        for(var i=0;i<markerArr.length;i++){  
+            var json = markerArr[i];  
+            var p0 = json.point.split("|")[0];  
+            var p1 = json.point.split("|")[1];  
+            var point = new BMap.Point(p0,p1);  
+            var iconImg = createIcon(json.icon);  
+            var marker = new BMap.Marker(point,{icon:iconImg});  
+            var iw = createInfoWindow(i);  
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});  
+            marker.setLabel(label);  
+            map.addOverlay(marker);  
+            label.setStyle({  
+                borderColor:"#808080",  
+                color:"#333",  
+                cursor:"pointer"  
+                });  
+  
+                (function(){  
+                    var index = i;  
+                    var _iw = createInfoWindow(i);  
+                    var _marker = marker;  
+                    _marker.addEventListener("click",function(){  
+                    this.openInfoWindow(_iw);  
+                });  
+                _iw.addEventListener("open",function(){  
+                    _marker.getLabel().hide();  
+                })  
+                _iw.addEventListener("close",function(){  
+                    _marker.getLabel().show();  
+                })  
+                label.addEventListener("click",function(){  
+                    _marker.openInfoWindow(_iw);  
+                })  
+                if(!!json.isOpen){  
+                    label.hide();  
+                    _marker.openInfoWindow(_iw);  
+                }  
+            })()  
+        }  
+    }  
+    //创建InfoWindow  
+    function createInfoWindow(i){  
+        var json = markerArr[i];  
+        var iw = new  
+                BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");  
+        return iw;  
+    }  
+    //创建一个Icon  
+    function createIcon(json){  
+        var icon = new  
+                BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png",  
+                new BMap.Size(json.w,json.h),  
+                {imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),  
+                    offset:new BMap.Size(json.x,json.h)})  
+        return icon;  
+    }  
+    initMap();//创建和初始化地图  
+</script>

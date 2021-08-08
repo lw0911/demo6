@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by dede58.com"/>
+<title>产品列表</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/pro-detailed.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script>DD_belatedPNG.fix('*')</script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript">
+$(function(){
+	//默认状态下左右滚动
+	$(".scrolllist").xslider({
+		unitdisplayed:1,//可视的单位个数   必需项;
+		movelength:1,//要移动的单位个数    必需项;
+		maxlength:null,//可视宽度或高度    默认查找要移动对象外层的宽或高度;
+		scrollobj:null,//要移动的对象     默认查找productshow下的ul;
+		unitlen:400,//移动的单位宽或高度     默认查找li的尺寸;
+		nowlength:null,//移动最长宽或高（要移动对象的宽度或高度）   默认由li个数乘以unitlen所得的积;
+		dir:"H",//水平移动还是垂直移动，默认H为水平移动，传入V或其他字符则表示垂直移动;
+		autoscroll:null//自动移动间隔时间     默认null不自动移动;
+	});
+	
+})
+</script>
+</head>
+
+<body>
+	<!------------top---------------->
+	<div class="top">
+    	<div class="top-c">
+        	<div class="top-left">
+            	<p>嗨，欢迎来到省心购幼教品商城</p>
+            </div>
+            <div class="top-right">
+                <p><a href="#">设为首页</a> | <a href="#">加入收藏</a></p>
+            </div>
+        </div>
+    </div>
+
+	<!------------header---------------->
+	<div class="header">
+    	<div class="logo">
+        	<a href="#"><img src="images/logo.png" width="130" height="57" /></a>
+        </div>
+    	<div class="header-right">
+        	<div class="search-section">
+            	<div class="keyword"><input name="keyword"  type="text"  value="请输入关键字" onFocus="this.value=''" onBlur="if(!value){value=defaultValue;}"/></div>
+                <div class="btn"></div>
+                <p class="hot-keyword"><strong>热门搜索：</strong><a href="#">夏装</a><a href="#">冬装</a><a href="#">书包</a><a href="#">园服定制</a></p>
+            </div>
+            
+            <div class="fw">
+            	<img src="images/fw.jpg" />
+            </div>
+        </div>
+    </div>
+	
+    <!------------header-wrap---------------->
+    <div class="header-wrap">
+        <div class="navwrap">
+            <div id="nav">
+                <div class="navbar">
+                    <a href="index.html">首页</a>
+                    <a class="current"  href="products-list.html">夏装</a>
+                    <a href="products-list.html">冬装</a>
+                    <a href="products-list.html">书包</a>
+                    <a href="products-list.html">床上用品</a>
+                    <a href="products-list.html">园标设计</a>
+                    <a href="news.html">新闻资讯</a>
+                    <!--<a href="#">折扣区<em class="sale"></em></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------main---------------->
+	<div class="main">
+    	<div class="current-position"><h2><a href="#">首页</a> > <a href="#">详情</a></h2></div>
+		<div class="goods-detail-info">
+            <div class="left">
+            	<!---------主图--------->
+                <div class="scrolllist" id="s1" >
+                    <a class="abtn aleft" href="#left" title="左移"></a>
+                    <div class="imglist_w">
+                        <ul class="imglist">
+                            <li style="background:url(images/2.jpg) no-repeat center center"></li>
+                            <li style="background:url(images/3.jpg) no-repeat center center"></li>
+                            <li style="background:url(images/4.jpg) no-repeat center center"></li>
+                        </ul>
+                    </div>
+                    <a class="abtn aright" href="#right" title="右移"></a>
+                </div>
+            </div>
+          
+        	<div class="right">
+            	<h1>幼儿园丘比熊童装</h1>
+                <p class="money">¥<span>29</span></p>
+                <div class="style_box">
+                	<dl>
+                    	<dt>可选尺寸：</dt>
+                        <dd>图片色,红色,黑色,白色,蓝色,黄色</dd>
+                    </dl>
+                    <dl>
+                    	<dt>可选颜色：</dt>
+                        <dd>红色,黑色,白色,蓝色,黄色</dd>
+                    </dl>
+                </div>
+                
+                
+                
+                
+                
+                
+                <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+            </div>
+      </div>
+      
+      <div class="pro-detailed">
+      
+          <div class="pro-detailed-left">
+			<ul class="pro-detailed-left-title">
+            	<li class="active"><a href="#goodsDesc">详细信息</a></li>
+            </ul>
+            <div class="pro-detailed-left-c">
+            	<!--------详细信息---------->
+            	<div id="goodsDesc">
+                	<img src="images/05.jpg" />
+                </div>
+            </div>
+          </div>
+          
+          
+          <div class="pro-detailed-right">
+          	<div class="pro-detailed-right-title"><h3>热销产品</h3></div>
+            <div class="pro-detailed-right-c">
+            	<ul class="buy-list">
+                	<li><a href="#"><img src="images/4-2li.jpg" width="80" height="80" /></a><p><strong><a href="#">幼儿园丘比熊童装</a></strong><i>15元</i></p></li>
+                    <li><a href="#"><img src="images/05.jpg" width="80" height="80" /></a><p><strong><a href="#">幼儿园丘比熊童装</a></strong><i>15元</i></p></li>
+                    <li><a href="#"><img src="images/401.jpg" width="80" height="80" /></a><p><strong><a href="#">幼儿园丘比熊童装</a></strong><i>15元</i></p></li>
+                    <li><a href="#"><img src="images/4li.jpg" width="80" height="80" /></a><p><strong><a href="#">幼儿园丘比熊童装</a></strong><i>15元</i></p></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+	
+     <!------底部-------->
+	<div class="footer">
+    	<div class="footer-c">
+        	<dl>
+            	<dt>购买指南</dt>
+                <dd><a href="service.html">第一次购物体验</a></dd>
+                <dd><a href="service.html">品质保证原则</a></dd>
+            </dl>
+            <dl>
+            	<dt>支付方式</dt>
+                <dd><a href="service.html">网银在线支付</a></dd>
+                <dd><a href="service.html">支付宝支付</a></dd>
+                <dd><a href="service.html">银联在线支付</a></dd>
+            </dl>
+            <dl>
+            	<dt>配送方式</dt>
+                <dd><a href="service.html">配送方式</a></dd>
+            </dl>
+            <dl>
+            	<dt>售后服务</dt>
+                <dd><a href="service.html">联系客服</a></dd>
+            </dl>
+            
+            <div class="col-contact">
+                <p class="phone">XXX</p>
+                <p>周一至周日 8:00-18:00<br /></p>
+                <input type="button" value="在线客户" />
+            </div>
+            <div class="clr20"></div>
+            <div class="footer-b">
+                <p><a href="service.html">关于我们</a>  |  <a href="mobile/index.html">手机商城</a>  |  <a href="service.html">联系我们</a></p>
+                <p>© XXXAll Rights Reserver. 省心购幼教品 版权所有　禁止非法复制　网站备案号：闽ICP备XXX号-1</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
