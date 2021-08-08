@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	var left = $("#left");
+	var right = $("#right");
+	var obj = $(".subBox ul");
+	var w = obj.find("li").innerWidth();
+	
+	left.click(function(){
+		obj.find("li:last").prependTo(obj);
+		obj.css("margin-left",-w);
+		obj.animate({"margin-left": 0});
+	});
+	
+	right.click(function(){
+		obj.animate({"margin-left": -w},function(){
+			obj.find("li:first").appendTo(obj);
+			obj.css("margin-left","0");
+		});
+	});
+	
+	var moving = setInterval(function(){right.click()},3000);
+	
+	obj.hover(function(){
+		clearInterval(moving);
+	},function(){
+		moving = setInterval(function(){right.click()},3000);
+	})
+	
+});
+</script>
+<!-- PNG背景透明 -->
+<script src="js/png.js"></script>
+<script>
+DD_belatedPNG.fix('.png_bg,img,.b');
+</script>
+<!-- PNG背景透明 -->
+
+<!--[if lte IE 6]>
+  <style type="text/css">
+    body { behavior:url("csshover.htc"); }
+  </style>
+<![endif]-->
+</head>
+<body>
+<div id="banner">
+  <div id="header">
+    <div class="top">
+      <div class="logo"><a href="#" title="康之桥健康管理中心"><img src="images/logo.png" /></a></div>
+      <div id="topnav" class="png_bg">
+        <div class="topnav"><a href="#">设为首页</a>|<a href="#">联系我们</a>|<a href="#">会员登录</a>|<a href="#">会员注册</a></div>
+        <div id="search_box">
+          <form id="search_form" method="post" action="#">
+            <input type="text" id="s" value="请输入关键字" class="swap_value" />
+            <input type="image" src="images/main_01_02.png" id="go" alt="Search" title="Search" />
+          </form>
+        </div>
+      </div>
+      <div class="top_tel">全国统一热线电话:<B>400-8888-0526</B></div>
+    </div>
+    <div id="nav" class="png_bg">
+      <div class="nav">
+        <UL>
+          <LI><a href="index.html" id="li">网站首页</a></LI>
+          <LI><a href="about.html">关于我们</a></LI>
+          <LI><a href="newsinfor.html">健康管理</a></LI>
+          <LI><a href="newslist.html">健康教育</a></LI>
+          <LI><a href="proinfor.html">老年托孤陪伴</a></LI>
+          <LI><a href="prolist.html">健康知识</a></LI>
+          <LI><a href="#">健康论坛</a></LI>
+          <LI><a href="#">会员专区</a></LI>
+          <LI><a href="#">会员注册</a></LI>
+        </UL>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div id="login" class="png_bg">
+      <div class="login">
+        <div class="loginbar">
+          <H1>用户名：</H1>
+          <input name="" type="text" id="loginbar" class="png_bg" />
+        </div>
+        <div class="loginbar">
+          <H1>密　码：</H1>
+          <input name="" type="text" id="loginbar" class="png_bg" />
+        </div>
+        <div class="btn"><a href="#" style="float:left;"><img src="images/ico_02.jpg" /></a><a href="#" style="float:right;"><img src="images/ico_01.jpg" /></a></div>
+      </div>
+      <div class="login">
+        <div class="list_bt">健康小贴士<I>/ Health Tips</I></div>
+        <div class="list_nei">
+          <UL>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+          </UL>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content">
+  <div class="content">
+    <div id="content_bt" class="png_bg"></div>
+    <div class="content_nei">
+      <div class="zy_left">
+        <UL>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+        </UL>
+      </div>
+      <div class="zy_right">
+        <div class="right_bt">关于我们<I>About Us</I></div>
+        <div class="right_nei">
+          <div class="zynei">
+            <div class="tite">企业应该理性看待网站建设及其效果</div>
+            <div class="time"><i>发布者：admin</i><i>发布日期：2012-12-02 14:22</i><i>点击：38次</i></div>
+            <div class="new01_nei">
+              <p>开展网站建设，投放网络广告信息，抢占网络客户资源，这是互联网社会时期各行业各企业进行得最多行为，也是目前市场竞价最重要的特征之一，那么企业应该如何看待这一切行为结果呢？</p>
+              <P>是不是为了效果而不断的给员工压力呢？该不该因为竞争对手的强大优势而盲目的疯狂投资呢？绝对不行，面对网站建设与网络营销，企业一定要保持一颗平常的心态理性对待，找到问题所在，分析时局现状，稳速前进，循序渐进。
+                理性的前提是清楚自己的位置，看清自己与对手的差别在哪里。</P>
+              <P>同样是选择网站建设方案，如果我们的竞争对手选择的是一个有利于网站优化的静态操作页面以及客户体验良好的网站设计表现形式，而我们选择的则是一个凑合的网站建设方案，试想，谁胜谁负？
+                选好起点，重在执行。</P>
+              <P>有了好的网站建设方案，有了高的起点并不意味着我们就一定能在网络营销的战役中胜出，只有良好的资源准备过程而没有切实的执行操作同样不会取得预想的成效，有些企业会选择成立专业的网络营销部门来对网站建设后期的维护工作全权负责，也有些企业会选择与专业网站建设公司合作，在网络营销专家的协助下将方案执行到底，有付出才会有收获，如果我们只是进行了营销网站建设就奢望着等待丰硕的结果是非常不实际的。</P>
+              <P>把耐心放长，经得起考验和等待就一定能看到花儿绽放的美丽。</P>
+              <P>无论是选择SEO技术进行网站建设后期的关键词优化还是选择立竿见影的网络广告投放，客户的转化过程都必须要经过一段时间的探索总结后才有可能见成效，所以千万不能急。网络上来的客户与线下开发的客户毕竟还是有许多不同之处的，要慢慢的去发现并找到相应的解决方案后才能将网站建设的成效与网络营销的转化完美的结合起来。</P>
+              <P>网站建设后期效果与网络营销成效之间不存在绝对性。</P>
+              <P>有些企业将网站建设后期的关键字排名效果归结于工作人员的能力，这样的结论太过于绝对，过于热门的关键字，没有时间的累积任何人都没有办法在很短的时间内做得明显的成效，所以广告投放与SEO结合才是最好的选择。</P>
+              <P>而有些企业则将网站建设后期关键字排名效果好，但却迟迟不出业绩的责任放到了业务头上，这也实在是委屈了业务员。我们必须要清楚，有排名不意味着有流量（如果网站关键字很冷门，效果很容易出来，但没有搜索自己没有流量）；有了流量也不一定有咨询量（如果我们在网站建设后期的关键字分析方向上出现了差错，流量自然无法带来咨询量，当然，这属于少数；还有一个原因就是网站建设方案本身或许并不具有切实的转化率，客户看了产品图片都没能产生咨询购买的欲望）；有了咨询量也不一定会有销量，这就与产品质量，价格以及业务的谈判能力，企业的销售方案有着千丝万缕的联系了。</P>
+              <P>所以说，绝对不能把网站建设后期效果与企业的网络营销业绩划上等号。</P>
+            </div>
+            <div class="time"> <span style="float:left; text-align:left;">上一篇：<a href="#">网站建设应考虑的核心问题</a></span> <span style="float:right; text-align:right;">下一篇：<i>没有了！</i></span> </div>
+            <div class="clear"></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="right_bottom"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="subnav"> <A href="#">网站首页</A>|<A href="#">关于我们</A>|<A href="#">健康管理</A>|<A href="#">健康教育</A>|<A href="#">老年托孤陪伴</A>|<A href="#">健康知识</A>|<A href="#">健康论坛</A>|<A href="#">会员专区</A>|<A href="#">会员注册</A> </div>
+  <P>Copyright ? 2012 Jianerli.net All Rights Reserved 版权所有 健尔力 地址:南京市白下区虎踞南路40-8号1-4楼<br />
+    联系电话：025-86530015 邮箱：service@jianerli.net 企业邮箱登录</P>
+</div>
+</body>
+</html>

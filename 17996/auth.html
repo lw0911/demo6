@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>素材网-仿微信公众平台(2018)</title>
+    <link href="public/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="public/css/common.css" type="text/css" rel="stylesheet">
+    <link href="public/css/index.css" type="text/css" rel="stylesheet">
+    <script src="public/js/jquery-3.2.1.min.js"></script>
+    <script src="public/js/alert.js"></script>
+</head>
+
+<body>
+    <div id="head" class="jzy_w_max jzy_h_80 br_h_0">
+        <div id="admin_head_body" class="at">
+            <img src="https://res.wx.qq.com/mpres/en_US/htmledition/modules/weui-desktopSkin/svg/buildless/bg_logo_primary3ac982.svg"
+                class="jzy_mg_top_20" />
+        </div>
+    </div>
+    <div id="admin_body" class="lt br_4 jzy_w_max">
+        <div id="admin_nav_body" class="lt">
+            <ul id="admin_nav_ul">
+                <li class=" jzy_mg_top_14 fs_16 nav_top_li">
+                    <span class="nav_top_title  jzy_h_30">
+                        <i class="fa fa-home fs_18"></i>
+                        <span>首页</span>
+                    </span>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 buttom_border">
+                    <span class="nav_top_title jzy_h_30">
+                        <i class="fa fa-reorder fs_18"></i>
+                        <span>功能</span>
+                    </span>
+
+                    <ul class="fs_13">
+                        <a href="beadded.html">
+                            <li class='nav_top_li nav_tow_li  jzy_mg_top_10'>自动回复</li>
+                        </a>
+                        <a href="menuAdmin.html">
+                            <li class='nav_top_li nav_tow_li'>自定义菜单</li>
+                        </a>
+                        <li class='nav_top_li nav_tow_li'>留言管理</li>
+                        <li class='nav_top_li nav_tow_li'>投票管理</li>
+                        <li class='nav_top_li nav_tow_li'>页面模板</li>
+                        <li class='nav_top_li nav_tow_li'>原创声明功能</li>
+                    </ul>
+                </li>
+                <li class=" jzy_mg_top_14 fs_16  buttom_border">
+                    <span class="nav_top_title jzy_h_30">
+                        <i class="fa fa-sun-o fs_18"></i>
+                        <span>管理</span>
+                    </span>
+                    <ul class="fs_13">
+                        <a href="userList.html">
+                            <li class='nav_top_li  nav_tow_li jzy_mg_top_10 '>用户管理</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 nav_top_li">
+                    <span class="nav_top_title jzy_h_30 ">
+                        <i class="fa fa-pie-chart fs_18"></i>
+                        <span>统计</span>
+                    </span>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 buttom_border">
+                    <span class="nav_top_title jzy_h_30 ">
+                        <i class="fa fa-cogs fs_18"></i>
+                        <span>设置</span>
+                    </span>
+                    <ul class="fs_13">
+                        <a href="advanced.html">
+                            <li class='nav_top_li nav_tow_li jzy_mg_top_10 '>基本配置</li>
+                        </a>
+                        <a href="auth.html">
+                            <li class='nav_top_li nav_tow_li jzy_mg_top_10 nav_top_title_chois'>接口权限</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="admin_main_body" class="jzy_mg_right_15">
+            <h2 class="fs_26 jzy_mg_bottom_20" style="font-weight: 400;line-height: 1;">接口权限</h2>
+            <div class="jzy_desktop_panel jzy_mg_top_40" style="padding:30px;padding-top:30px">
+                <div class="table_wrp with_border dev_right" id="js_api">
+                <table class="table" cellspacing="0">
+                    <thead class="thead">
+                        <tr>
+                            <th class="table_cell">类目</th>
+                            <th class="table_cell tl">功能</th>
+                            <th class="table_cell tl interface js_interface">接口</th>
+                            <th class="table_cell tr drop_left_border limit">每日实时调用量/上限(次) <i class="icon_msg_mini ask js_tips"></i></th>
+                            <th class="table_cell tl drop_left_border status">接口状态</th>
+                            <th class="table_cell last_child drop_left_border oprate">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <td class="table_cell drop_left_border" rowspan="22">对话服务</td>
+                            <td class="table_cell tl" rowspan="2">基础支持</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140183&amp;token=&amp;lang=zh_CN" target="_blank" title="获取access_token">获取access_token</a></td>
+                            <td class="table_cell tr drop_left_border">0/2000</td>
+                            <td class="table_cell tl drop_left_border status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell last_child drop_left_border"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="0/2000" data-name="api_token">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140187&amp;token=&amp;lang=zh_CN" target="_blank" title="获取微信服务器IP地址">获取微信服务器IP地址</a></td>
+                            <td class="table_cell tr drop_left_border"></td>
+                            <td class="table_cell tl drop_left_border status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell last_child drop_left_border">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="4">接收消息</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140453&amp;token=&amp;lang=zh_CN" target="_blank" title="验证消息真实性">验证消息真实性</a></td>
+                            <td class="table_cell tr drop_left_border">无上限</td>
+                            <td class="table_cell tl drop_left_border status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell last_child drop_left_border">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140453&amp;token=&amp;lang=zh_CN" target="_blank" title="接收普通消息">接收普通消息</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140454&amp;token=&amp;lang=zh_CN" target="_blank" title="接收事件推送">接收事件推送</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140453&amp;token=&amp;lang=zh_CN" target="_blank" title="接收语音识别结果">接收语音识别结果</a>
+                                                <span id="voiceTxt">(已关闭)</span>
+                                            </td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">
+                                                <a href="javascript:;" id="voiceClose" style="display: none;">关闭</a>
+                                <a href="javascript:;" id="voiceOpen">开启</a>
+                                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="5">发送消息</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140543&amp;token=&amp;lang=zh_CN" target="_blank" title="自动回复">自动回复</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140547&amp;token=&amp;lang=zh_CN" target="_blank" title="客服接口">客服接口</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="3">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="api_send_msg_custom">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140549&amp;token=&amp;lang=zh_CN" target="_blank" title="群发接口">群发接口</a></td>
+                            <td class="table_cell drop_left_border tr dropdown_closed">
+                            &nbsp;
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="3">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-group="tpl_detail_masssend" data-name="group_masssend">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1433751277&amp;token=&amp;lang=zh_CN" target="_blank" title="模版消息（业务通知）">模版消息（业务通知）</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="2">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="api_send_msg_template">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1500374289_66bvB" target="_blank">一次性订阅消息</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                                <span class="mini_tips icon_after jsAsk" data-type="4">未获得<i class="icon_msg_mini ask"></i></span>
+                                            </td>
+                
+                                    </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="5">用户管理</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140837&amp;token=&amp;lang=zh_CN" target="_blank" title="用户分组管理">用户分组管理</a></td>
+                            <td class="table_cell drop_left_border tr dropdown_closed">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="3">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-group="tpl_detail_group" data-name="group_addr">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140838&amp;token=&amp;lang=zh_CN" target="_blank" title="设置用户备注名">设置用户备注名</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="3">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="api_updateremark">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140839&amp;token=&amp;lang=zh_CN" target="_blank" title="获取用户基本信息">获取用户基本信息</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="3">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="api_userinfo">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140840&amp;token=&amp;lang=zh_CN" target="_blank" title="获取用户列表">获取用户列表</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="3">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="api_getfans">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140841&amp;token=&amp;lang=zh_CN" target="_blank" title="获取用户地理位置">获取用户地理位置</a><span id="localTxt">(已关闭)</span></td>
+                            <td class="table_cell drop_left_border tr">
+                            &nbsp;
+                                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                                <span class="mini_tips icon_after jsAsk" data-type="2">未获得<i class="icon_msg_mini ask"></i></span>
+                                            </td>
+                            <td class="table_cell drop_left_border last_child">
+                            &nbsp;
+                                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="2">推广支持</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1443433542&amp;token=&amp;lang=zh_CN" target="_blank" title="生成带参数的二维码">生成带参数的二维码</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="2">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="api_createqrcode">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1443433600&amp;token=&amp;lang=zh_CN" target="_blank" title="长链接转短链接接口">长链接转短链接接口</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="2">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="api_shorturl">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="2">界面丰富</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141013&amp;token=&amp;lang=zh_CN" target="_blank" title="自定义菜单">自定义菜单</a></td>
+                            <td class="table_cell drop_left_border tr dropdown_closed">
+                                <span class="mini_tips icon_after js_api_detail" data-id="tpl_detail_menu">
+                                    详情<span class="icon_dropdown_switch"><i class="arrow arrow_up"></i><i class="arrow arrow_down"></i></span>
+                                </span>
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="1">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-group="tpl_detail_menu" data-name="group_menu">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1455782296&amp;token=&amp;lang=zh_CN" target="_blank" title="个性化菜单">个性化菜单</a></td>
+                            <td class="table_cell drop_left_border tr dropdown_closed">
+                                <span class="mini_tips icon_after js_api_detail" data-id="tpl_detail_custom">
+                                    详情<span class="icon_dropdown_switch"><i class="arrow arrow_up"></i><i class="arrow arrow_down"></i></span>
+                                </span>
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="1">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-group="tpl_detail_custom" data-name="group_conditionalmenu">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="2">素材管理</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1444738729&amp;token=&amp;lang=zh_CN" target="_blank" title="永久素材管理接口">永久素材管理接口</a></td>
+                            <td class="table_cell drop_left_border tr dropdown_closed">
+                            &nbsp;
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="3">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-group="tpl_detail_material" data-name="group_material">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1444738726&amp;token=&amp;lang=zh_CN" target="_blank" title="临时素材管理接口">临时素材管理接口</a></td>
+                            <td class="table_cell drop_left_border tr dropdown_closed">
+                            &nbsp;
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="3">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-group="tpl_detail_media" data-name="group_media">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell drop_left_border" rowspan="8">功能服务</td>
+                            <td class="table_cell tl">智能接口</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141241&amp;token=&amp;lang=zh_CN" target="_blank" title="语义理解接口">语义理解接口</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="2">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="semantic_semproxy_search">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="3">多客服</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1458044854&amp;token=&amp;lang=zh_CN" target="_blank" title="获取客服聊天记录">获取客服聊天记录</a></td>
+                            <td class="table_cell drop_left_border tr"></td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-quota="" data-name="api_getrecord_customservice">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1458044813&amp;token=&amp;lang=zh_CN" target="_blank" title="客服管理">客服管理</a></td>
+                            <td class="table_cell drop_left_border tr dropdown_closed">
+                            &nbsp;
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-group="tpl_detail_manager" data-name="group_customer_service">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1458044820&amp;token=&amp;lang=zh_CN" target="_blank" title="会话控制">会话控制</a></td>
+                            <td class="table_cell drop_left_border tr dropdown_closed">
+                            &nbsp;
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child"><a href="javascript:;" class="js_reset" style="display:none;" data-group="tpl_detail_control" data-name="group_customer_service">调用量清零</a></td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">微信支付</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://pay.weixin.qq.com/wiki/doc/api/index.html" target="_blank" title="微信支付接口">微信支付接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="4">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">
+                            &nbsp;
+                                
+                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">微信小店</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141217&amp;token=&amp;lang=zh_CN" target="_blank" title="微信小店接口">微信小店接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="5">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">
+                            &nbsp;
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">微信卡包</td>
+                            <td class="table_cell tl interface js_interface"><a target="_blank" href="/merchant/cardapply?action=listintro&amp;lang=zh_CN&amp;token=1823303051">微信卡包接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">
+                            &nbsp;
+                                
+                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">设备功能</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141257&amp;token=&amp;lang=zh_CN" target="_blank" title="设备功能接口">设备功能接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="4">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">
+                            &nbsp;
+                                
+                                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell drop_left_border" rowspan="35">网页服务</td>
+                            <td class="table_cell tl" rowspan="1">网页授权</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421140842&amp;token=&amp;lang=zh_CN" target="_blank" title="网页授权获取用户基本信息">网页授权获取用户基本信息</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="2">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">
+                                &nbsp;
+                                
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="table_cell tl" rowspan="2">基础接口</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="判断当前客户端版本是否支持指定JS接口">判断当前客户端版本是否支持指定JS接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="http://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=1823303051&amp;lang=zh_CN" target="_blank" title="获取jsapi_ticket">获取jsapi_ticket</a></td>
+                            <td class="table_cell drop_left_border tr">0/1000000</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="4">分享接口</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="获取“分享到朋友圈”按钮点击状态及自定义分享内容接口">获取“分享到朋友圈”按钮点击状态及自定义分享内容接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="获取“分享给朋友”按钮点击状态及自定义分享内容接口">获取“分享给朋友”按钮点击状态及自定义分享内容接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN.html" target="_blank" title="获取“分享到QQ”按钮点击状态及自定义分享内容接口">获取“分享到QQ”按钮点击状态及自定义分享内容接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="获取“分享到腾讯微博”按钮点击状态及自定义分享内容接口">获取“分享到腾讯微博”按钮点击状态及自定义分享内容接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="4">图像接口</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="拍照或从手机相册中选择图片接口">拍照或从手机相册中选图接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="预览图片接口">预览图片接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="上传图片接口">上传图片接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="下载图片接口">下载图片接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="7">音频接口</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="开始录音接口">开始录音接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="停止录音接口">停止录音接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="播放语音接口">播放语音接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="暂停播放接口">暂停播放接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="停止播放接口">停止播放接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="上传语音接口">上传语音接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="下载语音接口">下载语音接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">智能接口</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="识别音频并返回识别结果接口">识别音频并返回识别结果接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">设备信息</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="获取网络状态接口">获取网络状态接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="2">地理位置</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="使用微信内置地图查看地理位置接口">使用微信内置地图查看位置接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="获取地理位置接口">获取地理位置接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="7">界面操作</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="隐藏右上角菜单接口">隐藏右上角菜单接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="显示右上角菜单接口">显示右上角菜单接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="关闭当前网页窗口接口">关闭当前网页窗口接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="批量隐藏功能按钮接口">批量隐藏功能按钮接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="批量显示功能按钮接口">批量显示功能按钮接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="隐藏所有非基础按钮接口">隐藏所有非基础按钮接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="显示所有功能按钮接口">显示所有功能按钮接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">微信扫一扫</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1455871652&amp;token=&amp;lang=zh_CN" target="_blank" title="调起微信扫一扫接口">调起微信扫一扫接口</a></td>
+                            <td class="table_cell drop_left_border tr">无上限</td>
+                            <td class="table_cell drop_left_border tl status">
+                                <span class="mini_tips icon_after">已获得</span>
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">微信小店</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="跳转微信商品页接口">跳转微信商品页接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="2">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl" rowspan="3">微信卡券</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="调起适用于门店的卡券列表并获取用户选择列表">调起适用于门店的卡券列表并获取用户选择列表</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="批量添加卡券接口">批量添加卡券接口</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="查看微信卡包中的卡券">查看微信卡包中的卡券</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="6">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="table_cell tl">微信支付</td>
+                            <td class="table_cell tl interface js_interface"><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1421141115&amp;token=&amp;lang=zh_CN" target="_blank" title="发起一个微信支付请求">发起一个微信支付请求</a></td>
+                            <td class="table_cell drop_left_border tr">
+                                
+                            </td>
+                            <td class="table_cell drop_left_border tl status">
+                                
+                                <span class="mini_tips icon_after jsAsk" data-type="2">未获得<i class="icon_msg_mini ask"></i></span>
+                                
+                            </td>
+                            <td class="table_cell drop_left_border last_child">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

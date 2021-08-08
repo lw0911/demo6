@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>日常项目-2016年道路大中修工程</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <link rel="shortcut icon" href="favicon.ico">
+      <link href="public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/Daily_items/daily_data.css" rel="stylesheet">
+      <link href="css/Daily_items/font-awesome.css?v=4.4.0" rel="stylesheet">
+      <link href="css/Daily_items/plugins/iCheck/custom.css" rel="stylesheet">
+      <link href="css/Daily_items/animate.css" rel="stylesheet">
+      <link href="css/Daily_items/style.css?v=4.1.0" rel="stylesheet">
+      <link type="text/css " rel="stylesheet" href="css/Daily_items/ding.css">
+       
+</head>
+<body class="white-bg">
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="bread">
+                <ol class="breadcrumb">
+                    <li><a href="#">日常项目</a></li>
+                    <li class="active" style="">道路大中修</li>
+                </ol>
+            </div>
+            <div class="query">
+                <div class="query_text">查询条件</div>
+                <div class="query_up">
+                    <div class="col-sm-6">
+                        <div id="road_name1">
+                            <input type="text" class="form-control" placeholder="请输入道路名称" aria-label="请输入道路名称">
+                            <button class="btn btn-secondary" type="button">
+                                <span class="glyphicon glyphicon-search" style="" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="date01">
+                            <input type="text" class="form-control" placeholder="请输入起止点名称" aria-label="请输入起止点名称">
+                            <button class="btn btn-secondary" type="button">
+                                <span class="glyphicon glyphicon-search"  aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="query_buttom" >
+                    <button type="button" class="btn btn-default">查询</button>
+                </div>
+            </div>
+            <div class="query_result">查询结果</div>
+            <div class="text">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th><h4>序号</h4></th>
+                            <th><h4>道路名称</h4></th>
+                            <th><h4>起止地点</h4></th>
+                            <th><h4>道路长度（米）</h4></th>
+                            <th><h4>道路宽度（米）</h4></th>
+                            <th><h4>沥青面积（平米）</h4></th>
+                            <th><h4>步道面积（平米）</h4></th>
+                            <th><h4>备注</h4></th>
+                            <th><h4>特殊情况备案</h4></th>
+                            <th><h4>地图查看</h4></th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="road">
+                        <tr>
+                            <td class="num">1</td>
+                            <td class="road_name">南礼士路（北段）</td>
+                            <td class="road_place">月坛南街-阜成门外大街</td>
+                            <td class="road_length">1126</td>
+                            <td class="road_width">6.3-12.5</td>
+                            <td class="liqing_area">16425</td>
+                            <td class="foodpath_area">10180.6</td>
+                            <td class="road_remark">无</td>
+                            <td width="100" class="app"><input type="button" value="查看详情" onclick="caozuo()"/></td>
+                            <td><button class="btn btn-secondary" type="button"  data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td class="num">2</td>
+                            <td class="road_name">马连道路</td>
+                            <td class="road_place">广安门外大街——红莲南路</td>
+                            <td class="road_length">1435.7</td>
+                            <td class="road_width">2.0-3.0</td>
+                            <td class="liqing_area">30060.6</td>
+                            <td class="foodpath_area">10836.3</td>
+                            <td class="road_remark">无</td>
+                            <td width="100" class="app"><input type="button" value="查看详情" onclick="caozuo()"/></td>
+                            <td><button class="btn btn-secondary" type="button"  data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td class="num">3</td>
+                            <td class="road_name">荣光胡同</td>
+                            <td class="road_place">赵锥子胡同——储子营胡同</td>
+                            <td class="road_length">144.7</td>
+                            <td class="road_width">1.7-2.7</td>
+                            <td class="liqing_area">356.4</td>
+                            <td class="foodpath_area">143.9</td>
+                            <td class="road_remark">无</td>
+                            <td width="100" class="app"><input type="button" value="查看详情" onclick="caozuo()"/></td>
+                            <td><button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td class="num">4</td>
+                            <td class="road_name">虎坊路社区北侧路</td>
+                            <td class="road_place">虎坊路——徐悲鸿中学</td>
+                            <td class="road_length">255.8</td>
+                            <td class="road_width">5.2-5.7</td>
+                            <td class="liqing_area">2417.4</td>
+                            <td class="foodpath_area">1613.6</td>
+                            <td class="road_remark">无</td>
+                            <td width="100" class="app"><input type="button" value="查看详情" onclick="caozuo()"/></td>
+                            <td><button class="btn btn-secondary" type="button"  data-toggle="modal" data-target="#myModal">
+                                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            </button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row pagination-wrap" style="text-align: center">
+                    <ul class="pagination pagination-large">
+                        <li><a href="#">前一页</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">后一页</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated fadeIn">
+                <p>地图显示</p>
+                <div class="map" ><img alt="image" src="image/Daily_items/地图.jpg" /></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/Daily_items/ding.js"></script>
+    <script src="public/jquery/jquery-3.1.1.min.js?v=2.1.4"></script>
+    <script src="public/bootstrap/js/bootstrap.min.js?v=3.3.6"></script>
+</body>
+
+</html>

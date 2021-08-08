@@ -1,0 +1,1108 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link   rel="stylesheet" href="css.css" type="text/css">
+<style>
+::-moz-selection{background:#1EACDF;color:#FFFFFF;}
+::-webkit-selection{background:#1EACDF;color:#FFFFFF;}
+::selection {background:#1EACDF;color:#FFFFFF;}
+
+
+.w120{ width:1200px;margin:0  auto;}
+div,ul,li{box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+.clear:before,.clear:after{ content:""; clear:both; display:block; line-height:0px;}
+.bg_tranis{-webkit-transition:background 0.3s ease;-moz-transition:background 0.3s ease;transition:background 0.3s ease;}
+
+.ease{ -webkit-transition-duration: 0.5s;-moz-transition-duration: 0.5s;-webkit-transition-duration:0.5s;
+     -webkit-transition-property: background-color, background-position, color, border-color, opacity, z-index, transform, box-shadow;
+	 -moz-transition-property: background-color, background-position, color, border-color, opacity, z-index, transform, box-shadow;
+	  transition-property: background-color,background-position, color, border-color, opacity, z-index, transform, box-shadow;
+      -webkit-transition-timing-function: ease;-moz-transition-timing-function: ease;  transition-timing-function: ease;}
+
+header{position: fixed;top:0px;left:0px; width:100%; background:rgba(255,255,255,0.8); height:70px; z-index:10;}
+.head_bor{ border-bottom: 1px solid #e6e6e6; height:70px; line-height:70px;}
+header h1{ margin-top:11px; overflow:hidden; height:59px;}
+header h1 a{display:inline-block;}
+header h1 .icous{ vertical-align:top; margin-left:5px;}
+header  li a{color:#000; transition: color 0.3s ease 0s;}
+header  li a:hover{color:#009fd9; }
+header li:hover{border-bottom:3px solid #009FD9; transition:border-bottom 0.3s ease 0;}
+header  li:hover a{color:#009fd9; transition: color 0.3s ease;}
+
+header  ul.head_nav li{ float:left; font-size:16px;height:70px; position:relative; text-align:center;width:127px;}
+header  ul.head_nav .active{border-bottom:3px solid #009FD9;}
+header  ul.head_nav .active2{border-color: transparent transparent #009fd9; border-style: solid; border-width: 6px; bottom: 2px; position:absolute;  top: 55px;left: 44%;}
+header  ul.head_nav li ul{ position:absolute; z-index:3; padding-top:0px;border-left: 1px dashed #ddd;height:0px; width:127px; overflow:hidden;}
+header  ul.head_nav li ul li{height:40px; line-height:40px; position:static; font-size:14px;} 
+header  ul.head_nav li ul li:hover{border-bottom:none;}
+header  ul.head_nav li ul a:hover{text-decoration:underline;}
+
+nav{ width:100%; position:absolute; top:70px; background-color: #fff;box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);height:0px; z-index: 2; overflow:hidden;}
+.nav_bor{ border-right:1px dashed #ddd;}
+/*------------------------导航结束-------------------------------------*/
+
+.banner{clear:both; margin-top:70px; position:relative; height:340px; z-index:0;}
+.banner>div{height:340px; top:0px;  position:absolute;width:100%; z-index:0; opacity:0; filter:alpha(opacity=0);}
+.banner .w120{ margin-top:70px;height:270px;}
+.banner .w120 .l{ position:relative; left:0px;width:60%; height:100%}
+.banner strong,.banner p,.banner a{opacity:0; filter:alpha(opacity=0);}
+.banner strong{ font-size:46px;font-weight:normal;position:absolute;}
+.banner p{ font-size:20px;  line-height: 86px;    margin-bottom: 39px;position:absolute;}
+.banner a{border:1px solid #fff;color:#fff;transition:color,background 0.1s  ease-in-out;position:absolute;border-radius:4px; text-align:center;display:block; width:115px; padding:8px 0px 10px;}
+.banner a:hover{ transition:color,background 0.1s  ease-in-out;background:#fff;}
+
+.banner .bann_1{ background:url(img/banner_free.jpg) center center no-repeat; z-index:1; opacity:1; filter:alpha(opacity=100);}
+.banner .bann_2{background:url(img/banner_idc.jpg)  center center no-repeat;color:#fff;}
+.banner .bann_3{ background:url(img/banner_market.jpg)  center center no-repeat;}
+.banner .bann_4{ background: url(img/banner_secretary_v2.jpg) center center no-repeat;color:#B38442}
+.banner .bann_5{ background:url(img/banner_beijing_v2.jpg) center center no-repeat;color:#fff;}
+.banner .bann_6{ background:url(img/banner_liaoning_v2.jpg) center center no-repeat; background-size:1728px auto;color:#fff;}
+
+.banner .bann_2 p,.banner  .bann_2 a{ margin-left: 35px;color:#fff;}
+.banner .bann_2 a:hover{color:#173069; }
+.banner .bann_2 p,.banner .bann_2 strong{ left:-100px;/*left:0px;*/}
+.banner .bann_2 p{top:50px;}
+.banner .bann_2 a{top:173px;left:100px;/*left:0px*/}
+
+.banner .bann_4 .l{ margin-left:100px;}
+.banner .bann_4 a:hover{color:#B38442; }
+.banner .bann_4 strong{  top:-100px;/*top:0px;*/}
+.banner .bann_4 p{top:-50px; /*top:50px;*/}
+.banner .bann_4 a{bottom:0px;/*bottom:40px;*/}
+
+.banner .bann_5 .l{ margin-left:100px;}
+.banner .bann_5 a:hover{color:#0194DA;}
+.banner .bann_5 strong{ top:-100px;/*top:0px;*/}
+.banner .bann_5 p{top:-50px;/* top:50px;*/}
+.banner .bann_5 a{top:40px;/*top:1800px;*/}
+
+.banner .bann_6 .l{ margin-left:100px;}
+.banner .bann_6 .l p{font-size:20px; margin-bottom: 48px; line-height:26px;margin-top:20px;color:#9ab5ff;top:50px;}
+.banner .bann_6 .l a:hover{color:#061E68}
+.banner .bann_6 .l p,.banner .bann_6 .l strong{ left:-100px;/*left:0px*/}
+.banner .bann_6 .l a{left:0px; bottom:0px;/*bottom:48px;*/}
+
+.banner ol{ position:absolute; bottom:20px;left:45%; z-index:10;color:#fff; }
+.banner ol li{ width:10px; height:10px; border-radius:50%;float:left;border:1px solid #fff; margin:0 5px;cursor:pointer; transition:background 0.1s ease-in-out; 
+-webkit-transition:background 0.1s ease-in-out; -mos-transition:background 0.1s ease-in-out; cursor:pointer}
+.banner ol .active3{ background:#fff; transition:background 0.1s ease-in-out; -webkit-transition:background 0.1s ease-in-out;
+ -mos-transition:background 0.1s ease-in-out;}
+ /*------------------------------轮播图结束---------------------------------*/
+ 
+.notice{ height:40px; line-height:40px;background-color: #f8f9fb; overflow:hidden;position:relative;}
+.notice a{color:#333;}
+.notice a:hover{color:#379BFD;}
+.notice li{ position:relative; clear:both; height:40px;}
+.notice li>a{ overflow:hidden; white-space:nowrap;text-overflow: ellipsis; display:block; width:300px; float:left; height:100%;}
+.notice li>a:before{ background:url(img/icons_80cc695.png) -77px -90px no-repeat; content:"";width:20px; height:20px; display:block; float:left; margin-top:12px;}
+.notice li>a:hover::before{ background:url(img/sound-dark_f334fbc.gif) -16px -10px no-repeat;content:"";width:20px; margin-top:9px;} 
+.notice li time{ margin-right:30px;}
+.notice  p{ position:absolute;right:8%;top:0px; z-index:2;}
+.notice  p a{ display:block; height:8px;width:14px; margin:8px 0px;}
+.notice  p a:first-child{ background:url(img/btn_up.png) no-repeat;}
+.notice  p a:first-child:hover{ background:url(img/btn_up_hover.png) no-repeat;}
+.notice  p a:last-child{ background:url(img/btn_down.png) no-repeat;}
+.notice  p a:last-child:hover{ background:url(img/btn_down_hover.png) no-repeat;}
+ /*------------------------------滚动公告结束---------------------------------*/
+ 
+.list{margin:0px auto; clear:both; padding:70px 0px;} 
+.list h2{ font-size:30px; text-align:center;}
+.list > p{ font-size:16px; text-align:center; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;color:#999; line-height:2.5;} 
+.list > ul{ margin-top:40px;}
+
+.list .product li{ position:relative;width:30%; float:left; 
+transition:box-shadow 0.3s ease-in-out; -webkit-transition:box-shadow 0.3s ease-in-out; -moz-transition:box-shadow 0.3s ease-in-out;}
+.list .product li:hover{ box-shadow:0px 15px 30px rgba(0,0,0,0.2);transition: box-shadow 0.3s ease-in-out; -webkit-transition:box-shadowd 0.3s ease-in-out; -moz-transition:box-shadow 0.3s ease-in-out;}
+.list .product li.margin_lr{ margin:0px 5%;}
+
+.list .product li div{padding: 20px 0 1px 10.5%;border: 1px solid #e6e6e6;border-bottom:none;}   
+.list .product li span{ position:absolute;right:0px; top:0px;height:64px; width:64px;}
+.list .product p{color:#333; margin:19px 0px;}
+.list .product p strong{ font-size: 32px;font-weight:normal;    font-family: Georgia;color: #f76c35;}
+.list .product a{ height:40px; line-height:40px; display:block;color:#fff;background-color: #00a6e2; text-align:center; font-size:18px; letter-spacing:1px;
+ transition: background 0.3s ease-in-out; -webkit-transition:background 0.3s ease-in-out; -moz-transition:background 0.3s ease-in-out;}   
+.list .product a:hover{ background:#009ad3; transition: background 0.3s ease-in-out; -webkit-transition:background 0.3s ease-in-out; -moz-transition:background 0.3s ease-in-out;}   
+
+.list .product li:nth-of-type(1){background: url(img/cloud_bg.png) 86% 47% no-repeat;}
+.list .product li:nth-of-type(1) span{ background:url(img/hot_sale.png) no-repeat; } 
+ 
+.list .product li:nth-of-type(2){background: url(img/hosting_bg.png) 86% 47% no-repeat;}
+.list .product li:nth-of-type(2) span{ background: url(img/new_arrival.png) no-repeat; } 
+
+.list .product li:nth-of-type(3){background: url(img/virtual_bg.png) 86% 47% no-repeat;}
+.list .product li:nth-of-type(3) span{ background:url(img/tobe_online.png) no-repeat; }
+/*------------------------------产品结束--------------------------------------------*/
+
+.list_bg{ background-color: #f3f4f4;}
+.list .scheme li{width:20%; background:#FFF; padding:30px 50px; text-align:center;border:1px solid #eee; margin-left:-1px; float:left}
+.list .scheme p{color:#999; line-height:3.6em;}
+.list .scheme a{width:106px; height:106px; display:block; margin:20% 0 15% 11%;background:url(img/solutions_icons.png)  no-repeat;}
+
+.list .scheme li:nth-of-type(1) a{  background-position:-61px 0px;}
+.list .scheme li:nth-of-type(2) a{  background-position:-216px -0px;}
+.list .scheme li:nth-of-type(3) a{background-position: -361px 0;}
+.list .scheme li:nth-of-type(4) a{background-position: -506px 0;}
+.list .scheme li:nth-of-type(5) a{ background-position: -651px 0;}
+.list .scheme li:nth-of-type(1) a:hover{  background-position:-61px -106px;}
+.list .scheme li:nth-of-type(2) a:hover{  background-position:-216px -106px;}
+.list .scheme li:nth-of-type(3) a:hover{background-position: -361px -106px;}
+.list .scheme li:nth-of-type(4) a:hover{background-position: -506px -106px;}
+.list .scheme li:nth-of-type(5) a:hover{ background-position: -651px -106px;}
+/*-------------------------------方案结束-------------------------------------------------*/
+
+.list .case{ margin-top:30px;}
+.list .case .l{width:34%; position:relative;padding-top:28px; padding-left:70px;}
+.list .case span{color: #009fd9;font-size: 100px; font-family: "SimHei";}
+.list .case .l p{ font-size:16px;color:#999; line-height:1.8; text-indent:3em; } 
+.list .case span:first-of-type { position:absolute;left:0px; top:0px;}   
+.list .case span:last-of-type{ position:absolute;right:-60px; bottom:-90px; }  
+.list .case .r{width:66%; padding-left:120px; margin-top:20px;}
+
+.list .case .r li{width:170px; height:170px; float:left; text-align:center;  position:relative;padding: 34px 0px 0px 37px;z-index:1; margin-right:-16px; margin-top:-20px;}
+.list .case .r li:hover{background:url(img/cus_bg_li.png) no-repeat;}
+.list .case .r li img{margin-left: -32px;}
+.list .case .r li i{position: absolute;width: 110%;height: 120%;left:0px;top: 0; display:block;background: url(img/cus_bg.png) no-repeat; z-index:0;}
+.list .case .r li a:hover i{ opacity:0; filter:alpha(opacity=0); -webkit-transform:scale(1.4); -moz-transform:scale(1.4);transform:scale(1.4)} 
+  
+.list .case .r li:nth-of-type(1) img{margin-top: 11px;}   
+.list .case .r li:nth-of-type(2) img{margin-top: 32px;}       
+.list .case .r li:nth-of-type(3) img{margin-top: 11px;}   
+.list .case .r li:nth-of-type(4) img{margin-top: 32px;}          
+.list .case .r li:nth-of-type(5) img{margin-top: 11px;}   
+.list .case .r li:nth-of-type(6) img{margin-top: 7px;}      
+.list .case .r li:nth-of-type(7) img{margin-top: 11px;}   
+.list .case .r li:nth-of-type(8) img{margin-top: 15px;}   
+/*---------------------------------案例结束---------------------------------------------*/     
+
+.list .partner{ column-count:5; -moz-column-count:5; -webkit-column-count:5;}
+.list .partner li{border: 1px solid #eee; height:100px; background:url(img/partner_logos.jpg) no-repeat;}
+.list .partner li:hover{ border-color:#1EACDF;}
+.list .partner li:nth-of-type(1){ background-position:-84px 0px;}
+.list .partner li:nth-of-type(2){ background-position:-84px -98px;}
+.list .partner li:nth-of-type(3){ background-position:-84px -196px;}
+.list .partner li:nth-of-type(4){ background-position:-84px -294px;}
+.list .partner li:nth-of-type(5){ background-position:-84px -392px;} 
+/*-------------------------------合作伙伴-------------------------------------*/
+
+
+.list .new{}
+.list .new h3{color:#333; margin:15px 0px;}
+.list .new ul{ line-height:40px;width:30%; float:left; overflow:hidden;}
+.list .new ul:nth-of-type(2){ margin:0px 5%;}
+.list .list_tit{line-height: 20px;border-bottom: 1px solid #eee; margin-bottom: 10px;position:relative;} 
+.list .list_tit a.more{ position:absolute; right:0px; bottom:15px;color:#009fd9;}
+.list .list_tit a.more:hover{ text-decoration:underline;}
+.list .new li{ font-size:14px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:100%;}
+.list .new li a{ color:#666; }
+.list .new li a:hover{color:#009fd9;}
+.list .new li a time{color:#999;}
+.list .new ul .img{ width:100%; height:73px; overflow:hidden; margin:16px 0px 0px 7px;}
+.list .new ul .img a{background:url(img/notice_img_free.jpg) no-repeat; display:block; width:100%; height:100%; transform:scale(1,1);transform-origin:center; 
+ -webkit-transition: transform 1s ease-in-out; -moz-transition: transform 1s ease-in-out;transition: transform 1s ease-in-out}
+.list .new ul .img:hover a{ transform:scale(1.05,1.05);transform-origin:center;  -webkit-transition: transform 1s ease-in-out; -moz-transition: transform 1s ease-in-out;transition: transform 1s ease-in-out}
+/*------------------------新闻公告结束----------------------------------*/
+
+.zhuce{text-align:center;}
+.zhuce a{  background-color: #009FD9; display:block; padding:10px 0px; width:240px;color:#fff; margin:0 auto;}
+.zhuce a:hover{ background-color:#0091c7;}
+
+
+.fuwu{ margin-top:50px; padding:25px 0px; -webkit-column-count:5;column-count:5; column-rule:1px solid #e6e6e6;-webkit-column-rule:1px solid #e6e6e6;
+-moz-column-count:5; -moz-column-rule:1px solid #e6e6e6;}
+.fuwu li{height:50px; background:url(img/features_iconlist.png) center 0px no-repeat; }
+.fuwu li a{display:block; width:100%; height:100%;}
+.fuwu li:first-of-type{border-left:1px solid #e6e6e6;}
+.fuwu li:last-of-type{border-right:1px solid #e6e6e6;}
+
+.fuwu li:first-of-type:hover{ background-position:center -254px;}
+.fuwu li:nth-of-type(2){ background-position:center -51px;}
+.fuwu li:nth-of-type(2):hover{ background-position:center -304px;}
+.fuwu li:nth-of-type(3){ background-position:center -103px;}
+.fuwu li:nth-of-type(3):hover{ background-position:center -357px;}
+.fuwu li:nth-of-type(4){ background-position:center -154px;}
+.fuwu li:nth-of-type(4):hover{ background-position:center -408px;}
+.fuwu li:nth-of-type(5){ background-position:center -204px;}
+.fuwu li:nth-of-type(5):hover{ background-position:center -459px;}
+/*------------------保障保证---------------------*/
+
+.video{ background:url(img/v_banner_2.jpg) center 0px no-repeat; height:0px;  width:100%; overflow:hidden;}
+.video .video_text{ background: url(img/v_banner_text.png) center center no-repeat; height:138px; width:508px; margin:0px auto 0px; position:relative;top:-20px}
+.video a{ display:block; background:url(img/v_link.png) no-repeat; width:72px; height:72px; margin:0 auto;margin-top:-28px; position:relative;bottom:-18px;}
+.video a:hover{ background:url(img/v_link_hover.png) no-repeat; -webkit-animation:videorun 0.3s ease-in-out 0s 2 normal; -moz-animation:videorun 0.3s ease-in-out 0s 2 normal;
+animation:videorun 0.3s ease-in-out 0s 2 normal;}
+.video_h{-webkit-animation:videoH 0.5s ease-in-out 0s 3 normal; -moz-animation:videoH 0.5s ease-in-out 0s 3 normal;
+animation:videorun 0.5s  cubic-bezier(0.9,1.1,0.9,1) 0s 3 normal;}
+
+@keyframes videorun{
+	0%{  -webkit-transform:scale(1);-moz-transform:scale(1); -webkit-transform-origin:center; -moz-transform-origin:center;}
+	50%{  -webkit-transform:scale(1.1);-moz-transform:scale(1.1); -webkit-transform-origin:center; -moz-transform-origin:center;}
+	100%{  -webkit-transform:scale(1); -moz-transform:scale(1);-webkit-transform-origin:center; -moz-transform-origin:center;}
+	}
+
+/*--------------------------------视频播放结束------------------------------------------------------*/
+
+footer{background: #00A0D7;color: #fff; padding:60px 0px 40px}
+.service dl{ float:left; line-height:2.2; width:18%;}    
+.service dl dt{ font-size:18px;}
+.service dl dd{ font-size:14px;}
+.service .wei{ width:26%; float:left; }
+.service .wei p{ line-height:40px;}
+.service .wei h2{ background: url(img/phone_32px.png) left center no-repeat;color:#fff; padding-left:40px;}
+.service .wei a{color:#fff;display: inline-block; height:32px; line-height:32px;}
+.service .wei .r span{ background:url(img/plat_icon.png) no-repeat; width:32px; height:32px; display: inline-block; float:left; margin-right:12px;}
+.service .wei p:nth-of-type(2) span{ background-position:-32px 0px;}
+.service .wei p:nth-of-type(3) span{ background-position:-64px 0px;}
+
+.service .wei .l{position:relative;width: 152px;height: 132px; }
+.service .wei .l>div{width: 132px;height: 132px;  border: 1px solid #dddddd; background-color: #fff; background: url(img/plat_qrcode.png) no-repeat; position:absolute;
+top:0px;}
+
+.service .wei .l span{  border: 10px solid transparent;top: 12px;border-left: 10px solid #fff; position: absolute;right:0px; z-index: 10;} 
+
+.service .wei .l .wei_img_1{ z-index:1;}
+.service .wei .l .wei_img_2{ background-position:-132px 0px; z-index:0;}
+.copyright{border-top: 1px solid #4cc3ed; text-align:center; padding-top:25px; line-height:2.4; font-size:12px; margin-top:30px;}
+
+/*--------------------------------服务保障底部--------------------------------------*/
+
+
+.return_top{ position:fixed; bottom:60px; right:30px; width:50px; height:230px; z-index:10; }
+.return_top li{ background: url(img/side_icons.png) no-repeat #00b7e7; margin-top:10px; cursor:pointer;border-radius: 4px; width:50px; height:50px;-webkit-transition:background 0.3s ease;-moz-transition:background 0.3s ease;transition:background 0.3s ease;}
+.return_top li:hover {background-color: #f76c35;}
+.return_top li:nth-of-type(2){ background-position:-50px 2px;}
+.return_top li:nth-of-type(3){ background-position:-100px 0px;}
+.return_top li:nth-of-type(4){ background-position:-150px 0px;display:none;opacity:0; filter:alpha(opacity=0);}
+
+.return_top .tel{ position: absolute; width: 230px; right: 69px;top:71px;z-index: 30;background: #fff;height: 50px;line-height: 50px; padding-left: 20px; color: #666;
+ font-size: 16px; border: 1px solid #ddd; display:none;opacity:0; filter:alpha(opacity=0);}
+.return_top .tel_icon{ border: 10px solid transparent;  border-left: 10px solid #fff;position: absolute; right: -19px;bottom: 14px;z-index:10;}
+.return_top .tel_bor{border: 11px solid transparent;border-left: 11px solid #ddd; position: absolute; right: -22px;  bottom: 13px; z-index: 9;}
+.return_top .wewe{ background: url(img/code2d.png) no-repeat; position:absolute;width: 142px; height: 144px; right:69px; top:80px; display:none;opacity:0; filter:alpha(opacity=0);} 
+
+/*---------------------返回顶部结束----------------------------*/   
+    
+   
+</style>  
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
+<script>
+$(function(){
+	
+  (function()
+    {
+	  var now=0,t=null,n=0,but=true;
+	  var bann_div=$('.banner').children('div');
+	  var ol_li=$('.banner ol').children('li');
+	  
+	  function Run(index,now)
+	  {
+		  if(index==1)
+		  {
+			  bann_div.eq(index).find('strong').css({opacity:0,left:-100});
+			  bann_div.eq(index).find('p').css({opacity:0,left:-100});
+			  bann_div.eq(index).find('a').css({opacity:0,left:100});
+			  bann_div.eq(index).css({zIndex:0,opacity:0})
+			  
+			  bann_div.eq(index).find('strong').delay(200).animate({opacity:1,left:0},'slow','linear');
+			  bann_div.eq(index).find('p').delay(200).animate({opacity:1,left:0},'slow','linear');
+			  bann_div.eq(index).find('a').delay(200).animate({opacity:1,left:0},'slow','linear'); 
+		  }
+	
+		  if(index==3)
+		  {
+			  bann_div.eq(index).find('strong').css({opacity:0,top:-100});
+			  bann_div.eq(index).find('p').css({opacity:0,top:-50});
+			  bann_div.eq(index).find('a').css({opacity:0,bottom:0});
+			  bann_div.eq(index).css({zIndex:0,opacity:0})
+			  
+			  bann_div.eq(index).find('strong').delay(200).animate({opacity:1,top:0},'slow','linear');
+			  bann_div.eq(index).find('p').delay(200).animate({opacity:1,top:50},'slow','linear');
+			  bann_div.eq(index).find('a').delay(200).animate({opacity:1,bottom:40},'slow','linear'); 
+		  }
+		  if(index==4)
+		  {
+			  bann_div.eq(index).find('strong').css({opacity:0,top:-100});
+			  bann_div.eq(index).find('p').css({opacity:0,top:-50});
+			  bann_div.eq(index).find('a').css({opacity:0,top:40});
+			  bann_div.eq(index).css({zIndex:0,opacity:0})
+			  
+			  bann_div.eq(index).find('strong').delay(200).animate({opacity:1,top:0},'slow','linear');
+			  bann_div.eq(index).find('p').delay(200).animate({opacity:1,top:50},'slow','linear');
+			  bann_div.eq(index).find('a').delay(200).animate({opacity:1,top:180},'slow','linear'); 
+		  }
+		    if(index==5)
+		  {
+			  bann_div.eq(index).find('strong').css({opacity:0,left:-100});
+			  bann_div.eq(index).find('p').css({opacity:0,left:-100});
+			  bann_div.eq(index).find('a').css({opacity:0,bottom:0});
+			  bann_div.eq(index).css({zIndex:0,opacity:0})
+			  
+			  bann_div.eq(index).find('strong').delay(200).animate({opacity:1,left:0},'slow','linear');
+			  bann_div.eq(index).find('p').delay(200).animate({opacity:1,left:0},'slow','linear');
+			  bann_div.eq(index).find('a').delay(200).animate({opacity:1,bottom:48},'slow','linear'); 
+		  }
+		  bann_div.eq(now).css({zIndex:0})
+		  bann_div.eq(now).animate({opacity:0},500,'swing');
+		  bann_div.eq(index).animate({opacity:1},500,'swing',function(){but=true;}); 
+		  bann_div.eq(index).css({zIndex:1})
+		  ol_li.eq(now).removeClass('active3');
+		  ol_li.eq(index).addClass('active3'); 
+	  }
+	//Run(2,now)  
+	 
+	 function autoRun()
+	 {
+	    	now++;
+			if(now==ol_li.length)
+			{
+			   now=0;	
+			}
+			Run(now,now-1)  
+	 }
+	
+	
+  ol_li.each(function(index) 
+  {
+	    var Index=$(this).index();
+      $(this).click(function()
+	  { 
+		  if(but==true)
+		  {
+			  but=false;
+		 
+			
+			  if(Index!=now)
+			  {
+				Run(Index,now) 
+			  }
+			 now=Index;
+		  }
+	  });
+    
+  });
+	
+	$('.banner').hover(function()
+	 {
+		clearInterval(t);
+	 },function()
+	 {t=setInterval(autoRun,3000);}).trigger('mouseleave');
+	
+})();//-------------------------------------------------------轮播图结束
+/*(function()
+  {
+	 var not_ul=$('.notice ul').eq(0);
+	 var not_li=$('.notice li');
+	 var li_len=not_li.length;
+	 var up_down=$('.notice p').children('a');
+	 var li_h=not_li.eq(0).height();
+	 var h=0,t=null;
+	 function not_src_up(obj,start,end)
+	 {
+		 h=start-end;
+		 obj.animate({marginTop:li_h*h},'slow','linear',function()
+		 {
+			obj.css('margin-top',0).find('li').slice(start,end).appendTo(obj);
+		 });
+	 }
+	 function not_src_down(obj,start,end)
+	 {
+		h=start-end;
+	   obj.css('margin-top',li_h*h).find('li').slice(start,end).prependTo(obj);
+	   obj.animate({marginTop:0},'slow','linear');	 
+	 }
+	 
+	 $('.notice').hover(function(){
+		 clearInterval(t);
+		 },function()
+		 {
+			 t=setInterval(function()
+			 {
+				not_src_up(not_ul,0,1)  
+			 },3000) 
+		 }).trigger('mouseleave');
+		 
+	 up_down.eq(0).click(function(){not_src_up(not_ul,0,1);  })
+     up_down.eq(1).click(function(){not_src_down(not_ul,li_len-1,li_len);  })
+ })();*/
+ 
+ //-------------------------------------------------------------------滚动公告
+  
+  (function(){
+	  
+	 var v_t=$('.video').offset().top;
+	 var v_offset_t=0,v_h=0;
+	
+	 $(window).scroll(function()
+	 {
+		  v_offset_t= body_space().s_t+body_space().c_h;
+		  v_h=$('.video').height();
+		   if(v_offset_t>=v_t-10 && v_h==0)
+		   {
+			 $('.video').animate({height:200},1000,'linear',function(){
+				  $('.video a').removeClass('video_h');
+				 });
+			 $('.video .video_text').delay(400).animate({top:0});
+			 $('.video a').delay(300).animate({bottom:10},function()
+			 {
+				  $(this).addClass('video_h');
+			 });
+		
+		   };
+	  })
+   })();//-------------------------------展现video
+	
+})
+</script>
+<script>
+window.onload=function(){
+    
+	(function(){
+	    var ul_w=245;
+		var head_nav=document.getElementsByClassName('head_nav')[0];
+		var head_li=head_nav.children;
+        var head_li_ul=head_nav.getElementsByTagName('ul');
+	    var curtain=document.getElementsByTagName('nav')[0];
+		if(!curtain)
+		{curtain=document.createElement('nav');}
+		
+		var now=0;
+		var i=null;
+		for(var i=0;i<head_li.length;i++)
+		{
+			head_li[i].index=i;
+			head_li[i].onmouseover=function()
+			{
+				
+				
+				if(now!=this.index && this.index==0)
+				{
+					now_i=head_li[now].getElementsByTagName('i')[0];
+					removeClass(head_li[now],'active');
+					removeClass(now_i,'active2');
+					for(var j=0;j<head_li_ul.length;j++)
+					{	
+					startMove(head_li_ul[j],{height:0,paddingTop:00})	
+					}
+					startMove(curtain,{height:0})	
+				}
+				else if(now!=this.index)
+				{
+					for(var j=0;j<head_li_ul.length;j++)
+					{	
+					startMove(head_li_ul[j],{height:ul_w,paddingTop:10})	
+					}
+					startMove(curtain,{height:ul_w})	
+					
+				i=this.getElementsByTagName('i')[0];
+				now_i=head_li[now].getElementsByTagName('i')[0];
+				removeClass(head_li[now],'active');
+				addClass(i,'active2');
+				removeClass(now_i,'active2');
+				}
+				now=this.index;
+			}
+		}
+		
+		head_nav.onmouseleave=function(){
+			
+			if(getStyle(curtain,'height')>=0)
+			{
+					for(var j=0;j<head_li_ul.length;j++)
+					{	
+					startMove(head_li_ul[j],{height:0,paddingTop:0})	
+					}
+					startMove(curtain,{height:0})	
+			}
+			now_i=head_li[now].getElementsByTagName('i')[0];
+			removeClass(head_li[now],'active');
+			removeClass(now_i,'active2');
+			now=0;
+		}
+		
+	})();//------------------------导航下拉-------------------------------------
+	
+	(function()
+	{
+		var notice=document.getElementsByClassName('notice')[0];
+		var not_ul=notice.getElementsByTagName('ul')[0];
+		var not_li=notice.getElementsByTagName('li');
+		var li_h=getStyle(not_li[0],'height');
+		var li_len=not_li.length;
+		var t=null;
+	    var up_down=notice.getElementsByTagName('p')[0].getElementsByTagName('a');
+		
+		function not_scr_up()
+		{
+			startMove(not_ul,{marginTop:-li_h},function()
+			{
+				not_ul.appendChild(not_li[0]);
+				not_ul.style.marginTop=0+'px';
+			})
+	    }
+		function not_scr_down()
+		{   
+		    
+		    not_ul.style.marginTop=-li_h+'px';
+			not_ul.insertBefore(not_li[li_len-1],not_li[0]); 
+			startMove(not_ul,{marginTop:0});
+		}
+		
+		t=setInterval(not_scr_up,3000);
+		
+		notice.onmouseover=function()
+		{
+			clearInterval(t);
+        }
+		notice.onmouseout=function()
+		{
+			t=setInterval(not_scr_up,3000);
+		}
+		
+		up_down[0].onclick=function()
+		{
+			not_scr_up();
+		}
+		up_down[1].onclick=function()
+		{
+			not_scr_down();
+		}
+		
+	})();//------------------------------------------滚动公告
+	
+	(function(){
+	  var oCase=document.getElementsByClassName('case')[0];
+	  var case_img=oCase.getElementsByTagName('img');
+      var src=null;
+	  
+	   window.onscroll=function()
+	   {
+		   var scr=body_space().s_t+body_space().c_h;
+		   if(scr>=oCase.offsetTop)
+		   {
+			   attr_Src();
+		    }
+	   }
+		
+	  if(body_space().b_h>=oCase.offsetTop)
+	    {   attr_Src();}
+		  
+	 function attr_Src()
+	 {
+		if(case_img[0].getAttribute('src')=='load.jpg')
+		{
+			
+			for(var i=0;i<case_img.length;i++)
+		     {
+		     src=case_img[i].getAttribute('xsrc');
+			 case_img[i].setAttribute('src',src);
+			 case_img[i].style.opacity=0;
+			 startMove( case_img[i],{opacity:100});
+			}
+		}
+	}
+		
+	})();//延迟加载图片
+	
+	(function(){
+		var wei=document.getElementsByTagName('footer')[0].getElementsByClassName('wei')[0];
+		var wei_r=getClass(wei,'div','r')[0];
+		var wei_l=getClass(wei,'div','l')[0];
+		
+		var wei_r_a=wei_r.getElementsByTagName('a');
+		var wei_l_img=wei_l.getElementsByTagName('div');
+		var wei_l_span=wei_l.getElementsByTagName('span')[0];
+		var but=true;
+
+		wei_r_a[0].onmouseover=function()
+		{
+			if(but==true)
+			{
+			but=false;
+			linear(wei_l_span,'top',12,2,function(){but=true;});
+			wei_l_img[0].style.zIndex=1;
+			wei_l_img[1].style.zIndex=0;
+			}
+		}
+		wei_r_a[1].onmouseover=function()
+		{
+			if(but==true)
+			{
+			but=false;
+			linear(wei_l_span,'top',47,2,function(){but=true;});
+			wei_l_img[0].style.zIndex=0;
+			wei_l_img[1].style.zIndex=1;
+			}
+		}
+	})();/*---------------官方微博微信---------------------*/
+	
+	(function(){
+		
+		var return_top=document.getElementsByClassName('return_top')[0];
+		var tel=getClass(return_top,'div','tel')[0];
+		var wewe=getClass(return_top,'div','wewe')[0];
+		var re_li=return_top.getElementsByTagName('li');
+		var timer=null,timer2=null,but=true;
+		    re_li[1].onmouseover=function()
+			{
+				if(but)
+				{ but=false;
+				clearInterval(timer2);
+			    tel.style.display='block';
+			    linear(tel,'opacity',100,5,function()
+				  { 
+				  timer2=setTimeout(function(){but=true},200);
+				   });
+				}
+			}
+		   re_li[1].onmouseout=function()
+			{
+				
+			    linear(tel,'opacity',0,5,function()
+					{ tel.style.display='none';});
+			}
+		    re_li[2].onmouseover=function()
+			{
+				if(but)
+				{ but=false;
+				clearInterval(timer2);
+			    wewe.style.display='block';
+			    linear(wewe,'opacity',100,5,function()
+				   {
+					 timer2=setTimeout(function(){but=true},200);
+					});
+				}
+			}
+		    re_li[2].onmouseout=function()
+			{
+			    linear(wewe,'opacity',0,5,function()
+				{
+					wewe.style.display='none';
+				});
+			}
+			
+			window.onscroll=function()
+			{
+				if( body_space().s_t>300)
+				{
+					re_li[3].style.display='block';
+					 linear(re_li[3],'opacity',100,5);
+				}
+				if( body_space().s_t<300)
+				{
+					 linear(re_li[3],'opacity',0,5,function()
+					{
+						re_li[3].style.display='none';
+					});
+				}
+			}
+			
+			re_li[3].onclick=function()
+			{
+				
+				timer=setInterval(function()
+				{
+				 document.body.scrollTop=body_space().s_t-35;
+				 document.documentElement.scrollTop=body_space().s_t-35;
+					if(body_space().s_t<=0)	
+					{
+						timer=clearInterval(timer);
+						document.body.scrollTop=0;
+						document.documentElement.scrollTop=0;
+					}
+					
+				},30);
+			}
+	})();//---------------------------------------------返回顶部
+  
+}
+</script>
+	<!--[if lte IE 9]>
+	<script src="js/PIE.js"></script>
+	<![endif]-->
+	<!--[if IE 7]>
+	<script charset="utf-8">
+		$(function () {
+			$("a").attr("hidefocus", true);
+		});
+	</script>
+	<![endif]-->
+</head>
+
+<body>
+<header>
+<div class="head_bor">
+    <div class="w120">
+        <h1 class="l"><a href="javascript:;"><img src="img/logo_new.png"></a>
+            <a href="javascript:;" class="icous"><img src="img/slogan.gif"></a></h1>
+            
+         <ul class="head_nav r">
+         <li class="active"><i></i><a href="javascript:;">首页</a></li>
+         <li><i></i><a href="javascript:;"  >产品</a>
+              <ul>
+                <li><a href="javascript:;">弹性云主机</a></li>
+                <li><a href="javascript:;">服务器托管</a></li>
+                <li><a href="javascript:;">云虚拟主机</a></li>
+              </ul>
+         </li>
+         <li><i></i><a href="javascript:;">服务市场</a> 
+             <ul>
+            <li><a href="javascript:;">数据迁移</a></li>
+            <li><a href="javascript:;">环境配置</a></li>
+            <li><a href="javascript:;">站点修复</a></li>
+            <li><a href="javascript:;">系统安全</a></li>
+            <li><a href="javascript:;">数据库设置</a></li>
+            </ul>
+         </li>
+         <li><i></i><a href="javascript:;">解决方案</a>
+            <ul>
+            <li><a href="javascript:;">金融解决方案</a></li>
+            <li><a href="javascript:;">电商解决方案</a></li>
+            <li><a href="javascript:;">移动解决方案</a></li>
+            <li><a href="javascript:;">游戏解决方案</a></li>
+            <li><a href="javascript:;">网站解决方案</a></li>
+            </ul>
+         </li>
+         <li><i></i><a href="javascript:;">帮助中心</a>
+             <ul>
+            <li><a href="javascript:;">注册/购买</a></li>
+            <li><a href="javascript:;">备案问题</a></li>
+            <li><a href="javascript:;">云服务器</a></li>
+            <li><a href="javascript:;">小鸟云规则</a></li>
+            </ul>
+         </li>
+         <li><i></i><a href="javascript:;">关于我们</a>
+             <ul  class="nav_bor">
+            <li><a href="javascript:;">新闻公告</a></li>
+            <li><a href="javascript:;">行业资讯</a></li>
+            <li><a href="javascript:;">加入我们</a></li>
+            <li><a href="javascript:;">联系我们</a></li>
+            </ul>
+         </li>
+         </ul>
+    </div>
+</div>
+<nav></nav><!--导航结束--></header>
+
+<div class="banner width">
+   <div  class="bann_1"></div>
+   
+   <div  class="bann_2">
+     <div class="w120">
+         <div class="l">
+         <strong>“一站式”服务器托管正式上线</strong>
+         <p>专业安全防护、资源弹性扩张、独享带宽、金牌运维</p>
+         <a href="javascript:;">立即购买</a>
+         </div>
+     </div>
+   </div>
+   
+   <div  class="bann_3"></div>
+   <div  class="bann_4">
+    <div class="w120">
+      <div class="l">
+      <strong>1V1 专席秘书正式上线 </strong>
+      <p>每人一位贴心秘书，省心、省事、更省时</p>
+      <a href="javascript:;">了解更多</a>
+      </div>
+      </div>
+   </div>
+   <div  class="bann_5">
+   <div class="w120">
+    <div class="l">
+    <strong>北京 BGP 多线节点开放</strong>
+    <p>默认 5G 防御峰值、更具性价比</p>
+    <a href="javascript:;">了解更多</a>
+    </div>
+   </div>
+   </div>
+   <div  class="bann_6">
+      <div class="w120">
+       <div class="l">
+       <strong>高防节点防御再升级</strong>
+       <p>免费 20G 防御，最高可防 300G<br/>
+       更稳更快更安全</p>
+        <a href="javascript:;">了解更多</a>
+       </div>
+      </div>  
+   
+   </div>
+  <ol>
+  <li class="active3"></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  </ol>
+</div><!--轮播图结束-->
+
+<div class="notice">
+    <ul class="w120" >
+        <li><a href="javascript:;">【新闻公告】关于冒充官方工作人员的公告</a> <time class="r">07--01</time></li>
+        <li><a href="javascript:;">【新闻公告】小鸟云致力打造高效灵活的企业级云服务生态</a> <time  class="r">07--02</time></li>
+        <li><a href="javascript:;">【新闻公告】关于小鸟云2016年春节放假的通知安排</a> <time  class="r">07--03</time></li>
+        <li><a href="javascript:;">【新闻公告】关于冒充官方工作人员的公告</a> <time class="r">07--04</time></li>
+        <li><a href="javascript:;">【新闻公告】小鸟云致力打造高效灵活的企业级云服务生态</a> <time  class="r">07--05</time></li>
+        <li><a href="javascript:;">【新闻公告】关于小鸟云2016年春节放假的通知安排</a> <time  class="r">07--06</time></li> 
+      </ul>
+     <p><a href="javascript:;"></a><a href="javascript:;"></a></p>
+</div><!---------滚动公告结束------------------->
+
+<div class="list w120">
+<h2>产品与服务</h2>
+<p>专注提供高效、安全、易用的云服务器、虚拟主机、服务器租用托管等基础云服务，满足多种个性化需求</p>
+<ul  class="product clear">
+  <li>
+    <span></span>
+    <div>
+    <h3>云服务器</h3>
+    <p>高性能云服务器<br/>
+     弹性灵活、按需付费</p>
+     <p><strong>59</strong>元/月起</p>
+     </div>
+    <a href="javascript:;">立即购买</a>
+  </li>
+   <li class="margin_lr">
+    <span></span>
+    <div>
+    <h3>服务器托管</h3>
+    <p>全网部署独立万兆光纤<br/>
+     独立IP、独享带宽</p>
+     <p><strong>59</strong>元/月起</p>
+     </div>
+    <a href="javascript:;">立即购买</a>
+   </li>
+   <li>
+    <span></span>
+    <div>
+    <h3>云虚拟主机</h3>
+    <p>全能云虚拟主机<br/>
+    性能卓越安全稳固</p>
+     <p><strong></strong>敬请期待...... </p>
+     </div>
+    <a href="javascript:;">立即购买</a>
+  </li>
+</ul>
+</div><!--产品结束-->
+
+<div class="list list_bg">
+<h2>行业云解决方案</h2>
+ <p>专业成熟的一站式云产品解决方案，帮助用户快速应用云计算</p>
+    <ul class="scheme w120 clear">
+        <li>
+        <h5>金融云解决方案</h5>
+        <p>物理隔离 高安全性</p>
+        <a href="javascript;"  class="bg_tranis"></a>
+        </li>
+        <li>
+        <h5>电商云解决方案</h5>
+        <p>更低成本 更高并发</p>
+        <a href="javascript;"  class="bg_tranis"></a>
+        </li>
+        <li>
+        <h5>游戏云解决方案</h5>
+        <p>高速网络 专属集群</p>
+        <a href="javascript;"  class="bg_tranis"></a>
+        </li>
+        <li>
+        <h5>网站解决方案</h5>
+        <p>安全稳定 节约成本</p>
+        <a href="javascript;"  class="bg_tranis"></a>
+        </li>
+        <li>
+        <h5>移动云解决方案</h5>
+        <p>灵活部署 精细运营</p>
+        <a href="javascript;"  class="bg_tranis"></a>
+        </li>
+    </ul>
+</div><!--解决方案-->
+
+<div class="list w120 clear">
+<h2>客户案例</h2>
+<p>小鸟云高可用云服务器，数万企业用户共同的选择！</p>
+    <div class="case">
+        <div class="l">
+        <span>“</span>
+        <p>小鸟云竭诚为客户提供专业的行业解决方案，以解决客户的燃眉之急。利用自身专业、高效、灵活的弹性基础计算,配套个性化项目方案,满足客户多种个性化需求。</p>
+        <span>”</span>
+        </div>
+        <ul class="r">
+           <li  class="ease">
+               <a href="javascript:alert(1);">
+              <img xsrc="img/1 (1).png" src="load.jpg">
+               <i class="ease"></i>
+               </a>
+           </li>
+            <li class="ease">
+               <a href="javascript:alert(2);" >
+              <img xsrc="img/1 (2).png"  src="load.jpg">
+               <i class="ease"></i>
+               </a>
+           </li>
+           <li  class="ease">
+               <a href="javascript:;">
+              <img xsrc="img/1 (3).png"  src="load.jpg">
+               <i class="ease"></i>
+               </a>
+           </li>
+          <li  class="ease">
+               <a href="javascript:;">
+              <img xsrc="img/1 (4).png"  src="load.jpg">
+               <i class="ease"></i>
+               </a>
+           </li>
+          <li  class="ease">
+               <a href="javascript:;">
+              <img xsrc="img/1 (5).png"  src="load.jpg">
+               <i class="ease"></i>
+               </a>
+           </li>
+            <li  class="ease">
+               <a href="javascript:;">
+              <img xsrc="img/1 (6).png"  src="load.jpg">
+               <i class="ease"></i>
+               </a>
+           </li>
+           <li  class="ease">
+               <a href="javascript:;">
+              <img xsrc="img/1 (7).png"  src="load.jpg">
+               <i class="ease"></i>
+               </a>
+           </li>
+          <li  class="ease">
+               <a href="javascript:;">
+              <img xsrc="img/1 (8).png"  src="load.jpg">
+               <i class="ease"></i>
+               </a>
+           </li>
+       </ul>
+    </div>
+</div><!--------------------客户案例--------------------->
+
+<div class="list list_bg clear">
+<h2>合作伙伴</h2>
+<p>根据用户的业务特征，提供成熟的项目解决方案，帮助用户快速应用云计算</p>
+  <ul class="w120 partner">
+  <li class="ease"><a href="javascript:;"></a></li>
+  <li class="ease"><a href="javascript:;"></a></li>
+  <li class="ease"><a href="javascript:;"></a></li>
+  <li class="ease"><a href="javascript:;"></a></li>
+  <li class="ease"><a href="javascript:;"></a></li>
+  </ul>
+</div><!------------合作伙伴-------------------------------->
+
+<div class="list clear">
+  <div class="new w120">
+       <ul>
+       <div class="list_tit clear"><h3>产品·公告</h3>
+       <a class="more" href="javascript:;">更多</a></div>
+       <li><a href="javascript:;"><time>【07-02】</time>关于冒充官方工作人员的公告</a></li>
+       <li><a href="javascript:;"><time>【06-28】</time>关于小鸟云辽宁节点网络扩容的通知</a></li>
+       <li><a href="javascript:;"><time>【06-28】</time>关于小鸟云江苏节点网络维护的通知</a></li>
+       <li><a href="javascript:;"><time>【06-23】</time>关于小鸟云香港国际（CTG）出口维护的通知</a></li>
+       </ul>
+       <ul>
+        <div class="list_tit clear"><h3>行业动态</h3>
+       <a class="more" href="javascript:;">更多</a></div>
+       <li><a href="javascript:;"><time>【07-02】</time>关于冒充官方工作人员的公告</a></li>
+       <li><a href="javascript:;"><time>【06-28】</time>关于小鸟云辽宁节点网络扩容的通知</a></li>
+       <li><a href="javascript:;"><time>【06-28】</time>关于小鸟云江苏节点网络维护的通知</a></li>
+       <li><a href="javascript:;"><time>【06-23】</time>关于小鸟云香港国际（CTG）出口维护的通知</a></li>
+       </ul>
+       <ul>
+       <div class="list_tit clear"><h3>最新活动</h3>
+       <a class="more" href="javascript:;">更多</a></div>
+       <div class="img"><a href="javascript:;"></a></div>
+       <li><a href="javascript:;"><time>【03-29】</time>“轻松上云，点亮梦想”-----聚宝盆扶持计划正式上线</a></li>
+       <li><a href="javascript:;"><time>【03-29】</time>“轻松上云，点亮梦想”-----聚宝盆扶持计划正式上线</a></li>     
+       </ul>
+  </div>
+</div><!---------------------------------------新闻公告---------------------------------------------->
+
+
+<div class="w120 zhuce">
+<a href="javascript:;"  class="bg_tranis">免费注册，享新手礼包</a>
+</div>
+
+<ul class="fuwu w120 clear">
+<li><a href="javascript:;"></a></li>
+<li><a href="javascript:;"></a></li>
+<li><a href="javascript:;"></a></li>
+<li><a href="javascript:;"></a></li>
+<li><a href="javascript:;"></a></li>
+</ul>
+
+<div  class="video clear">
+  <div class="video_text"></div>
+  <a href="javascript:;"></a>
+</div><!--------------------视频播放--------------------------->
+
+<footer class="width">
+ <div class="service w120 clear">
+    <dl>
+     <dt>关于我们</dt>
+     <dd>新闻动态</dd>
+     <dd>加入我们</dd>
+     <dd>服务协议</dd>
+     <dd>友情链接</dd>
+    </dl>
+    <dl>
+     <dt>产品与服务</dt>
+     <dd>云主机</dd>
+     <dd>服务器托管</dd>
+     <dd>云虚拟主机</dd>
+    </dl>
+    <dl>
+     <dt>帮助与支持</dt>
+     <dd>自助服务</dd>
+     <dd>注册/购买</dd>
+     <dd>备案白名单问题</dd>
+     <dd>售后技术类问题</dd>
+    </dl>
+    <dl>
+     <dt>客户服务</dt>
+     <dd>工单系统</dd>
+     <dd>备案中心</dd>
+     <dd>意见反馈</dd>
+     <dd>会员服务</dd>
+    </dl>
+    <div class="wei">
+    <h2>400-688-3065</h2>
+    <div class="l">
+         <span class="top"></span>
+        <div class="wei_img_1"></div>
+        <div class="wei_img_2"></div>
+    </div>
+    <div class="r">
+     <p><A href="javascript:;"><span></span>小鸟云官方微信</a></p>
+     <p><A href="javascript:;"><span></span>小鸟云官方微博</a></p>
+     <p><A href="javascript:;"><span></span>小鸟云官方客服</a></p>
+     </div>
+    </div><!--微信微博结束-->
+ </div>
+ 
+ <div class="copyright width">
+<p> Copyright © 2013-2016 Niaoyun.com. All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>. 小鸟云 版权所有</p>
+<p>《中华人民共和国增值电信业务经营许可证》粤B1-20160477     粤ICP备15070606号 粤公网安备 44030502000120号</p>
+ </div>
+</footer><!--售后服务-->
+
+
+<ul class="return_top">
+    <li><a href="javascript:;"></a></li>
+    <li><a href="javascript:;"></a>
+      <div class="tel">客服热线：400-688-3065
+        <span  class="tel_icon"></span>
+        <span class="tel_bor"></span>
+    </div>
+    </li>
+    <li><a href="javascript:;"></a>
+     <div class="wewe"></div> 
+     </li>
+    <li><a href="javascript:;"></a></li>
+</ul><!--返回顶部-->
+
+</body>
+</html>

@@ -1,0 +1,4952 @@
+<!DOCTYPE html>
+<html class="hb-loaded"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>全民团购</title>
+
+    <meta content="lashou" name="copyright">
+    <meta name="renderer" content="webkit">
+
+	<link href="css/common_dd94d7a.css" rel="stylesheet"  type="text/css">
+    
+    
+
+    <script src="js/dc.js" async type="text/javascript"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/base_8aebc17.js" type="text/javascript"></script>
+    <!--[if IE 6]>
+    <script src="http://d2.lashouimg.com/public/js/lib/iepng.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://f3.lashouimg.com/public/js/lib/html5.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+    (function () {
+        if (window.top !== window.self) {
+            try {
+                if (window.top.location.host.indexOf('lashou.com')) {
+                } else {
+                    setTimeout(function () { window.top.location = window.self.location; document.body.innerHTML = ''; }, 0);
+                    window.self.onload = function () { document.body.innerHTML = ''; };
+                }
+            } catch (e) {
+                try {
+                    setTimeout(function () { window.top.location = window.self.location; document.body.innerHTML = ''; }, 0);
+                    window.self.onload = function () { document.body.innerHTML = ''; };
+                } catch (e) {
+                }
+            }
+        }
+    })();
+//]]>
+</script>
+</head>
+<body>
+<!-- header -->
+<header id="header">
+    <div class="header-topbg">
+        <div class="header-top cl">
+            <ul class="hdiul cl">
+                <li><a id="AddFavorite" href="javascript:void(0);">收藏全民团购</a><span></span></li>
+                <li><a target="_blank" href="">帮助</a><span></span></li>
+                <li><a target="_blank" href="">反馈</a></li>
+            </ul>            <ul class="login cl">
+                                <li class="dropdown dropdown-shopcart dropdown-shopbare">
+                    <p class="textwarp">
+                        <em class="shop-icon"></em>
+                        <em class="text">购物车(0)</em>
+                                            </p>
+                    <ul class="htul"></ul>
+                </li>
+                <li class="dropdown dropdown-history">
+                    <p class="textwarp">
+                        <em class="text">最近浏览</em>
+                        <i class="triangle"></i>
+                    </p>
+                    <ul class="htul">
+                        <li class="history-empty"><em>您还没有浏览记录！</em></li>
+                    </ul>
+                </li>
+                <li class="dropdown dropdown-account">
+                    <p class="textwarp">
+                        <em class="text"><a href="">我的团购</a></em>
+                        <i class="triangle"></i>
+                                            </p>
+                    <ul class="htul">
+                        <li><a href="">我的订单</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">常用地址</a></li>
+                        <li><a href="">拉手账本</a></li>
+                        <li><a href="">账户设置</a></li>
+                        <li><a href="">我的消息</a></li>
+                    </ul>
+                </li>
+                                <li><a class="login-link" href="">[登录]</a></li>
+                <li><a class="login-link" href="">[注册]</a></li>    
+                            </ul>
+        </div>
+    </div>    
+        <div class="header-bottom cl">
+        <div class="chunjie"><a href=""></a></div>
+        <div class="logo">
+            <h1>全民团购</h1>
+            <a href=""><img src="images/logo.gif" alt="全民团购" title="全民团购" height="58" width="263"></a>
+        </div>
+        <div class="city">
+                        
+                    <p class="weather"></p></div>
+        <div class="search">
+            <form action="/search.php" method="get" id="searchform" onSubmit="return new_checksubmit()">
+                <div class="search-cen">
+                    <span class="scvalue">自助餐</span>
+                    <input id="sw" name="sw" class="sctext ac_input" autocomplete="off" lang="zh-CN" type="text">
+                    <input name="cityid" value="2419" type="hidden">
+                    <input class="scbut" value="搜索" type="submit">
+                    <div style="display: none;" class="search-text" id="searchcookie">
+                        <div class="search-history"><span>您最近的搜索词</span><a href="javascript:void(0);">清空记录</a></div>
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-hot newga ga">
+                    <a href="">旅游</a><a href="">美食</a><a href="">火锅</a><a href="">自助餐</a><a href="">游泳</a><a href="">蛋糕</a><a href="">体检</a><a href="">假日酒店</a><a href="">安慕希酸奶拉手券</a><a href="">烤肉</a>                </div>
+            </form>
+        </div>
+        <div class="commitment">
+            
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+<!-- nav -->
+<nav id="nav" class="newga ga">
+    <div class="nav-content cl">
+        <a tracknum="39100" class="current" href="">首页</a>
+        <a tracknum="39001" href="">身边团购</a>        <a tracknum="39102" href="">今日新单</a>
+        <a tracknum="39103" href="">美食</a>        <a tracknum="39104" href="">电影</a>        <a tracknum="39105" href="">酒店</a>
+        <a tracknum="39105" href="">旅游</a>        <a tracknum="39106" href="">购物</a>   
+        <a tracknum="39107" href="">超值购<i class="hot-icon"></i></a>
+        <div class="index-app-qrcode">
+                <!--<a class="mobile" href="" target="_blank">手机上拉手<em class="mobile-icon"></em></a>
+                <div class="iap-con" style="display: none;">
+                    <img src="images/index-qrcode_b5d4977.png" height="87" width="87">
+                    <p>下载立享手机优惠</p>
+                </div>-->
+            </div>
+            </div>
+</nav>
+<!-- nav end -->
+<script type="text/javascript">
+    var _switch = 'index';
+    if (_switch != "index") {
+        indexQrcode();
+    }
+    function indexQrcodeDelay() {
+        setTimeout(function() {
+            $(".index-app-qrcode").find(".iap-con").slideUp(200, function() {
+                $(".index-app-qrcode").hover(function() {
+                    $(this).find(".iap-con").show();
+                }, function() {
+                    $(this).find(".iap-con").hide();
+                });
+            });
+        }, 3000);
+    }
+    function indexQrcode() {
+        $(".index-app-qrcode").hover(function() {
+            $(this).find(".iap-con").show();
+        }, function() {
+            $(this).find(".iap-con").hide();
+        });
+    }
+    var banner_c = getCookie("tips");
+    if (banner_c && banner_c.indexOf("t1") > -1) { 
+        $("#banner").hide(); 
+    }
+</script>
+
+<div class="sortnav-warp">
+	<div class="sort-nav newga ga index_nav_out" p="新版首页">
+		<h3 class="sort-title"><span>全部商品分类</span></h3>
+		<div class="sort-cen" p="购物首页">
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="meishi"></i><a class="title meishi" href="">美食</a>
+					                    <p>
+                                                <a href="">火锅</a>
+                                                <a href="">自助餐</a>
+                                                <a href="">蛋糕甜品</a>
+                                                <a href="">北京菜</a>
+                                                <a href="">烧烤</a>
+                                                <a href="">小吃快餐</a>
+                                            </p>
+                </div>
+				<div class="sort-con meishi-top">
+					<div class="sort-con-left">
+                        <h4><a href="">美食</a></h4>
+						<ul class="sort-link02 cl">
+							                            <li><a href="">自助餐</a></li>
+                                                        <li><a href="">火锅</a></li>
+                                                        <li><a href="">烧烤</a></li>
+                                                        <li><a href="">烤鱼</a></li>
+                                                        <li><a href="">干锅/香锅</a></li>
+                                                        <li><a href="">西餐</a></li>
+                                                        <li><a href="">海鲜</a></li>
+                                                        <li><a href="">北京菜</a></li>
+                                                        <li><a href="">川菜</a></li>
+                                                        <li><a href="">粤菜</a></li>
+                                                        <li><a href="">台湾菜</a></li>
+                                                        <li><a href="">福建菜</a></li>
+                                                        <li><a href="">湘菜</a></li>
+                                                        <li><a href="">云南菜</a></li>
+                                                        <li><a href="">江浙菜</a></li>
+                                                        <li><a href="">贵州菜</a></li>
+                                                        <li><a href="">东北菜</a></li>
+                                                        <li><a href="">西北菜</a></li>
+                                                        <li><a href="">内蒙菜</a></li>
+                                                        <li><a href="">湖北菜</a></li>
+                                                        <li><a href="">鲁菜</a></li>
+                                                        <li><a href="">赣菜</a></li>
+                                                        <li><a href="">豫菜</a></li>
+                                                        <li><a href="">徽菜</a></li>
+                                                        <li><a href="">早点/夜宵</a></li>
+                                                        <li><a href="">新疆菜</a></li>
+                                                        <li><a href="">素菜</a></li>
+                                                        <li><a href="">韩国料理</a></li>
+                                                        <li><a href="">日本料理</a></li>
+                                                        <li><a href="">东南亚菜</a></li>
+                                                        <li><a href="">主题/创意菜</a></li>
+                                                        <li><a href="">咖啡酒吧</a></li>
+                                                        <li><a href="">蛋糕甜品</a></li>
+                                                        <li><a href="">小吃快餐</a></li>
+                                                        <li><a href="">其他美食</a></li>
+                            						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="dianying"></i><a class="title dianying" href="">电影</a>
+                    <p>
+                    <a href="">横冲直撞好莱坞</a><a href="">杀破狼2</a>                    </p>
+                </div>
+				<div class="sort-con dianying-top">
+					<div class="sort-con-left">
+                        
+                        <h4><a href="">当前热映</a></h4>
+                        <ul class="sort-link02 cl">
+                            <li><a href="">横冲直撞好莱坞</a></li><li><a href="">杀破狼2</a></li><li><a href="">侏罗纪世界</a></li><li><a href="">分歧者2：绝地反击</a></li><li><a href="">对风说爱你</a></li><li><a href="">恋爱排班表</a></li><li><a href="">末日崩塌</a></li><li><a href="">少年班</a></li><li><a href="">我的男友和狗</a></li><li><a href="">惊魂电影院</a></li>                        </ul>
+                                                <h4><a href="">热门团购</a></h4>
+                        <ul class="sort-link02 cl">
+                        	                                                                                    <li><a href="">中影星美兑换券A券1张</a></li>
+                                                                                    <li><a href="">K酷国际影城电影票1张</a></li>
+                                                                                    <li><a href="">鲁信影城电影票1张</a></li>
+                                                                                    <li><a href="">中影星美兑换券B券1张</a></li>
+                                                                                    <li><a href="">紫光影城电影票1张</a></li>
+                                                                                </ul>
+					</div>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="jiudian"></i><a class="title jiudian" href="">酒店</a>
+					                    <p>
+                                                <a href="">经济型酒店</a>
+                                                <a href="">三星/舒适</a>
+                                                <a href="">特色酒店</a>
+                                                <a href="">小时房</a>
+                                                <a href="">五星/豪华</a>
+                                                <a href="">四星/高档</a>
+                                            </p>
+                </div>
+				<div class="sort-con jiudian-top">
+					<div class="sort-con-left">
+						<h4><a href="">酒店</a></h4>
+						<ul class="sort-link02 cl">
+                                                        <li><a href="">经济型酒店</a></li>
+                                                        <li><a href="">三星/舒适</a></li>
+                                                        <li><a href="">四星/高档</a></li>
+                                                        <li><a href="">五星/豪华</a></li>
+                                                        <li><a href="">特色酒店</a></li>
+                                                        <li><a href="">小时房</a></li>
+                                                        <li><a href="">抵用券</a></li>
+                            						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="yule"></i><a class="title yule" href="">休闲娱乐</a>
+                                        <p>
+
+                                                <a href="">运动健身</a>
+                                                <a href="">KTV</a>
+                                                <a href="">养生休闲</a>
+                                                <a href="">桌游电玩</a>
+                                                <a href="">演出赛事</a>
+                                                <a href="">其他娱乐</a>
+                                            </p>
+                </div>
+				<div class="sort-con yule-top">
+					<div class="sort-con-left">
+						<h4><a href="">休闲娱乐</a></h4>
+						<ul class="sort-link02 cl">
+                                                        <li><a href="">KTV</a></li>
+                                                        <li><a href="">养生休闲</a></li>
+                                                        <li><a href="">温泉洗浴</a></li>
+                                                        <li><a href="">运动健身</a></li>
+                                                        <li><a href="">桌游电玩</a></li>
+                                                        <li><a href="">演出赛事</a></li>
+                                                        <li><a href="">咖啡茶馆</a></li>
+                                                        <li><a href="">展览</a></li>
+                                                        <li><a href="">4D/5D电影</a></li>
+                                                        <li><a href="">其他娱乐</a></li>
+                            						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="lvyou"></i><a class="title lvyou" href="">旅游</a>
+                                        <p>
+                    							<a href="">周边旅游</a>
+                                                <a href="">门票</a>
+                                                <a href="">周边游</a>
+                                                <a href="">农家乐</a>
+                                                <a href="">国内游</a>
+                                            </p>
+                </div>
+				<div class="sort-con lvyou-top">
+					<div class="sort-con-left">
+						<h4><a href="">旅游</a></h4>
+						<ul class="sort-link02 cl">
+                                                        <li><a href="">周边游</a></li>
+                                                        <li><a href="">门票</a></li>
+                                                        <li><a href="">国内游</a></li>
+                                                        <li><a href="">温泉</a></li>
+                                                        <li><a href="">滑雪</a></li>
+                                                        <li><a href="">漂流</a></li>
+                                                        <li><a href="">嬉水</a></li>
+                                                        <li><a href="">农家乐</a></li>
+                            						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="shenghuo"></i><a class="title shenghuo" href="">生活服务</a>
+                                        <p>
+                                                <a href="">健康护理</a>
+                                                <a href="">母婴亲子</a>
+                                                <a href="">婚庆服务</a>
+                                                <a href="">汽车服务</a>
+                                                <a href="">照片冲印</a>
+                                                <a href="">其他生活</a>
+                                            </p>
+                </div>
+				<div class="sort-con shenghuo-top">
+					<div class="sort-con-left">
+						<h4><a href="">生活服务</a></h4>
+						<ul class="sort-link02 cl">
+                                                        <li><a href="">健康护理</a></li>
+                                                        <li><a href="">汽车服务</a></li>
+                                                        <li><a href="">母婴亲子</a></li>
+                                                        <li><a href="">洗涤护理</a></li>
+                                                        <li><a href="">婚庆服务</a></li>
+                                                        <li><a href="">宠物护理</a></li>
+                                                        <li><a href="">缴费充值</a></li>
+                                                        <li><a href="">配镜</a></li>
+                                                        <li><a href="">照片冲印</a></li>
+                                                        <li><a href="">其他生活</a></li>
+                            						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="sheying"></i><a class="title sheying" href="">摄影写真</a>
+                                        <p>
+                                                <a href="">儿童写真</a>
+                                                <a href="">成人写真</a>
+                                                <a href="">证件照</a>
+                                                <a href="">热卖婚纱</a>
+                                                <a href="">孕妇写真</a>
+                                            </p>
+                </div>
+				<div class="sort-con shenghuo-top">
+					<div class="sort-con-left">
+						<h4><a href="">摄影写真</a></h4>
+						<ul class="sort-link02 cl">
+						                            <li><a href="">品质婚纱</a></li>
+                                                        <li><a href="">热卖婚纱</a></li>
+                                                        <li><a href="">孕妇写真</a></li>
+                                                        <li><a href="">成人写真</a></li>
+                                                        <li><a href="">全家福摄影</a></li>
+                                                        <li><a href="">儿童写真</a></li>
+                                                        <li><a href="">证件照</a></li>
+                                                        <li><a href="">照片冲印</a></li>
+                                                        <li><a href="">结婚婚庆</a></li>
+                            						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="liren"></i><a class="title liren" href="">丽人</a>
+                                        <p>
+                                                <a href="">美发</a>
+                                                <a href="">美甲</a>
+                                                <a href="">美容美体</a>
+                                                <a href="">瑜珈/舞蹈</a>
+                                            </p>
+                </div>
+				<div class="sort-con liren-top">
+					<div class="sort-con-left">
+						<h4><a href="">丽人</a></h4>
+						<ul class="sort-link02 cl">
+                                                        <li><a href="">美容美体</a></li>
+                                                        <li><a href="">美发</a></li>
+                                                        <li><a href="">美甲</a></li>
+                                                        <li><a href="">瑜珈/舞蹈</a></li>
+                            						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sort">
+				<div class="sort-menu"><em class="sort-icon"></em><i class="gouwu"></i><a class="title gouwu" href="">购物</a>
+                                        <p>
+                                                <a href="">男装</a>
+                                                <a href="">茶酒冲调</a>
+                                                <a href="">3C数码</a>
+                                                <a href="">家纺</a>
+                                            </p>
+                </div>
+				<div class="sort-con gouwu-top">
+					<div class="sort-con-piece">
+						<div class="fl">
+							<h4><a href="">服装鞋包</a></h4>
+							<ul class="sort-link02 cl">      
+																<li><a href="">女装</a></li>
+																<li><a href="">男装</a></li>
+																<li><a href="">男鞋</a></li>
+																<li><a href="">女鞋</a></li>
+																<li><a href="">内衣家居</a></li>
+																<li><a href="">儿童服饰</a></li>
+																<li><a href="">袜子</a></li>
+																<li><a href="">保健塑形</a></li>
+																<li><a href="">箱包</a></li>
+																<li><a href="">配饰</a></li>
+															</ul>
+							<h4><a href="">家居家纺</a></h4>
+							<ul class="sort-link02 cl">      
+																<li><a href="">家居日用</a></li>
+																<li><a href="">家纺</a></li>
+																<li><a href="">清洁收纳</a></li>
+																<li><a href="">家装厨具</a></li>
+															</ul>
+							<h4><a href="">母婴玩具</a></h4>
+							<ul class="sort-link02 cl">      
+																<li><a href="">母婴用品</a></li>
+																<li><a href="">玩具早教</a></li>
+																<li><a href="">图书文具</a></li>
+																<li><a href="">婴童服饰</a></li>
+															</ul>
+							<h4><a href="">美妆个护</a></h4>
+							<ul class="sort-link02 cl">      
+																<li><a href="">护肤保养</a></li>
+																<li><a href="">美发洗浴</a></li>
+																<li><a href="">彩妆</a></li>
+																<li><a href="">男士用品</a></li>
+																<li><a href="">香水</a></li>
+																<li><a href="">化妆用品</a></li>
+																<li><a href="">口腔护理</a></li>
+																<li><a href="">女性护理</a></li>
+																<li><a href="">成人用品</a></li>
+															</ul>
+						</div>
+						<div class="fr">
+							<h4><a href="">运动户外</a></h4>
+							<ul class="sort-link02 cl">
+																<li><a href="">户外装备</a></li>
+																<li><a href="">运动器具</a></li>
+																<li><a href="">户外服饰</a></li>
+																<li><a href="">运动鞋</a></li>
+																<li><a href="">运动休闲</a></li>
+															</ul>
+							<h4><a href="">食品茶酒</a></h4>
+							<ul class="sort-link02 cl">
+																<li><a href="">地方特产</a></li>
+																<li><a href="">休闲零食</a></li>
+																<li><a href="">粮油调味</a></li>
+																<li><a href="">营养保健</a></li>
+																<li><a href="">茶酒冲调</a></li>
+																<li><a href="">生鲜水果</a></li>
+																<li><a href="">月饼</a></li>
+																<li><a href="">大闸蟹</a></li>
+															</ul>
+							<h4><a href="">数码家电</a></h4>
+							<ul class="sort-link02 cl">
+																<li><a href="">生活电器</a></li>
+																<li><a href="">厨卫电器</a></li>
+																<li><a href="">个护健康</a></li>
+																<li><a href="">3C数码</a></li>
+																<li><a href="">汽车用品</a></li>
+															</ul>
+							<h4><a href="">钟表首饰</a></h4>
+							<ul class="sort-link02 cl">
+																<li><a href="">手表</a></li>
+																<li><a href="">珠宝首饰</a></li>
+																<li><a href="">创意礼品</a></li>
+																<li><a href="">眼镜</a></li>
+																<li><a href="">打火机</a></li>
+															</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sort-lottery">
+				<div class="sort-menu"><i class="choujiang"></i><a class="title choujiang" href="">0元抽奖</a>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- main -->
+<main id="main">
+	<div style="position: static;" class="index-main cl">
+		<div class="index-content">
+			<div class="index-filter">
+				<!--<div class="filter-strip newga ga">
+					<h3><i class="filter-icon icon03"></i><span>热门团购</span></h3>
+					<div class="filter-link">
+						<ul>
+																					<li><a href="">小吃快餐</a></li>
+																					<li><a href="">门票</a></li>
+																					<li><a href="">其他生活</a></li>
+																					<li><a href="">自助餐</a></li>
+																					<li><a href="">火锅</a></li>
+																					<li><a href="">电影</a></li>
+																					<li><a href="">运动健身</a></li>
+																					<li><a href="">周边游</a></li>
+																					<li><a href="">经济型酒店</a></li>
+																					<li><a href="">KTV</a></li>
+													</ul>
+					</div>
+				</div>-->
+				<!--<div class="filter-strip-warp">
+					
+				</div>-->
+				
+				<!--<div class="filter-strip newga ga">
+					<h3><i class="filter-icon icon04"></i><span>购　　物</span></h3>
+					<div class="filter-link">
+						<ul>
+							<li><a href="http://beijing.lashou.com/gouwu/fushixiebao">服装鞋包</a></li><li><a href="http://beijing.lashou.com/gouwu/yundonghuwai">运动户外</a></li><li><a href="http://beijing.lashou.com/gouwu/jiajujiafang">家居家纺</a></li><li><a href="http://beijing.lashou.com/gouwu/shipinchajiu">食品茶酒</a></li><li><a href="http://beijing.lashou.com/gouwu/muyingwanju">母婴玩具</a></li><li><a href="http://beijing.lashou.com/gouwu/shumajiadian">数码家电</a></li><li><a href="http://beijing.lashou.com/gouwu/meizhuanggehu">美妆个护</a></li><li><a href="http://beijing.lashou.com/gouwu/zhongbiaoshoushi">钟表首饰</a></li>
+						</ul>
+					</div>
+				</div>-->
+				<!-- 热门 --><div id="hot-goods" class="slider-warp" options="hot-goods|left|1|5000|1000|1|1|0|1">
+					<h2><i class="hg-icon"></i><span>热门商品</span></h2>
+                    <div class="slider-ulwarp">
+					   <ul style="width: 4218px; position: relative; left: -703px;" class="slider-ul"><li style="float: left; list-style: outside none none; width: 703px;">
+							<div class="big-goods fl">
+															<a class="big-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBHlP-vZGAUayKAAC1omWC9uI572-429x273.jpg" alt="【梨园】单人自助午/晚餐，提前1天预约，节假日通用" height="217" width="341">																	<span class="big-goods-place">北京通州区梨园东里2号（妇幼保健医院南侧格林豪泰酒店一层）	</span>
+																</a>
+								<div class="big-goods-info">
+																			<h3>
+											<span class="ti"><a class="big-goods-name" href="" target="_blank">【梨园】福樱兰日本料理</a></span>
+											<span><a class="big-goods-text" target="_blank" href="">单人自助午/晚餐，提前1天预约，节假日通用</a></span>
+										</h3>
+										<div class="big-goods-price">
+																	                        <span class="price"><em>¥</em>178</span>
+						                        <span class="money">¥<del>198</del></span>
+						                        <span class="number">已售<i>2609</i></span>					                        										</div>
+																	</div>
+							</div>
+																																		<div class="big-goods fr">
+															<a class="big-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBVFTJlHGACL0kAACkyxUbJlI651-429x273.jpg" alt="【78店通用】30元现金抵用1次，全场通用，可累计使用" height="217" width="341">																	<span class="big-goods-place">甘家口店、国展店、和平里店、中关村店、望京旺角店、三里河店、上地店、大兴店、东源店、大钟寺店、蓝堡店、交道口店、方庄店、…</span>
+																</a>
+								<div class="big-goods-info">
+																			<h3>
+											<span class="ti"><a class="big-goods-name" href="" target="_blank">【68店通用】嘉和一品</a></span>
+											<span><a class="big-goods-text" target="_blank" href="">30元现金抵用1次，全场通用，可累计使用</a></span>
+										</h3>
+										<div class="big-goods-price">
+																	                        <span class="price"><em>¥</em>25.5</span>
+						                        <span class="money">¥<del>30</del></span>
+						                        <span class="number">已售<i>99</i></span>					                        										</div>
+																	</div>
+							</div>
+														</li><li style="float: left; list-style: outside none none; width: 703px;">
+							<div class="big-goods fl">
+															<a class="big-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBVFP2nqCAbO7-AAERS9VBjGw714-429x273.jpg" alt="【东直门】欢唱券1张，2张券起用，多时段、多房型可用" height="217" width="341">																	<span class="big-goods-place">北京东城区东直门外大街42号宇飞大厦B1层</span>
+																</a>
+								<div class="big-goods-info">
+																			<h3>
+											<span class="ti"><a class="big-goods-name" href="" target="_blank">【东直门】友乐汇KTV</a></span>
+											<span><a class="big-goods-text" target="_blank" href="">欢唱券1张，2张券起用，多时段、多房型可用</a></span>
+										</h3>
+										<div class="big-goods-price">
+																	                        <span class="price"><em>¥</em>29</span>
+						                        <span class="money">¥<del>202.5</del></span>
+						                        <span class="number">已售<i>419</i></span>					                        										</div>
+																	</div>
+							</div>
+																																		<div class="big-goods fr">
+															<a class="big-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBHlSY_2aAAECxAAFIXS84Mc0746-429x273.jpg" alt="【4店通用】单人烤肉自助餐，午晚餐通用" height="217" width="341">																	<span class="big-goods-place">劲松店、长虹桥店、永定路店、清华园店</span>
+																</a>
+								<div class="big-goods-info">
+																			<h3>
+											<span class="ti"><a class="big-goods-name" href="" target="_blank">【4店通用】富丽客巴西烤肉</a></span>
+											<span><a class="big-goods-text" target="_blank" href="">单人烤肉自助餐，午晚餐通用</a></span>
+										</h3>
+										<div class="big-goods-price">
+																	                        <span class="price"><em>¥</em>62</span>
+						                        <span class="money">¥<del>68</del></span>
+						                        <span class="number">已售<i>42526</i></span>					                        										</div>
+																	</div>
+							</div>
+														</li><li style="float: left; list-style: outside none none; width: 703px;">
+							<div class="big-goods fl">
+															<a class="big-goods-img" href="" target="_blank"><img class="dynload" src="http://s2.lashouimg.com/cms/M00/75/01/CqgBVFQ3h7aAFtHTAABv-pSBUF0576-429x273.jpg" alt="【北苑家园】单人电影票，可观看2D/3D" height="217" width="341">																	<span class="big-goods-place">北京朝阳区北苑路42号</span>
+																</a>
+								<div class="big-goods-info">
+																			<h3>
+											<span class="ti"><a class="big-goods-name" href="" target="_blank">【北苑家园】K酷国际影城</a></span>
+											<span><a class="big-goods-text" target="_blank" href="">单人电影票，可观看2D/3D</a></span>
+										</h3>
+										<div class="big-goods-price">
+																	                        <span class="price"><em>¥</em>35.5</span>
+						                        <span class="money">¥<del>120</del></span>
+						                        <span class="number">已售<i>11854</i></span>					                        										</div>
+																	</div>
+							</div>
+																																		<div class="big-goods fr">
+															<a class="big-goods-img" href="" target="_blank"><img class="dynload" src="http://f2.lashouimg.com/cms/M00/D7/94/CqgBJlVmj72AHSn5AADHaGRFq3M801-429x273.jpg" alt="【朝阳大悦城】双外景婚纱套系，六环内产品免费送到家" height="217" width="341">																	<span class="big-goods-place">北京朝阳区朝阳北路青年汇102号楼0219室（朝阳大悦城对面）</span>
+																</a>
+								<div class="big-goods-info">
+																			<h3>
+											<span class="ti"><a class="big-goods-name" href="" target="_blank">【朝阳大悦城】诗薇雅韩国Memory摄影</a></span>
+											<span><a class="big-goods-text" target="_blank" href="">双外景婚纱套系，六环内产品免费送到家</a></span>
+										</h3>
+										<div class="big-goods-price">
+																	                        <span class="price"><em>¥</em>2998</span>
+						                        <span class="money">¥<del>12899</del></span>
+						                        <span class="number">已售<i>6232</i></span>					                        										</div>
+																	</div>
+							</div>
+														</li></ul>
+                    </div>
+				  <div class="slider-pn">                                <a class="slider-prev iepng" hidefocus="true" href="javascript:void(0);"></a>                                <a class="slider-next iepng" hidefocus="true" href="javascript:void(0);"></a>                            </div><div class="slider-page"><span class=""><a hidefocus="true">H</a></span><span class=""><a hidefocus="true">H</a></span><span class=""><a hidefocus="true">H</a></span><span class="select"><a hidefocus="true">H</a></span><span class=""><a hidefocus="true">H</a></span></div></div>
+                  
+                  
+                  <!--热门添加 开始--> 
+                  <div class="recommend-goods">
+		<div class="recommend-title">
+							<span class="current" onClick="tabCutover(this,'rc-new');">今日新单<i></i></span>			<span onClick="tabCutover(this,'re-week');">一周热卖<i></i></span>
+		</div>
+		<div class="recommend-content">
+						<div class="rc-new" style="display:block;">
+				<div id="new-goods" class="slider-warp" options="new-goods|left|0|5000|1000|1|1|0|1">
+					<div class="slider-ulwarp">
+						<ul style="width: 5810px; position: relative; left: -1162px;" class="slider-ul"><li style="float: left; list-style: outside none none; width: 1162px;">
+																									<div class="small-goods noml">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBHlWR65WAE4EGAAKWh0wHXGc478-198x126.jpg" alt="【59店通用】天长地久玫瑰花1束，精美包装" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【59店通用】爱满家花艺</a>
+										<a class="small-goods-text" href="" target="_blank">天长地久玫瑰花1束，精美包装</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>279</span>
+										<span class="money">¥<del>688</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBVFWSB--ANkXPAAFXilRIpOE612-198x126.jpg" alt="【望京】单人中式自助餐，全天通用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【望京】惠家米皮</a>
+										<a class="small-goods-text" href="" target="_blank">单人中式自助餐，全天通用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>19.8</span>
+										<span class="money">¥<del>40</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBHlWR-WGAFvJCAAFsG109mPo650-198x126.jpg" alt="【12店通用】现金抵用1次，全场通用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【12店通用】非尝麻辣</a>
+										<a class="small-goods-text" href="" target="_blank">现金抵用1次，全场通用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>8</span>
+										<span class="money">¥<del>10</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBJlWSK5eAMNXRAACmssFc3DM872-198x126.jpg" alt="【洋桥】现金抵用1次，可叠加使用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【洋桥】洋桥食府</a>
+										<a class="small-goods-text" href="" target="_blank">现金抵用1次，可叠加使用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>81</span>
+										<span class="money">¥<del>100</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBVFWR9K2AUbsxAAChEh_8R4E200-198x126.jpg" alt="【果园】欢唱券1张，免费WiFi" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【果园】华美小木屋KTV</a>
+										<a class="small-goods-text" href="" target="_blank">欢唱券1张，免费WiFi</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>40</span>
+										<span class="money">¥<del>428</del></span>
+									</div>
+									</div>
+																	</li><li style="float: left; list-style: outside none none; width: 1162px;">
+																									<div class="small-goods noml">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBHlQg3biAd6n9AADzIyAlAh8464-198x126.jpg" alt="【天津】平日学生票1张" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【天津】天山海世界·米立方</a>
+										<a class="small-goods-text" href="" target="_blank">平日学生票1张</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>60</span>
+										<span class="money">¥<del>140</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBVFWSurOACvY1AADFeNvYHrU166-198x126.jpg" alt="【菜市口】全身精油SPA套系，免费WiFi" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【菜市口】娜样年华私人形象会所（陶然居店）</a>
+										<a class="small-goods-text" href="" target="_blank">全身精油SPA套系，免费WiFi</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>299</span>
+										<span class="money">¥<del>399</del></span>
+									</div>
+									</div>
+																																																																																									
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBHlWSBSmAUgL1AADAnjaQjX4978-198x126.jpg" alt="【五棵松】现金抵用1次，可叠加，不限时段通用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【五棵松】金坛乐宾楼</a>
+										<a class="small-goods-text" href="" target="_blank">现金抵用1次，可叠加，不限时段通用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>82</span>
+										<span class="money">¥<del>100</del></span>
+									</div>
+									</div>
+																	</li><li style="float: left; list-style: outside none none; width: 1162px;">
+																									<div class="small-goods noml">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBJlWQsEeAa1LIAAG04mZoPfE143-198x126.jpg" alt="【石佛营】招牌早堂面单人餐，交通便利，临近炫特小区" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【石佛营】gofar古法私房面</a>
+										<a class="small-goods-text" href="" target="_blank">招牌早堂面单人餐，交通便利，临近炫特小区</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>23</span>
+										<span class="money">¥<del>27</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBHlWSB66ASpEEAACSruBIpvc130-198x126.jpg" alt="【11店通用】双层法国顶级天然乳脂蛋糕，五环内免费配送" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【11店通用】皇家Cake工坊</a>
+										<a class="small-goods-text" href="" target="_blank">双层法国顶级天然乳脂蛋糕，五环内免费配送</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>268</span>
+										<span class="money">¥<del>688</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBVFWSX46AMdhIAABVZBaNzeI878-198x126.jpg" alt="【方庄】局部按摩1次，专业手法" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="" target="_blank">【方庄】十指康盲人按摩</a>
+										<a class="small-goods-text" href="" target="_blank">局部按摩1次，专业手法</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>35</span>
+										<span class="money">¥<del>45</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="" target="_blank"><img class="dynload" src="images/CqgBVFWSbP2AKv_BAAFDxBGXaaM942-198x126.jpg" alt="【亦庄】现金抵用1次，全场通用，可叠加使用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11246844.html" target="_blank">【亦庄】玉林串串香（亦庄永康店）</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11246844.html" target="_blank">现金抵用1次，全场通用，可叠加使用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>136</span>
+										<span class="money">¥<del>200</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11243888.html" target="_blank"><img class="dynload" src="images/CqgBHlWRDAKAOv0XAAFmtCXcqlg207-198x126.jpg" alt="【新华大街】单人烧烤自助餐，全天通用，啤酒饮料免费畅饮" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11243888.html" target="_blank">【新华大街】快乐源农庄（潞城店）</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11243888.html" target="_blank">单人烧烤自助餐，全天通用，啤酒饮料免费畅饮</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>75</span>
+										<span class="money">¥<del>158</del></span>
+									</div>
+									</div>
+																	</li></ul>	
+					</div>
+				  <div class="slider-pn">                                <a class="slider-prev iepng" hidefocus="true" href="javascript:void(0);"></a>                                <a class="slider-next iepng" hidefocus="true" href="javascript:void(0);"></a>                            </div><div class="slider-page"><span class="select"><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span></div></div>
+			</div>
+			<div class="re-week">
+				<div id="hotweek-goods" class="slider-warp" options="hotweek-goods|left|0|5000|1000|1|1|0|1">
+                    <div class="slider-ulwarp">
+					<ul style="width: 5810px; position: relative; left: -1162px;" class="slider-ul"><li style="float: left; list-style: outside none none; width: 1162px;">
+																						<div class="small-goods noml">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/10856804.html" target="_blank"><img class="dynload" src="images/CqgBVFT4-5mAaxuDAADZO5ZfQxQ818-198x126.jpg" alt="【53店通用】现金抵用1次，可叠加使用" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/10856804.html" target="_blank">【53店通用】嘉事堂药店</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/10856804.html" target="_blank">现金抵用1次，可叠加使用</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>42</span>
+									<span class="money">¥<del>50</del></span>
+																			<span class="number">已售<i>873</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/10971184.html" target="_blank"><img class="dynload" src="images/CqgBJlVdP5yAZP_aAAHLruAzKr4823-198x126.jpg" alt="【4店通用】双人餐，精选优质食材" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/10971184.html" target="_blank">【4店通用】御香苑</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/10971184.html" target="_blank">双人餐，精选优质食材</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>88</span>
+									<span class="money">¥<del>268</del></span>
+																			<span class="number">已售<i>291</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/9858041.html" target="_blank"><img class="dynload" src="images" alt="【梨园】单人烧烤自助晚餐，啤酒、饮料、红酒、白酒免费畅饮" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/9858041.html" target="_blank">【梨园】汉宁苑自助烤肉</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/9858041.html" target="_blank">单人烧烤自助晚餐，啤酒、饮料、红酒、白酒免费畅饮</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>49</span>
+									<span class="money">¥<del>55</del></span>
+																			<span class="number">已售<i>307</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/10014929.html" target="_blank"><img class="dynload" src="images/CqgBVFSzaKaAEoSdAAFw2IVLaO8625-198x126.jpg" alt="【四季青】1小时欢唱券，免费WiFi，免费停车" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/10014929.html" target="_blank">【四季青】鑫源主题式量贩KTV</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/10014929.html" target="_blank">1小时欢唱券，免费WiFi，免费停车</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>9.9</span>
+									<span class="money">¥<del>360</del></span>
+																			<span class="number">已售<i>134</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/9977127.html" target="_blank"><img class="dynload" src="images/CqgBHlSspLCAdPpyAACeHGphCPA961-198x126.jpg" alt="【马驹桥】单人电影票，可观看2D/3D" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/9977127.html" target="_blank">【马驹桥】百尚影城</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/9977127.html" target="_blank">单人电影票，可观看2D/3D</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>22</span>
+									<span class="money">¥<del>80</del></span>
+																			<span class="number">已售<i>350</i></span>
+																	</div>
+							</div>
+															</li><li style="float: left; list-style: outside none none; width: 1162px;">
+																						<div class="small-goods noml">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/7912581.html" target="_blank"><img class="dynload" src="images/CqgBHlP0MjqAceFUAACsXeGhMtA249-198x126.jpg" alt="【王府井】谭家菜：4人餐，节假日通用" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/7912581.html" target="_blank">【王府井】谭家菜</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/7912581.html" target="_blank">谭家菜：4人餐，节假日通用</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>1996</span>
+									<span class="money">¥<del>4800</del></span>
+																			<span class="number">已售<i>10</i></span>
+																	</div>
+							</div>
+																																										
+																																										
+																																																																											
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/10595699.html" target="_blank"><img class="dynload" src="images/CqgBJlT9RdGAQcHZAAGfjrN3jRE128-198x126.jpg" alt="【5店通用】单人自助午餐券1张，适用北京所有金钱豹国际美食百汇" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/10595699.html" target="_blank">【5店通用】金钱豹</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/10595699.html" target="_blank">单人自助午餐券1张，适用北京所有金钱豹国际美食百汇</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>182</span>
+									<span class="money">¥<del>218</del></span>
+																			<span class="number">已售<i>73</i></span>
+																	</div>
+							</div>
+																																										
+																																										
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="" target="_blank">
+                                                            <img class="dynload" src="images/CqgBHlSks6aAR7HWAAC-SfcITGY025-198x126.jpg" alt="【前门】2-3人餐，免费WiFi，免费车位" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="" target="_blank">【前门】前门狗不理</a>
+									<a class="small-goods-text" href="" target="_blank">2-3人餐，免费WiFi，免费车位</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>109</span>
+									<span class="money">¥<del>410</del></span>
+																			<span class="number">已售<i>172</i></span>
+																	</div>
+							</div>
+															</li></ul>
+                    </div>
+				  <div class="slider-pn">                                <a class="slider-prev iepng" hidefocus="true" href="javascript:void(0);"></a>                                <a class="slider-next iepng" hidefocus="true" href="javascript:void(0);"></a>                            </div><div class="slider-page"><span class="select"><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span></div></div>
+			</div>
+	   </div>
+	</div>
+                  
+                  
+                  
+                  <!--热门添加 结束-->
+                  
+			</div>
+		</div>
+        <div style="top: 233px;" class="sidebar-warp">
+            <div style="auto" class="index-sidebar">
+            <div class="sidebar-zero">
+                <a class="newga ga" t="分类导航" p="右侧快捷方式" ga_t="抽奖公益" href="http://beijing.lashou.com/cate/choujianggongyi" target="_blank"><img src="images/sidebar-zero01.png" height="18" width="223"></a>
+            </div>
+            <div id="sidebar-lottery" class="slider-warp" options="sidebar-lottery|left|1|5000|2000|1|1|0|1" p="抽奖轮播">
+                <div class="slider-ulwarp">
+                    <ul style="width: 627px; position: relative; left: -209px;" class="slider-ul"><li style="float: left; list-style: outside none none; width: 209px;"><a href="http://beijing.lashou.com/deal/11226944.html" target="_blank" ga_t="三星超极本， 拉手网免费送！"><img class="dynload" src="images/CqgBJlWLy0mAQrWJAACuM5B-zos085-209x133.jpg" alt="" height="133" width="209"></a></li><li style="float: left; list-style: outside none none; width: 209px;"><a href="http://beijing.lashou.com/deal/11239638.html" target="_blank" ga_t="索尼PS4游戏机，拉手网免费送！"><img class="dynload" src="images/CqgBVFWRDnCAWDLnAACqwOwSCbc010-209x133.jpg" alt="" height="133" width="209"></a></li><li style="float: left; list-style: outside none none; width: 209px;"><a href="http://beijing.lashou.com/deal/11226944.html" target="_blank" ga_t="三星超极本， 拉手网免费送！"><img class="dynload" src="images/CqgBJlWLy0mAQrWJAACuM5B-zos085-209x133.jpg" alt="" height="133" width="209"></a></li></ul>
+                </div>
+              <div class="slider-pn">                                <a class="slider-prev iepng" hidefocus="true" href="javascript:void(0);"></a>                                <a class="slider-next iepng" hidefocus="true" href="javascript:void(0);"></a>                            </div><div class="slider-page"><span class="select"><a hidefocus="true">H</a></span><span class=""><a hidefocus="true">H</a></span></div></div>
+            <div id="sidebar-set" class="slider-warp" options="sidebar-set|left|1|3000|2000|1|1|0|1" p="热卖专场">
+                <div class="slider-ulwarp">
+                	<ul style="width: 892px; position: relative; left: -223px;" class="slider-ul"><li style="float: left; list-style: outside none none; width: 223px;"><a href="https://www.zrcaifu.com/activity-lashou?_adv=fc_lashou_002" target="_blank" ga_t="4001|https://www.zrcaifu.com/activity-lashou?_adv=fc_lashou_002"><img class="dynload" src="images/CqgBJlWD4fiADfZxAABwhr4CiFI478.jpg" height="165" width="223"></a></li><li style="float: left; list-style: outside none none; width: 223px;"><a href="" target="_blank" ga_t="4002|http://www.lashou.com/event/shuqidianyingzhejshfj.html"><img class="dynload" src="images/CqgBVFWKdvCAN4zVAABz603dRFI204.jpg" height="165" width="223"></a></li><li style="float: left; list-style: outside none none; width: 223px;"><a href="" target="_blank" ga_t="4004|http://sales.lashou.com/2015/hunshaxinhd.html"><img class="dynload" src="images/CqgBJlV_vN6AUSJWAAAlDq3bLIo498.jpg" height="165" width="223"></a></li></ul>
+                </div>
+              <div class="slider-pn">                                <a class="slider-prev iepng" hidefocus="true" href="javascript:void(0);"></a>                                <a class="slider-next iepng" hidefocus="true" href="javascript:void(0);"></a>                            </div><div class="slider-page"><span class=""><a hidefocus="true">H</a></span><span class="select"><a hidefocus="true">H</a></span><span class=""><a hidefocus="true">H</a></span></div></div>
+            <div class="sidebar-handy">
+            <div class="handy-titwarp">
+            	<div class="handy-tit current" onMouseOver="tabCutover(this,'handy-recharge');"><a class="newga ga" t="分类导航" p="右侧快捷方式" ga_t="话费" href="" target="_blank"><i class="icon04"></i><span>话费</span><em></em></a></div>
+                <div class="handy-tit" onMouseOver="tabCutover(this,'handy-movie');"><a class="newga ga" t="分类导航" p="右侧快捷方式" ga_t="电影" href="" target="_blank"><i class="icon01"></i><span>电影</span><em></em></a></div>
+                <div class="handy-tit" onMouseOver="tabCutover(this,'handy-hotel');"><a class="newga ga" t="分类导航" p="右侧快捷方式" ga_t="酒店" href="" target="_blank"><i class="icon02"></i><span>酒店</span><em></em></a></div>
+                <div class="handy-tit" onMouseOver="tabCutover(this,'handy-flights');"><a class="newga ga" t="分类导航" p="右侧快捷方式" ga_t="旅游" href="" target="_blank"><i class="icon03"></i><span>旅游</span><em></em></a></div>
+            </div>
+            <div class="handy-cen">
+            <div class="handy-recharge">
+                <form id="quick_sub_form" action="/order/PhoneCharge/submit/" method="post" onKeyDown="if(event.keyCode==13){return false;}" target="_blank">
+                    <ul class="handy-ul">
+                        <li>
+                            <div class="handy-ultitle">号码</div>
+                            <div class="handy-dropdown w95">
+                                <div class="handy-inputwarp">
+                                    <input class="handy-input" id="quick_mobile" name="mobile" maxlength="11" value="请输入手机号" onFocus="addHover($(this))" onafterpaste="this.value=this.value.replace(/\D/g,'')" autocomplete="off" type="text">
+                                </div>
+                                <!--<div class="handy-dropdowncen">
+                                    <a href="javascript:void(0);" hidefocus="true">13462682262</a>
+                                </div>-->
+                            </div>
+                            <span class="handy-text mobile_ownership"><em class="red"></em></span>
+                        </li>
+                        <li>
+                            <div class="handy-ultitle">面值</div>
+                            <div class="handy-dropdown w95">
+                                <div class="handy-inputwarp">
+                                    <span class="handy-input">50元</span><i class="handy-icon"></i>
+                                    <input id="quick_price" name="price" value="50" autocomplete="off" type="hidden">
+                                    <input id="quick_goods_id" name="goods_id" value="" autocomplete="off" type="hidden">
+                                </div>
+                                <div class="handy-dropdowncen">
+                                    <a href="javascript:void(0);" hidefocus="true" val="10">10元</a>
+                                    <a href="javascript:void(0);" hidefocus="true" val="20">20元</a>
+                                    <a href="javascript:void(0);" hidefocus="true" val="30">30元</a>
+                                    <a href="javascript:void(0);" hidefocus="true" val="50">50元</a>
+                                    <a href="javascript:void(0);" hidefocus="true" val="100">100元</a>
+                                    <a href="javascript:void(0);" hidefocus="true" val="200">200元</a>
+                                    <a href="javascript:void(0);" hidefocus="true" val="300">300元</a>
+                                    <a href="javascript:void(0);" hidefocus="true" val="500">500元</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="handy-ultitle">售价</div>
+                            <span class="handy-textnopl recharge_price"><em class="red">10-500</em>元</span>
+                        </li>
+                        <li><a class="handy-button newga ga" t="分类导航" p="右侧快捷方式" ga_t="话费|立即充值" id="recharge_btn">立即充值</a></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="handy-movie">
+                <ul class="handy-ul" id="quick_moive">
+                    <li>
+                        <div class="handy-ultitle">影片</div>
+                        <div class="handy-dropdown w112">
+                            <div class="handy-inputwarp">
+                                <span class="handy-input">横冲直撞好莱坞</span><i class="handy-icon"></i>
+                            </div>
+                            <div class="handy-dropdowncen">
+                                                                                                    <a href="javascript:void(0);" hidefocus="true" title="横冲直撞好莱坞" movie_id="56431" cinemanum="22" schedulenum="135">横冲直撞好莱坞</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="杀破狼2" movie_id="56421" cinemanum="9" schedulenum="36">杀破狼2</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="侏罗纪世界" movie_id="56986" cinemanum="11" schedulenum="58">侏罗纪世界</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="分歧者2：绝地反击" movie_id="56987" cinemanum="0" schedulenum="0">分歧者2：绝地反击</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="对风说爱你" movie_id="56865" cinemanum="1" schedulenum="1">对风说爱你</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="恋爱排班表" movie_id="57092" cinemanum="1" schedulenum="1">恋爱排班表</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="末日崩塌" movie_id="56984" cinemanum="0" schedulenum="0">末日崩塌</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="少年班" movie_id="56430" cinemanum="1" schedulenum="1">少年班</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="我的男友和狗" movie_id="3623" cinemanum="1" schedulenum="1">我的男友和狗</a>
+                                                                        <a href="javascript:void(0);" hidefocus="true" title="惊魂电影院" movie_id="57094" cinemanum="0" schedulenum="0">惊魂电影院</a>
+                                                                </div>
+                        </div>
+                    </li>
+                    <li><span class="handy-text"><em class="red">22</em>家影院上映<em class="red">135</em>场</span></li>
+                    <li><a class="handy-button newga ga" t="分类导航" p="右侧快捷方式" ga_t="电影|选座购票" href="http://beijing.lashou.com/movies/film/56431" target="_blank">选座购票</a></li>
+                </ul>
+            </div>
+            <div class="handy-hotel">
+                <form id="quick_hotel_searchForm" target="_blank" action="/hotel/search.php" method="get">
+                <ul class="handy-ul">
+                    <li>
+                    <div class="handy-ultitle">城市</div>
+                    <div class="handy-dropdown w112">
+                        <div class="handy-inputwarp">
+    						<input title="城市名" name="hotelcity" id="hotelCity" autocomplete="off" onFocus="if(value=='城市名'){value='';style.color='#333';}" value="北京" class="handy-input ac_input hover" type="text">       
+                            <i class="handy-icon"></i>
+                        </div>
+                        <div class="address-hot" dialoghtml="hotel">
+                        <a class="address-hot-close" href="javascript:void(0);"><em class="search-text-close"></em></a>
+<div class="address-hotlist">
+<ol class="address-hot-tit">
+<li class="current" onClick="tabCutoverCity(this,'hotaddress')">热门</li>
+<li onClick="tabCutoverCity(this,'province1')">ABCD</li>
+<li onClick="tabCutoverCity(this,'province2')">EFGHJ</li>
+<li onClick="tabCutoverCity(this,'province3')">KLMN</li>
+<li onClick="tabCutoverCity(this,'province4')">PQRSTW</li>
+<li onClick="tabCutoverCity(this,'province5')">XYZ</li>
+</ol>
+<div class="address-hot-con">
+<ul class="hotaddress" type="热门">
+<li>
+<a title="北京">北京</a>
+</li>
+<li>
+<a title="西安">西安</a>
+</li>
+<li>
+<a title="广州">广州</a>
+</li>
+<li>
+<a title="武汉">武汉</a>
+</li>
+<li>
+<a title="成都">成都</a>
+</li>
+<li>
+<a title="长沙">长沙</a>
+</li>
+<li>
+<a title="深圳">深圳</a>
+</li>
+<li>
+<a title="重庆">重庆</a>
+</li>
+<li>
+<a title="杭州">杭州</a>
+</li>
+<li>
+<a title="厦门">厦门</a>
+</li>
+<li>
+<a title="上海">上海</a>
+</li>
+<li>
+<a title="天津">天津</a>
+</li>
+<li>
+<a title="郑州">郑州</a>
+</li>
+<li>
+<a title="大连">大连</a>
+</li>
+<li>
+<a title="丽江">丽江</a>
+</li>
+<li>
+<a title="青岛">青岛</a>
+</li>
+<li>
+<a title="沈阳">沈阳</a>
+</li>
+<li>
+<a title="济南">济南</a>
+</li>
+<li>
+<a title="三亚">三亚</a>
+</li>
+<li>
+<a title="哈尔滨">哈尔滨</a>
+</li>
+</ul>
+<ul class="province1" type="ABCD">
+<li>
+<a title="阿坝州">阿坝州</a>
+</li>
+<li>
+<a title="阿拉善盟">阿拉善盟</a>
+</li>
+<li>
+<a title="阿勒泰">阿勒泰</a>
+</li>
+<li>
+<a title="安达">安达</a>
+</li>
+<li>
+<a title="安康">安康</a>
+</li>
+<li>
+<a title="安庆">安庆</a>
+</li>
+<li>
+<a title="鞍山">鞍山</a>
+</li>
+<li>
+<a title="安顺">安顺</a>
+</li>
+<li>
+<a title="安阳">安阳</a>
+</li>
+<li>
+<a title="澳门">澳门</a>
+</li>
+<li>
+<a title="白城">白城</a>
+</li>
+<li>
+<a title="白山">白山</a>
+</li>
+<li>
+<a title="白银">白银</a>
+</li>
+<li>
+<a title="保定">保定</a>
+</li>
+<li>
+<a title="宝鸡">宝鸡</a>
+</li>
+<li>
+<a title="保山">保山</a>
+</li>
+<li>
+<a title="保亭">保亭</a>
+</li>
+<li>
+<a title="包头">包头</a>
+</li>
+<li>
+<a title="巴彦淖尔">巴彦淖尔</a>
+</li>
+<li>
+<a title="巴中">巴中</a>
+</li>
+<li>
+<a title="北海">北海</a>
+</li>
+<li>
+<a title="北京">北京</a>
+</li>
+<li>
+<a title="蚌埠">蚌埠</a>
+</li>
+<li>
+<a title="本溪">本溪</a>
+</li>
+<li>
+<a title="毕节">毕节</a>
+</li>
+<li>
+<a title="滨州">滨州</a>
+</li>
+<li>
+<a title="亳州">亳州</a>
+</li>
+<li>
+<a title="沧州">沧州</a>
+</li>
+<li>
+<a title="长春">长春</a>
+</li>
+<li>
+<a title="常德">常德</a>
+</li>
+<li>
+<a title="昌吉">昌吉</a>
+</li>
+<li>
+<a title="长沙">长沙</a>
+</li>
+<li>
+<a title="常熟">常熟</a>
+</li>
+<li>
+<a title="长治">长治</a>
+</li>
+<li>
+<a title="常州">常州</a>
+</li>
+<li>
+<a title="巢湖">巢湖</a>
+</li>
+<li>
+<a title="朝阳">朝阳</a>
+</li>
+<li>
+<a title="潮州">潮州</a>
+</li>
+<li>
+<a title="承德">承德</a>
+</li>
+<li>
+<a title="成都">成都</a>
+</li>
+<li>
+<a title="郴州">郴州</a>
+</li>
+<li>
+<a title="赤峰">赤峰</a>
+</li>
+<li>
+<a title="池州">池州</a>
+</li>
+<li>
+<a title="重庆">重庆</a>
+</li>
+<li>
+<a title="楚雄">楚雄</a>
+</li>
+<li>
+<a title="滁州">滁州</a>
+</li>
+<li>
+<a title="大理">大理</a>
+</li>
+<li>
+<a title="大连">大连</a>
+</li>
+<li>
+<a title="丹东">丹东</a>
+</li>
+<li>
+<a title="大庆">大庆</a>
+</li>
+<li>
+<a title="大同">大同</a>
+</li>
+<li>
+<a title="大兴安岭">大兴安岭</a>
+</li>
+<li>
+<a title="达州">达州</a>
+</li>
+<li>
+<a title="德阳">德阳</a>
+</li>
+<li>
+<a title="德州">德州</a>
+</li>
+<li>
+<a title="定安">定安</a>
+</li>
+<li>
+<a title="定西">定西</a>
+</li>
+<li>
+<a title="定州">定州</a>
+</li>
+<li>
+<a title="迪庆">迪庆</a>
+</li>
+<li>
+<a title="东莞">东莞</a>
+</li>
+<li>
+<a title="东乡">东乡</a>
+</li>
+<li>
+<a title="东营">东营</a>
+</li>
+<li>
+<a title="都江堰">都江堰</a>
+</li>
+</ul>
+<ul class="province2" type="EFGHJ">
+<li>
+<a title="鄂尔多斯">鄂尔多斯</a>
+</li>
+<li>
+<a title="峨眉山">峨眉山</a>
+</li>
+<li>
+<a title="恩施">恩施</a>
+</li>
+<li>
+<a title="鄂州">鄂州</a>
+</li>
+<li>
+<a title="防城港">防城港</a>
+</li>
+<li>
+<a title="凤凰县">凤凰县</a>
+</li>
+<li>
+<a title="佛山">佛山</a>
+</li>
+<li>
+<a title="抚顺">抚顺</a>
+</li>
+<li>
+<a title="莆田">莆田</a>
+</li>
+<li>
+<a title="阜新">阜新</a>
+</li>
+<li>
+<a title="阜阳">阜阳</a>
+</li>
+<li>
+<a title="富阳">富阳</a>
+</li>
+<li>
+<a title="福州">福州</a>
+</li>
+<li>
+<a title="抚州">抚州</a>
+</li>
+<li>
+<a title="甘南">甘南</a>
+</li>
+<li>
+<a title="赣州">赣州</a>
+</li>
+<li>
+<a title="高碑店">高碑店</a>
+</li>
+<li>
+<a title="固安">固安</a>
+</li>
+<li>
+<a title="广汉">广汉</a>
+</li>
+<li>
+<a title="广元">广元</a>
+</li>
+<li>
+<a title="广州">广州</a>
+</li>
+<li>
+<a title="贵港">贵港</a>
+</li>
+<li>
+<a title="桂林">桂林</a>
+</li>
+<li>
+<a title="贵阳">贵阳</a>
+</li>
+<li>
+<a title="固原">固原</a>
+</li>
+<li>
+<a title="哈尔滨">哈尔滨</a>
+</li>
+<li>
+<a title="海安">海安</a>
+</li>
+<li>
+<a title="海口">海口</a>
+</li>
+<li>
+<a title="海门">海门</a>
+</li>
+<li>
+<a title="邯郸">邯郸</a>
+</li>
+<li>
+<a title="杭州">杭州</a>
+</li>
+<li>
+<a title="汉中">汉中</a>
+</li>
+<li>
+<a title="鹤壁">鹤壁</a>
+</li>
+<li>
+<a title="河池">河池</a>
+</li>
+<li>
+<a title="合肥">合肥</a>
+</li>
+<li>
+<a title="鹤岗">鹤岗</a>
+</li>
+<li>
+<a title="黑河">黑河</a>
+</li>
+<li>
+<a title="衡水">衡水</a>
+</li>
+<li>
+<a title="衡阳">衡阳</a>
+</li>
+<li>
+<a title="河源">河源</a>
+</li>
+<li>
+<a title="菏泽">菏泽</a>
+</li>
+<li>
+<a title="贺州">贺州</a>
+</li>
+<li>
+<a title="淮安">淮安</a>
+</li>
+<li>
+<a title="淮北">淮北</a>
+</li>
+<li>
+<a title="怀化">怀化</a>
+</li>
+<li>
+<a title="淮南">淮南</a>
+</li>
+<li>
+<a title="黄冈">黄冈</a>
+</li>
+<li>
+<a title="黄山">黄山</a>
+</li>
+<li>
+<a title="黄石">黄石</a>
+</li>
+<li>
+<a title="呼和浩特">呼和浩特</a>
+</li>
+<li>
+<a title="惠州">惠州</a>
+</li>
+<li>
+<a title="葫芦岛">葫芦岛</a>
+</li>
+<li>
+<a title="呼伦贝尔">呼伦贝尔</a>
+</li>
+<li>
+<a title="湖州">湖州</a>
+</li>
+<li>
+<a title="佳木斯">佳木斯</a>
+</li>
+<li>
+<a title="江门">江门</a>
+</li>
+<li>
+<a title="江阴">江阴</a>
+</li>
+<li>
+<a title="江油">江油</a>
+</li>
+<li>
+<a title="吉安">吉安</a>
+</li>
+<li>
+<a title="焦作">焦作</a>
+</li>
+<li>
+<a title="嘉兴">嘉兴</a>
+</li>
+<li>
+<a title="嘉峪关">嘉峪关</a>
+</li>
+<li>
+<a title="揭阳">揭阳</a>
+</li>
+<li>
+<a title="吉林">吉林</a>
+</li>
+<li>
+<a title="济南">济南</a>
+</li>
+<li>
+<a title="金昌">金昌</a>
+</li>
+<li>
+<a title="晋城">晋城</a>
+</li>
+<li>
+<a title="景德镇">景德镇</a>
+</li>
+<li>
+<a title="荆门">荆门</a>
+</li>
+<li>
+<a title="荆州">荆州</a>
+</li>
+<li>
+<a title="金华">金华</a>
+</li>
+<li>
+<a title="济宁">济宁</a>
+</li>
+<li>
+<a title="晋江">晋江</a>
+</li>
+<li>
+<a title="晋中">晋中</a>
+</li>
+<li>
+<a title="锦州">锦州</a>
+</li>
+<li>
+<a title="吉首">吉首</a>
+</li>
+<li>
+<a title="九江">九江</a>
+</li>
+<li>
+<a title="酒泉">酒泉</a>
+</li>
+<li>
+<a title="鸡西">鸡西</a>
+</li>
+<li>
+<a title="济源">济源</a>
+</li>
+</ul>
+<ul class="province3" type="KLMN">
+<li>
+<a title="开封">开封</a>
+</li>
+<li>
+<a title="喀什">喀什</a>
+</li>
+<li>
+<a title="克拉玛依">克拉玛依</a>
+</li>
+<li>
+<a title="库尔勒">库尔勒</a>
+</li>
+<li>
+<a title="昆明">昆明</a>
+</li>
+<li>
+<a title="昆山">昆山</a>
+</li>
+<li>
+<a title="来宾">来宾</a>
+</li>
+<li>
+<a title="莱芜">莱芜</a>
+</li>
+<li>
+<a title="廊坊">廊坊</a>
+</li>
+<li>
+<a title="兰溪">兰溪</a>
+</li>
+<li>
+<a title="兰州">兰州</a>
+</li>
+<li>
+<a title="拉萨">拉萨</a>
+</li>
+<li>
+<a title="乐平">乐平</a>
+</li>
+<li>
+<a title="乐山">乐山</a>
+</li>
+<li>
+<a title="连云港">连云港</a>
+</li>
+<li>
+<a title="聊城">聊城</a>
+</li>
+<li>
+<a title="辽阳">辽阳</a>
+</li>
+<li>
+<a title="辽源">辽源</a>
+</li>
+<li>
+<a title="丽江">丽江</a>
+</li>
+<li>
+<a title="临沧">临沧</a>
+</li>
+<li>
+<a title="临汾">临汾</a>
+</li>
+<li>
+<a title="临夏">临夏</a>
+</li>
+<li>
+<a title="临沂">临沂</a>
+</li>
+<li>
+<a title="丽水">丽水</a>
+</li>
+<li>
+<a title="溧水">溧水</a>
+</li>
+<li>
+<a title="溧水县">溧水县</a>
+</li>
+<li>
+<a title="六安">六安</a>
+</li>
+<li>
+<a title="六盘水">六盘水</a>
+</li>
+<li>
+<a title="柳州">柳州</a>
+</li>
+<li>
+<a title="陇南">陇南</a>
+</li>
+<li>
+<a title="龙岩">龙岩</a>
+</li>
+<li>
+<a title="娄底">娄底</a>
+</li>
+<li>
+<a title="漯河">漯河</a>
+</li>
+<li>
+<a title="洛阳">洛阳</a>
+</li>
+<li>
+<a title="泸州">泸州</a>
+</li>
+<li>
+<a title="吕梁">吕梁</a>
+</li>
+<li>
+<a title="马鞍山">马鞍山</a>
+</li>
+<li>
+<a title="茂名">茂名</a>
+</li>
+<li>
+<a title="眉山">眉山</a>
+</li>
+<li>
+<a title="梅州">梅州</a>
+</li>
+<li>
+<a title="绵阳">绵阳</a>
+</li>
+<li>
+<a title="绵竹">绵竹</a>
+</li>
+<li>
+<a title="牡丹江">牡丹江</a>
+</li>
+<li>
+<a title="南安">南安</a>
+</li>
+<li>
+<a title="南昌">南昌</a>
+</li>
+<li>
+<a title="南充">南充</a>
+</li>
+<li>
+<a title="南京">南京</a>
+</li>
+<li>
+<a title="南宁">南宁</a>
+</li>
+<li>
+<a title="南平">南平</a>
+</li>
+<li>
+<a title="南通">南通</a>
+</li>
+<li>
+<a title="南阳">南阳</a>
+</li>
+<li>
+<a title="内江">内江</a>
+</li>
+<li>
+<a title="宁波">宁波</a>
+</li>
+<li>
+<a title="宁德">宁德</a>
+</li>
+</ul>
+<ul class="province4" type="PQRSTW">
+<li>
+<a title="盘锦">盘锦</a>
+</li>
+<li>
+<a title="攀枝花">攀枝花</a>
+</li>
+<li>
+<a title="彭州">彭州</a>
+</li>
+<li>
+<a title="平顶山">平顶山</a>
+</li>
+<li>
+<a title="平凉">平凉</a>
+</li>
+<li>
+<a title="萍乡">萍乡</a>
+</li>
+<li>
+<a title="普洱">普洱</a>
+</li>
+<li>
+<a title="濮阳">濮阳</a>
+</li>
+<li>
+<a title="迁安">迁安</a>
+</li>
+<li>
+<a title="黔东南">黔东南</a>
+</li>
+<li>
+<a title="潜江">潜江</a>
+</li>
+<li>
+<a title="黔西南">黔西南</a>
+</li>
+<li>
+<a title="启东">启东</a>
+</li>
+<li>
+<a title="青岛">青岛</a>
+</li>
+<li>
+<a title="庆阳">庆阳</a>
+</li>
+<li>
+<a title="清远">清远</a>
+</li>
+<li>
+<a title="秦皇岛">秦皇岛</a>
+</li>
+<li>
+<a title="钦州">钦州</a>
+</li>
+<li>
+<a title="齐齐哈尔">齐齐哈尔</a>
+</li>
+<li>
+<a title="泉州">泉州</a>
+</li>
+<li>
+<a title="曲靖">曲靖</a>
+</li>
+<li>
+<a title="衢州">衢州</a>
+</li>
+<li>
+<a title="日照">日照</a>
+</li>
+<li>
+<a title="如东">如东</a>
+</li>
+<li>
+<a title="如皋">如皋</a>
+</li>
+<li>
+<a title="瑞丽">瑞丽</a>
+</li>
+<li>
+<a title="三河">三河</a>
+</li>
+<li>
+<a title="三门峡">三门峡</a>
+</li>
+<li>
+<a title="三明">三明</a>
+</li>
+<li>
+<a title="三清山">三清山</a>
+</li>
+<li>
+<a title="三水">三水</a>
+</li>
+<li>
+<a title="三亚">三亚</a>
+</li>
+<li>
+<a title="上海">上海</a>
+</li>
+<li>
+<a title="商洛">商洛</a>
+</li>
+<li>
+<a title="商丘">商丘</a>
+</li>
+<li>
+<a title="上饶">上饶</a>
+</li>
+<li>
+<a title="上虞">上虞</a>
+</li>
+<li>
+<a title="汕头">汕头</a>
+</li>
+<li>
+<a title="汕尾">汕尾</a>
+</li>
+<li>
+<a title="韶关">韶关</a>
+</li>
+<li>
+<a title="绍兴">绍兴</a>
+</li>
+<li>
+<a title="邵阳">邵阳</a>
+</li>
+<li>
+<a title="沈阳">沈阳</a>
+</li>
+<li>
+<a title="深圳">深圳</a>
+</li>
+<li>
+<a title="什邡">什邡</a>
+</li>
+<li>
+<a title="石家庄">石家庄</a>
+</li>
+<li>
+<a title="石狮">石狮</a>
+</li>
+<li>
+<a title="十堰">十堰</a>
+</li>
+<li>
+<a title="石嘴山">石嘴山</a>
+</li>
+<li>
+<a title="寿光">寿光</a>
+</li>
+<li>
+<a title="双鸭山">双鸭山</a>
+</li>
+<li>
+<a title="顺德">顺德</a>
+</li>
+<li>
+<a title="朔州">朔州</a>
+</li>
+<li>
+<a title="四平">四平</a>
+</li>
+<li>
+<a title="松原">松原</a>
+</li>
+<li>
+<a title="绥化">绥化</a>
+</li>
+<li>
+<a title="遂宁">遂宁</a>
+</li>
+<li>
+<a title="随州">随州</a>
+</li>
+<li>
+<a title="宿迁">宿迁</a>
+</li>
+<li>
+<a title="苏州">苏州</a>
+</li>
+<li>
+<a title="宿州">宿州</a>
+</li>
+<li>
+<a title="泰安">泰安</a>
+</li>
+<li>
+<a title="太仓">太仓</a>
+</li>
+<li>
+<a title="太原">太原</a>
+</li>
+<li>
+<a title="泰州">泰州</a>
+</li>
+<li>
+<a title="台州">台州</a>
+</li>
+<li>
+<a title="唐山">唐山</a>
+</li>
+<li>
+<a title="天津">天津</a>
+</li>
+<li>
+<a title="天水">天水</a>
+</li>
+<li>
+<a title="铁岭">铁岭</a>
+</li>
+<li>
+<a title="桐城">桐城</a>
+</li>
+<li>
+<a title="铜川">铜川</a>
+</li>
+<li>
+<a title="通化">通化</a>
+</li>
+<li>
+<a title="通辽市">通辽市</a>
+</li>
+<li>
+<a title="铜陵">铜陵</a>
+</li>
+<li>
+<a title="桐庐">桐庐</a>
+</li>
+<li>
+<a title="铜仁">铜仁</a>
+</li>
+<li>
+<a title="桐乡">桐乡</a>
+</li>
+<li>
+<a title="吐鲁番">吐鲁番</a>
+</li>
+<li>
+<a title="万宁">万宁</a>
+</li>
+<li>
+<a title="万州">万州</a>
+</li>
+<li>
+<a title="潍坊">潍坊</a>
+</li>
+<li>
+<a title="威海">威海</a>
+</li>
+<li>
+<a title="渭南">渭南</a>
+</li>
+<li>
+<a title="文山">文山</a>
+</li>
+<li>
+<a title="温州">温州</a>
+</li>
+<li>
+<a title="乌海">乌海</a>
+</li>
+<li>
+<a title="武汉">武汉</a>
+</li>
+<li>
+<a title="芜湖">芜湖</a>
+</li>
+<li>
+<a title="乌鲁木齐">乌鲁木齐</a>
+</li>
+<li>
+<a title="武威">武威</a>
+</li>
+<li>
+<a title="无锡">无锡</a>
+</li>
+<li>
+<a title="婺源">婺源</a>
+</li>
+<li>
+<a title="五指山">五指山</a>
+</li>
+<li>
+<a title="吴忠">吴忠</a>
+</li>
+<li>
+<a title="梧州">梧州</a>
+</li>
+</ul>
+<ul class="province5" type="XYZ">
+<li>
+<a title="厦门">厦门</a>
+</li>
+<li>
+<a title="西安">西安</a>
+</li>
+<li>
+<a title="香港">香港</a>
+</li>
+<li>
+<a title="湘潭">湘潭</a>
+</li>
+<li>
+<a title="湘西">湘西</a>
+</li>
+<li>
+<a title="襄阳">襄阳</a>
+</li>
+<li>
+<a title="咸宁">咸宁</a>
+</li>
+<li>
+<a title="咸阳">咸阳</a>
+</li>
+<li>
+<a title="孝感">孝感</a>
+</li>
+<li>
+<a title="西昌">西昌</a>
+</li>
+<li>
+<a title="锡林郭勒盟">锡林郭勒盟</a>
+</li>
+<li>
+<a title="锡林浩特">锡林浩特</a>
+</li>
+<li>
+<a title="兴安盟">兴安盟</a>
+</li>
+<li>
+<a title="邢台">邢台</a>
+</li>
+<li>
+<a title="西宁">西宁</a>
+</li>
+<li>
+<a title="新乡">新乡</a>
+</li>
+<li>
+<a title="信阳">信阳</a>
+</li>
+<li>
+<a title="新余">新余</a>
+</li>
+<li>
+<a title="忻州">忻州</a>
+</li>
+<li>
+<a title="西双版纳">西双版纳</a>
+</li>
+<li>
+<a title="宣城">宣城</a>
+</li>
+<li>
+<a title="许昌">许昌</a>
+</li>
+<li>
+<a title="徐州">徐州</a>
+</li>
+<li>
+<a title="雅安">雅安</a>
+</li>
+<li>
+<a title="延安">延安</a>
+</li>
+<li>
+<a title="盐城">盐城</a>
+</li>
+<li>
+<a title="阳江">阳江</a>
+</li>
+<li>
+<a title="阳泉">阳泉</a>
+</li>
+<li>
+<a title="扬州">扬州</a>
+</li>
+<li>
+<a title="延吉">延吉</a>
+</li>
+<li>
+<a title="烟台">烟台</a>
+</li>
+<li>
+<a title="兖州">兖州</a>
+</li>
+<li>
+<a title="宜宾">宜宾</a>
+</li>
+<li>
+<a title="宜昌">宜昌</a>
+</li>
+<li>
+<a title="宜春">宜春</a>
+</li>
+<li>
+<a title="伊春">伊春</a>
+</li>
+<li>
+<a title="银川">银川</a>
+</li>
+<li>
+<a title="营口">营口</a>
+</li>
+<li>
+<a title="鹰潭">鹰潭</a>
+</li>
+<li>
+<a title="义乌">义乌</a>
+</li>
+<li>
+<a title="益阳">益阳</a>
+</li>
+<li>
+<a title="永州">永州</a>
+</li>
+<li>
+<a title="岳阳">岳阳</a>
+</li>
+<li>
+<a title="玉林">玉林</a>
+</li>
+<li>
+<a title="榆林">榆林</a>
+</li>
+<li>
+<a title="运城">运城</a>
+</li>
+<li>
+<a title="云浮">云浮</a>
+</li>
+<li>
+<a title="玉溪">玉溪</a>
+</li>
+<li>
+<a title="枣庄">枣庄</a>
+</li>
+<li>
+<a title="张家港">张家港</a>
+</li>
+<li>
+<a title="张家界">张家界</a>
+</li>
+<li>
+<a title="张家口">张家口</a>
+</li>
+<li>
+<a title="张掖">张掖</a>
+</li>
+<li>
+<a title="漳州">漳州</a>
+</li>
+<li>
+<a title="湛江">湛江</a>
+</li>
+<li>
+<a title="肇庆">肇庆</a>
+</li>
+<li>
+<a title="昭通">昭通</a>
+</li>
+<li>
+<a title="郑州">郑州</a>
+</li>
+<li>
+<a title="镇江">镇江</a>
+</li>
+<li>
+<a title="中江">中江</a>
+</li>
+<li>
+<a title="中山">中山</a>
+</li>
+<li>
+<a title="中卫">中卫</a>
+</li>
+<li>
+<a title="周口">周口</a>
+</li>
+<li>
+<a title="舟山">舟山</a>
+</li>
+<li>
+<a title="珠海">珠海</a>
+</li>
+<li>
+<a title="驻马店">驻马店</a>
+</li>
+<li>
+<a title="涿州">涿州</a>
+</li>
+<li>
+<a title="株洲">株洲</a>
+</li>
+<li>
+<a title="淄博">淄博</a>
+</li>
+<li>
+<a title="自贡">自贡</a>
+</li>
+<li>
+<a title="资阳">资阳</a>
+</li>
+<li>
+<a title="遵化">遵化</a>
+</li>
+<li>
+<a title="遵义">遵义</a>
+</li>
+</ul>
+</div>
+</div>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="handy-ultitle">名称</div>
+                        <div class="handy-dropdown w112">
+                            <div class="handy-inputwarp">
+                                <input onBlur="removeHover($(this),'名称/品牌/关键词')" onFocus="addHover($(this))" value="名称/品牌/关键词" name="hotelkw" class="handy-input" autocomplete="off" type="text">
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="handy-button" id="quick_hotel" onClick="javascript:if($('input[name=hotelkw]').val() == '名称/品牌/关键词'){$('input[name=hotelkw]').val('');}">查询</a><a style="display:none;" class="newga ga" t="分类导航" p="右侧快捷方式" ga_t="酒店|查询">查询</a></li>
+                </ul>
+                </form>
+            </div>
+            <div class="handy-flights">
+                <form id="travel_search_form" target="_blank" action="/travel/search.php" method="get">
+                <ul class="handy-ul">
+                    <li>
+                        <div class="handy-ultitle">我要去</div>
+                        <div class="handy-dropdown w112">
+                            <div class="handy-inputwarp">
+                                <input name="travelcity" autocomplete="off" id="frmcity" class="handy-input  input_text" value="北京" type="text">
+                                <i class="handy-icon"></i>
+                            </div>
+                            <div class="address-hot" dialoghtml="hotel">
+                                <a class="address-hot-close" href="javascript:void(0);"><em class="search-text-close"></em></a>
+<div class="address-hotlist">
+<ol class="address-hot-tit">
+<li class="current" onClick="tabCutoverCity(this,'hotaddress')">热门</li>
+<li onClick="tabCutoverCity(this,'province1')">ABCD</li>
+<li onClick="tabCutoverCity(this,'province2')">EFGHJ</li>
+<li onClick="tabCutoverCity(this,'province3')">KLMN</li>
+<li onClick="tabCutoverCity(this,'province4')">PQRSTW</li>
+<li onClick="tabCutoverCity(this,'province5')">XYZ</li>
+</ol>
+<div class="address-hot-con">
+<ul class="hotaddress" type="热门">
+<li>
+<a title="北京">北京</a>
+</li>
+<li>
+<a title="西安">西安</a>
+</li>
+<li>
+<a title="广州">广州</a>
+</li>
+<li>
+<a title="武汉">武汉</a>
+</li>
+<li>
+<a title="成都">成都</a>
+</li>
+<li>
+<a title="长沙">长沙</a>
+</li>
+<li>
+<a title="深圳">深圳</a>
+</li>
+<li>
+<a title="重庆">重庆</a>
+</li>
+<li>
+<a title="杭州">杭州</a>
+</li>
+<li>
+<a title="厦门">厦门</a>
+</li>
+<li>
+<a title="上海">上海</a>
+</li>
+<li>
+<a title="天津">天津</a>
+</li>
+<li>
+<a title="郑州">郑州</a>
+</li>
+<li>
+<a title="大连">大连</a>
+</li>
+<li>
+<a title="丽江">丽江</a>
+</li>
+<li>
+<a title="青岛">青岛</a>
+</li>
+<li>
+<a title="沈阳">沈阳</a>
+</li>
+<li>
+<a title="济南">济南</a>
+</li>
+<li>
+<a title="三亚">三亚</a>
+</li>
+<li>
+<a title="哈尔滨">哈尔滨</a>
+</li>
+</ul>
+<ul class="province1" type="ABCD">
+<li>
+<a title="阿坝州">阿坝州</a>
+</li>
+<li>
+<a title="阿拉善盟">阿拉善盟</a>
+</li>
+<li>
+<a title="阿勒泰">阿勒泰</a>
+</li>
+<li>
+<a title="安达">安达</a>
+</li>
+<li>
+<a title="安康">安康</a>
+</li>
+<li>
+<a title="安庆">安庆</a>
+</li>
+<li>
+<a title="鞍山">鞍山</a>
+</li>
+<li>
+<a title="安顺">安顺</a>
+</li>
+<li>
+<a title="安阳">安阳</a>
+</li>
+<li>
+<a title="澳门">澳门</a>
+</li>
+<li>
+<a title="白城">白城</a>
+</li>
+<li>
+<a title="白山">白山</a>
+</li>
+<li>
+<a title="白银">白银</a>
+</li>
+<li>
+<a title="保定">保定</a>
+</li>
+<li>
+<a title="宝鸡">宝鸡</a>
+</li>
+<li>
+<a title="保山">保山</a>
+</li>
+<li>
+<a title="保亭">保亭</a>
+</li>
+<li>
+<a title="包头">包头</a>
+</li>
+<li>
+<a title="巴彦淖尔">巴彦淖尔</a>
+</li>
+<li>
+<a title="巴中">巴中</a>
+</li>
+<li>
+<a title="北海">北海</a>
+</li>
+<li>
+<a title="北京">北京</a>
+</li>
+<li>
+<a title="蚌埠">蚌埠</a>
+</li>
+<li>
+<a title="本溪">本溪</a>
+</li>
+<li>
+<a title="毕节">毕节</a>
+</li>
+<li>
+<a title="滨州">滨州</a>
+</li>
+<li>
+<a title="亳州">亳州</a>
+</li>
+<li>
+<a title="沧州">沧州</a>
+</li>
+<li>
+<a title="长春">长春</a>
+</li>
+<li>
+<a title="常德">常德</a>
+</li>
+<li>
+<a title="昌吉">昌吉</a>
+</li>
+<li>
+<a title="长沙">长沙</a>
+</li>
+<li>
+<a title="常熟">常熟</a>
+</li>
+<li>
+<a title="长治">长治</a>
+</li>
+<li>
+<a title="常州">常州</a>
+</li>
+<li>
+<a title="巢湖">巢湖</a>
+</li>
+<li>
+<a title="朝阳">朝阳</a>
+</li>
+<li>
+<a title="潮州">潮州</a>
+</li>
+<li>
+<a title="承德">承德</a>
+</li>
+<li>
+<a title="成都">成都</a>
+</li>
+<li>
+<a title="郴州">郴州</a>
+</li>
+<li>
+<a title="赤峰">赤峰</a>
+</li>
+<li>
+<a title="池州">池州</a>
+</li>
+<li>
+<a title="重庆">重庆</a>
+</li>
+<li>
+<a title="楚雄">楚雄</a>
+</li>
+<li>
+<a title="滁州">滁州</a>
+</li>
+<li>
+<a title="大理">大理</a>
+</li>
+<li>
+<a title="大连">大连</a>
+</li>
+<li>
+<a title="丹东">丹东</a>
+</li>
+<li>
+<a title="大庆">大庆</a>
+</li>
+<li>
+<a title="大同">大同</a>
+</li>
+<li>
+<a title="大兴安岭">大兴安岭</a>
+</li>
+<li>
+<a title="达州">达州</a>
+</li>
+<li>
+<a title="德阳">德阳</a>
+</li>
+<li>
+<a title="德州">德州</a>
+</li>
+<li>
+<a title="定安">定安</a>
+</li>
+<li>
+<a title="定西">定西</a>
+</li>
+<li>
+<a title="定州">定州</a>
+</li>
+<li>
+<a title="迪庆">迪庆</a>
+</li>
+<li>
+<a title="东莞">东莞</a>
+</li>
+<li>
+<a title="东乡">东乡</a>
+</li>
+<li>
+<a title="东营">东营</a>
+</li>
+<li>
+<a title="都江堰">都江堰</a>
+</li>
+</ul>
+<ul class="province2" type="EFGHJ">
+<li>
+<a title="鄂尔多斯">鄂尔多斯</a>
+</li>
+<li>
+<a title="峨眉山">峨眉山</a>
+</li>
+<li>
+<a title="恩施">恩施</a>
+</li>
+<li>
+<a title="鄂州">鄂州</a>
+</li>
+<li>
+<a title="防城港">防城港</a>
+</li>
+<li>
+<a title="凤凰县">凤凰县</a>
+</li>
+<li>
+<a title="佛山">佛山</a>
+</li>
+<li>
+<a title="抚顺">抚顺</a>
+</li>
+<li>
+<a title="莆田">莆田</a>
+</li>
+<li>
+<a title="阜新">阜新</a>
+</li>
+<li>
+<a title="阜阳">阜阳</a>
+</li>
+<li>
+<a title="富阳">富阳</a>
+</li>
+<li>
+<a title="福州">福州</a>
+</li>
+<li>
+<a title="抚州">抚州</a>
+</li>
+<li>
+<a title="甘南">甘南</a>
+</li>
+<li>
+<a title="赣州">赣州</a>
+</li>
+<li>
+<a title="高碑店">高碑店</a>
+</li>
+<li>
+<a title="固安">固安</a>
+</li>
+<li>
+<a title="广汉">广汉</a>
+</li>
+<li>
+<a title="广元">广元</a>
+</li>
+<li>
+<a title="广州">广州</a>
+</li>
+<li>
+<a title="贵港">贵港</a>
+</li>
+<li>
+<a title="桂林">桂林</a>
+</li>
+<li>
+<a title="贵阳">贵阳</a>
+</li>
+<li>
+<a title="固原">固原</a>
+</li>
+<li>
+<a title="哈尔滨">哈尔滨</a>
+</li>
+<li>
+<a title="海安">海安</a>
+</li>
+<li>
+<a title="海口">海口</a>
+</li>
+<li>
+<a title="海门">海门</a>
+</li>
+<li>
+<a title="邯郸">邯郸</a>
+</li>
+<li>
+<a title="杭州">杭州</a>
+</li>
+<li>
+<a title="汉中">汉中</a>
+</li>
+<li>
+<a title="鹤壁">鹤壁</a>
+</li>
+<li>
+<a title="河池">河池</a>
+</li>
+<li>
+<a title="合肥">合肥</a>
+</li>
+<li>
+<a title="鹤岗">鹤岗</a>
+</li>
+<li>
+<a title="黑河">黑河</a>
+</li>
+<li>
+<a title="衡水">衡水</a>
+</li>
+<li>
+<a title="衡阳">衡阳</a>
+</li>
+<li>
+<a title="河源">河源</a>
+</li>
+<li>
+<a title="菏泽">菏泽</a>
+</li>
+<li>
+<a title="贺州">贺州</a>
+</li>
+<li>
+<a title="淮安">淮安</a>
+</li>
+<li>
+<a title="淮北">淮北</a>
+</li>
+<li>
+<a title="怀化">怀化</a>
+</li>
+<li>
+<a title="淮南">淮南</a>
+</li>
+<li>
+<a title="黄冈">黄冈</a>
+</li>
+<li>
+<a title="黄山">黄山</a>
+</li>
+<li>
+<a title="黄石">黄石</a>
+</li>
+<li>
+<a title="呼和浩特">呼和浩特</a>
+</li>
+<li>
+<a title="惠州">惠州</a>
+</li>
+<li>
+<a title="葫芦岛">葫芦岛</a>
+</li>
+<li>
+<a title="呼伦贝尔">呼伦贝尔</a>
+</li>
+<li>
+<a title="湖州">湖州</a>
+</li>
+<li>
+<a title="佳木斯">佳木斯</a>
+</li>
+<li>
+<a title="江门">江门</a>
+</li>
+<li>
+<a title="江阴">江阴</a>
+</li>
+<li>
+<a title="江油">江油</a>
+</li>
+<li>
+<a title="吉安">吉安</a>
+</li>
+<li>
+<a title="焦作">焦作</a>
+</li>
+<li>
+<a title="嘉兴">嘉兴</a>
+</li>
+<li>
+<a title="嘉峪关">嘉峪关</a>
+</li>
+<li>
+<a title="揭阳">揭阳</a>
+</li>
+<li>
+<a title="吉林">吉林</a>
+</li>
+<li>
+<a title="济南">济南</a>
+</li>
+<li>
+<a title="金昌">金昌</a>
+</li>
+<li>
+<a title="晋城">晋城</a>
+</li>
+<li>
+<a title="景德镇">景德镇</a>
+</li>
+<li>
+<a title="荆门">荆门</a>
+</li>
+<li>
+<a title="荆州">荆州</a>
+</li>
+<li>
+<a title="金华">金华</a>
+</li>
+<li>
+<a title="济宁">济宁</a>
+</li>
+<li>
+<a title="晋江">晋江</a>
+</li>
+<li>
+<a title="晋中">晋中</a>
+</li>
+<li>
+<a title="锦州">锦州</a>
+</li>
+<li>
+<a title="吉首">吉首</a>
+</li>
+<li>
+<a title="九江">九江</a>
+</li>
+<li>
+<a title="酒泉">酒泉</a>
+</li>
+<li>
+<a title="鸡西">鸡西</a>
+</li>
+<li>
+<a title="济源">济源</a>
+</li>
+</ul>
+<ul class="province3" type="KLMN">
+<li>
+<a title="开封">开封</a>
+</li>
+<li>
+<a title="喀什">喀什</a>
+</li>
+<li>
+<a title="克拉玛依">克拉玛依</a>
+</li>
+<li>
+<a title="库尔勒">库尔勒</a>
+</li>
+<li>
+<a title="昆明">昆明</a>
+</li>
+<li>
+<a title="昆山">昆山</a>
+</li>
+<li>
+<a title="来宾">来宾</a>
+</li>
+<li>
+<a title="莱芜">莱芜</a>
+</li>
+<li>
+<a title="廊坊">廊坊</a>
+</li>
+<li>
+<a title="兰溪">兰溪</a>
+</li>
+<li>
+<a title="兰州">兰州</a>
+</li>
+<li>
+<a title="拉萨">拉萨</a>
+</li>
+<li>
+<a title="乐平">乐平</a>
+</li>
+<li>
+<a title="乐山">乐山</a>
+</li>
+<li>
+<a title="连云港">连云港</a>
+</li>
+<li>
+<a title="聊城">聊城</a>
+</li>
+<li>
+<a title="辽阳">辽阳</a>
+</li>
+<li>
+<a title="辽源">辽源</a>
+</li>
+<li>
+<a title="丽江">丽江</a>
+</li>
+<li>
+<a title="临沧">临沧</a>
+</li>
+<li>
+<a title="临汾">临汾</a>
+</li>
+<li>
+<a title="临夏">临夏</a>
+</li>
+<li>
+<a title="临沂">临沂</a>
+</li>
+<li>
+<a title="丽水">丽水</a>
+</li>
+<li>
+<a title="溧水">溧水</a>
+</li>
+<li>
+<a title="溧水县">溧水县</a>
+</li>
+<li>
+<a title="六安">六安</a>
+</li>
+<li>
+<a title="六盘水">六盘水</a>
+</li>
+<li>
+<a title="柳州">柳州</a>
+</li>
+<li>
+<a title="陇南">陇南</a>
+</li>
+<li>
+<a title="龙岩">龙岩</a>
+</li>
+<li>
+<a title="娄底">娄底</a>
+</li>
+<li>
+<a title="漯河">漯河</a>
+</li>
+<li>
+<a title="洛阳">洛阳</a>
+</li>
+<li>
+<a title="泸州">泸州</a>
+</li>
+<li>
+<a title="吕梁">吕梁</a>
+</li>
+<li>
+<a title="马鞍山">马鞍山</a>
+</li>
+<li>
+<a title="茂名">茂名</a>
+</li>
+<li>
+<a title="眉山">眉山</a>
+</li>
+<li>
+<a title="梅州">梅州</a>
+</li>
+<li>
+<a title="绵阳">绵阳</a>
+</li>
+<li>
+<a title="绵竹">绵竹</a>
+</li>
+<li>
+<a title="牡丹江">牡丹江</a>
+</li>
+<li>
+<a title="南安">南安</a>
+</li>
+<li>
+<a title="南昌">南昌</a>
+</li>
+<li>
+<a title="南充">南充</a>
+</li>
+<li>
+<a title="南京">南京</a>
+</li>
+<li>
+<a title="南宁">南宁</a>
+</li>
+<li>
+<a title="南平">南平</a>
+</li>
+<li>
+<a title="南通">南通</a>
+</li>
+<li>
+<a title="南阳">南阳</a>
+</li>
+<li>
+<a title="内江">内江</a>
+</li>
+<li>
+<a title="宁波">宁波</a>
+</li>
+<li>
+<a title="宁德">宁德</a>
+</li>
+</ul>
+<ul class="province4" type="PQRSTW">
+<li>
+<a title="盘锦">盘锦</a>
+</li>
+<li>
+<a title="攀枝花">攀枝花</a>
+</li>
+<li>
+<a title="彭州">彭州</a>
+</li>
+<li>
+<a title="平顶山">平顶山</a>
+</li>
+<li>
+<a title="平凉">平凉</a>
+</li>
+<li>
+<a title="萍乡">萍乡</a>
+</li>
+<li>
+<a title="普洱">普洱</a>
+</li>
+<li>
+<a title="濮阳">濮阳</a>
+</li>
+<li>
+<a title="迁安">迁安</a>
+</li>
+<li>
+<a title="黔东南">黔东南</a>
+</li>
+<li>
+<a title="潜江">潜江</a>
+</li>
+<li>
+<a title="黔西南">黔西南</a>
+</li>
+<li>
+<a title="启东">启东</a>
+</li>
+<li>
+<a title="青岛">青岛</a>
+</li>
+<li>
+<a title="庆阳">庆阳</a>
+</li>
+<li>
+<a title="清远">清远</a>
+</li>
+<li>
+<a title="秦皇岛">秦皇岛</a>
+</li>
+<li>
+<a title="钦州">钦州</a>
+</li>
+<li>
+<a title="齐齐哈尔">齐齐哈尔</a>
+</li>
+<li>
+<a title="泉州">泉州</a>
+</li>
+<li>
+<a title="曲靖">曲靖</a>
+</li>
+<li>
+<a title="衢州">衢州</a>
+</li>
+<li>
+<a title="日照">日照</a>
+</li>
+<li>
+<a title="如东">如东</a>
+</li>
+<li>
+<a title="如皋">如皋</a>
+</li>
+<li>
+<a title="瑞丽">瑞丽</a>
+</li>
+<li>
+<a title="三河">三河</a>
+</li>
+<li>
+<a title="三门峡">三门峡</a>
+</li>
+<li>
+<a title="三明">三明</a>
+</li>
+<li>
+<a title="三清山">三清山</a>
+</li>
+<li>
+<a title="三水">三水</a>
+</li>
+<li>
+<a title="三亚">三亚</a>
+</li>
+<li>
+<a title="上海">上海</a>
+</li>
+<li>
+<a title="商洛">商洛</a>
+</li>
+<li>
+<a title="商丘">商丘</a>
+</li>
+<li>
+<a title="上饶">上饶</a>
+</li>
+<li>
+<a title="上虞">上虞</a>
+</li>
+<li>
+<a title="汕头">汕头</a>
+</li>
+<li>
+<a title="汕尾">汕尾</a>
+</li>
+<li>
+<a title="韶关">韶关</a>
+</li>
+<li>
+<a title="绍兴">绍兴</a>
+</li>
+<li>
+<a title="邵阳">邵阳</a>
+</li>
+<li>
+<a title="沈阳">沈阳</a>
+</li>
+<li>
+<a title="深圳">深圳</a>
+</li>
+<li>
+<a title="什邡">什邡</a>
+</li>
+<li>
+<a title="石家庄">石家庄</a>
+</li>
+<li>
+<a title="石狮">石狮</a>
+</li>
+<li>
+<a title="十堰">十堰</a>
+</li>
+<li>
+<a title="石嘴山">石嘴山</a>
+</li>
+<li>
+<a title="寿光">寿光</a>
+</li>
+<li>
+<a title="双鸭山">双鸭山</a>
+</li>
+<li>
+<a title="顺德">顺德</a>
+</li>
+<li>
+<a title="朔州">朔州</a>
+</li>
+<li>
+<a title="四平">四平</a>
+</li>
+<li>
+<a title="松原">松原</a>
+</li>
+<li>
+<a title="绥化">绥化</a>
+</li>
+<li>
+<a title="遂宁">遂宁</a>
+</li>
+<li>
+<a title="随州">随州</a>
+</li>
+<li>
+<a title="宿迁">宿迁</a>
+</li>
+<li>
+<a title="苏州">苏州</a>
+</li>
+<li>
+<a title="宿州">宿州</a>
+</li>
+<li>
+<a title="泰安">泰安</a>
+</li>
+<li>
+<a title="太仓">太仓</a>
+</li>
+<li>
+<a title="太原">太原</a>
+</li>
+<li>
+<a title="泰州">泰州</a>
+</li>
+<li>
+<a title="台州">台州</a>
+</li>
+<li>
+<a title="唐山">唐山</a>
+</li>
+<li>
+<a title="天津">天津</a>
+</li>
+<li>
+<a title="天水">天水</a>
+</li>
+<li>
+<a title="铁岭">铁岭</a>
+</li>
+<li>
+<a title="桐城">桐城</a>
+</li>
+<li>
+<a title="铜川">铜川</a>
+</li>
+<li>
+<a title="通化">通化</a>
+</li>
+<li>
+<a title="通辽市">通辽市</a>
+</li>
+<li>
+<a title="铜陵">铜陵</a>
+</li>
+<li>
+<a title="桐庐">桐庐</a>
+</li>
+<li>
+<a title="铜仁">铜仁</a>
+</li>
+<li>
+<a title="桐乡">桐乡</a>
+</li>
+<li>
+<a title="吐鲁番">吐鲁番</a>
+</li>
+<li>
+<a title="万宁">万宁</a>
+</li>
+<li>
+<a title="万州">万州</a>
+</li>
+<li>
+<a title="潍坊">潍坊</a>
+</li>
+<li>
+<a title="威海">威海</a>
+</li>
+<li>
+<a title="渭南">渭南</a>
+</li>
+<li>
+<a title="文山">文山</a>
+</li>
+<li>
+<a title="温州">温州</a>
+</li>
+<li>
+<a title="乌海">乌海</a>
+</li>
+<li>
+<a title="武汉">武汉</a>
+</li>
+<li>
+<a title="芜湖">芜湖</a>
+</li>
+<li>
+<a title="乌鲁木齐">乌鲁木齐</a>
+</li>
+<li>
+<a title="武威">武威</a>
+</li>
+<li>
+<a title="无锡">无锡</a>
+</li>
+<li>
+<a title="婺源">婺源</a>
+</li>
+<li>
+<a title="五指山">五指山</a>
+</li>
+<li>
+<a title="吴忠">吴忠</a>
+</li>
+<li>
+<a title="梧州">梧州</a>
+</li>
+</ul>
+<ul class="province5" type="XYZ">
+<li>
+<a title="厦门">厦门</a>
+</li>
+<li>
+<a title="西安">西安</a>
+</li>
+<li>
+<a title="香港">香港</a>
+</li>
+<li>
+<a title="湘潭">湘潭</a>
+</li>
+<li>
+<a title="湘西">湘西</a>
+</li>
+<li>
+<a title="襄阳">襄阳</a>
+</li>
+<li>
+<a title="咸宁">咸宁</a>
+</li>
+<li>
+<a title="咸阳">咸阳</a>
+</li>
+<li>
+<a title="孝感">孝感</a>
+</li>
+<li>
+<a title="西昌">西昌</a>
+</li>
+<li>
+<a title="锡林郭勒盟">锡林郭勒盟</a>
+</li>
+<li>
+<a title="锡林浩特">锡林浩特</a>
+</li>
+<li>
+<a title="兴安盟">兴安盟</a>
+</li>
+<li>
+<a title="邢台">邢台</a>
+</li>
+<li>
+<a title="西宁">西宁</a>
+</li>
+<li>
+<a title="新乡">新乡</a>
+</li>
+<li>
+<a title="信阳">信阳</a>
+</li>
+<li>
+<a title="新余">新余</a>
+</li>
+<li>
+<a title="忻州">忻州</a>
+</li>
+<li>
+<a title="西双版纳">西双版纳</a>
+</li>
+<li>
+<a title="宣城">宣城</a>
+</li>
+<li>
+<a title="许昌">许昌</a>
+</li>
+<li>
+<a title="徐州">徐州</a>
+</li>
+<li>
+<a title="雅安">雅安</a>
+</li>
+<li>
+<a title="延安">延安</a>
+</li>
+<li>
+<a title="盐城">盐城</a>
+</li>
+<li>
+<a title="阳江">阳江</a>
+</li>
+<li>
+<a title="阳泉">阳泉</a>
+</li>
+<li>
+<a title="扬州">扬州</a>
+</li>
+<li>
+<a title="延吉">延吉</a>
+</li>
+<li>
+<a title="烟台">烟台</a>
+</li>
+<li>
+<a title="兖州">兖州</a>
+</li>
+<li>
+<a title="宜宾">宜宾</a>
+</li>
+<li>
+<a title="宜昌">宜昌</a>
+</li>
+<li>
+<a title="宜春">宜春</a>
+</li>
+<li>
+<a title="伊春">伊春</a>
+</li>
+<li>
+<a title="银川">银川</a>
+</li>
+<li>
+<a title="营口">营口</a>
+</li>
+<li>
+<a title="鹰潭">鹰潭</a>
+</li>
+<li>
+<a title="义乌">义乌</a>
+</li>
+<li>
+<a title="益阳">益阳</a>
+</li>
+<li>
+<a title="永州">永州</a>
+</li>
+<li>
+<a title="岳阳">岳阳</a>
+</li>
+<li>
+<a title="玉林">玉林</a>
+</li>
+<li>
+<a title="榆林">榆林</a>
+</li>
+<li>
+<a title="运城">运城</a>
+</li>
+<li>
+<a title="云浮">云浮</a>
+</li>
+<li>
+<a title="玉溪">玉溪</a>
+</li>
+<li>
+<a title="枣庄">枣庄</a>
+</li>
+<li>
+<a title="张家港">张家港</a>
+</li>
+<li>
+<a title="张家界">张家界</a>
+</li>
+<li>
+<a title="张家口">张家口</a>
+</li>
+<li>
+<a title="张掖">张掖</a>
+</li>
+<li>
+<a title="漳州">漳州</a>
+</li>
+<li>
+<a title="湛江">湛江</a>
+</li>
+<li>
+<a title="肇庆">肇庆</a>
+</li>
+<li>
+<a title="昭通">昭通</a>
+</li>
+<li>
+<a title="郑州">郑州</a>
+</li>
+<li>
+<a title="镇江">镇江</a>
+</li>
+<li>
+<a title="中江">中江</a>
+</li>
+<li>
+<a title="中山">中山</a>
+</li>
+<li>
+<a title="中卫">中卫</a>
+</li>
+<li>
+<a title="周口">周口</a>
+</li>
+<li>
+<a title="舟山">舟山</a>
+</li>
+<li>
+<a title="珠海">珠海</a>
+</li>
+<li>
+<a title="驻马店">驻马店</a>
+</li>
+<li>
+<a title="涿州">涿州</a>
+</li>
+<li>
+<a title="株洲">株洲</a>
+</li>
+<li>
+<a title="淄博">淄博</a>
+</li>
+<li>
+<a title="自贡">自贡</a>
+</li>
+<li>
+<a title="资阳">资阳</a>
+</li>
+<li>
+<a title="遵化">遵化</a>
+</li>
+<li>
+<a title="遵义">遵义</a>
+</li>
+</ul>
+</div>
+</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="handy-ultitle">名　称</div>
+                        <div class="handy-dropdown w112">
+                            <div class="handy-inputwarp">
+                                <input autocomplete="off" onBlur="removeHover($(this),'景点/关键词')" onFocus="addHover($(this))" value="景点/关键词" class="handy-input input_text" name="travelkw" type="text">
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="handy-button" onClick="javascript:if($('input[name=travelkw]').val() == '景点/关键词'){$('input[name=travelkw]').val('');};$('#travel_search_form').submit();">查询</a><a style="display:none;" class="newga ga" t="分类导航" p="右侧快捷方式" ga_t="旅游|查询">查询</a></li>
+                </ul>
+                </form>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+	</div>
+	<!--<div class="recommend-goods">
+		<div class="recommend-title">
+							<span class="current" onclick="tabCutover(this,'rc-new');">今日新单<i></i></span>			<span onclick="tabCutover(this,'re-week');">一周热卖<i></i></span>
+		</div>
+		<div class="recommend-content">
+						<div class="rc-new" style="display:block;">
+				<div id="new-goods" class="slider-warp" options="new-goods|left|0|5000|1000|1|1|0|1">
+					<div class="slider-ulwarp">
+						<ul style="width: 5810px; position: relative; left: -1162px;" class="slider-ul"><li style="float: left; list-style: outside none none; width: 1162px;">
+																									<div class="small-goods noml">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11243798.html" target="_blank"><img class="dynload" src="images/CqgBHlWR65WAE4EGAAKWh0wHXGc478-198x126.jpg" alt="【59店通用】天长地久玫瑰花1束，精美包装" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11243798.html" target="_blank">【59店通用】爱满家花艺</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11243798.html" target="_blank">天长地久玫瑰花1束，精美包装</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>279</span>
+										<span class="money">¥<del>688</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11245390.html" target="_blank"><img class="dynload" src="images/CqgBVFWSB--ANkXPAAFXilRIpOE612-198x126.jpg" alt="【望京】单人中式自助餐，全天通用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11245390.html" target="_blank">【望京】惠家米皮</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11245390.html" target="_blank">单人中式自助餐，全天通用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>19.8</span>
+										<span class="money">¥<del>40</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11244324.html" target="_blank"><img class="dynload" src="images/CqgBHlWR-WGAFvJCAAFsG109mPo650-198x126.jpg" alt="【12店通用】现金抵用1次，全场通用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11244324.html" target="_blank">【12店通用】非尝麻辣</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11244324.html" target="_blank">现金抵用1次，全场通用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>8</span>
+										<span class="money">¥<del>10</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11243966.html" target="_blank"><img class="dynload" src="images/CqgBJlWSK5eAMNXRAACmssFc3DM872-198x126.jpg" alt="【洋桥】现金抵用1次，可叠加使用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11243966.html" target="_blank">【洋桥】洋桥食府</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11243966.html" target="_blank">现金抵用1次，可叠加使用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>81</span>
+										<span class="money">¥<del>100</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11244122.html" target="_blank"><img class="dynload" src="images/CqgBVFWR9K2AUbsxAAChEh_8R4E200-198x126.jpg" alt="【果园】欢唱券1张，免费WiFi" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11244122.html" target="_blank">【果园】华美小木屋KTV</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11244122.html" target="_blank">欢唱券1张，免费WiFi</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>40</span>
+										<span class="money">¥<del>428</del></span>
+									</div>
+									</div>
+																	</li><li style="float: left; list-style: outside none none; width: 1162px;">
+																									<div class="small-goods noml">
+																	<a class="small-goods-img" href="http://www.lashou.com/travel/deal/11252908.html" target="_blank"><img class="dynload" src="images/CqgBHlQg3biAd6n9AADzIyAlAh8464-198x126.jpg" alt="【天津】平日学生票1张" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://www.lashou.com/travel/deal/11252908.html" target="_blank">【天津】天山海世界·米立方</a>
+										<a class="small-goods-text" href="http://www.lashou.com/travel/deal/11252908.html" target="_blank">平日学生票1张</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>60</span>
+										<span class="money">¥<del>140</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11249074.html" target="_blank"><img class="dynload" src="images/CqgBVFWSurOACvY1AADFeNvYHrU166-198x126.jpg" alt="【菜市口】全身精油SPA套系，免费WiFi" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11249074.html" target="_blank">【菜市口】娜样年华私人形象会所（陶然居店）</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11249074.html" target="_blank">全身精油SPA套系，免费WiFi</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>299</span>
+										<span class="money">¥<del>399</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://www.lashou.com/travel/deal/11247812.html" target="_blank"><img class="dynload" src="images/CqgBVFWSOaSAf0QwAACun4e07fg286-198x126.jpg" alt="【海口】套票1份" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://www.lashou.com/travel/deal/11247812.html" target="_blank">【海口】海口观澜湖温泉</a>
+										<a class="small-goods-text" href="http://www.lashou.com/travel/deal/11247812.html" target="_blank">套票1份</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>158</span>
+										<span class="money">¥<del>298</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11240210.html" target="_blank"><img class="dynload" src="images/CqgBJlWQ6WWAYI9XAACNMiZh1TI859-198x126.jpg" alt="【回龙观】烧烤4-6人餐，提供免费WiFi，免费停车" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11240210.html" target="_blank">【回龙观】IT联盟烧烤基地（龙禧小吃城店）</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11240210.html" target="_blank">烧烤4-6人餐，提供免费WiFi，免费停车</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>149</span>
+										<span class="money">¥<del>234</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11243874.html" target="_blank"><img class="dynload" src="images/CqgBHlWSBSmAUgL1AADAnjaQjX4978-198x126.jpg" alt="【五棵松】现金抵用1次，可叠加，不限时段通用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11243874.html" target="_blank">【五棵松】金坛乐宾楼</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11243874.html" target="_blank">现金抵用1次，可叠加，不限时段通用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>82</span>
+										<span class="money">¥<del>100</del></span>
+									</div>
+									</div>
+																	</li><li style="float: left; list-style: outside none none; width: 1162px;">
+																									<div class="small-goods noml">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11235712.html" target="_blank"><img class="dynload" src="images/CqgBJlWQsEeAa1LIAAG04mZoPfE143-198x126.jpg" alt="【石佛营】招牌早堂面单人餐，交通便利，临近炫特小区" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11235712.html" target="_blank">【石佛营】gofar古法私房面</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11235712.html" target="_blank">招牌早堂面单人餐，交通便利，临近炫特小区</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>23</span>
+										<span class="money">¥<del>27</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11243916.html" target="_blank"><img class="dynload" src="images/CqgBHlWSB66ASpEEAACSruBIpvc130-198x126.jpg" alt="【11店通用】双层法国顶级天然乳脂蛋糕，五环内免费配送" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11243916.html" target="_blank">【11店通用】皇家Cake工坊</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11243916.html" target="_blank">双层法国顶级天然乳脂蛋糕，五环内免费配送</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>268</span>
+										<span class="money">¥<del>688</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11246092.html" target="_blank"><img class="dynload" src="images/CqgBVFWSX46AMdhIAABVZBaNzeI878-198x126.jpg" alt="【方庄】局部按摩1次，专业手法" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11246092.html" target="_blank">【方庄】十指康盲人按摩</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11246092.html" target="_blank">局部按摩1次，专业手法</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>35</span>
+										<span class="money">¥<del>45</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11246844.html" target="_blank"><img class="dynload" src="images/CqgBVFWSbP2AKv_BAAFDxBGXaaM942-198x126.jpg" alt="【亦庄】现金抵用1次，全场通用，可叠加使用" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11246844.html" target="_blank">【亦庄】玉林串串香（亦庄永康店）</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11246844.html" target="_blank">现金抵用1次，全场通用，可叠加使用</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>136</span>
+										<span class="money">¥<del>200</del></span>
+									</div>
+									</div>
+																																																<div class="small-goods">
+																	<a class="small-goods-img" href="http://beijing.lashou.com/deal/11243888.html" target="_blank"><img class="dynload" src="images/CqgBHlWRDAKAOv0XAAFmtCXcqlg207-198x126.jpg" alt="【新华大街】单人烧烤自助餐，全天通用，啤酒饮料免费畅饮" height="126" width="198"></a>
+									<h4>
+										<a class="small-goods-name" href="http://beijing.lashou.com/deal/11243888.html" target="_blank">【新华大街】快乐源农庄（潞城店）</a>
+										<a class="small-goods-text" href="http://beijing.lashou.com/deal/11243888.html" target="_blank">单人烧烤自助餐，全天通用，啤酒饮料免费畅饮</a>
+									</h4>
+									<div class="small-goods-info">
+										<span class="price"><em>¥</em>75</span>
+										<span class="money">¥<del>158</del></span>
+									</div>
+									</div>
+																	</li></ul>	
+					</div>
+				  <div class="slider-pn">                                <a class="slider-prev iepng" hidefocus="true" href="javascript:void(0);"></a>                                <a class="slider-next iepng" hidefocus="true" href="javascript:void(0);"></a>                            </div><div class="slider-page"><span class="select"><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span></div></div>
+			</div>
+			<div class="re-week">
+				<div id="hotweek-goods" class="slider-warp" options="hotweek-goods|left|0|5000|1000|1|1|0|1">
+                    <div class="slider-ulwarp">
+					<ul style="width: 5810px; position: relative; left: -1162px;" class="slider-ul"><li style="float: left; list-style: outside none none; width: 1162px;">
+																						<div class="small-goods noml">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/10856804.html" target="_blank"><img class="dynload" src="images/CqgBVFT4-5mAaxuDAADZO5ZfQxQ818-198x126.jpg" alt="【53店通用】现金抵用1次，可叠加使用" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/10856804.html" target="_blank">【53店通用】嘉事堂药店</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/10856804.html" target="_blank">现金抵用1次，可叠加使用</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>42</span>
+									<span class="money">¥<del>50</del></span>
+																			<span class="number">已售<i>873</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/10971184.html" target="_blank"><img class="dynload" src="images/CqgBJlVdP5yAZP_aAAHLruAzKr4823-198x126.jpg" alt="【4店通用】双人餐，精选优质食材" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/10971184.html" target="_blank">【4店通用】御香苑</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/10971184.html" target="_blank">双人餐，精选优质食材</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>88</span>
+									<span class="money">¥<del>268</del></span>
+																			<span class="number">已售<i>291</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/9858041.html" target="_blank"><img class="dynload" src="images/CqgBVFSTwsWAL298AADgvAk9B64045-198x126.jpg" alt="【梨园】单人烧烤自助晚餐，啤酒、饮料、红酒、白酒免费畅饮" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/9858041.html" target="_blank">【梨园】汉宁苑自助烤肉</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/9858041.html" target="_blank">单人烧烤自助晚餐，啤酒、饮料、红酒、白酒免费畅饮</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>49</span>
+									<span class="money">¥<del>55</del></span>
+																			<span class="number">已售<i>307</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/10014929.html" target="_blank"><img class="dynload" src="images/CqgBVFSzaKaAEoSdAAFw2IVLaO8625-198x126.jpg" alt="【四季青】1小时欢唱券，免费WiFi，免费停车" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/10014929.html" target="_blank">【四季青】鑫源主题式量贩KTV</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/10014929.html" target="_blank">1小时欢唱券，免费WiFi，免费停车</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>9.9</span>
+									<span class="money">¥<del>360</del></span>
+																			<span class="number">已售<i>134</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/9977127.html" target="_blank"><img class="dynload" src="images/CqgBHlSspLCAdPpyAACeHGphCPA961-198x126.jpg" alt="【马驹桥】单人电影票，可观看2D/3D" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/9977127.html" target="_blank">【马驹桥】百尚影城</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/9977127.html" target="_blank">单人电影票，可观看2D/3D</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>22</span>
+									<span class="money">¥<del>80</del></span>
+																			<span class="number">已售<i>350</i></span>
+																	</div>
+							</div>
+															</li><li style="float: left; list-style: outside none none; width: 1162px;">
+																						<div class="small-goods noml">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/7912581.html" target="_blank"><img class="dynload" src="images/CqgBHlP0MjqAceFUAACsXeGhMtA249-198x126.jpg" alt="【王府井】谭家菜：4人餐，节假日通用" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/7912581.html" target="_blank">【王府井】谭家菜</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/7912581.html" target="_blank">谭家菜：4人餐，节假日通用</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>1996</span>
+									<span class="money">¥<del>4800</del></span>
+																			<span class="number">已售<i>10</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/9494857.html" target="_blank"><img class="dynload" src="images/CqgBJlRwN5yADTOOAAEk8fCuhRU757-198x126.jpg" alt="【双井】精品火锅4-5人餐，午/晚餐通享" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/9494857.html" target="_blank">【双井】东来顺饭庄（朝阳双井店）</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/9494857.html" target="_blank">精品火锅4-5人餐，午/晚餐通享</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>197</span>
+									<span class="money">¥<del>557</del></span>
+																			<span class="number">已售<i>4662</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/11202684.html" target="_blank"><img class="dynload" src="images/CqgBVFWLcyiAOQOMAAC2_0h8msg667-198x126.jpg" alt="【3店通用】1000元现金抵用1次，仅限全车贴威固太阳膜使用" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/11202684.html" target="_blank">【3店通用】欧斯通汽车</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/11202684.html" target="_blank">1000元现金抵用1次，仅限全车贴威固太阳膜使用</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>100</span>
+									<span class="money">¥<del>1000</del></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/11135542.html" target="_blank"><img class="dynload" src="images/CqgBJlVxDVqAYY9zAADsAy5_CI0523-198x126.jpg" alt="【北太平庄】传统牛肉面1份，免费WiFi" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/11135542.html" target="_blank">【北太平庄】金城中国兰州牛肉拉面</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/11135542.html" target="_blank">传统牛肉面1份，免费WiFi</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>9.9</span>
+									<span class="money">¥<del>15</del></span>
+																			<span class="number">已售<i>1</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://www.lashou.com/travel/deal/11225744.html" target="_blank"><img class="dynload" src="images/CqgBVFWQvRSAPx-7AAEepJweTOw988-198x126.jpg" alt="【鸟巢】鸟巢参观-门票1张" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://www.lashou.com/travel/deal/11225744.html" target="_blank">【鸟巢】鸟巢国家体育场</a>
+									<a class="small-goods-text" href="http://www.lashou.com/travel/deal/11225744.html" target="_blank">鸟巢参观-门票1张</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>48</span>
+									<span class="money">¥<del>50</del></span>
+																	</div>
+							</div>
+															</li><li style="float: left; list-style: outside none none; width: 1162px;">
+																						<div class="small-goods noml">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/8832420.html" target="_blank"><img class="dynload" src="images/CqgBHlQbwNSAILgNAADRFaB9euU741-198x126.jpg" alt="【西直门】10人餐，提供无线WIFI" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/8832420.html" target="_blank">【西直门】鲍鱼王子(官园店)</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/8832420.html" target="_blank">10人餐，提供无线WIFI</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>3000</span>
+									<span class="money">¥<del>5972</del></span>
+																			<span class="number">已售<i>2</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/10595699.html" target="_blank"><img class="dynload" src="images/CqgBJlT9RdGAQcHZAAGfjrN3jRE128-198x126.jpg" alt="【5店通用】单人自助午餐券1张，适用北京所有金钱豹国际美食百汇" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/10595699.html" target="_blank">【5店通用】金钱豹</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/10595699.html" target="_blank">单人自助午餐券1张，适用北京所有金钱豹国际美食百汇</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>182</span>
+									<span class="money">¥<del>218</del></span>
+																			<span class="number">已售<i>73</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/9180133.html" target="_blank"><img class="dynload" src="images/CqgBVFRN_liAA79aAADUoQ6CeTk629-198x126.jpg" alt="【北大地】单人自助餐，午晚餐通用，西式批萨+巴西烤肉等 " height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/9180133.html" target="_blank">【北大地】好伦哥（丰管路店）</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/9180133.html" target="_blank">单人自助餐，午晚餐通用，西式批萨+巴西烤肉等 </a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>51</span>
+									<span class="money">¥<del>56</del></span>
+																			<span class="number">已售<i>635</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/8234957.html" target="_blank"><img class="dynload" src="images/CqgBVFPR07OAeCmvAAEX50crvZA853-198x126.jpg" alt="【北大地】汉丽轩（北大地店）：单人自助晚餐，无需预约" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/8234957.html" target="_blank">【北大地】汉丽轩（北大地店）</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/8234957.html" target="_blank">汉丽轩（北大地店）：单人自助晚餐，无需预约</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>45</span>
+									<span class="money">¥<del>49</del></span>
+																			<span class="number">已售<i>1942</i></span>
+																	</div>
+							</div>
+																																										<div class="small-goods">
+															<a class="small-goods-img" href="http://beijing.lashou.com/deal/9898971.html" target="_blank"><img class="dynload" src="images/CqgBHlSks6aAR7HWAAC-SfcITGY025-198x126.jpg" alt="【前门】2-3人餐，免费WiFi，免费车位" height="126" width="198"></a>
+								<h4>
+									<a class="small-goods-name" href="http://beijing.lashou.com/deal/9898971.html" target="_blank">【前门】前门狗不理</a>
+									<a class="small-goods-text" href="http://beijing.lashou.com/deal/9898971.html" target="_blank">2-3人餐，免费WiFi，免费车位</a>
+								</h4>
+								<div class="small-goods-info">
+									<span class="price"><em>¥</em>109</span>
+									<span class="money">¥<del>410</del></span>
+																			<span class="number">已售<i>172</i></span>
+																	</div>
+							</div>
+															</li></ul>
+                    </div>
+				  <div class="slider-pn">                                <a class="slider-prev iepng" hidefocus="true" href="javascript:void(0);"></a>                                <a class="slider-next iepng" hidefocus="true" href="javascript:void(0);"></a>                            </div><div class="slider-page"><span class="select"><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span><span><a hidefocus="true">H</a></span></div></div>
+			</div>
+	   </div>
+	</div>-->
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="meishi"></i><a class="meishi" href="http://beijing.lashou.com/cate/meishi">美食</a>
+			<div class="fr">
+								<a href="http://beijing.lashou.com/cate/huoguo" target="_blank">火锅</a>
+				<span></span>
+								<a href="http://beijing.lashou.com/cate/zizhu" target="_blank">自助餐</a>
+				<span></span>
+								<a href="http://beijing.lashou.com/cate/tianpin" target="_blank">蛋糕甜品</a>
+				<span></span>
+								<a href="http://beijing.lashou.com/cate/beijingcai" target="_blank">北京菜</a>
+				<span></span>
+								<a href="http://beijing.lashou.com/cate/shaokao" target="_blank">烧烤</a>
+				<span></span>
+								<a href="http://beijing.lashou.com/cate/kuaican" target="_blank">小吃快餐</a>
+				<span></span>
+								<a href="http://beijing.lashou.com/cate/meishi" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/DD/44/CqgBJlWKJymAA_SaAAFWGx5AnjM548-308x196.jpg" src="images/a.gif" alt="东来顺林达饭庄">
+											<span class="index-goods-place">北京朝阳区东土城路8号A座</span>
+										<span class="goods-mark">
+																									<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【西坝河东里】东来顺林达饭庄">【西坝河东里】东来顺林达饭庄</a>
+						<a class="index-goods-text" href="" target="_blank" title="海参菌汤火锅4-5人餐，服务周到">海参菌汤火锅4-5人餐，服务周到</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>199</span>
+	                        <span class="money">¥<del>512</del></span>
+	                        <span class="number">已售<i>140</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/61/3E/CqgBJlQEI2OAQBKiAADqthPtTvI873-308x196.jpg" src="images/a.gif" alt="俏江南">
+											<span class="index-goods-place">恒基店、阳光店、亦庄店、华贸店、东方店、望京店、首体-腾达店、银座店、金融街店、亮马河店、翠微广场店、安贞店、北京通州店</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【13店通用】俏江南">【13店通用】俏江南</a>
+						<a class="index-goods-text" href="" target="_blank" title="自选4人餐，提供免费WiFi，含服务费">自选4人餐，提供免费WiFi，含服务费</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>298</span>
+	                        <span class="money">¥<del>1234.2</del></span>
+	                        <span class="number">已售<i>1044</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/67/73/CqgBJlQRYoSAVAS-AAEEXg6IX5c768-308x196.jpg" src="images/a.gif" alt="汉丽轩">
+											<span class="index-goods-place">十里堡店、白纸坊店</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【2店通用】汉丽轩">【2店通用】汉丽轩</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人烤肉自助午餐，酒水饮料无限畅饮">单人烤肉自助午餐，酒水饮料无限畅饮</a>
+					</h3>
+					<div class="index-goods-info">
+						                        	                        		<span class="price"><em>¥</em>39.9</span>
+								<span class="app-price"><b>立减 </b><em>¥7.98</em></span>
+								<span class="money">¥<del>49</del></span>
+								<span class="number">已售<i>3307</i></span>                        	                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/DE/63/CqgBJlWQ5VGAYjO9AAC1X6ca9BE585-308x196.jpg" src="images/a.gif" alt="亚日一阁">
+											<span class="index-goods-place">北京东城区朝阳门银河SOHO C座 B1 3-102</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【朝阳门】亚日一阁">【朝阳门】亚日一阁</a>
+						<a class="index-goods-text" href="" target="_blank" title="4人餐，提供免费WiFi">4人餐，提供免费WiFi</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>299</span>
+	                        <span class="money">¥<del>403</del></span>
+	                        <span class="number">已售<i>12</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/BF/B4/CqgBVFUsh1yAWPiBAAEJrLhIp5s315-308x196.jpg" src="images/a.gif" alt="国宾酒店自助餐厅">
+											<span class="index-goods-place">北京西城区阜成门外大街甲9号国宾酒店1楼</span>
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【阜成门】国宾酒店自助餐厅">【阜成门】国宾酒店自助餐厅</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人自助餐，午晚餐通用">单人自助餐，午晚餐通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>138</span>
+	                        <span class="money">¥<del>216</del></span>
+	                        <span class="number">已售<i>176</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/76/12/CqgBHlQqXdaAcqu9AADcjaGwm9E741-308x196.jpg" src="images/a.gif" alt="新辣道">
+											<span class="index-goods-place">北京常营华联店、北京回龙观店、北京通州北苑店、北京西直门店、北京肖家河店、北京望京店、北京蓝色港湾店、北京上地店、北京马…</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【32店通用】新辣道">【32店通用】新辣道</a>
+						<a class="index-goods-text" href="" target="_blank" title="100元现金抵用1次，可叠加使用">100元现金抵用1次，可叠加使用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>88</span>
+	                        <span class="money">¥<del>100</del></span>
+	                        <span class="number">已售<i>8516</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/4E/7B/CqgBHlPZoNGAZ1L3AAEGLh7ktlo275-308x196.jpg" src="images/a.gif" alt="好伦哥">
+											<span class="index-goods-place">北京海淀区复兴路甲36号百朗园B座二层</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【五棵松】好伦哥">【五棵松】好伦哥</a>
+						<a class="index-goods-text" href="" target="_blank" title="好伦哥：单人自助餐，无需预约，单人自助">好伦哥：单人自助餐，无需预约，单人自助</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>52</span>
+	                        <span class="money">¥<del>56</del></span>
+	                        <span class="number">已售<i>2726</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/C3/29/CqgBVFU4U3OAd98PAAEby0haSkA660-308x196.jpg" src="images/a.gif" alt="金凤成祥">
+											<span class="index-goods-place">北太店、师大二店、金凤成祥（万客隆店)、金凤成祥（财经大学店)、交大一店、交大二店、文慧园一店、燕莎店、左岸店、万柳店、…</span>
+										<span class="goods-mark">
+																									<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【268店通用】金凤成祥">【268店通用】金凤成祥</a>
+						<a class="index-goods-text" href="" target="_blank" title="现金抵用1次，全场通用">现金抵用1次，全场通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>17</span>
+	                        <span class="money">¥<del>20</del></span>
+	                        <span class="number">已售<i>456</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/B7/A8/CqgBVFUHwNKAGsL5AB9Yq_JWFqs724-308x196.jpg" src="images/a.gif" alt="深海800米海鲜自助">
+											<span class="index-goods-place">王府井店、双井店</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【2店通用】深海800米海鲜自助">【2店通用】深海800米海鲜自助</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人自助餐，午餐/晚餐通用，海鲜/中式/西式等">单人自助餐，午餐/晚餐通用，海鲜/中式/西式等</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>228</span>
+	                        <span class="money">¥<del>258</del></span>
+	                        <span class="number">已售<i>395</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/D8/03/CqgBVFV6jY-AadA-AAC6cibsBF0160-308x196.jpg" src="images/a.gif" alt="便宜坊烤鸭店">
+											<span class="index-goods-place">三里屯店、太阳宫店、朝阳大悦城店、五彩城店</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【4店通用】便宜坊烤鸭店">【4店通用】便宜坊烤鸭店</a>
+						<a class="index-goods-text" href="" target="_blank" title="4人餐，地道口味">4人餐，地道口味</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>328</span>
+	                        <span class="money">¥<del>658</del></span>
+	                        <span class="number">已售<i>11</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/A2/BC/CqgBHlSY_2aAAECxAAFIXS84Mc0746-308x196.jpg" src="images/a.gif" alt="富丽客巴西烤肉">
+											<span class="index-goods-place">劲松店、长虹桥店、永定路店、清华园店</span>
+										<span class="goods-mark">
+																									<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【4店通用】富丽客巴西烤肉">【4店通用】富丽客巴西烤肉</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人烤肉自助餐，午晚餐通用">单人烤肉自助餐，午晚餐通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>62</span>
+	                        <span class="money">¥<del>68</del></span>
+	                        <span class="number">已售<i>42526</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/5E/BE/CqgBHlP-vZGAUayKAAC1omWC9uI572-308x196.jpg" src="images/a.gif" alt="福樱兰日本料理">
+											<span class="index-goods-place">北京通州区梨园东里2号（妇幼保健医院南侧格林豪泰酒店一层）	</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【梨园】福樱兰日本料理">【梨园】福樱兰日本料理</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人自助午/晚餐，提前1天预约，节假日通用">单人自助午/晚餐，提前1天预约，节假日通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>178</span>
+	                        <span class="money">¥<del>198</del></span>
+	                        <span class="number">已售<i>2609</i></span>                        					</div>
+							</div>
+						
+	</div>
+	
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="yule"></i><a class="yule" href="">休闲娱乐</a>
+			<div class="fr">
+								 <a href="" target="_blank">运动健身</a>
+				<span></span>
+								 <a href="" target="_blank">KTV</a>
+				<span></span>
+								 <a href="" target="_blank">养生休闲</a>
+				<span></span>
+								 <a href="" target="_blank">桌游电玩</a>
+				<span></span>
+								 <a href="" target="_blank">演出赛事</a>
+				<span></span>
+								 <a href="" target="_blank">其他娱乐</a>
+				<span></span>
+								<a href="" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/25/9B/CqgBJlNzChuAKvC7AAD62xlygoQ503-308x196.jpg" src="images/a.gif" alt="大兴一中游泳馆">
+											<span class="index-goods-place">北京大兴区兴政街6号</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【黄村】大兴一中游泳馆">【黄村】大兴一中游泳馆</a>
+						<a class="index-goods-text" href="" target="_blank" title="游泳票1张，游泳不限时，含淋浴1次">游泳票1张，游泳不限时，含淋浴1次</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>23</span>
+	                        <span class="money">¥<del>40</del></span>
+	                        <span class="number">已售<i>2715</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/A6/E2/CqgBVFSzaKaAEoSdAAFw2IVLaO8625-308x196.jpg" src="images/a.gif" alt="鑫源主题式量贩KTV">
+											<span class="index-goods-place">北京海淀区田村路43号京粮广场3楼</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【四季青】鑫源主题式量贩KTV">【四季青】鑫源主题式量贩KTV</a>
+						<a class="index-goods-text" href="" target="_blank" title="1小时欢唱券，免费WiFi，免费停车">1小时欢唱券，免费WiFi，免费停车</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>9.9</span>
+	                        <span class="money">¥<del>360</del></span>
+	                        <span class="number">已售<i>134</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/03/D4/CqgBHlKz6ASANckNAAD6rQA-Qj0533-308x196.jpg" src="images/a.gif" alt="麦克风量贩式KTV">
+											<span class="index-goods-place">北京昌平区立水桥北路北里2号塞纳维拉水景花园46号楼</span>
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【天通苑】麦克风量贩式KTV">【天通苑】麦克风量贩式KTV</a>
+						<a class="index-goods-text" href="" target="_blank" title="欢唱套系，不限时段，2张券起唱">欢唱套系，不限时段，2张券起唱</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>25</span>
+	                        <span class="money">¥<del>417</del></span>
+	                        <span class="number">已售<i>7898</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/99/EC/CqgBJlSBYhKAXdteAADYyUAthDI882-308x196.jpg" src="images/a.gif" alt="权品•权金城沐浴连锁">
+											<span class="index-goods-place">大成路店、顺义店、良乡店、丰益桥店、长阳店、朝阳店、定慧寺店、牡丹园店、花园路店、西八里庄店、四季青店、清河店、农大店、…</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【15店通用】权品•权金城沐浴连锁">【15店通用】权品•权金城沐浴连锁</a>
+						<a class="index-goods-text" href="" target="_blank" title="100元现金抵用1次，可自由累加">100元现金抵用1次，可自由累加</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>79.9</span>
+	                        <span class="money">¥<del>100</del></span>
+	                        <span class="number">已售<i>448</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/CE/6C/CqgBJlVVvmGAcYzQAADlQwh0ZZY535-308x196.jpg" src="images/a.gif" alt="纯K量贩式KTV">
+											<span class="index-goods-place">北京朝阳区光华路泰达时代中心5号楼1层（中央电视台东侧）</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【国贸】纯K量贩式KTV">【国贸】纯K量贩式KTV</a>
+						<a class="index-goods-text" href="" target="_blank" title="4小时欢唱，畅快欢唱">4小时欢唱，畅快欢唱</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>29.9</span>
+	                        <span class="money">¥<del>152</del></span>
+	                        <span class="number">已售<i>56</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/1D/EC/CqgBJlNY3jCAbUxPAAB9bKyp-10193-308x196.jpg" src="images/a.gif" alt="清华池">
+											<span class="index-goods-place">虎坊桥店、回龙观店</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【2店通用】清华池">【2店通用】清华池</a>
+						<a class="index-goods-text" href="" target="_blank" title="修脚套组，专业手法">修脚套组，专业手法</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>86</span>
+	                        <span class="money">¥<del>118</del></span>
+	                        <span class="number">已售<i>147</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/AA/A6/CqgBVFS_UVOAFpHrAABc5Ya-GbY057-308x196.jpg" src="images/a.gif" alt="陈氏太极王家拳总会">
+											<span class="index-goods-place">北京朝阳区来广营乡北苑东路88号蓝地时尚庄园</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【来广营】陈氏太极王家拳总会">【来广营】陈氏太极王家拳总会</a>
+						<a class="index-goods-text" href="" target="_blank" title="太极体验课1次，30分钟/次，免费车位">太极体验课1次，30分钟/次，免费车位</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>2</span>
+	                        <span class="money">¥<del>300</del></span>
+	                        <span class="number">已售<i>1</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/09/8F/CqgBJlMEuE2ACu1uAAEPLNq-vLs793-308x196.jpg" src="images/a.gif" alt="盛声国际录音棚">
+											<span class="index-goods-place">北京朝阳区三元桥凤凰城D座2706</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【三元桥】盛声国际录音棚">【三元桥】盛声国际录音棚</a>
+						<a class="index-goods-text" href="" target="_blank" title="盛声国际录音棚：单首歌曲精品制作">盛声国际录音棚：单首歌曲精品制作</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>580</span>
+	                        <span class="money">¥<del>1800</del></span>
+	                        <span class="number">已售<i>3</i></span>                        					</div>
+							</div>
+						
+	</div>
+	
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="dianying"></i><a class="dianying" href="">电影</a>
+			<div class="fr">
+																<a href="" target="_blank">横冲直撞好莱坞</a>
+				<span></span>
+												<a href="" target="_blank">杀破狼2</a>
+				<span></span>
+												<a href="" target="_blank">侏罗纪世界</a>
+				<span></span>
+												<a href="" target="_blank">分歧者2：绝地反击</a>
+				<span></span>
+												<a href="" target="_blank">对风说爱你</a>
+				<span></span>
+												<a href="" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/03/69/CqgBHlKv9ryAE5eDAAC9mx3_-sY683-308x196.jpg" src="images/a.gif" alt="中影星美院线电影">
+											<span class="index-goods-place">方庄店、通州店、嘉美国际影城、金源店、望京店、回龙观店、世界城店、分钟寺店、悠唐店、顺义新世界店、搜秀店、小西天店、安慧…</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【64店通用】中影星美院线电影">【64店通用】中影星美院线电影</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人兑换券A券，兑换规则以影城为准">单人兑换券A券，兑换规则以影城为准</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>45</span>
+	                        <span class="money">¥<del>100</del></span>
+	                        <span class="number">已售<i>19426</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/75/01/CqgBVFQ3h7aAFtHTAABv-pSBUF0576-308x196.jpg" src="images/a.gif" alt="K酷国际影城">
+											<span class="index-goods-place">北京朝阳区北苑路42号</span>
+										<span class="goods-mark">
+																									<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【北苑家园】K酷国际影城">【北苑家园】K酷国际影城</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人电影票，可观看2D/3D">单人电影票，可观看2D/3D</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>35.5</span>
+	                        <span class="money">¥<del>120</del></span>
+	                        <span class="number">已售<i>11854</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/75/2A/CqgBVFQ3tqyARuRgAAB-RH4cNC8778-308x196.jpg" src="images/a.gif" alt="鲁信影城">
+											<span class="index-goods-place">北京昌平区立水桥明天第一城7号院B1层（蓝黛时空汇内）</span>
+										<span class="goods-mark">
+																									<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【天通苑】鲁信影城">【天通苑】鲁信影城</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人电影票，可观看2D/3D">单人电影票，可观看2D/3D</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>25</span>
+	                        <span class="money">¥<del>80</del></span>
+	                        <span class="number">已售<i>5887</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/01/5D/CqgBVFKv-COACnOtAAC9mx3_-sY216-308x196.jpg" src="images/a.gif" alt="中影星美院线电影">
+											<span class="index-goods-place">方庄店、通州店、嘉美国际影城、金源店、望京店、回龙观店、世界城店、分钟寺店、悠唐店、顺义新世界店、搜秀店、小西天店、安慧…</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【60店通用】中影星美院线电影">【60店通用】中影星美院线电影</a>
+						<a class="index-goods-text" href="" target="_blank" title="单人兑换券B券，兑换规则以影城为准">单人兑换券B券，兑换规则以影城为准</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>35</span>
+	                        <span class="money">¥<del>80</del></span>
+	                        <span class="number">已售<i>27089</i></span>                        					</div>
+							</div>
+						
+	</div>
+	
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="jiudian"></i><a class="jiudian" href="">酒店</a>
+			<div class="fr">
+								 <a href="" target="_blank">经济型酒店</a>
+				<span></span>
+								 <a href="" target="_blank">三星/舒适</a>
+				<span></span>
+								 <a href="" target="_blank">特色酒店</a>
+				<span></span>
+								 <a href="" target="_blank">小时房</a>
+				<span></span>
+								 <a href="" target="_blank">五星/豪华</a>
+				<span></span>
+								 <a href="" target="_blank">四星/高档</a>
+				<span></span>
+								<a href="" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/10/9D/CqgBVFMz7JeAFEoUAACIrKdHfbE130-308x196.jpg" src="images/a.gif" alt="中海航宾馆">
+											<span class="index-goods-place">北京海淀区翠微路36号海后科技服务楼</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【公主坟】中海航宾馆">【公主坟】中海航宾馆</a>
+						<a class="index-goods-text" href="" target="_blank" title="中海航宾馆：经济间入住1晚，节假日通用">中海航宾馆：经济间入住1晚，节假日通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>239</span>
+	                        <span class="money">¥<del>408</del></span>
+	                        <span class="number">已售<i>40</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/10/1E/CqgBHlMn7S2AXYlWAADp9QXG_v0546-308x196.jpg" src="images/a.gif" alt="智尚酒店北京王府井中心店">
+											<span class="index-goods-place">北京东城区王府井大街柏树胡同32号</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【王府井】智尚酒店北京王府井中心店">【王府井】智尚酒店北京王府井中心店</a>
+						<a class="index-goods-text" href="" target="_blank" title="智尚酒店北京王府井中心店：入住1晚，节假日通用">智尚酒店北京王府井中心店：入住1晚，节假日通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>366</span>
+	                        <span class="money">¥<del>1464</del></span>
+	                        <span class="number">已售<i>150</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/D9/FD/CqgBVFWJEkSAT7fxAAFS5hBbQUU793-308x196.jpg" src="images/a.gif" alt="北京圣德堡酒店">
+											<span class="index-goods-place">北京东城区永定门、南站、大红门、南苑地区北京市东城区天坛东路72号</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【北京站】北京圣德堡酒店">【北京站】北京圣德堡酒店</a>
+						<a class="index-goods-text" href="" target="_blank" title="北京圣德堡酒店（标准间）">北京圣德堡酒店（标准间）</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>157</span>
+	                        <span class="money">¥<del>427</del></span>
+	                        <span class="number">已售<i>10</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/00/10/CqgBVFJc_oyAWp7wAAEMganY1Gc915-308x196.jpg" src="images/a.gif" alt="祥伦旅社">
+											<span class="index-goods-place">北京北京东城区粮食店街63号</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【王府井】祥伦旅社">【王府井】祥伦旅社</a>
+						<a class="index-goods-text" href="" target="_blank" title="入住1晚，标准房/大床房2选1，免费WiFi">入住1晚，标准房/大床房2选1，免费WiFi</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>138</span>
+	                        <span class="money">¥<del>268</del></span>
+	                        <span class="number">已售<i>814</i></span>                        					</div>
+							</div>
+						
+	</div>
+	
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="shenghuo"></i><a class="shenghuo" href="">生活服务</a>
+			<div class="fr">
+								 <a href="" target="_blank">健康护理</a>
+				<span></span>
+								 <a href="" target="_blank">母婴亲子</a>
+				<span></span>
+								 <a href="" target="_blank">婚庆服务</a>
+				<span></span>
+								 <a href="" target="_blank">汽车服务</a>
+				<span></span>
+								 <a href="" target="_blank">照片冲印</a>
+				<span></span>
+								 <a href="" target="_blank">其他生活</a>
+				<span></span>
+								<a href="" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/BA/5C/CqgBJlUGck-ABQJPAABuily7KvI606-308x196.jpg" src="images/a.gif" alt="爱康国宾体检">
+											<span class="index-goods-place">北京亚运村体检分院、北京中关村体检一分院、北京建国门体检分院、北京丽都体检分院、北京宣武体检分院、北京白石体检分院、北京…</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【9店通用】爱康国宾体检">【9店通用】爱康国宾体检</a>
+						<a class="index-goods-text" href="" target="_blank" title="标准C体检套系，男女通用">标准C体检套系，男女通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>558</span>
+	                        <span class="money">¥<del>931</del></span>
+	                        <span class="number">已售<i>1256</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/0E/24/CqgBVFMquFaAQ1v5AACjcJOefOY509-308x196.jpg" src="images/a.gif" alt="风雨彩虹">
+											<span class="index-goods-place">中车汽修（99#、车吉仕汽车美容中心、万车行、城建汽车服务中心、力达强业洗车服务、北京车之巢汽车服务、北京昊瑞达汽车服务…</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【189店通用】风雨彩虹">【189店通用】风雨彩虹</a>
+						<a class="index-goods-text" href="" target="_blank" title="洗车服务卡1张，节假日通用">洗车服务卡1张，节假日通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>298</span>
+	                        <span class="money">¥<del>580</del></span>
+	                        <span class="number">已售<i>293</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/D9/D2/CqgBJlV1VcmAFagMAABvKaU8Jn0051-308x196.jpg" src="images/a.gif" alt="北京益声耳鼻喉门诊部">
+											<span class="index-goods-place">北京海淀区西三环中路19号东侧商业楼2F-007、008、009</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【公主坟】北京益声耳鼻喉门诊部">【公主坟】北京益声耳鼻喉门诊部</a>
+						<a class="index-goods-text" href="" target="_blank" title="耳鼻喉体检1次，专业服务">耳鼻喉体检1次，专业服务</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>78</span>
+	                        <span class="money">¥<del>820</del></span>
+	                                                					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/94/E2/CqgBVFR9UvuAbM6lAAB8-71lFl8505-308x196.jpg" src="images/a.gif" alt="中欣银宝通卡">
+											<span class="index-goods-place">北京东城区珠市口东大街14号(近崇文三里河车站)</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【天坛】中欣银宝通卡">【天坛】中欣银宝通卡</a>
+						<a class="index-goods-text" href="" target="_blank" title="1000元中欣卡1张，可叠加">1000元中欣卡1张，可叠加</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>990</span>
+	                        <span class="money">¥<del>1000</del></span>
+	                        <span class="number">已售<i>57</i></span>                        					</div>
+							</div>
+						
+	</div>
+	
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="gouwu"></i><a class="gouwu" href="">购物</a>
+			<div class="fr">
+				<a href="" target="_blank">服饰鞋包</a>
+				<span></span>
+				<a href="" target="_blank">家居家纺</a>
+				<span></span>
+				<a href="" target="_blank">运动户外</a>
+				<span></span>
+				<a href="" target="_blank">食品茶酒</a>
+				<span></span>
+				<a href="" target="_blank">数码家电</a>
+				<span></span>
+				<a href="" target="_blank">母婴玩具</a>
+				<span></span>
+				<a href="" target="_blank">美妆个护</a>
+				<span></span>
+				<a href="" target="_blank">钟表首饰</a>
+				<span></span>
+				<a href="" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/CC/08/CqgBVFValeCAYKcaAAFN1o7qHis984-308x196.jpg" src="images/a.gif" alt="百特">
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【包邮】百特">【包邮】百特</a>
+						<a class="index-goods-text" href="" target="_blank" title="多功能手持搅拌机电动料理机PK8109一件">多功能手持搅拌机电动料理机PK8109一件</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>99</span>
+	                        <span class="money">¥<del>299</del></span>
+	                        <span class="number">已售<i>329</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/CD/02/CqgBJlVRyCCAM887AAEUEydibS0251-308x196.jpg" src="images/a.gif" alt="伊利">
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【2件包邮】伊利">【2件包邮】伊利</a>
+						<a class="index-goods-text" href="" target="_blank" title="伊利：安慕希常温原味酸奶（205ml*12盒）一箱">伊利：安慕希常温原味酸奶（205ml*12盒）一箱</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>56.1</span>
+	                        <span class="money">¥<del>66</del></span>
+	                        <span class="number">已售<i>4085</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/C0/27/CqgBVFUt0L6ACNrIAADac8cO7WA382-308x196.jpg" src="images/a.gif" alt="XIMON">
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【包邮】XIMON">【包邮】XIMON</a>
+						<a class="index-goods-text" href="" target="_blank" title="XIMON：高档精品加厚夏凉冰丝席三件套一套，10款任选">XIMON：高档精品加厚夏凉冰丝席三件套一套，10款任选</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>79</span>
+	                        <span class="money">¥<del>899</del></span>
+	                        <span class="number">已售<i>297</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/7F/DF/CqgBHlRHR0GAKQCKAAFkGRa7xxM522-308x196.jpg" src="images/a.gif" alt="贺达">
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【包邮】贺达">【包邮】贺达</a>
+						<a class="index-goods-text" href="" target="_blank" title="贺达：菲凡925银韩版时尚狐狸手镯一个">贺达：菲凡925银韩版时尚狐狸手镯一个</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>29.9</span>
+	                        <span class="money">¥<del>288</del></span>
+	                        <span class="number">已售<i>3025</i></span>                        					</div>
+							</div>
+						
+						
+	</div>
+	
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="lvyou"></i><a class="lvyou" href="">旅游</a>
+			<div class="fr">
+								 <a href="" target="_blank">门票</a>
+				<span></span>
+								 <a href="" target="_blank">周边游</a>
+				<span></span>
+								 <a href="" target="_blank">农家乐</a>
+				<span></span>
+								 <a href="" target="_blank">国内游</a>
+				<span></span>
+								<a href="" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/C8/64/CqgBVFVK356ADYFUAAGPfh0Op9g963-308x196.jpg" src="images/a.gif" alt="天云山风景区">
+											<span class="index-goods-place">北京平谷区黄松峪黄土梁村百帝宫西500米</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【平谷】天云山风景区">【平谷】天云山风景区</a>
+						<a class="index-goods-text" href="" target="_blank" title="门票1张，含：全国最长玻璃栈道">门票1张，含：全国最长玻璃栈道</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>68</span>
+	                        <span class="money">¥<del>78</del></span>
+	                        <span class="number">已售<i>808</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/82/05/CqgBHlRKXuCAKk2hAAFS15FQ_EQ020-308x196.jpg" src="images/a.gif" alt="北京欢乐谷">
+											<span class="index-goods-place">北京朝阳区东四环华侨城内</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【北京欢乐谷】北京欢乐谷">【北京欢乐谷】北京欢乐谷</a>
+						<a class="index-goods-text" href="" target="_blank" title="日场成人票1张">日场成人票1张</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>215</span>
+	                        <span class="money">¥<del>230</del></span>
+	                        <span class="number">已售<i>687</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/D6/A3/CqgBHlVkBvqAMD-yAACVNHx8pDg983-308x196.jpg" src="images/a.gif" alt="北京野生动物园">
+											<span class="index-goods-place">北京大兴区一零六国道</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【黄村】北京野生动物园">【黄村】北京野生动物园</a>
+						<a class="index-goods-text" href="" target="_blank" title="成人套票1份">成人套票1份</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>118</span>
+	                        <span class="money">¥<del>150</del></span>
+	                        <span class="number">已售<i>1215</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/D7/79/CqgBVFV4Pt2ANwVkAAEujKs7ECA259-308x196.jpg" src="images/a.gif" alt="怀柔7大景区">
+											<span class="index-goods-place">北京怀柔区怀北镇</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																			<em class="reserve iepng"></em>
+											</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【怀北镇】怀柔7大景区">【怀北镇】怀柔7大景区</a>
+						<a class="index-goods-text" href="" target="_blank" title="联票1张，含：雁栖湖+青龙峡+天池峡谷等">联票1张，含：雁栖湖+青龙峡+天池峡谷等</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>100</span>
+	                        <span class="money">¥<del>224</del></span>
+	                        <span class="number">已售<i>110</i></span>                        					</div>
+							</div>
+						
+	</div>
+	
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="sheying"></i><a class="sheying" href="">摄影写真</a>
+			<div class="fr">
+								 <a href="" target="_blank">儿童写真</a>
+				<span></span>
+								 <a href="" target="_blank">成人写真</a>
+				<span></span>
+								 <a href="" target="_blank">证件照</a>
+				<span></span>
+								 <a href="" target="_blank">热卖婚纱</a>
+				<span></span>
+								 <a href="" target="_blank">孕妇写真</a>
+				<span></span>
+								<a href="" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/D4/7C/CqgBVFVmj9qAEhxeAAEDKWtrm7U987-308x196.jpg" src="images/a.gif" alt="韩国MemoryStudio">
+											<span class="index-goods-place">北京朝阳区朝阳北路青年汇102号楼0219室（朝阳大悦城对面）</span>
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【朝阳大悦城】韩国MemoryStudio">【朝阳大悦城】韩国MemoryStudio</a>
+						<a class="index-goods-text" href="" target="_blank" title="豪华婚纱摄影套系，全场服装任意挑选">豪华婚纱摄影套系，全场服装任意挑选</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>3999</span>
+	                        <span class="money">¥<del>18888</del></span>
+	                        <span class="number">已售<i>2792</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/C3/3C/CqgBVFU4aciAVG4iAAEqFc8fVLQ633-308x196.jpg" src="images/a.gif" alt="">
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="goods-name-set" href="" target="_blank" title="【专场】完美“嫁”期，定制你的专属摄影师">【专场】完美“嫁”期，定制你的专属摄影师</a>
+					</h3>
+					<div class="index-goods-info">
+													<span class="number">已售<i>6496</i></span>
+											</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/C3/8F/CqgBVFU4umyAUgdrAAGZaLEhY5o264-308x196.jpg" src="images/a.gif" alt="韩国KAMA婚纱摄影">
+											<span class="index-goods-place">北京朝阳区双井桥西优士阁大厦A座205</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【双井】韩国KAMA婚纱摄影">【双井】韩国KAMA婚纱摄影</a>
+						<a class="index-goods-text" href="" target="_blank" title="婚纱套系，提供免费WiFi">婚纱套系，提供免费WiFi</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>2980</span>
+	                        <span class="money">¥<del>29999</del></span>
+	                        <span class="number">已售<i>170</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/CE/74/CqgBHlVVu_aARxn5AAJJRR_bEU0987-308x196.jpg" src="images/a.gif" alt="">
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="goods-name-set" href="" target="_blank" title="【专场】Running Baby，京城各大儿童摄影机构等你来">【专场】Running Baby，京城各大儿童摄影机构等你来</a>
+					</h3>
+					<div class="index-goods-info">
+													<span class="number">已售<i>831</i></span>
+											</div>
+							</div>
+						
+						
+						
+						
+	</div>
+	
+	<div class="index-floor">
+		<h2 class="index-floor-title">
+			<i class="liren"></i><a class="liren" href="">丽人</a>
+			<div class="fr">
+								 <a href="" target="_blank">美发</a>
+				<span></span>
+								 <a href="" target="_blank">美甲</a>
+				<span></span>
+								 <a href="" target="_blank">美容美体</a>
+				<span></span>
+								 <a href="" target="_blank">瑜珈/舞蹈</a>
+				<span></span>
+								<a href="" target="_blank">全部&nbsp;<em>&gt;&gt;</em></a>
+			</div>
+		</h2>
+		<div class="index-goods-list cl">
+									<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f2.lashouimg.com/cms/M00/77/20/CqgBVFQ8jDuAGdX3AABWnl3clIU638-308x196.jpg" src="images/a.gif" alt="吉米造型">
+											<span class="index-goods-place">双井、西单华威店、西三旗店、昌平政府街店、建外店、安贞店、燕莎店、太阳宫店、安贞门店、飘亮店、广安门店、交通大学路店 、…</span>
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【13店通用】吉米造型">【13店通用】吉米造型</a>
+						<a class="index-goods-text" href="" target="_blank" title="烫/染发套系2选1，男女不限，免费WiFi">烫/染发套系2选1，男女不限，免费WiFi</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>168</span>
+	                        <span class="money">¥<del>1614</del></span>
+	                        <span class="number">已售<i>147</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://f3.lashouimg.com/cms/M00/61/CB/CqgBVFQJYE6AfQuaAABkrUgxBjI982-308x196.jpg" src="images/a.gif" alt="丽缘春天女子异性SPA会所">
+											<span class="index-goods-place">丽缘春天女子异性SPA会所、双井店</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【2店通用】丽缘春天女子异性SPA会所">【2店通用】丽缘春天女子异性SPA会所</a>
+						<a class="index-goods-text" href="" target="_blank" title="丽缘春天女子异性SPA会所：油压SPA套系">丽缘春天女子异性SPA会所：油压SPA套系</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>198</span>
+	                        <span class="money">¥<del>1680</del></span>
+	                        <span class="number">已售<i>89</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://s2.lashouimg.com/cms/M00/60/D2/CqgBHlQD2n6ALJgUAACy2Z_SSwk854-308x196.jpg" src="images/a.gif" alt="指爱美甲">
+											<span class="index-goods-place">北京昌平区回龙观西大街上北鑫座4-217</span>
+										<span class="goods-mark">
+																							</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【回龙观】指爱美甲">【回龙观】指爱美甲</a>
+						<a class="index-goods-text" href="" target="_blank" title="指爱美甲：美甲套组，节假日通用">指爱美甲：美甲套组，节假日通用</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>39</span>
+	                        <span class="money">¥<del>398</del></span>
+	                        <span class="number">已售<i>116</i></span>                        					</div>
+							</div>
+						<div class="index-goods">
+				<a class="index-goods-img" href="" target="_blank">
+					<img class="dynload" imgsrc="http://d2.lashouimg.com/cms/M00/CC/40/CqgBJlVQD9eAUKOEAADUTEfIdqo513-308x196.jpg" src="images/a.gif" alt="X'Boutique hair studio">
+											<span class="index-goods-place">北京朝阳区新东路8号院首开铂郡北区3号楼3门2-061</span>
+										<span class="goods-mark">
+																			<em class="merger iepng"></em>
+																	</span>
+				</a>
+									<h3>
+						<a class="index-goods-name" href="" target="_blank" title="【三里屯】X'Boutique hair studio">【三里屯】X'Boutique hair studio</a>
+						<a class="index-goods-text" href="" target="_blank" title="高级剪护套系，免费停车">高级剪护套系，免费停车</a>
+					</h3>
+					<div class="index-goods-info">
+							                        <span class="price"><em>¥</em>198</span>
+	                        <span class="money">¥<del>608</del></span>
+	                                                					</div>
+							</div>
+						
+
+	
+</main>
+<!-- main end -->
+<script type="text/javascript">
+var _switch = 'index';
+var now = "Thu Jul 02 2015 17:01:24 GMT+0800";
+</script>
+<div class="gp-hot">
+    <div class="gp-hottit">
+        <a class="left current" onClick="tabCutover(this,'hotc01')" href="javascript:void(0);" hidefocus="true">热门城市</a>
+        <a onClick="tabCutover(this,'hotc02')" href="javascript:void(0);" hidefocus="true">热门团购</a>
+        <a onClick="tabCutover(this,'hotc03')" href="javascript:void(0);" hidefocus="true">美食团购</a>
+        <a onClick="tabCutover(this,'hotc04')" href="javascript:void(0);" hidefocus="true">酒店团购</a>
+        <a onClick="tabCutover(this,'hotc05')" href="javascript:void(0);" hidefocus="true">电影票团购</a>
+        <a onClick="tabCutover(this,'hotc06')" href="javascript:void(0);" hidefocus="true">ktv团购</a>
+        <a onClick="tabCutover(this,'hotc07')" href="javascript:void(0);" hidefocus="true">分类导航</a>
+    </div>
+        <div class="gp-hotcen">
+        <p class="hotc01">
+            <a href="" title="北京团购">北京团购</a><a href="" title="广州团购">广州团购</a><a href="" title="上海团购">上海团购</a><a href="" title="深圳团购">深圳团购</a></p>
+        <p class="hotc02">
+            <a href="" title="电影票团购">电影票团购</a><a href="" title="婚纱照团购">婚纱照团购</a><a href="" title="蛋糕团购">蛋糕团购</a>     </p>
+        <p class="hotc03">
+            <a href="" title="北京美食团购">北京美食团购</a><a href="" title="广州美食团购">广州美食团购</a><a href="" title="上海美食团购">上海美食团购</a><a href="" title="深圳美食团购">深圳美食团购</a>        
+        </p>
+        <p class="hotc04">
+            <a href="" title="北京酒店团购">北京酒店团购</a><a href="" title="广州酒店团购">广州酒店团购</a><a href="" title="上海酒店团购">上海酒店团购</a><a href="" title="深圳酒店团购">深圳酒店团购</a>       
+        </p>
+        <p class="hotc05">
+            <a href="" title="北京电影票团购">北京电影票团购</a><a href="" title="广州电影票团购">广州电影票团购</a>
+        </p>
+        <p class="hotc06">
+            <a href="" title="北京ktv团购">北京ktv团购</a><a href="" title="广州ktv团购">广州ktv团购</a><a href="" title="上海ktv团购">上海ktv团购</a>
+        </p>
+        <p class="hotc07">
+            <a href="" target="_blank">生活指南</a>
+            <a href="" target="_blank">美食地图</a><a href="" target="_blank">电影地图</a><a href="" target="_blank">KTV地图</a>
+        </p>
+    </div>
+</div>
+<!-- main end -->
+<!-- footer -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="site-info">
+            <dl>
+                <dt>服务保障</dt>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">团购三包</a></dd>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">退换货服务</a></dd>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">支付方式</a></dd>
+            </dl>
+            <dl>
+                <dt>用户帮助</dt>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">答疑反馈</a></dd>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">常见问题</a></dd>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">往期团购</a></dd>
+                
+            </dl>
+            <dl>
+                <dt>商务合作</dt>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">团购合作</a></dd>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">开放API</a></dd>
+                <dd><i class="site-icon"></i><a href="">全民团购网联盟</a></dd>
+                <dd><i class="site-icon"></i><a href="">友情链接</a></dd>
+            </dl>
+            <dl>
+                <dt>公司信息</dt>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">关于全民团购</a></dd>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">媒体报道</a></dd>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">加入我们</a></dd>
+                <dd><i class="site-icon"></i><a href="" rel="nofollow">法律中心</a></dd>
+            </dl>
+            
+            <div class="phone">
+				<img src="images/logo-footer.gif">
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div class="attest">
+
+    </div>
+    <p class="copyright">©2016 全民团购（QQ:709034277）版权所有</p>
+</footer>
+<div style="right: 50%; margin-right: -665px; bottom: 20px;" class="scroll-block" id="go-top">
+    <ul class="scroll-floor" style="display:none;">
+		<li floor="icon01" class=""><a href="javascript:void(0);" class="meishi newga ga" t="分类导航" p="右侧浮动导航">美食</a></li>
+		<li floor="icon02"><a href="javascript:void(0);" class="yule newga ga" t="分类导航" p="右侧浮动导航">娱乐</a></li>
+		<li floor="icon03"><a href="javascript:void(0);" class="dianying newga ga" t="分类导航" p="右侧浮动导航">电影</a></li>
+		<li floor="icon06"><a href="javascript:void(0);" class="jiudian newga ga" t="分类导航" p="右侧浮动导航">酒店</a></li>
+		<li floor="icon04"><a href="javascript:void(0);" class="shenghuo newga ga" t="分类导航" p="右侧浮动导航">生活</a></li>
+		<li floor="icon09"><a href="javascript:void(0);" class="gouwu newga ga" t="分类导航" p="右侧浮动导航">购物</a></li>
+		<li floor="icon07"><a href="javascript:void(0);" class="lvyou newga ga" t="分类导航" p="右侧浮动导航">旅游</a></li>
+		<li floor="icon05"><a href="javascript:void(0);" class="sheying newga ga" t="分类导航" p="右侧浮动导航">摄影</a></li>
+		<li floor="icon08"><a href="javascript:void(0);" class="liren newga ga" t="分类导航" p="右侧浮动导航">丽人</a></li>
+		
+	</ul>        
+    <!--<a target="_blank" href="http://beijing.lashou.com/questionnaire.php" class="survey newga ga" t="分类导航" p="右侧浮动导航">用户<br>调查</a> <a style="display: none;" href="javascript:void(0);" class="gotop newga ga" t="分类导航" p="右侧浮动导航" ga_t="回到顶部"><i class="scroll-icon"></i></a>-->
+</div>
+<!-- footer end -->
+<script type="text/javascript">
+    var is_showcode_pop = '0';
+</script>
+
+<script src="js/ga_751f342.js" type="text/javascript"></script>
+<script src="js/autocomplete_eb18b81.js" type="text/javascript"></script>
+<script src="js/slider_f195ce1.js" type="text/javascript"></script>
+<script src="js/catenav_454c784.js" type="text/javascript"></script>
+<script src="js/common_26fc9e5.js" type="text/javascript"></script>
+<script src="js/index_10b1345.js" type="text/javascript"></script>
+<script src="js/countdown_96b1b14.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('a[tracknum]').live('click', function () {
+            var pos = $(this).attr('tracknum');
+            if (pos) { document.cookie = "pos=" + pos + ";path=/;domain=.lashou.com"; }
+        });
+        $('input.filter-but[tracknum]').live('click', function () {
+            var pos = $(this).attr('tracknum');
+            if (pos) { document.cookie = "pos=" + pos + ";path=/;domain=.lashou.com"; }
+        });
+    });
+</script>
+
+
+
+<script type="text/javascript">
+$(function() {
+    var firstOrNo = '';
+    if (firstOrNo == 1) {
+        indexQrcodeDelay();
+    } else{
+        indexQrcode();
+    }
+});
+</script>
+
+</body>
+</html>

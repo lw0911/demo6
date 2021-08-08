@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>素材网-仿微信公众平台(2018)</title>
+		<link href="public/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+		<link href="public/css/common.css" type="text/css" rel="stylesheet">
+		<link href="public/css/index.css" type="text/css" rel="stylesheet">
+		<script src="public/js/jquery-3.2.1.min.js"></script>
+		<script src="public/js/alert.js"></script>
+	</head>
+
+	<body>
+		<div id="head" class="jzy_w_max jzy_h_80 br_h_0">
+			<div id="admin_head_body" class="at">
+				<img src="https://res.wx.qq.com/mpres/en_US/htmledition/modules/weui-desktopSkin/svg/buildless/bg_logo_primary3ac982.svg" class="jzy_mg_top_20" />
+			</div>
+		</div>
+		<div id="admin_body" class="lt br_4 jzy_w_max">
+			<div id="admin_nav_body" class="lt">
+				<ul id="admin_nav_ul">
+					<li class=" jzy_mg_top_14 fs_16 nav_top_li">
+						<a href="admin.html">
+		                    <span class="nav_top_title jzy_h_30">
+		                        <i class="fa fa-home fs_18"></i>
+		                        <span>首页</span>
+		                    </span>
+	                	</a>
+					</li>
+					<li class="jzy_mg_top_14 fs_16 buttom_border">
+						<span class="nav_top_title jzy_h_30">
+                        <i class="fa fa-reorder fs_18"></i>
+                        <span>功能</span>
+						</span>
+
+						<ul class="fs_13">
+							<a href="beadded.html"><li class='nav_top_li nav_tow_li nav_top_title_chois jzy_mg_top_10'>自动回复</li></a>
+							<a href="menuAdmin.html"><li class='nav_top_li nav_tow_li'>自定义菜单</li></a>
+							<li class='nav_top_li nav_tow_li'>留言管理</li>
+							<li class='nav_top_li nav_tow_li'>投票管理</li>
+							<li class='nav_top_li nav_tow_li'>页面模板</li>
+							<li class='nav_top_li nav_tow_li'>原创声明功能</li>
+						</ul>
+					</li>
+					<li class=" jzy_mg_top_14 fs_16  buttom_border">
+						<span class="nav_top_title jzy_h_30">
+                        <i class="fa fa-sun-o fs_18"></i>
+                        <span>管理</span>
+						</span>
+						<ul class="fs_13">
+							<a href="userList.html">
+								<li class='nav_top_li nav_tow_li jzy_mg_top_10' style="color:#333;">用户管理</li>
+							</a>
+						</ul>
+					</li>
+					<li class="jzy_mg_top_14 fs_16 nav_top_li">
+						<span class="nav_top_title jzy_h_30 ">
+                        <i class="fa fa-pie-chart fs_18"></i>
+                        <span>统计</span>
+						</span>
+					</li>
+					<li class="jzy_mg_top_14 fs_16 buttom_border">
+							<span class="nav_top_title jzy_h_30 ">
+								<i class="fa fa-cogs fs_18"></i>
+								<span>设置</span>
+							</span>
+							<ul class="fs_13">
+								<a href="advanced.html">
+									<li class='nav_top_li nav_tow_li jzy_mg_top_10 '>基本配置</li>
+								</a>
+							</ul>
+						</li>
+				</ul>
+			</div>
+			<div id="admin_main_body" class="jzy_mg_right_15">
+				<h2 class="fs_26 jzy_mg_bottom_25" style="font-weight: 400;line-height: 1;">关键词回复</h2>
+				<ul class="reply_top">
+					<li class="lt reply_top_list reply_top_list_current">
+						<a href="keywordReply.html" target="">关键词回复<br></a>
+					</li>
+					<li class="lt reply_top_list ">
+						<a href="beadded.html" target="">被关注回复<br></a>
+					</li>
+				</ul>
+
+				<div class="jzy_desktop_panel jzy_mg_top_40">
+					<h3 class="jzy_desktop_panel_title">自动回复</h3>
+					<div id="" class="lt">
+						<p class="jzy_desktop_tips">通过编辑内容或关键词规则，快速进行自动回复设置。如具备开发能力，可更灵活地使用该功能。
+							<a href="#">查看详情</a>
+						</p>
+						<p class="jzy_desktop_tips">关闭自动回复之后，将立即对所有用户生效。</p>
+					</div>
+					<!-- 开关需要自己写js  当点击时候 改标input的选中与否-->
+					<div class="checkbox_div rt">
+						<input type='checkbox' id='switch' checked>
+						<label for='switch'>自动回复开关</label>
+					</div>
+					<br />
+					<br />
+					<br />
+					<hr />
+					<div id="layout_gap">
+						<div class="weui-desktop-layout__side">
+							<div class="keyword_search_panel jzy_w_210">
+								<span class=""> 
+							<span class="keyword_search_icon">
+								<button class="">
+									<i class="fa fa-search fs_16" aria-hidden="true"></i>
+								</button>
+							</span>
+								<input placeholder="搜索关键词/规则名称" type="text" value="" class="keyword_search_input"></span>
+								<div class="" style="display: none;">
+								</div>
+							</div>
+
+							<div class="keyword_add jzy_h_34 jzy_w_100 br_2 jzy_boy_5 rt jzy_text_center fs_14 cr_h_0">
+								添加回复
+							</div>
+						</div>
+					</div>
+					<table  cellspacing="0"  class="jzy_w_max jzy_mg_top_30 keyword_table">
+						<tr class="keyword_table_hd ">
+							<th>规则名称</th>
+							<th>关键词</th>
+							<th>回复内容</th>
+							<th>操作</th>
+						</tr>
+						<tr class="keyword_table_item">
+							<td class="keywords_rule_name_cell">格式</td>
+							<td class="keywords_name_cell"><span>格式</span></td>
+							<td class="keywords_reply_cell">1 文本, 1 图文</td>
+							<td>
+								<div class="weui-desktop-link-group">
+									<a href="#" class="cr_2 jzy_mg_right_10">编辑</a>
+									<a href="#" class="cr_2">删除</a>
+								</div>
+							</td>
+						</tr>
+						<tr class="keyword_table_item">
+							<td class="keywords_rule_name_cell">素材网</td>
+							<td class="keywords_name_cell"><span>你想要的这里都有</span></td>
+							<td class="keywords_reply_cell">www.junphp.com</td>
+							<td>
+								<div class="weui-desktop-link-group">
+									<a href="#" class="cr_2 jzy_mg_right_10">编辑</a>
+									<a href="#" class="cr_2">删除</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<br />
+				</div>
+
+				<script>
+				</script>
+	</body>
+
+</html>

@@ -1,0 +1,249 @@
+.main_content{ margin-top:10px;}
+/***********************新闻列表样式属性****************************/
+.news{ width:350px; float:left;}
+.news .title_name{ height:30px; line-height:30px; vertical-align:middle; border-bottom:1px solid #14af10}
+.news .title_name .name{ line-height:30px; border-bottom:3px solid #14af10; font-size:18px; padding:0px 10px; color:#14af10; position:relative; top:0px}
+.news .title_name .more{ float:right; margin-top:10px; line-height:30px;}
+.news .title_name b{ background:url(../images/imgaes_23.png) no-repeat; width:45px; height:15px; padding:6px 25px;}
+.news .list{ padding:10px 0px;}
+.news .list li{ line-height:26px; vertical-align:middle;}
+.news .list em{ color:#FF0000; font-size:14px;}
+.news .list a{ color:#000000; padding-left:5px;}
+.news .list a：hover{ color:#FF6600}
+.news .list span{ float:right; color:#999999;}
+/***********************切换属性********************/
+.text_box{ width:320px; margin:0px 15px; float:left}
+/* 文本切换盒子 - 公用类 */ 
+.slideTxtBox{ width:320px; text-align:left;  } 
+.slideTxtBox .hd{ height:26px; line-height:26px; margin-top:10px;  position:relative;  } 
+.slideTxtBox .hd ul{ float:left; position:absolute; left:20px;  } 
+.slideTxtBox .hd ul li{ float:left; padding:0 20px; line-height:25px; background:url(../images/imgaes_20.png) no-repeat} 
+.slideTxtBox .hd ul li a{ color:#FFFFFF;}
+.slideTxtBox .hd ul li.on{ height:35px;  background: url(../images/btn_img_14.png) no-repeat; cursor:pointer; } 
+.slideTxtBox .bd{ margin:10px 0px;  } 
+.slideTxtBox .bd ul{ padding:0px 10px;} 
+.slideTxtBox .tempWrap{ margin:10px 0px} 
+.slideTxtBox .tempWrap .bg_img{ background:url(../images/bg_img_17.png) no-repeat; height:156px;}
+.slideTxtBox  .bd .laro_Products{ margin-top:20px; text-align:center; width:150px; float:left; }
+.slideTxtBox .bd ul .content{ line-height:27px;}
+.slideTxtBox .bd ul .content img{ width:142px; height:88px; float:left;}
+/*********************公司简介属性********************/
+.about_name{ width:300px; float:right}
+.about_name .title_name{ height:30px; line-height:30px; vertical-align:middle; border-bottom:1px solid #14af10}
+.about_name .title_name .name{ line-height:30px; border-bottom:3px solid #14af10; font-size:18px; padding:0px 10px; color:#14af10; position:relative;}
+.about_name .title_name .English{ font-size:14px; color:#14af10; padding-left:20PX; position:relative;}
+.about_name  .content{ line-height:28px; padding:10px 5px; vertical-align:middle}
+.about_name  .content a{ color:#FF9900; padding-left:20px;}
+/************************产品展示样式属性*************************/
+.picMarquee-left{ width:1000px;  overflow:hidden; position:relative; margin-top:10px;    }
+.picMarquee-left .title_name{ border-bottom:5px solid #14af10; font-size:18px; color:#14af10; line-height:30px; vertical-align:middle}
+.picMarquee-left .title_name .more{ float:right; margin-right:10px;}
+.picMarquee-left .title_name .more a{ font-size:12px; color:#000000;}
+.picMarquee-left .hd .prev,.picMarquee-left .hd .next{ 
+	display:block;  
+	height:120px; 
+	float: left;
+	line-height:120px;
+	vertical-align:middle;
+	padding:10px;
+	margin-top:10px;  
+	overflow:hidden;
+	cursor:pointer;
+	font-family:"新宋体";
+	font-size:18px;
+	background: #EFEFEF;
+	filter:alpha(opacity=50);opacity:0.5;
+}
+.picMarquee-left .hd .prev{ margin-left:-30px; margin-right:15px}
+.picMarquee-left .hd .next{  left:970px; position:relative  }
+.picMarquee-left .bd{ padding:10px 0px}
+.picMarquee-left .bd ul{ overflow:hidden; zoom:1; }
+.picMarquee-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+.picMarquee-left .bd ul li .pic{ text-align:center;}
+.picMarquee-left .bd ul li .pic img{ width:160px; height:120px; display:block; padding:2px; border:1px solid #ccc; background: #FFFFFF }
+.picMarquee-left .bd ul li  a{ color:#000000}
+.picMarquee-left .bd ul li  a:hover{ color:#ffffff}
+.picMarquee-left .bd ul li .pic a:hover img{ border-color:#999;  }
+.picMarquee-left .bd ul li .title{ line-height:24px;   }
+/*************************************内页样式属性*******************************************/
+#left_style{ width:230px; float:left; margin-right:20px;} 
+#right_style{ width:750px; float:right;  margin-top:30px;}
+.ipban {
+    border-top:3px solid #009900;
+	position: relative;
+	width: 100%;
+	text-align:center; 
+	overflow:hidden;
+	vertical-align:middle;
+	height:228px;
+	
+}
+.AD_img{background:url(../images/btn_img_10.png) no-repeat; background-position: bottom; height:15px;}
+/**************栏目样式属性***************/
+#left_style .Navigation{   padding-bottom:10px;background: #F0F0F0; margin-top:30px}
+#left_style .Navigation_img{ background:url(../images/bg_meun_16.png) no-repeat; width:230px; height:30px;margin-bottom:10px;}
+#left_style .Navigation .title_name{ 
+	position:relative;
+	top:-20px; 
+	background: url(../images/title_img.png) no-repeat; 
+	width:230px; 
+	height:60px; 
+	color:#FFFFFF; 
+	text-align:center; 
+	font-size:24px;
+}
+#left_style .Navigation .title_name .English{ font-size:14px; padding-top:7px;}
+.Column, .Column_style{ width:230px; background: #F0F0F0;}
+.Column li{
+    text-align:center; 
+	padding-left:20px; 
+	cursor: pointer;
+	margin:10px 0px;
+	display: block;
+	padding: 10px 10px 10px 12px;
+	font-size: 14px;
+	position: relative;
+	background:url(../images/gd_img_15.png)  no-repeat; 
+	background-position:bottom;
+}
+.Column li a{ color:#000000; font-size:14px; }
+.Column .on{ margin:0px 10px; background:#FFFFFF; border:1px solid  #06a102;}
+.Column .on a{ color:#000000}
+.Column .on em{ background: url(../images/page_img_12.png) no-repeat;  padding:12px 10px; position:absolute; left:20px; top:8px; margin-right:20px;}
+#left_style .contact{ width:230px; margin-bottom:30px; margin-top:0; float:none}
+#left_style .contact .title .img{position:relative; background:url(../images/title_bg.png) no-repeat center; width:220px; height:70px; top:-22px; padding-top:20px;}
+#left_style  .contact .phone_title{ width:110px;}
+#left_style .contact .way .Phone .number {
+	font-family: Impact;
+	font-size: 32px;
+	color:#FF6600;
+	float: left;
+	width: 200px;
+	text-align: center;
+}
+#left_style .Add{ background:#FFFFFF; padding-bottom:20px; box-shadow: 0px 3px 3px #cccccc; border:1px solid #DDDDDD}
+#left_style .Add .title_name{ height:30px; color:#FFFFFF; background:#06a102; font-size:18px; text-align:center; line-height:30px;}
+#left_style .Add li{ border-bottom:1px solid #CDCDCD; margin:4px 10px;}
+#left_style .contact .title{ background:#06a102;  height:30px; color:#FFFFFF; font-size:14px}
+#left_style .contact .title p{ width:100px; margin:0 auto; text-align:center;}
+#left_style .contact .title .img .English{ font-size:12px}
+#left_style .contact .title .name{ font-size:18px}
+.contact  .way{ background:#FFFFFF; padding:10px; box-shadow: 0px 3px 3px #cccccc; border:1px solid #DDDDDD}
+.contact  .way .Phone{  margin:20px 0px; height:120px; color:#06a102;}
+.contact  .way .Phone .phone_title{ float:left; margin-top:30px; font-size:18px; text-align:center;height:50px;}
+.contact  .way .Phone .img{ float:left; height:80px; width:90px; background:url(../images/sqm_img_28.png) no-repeat}
+.contact  .way .Phone .English{ font-size:12px}
+.contact  .way  .xioasou{ height:30px; background:#F0F0F0; line-height:30px; text-align:center; color:#06a102; font-size:14px }
+.contact  .way .Phone .number{ font-family:Impact; font-size:36px; color:#00a2ca; float: left; width:230px; text-align:center}
+/*************右侧样式**********************/
+.Section_name{ height:60px; background:url(../images/page_img_07.png) no-repeat; width:750px; position:relative; top:-20px;}
+.Section_name .title_name{ height:40px; padding-top:20px; line-height:40px;}
+.Section_name h3{ float:left; padding:0px 50px; font-size:24px; font-weight:normal; margin-top:-10px; color:#ffffff}
+.Section_name span{ float:right; padding:0px 10px;color:#ffffff}
+.Section_name span a{ color:#ffffff}
+#right_style .content{ line-height:30px; font-size:14px; padding:10px; margin-bottom:50px}
+#right_style .content .title_name{ font-size:18px; color:#FF0000; border-bottom:1px solid #DBDBDB; text-align:center; padding:10px 0px; margin-bottom:10px}
+.content_style{ 
+    box-shadow:0px 3px 3px #cccccc; 
+	border:1px solid #D8D8D8; 
+	margin-top:-21px; 
+	padding:10px; 
+	padding-bottom:50px; 
+	line-height:36px; 
+	vertical-align:middle;
+	background:#FFFFFF; 
+}
+.content_style .Company_name{ text-align:center; font-size: 18px; color:#009900}
+/************************新闻样式属性************************/
+.news_list{ font-size:14px; line-height:36px;}
+.news_list li em{ font-size:16px; color:#009900; margin-right:10px;}
+.news_list li{ border-bottom:1px solid #DDDDDD}
+.news_list li a{  font-size:14px; color:#000000}
+.news_list li span{ float:right; color:#B7B7B7}
+.title_style .title_name{ text-align:center; font-size:18px; color:#009900; line-height:40px; border-bottom:1px solid #D7D7D7}
+.title_style .xinxi{ text-align:center;}
+.img{ text-align:center}
+.news_content{ font-size:14px; margin:20px 0px;} 
+.title_link{ height:30px; margin:20px 0px; background:#06a102; line-height:30px;}
+.title_link p{ width:50%; float:left;}
+.title_link a{ font-size:14px; color:#FFFFFF; padding:0px 20px;}
+/************************联系我们************************/
+.contact{ font-size:16px;}
+.contact .Company_name{ text-align:left;}
+/*********************************留言样式************************************/
+.message{ line-height:40px; font-size:14px; padding:20px 0px;} 
+.message li{ line-height:40px; margin:10px 0px; width:730px;} 
+.message li label{ float:left; width:80px; padding-left:30px;}
+.message li .select{ float:left; padding:2px; height:30px;border:1px solid #B3B3B3;}
+.message li .text{ width:200px; border:1px solid #B3B3B3; padding:2px; height:30px; float:left}
+.message li .text_title{ width:600px; border:1px solid #B3B3B3; padding:2px;height:30px;float:left } 
+.message li .Add{  width:400px; border:1px solid #B3B3B3; padding:2px;height:30px; float:left}
+.message li .textarea{ width:600px; height:150px;border:1px solid #B3B3B3; padding:2px; float:left}
+.message .message_title{ background:#fff1c6; height:30px; line-height:30px; margin:10px 0px; float:left}
+.message .message_title span{ padding-left:20px;}
+.message .btn_Click{ text-align:center; margin:30px 0px;}
+.message li .submit{ background:url(../images/bottom_03.png) no-repeat; height:35px; width:85px; border:0;  cursor:pointer; margin-right:20px;}
+.message li .reset{ background:url(../images/bottom_05.png) no-repeat; height:35px; width:85px; border:0; cursor:pointer}
+/*********************************产品样式属性***************************************/
+.product_list{}
+.product_list li{ float:left; width:182px; height:150px; margin-bottom:15px; text-align:center}
+.product_list li a{ color:#FFFFFF}
+.product_list li img{ width:160px; height:140px; padding:2px; border:1px solid #E1E1E1}
+.product_list li img:hover{ border:1px solid  #009900}
+.product_list li .title {
+	top: -32px;
+	margin-left: 10px;
+	background: url(../images/bg_color_03.png) repeat-x;
+	height: 30px;
+	width: 162px;
+	position: relative;
+	z-index: 2;
+    text-align: center;
+}
+/**产品详细**/
+.Detailed_page .title{ border-bottom:1px solid  #D8D8D8; margin-bottom:20px; font-size:18px; color: #009900; line-height:40px; text-align:center}
+#play{width:640px;text-align:center;position:relative;overflow:hidden;margin:5px auto;}
+#play .change_a{width:50%;height:100%;position:absolute;top:0;z-index:1;cursor:pointer;display:block;overflow:hidden;background:url(about:blank);}
+#play .prev_a{left:0;}
+#play .next_a{right:0}
+#play .change_a span{width:24px;height:43px;display:block;position:absolute;top:50%;margin-top:-21px;display:none}
+#play .prev_a span{background:url(../images/s_gallery_2012110702.png) no-repeat 0px -50px;left:0;}
+#play .next_a span{background:url(../images/s_gallery_2012110702.png) no-repeat -30px -50px;right:0;}
+#play .img_ul{position:relative;z-index:1;}
+.img_hd {width:640px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#eee;overflow:hidden;height:66px;padding:2px 0;margin-top:15px;margin:5px auto;position:relative;}
+.img_hd ul{position:absolute;z-index:1}
+.img_hd ul li{float:left;width:80px;height:60px;border:3px solid #eee;cursor:pointer;margin:0 3px 0 1px;overflow:hidden;*display:inline;padding:1px;text-align:center}
+.img_hd ul li img{height:60px;}
+.img_hd ul li.on{border-color:rgb(45, 150, 233);}
+.img_hd .bottom_a{background:url(../images/s_gallery_2012110702.png) no-repeat;width:22px;height:22px;position:absolute;display:block;top:50%;margin-top:-11px;cursor:pointer;z-index:10}
+.img_hd .prev_a{background-position:0 -24px;left:5px;}
+.img_hd .next_a{background-position:-30px -24px;right:5px;}
+.Introduce{ margin:20px 0px;}
+.Introduce .Introduce_title{ height:30px; background:#06a102; line-height:30px; color:#FFFFFF; font-size:18px; padding-left:20px;}
+/********************人才招聘样式************************/
+.Recruit{ border:1px solid  #999999; line-height:30px; position:relative; margin-bottom:10px;}
+.Recruit .Recruit_title{ height:30px; background:#D7D7D7; padding:0px 10px;}
+.Recruit .Recruit_title .Post{ color:#FF3300; padding-right:30px; font-weight:bold}
+.Recruit .Recruit_title .time{ float:right}
+.Recruit .Recruit_Request{ padding:10px; }
+.Recruit .btn_link{width:200px; position:absolute; left:600px; bottom:10px}
+.Recruit .btn_link a:hover{ font-size:12px}
+.Recruit .btn_link .Fill{ color:#FFFFFF; background:#00a2ca; padding:5px 10px; margin:10px 10px;}  
+.Recruit .btn_link .Details{ color:#FFFFFF; padding:5px 10px; background:#FF6600}
+/**************************文化单页属性****************************/
+#Bacon{background:#FFFFFF; margin:20px 0px; padding:10px 0px; font-size:16px; line-height:36px;}
+.Bacon_info{ margin-bottom:20px; }
+.Bacon_info:after{    
+    display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	content: '';
+}
+#Bacon .title_name{ font-size:24px; color:#FFFFFF; background:#13a50c; padding:5px 20px; width:200px;}
+#Bacon .content{ padding:10px}
+.Bacon_content{ line-height:36px; font-size:16px; float: left; width:640px;}
+#Bacon .img{ float:right;}
+#Bacon .img img{ width:330px; height:250px;}
+#Bacon .info{ background:#EFEFEF; color:#009900; padding:10px; margin:10px; position:relative}
+.link{ position:absolute; right:0px;top:-70px; padding:10px; background:#EFEFEF}

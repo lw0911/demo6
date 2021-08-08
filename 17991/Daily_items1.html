@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>日常项目-2016年排水管线改造</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <link rel="shortcut icon" href="favicon.ico"> <link href="public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/Daily_items/daily_data.css" rel="stylesheet">
+      <link href="css/Daily_items/font-awesome.css?v=4.4.0" rel="stylesheet">
+      <link href="css/Daily_items/plugins/iCheck/custom.css" rel="stylesheet">
+      <link href="css/Daily_items/animate.css" rel="stylesheet">
+      <link href="css/Daily_items/style.css?v=4.1.0" rel="stylesheet">
+       <link type="text/css " rel="stylesheet" href="css/Daily_items/ding.css">
+       
+</head>
+<body class="white-bg">
+
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="bread">
+            <ol class="breadcrumb">
+                <li><a href="#">日常项目</a></li>
+                <li class="active" style="">排水管线改造</li>
+            </ol>
+        </div>
+        <div class="query">
+            <div class="query_text">查询条件</div>
+            <div class="query_up">
+                <div class="col-sm-6">
+                    <div id="pipe_name1">
+                        <input type="text" class="form-control"  placeholder="请输入胡同名称" aria-label="请输入胡同名称">
+                        <button class="btn btn-secondary" type="button">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="date02">
+                        <input type="text" class="form-control" placeholder="请输入材料名称" aria-label="请输入材料名称">
+                        <button class="btn btn-secondary" type="button">
+                            <span class="glyphicon glyphicon-search"  aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="query_buttom">
+                <button type="button" class="btn btn-default">查询</button>
+            </div>
+        </div>
+        <div class="query_result">查询结果</div>
+        <div class="text">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th><h4>序号</h4></th>
+                    <th><h4>胡同名称</h4></th>
+                    <th><h4>材料名称</h4></th>
+                    <th><h4>材料规格</h4></th>
+                    <th><h4>单位</h4></th>
+                    <th><h4>数量</h4></th>
+                    <th><h4>施工工艺</h4></th>
+                    <th><h4>备注</h4></th>
+                    <th><h4>特殊情况备案</h4></th>
+                    <th><h4>地图查看</h4></th>
+
+                </tr>
+                </thead>
+                <tbody id="pipe">
+                <tr>
+                    <td class="num">1</td>
+                    <td class="hutong_name">大方胡同</td>
+                    <td class="startdate">树脂玻璃纤维内衬管</td>
+                    <td class="enddate">DN400</td>
+                    <td class="company">米</td>
+                    <td class="company">268</td>
+                    <td class="company">紫外线修复</td>
+                    <td class="company"> </td>
+                    <td width="100" class="app"><input type="button" value="查看详情" onclick="caozuo()" /></td>
+                    <td><button class="btn btn-secondary" type="button"  data-toggle="modal" data-target="#myModal">
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    </button></td>
+                </tr>
+                <tr>
+                    <td class="num">2</td>
+                    <td class="hutong_name">宣武门东河沿街</td>
+                    <td class="startdate">高密度聚乙烯（HDPE）中空结构壁缠绕管</td>
+                    <td class="enddate">DN300</td>
+                    <td class="company">米</td>
+                    <td class="company">180</td>
+                    <td class="company">明开</td>
+                    <td class="company">堵塞</td>
+                    <td width="100" class="app"><input type="button" value="查看详情" onclick="caozuo()" /></td>
+                    <td><button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#myModal">
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    </button></td>
+                </tr>
+                <tr>
+                    <td class="num">3</td>
+                    <td class="hutong_name">大拐棒胡同</td>
+                    <td class="startdate">树脂玻璃纤维内衬管</td>
+                    <td class="enddate">DN400</td>
+                    <td class="company">米</td>
+                    <td class="company">76</td>
+                    <td class="company">紫外线修复、疏通</td>
+                    <td class="company"> </td>
+                    <td width="100" class="app"><input type="button" value="查看详情" onclick="caozuo()"/></td>
+                    <td><button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#myModal">
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    </button></td>
+                </tr>
+                <tr>
+                    <td class="num">4</td>
+                    <td class="hutong_name">大拐棒胡同</td>
+                    <td class="startdate">树脂玻璃纤维内衬管</td>
+                    <td class="enddate">DN600</td>
+                    <td class="company">米</td>
+                    <td class="company">285</td>
+                    <td class="company">紫外线修复</td>
+                    <td class="company"> </td>
+                    <td width="100" class="app"><input type="button" value="查看详情" onclick="caozuo()" /></td>
+                    <td><button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#myModal">
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    </button></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="row pagination-wrap" style="text-align: center">
+                <ul class="pagination pagination-large">
+                    <li><a href="#">前一页</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">后一页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <p>地图显示</p>
+            <div class="map"><img alt="image" src="image/Daily_items/地图.jpg" /></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/Daily_items/ding.js"></script>
+<script src="public/jquery/jquery-3.1.1.min.js?v=2.1.4"></script>
+<script src="public/bootstrap/js/bootstrap.min.js?v=3.3.6"></script>
+
+</html>

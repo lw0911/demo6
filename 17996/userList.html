@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>素材网-仿微信公众平台(2018)</title>
+    <link href="public/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="public/css/common.css" type="text/css" rel="stylesheet">
+    <link href="public/css/index.css" type="text/css" rel="stylesheet">
+    <script src="public/js/jquery-3.2.1.min.js"></script>
+    <script src="public/js/alert.js"></script>
+    <style>
+        .table{
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head" class="jzy_w_max jzy_h_80 br_h_0">
+        <div id="admin_head_body" class="at">
+            <img src="https://res.wx.qq.com/mpres/en_US/htmledition/modules/weui-desktopSkin/svg/buildless/bg_logo_primary3ac982.svg"
+                class="jzy_mg_top_20" />
+        </div>
+    </div>
+    <div id="admin_body" class="lt br_4 jzy_w_max">
+        <div id="admin_nav_body" class="lt">
+            <ul id="admin_nav_ul">
+                <li class=" jzy_mg_top_14 fs_16 nav_top_li">
+                    <span class="nav_top_title  jzy_h_30">
+                        <i class="fa fa-home fs_18"></i>
+                        <span>首页</span>
+                    </span>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 buttom_border">
+                    <span class="nav_top_title jzy_h_30">
+                        <i class="fa fa-reorder fs_18"></i>
+                        <span>功能</span>
+                    </span>
+
+                    <ul class="fs_13">
+                        <a href="beadded.html">
+                            <li class='nav_top_li nav_tow_li  jzy_mg_top_10'>自动回复</li>
+                        </a>
+                        <a href="menuAdmin.html">
+                            <li class='nav_top_li nav_tow_li'>自定义菜单</li>
+                        </a>
+                        <li class='nav_top_li nav_tow_li'>留言管理</li>
+                        <li class='nav_top_li nav_tow_li'>投票管理</li>
+                        <li class='nav_top_li nav_tow_li'>页面模板</li>
+                        <li class='nav_top_li nav_tow_li'>原创声明功能</li>
+                    </ul>
+                </li>
+                <li class=" jzy_mg_top_14 fs_16  buttom_border">
+                    <span class="nav_top_title jzy_h_30">
+                        <i class="fa fa-sun-o fs_18"></i>
+                        <span>管理</span>
+                    </span>
+                    <ul class="fs_13">
+                        <a href="userList.html">
+                            <li class='nav_top_li nav_top_title_chois nav_tow_li jzy_mg_top_10 '>用户管理</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 nav_top_li">
+                    <span class="nav_top_title jzy_h_30 ">
+                        <i class="fa fa-pie-chart fs_18"></i>
+                        <span>统计</span>
+                    </span>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 buttom_border">
+                    <span class="nav_top_title jzy_h_30 ">
+                        <i class="fa fa-cogs fs_18"></i>
+                        <span>设置</span>
+                    </span>
+                    <ul class="fs_13">
+                        <a href="advanced.html">
+                            <li class='nav_top_li nav_tow_li jzy_mg_top_10 '>基本配置</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="admin_main_body" class="jzy_mg_right_15">
+            <h2 class="fs_26 jzy_mg_bottom_20" style="font-weight: 400;line-height: 1;">用户管理</h2>
+            <ul class="reply_top">
+                <li class="lt reply_top_list reply_top_list_current">
+                    <a href="keywordReply.html" target="">已关注
+                        <br>
+                    </a>
+                </li>
+            </ul>
+            <div class="jzy_desktop_panel jzy_mg_top_40" style="padding:30px;padding-top:30px">
+                <div id="layout_gap">
+                    <div class="weui-desktop-layout__side">
+                        <div class="keyword_search_panel jzy_w_210">
+                            <span class="">
+                                <span class="keyword_search_icon">
+                                    <button class="">
+                                        <i class="fa fa-search fs_16" aria-hidden="true"></i>
+                                    </button>
+                                </span>
+                                <input placeholder="用户昵称" type="text" value="" class="keyword_search_input">
+                            </span>
+                            <div class="" style="display: none;">
+                            </div>
+                        </div>
+
+                        <div class="keyword_add jzy_h_34 jzy_w_100 br_2 jzy_boy_5 rt jzy_text_center fs_14 cr_h_0">
+                            新建标签
+                        </div>
+                    </div>
+                </div>
+                <div id="userListBody" class="jzy_mg_top_30">
+                    <div id="userListBodyLeft">
+                        <!-- <div id="userListBodyLeft_title">
+                            <span>全部用户</span>
+                        </div> -->
+                        <div id="userListBodyLeft_top">
+                            <div id="userListBodyLeft_title">
+                                <span>全部用户</span>
+                            </div>
+                        </div>
+                        <table style="width:100%" id="user_list">
+                            <tr>
+                                <td class="table_cell user ">
+                                    <div class="user_info">
+                                        <!--个人信息区-->
+                                        <a target="_blank" href="#" class="remark_name">月亮</a>
+                                        <span class="nick_name"></span>
+
+                                        <a target="_blank" href="#" class="avatar">
+                                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521211702353&di=da0744999ae598f8c068c9aadb344059&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201602%2F12%2F20160212172715_MCUtT.jpeg" class="js_msgSenderAvatar">
+                                        </a>
+                                        <label class="user_info_checkbox">
+                                            <input class="demo--radio" type="checkbox" name="demo-checkbox1">
+                                            <span class="demo--checkbox demo--radioInput"></span>
+                                        </label>
+                                        <div class="js_tags user_tag_area">
+
+                                            <span class="js_tags_list user_tag_list">
+
+                                                无标签
+                                            </span>
+                                            <span class="js_tags_btn dropdown_switch_area dropdown_closed">
+                                                <span class="icon_dropdown_switch">
+                                                    <i class="arrow arrow_up"></i>
+                                                    <i class="arrow arrow_down"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table_cell user_opr tr">
+                                    <div id="selectAreaov1Fpv3_g11kRCTZSmsQeATUSDp8" class="js_selectArea" data-gid="" data-fid="ov1Fpv3_g11kRCTZSmsQeATUSDp8"></div>
+                                    <a class="btn remark js_msgSenderRemark" data-fakeid="ov1Fpv3_g11kRCTZSmsQeATUSDp8">修改备注</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table_cell user ">
+                                    <div class="user_info">
+                                        <!--个人信息区-->
+                                        <a target="_blank" href="#" class="remark_name">月亮</a>
+                                        <span class="nick_name"></span>
+
+                                        <a target="_blank" href="#" class="avatar">
+                                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521211702353&di=da0744999ae598f8c068c9aadb344059&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201602%2F12%2F20160212172715_MCUtT.jpeg" class="js_msgSenderAvatar">
+                                        </a>
+                                        <label class="user_info_checkbox">
+                                            <input class="demo--radio" type="checkbox" name="demo-checkbox1">
+                                            <span class="demo--checkbox demo--radioInput"></span>
+                                        </label>
+                                        <div class="js_tags user_tag_area">
+
+                                            <span class="js_tags_list user_tag_list">
+
+                                                无标签
+                                            </span>
+                                            <span class="js_tags_btn dropdown_switch_area dropdown_closed">
+                                                <span class="icon_dropdown_switch">
+                                                    <i class="arrow arrow_up"></i>
+                                                    <i class="arrow arrow_down"></i>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="table_cell user_opr tr">
+                                    <div id="selectAreaov1Fpv3_g11kRCTZSmsQeATUSDp8" class="js_selectArea" data-gid="" data-fid="ov1Fpv3_g11kRCTZSmsQeATUSDp8"></div>
+                                    <a class="btn remark js_msgSenderRemark" data-fakeid="ov1Fpv3_g11kRCTZSmsQeATUSDp8">修改备注</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="userListBodyRight">
+                        <div id="userListBodRight_main">
+                            <div id="allUserTitle">
+                                <span>全部用户(3)</span>
+                            </div>
+                            <ul id="userListBodRight_main_ul">
+                                <li>
+                                    <a href="#">星标用户(0)</a>
+                                </li>
+                                <li>
+                                    <a href="#">自定义标签(2)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

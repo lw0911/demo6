@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	var left = $("#left");
+	var right = $("#right");
+	var obj = $(".subBox ul");
+	var w = obj.find("li").innerWidth();
+	
+	left.click(function(){
+		obj.find("li:last").prependTo(obj);
+		obj.css("margin-left",-w);
+		obj.animate({"margin-left": 0});
+	});
+	
+	right.click(function(){
+		obj.animate({"margin-left": -w},function(){
+			obj.find("li:first").appendTo(obj);
+			obj.css("margin-left","0");
+		});
+	});
+	
+	var moving = setInterval(function(){right.click()},3000);
+	
+	obj.hover(function(){
+		clearInterval(moving);
+	},function(){
+		moving = setInterval(function(){right.click()},3000);
+	})
+	
+});
+</script>
+<!-- PNG背景透明 -->
+<script src="js/png.js"></script>
+<script>
+DD_belatedPNG.fix('.png_bg,img,.b');
+</script>
+<!-- PNG背景透明 -->
+
+<!--[if lte IE 6]>
+  <style type="text/css">
+    body { behavior:url("csshover.htc"); }
+  </style>
+<![endif]-->
+</head>
+<body>
+<div id="banner">
+  <div id="header">
+    <div class="top">
+      <div class="logo"><a href="#" title="康之桥健康管理中心"><img src="images/logo.png" /></a></div>
+      <div id="topnav" class="png_bg">
+        <div class="topnav"><a href="#">设为首页</a>|<a href="#">联系我们</a>|<a href="#">会员登录</a>|<a href="#">会员注册</a></div>
+        <div id="search_box">
+          <form id="search_form" method="post" action="#">
+            <input type="text" id="s" value="请输入关键字" class="swap_value" />
+            <input type="image" src="images/main_01_02.png" id="go" alt="Search" title="Search" />
+          </form>
+        </div>
+      </div>
+      <div class="top_tel">全国统一热线电话:<B>400-8888-0526</B></div>
+    </div>
+    <div id="nav" class="png_bg">
+      <div class="nav">
+        <UL>
+          <LI><a href="index.html" id="li">网站首页</a></LI>
+          <LI><a href="about.html">关于我们</a></LI>
+          <LI><a href="newsinfor.html">健康管理</a></LI>
+          <LI><a href="newslist.html">健康教育</a></LI>
+          <LI><a href="proinfor.html">老年托孤陪伴</a></LI>
+          <LI><a href="prolist.html">健康知识</a></LI>
+          <LI><a href="#">健康论坛</a></LI>
+          <LI><a href="#">会员专区</a></LI>
+          <LI><a href="#">会员注册</a></LI>
+        </UL>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div id="login" class="png_bg">
+      <div class="login">
+        <div class="loginbar">
+          <H1>用户名：</H1>
+          <input name="" type="text" id="loginbar" class="png_bg" />
+        </div>
+        <div class="loginbar">
+          <H1>密　码：</H1>
+          <input name="" type="text" id="loginbar" class="png_bg" />
+        </div>
+        <div class="btn"><a href="#" style="float:left;"><img src="images/ico_02.jpg" /></a><a href="#" style="float:right;"><img src="images/ico_01.jpg" /></a></div>
+      </div>
+      <div class="login">
+        <div class="list_bt">健康小贴士<I>/ Health Tips</I></div>
+        <div class="list_nei">
+          <UL>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+          </UL>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content">
+  <div class="content">
+    <div id="content_bt" class="png_bg"></div>
+    <div class="content_nei">
+      <div class="zy_left">
+        <UL>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+        </UL>
+      </div>
+      <div class="zy_right">
+        <div class="right_bt">关于我们<I>About Us</I></div>
+        <div class="right_nei">
+          <div class="zynei">
+            <div class="tite">产品详细名称</div>
+            <div class="time"><i>发布者：admin</i><i>发布日期：2012-12-02 14:22</i><i>点击：38次</i></div>
+            <div class="new01_nei"> <img src="images/main_09_04_03.jpg"/> <img src="images/5.jpg" />
+              <div class="new01_wen">
+                <h2>相关介绍：</h2>
+                <P>安徽伟光电缆股份有限公司位于中国科教之城-合肥，公司是以电线电缆研发、制造、销售为主的高科技企业。公司注册资本1.18亿，年产值6.8亿，占地面积106000多平方米。员工265人，专业技术人员53人，拥有雄厚的技术力量，先进的生产设备、检验设备和较强的新产品开发能力。</p>
+                <P>公司在安徽电缆行业中不断创新，企业连续多年被评为“重合同守信用先进企业”。通过吸收国内外先进的生产和管理经验，取得了长足的发展，已经建立起符合现代企业制度的经营模式。
+                  公司是一家专业生产电线电缆的现代化企业，目前主要生产的产品有：35KV及以下聚乙烯绝缘电缆、电线和软线、电力电缆、控制电缆、橡套软电缆、交联电缆、架空电缆、矿用电缆、阻燃、耐火特种电线电缆和耐高温新型绿色环保特种电缆等多个系列的产品。</P>
+                <P>公司在各地设立了上百个经销与技术、售后服务机构，产品畅销全国各地。公司通过了ISO9001质量管理体系认证获得国家质量监督检验总局的全国工业产品生产许可证，中国质量认证中心的中国国家强制性产品认证证书（CCC证书），是“安徽省计量保证确认单位”、“重合同守信用企业”、“AAA级资信企业”、“安徽省质量信得过产品”、“国家环保体系认证”等多项荣誉称号。
+                  公司将继续坚持励志超越的企业精神，坚持客户第一、质量第一，科学管理的宗旨，坚持以为客户提供优质的产品和满意的服务，为追求卓越绩效而不懈努力。</P>
+              </div>
+            </div>
+            <div class="time"> <span style="float:left; text-align:left;">上一篇：<a href="#">山里郎中磁</a></span> <span style="float:right; text-align:right;">下一篇：<a href="#">汽车销售公司</a></span> </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="right_bottom"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="subnav"> <A href="#">网站首页</A>|<A href="#">关于我们</A>|<A href="#">健康管理</A>|<A href="#">健康教育</A>|<A href="#">老年托孤陪伴</A>|<A href="#">健康知识</A>|<A href="#">健康论坛</A>|<A href="#">会员专区</A>|<A href="#">会员注册</A> </div>
+  <P>Copyright ? 2012 Jianerli.net All Rights Reserved 版权所有 健尔力 地址:南京市白下区虎踞南路40-8号1-4楼<br />
+    联系电话：025-86530015 邮箱：service@jianerli.net 企业邮箱登录</P>
+</div>
+</body>
+</html>

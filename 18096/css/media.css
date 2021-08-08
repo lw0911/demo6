@@ -1,0 +1,110 @@
+﻿/*1107px*/
+
+@media (max-width:1200px ) {
+	.lx_con{
+		padding: 20px 0;
+	}
+}
+@media (max-width:999px ) {
+	.nav_box ul li a{
+	    padding: 15px 7px 0;
+	}
+	.lx_con{
+		text-align: center;
+	}
+	.ab_con{
+		text-align:center;
+	}
+	.ab_con h3{
+		text-align:center !important;
+	}
+}
+
+@media (max-width:992px ) {
+	.ys{
+		margin-bottom:10px;
+	}
+}
+	
+	
+	
+@media (max-width:767px ) {
+	.logo_box{
+		margin: 20px 0 0;
+	}
+	.navbar-nav{
+		background: #fff;
+	}
+	.nav_box{
+		width: 100%;
+		text-align: center;
+		position:absolute;
+		z-index:999;
+		margin-top: 40px;
+	}
+	.nav_box ul{
+		width: 100%;
+		display: inline-block;
+	}
+	#nav_sj li{
+	    border-bottom: 1px solid #eee;
+	}
+	#nav_sj li a{
+		line-height: 29px;
+	}
+	.nav li a{
+	    transition: all 0.5s;
+	}
+	.nav_box ul li a{
+		padding: 5px 0;
+	}
+	.nav_box ul li .acitve{
+		background: #6cbb24;
+		color: #fff;
+	}
+	.about{
+		padding: 40px 0 50px;
+		background: none;
+	}
+	.ab_con{
+		padding-left: 15px;
+		text-align:center;
+	}
+	.ab_con h3{
+	    margin: 15px 0;
+		text-align:center !important;
+	}
+	.pagess{
+		margin-bottom: 30px;
+	}
+	.xgcp_list{
+		display: inline-block;
+   		 margin-bottom: 20px;
+	}
+	.lx_con{
+		text-align: center;
+	    margin-bottom: 26px;
+	}
+	.protext{
+		margin-top: 20px !important;
+	}
+	.new_tit a{
+		padding-bottom: 0px;
+	}
+	.xwzx_con{
+		text-align:center;
+		margin-bottom:10px;
+	}
+	.xwzx_link a{
+		margin-top:0;
+	}
+	.cpzx{
+		    padding: 55px 0 45px;
+	}
+	.xwzx{
+		padding: 55px 0 80px;
+	}
+	.con .tabcon{
+		margin-bottom:50px;
+	}
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>素材网-仿微信公众平台(2018)</title>
+		<link href="public/css/common.css" type="text/css" rel="stylesheet">
+		<link href="public/css/index.css" type="text/css" rel="stylesheet">
+		<link href="public/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+		<script src="public/js/jquery-3.2.1.min.js"></script>
+		<script src="public/js/alert.js"></script>
+	</head>
+
+	<body>
+		<div id="top_tip" class="jzy_w_max jzy_h_3 br_3"></div>
+		<div id="head" class="jzy_w_max jzy_h_80 br_h_0">
+			<div id="head_body" class="at jzy_w_50_">
+				<img src="https://res.wx.qq.com/mpres/en_US/htmledition/modules/weui-desktopSkin/svg/buildless/bg_logo_primary3ac982.svg" class="jzy_mg_top_20" />
+				<div id="head_body_right" class="rt jzy_h_25 jzy_w_200 jzy_mg_top_30 fs_14" >
+					<a href="#" style="padding-right: 20px;">立即注册</a> 
+					<a href="#" style="border-left: 1px solid #EAEAEA;padding-left: 20px;">简体中文</a>
+				</div>
+			</div>
+		</div>
+		<div id="banner" class="jzy_w_max jzy_h_460 br_11">
+			<div id="banner_body" class="jzy_w_50_ jzy_h_460 at">
+				<div id="login_body" class="jzy_w_340 jzy_h_240 br_h_0 rt jzy_boy_2">
+					<span class="fs_20">登陆</span>
+					<div class="input_body first_input_body jzy_h_50 jzy_w_max jzy_mg_top_10">
+						<i class="fa fa-user fa-2x jzy_mg_top_12 jzy_mg_left_15 cr_h_6 jzy_mg_right_10"></i>
+						<input type="text" name="username" id="username" class="input_login" autocomplete="off">
+					</div>
+					<div class="input_body jzy_h_50 jzy_w_max">
+						<i class="fa fa-lock fa-2x jzy_mg_top_12 jzy_mg_left_15 cr_h_6 jzy_mg_right_10"></i>
+						<input type="password" name="password" id="password" class="input_login" autocomplete="off">
+					</div>
+					<div>
+						<input type="checkbox" name="remember_user" id="checkbox_remember_user" class="jzy_mg_top_10 jzy_mg_bottom_10 jzy_h_18 jzy_w_18">
+						<span class="fs_15 font_remember_user">记住账号</span>
+						<a href="#" class="rt fs_15 jzy_mg_top_8 cr_1">忘记账号或密码</a>
+					</div>
+					<div>
+						<button class="jzy_h_35 jzy_w_130 br_2 jzy_boy_4 cr_h_0 fs_14 jzy_mg_top_10 button_login">登陆</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$('.button_login').click(function() {
+				var username = $("input[name='username']").val();
+				if(username == '') {
+					popup('请输入账号');
+				} else {
+					location.href = 'admin.html'
+				}
+			})
+		</script>
+	</body>
+
+</html>

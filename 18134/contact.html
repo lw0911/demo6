@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>地图</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <!--weixin-->
+    <script type="text/javascript" src="js/wexin.js"></script>
+    <!--nav-->
+    <script type="text/javascript" src="js/nva.js"></script>
+    <!--input-->
+    <script type="text/javascript" src="js/input.js"></script>
+    <!--slide-->
+    <script type="text/javascript" src="js/jquery.bxslider_e88acd1b.js"></script>
+
+    <script type="text/javascript" src="js/fd.js"></script>
+    <script type="text/javascript" src="js/up.js"></script>
+    <!--baidu-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <style>
+        .listright{
+            width: 1200px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="wapper">
+    <!--header-->
+    <div class="header w1200 clearFloat">
+        <!--header-top-->
+        <div class="header-top text-right">
+            <a href="" class="relative hwexin">官方微信 <img src="images/wxicon.png" alt="" width="21" height="17" class="vertical-align"/> &nbsp;&nbsp;|
+                <span class="weixin"><img src="images/wexin.png" alt="" width="122" height="122"/></span>
+            </a>
+            <a href="">联系安耐 &nbsp;&nbsp;&nbsp;|</a>
+            <a href="">收藏本站 &nbsp;&nbsp;&nbsp;|</a>
+            <a href="">网站地图</a>
+        </div>
+        <br>
+        <!--header-top end-->
+        <!--header-width-->
+        <div class="header-width clearFloat">
+            <div class="logo floatLeft">
+                <a href=""><img src="images/logo.png" alt="" width="835" height="92"/></a>
+
+            </div>
+            <div class="header-phone floatRight">
+                <img src="images/hphone.png" alt="" width="291" height="61"/>
+            </div>
+
+        </div>
+        <!--header-width end-->
+    </div>
+    <!--header end-->
+    <!--nav-->
+    <div class="nav">
+        <div class="nav-width w1200 ">
+            <ul class="clearFloat">
+                <li><a href="" class="activer">陶瓦首页 </a></li>
+                <li><a href="">平板陶瓦</a>
+                    <ul>
+                        <li><a href="">蒂凡尼</a></li>
+                        <li><a href="">法式莱昂瓦</a></li>
+                        <li><a href="" class="activer2">德式莱茵瓦</a></li>
+                        <li><a href="">法国马赛瓦</a></li>
+                        <li><a href="">凡尔纳</a></li>
+                        <li><a href="">鱼鳞瓦</a></li>
+                        <li><a href="">泰式平板瓦</a></li>
+                        <li><a href="">英式平板瓦</a></li>
+                        <li><a href="">平板瓦配件</a></li>
+                    </ul>
+                </li>
+                <li><a href="">拱形陶瓦</a>
+                    <ul>
+                        <li><a href="">蒂凡尼</a></li>
+                        <li><a href="">法式莱昂瓦</a></li>
+                        <li><a href="" class="activer2">德式莱茵瓦</a></li>
+                        <li><a href="">法国马赛瓦</a></li>
+                        <li><a href="">凡尔纳</a></li>
+                        <li><a href="">鱼鳞瓦</a></li>
+                        <li><a href="">泰式平板瓦</a></li>
+                        <li><a href="">英式平板瓦</a></li>
+                        <li><a href="">平板瓦配件</a></li>
+                    </ul>
+                </li>
+                <li><a href="">陶瓦屋面系统 </a></li>
+                <li><a href="">成功案例 </a></li>
+                <li><a href="">新闻资讯</a></li>
+                <li><a href="">关于安耐格</a></li>
+                <li><a href="">联系安耐格</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--nav end-->
+    <!--seach-->
+    <div class="seach w1200">
+        <div class="seach-width mt10 clearFloat">
+                 <span class="clearFloat floatLeft">
+                    <input type="text" value="请输入您要搜索的关键词" class="sinput floatLeft"/>
+                     <a href=""><img src="images/sbutton.png" alt="" width="43" height="23"/></a>
+                 </span>
+                 <span class="ml25">
+                     热门关键词：<a href="">陶瓦</a> <a href="">国产陶瓦</a> <a href="">特伦特陶瓦</a> <a href="">陶瓦屋面</a>
+                 </span>
+
+        </div>
+        <script>
+
+        </script>
+    </div>
+    <!--seach end-->
+    <!--slide-->
+    <div class="slide">
+        <div class="top_slide_wrap">
+            <ul class="slide_box bxslider">
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt="" title="城市预测"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt=""></a>
+                </li>
+            </ul>
+
+            <div class="op_btns clearfix">
+                <a href="#" class="op_btn op_prev"><span></span></a>
+                <a href="#" class="op_btn op_next"><span></span></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function(){
+            $(".bxslider").bxSlider({
+                auto:true,
+                prevSelector:$(".top_slide_wrap .op_prev")[0],nextSelector:$(".top_slide_wrap .op_next")[0]
+            });
+        })();
+    </script>
+    <!--slide end-->
+    <br>
+    <!--content-->
+    <div class="content w1200">
+        <div class="list clearFloat pb50">
+            <div class="listright floatRight">
+                <h3 class="fb text-66 border-d-b-dcdcdc pt10 pb10 pl20 relative">网站地图 <span class="text-c90708 fb">Site map</span><span class="f14 fn text-99 aboutrightspan absolute">当前位置: <a href="" class="text-99">首页</a> > <a
+                        href="" class="text-99">网站地图</a> </span></h3>
+                <br>
+                <div class="contact pl20 pr20 clearFloat"><br><br><br>
+                    <div class="contactlet floatLeft clearFloat">
+                        <span class="floatLeft contactletspan"><img src="images/phoneicon.png" alt="" width="14" height="14"/></span>
+                        <ul class="floatRight clearFloat contactletul">
+                            <li><span class="fn">郭经理：</span>13911053603</li>
+                            <li><span class="mr20"><img src="images/liche1.png" alt="" width="18" height="14"/></span>0535-6262578</li>
+                            <li><span class="fn">郭经理：</span>13331160776</li>
+                            <li><span class="mr20"><img src="images/liche2.png" alt="" width="18" height="14"/></span>ang_gz@163.com</li>
+                            <li><span class="fn">电&nbsp;&nbsp;&nbsp;话：</span>010-52663035</li>
+                            <li><span class="mr20"><img src="images/liche3.png" alt="" width="18" height="14"/></span>北京市中关村科技园石景山园8-916</li>
+                        </ul>
+                    </div>
+                    <div class="contactright floatRight clearFloat">
+                        <span class="floatLeft contactletspan"><img src="images/gc.png" alt="" width="14" height="14"/></span>
+                        <div class="contactrightp floatRight">
+                            <p><span class="gxxl">公交线路1</span> 乘坐 <a href="">972路</a> <a href="">663路</a> <a href="">958路</a>,到西井路站下车；</p>
+                            <p><span class="gxxl">公交线路2</span> 乘坐 <a href="">112路</a> <a href="">116路</a> <a href="">336路</a> <a
+                                    href="">358路</a> <a href="">370路</a> <a href="">396路</a><a href="">663路</a><a
+                                    href="">664路</a><a href="">961路</a><a href="">977路</a><a href="">981路</a><a href="">992路</a>,到苹果园中学下车；</p>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="comap">
+                    <div style="width:1200px;height:490px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-moz-box-shadow:-2px 4px 14px -7px;-webkit-box-shadow:-2px 4px 14px -7px;box-shadow:-2px 4px 14px -7px;border:#ccc solid 1px;" id="dituContent"></div>
+                    <script type="text/javascript">
+                        //创建和初始化地图函数：
+                        function initMap(){
+                            createMap();//创建地图
+                            setMapEvent();//设置地图事件
+                            addMapControl();//向地图添加控件
+                            addMarker();//向地图中添加marker
+                        }
+
+                        //创建地图函数：
+                        function createMap(){
+                            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                            var point = new BMap.Point(116.207436,39.944312);//定义一个中心点坐标
+                            map.centerAndZoom(point,16);//设定地图的中心点和坐标并将地图显示在地图容器中
+                            window.map = map;//将map变量存储在全局
+                        }
+
+                        //地图事件设置函数：
+                        function setMapEvent(){
+                            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                            map.enableKeyboard();//启用键盘上下左右键移动地图
+                        }
+
+                        //地图控件添加函数：
+                        function addMapControl(){
+                            //向地图中添加缩放控件
+                            var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                            map.addControl(ctrl_nav);
+                            //向地图中添加缩略图控件
+                            var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                            map.addControl(ctrl_ove);
+                            //向地图中添加比例尺控件
+                            var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                            map.addControl(ctrl_sca);
+                        }
+
+                        //标注点数组
+                        var markerArr = [{title:"北京市中关村科技园石景山园8-916",content:"010-52663035",point:"116.197033|39.942901",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+                        ];
+                        //创建marker
+                        function addMarker(){
+                            for(var i=0;i<markerArr.length;i++){
+                                var json = markerArr[i];
+                                var p0 = json.point.split("|")[0];
+                                var p1 = json.point.split("|")[1];
+                                var point = new BMap.Point(p0,p1);
+                                var iconImg = createIcon(json.icon);
+                                var marker = new BMap.Marker(point,{icon:iconImg});
+                                var iw = createInfoWindow(i);
+                                var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                                marker.setLabel(label);
+                                map.addOverlay(marker);
+                                label.setStyle({
+                                    borderColor:"#808080",
+                                    color:"#333",
+                                    cursor:"pointer"
+                                });
+
+                                (function(){
+                                    var index = i;
+                                    var _iw = createInfoWindow(i);
+                                    var _marker = marker;
+                                    _marker.addEventListener("click",function(){
+                                        this.openInfoWindow(_iw);
+                                    });
+                                    _iw.addEventListener("open",function(){
+                                        _marker.getLabel().hide();
+                                    })
+                                    _iw.addEventListener("close",function(){
+                                        _marker.getLabel().show();
+                                    })
+                                    label.addEventListener("click",function(){
+                                        _marker.openInfoWindow(_iw);
+                                    })
+                                    if(!!json.isOpen){
+                                        label.hide();
+                                        _marker.openInfoWindow(_iw);
+                                    }
+                                })()
+                            }
+                        }
+                        //创建InfoWindow
+                        function createInfoWindow(i){
+                            var json = markerArr[i];
+                            var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+                            return iw;
+                        }
+                        //创建一个Icon
+                        function createIcon(json){
+                            var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+                            return icon;
+                        }
+
+                        initMap();//创建和初始化地图
+                    </script>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <br><br><br>
+
+    </div>
+    <!--content end-->
+    <!--footer-->
+    <div class="footer"><br><br>
+        <div class="w1200 clearFloat">
+            <div class="flogo floatLeft">
+                <a href=""><img src="images/flogo.png" alt="" width="155" height="110"/></a>
+            </div>
+            <div class="footp text-33 floatLeft ml20 ml70">
+                <span class="f16">XXX <img src="images/atim.png" alt="" width="56" height="15" class="vertical-align"/> <img src="images/badu.png" alt="" width="20" height="20" class="vertical-align"/></span>
+                <p>
+                    公司地址：XXX<br>
+                    电话：400-- 销售热线：郭总13331160776  13911053603<br>
+                    瓦   陶瓦   国产陶瓦   特伦特陶瓦   拱形瓦   安耐格<br>
+                    <span class="f12">申明：本站网页设计受专利保护，盗用者，必追究法律责任。版权所有：XXX。技术支持：万虎网络 备案号：XXX</span>
+                </p>
+            </div>
+            <div class="flogo floatRight text-right">
+                <a href=""><img src="images/fwexin.png" alt="" width="110" height="110"/></a>
+            </div>
+
+        </div>
+        <br>
+    </div>
+    <!--footer end-->
+    <div class="infd-width">
+        <div class="online">
+            <a href=""><img src="images/online.png" alt="" width="23" height="95"/></a>
+        </div>
+        <div class="infd">
+            <br><br>
+              <span class="text-center display">
+                  <img src="images/fwx.png" alt="" width="84" height="85"/>
+                  <span class="display text-center f10">关注我们有惊喜~</span>
+                  <ul class="fdul">
+                      <li><a href=""><img src="images/qe.png" alt="" width="20" height="20" class="vertical-align mr10"/>QQ直线咨询</a></li>
+                      <li><a href=""><img src="images/qe.png" alt="" width="20" height="20" class="vertical-align mr10"/>QQ直线咨询</a></li>
+                      <li><a href=""><img src="images/qe.png" alt="" width="20" height="20" class="vertical-align mr10"/>QQ直线咨询</a></li>
+                      <li><a href=""><img src="images/qe.png" alt="" width="20" height="20" class="vertical-align mr10"/>QQ直线咨询</a></li>
+                      <span class="fdjlin"><img src="images/fdjlin.png" width="142" height="2" alt=""/></span>
+                  </ul>
+                  <span class="shzx f12"><a href="" class="text-c90708">售后服务咨询</a></span>
+              </span>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+</body>
+</html>

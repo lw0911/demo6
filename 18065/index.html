@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>创意</title>
+<link href="css/base.css" type="text/css" rel="stylesheet">
+<link href="css/kt.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".js-top-show").hover(function(){
+		$(this).find(".js-show-box").removeClass("hidden");
+	},function(){
+		$(this).find(".js-show-box").addClass("hidden");
+	});
+});
+</script>
+</head>
+
+<body>
+<!-- header -->
+<div class="header">
+  <div class="top bgc-gray01">
+    <div class="w964px center">
+      <div class="fl h30px lh30px over-hidden"><span class="F12 fc-gray01">创意，属于您的私人定制！</span></div>
+      <div class="fr h30px lh30px F12 fc-gray01">
+        <ul>
+          <li class="fl mar10">
+            <span>Hi~ </span>
+            <a class="F12 fc-gray01 h-red01 mar5" href="javascript:void(0)">[请登录]</a>
+            <a class="F12 fc-gray01 h-red01" href="javascript:void(0)">[免费注册]</a>
+          </li>
+          <li class="fl"><span class="">|</span></li>
+          <li class="fl pal10 par10 relative">
+            <div class="h30px lh30px over-hidden"><a class="F12 fc-gray01 h-red01" href="javascript:void(0)">MY创意</a></div>
+            <!--<div class="absolute wb100 pal10 par10 warpper-white bor-solid-1a borc-gray01 xl-box">已买商品</div>-->
+          </li>
+          <li class="fl"><span class="">|</span></li>
+          <li class="fl pal10 par10">
+            <div class=""><a class="F12 fc-gray01 h-red01" href="javascript:void(0)">我的订单</a></div>
+          </li>
+          <li class="fl"><span class="">|</span></li>
+          <li class="js-top-show fl pal10 par10 relative">
+            <div class=""><a class="F12 fc-gray01 h-red01" href="javascript:void(0)">设计师入口&or;</a></div>
+            <div class="js-show-box absolute wb100 warpper-white bor-solid-1a bor-top-none borc-gray01 xl-box hidden">
+              <div class="pal10 par10"><a class="F12 fc-gray01 h-red01" href="javascript:void(0)">已卖商品</a></div>
+            </div>
+          </li>
+        </ul>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="w964px center">
+    <div class="">
+      <div class="fl pat25 pab25"><a href="javascript:void(0)"><img src="images/logo.png" width="133" height="41"></a></div>
+      <div class="fr pat45">
+        <div class="fl mar40">
+          <form>
+            <div class="fl h25px bor-solid-1a bor-black w180px">
+              <input type="text" class="h15px lh15px pa5 bor-none F12 fc-gray01 wb92">
+            </div>
+            <div class="fl h25px bor-solid-1a bor-black bor-left-none w30px">
+              <input type="submit" class="bor-none h25px w30px bgimg-search pointer" value="">
+            </div>
+          </form>
+        </div>
+        <div class="fl mar30">
+          <a href="javascript:void(0)"><img src="images/tb02.png"></a>
+        </div>
+        <div class="fl mar30">
+          <a href="javascript:void(0)"><img src="images/tb03.png"></a>
+        </div>
+        <div class="fl mar30 relative">
+          <a href="javascript:void(0)"><img src="images/tb06.png"></a>
+          <span class="absolute w25px text-center h20px lh20px bgc-red01 F12 Fwhite radius10" style="top:-10px; right:-15px;">0</span>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="nav">
+      <div class="fl wb1428 text-center pat5 pab10 nav-bor bor-solid-3b bor-black"><div class="bor-solid-1r borc-gray01"><a class="F15 fc-gray02" href="javascript:void(0)">首页</a></div></div>
+      <div class="fl wb1428 text-center pat5 pab10 nav-bor"><div class="bor-solid-1r borc-gray01"><a class="F15 fc-gray02" href="javascript:void(0)">设计师</a></div></div>
+      <div class="fl wb1428 text-center pat5 pab10 nav-bor"><div class="bor-solid-1r borc-gray01"><a class="F15 fc-gray02" href="javascript:void(0)">类型</a></div></div>
+      <div class="fl wb1428 text-center pat5 pab10 nav-bor"><div class="bor-solid-1r borc-gray01"><a class="F15 fc-gray02" href="javascript:void(0)">风格</a></div></div>
+      <div class="fl wb1428 text-center pat5 pab10 nav-bor"><div class="bor-solid-1r borc-gray01"><a class="F15 fc-gray02" href="javascript:void(0)">场合</a></div></div>
+      <div class="fl wb1428 text-center pat5 pab10 nav-bor"><div class="bor-solid-1r borc-gray01"><a class="F15 fc-gray02" href="javascript:void(0)">需求悬赏</a></div></div>
+      <div class="fl wb1428 text-center pat5 pab10 nav-bor"><div class=""><a class="F15 fc-gray02" href="javascript:void(0)">穿衣建议</a></div></div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- body -->
+<div class="body mat10">
+<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		//banner图切换
+		$(".slideBox1").slide({mainCell:".bd ul",autoPlay:true,interTime:4000,pnLoop:true});
+		
+		//图片切换
+		$(".js-qh-img img").hover(function(){
+			var img01 = $(this).attr("src");
+			var img02 = $(this).attr("data-value");
+			$(this).attr("src",img02).attr("data-value",img01);
+		});
+		
+		//设计师介绍
+		/*$(".js-show").hover(function(){
+			$(this).find(".js-shade").addClass("hidden");
+			$(this).css("width","261px").siblings(".js-show").css("width","174px");
+			$(this).find(".js-introduction:not(:animated)").animate({top:"271px"},300);
+		},function(){
+			$(this).find(".js-shade").removeClass("hidden");
+			$(".js-show").css("width","192px");
+			$(this).find(".js-introduction").animate({top:"481px"},300);
+		});*/
+		$(".js-show").hover(function(){
+			$(this).find(".js-shade").addClass("hidden").parent(".js-show").siblings(".js-show").find(".js-shade").removeClass("hidden");
+			$(this).css("width","261px").siblings(".js-show").css("width","174px");
+			$(this).find(".js-introduction").css("top","271px").parent(".js-show").siblings(".js-show").find(".js-introduction").css("top","481px");
+		});
+		
+		
+		
+		
+	});
+</script>
+
+  <div class="w964px center">
+    <!-- banner -->
+    <div class="slideBox1">
+      <div class="bd">
+        <ul>
+          <li class=""><a href="javascript:void(0)" target="_blank"><img src="images/banner.jpg" width="100%" height="442"></a></li>
+          <li class=""><a href="javascript:void(0)" target="_blank"><img src="images/banner.jpg" width="100%" height="442"></a></li>
+          <li class=""><a href="javascript:void(0)" target="_blank"><img src="images/banner.jpg" width="100%" height="442"></a></li>
+        </ul>
+      </div>
+      <a class="prev" href="javascript:void(0)"></a>
+      <a class="next" href="javascript:void(0)"></a>
+    </div>
+  </div>
+  <div class="text-center pat30 pab30"><img src="images/tp01.png"></div>
+  <div class="w964px center">
+    <!-- 如何定制 -->
+    <div class="pab50">
+      <div class="mat10">
+        <div class="js-qh-img fl wb33333 text-center"><img src="images/tb07.png" data-value="images/tb07-1.png"></div>
+        <div class="js-qh-img fl wb33333 text-center"><img src="images/tb08.png" data-value="images/tb08-1.png"></div>
+        <div class="js-qh-img fl wb33333 text-center"><img src="images/tb09.png" data-value="images/tb09-1.png"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="mat25">
+        <div class="fl wb25 mal30 mar30 text-center">
+          <div class="mab15"><span class="F18 fc-gray01">注册后选择设计师</span></div>
+          <div class="lh20px h40px over-hidden"><span class="F14 fc-gray03">选择您的风格，尺码，根据模型对比，定制您最喜欢的衣服。</span></div>
+        </div>
+        <div class="fl pat20"><img src="images/tb010.png"></div>
+        <div class="fl wb25 mal30 mar30 text-center">
+          <div class="mab15"><span class="F18 fc-gray01">预览设计效果</span></div>
+          <div class="lh20px h40px over-hidden"><span class="F14 fc-gray03">设计师将精选的服装在网上会给您一个预览效果图。确定定制效果是否满意。</span></div>
+        </div>
+        <div class="fl pat20"><img src="images/tb010.png"></div>
+        <div class="fl wb25 mal30 mar30 text-center">
+          <div class="mab15"><span class="F18 fc-gray01">支付商品</span></div>
+          <div class="lh20px h40px over-hidden"><span class="F14 fc-gray03">你定制的商品大约4周完成，您的衣服将直接送货上门。</span></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- 设计师介绍 -->
+    <div class="">
+      <div class="js-show fl over-hidden relative mar1" style="width:261px;">
+        <div style="background:url(images/tp02.jpg) no-repeat; background-position:center top; height:481px;"></div>
+        <div class="js-shade absolute wb100 bgc-black-rgba hidden"></div>
+        <div class="js-introduction absolute wb100 h210px bgimg-sjs" style="top:271px;">
+          <div class="pal25 pat15 par10">
+            <div class="mab15"><span class="F16 fc-gray04">著名服装设计师</span></div>
+            <div class="mab20"><span class="F24 Fwhite">阿兰·达瓦</span></div>
+            <div class="mab15 h60px lh20px over-hidden"><span class="F14 fc-gray05">®艾美奖获奖的服装设计师，布莱恩特，知道她大胆的设计如AMC电视台的热播剧狂人和HBO的朽木。我们</span></div>
+            <div class="text-right par5"><a class="display-inline w80px text-center h25px lh25px warpper-white F14 Fblack h-decoration" href="javascript:void(0)">TA的作品 ></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="js-show fl over-hidden relative mar1" style="width:174px;">
+        <div style="background:url(images/tp02.jpg) no-repeat; background-position:center top; height:481px;"></div>
+        <div class="js-shade absolute wb100 bgc-black-rgba"></div>
+        <div class="js-introduction absolute wb100 h210px bgimg-sjs" style="top:481px;">
+          <div class="pal25 pat15 par10">
+            <div class="mab15"><span class="F16 fc-gray04">著名服装设计师</span></div>
+            <div class="mab20"><span class="F24 Fwhite">阿兰·达瓦</span></div>
+            <div class="mab15 h60px lh20px over-hidden"><span class="F14 fc-gray05">®艾美奖获奖的服装设计师，布莱恩特，知道她大胆的设计如AMC电视台的热播剧狂人和HBO的朽木。我们</span></div>
+            <div class="text-right par5"><a class="display-inline w80px text-center h25px lh25px warpper-white F14 Fblack h-decoration" href="javascript:void(0)">TA的作品 ></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="js-show fl over-hidden relative mar1" style="width:174px;">
+        <div style="background:url(images/tp02.jpg) no-repeat; background-position:center top; height:481px;"></div>
+        <div class="js-shade absolute wb100 bgc-black-rgba"></div>
+        <div class="js-introduction absolute wb100 h210px bgimg-sjs" style="top:481px;">
+          <div class="pal25 pat15 par10">
+            <div class="mab15"><span class="F16 fc-gray04">著名服装设计师</span></div>
+            <div class="mab20"><span class="F24 Fwhite">阿兰·达瓦</span></div>
+            <div class="mab15 h60px lh20px over-hidden"><span class="F14 fc-gray05">®艾美奖获奖的服装设计师，布莱恩特，知道她大胆的设计如AMC电视台的热播剧狂人和HBO的朽木。我们</span></div>
+            <div class="text-right par5"><a class="display-inline w80px text-center h25px lh25px warpper-white F14 Fblack h-decoration" href="javascript:void(0)">TA的作品 ></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="js-show fl over-hidden relative mar1" style="width:174px;">
+        <div style="background:url(images/tp02.jpg) no-repeat; background-position:center top; height:481px;"></div>
+        <div class="js-shade absolute wb100 bgc-black-rgba"></div>
+        <div class="js-introduction absolute wb100 h210px bgimg-sjs" style="top:481px;">
+          <div class="pal25 pat15 par10">
+            <div class="mab15"><span class="F16 fc-gray04">著名服装设计师</span></div>
+            <div class="mab20"><span class="F24 Fwhite">阿兰·达瓦</span></div>
+            <div class="mab15 h60px lh20px over-hidden"><span class="F14 fc-gray05">®艾美奖获奖的服装设计师，布莱恩特，知道她大胆的设计如AMC电视台的热播剧狂人和HBO的朽木。我们</span></div>
+            <div class="text-right par5"><a class="display-inline w80px text-center h25px lh25px warpper-white F14 Fblack h-decoration" href="javascript:void(0)">TA的作品 ></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="js-show fl over-hidden relative" style="width:174px;">
+        <div style="background:url(images/tp02.jpg) no-repeat; background-position:center top; height:481px;"></div>
+        <div class="js-shade absolute wb100 bgc-black-rgba"></div>
+        <div class="js-introduction absolute wb100 h210px bgimg-sjs" style="top:481px;">
+          <div class="pal25 pat15 par10">
+            <div class="mab15"><span class="F16 fc-gray04">著名服装设计师</span></div>
+            <div class="mab20"><span class="F24 Fwhite">阿兰·达瓦</span></div>
+            <div class="mab15 h60px lh20px over-hidden"><span class="F14 fc-gray05">®艾美奖获奖的服装设计师，布莱恩特，知道她大胆的设计如AMC电视台的热播剧狂人和HBO的朽木。我们</span></div>
+            <div class="text-right par5"><a class="display-inline w80px text-center h25px lh25px warpper-white F14 Fblack h-decoration" href="javascript:void(0)">TA的作品 ></a></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="clear"></div>
+    </div>
+    <!-- 视频 -->
+    <div class="mat35">
+      <div class="fl w311px mar15">
+        <div class="relative mab15">
+          <img src="images/tp03.jpg" width="311" height="224">
+          <a class="absolute bgimg-play" href="javascript:void(0)"></a>
+        </div>
+        <div class="text-center"><span class="F15 fc-gray01">2015年夏装时装发布会</span></div>
+      </div>
+      <div class="fl w311px mar15">
+        <div class="relative mab15">
+          <img src="images/tp04.jpg" width="311" height="224">
+          <a class="absolute bgimg-play" href="javascript:void(0)"></a>
+        </div>
+        <div class="text-center"><span class="F15 fc-gray01">2015年夏装时装发布会</span></div>
+      </div>
+      <div class="fl w311px">
+        <div class="relative mab15">
+          <img src="images/tp05.jpg" width="311" height="224">
+          <a class="absolute bgimg-play" href="javascript:void(0)"></a>
+        </div>
+        <div class="text-center"><span class="F15 fc-gray01">2015年夏装时装发布会</span></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<div class="footer mat45 pab20">
+  <div class="bgc-gray02 bor-solid-1t borc-gray01">
+    <div class="w964px center pat30 pab20">
+      <div class="fl pal20 par30 bgimg-help-bor pat20">
+        <div class="fr mal30 w20px F20 Fblack">关于创意</div>
+        <div class="fr">
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">关于我们</a></div>
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">我们的商店</a></div>
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">如何定制服装</a></div>
+          <div class="fr w15px"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">条款及条件</a></div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="fl pal20 par30 bgimg-help-bor pat20">
+        <div class="fr mal30 w20px F20 Fblack">使用帮助</div>
+        <div class="fr">
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">购买指南</a></div>
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">支付方式</a></div>
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">如何办理退款</a></div>
+          <div class="fr w15px"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">常见支付问题</a></div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="fl pal20 par30 bgimg-help-bor pat20">
+        <div class="fr mal30 w20px F20 Fblack">售后服务</div>
+        <div class="fr">
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">订单查询</a></div>
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">退货说明</a></div>
+          <div class="fr w15px"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">常见问题</a></div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="fl pal20 par30 bgimg-help-bor pat20">
+        <div class="fr mal30 w20px F20 Fblack">帮助中心</div>
+        <div class="fr">
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">找回密码</a></div>
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">常见问题</a></div>
+          <div class="fr w15px mal10"><a class="F14 fc-gray01 h-red01" href="javascript:void(0)">谨防诈骗</a></div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="fl pal20 pat20 text-center">
+        <div class="mab10"><img class="pa5 warpper-white" src="images/tp06.jpg"></div>
+        <div class="mab10"><span class="F14 fc-gray01">官方微信</span></div>
+        <div class="mab10"><span class="F14 fc-gray01">免费热线：400-000-2896</span></div>
+        <div class=""><span class="F12 fc-gray04">（周一至周五08:30-22:00）</span></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  
+  <div class="mat20">
+    <div class="w964px center">
+      <div class="text-center mab10">
+        <a class="F12 Fblack h-red01" href="javascript:void(0)">返回首页</a><span class="pal10 par10 F12 Fblack">|</span>
+        <a class="F12 Fblack h-red01" href="javascript:void(0)">创意</a><span class="pal10 par10 F12 Fblack">|</span>
+        <a class="F12 Fblack h-red01" href="javascript:void(0)">联系我们</a><span class="pal10 par10 F12 Fblack">|</span>
+        <a class="F12 Fblack h-red01" href="javascript:void(0)">隐私条款</a><span class="pal10 par10 F12 Fblack">|</span>
+        <a class="F12 Fblack h-red01" href="javascript:void(0)">友情链接</a>
+      </div>
+      <div class="text-center mab25">
+       <span class="F12 Fblack">Copyright (C) 创意 All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>   京ICP备13041159   地址：北京市海淀区北四环中路238号</span>
+      </div>
+      <div class="text-center">
+       <img class="mar10" src="images/tp09.jpg">
+       <img class="mar10" src="images/tp010.jpg">
+       <img class="mar10" src="images/tp011.jpg">
+       <img class="mar10" src="images/tp012.jpg">
+       <img class="" src="images/tp013.jpg">
+      </div>
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>

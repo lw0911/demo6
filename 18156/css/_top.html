@@ -1,0 +1,65 @@
+﻿$set(c=category.GetList(0,"channel_id="+zd,"sort_id,id desc"))<!--站点栏目-->
+<!--top-->
+<div class="container projects  ">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-xs-6 log1"><a href="/"><img src="images/log.jpg"></a></div>
+    <div class="col-lg-4 col-md-4 col-xs-6 log2"><img src="images/index_r2_c4.jpg"></div>
+  </div>
+</div>
+<!--nav-->
+<div class="nav_bgg ">
+  
+                 <dl>
+                  <dd><a href="#">网站首页</a></dd>
+                  <dd><a href="#">关于我们</a></dd>
+                  <dd><a href="#">产品中心</a></dd>
+                  <dd><a href="#">生产现场</a></dd>
+                  <dd><a href="#">新闻资讯</a></dd>
+                  <dd><a href="#">在线留言</a></dd>
+                  <dd><a href="#">联系我们</a></dd>
+                 </dl>
+    
+ </div>
+<div class="demo" style="padding-top: 1em ; text-align:center; margin:auto">
+  <div class="nav_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-default navbar-mobile bootsnav">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class=""><img src="images/ahome_r2_c13.png"></i>&nbsp;&nbsp;&nbsp;&nbsp; <em style="font-size:16px; color:#666; font-style:normal">欢迎访问温室保温被官网</em> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+              <ul class="nav navbar-nav " data-in="fadeInDown" data-out="fadeOutUp">
+                <li><a href="/">网站首页</a></li>
+                $foreach(tc in c.Select("parent_id=0 and is_show=1"))
+                $set(top_url=" /"+tc.class_path+"/ ")
+                $set(top_url=top_url.Trim())
+                $if(tc.link_url!="")
+                $set(top_url=tc.link_url)
+                $end
+                $set(fpclass=c.Select("is_show=1 and parent_id="+tc.id))
+                $set(tns=abll.getsingle("SELECT count(*) from dt_category where parent_id="+tc.id))
+                <li $if(tns>0)class="dropdown"$end> <a href="$top_url" $if(tns>0)class="dropdown-toggle" data-toggle="dropdown"$end $if(foreachindex==6)style="border-right:none" $end>$tc.title</a>
+                  $if(tns>0)
+                  <ul class="dropdown-menu">
+                    $foreach(c_1 in fpclass)
+                    $set(f_url=" /"+c_1.class_path+"/ ")
+                    $set(f_url=f_url.Trim())
+                    $if(c_1.link_url!="")
+                    $set(f_url=c_1.link_url)
+                    $end
+                    <li><a href="$f_url" title="$c_1.title">$c_1.title</a></li>
+                    $end
+                  </ul>
+                  $end
+                </li>
+                $end
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

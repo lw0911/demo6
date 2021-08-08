@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="common/css/common.css" rel="stylesheet" type="text/css" />
+<link href="common/css/css.css" rel="stylesheet" type="text/css" />
+<title>网络营销</title>
+<script src="common/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="common/js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="common/js/jquery.SuperSlide.2.1.1.source.js" type="text/javascript"></script>
+<script src="common/js/Folding.js" type="text/javascript"></script>
+<script src="common/js/fk.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--qq样式-->
+<!-- 代码 开始 -->
+<div id="online_qq_layer">
+    <div id="online_qq_tab">
+      <div class="online_icon">
+        <a title="" id="floatShow" style="display:none" href="javascript:void(0);">&nbsp;</a>
+        <a title="" id="floatHide" style="display:block" href="javascript:void(0);">&nbsp;</a>
+      </div>
+    </div>
+    <div id="onlineService" style="display: block;">
+      <div class="online_windows overz">
+          <div class="online_w_top"></div>
+          <div class="online_w_c overz">
+            <div id="online_qq">
+                <ul class="qq_ul fn-clear">
+<li class="kfli" onclick="openQQ('799129700')"><img src="common/images/Line_qq.png" border="0" /> 业务咨询</li>  
+<li class="kfli" onclick="openQQ('363576965')"><img src="common/images/Line_qq.png" border="0" /> 业务咨询</li>  
+<li class="kfli" onclick="openQQ('2193744200')"><img src="common/images/Line_qq.png" border="0" /> 客服服务</li>  
+                            </ul>
+            </div>
+            <div class="phone_Advisory">
+ <p class="phone_img"></p>
+ <p class="Number">028-88634454</p>
+</div>
+          </div>
+          <div class="online_w_bottom"></div>
+      </div>
+    </div>
+</div>
+
+<script>  
+    var online = new Array();  
+</script>  
+<script type= "text/javascript" src="http://webpresence.qq.com/getonline?Type=1&799129700:363576965:2193744200" ></script>  
+<script type="text/javascript">  
+    for (var i = 0; i < online.length; i++) {  
+        if (online[i] == 0) {  
+            $(".kfli img").eq(i).attr("src","common/images/not_qq.png");  
+        } else {  
+            $(".kfli img").eq(i).attr("src",'common/images/Line_qq.png');  
+        }  
+    }  
+        
+  
+    window.onscroll = function () {  
+        if (document.documentElement.scrollTop + document.body.scrollTop > 100) {  
+            document.getElementById("scrollto").style.display = "block";  
+        }  
+        else {  
+            document.getElementById("scrollto").style.display = "none";  
+        }  
+    }  
+    function OpenSmallWindows(strURL, scrollbar, width, height, left, top) {  
+        window.open(strURL, "_blank",  
+     "status=no,resizable=0,toolbar=no,menubar=no,scrollbars=" + scrollbar + ",width=" + width + ",height=" + height + ",left=" + left + ",top=" + top + "");  
+    }  
+    function openQQ(qq) {  
+        window.location.href = "tencent://message/?uin=" + qq + "&Site=gbgjs.com&Menu=yes";  
+    }  
+</script>    
+<!--结束-->
+<div class="bg_top"></div>
+<div class="topbr"></div>
+<div id="top">
+  <div class="logo"><img src="common/images/logo.png" /></div>
+  <div class="right_top">
+    <div class="Search">
+    <form>
+	<input name="" type="text" class="text">
+	<input name="" type="submit" class="button" value="">
+	</form>   
+   </div>
+	<div class="Menu_style">
+	 <ul id="nav">
+	    <li class="mainlevel" id="mainlevel"><a href="#" target="_blank" >首页</a>          
+        </li>
+		   <li class="mainlevel" id="mainlevel"><a href="#" target="_blank"> 关于我们</a>
+           <ul id="sub">
+			<li><a href="#" target="_blank">公司简介</a></li>
+			<li><a href="#" target="_blank">企业文化</a></li>
+			<li><a href="#" target="_blank">公司特色</a></li>	
+			<li><a href="#" target="_blank">荣誉资质</a></li>				
+          </ul>
+        </li>
+		 <li class="mainlevel" id="mainlevel"><a href="#" target="_blank" class="Activity">产品展示</a>		 
+		  <ul id="sub">
+			<li><a href="#" target="_blank">腊肉系列</a></li>
+			<li><a href="#" target="_blank">香肠系列</a></li>
+			<li><a href="#" target="_blank">板鸭系列</a></li>	
+			<li><a href="#" target="_blank">荣誉资质</a></li>				
+          </ul>
+		 
+		 </li>
+		 <li class="mainlevel" id="mainlevel"><a href="#" target="_blank" class="Review">资讯中心</a>
+           <ul id="sub">
+			<li><a href="#" target="_blank">公司新闻</a></li>
+			<li><a href="#" target="_blank">行业信息</a></li>
+			<li><a href="#" target="_blank">政策法规</a></li>	
+          </ul>
+        </li>
+		 <li class="mainlevel" id="mainlevel"><a href="#" target="_blank" class="Campsite">网络营销</a>
+           <ul id="sub">
+			<li><a href="#" target="_blank">联系方式</a></li>
+			<li><a href="#" target="_blank">在线留言</a></li>	
+          </ul>
+        </li>
+		  <li class="mainlevel" id="mainlevel"><a href="#" target="_blank" class="Activity">人才招聘</a></li>		
+	 </ul>
+	</div>
+  </div>
+</div>
+<div class="ipban" style="background:url(common/images/yx_img_02.png) no-repeat; background-position:center;"></div>
+<div class="AD_img"></div>
+<!---->
+<div id="main">
+<!--左侧内容-->
+ <div id="left_style">
+     <div class="Navigation">
+	     <div class="title_name"><p class="English">MARKETING</p><p>网络营销</p></div>
+		 <div class="Column_style">
+		 <ul class="Column">
+		   <li class="on"><em></em><a href="#">联系我们</a></li>
+		    <li ><a href="#">在线留言</a></li>
+			<li ><a href="#">淘宝店铺</a></li>
+		 </ul>
+		 </div>
+	</div>
+	<div class="Navigation_img"></div>
+	<!--联系我们-->
+   <div class="contact">
+    <div class="title"><div class="img"><p class="English">CONTACT US</p><p class="name">联系我们</p></div></div>
+	<div class="way">
+	 <div class="Phone">
+	  <ul>
+	    <li class="img"></li>
+		<li class="phone_title"><p>服务热线</p>
+	  <p class="English">SERVICE HOTLINE</p></li>
+	  <li class="number">028-88634454 </li>
+	  </ul>
+	 </div>
+	 <div class="xioasou">销售总监胡经理：1390053571</div>
+	</div>
+   </div>
+      <div class="Add">
+	  <div class="title_name">网店地址</div>
+	  <ul>
+	   <li><a href="#"><img src="common/images/logo_17.png" /></a></li>
+	   <li><a href="#"><img src="common/images/logo_20.png" /></a></li>
+	   <li><a href="#"><img src="common/images/logo_25.png" /></a></li>
+	  </ul>	
+	</div>
+ </div>
+ <!--右侧内容-->
+ <div id="right_style">
+  <div class="Section_name">
+   <div class="title_name">
+    <h3>联系我们</h3> <span><a href="#">首页</a> > <a href="#">联系方式</a></span>
+   </div>
+  </div>
+  <div class="content_style">
+   <iframe marginheight="0" src="common/map.html" marginwidth="0" scrolling="no" frameborder="0" height="452" width="730"></iframe>
+   <div class="contact">
+    <ul>
+	 <li class="Company_name">成都曾师傅食品有限公司</li>
+	 <li>电话：028-88634454</li>
+<li>邮箱：123456789@qq.com</li>
+<li>地址：四川省成都市蒲江县寿安镇利民路115号</li>
+<li>网址：www.zhengshifu.com</li>
+	 <li></li>
+	</ul>
+	<div class="img"><img src="common/images/page_img_19.png" width="100%" /></div>  
+   </div>
+  </div>
+ </div>
+</div>
+<!--底部样式-->
+ <div id="bottom">
+   <div class="bottom_content">
+    <p class="link_name"><a href="#">首页</a> | <a href="#">关于我们</a>  |  <a href="#">产品中心</a>  |  <a href="#">新闻中心</a>  | <a href="#">人才招聘</a>   </p>
+	<p>成都曾师傅食品有限公司 Tel.01)028-4423-3216  ASAacademy@ASAacademy.com 川ICP备 202005412</p>
+   </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	var left = $("#left");
+	var right = $("#right");
+	var obj = $(".subBox ul");
+	var w = obj.find("li").innerWidth();
+	
+	left.click(function(){
+		obj.find("li:last").prependTo(obj);
+		obj.css("margin-left",-w);
+		obj.animate({"margin-left": 0});
+	});
+	
+	right.click(function(){
+		obj.animate({"margin-left": -w},function(){
+			obj.find("li:first").appendTo(obj);
+			obj.css("margin-left","0");
+		});
+	});
+	
+	var moving = setInterval(function(){right.click()},3000);
+	
+	obj.hover(function(){
+		clearInterval(moving);
+	},function(){
+		moving = setInterval(function(){right.click()},3000);
+	})
+	
+});
+</script>
+<!-- PNG背景透明 -->
+<script src="js/png.js"></script>
+<script>
+DD_belatedPNG.fix('.png_bg,img,.b');
+</script>
+<!-- PNG背景透明 -->
+
+<!--[if lte IE 6]>
+  <style type="text/css">
+    body { behavior:url("csshover.htc"); }
+  </style>
+<![endif]-->
+</head>
+<body>
+<div id="banner">
+  <div id="header">
+    <div class="top">
+      <div class="logo"><a href="#" title="康之桥健康管理中心"><img src="images/logo.png" /></a></div>
+      <div id="topnav" class="png_bg">
+        <div class="topnav"><a href="#">设为首页</a>|<a href="#">联系我们</a>|<a href="#">会员登录</a>|<a href="#">会员注册</a></div>
+        <div id="search_box">
+          <form id="search_form" method="post" action="#">
+            <input type="text" id="s" value="请输入关键字" class="swap_value" />
+            <input type="image" src="images/main_01_02.png" id="go" alt="Search" title="Search" />
+          </form>
+        </div>
+      </div>
+      <div class="top_tel">全国统一热线电话:<B>400-8888-0526</B></div>
+    </div>
+    <div id="nav" class="png_bg">
+      <div class="nav">
+        <UL>
+          <LI><a href="index.html" id="li">网站首页</a></LI>
+          <LI><a href="about.html">关于我们</a></LI>
+          <LI><a href="newsinfor.html">健康管理</a></LI>
+          <LI><a href="newslist.html">健康教育</a></LI>
+          <LI><a href="proinfor.html">老年托孤陪伴</a></LI>
+          <LI><a href="prolist.html">健康知识</a></LI>
+          <LI><a href="#">健康论坛</a></LI>
+          <LI><a href="#">会员专区</a></LI>
+          <LI><a href="#">会员注册</a></LI>
+        </UL>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div id="login" class="png_bg">
+      <div class="login">
+        <div class="loginbar">
+          <H1>用户名：</H1>
+          <input name="" type="text" id="loginbar" class="png_bg" />
+        </div>
+        <div class="loginbar">
+          <H1>密　码：</H1>
+          <input name="" type="text" id="loginbar" class="png_bg" />
+        </div>
+        <div class="btn"><a href="#" style="float:left;"><img src="images/ico_02.jpg" /></a><a href="#" style="float:right;"><img src="images/ico_01.jpg" /></a></div>
+      </div>
+      <div class="login">
+        <div class="list_bt">健康小贴士<I>/ Health Tips</I></div>
+        <div class="list_nei">
+          <UL>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+          </UL>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content">
+  <div class="content">
+    <div id="content_bt" class="png_bg"></div>
+    <div class="content_nei">
+      <div class="zy_left">
+        <UL>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+          <LI><a href="#">关于我们</a></LI>
+        </UL>
+      </div>
+      <div class="zy_right">
+        <div class="right_bt">关于我们<I>About Us</I></div>
+        <div class="right_nei">
+          <UL>
+            <LI><span>2013-01-23</span><a href="#" title="网络团购方式释放了被压抑的文化消费需求">网络团购方式释放了被压抑的文化消费需求</a></LI>
+            <LI><span>2013-01-23</span><a href="#" title="创建网页确保您的新网站喜欢">创建网页确保您的新网站喜欢</a></LI>
+            <LI><span>2013-01-23</span><a href="#" title="三心网络叫你如何在网站设计中传达您的营销信息？">三心网络叫你如何在网站设计中传达您的营销信息？</a></LI>
+            <LI><span>2013-01-23</span><a href="#" title="企业应该理性看待网站建设及其效果">企业应该理性看待网站建设及其效果</a></LI>
+            <LI><span>2013-01-23</span><a href="#" title="网站建设应考虑的核心问题">网站建设应考虑的核心问题</a></LI>
+            <LI><span>2013-01-23</span><a href="#" title="你们按效果付费网站优化服务项目是什么？">你们按效果付费网站优化服务项目是什么？</a></LI>
+            <LI><span>2013-01-23</span><a href="#" title="保证企业网站建设成功的几个小秘籍">保证企业网站建设成功的几个小秘籍</a></LI>
+            <LI><span>2013-01-23</span><a href="#" title="三心网络SEO报价标准价格单">三心网络SEO报价标准价格单</a></LI>
+            <LI><span>2013-01-23</span><a href="#" title="网站建设前应考虑好如何去盈利？">网站建设前应考虑好如何去盈利？</a></LI>
+          </UL>
+        </div>
+        <div class="right_bottom"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="subnav"> <A href="#">网站首页</A>|<A href="#">关于我们</A>|<A href="#">健康管理</A>|<A href="#">健康教育</A>|<A href="#">老年托孤陪伴</A>|<A href="#">健康知识</A>|<A href="#">健康论坛</A>|<A href="#">会员专区</A>|<A href="#">会员注册</A> </div>
+  <P>Copyright ? 2012 Jianerli.net All Rights Reserved 版权所有 健尔力 地址:南京市白下区虎踞南路40-8号1-4楼<br />
+    联系电话：025-86530015 邮箱：service@jianerli.net 企业邮箱登录</P>
+</div>
+</body>
+</html>

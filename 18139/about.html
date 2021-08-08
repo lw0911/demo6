@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <!--slide-->
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script src="../Scripts/swfobject_modified.js" type="text/javascript"></script>
+    <style>
+        .conleft{
+            padding: 0 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="warrper">
+    <!--slide-width-->
+    <div class="slide-wdith">
+      <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="490">
+           <param name="movie" value="flash/flash.swf">
+           <param name="quality" value="high">
+           <param name="swfversion" value="8.0.35.0">
+           <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+           <param name="expressinstall" value="../Scripts/expressInstall.swf">
+           <param name="wmode" value="transparent">
+           <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+           <!--[if !IE]>-->
+           <object type="application/x-shockwave-flash" data="flash/flash.swf" width="100%" height="490">
+             <!--<![endif]-->
+             <param name="quality" value="high">
+             <param name="swfversion" value="8.0.35.0">
+             <param name="expressinstall" value="../Scripts/expressInstall.swf">
+             <param name="wmode" value="transparent">
+             <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+             <div>
+               <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+               <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+             </div>
+             <!--[if !IE]>-->
+           </object>
+           <!--<![endif]-->
+      </object>
+<!--slide-->
+        <!--<div class="slide">-->
+            <!--<div class="slide-ul">-->
+                <!--<ul>-->
+                    <!--<li>-->
+                        <!--<a href=""><img src="images/img1.png" alt=""></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href=""><img src="images/img1.png" alt=""></a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href=""><img src="images/img1.png" alt=""></a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="slide-num" style="display: none">-->
+                <!--<ol>-->
+                    <!--<li class="ol-active">1</li>-->
+                    <!--<li>2</li>-->
+                    <!--<li>3</li>-->
+
+                <!--</ol>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--slide end-->
+        <!--swz-->
+
+      <!--swz end-->
+</div>
+    <!--slide-width end-->
+    <div class="wrap">
+        <!--header-->
+        <div class="header w1100">
+            <div class="header-top clearFloat">
+                <div class="htleft floatLeft">
+                    今天是2016年1月21日 星期四 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">登录</a> | <a href="">注册</a>
+                </div>
+                <div class="htright floatRight">
+                    <a href=""><img src="images/hw.png" alt="" width="23" height="21" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href=""><img src="images/hwb.png" alt="" width="23" height="21"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href=""><img src="images/hq.png" alt="" width="23" height="21"/></a>
+                </div>
+            </div>
+            <br>
+
+<!--nav-->
+            <div class="nav">
+                <ul class="clearFloat">
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="about.html">公园概览</a></li>
+                    <li><a href="feature.html">景点推荐</a></li>
+                    <li><a href="active.html">活动中心</a></li>
+                    <li><a href="guide.html">行车指南</a></li>
+                    <li><a href="">招商合作</a></li>
+                    <li><a href="">人才招聘</a></li>
+                    <li><a href="">在线客服</a></li>
+                </ul>
+            </div>
+            <!--nav end  -->
+        </div>
+        <!--header end-->
+        <div class="content">
+            <div class="content-width w1100 clearFloat">
+                <div class="content-index clearFloat" id="abc">
+                    <div class="conleft floatRight clearFloat">
+                        <div class="aboutwidth pl10 pr10 relative">
+                            <h3 class="f16 text-3c  border-b-c8 pt20 pb10 relative fb">公园概览   <span class="text-3c f14 fn  aboutrightspan absolute"> <a
+                                    href="">当前位置</a> > <a href="">公园概览</a></span></h3><br>
+                             <div class="music">
+                                
+                                      <audio   id="mp3Btn" autoplay loop>
+                                         <source src="../upload/{$aboutyinyue}">
+                                      </audio>  
+                                
+                            </div>
+                            <script>
+                                //播放器控制
+                                var audio = document.getElementById('mp3Btn');
+                                $('.music').click(function(){
+                                
+                                if(audio.paused) //如果当前是暂停状态
+
+                                {
+                                $('.music').css("background","url(/Public/aiqinghai/images/yu.png) no-repeat center bottom");
+                                $('.music').css("background-size","cover");
+                                audio.play();//播放
+                                return;
+                                }
+
+                                //当前是播放状态
+
+                                $('.music').css("background","url(/Public/aiqinghai/images/yu.png) no-repeat center bottom");
+                                $('.music').css("background-size","cover");
+                                audio.pause(); //暂停
+
+                                });
+
+                            </script> 
+
+                            <div class="aboutp"><br>
+
+                                <img src="images/abp.png" alt="" width="827" height="484"/><br><br>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京爱情海玫瑰文化博览园是2016年世界月季洲际大会的主会场之一，位于北京市大兴区魏善庄镇，东距京台高速（魏永路出口）1.5公里，西距南中轴路2公里，南距新机场12公里，北距天安门25公里，占地1500亩。园区采用中西合璧的设计年，有西式的对称天气，又有中式的曲径通幽。园区本着科技、生态、时尚、互动体验 的建设理念，围绕“爱情”主题打造了婚纱摄影基地、草坪殿堂婚礼等多处景观，另外还将建成月季大道、月季科普展示中心、月季观赏区、月季生产栽培区、创意文化产业一条街等多功能园区。位于南园东南侧，占地2800㎡，内部挑空6m，可以同时容纳3-4场主题婚礼婚宴仪式，设置对内对外区分出入口，在满足园区内部婚庆婚宴及日常餐饮服务的同时，也具备单独对外承接餐饮服务的能力。外立面采用了超过40个国家（我爱你）的语言，利用镂空雕刻展示在建筑外立面上，增加园区的文化氛围。<br><br>
+
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;月季文化园也称北京爱情海玫瑰文化博览园，坐落于魏善庄镇，区域优势显著，交通便利。总占地面积1500亩，采用中西合璧的造园手法。园内包含月季大道、游客服务中心、婚庆服务中心（集装箱）、水晶殿堂、房车露营基地、古森林博物馆、2800平米中式婚宴厅等景观与配套设施。<br><br>
+
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以婚庆甜蜜产业为主题，打造“爱情海”式的特色景区，是集月季文化传承、月季产业链延伸等多种功能于一体的文化创意园。<br><br>
+
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公园围绕“爱情”主题打造了婚纱摄影基地、草坪教堂婚礼等多处景观，另外还将建成月季大道、科普展示中心、戏水木屋休闲区、古树奇石园、植物观赏园、花卉生产栽培中心、创意文化产业一条街、房车露营区等多功能园区。<br><br>
+
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京爱情海玫瑰文化博览园同时也作为“2016年世界月季洲际大会”的主会场，本着科技、生态、时尚、互动体验的建设理念，力求将园区打造成为集花艺观赏、科普观光、休闲娱乐、文化传承等多功能为一体，融爱情文化、婚纱摄影、婚礼婚庆、为主题的“爱情圣地”。<br><br>
+                                </p>
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="conright floatLeft">
+                        <div class="about">
+                            <h3 class="abouh3">公园概览</h3>
+                            <div class="aboutlist ml10 mr10">
+                                <ul>
+                                    <li><a href="" class="abactive">月季小镇</a></li>
+                                    <li><a href="">古森林博物馆</a></li>
+                                    <li><a href="">主题酒店</a></li>
+                                    <li><a href="">婚纱摄影</a></li>
+                                    <li><a href="">婚礼婚庆</a></li>
+                                    <li><a href="">特色商品</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="onlie bgd-ff pt10 pb10">
+                            <a href=""><img src="images/onlie.jpg" alt="" width="220" height="112"/></a>
+                        </div>
+
+                        <div class="conrigtlist mt15 mb5">
+                            <ul class="clearFloat">
+                                <a href="">
+                                    <li>
+                                        <img src="images/inrt1.png" alt="" width="53" height="54"/>
+                                        <span>吃</span>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>
+                                        <img src="images/inrt2.png" alt="" width="53" height="54"/>
+                                        <span>住</span>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>
+                                        <img src="images/inrt3.png" alt="" width="53" height="54"/>
+                                        <span>行</span>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>
+                                        <img src="images/inrt4.png" alt="" width="53" height="54"/>
+                                        <span>游</span>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>
+                                        <img src="images/inrt5.png" alt="" width="53" height="54"/>
+                                        <span>购</span>
+                                    </li>
+                                </a>
+                                <a href="">
+                                    <li>
+                                        <img src="images/inrt6.png" alt="" width="53" height="54"/>
+                                        <span>娱</span>
+                                    </li>
+                                </a>
+
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!--footer-->
+                <div class="footer bgd-ff text-center">
+                    <p>版权所有：北京xxx文化传播有限公司                  备案：京 xxxxxx号              </p>
+                </div>
+                <!--footer end-->
+                <script>
+                    window.onload = function() {
+                        var h=$('#abc').outerHeight(true);
+                        $('.conleft').height(h);
+                        $('.conright').height(h);
+                    }
+                </script>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

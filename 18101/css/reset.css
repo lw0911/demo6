@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size:12px;
+  
+}
+em{
+  font-style: normal;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px;}
+.sh1,.sh2,.sh3,.sh4,.sh5,.sh6{font-weight:normal;font-size:12px;display:block}
+
+a,img{border:none;
+      text-decoration:none;
+      color:#000;}
+
+body{background:#f9f9f9;}
+*:focus {outline: none;} 

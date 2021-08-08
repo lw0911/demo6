@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>密码找回</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <!--slide-->
+    <script type="text/javascript" src="js/slide.js"></script>
+    <!--link-->
+    <script type="text/javascript" src="js/linkup.js"></script>
+    <style>
+        body{
+            background: url("images/zcbj2.png") no-repeat 100% 100%;
+
+        }
+        .info{
+            border:1px solid #ccc;
+            padding:2px 20px 2px 5px;
+            color:#666;
+            position:absolute;
+            display:none;
+            line-height:20px;
+            background-color:#fff;
+        }
+        .dec {
+            bottom: -8px;
+            display: block;
+            height: 8px;
+            overflow: hidden;
+            position: absolute;
+            left: 10px;
+            width: 17px;
+        }
+        .dec s {
+            font-family: simsun;
+            font-size: 16px;
+            height: 19px;
+            left: 0;
+            line-height: 21px;
+            position: absolute;
+            text-decoration: none;
+            top: -9px;
+            width: 17px;
+        }
+        .dec .dec1 {
+            color: #ccc;
+        }
+        .dec .dec2 {
+            color: #fff;
+            top: -10px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="warrper">
+    <div class="register">
+        <div class="retop f34 text-969696 mt25 fn">
+            <img src="images/relogo.png" alt="" width="84" height="83" class="vertical-align"/>&nbsp;|&nbsp;<a href="" class="text-969696">欢迎注册</a>
+        </div>
+        <div class="rewidth clearFloat mt50">
+            <div class="releft  floatLeft">
+                <img src="images/rewidth.png" alt="" width="405" height="410"/>
+            </div>
+            <div class="reright floatRight">
+                <div class="formtable">
+                    <span class="f16 ml20 display mb20">已注册可<a href="" class="text-a961b3">直接登录</a> </span>
+                    <form action=""  class="registerform">
+                        <table>
+                            <tr>
+                                <td class="retab">用户名：</td>
+                                <td class="reiw"><input type="text" value="" name="name" class="inputxt" datatype="s6-18"  nullmsg="请输入您的昵称！" errormsg="昵称至少6个字符,最多18个字符！" /></td>
+                                <td>
+                                    <div class="info"><span class="Validform_checktip">昵称至少6个字符,最多18个字符</span><span class="dec"><s class="dec1">&#9670;</s><s class="dec2">&#9670;</s></span></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="retab">找回方式：</td>
+                                <td class="reiw">
+                                    <div class="linkeselect">
+                                        <h3 class="linkselecth3 border-d2 bgd-ff pl10"><span class="youqing">请选择找回密码方式</span>  <a href="javascript:;" class="seico"></a></h3>
+                                        <div class="linul">
+                                            <ul>
+                                                <li><a href="javascript:;">邮箱找回密码</a></li>
+                                                <li><a href="javascript:;">手机找回密码</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="margin-top: 25px;">
+                                <td class="retab"></td>
+                                <td>
+                                    <input type="submit" value="提交" class="resubmit ml5"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+    <script type="text/javascript" src="js/passwordStrength-min.js"></script>
+    <script type="text/javascript" src="js/yan.js"></script>
+
+
+    <br> <br>
+    <div class="refooter pb20">
+        <span class="display mb10"><a href="">首页</a>|<a href="">书画商城</a>|<a href="">文化视频</a>|<a href="">书画快讯</a>|<a href="">购物指南</a>|<a href="">支付方式</a>|<a href="">售后服务</a>|<a href="">联系方式</a></span>
+        <p>版权所有 2015-2018         爱情海          冀ICP备：15016443号</p>
+        <br>
+    </div>
+    <div id="actionSheet_wrap">
+        <div class="weui_mask_transition" id="mask" style="display: none;"></div>
+        <div class="weui_actionsheet" id="weui_actionsheet">
+            <div class="weui_actionsheet_menu">
+                <div class="weui_actionsheet_cell title">x</div>
+                <div class="weui_actionsheet_cell play_pyq" data-scene="1" style="padding-bottom: 0;">
+                    <div>
+                        <span class="f25 display text-00"><img src="images/zcdg.png" alt="" width="31" height="31" class="vertical-align"/>&nbsp;&nbsp;注册成功！</span>
+                        <span class="f25 display text-00" style="display: none"><img src="images/zcdg.png" alt="" width="31" height="31" class="vertical-align"/>&nbsp;&nbsp;注册失败！</span>
+                        <span class="f15 line-height-28 display text-00 mt10">&nbsp;感谢您对爱情海的支持。</span>
+                    </div>
+                </div>
+                <div class="weui_actionsheet_cell play_pyq" data-scene="2">
+                    <div>
+                        <ul class="zcsj">
+                            <li>
+                                <a href="" class="text-00">返回上一页</a></span>
+                            </li>
+                            <li>
+                                <a href="" class="text-00">返回首页</a></span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        function hideActionSheet(weuiActionsheet, mask) {
+            weuiActionsheet.removeClass('weui_actionsheet_toggle');
+            mask.removeClass('weui_fade_toggle');
+            weuiActionsheet.on('transitionend', function () {
+                mask.hide();
+            }).on('webkitTransitionEnd', function () {
+                mask.hide();
+            })
+        }
+        function showActionSheet() {
+            var mask = $('#mask');
+            var weuiActionsheet = $('#weui_actionsheet');
+            weuiActionsheet.addClass('weui_actionsheet_toggle');
+            mask.show().addClass('weui_fade_toggle').click(function () {
+                hideActionSheet(weuiActionsheet, mask);
+            });
+            $('#actionsheet_cancel').click(function () {
+                hideActionSheet(weuiActionsheet, mask);
+            });
+            weuiActionsheet.unbind('transitionend').unbind('webkitTransitionEnd');
+        }
+        $('.resubmit').not(".noplayimg").on('click', function () {
+            showActionSheet();
+        });
+        $('.title').click(function(){
+            $("#actionSheet_wrap").hide();
+        });
+
+
+    </script>
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

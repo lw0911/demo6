@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="audio_div" style="background:url(images/yu.png);border:1px solid red;height:48px;width:52px;" >
+	<audio id="mp3Btn" autoplay loop>
+	<source src="mp3/1.mp3" type="audio/mpeg" />
+
+	</audio>
+
+	</div>
+	<script>
+	//播放器控制
+	var audio = document.getElementById('mp3Btn');
+	$('.audio_div').click(function(){
+
+	if(audio.paused) //如果当前是暂停状态
+
+	{
+	$('.audio_div').css("background","url(images/yu2.png)");
+	
+	audio.play();//播放
+	return;
+	}
+
+	//当前是播放状态
+
+	$('.audio_div').css("background","url(images/yu.png)");
+
+	audio.pause(); //暂停
+
+	});
+
+	</script> 
+	
+</body>
+</html>

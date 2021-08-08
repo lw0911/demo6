@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>红色化工生产企业静态网站模板</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<!--标志-->
+<div class="log_bg overflow">
+ <div class="wrap overflow pt25 pr25">
+  <span class="fr "><a href="#">客户留言</a> | <a href="contact.html">联系我们</a> | <a href="#">网站地图</a></span>
+ </div>
+</div>
+<!--导航-->
+<div class="nav_bg overflow clearfix">
+ <div class=" wrap overflow nav">
+  <ul>
+   <li><a href="index.html">网站首页</a></li>
+   <li><a href="about.html">企业简介</a></li>
+   <li><a href="pro.html">产品展示</a></li>
+   <li><a href="news.html">新闻资讯</a></li>
+   <li><a href="job.html">人力招聘</a></li>
+   <li><a href="contact.html">联系我们</a></li>
+  </ul>
+ </div>
+</div>
+
+<!--js-->
+<div class=" clearfix overflow w100">
+
+<!-- 代码begin -->
+<div class="flexslider">
+	<ul class="slides">
+		<li style="background:url(images/02.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(images/03.jpg) 50% 0 no-repeat;"></li>
+	</ul>
+</div>
+<!-- 代码end -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+$(function(){
+	$('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+});
+</script>
+
+</div>
+<!--新闻-->
+<div class="wrap overflow pt30 clearfix   ">
+ <h5 class="f24  l-36">联系我们</h5>
+ <p class="pt15"><img src="images/hr1.jpg" /></p>
+</div> 
+<div class="wrap overflow pt30 clearfix ">
+ <div class="w100 tc  l-35 f16">
+  <h5 class="red f24">河南省某某化工厂</h5>
+公司地址：江苏省南京市玄武玄武湖<br />
+厂址：江苏省南京市某条路上<br />
+电话：0371-88888888   99999999<br />
+设计QQ：88888888   66666666   787878<br />
+客服QQ：12345678   987654321
+</div>
+<div class="w100 pt20 clearfix overflow pb20">
+ <img src="images/l_r2_c3.jpg" />
+</div>
+</div>
+
+
+<div class="message_w clearfix  overflow " style="margin-bottom:-30px">
+    <div class="message">
+        <h2>
+            在线留言
+            <i>请把您对我们的建设告诉我们，有您的支持，我们会做的更好！</i>
+        </h2>
+        <dl>
+        	<dt><img width="287" height="287" src="images/287.jpg"><br>这一刻，您与我们相遇！<br>
+这里是一个包罗万象的学习平台！<br>
+维赛客运营专家手把手教您如何在网上赚钱！<br>
+将您的业务推到全新的高度！</dt>
+			<form action="/e/enews/index.php" enctype="multipart/form-data" method="post" name="feedback">
+            <input type="hidden" value="AddFeedback" name="enews">
+            <input type="hidden" value="1" name="bid">
+            <input type="hidden" value="/contact.html" name="ecmsfrom">
+            <dd class="tl">
+                <em>姓名</em><input type="text" id="txtsites_l" class="jj_xm_l tl" name="title">
+                <em>电话</em><input type="text" class="jj_xm_l t" id="txtfw_l" name="mycall">
+            </dd>
+            <dd class="tl">
+                <em>邮箱</em><input type="text" id="txtphones_l" class="jj_xm_l tl" name="email">
+            </dd>
+            <dd class="tl">
+                <em>留言板</em><textarea cols="20" rows="2" id="content" class="fm-textarea tl" name="saytext"></textarea>
+            </dd>
+            <dd class="tl">
+                <em>验证码</em><input type="text" id="txtphones_l" class="jj_xm_2 tl" name="key"><em><img src="images/l_r5_c5.jpg" /></em>
+            </dd>
+            <dd><input type="submit" onclick="zhend(this)" value="立即提交" class="submtj"></dd>
+            </form>
+        </dl>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--end-->
+<!--版权-->
+<div class="copy_bg overflow clearfix w100">
+ <div class="wrap overflow baise ">
+  <p class="fl"><img src="images/index_r42_c7.jpg" /></p>
+  <dl class="fl pl20">
+  <dt><a href="#">企业简介</a> &nbsp; &nbsp;&nbsp; <a href="#">产品展示</a>  &nbsp; &nbsp;&nbsp; <a href="#">新闻资讯</a>   &nbsp; &nbsp;&nbsp;<a href="#">人才招聘</a> &nbsp; &nbsp;&nbsp; <a href="#"> 联系我们</a>  
+  </dt>
+  <dd>
+  Copyright@ XXX All Rights Reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>  
+  </dd>
+  </dl>
+  <ol class="fr">
+   <img src="images/index_r42_c38.jpg" />
+  </ol>
+ </div>
+</div>
+
+</body>
+</html>

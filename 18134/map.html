@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>地图</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <!--weixin-->
+    <script type="text/javascript" src="js/wexin.js"></script>
+    <!--nav-->
+    <script type="text/javascript" src="js/nva.js"></script>
+    <!--input-->
+    <script type="text/javascript" src="js/input.js"></script>
+    <!--slide-->
+    <script type="text/javascript" src="js/jquery.bxslider_e88acd1b.js"></script>
+
+    <script type="text/javascript" src="js/fd.js"></script>
+    <script type="text/javascript" src="js/up.js"></script>
+    <style>
+        .listright{
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+<div class="wapper">
+    <!--header-->
+    <div class="header w1200 clearFloat">
+        <!--header-top-->
+        <div class="header-top text-right">
+            <a href="" class="relative hwexin">官方微信 <img src="images/wxicon.png" alt="" width="21" height="17" class="vertical-align"/> &nbsp;&nbsp;|
+                <span class="weixin"><img src="images/wexin.png" alt="" width="122" height="122"/></span>
+            </a>
+            <a href="">联系安耐 &nbsp;&nbsp;&nbsp;|</a>
+            <a href="">收藏本站 &nbsp;&nbsp;&nbsp;|</a>
+            <a href="">网站地图</a>
+        </div>
+        <br>
+        <!--header-top end-->
+        <!--header-width-->
+        <div class="header-width clearFloat">
+            <div class="logo floatLeft">
+                <a href=""><img src="images/logo.png" alt="" width="835" height="92"/></a>
+
+            </div>
+            <div class="header-phone floatRight">
+                <img src="images/hphone.png" alt="" width="291" height="61"/>
+            </div>
+
+        </div>
+        <!--header-width end-->
+    </div>
+    <!--header end-->
+    <!--nav-->
+    <div class="nav">
+        <div class="nav-width w1200 ">
+            <ul class="clearFloat">
+                <li><a href="" class="activer">陶瓦首页 </a></li>
+                <li><a href="">平板陶瓦</a>
+                    <ul>
+                        <li><a href="">蒂凡尼</a></li>
+                        <li><a href="">法式莱昂瓦</a></li>
+                        <li><a href="" class="activer2">德式莱茵瓦</a></li>
+                        <li><a href="">法国马赛瓦</a></li>
+                        <li><a href="">凡尔纳</a></li>
+                        <li><a href="">鱼鳞瓦</a></li>
+                        <li><a href="">泰式平板瓦</a></li>
+                        <li><a href="">英式平板瓦</a></li>
+                        <li><a href="">平板瓦配件</a></li>
+                    </ul>
+                </li>
+                <li><a href="">拱形陶瓦</a>
+                    <ul>
+                        <li><a href="">蒂凡尼</a></li>
+                        <li><a href="">法式莱昂瓦</a></li>
+                        <li><a href="" class="activer2">德式莱茵瓦</a></li>
+                        <li><a href="">法国马赛瓦</a></li>
+                        <li><a href="">凡尔纳</a></li>
+                        <li><a href="">鱼鳞瓦</a></li>
+                        <li><a href="">泰式平板瓦</a></li>
+                        <li><a href="">英式平板瓦</a></li>
+                        <li><a href="">平板瓦配件</a></li>
+                    </ul>
+                </li>
+                <li><a href="">陶瓦屋面系统 </a></li>
+                <li><a href="">成功案例 </a></li>
+                <li><a href="">新闻资讯</a></li>
+                <li><a href="">关于安耐格</a></li>
+                <li><a href="">联系安耐格</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--nav end-->
+    <!--seach-->
+    <div class="seach w1200">
+        <div class="seach-width mt10 clearFloat">
+                 <span class="clearFloat floatLeft">
+                    <input type="text" value="请输入您要搜索的关键词" class="sinput floatLeft"/>
+                     <a href=""><img src="images/sbutton.png" alt="" width="43" height="23"/></a>
+                 </span>
+                 <span class="ml25">
+                     热门关键词：<a href="">陶瓦</a> <a href="">国产陶瓦</a> <a href="">特伦特陶瓦</a> <a href="">陶瓦屋面</a>
+                 </span>
+
+        </div>
+        <script>
+
+        </script>
+    </div>
+    <!--seach end-->
+    <!--slide-->
+    <div class="slide">
+        <div class="top_slide_wrap">
+            <ul class="slide_box bxslider">
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt="" title="城市预测"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/slide.jpg" alt=""></a>
+                </li>
+            </ul>
+
+            <div class="op_btns clearfix">
+                <a href="#" class="op_btn op_prev"><span></span></a>
+                <a href="#" class="op_btn op_next"><span></span></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function(){
+            $(".bxslider").bxSlider({
+                auto:true,
+                prevSelector:$(".top_slide_wrap .op_prev")[0],nextSelector:$(".top_slide_wrap .op_next")[0]
+            });
+        })();
+    </script>
+    <!--slide end-->
+    <br>
+    <!--content-->
+    <div class="content w1200">
+        <div class="list clearFloat pb50">
+            <div class="listright floatRight">
+                <h3 class="fb text-66 border-d-b-dcdcdc pt10 pb10 pl20 relative">网站地图 <span class="text-c90708 fb">Site map</span><span class="f14 fn text-99 aboutrightspan absolute">当前位置: <a href="" class="text-99">首页</a> > <a
+                        href="" class="text-99">网站地图</a> </span></h3>
+                <br>
+                <div class="listrmap pl20 pr20"><br><br><br>
+                     <span class="wtsy"><a href="">陶瓦首页</a></span>
+                     <div class="listtramul">
+                         <ul class="clearFloat">
+                             <li><a href="">平板陶瓦</a></li>
+                             <li><a href="">拱形陶瓦</a></li>
+                             <li><a href="">陶瓦屋面系统</a></li>
+                             <li><a href="">成功案例</a></li>
+                             <li><a href="">新闻资讯</a></li>
+                             <li><a href="">关于安耐格</a></li>
+                             <li><a href="">联系安耐格</a></li>
+                         </ul>
+                     </div>
+                    <div class="listtramul2">
+                        <ul class="clearFloat">
+                            <li><a href="">罗曼尼</a></li>
+                            <li><a href="">法式罗曼瓦</a></li>
+                            <li><a href="">卡斯特瓦</a></li>
+                            <li><a href="">拱形瓦配件</a></li>
+                        </ul>
+                    </div>
+                    <div class="listtramul3">
+                        <ul class="clearFloat">
+                            <li><a href="">平板瓦系列</a></li>
+                            <li><a href="">拱形瓦系列</a></li>
+                        </ul>
+                    </div>
+                    <div class="listtramul4">
+                        <ul class="clearFloat">
+                            <li><a href="">公司新闻</a></li>
+                            <li><a href="">行业新闻</a></li>
+                            <li><a href="">陶瓦百科</a></li>
+                        </ul>
+                    </div>
+                    <div class="listtramul5">
+                        <ul class="clearFloat">
+                            <li><a href="">蒂凡尼</a></li>
+                            <li><a href="">法式莱昂瓦</a></li>
+                            <li><a href="">德式莱茵瓦</a></li>
+                            <li><a href="">法国马赛瓦</a></li>
+                            <li><a href="">凡尔纳</a></li>
+                            <li><a href="">鱼鳞瓦</a></li>
+                            <li><a href="">泰式平板瓦</a></li>
+                            <li><a href="">平板瓦配件</a></li>
+                        </ul>
+                    </div>
+                    <div class="listtramul6">
+                        <ul class="clearFloat">
+                            <li><a href="">公司介绍</a></li>
+                            <li><a href="">企业文化</a></li>
+                            <li><a href="">资质荣誉</a></li>
+                            <li><a href="">企业文化</a></li>
+                            <li><a href="">陶瓦工厂</a></li>
+                            <li><a href="">我们的优势</a></li>
+                            <li><a href="">服务保证</a></li>
+                        </ul>
+                    </div>
+                    <div class="listtramul7">
+                        <ul class="clearFloat">
+                            <li><a href="">太阳能与建筑</a></li>
+                            <li><a href="">管热系统</a></li>
+                            <li><a href="">防水系统</a></li>
+                            <li><a href="">节能系统</a></li>
+                            <li><a href="">节点系统</a></li>
+                            <li><a href="">通风系统</a></li>
+                            <li><a href="">紧固系统</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <br><br><br>
+
+    </div>
+    <!--content end-->
+    <!--footer-->
+    <div class="footer"><br><br>
+        <div class="w1200 clearFloat">
+            <div class="flogo floatLeft">
+                <a href=""><img src="images/flogo.png" alt="" width="155" height="110"/></a>
+            </div>
+            <div class="footp text-33 floatLeft ml20 ml70">
+                <span class="f16">XXX <img src="images/atim.png" alt="" width="56" height="15" class="vertical-align"/> <img src="images/badu.png" alt="" width="20" height="20" class="vertical-align"/></span>
+                <p>
+                    公司地址：XXX<br>
+                    电话：400-- 销售热线：郭总13331160776  13911053603<br>
+                    瓦   陶瓦   国产陶瓦   特伦特陶瓦   拱形瓦   安耐格<br>
+                    <span class="f12">申明：本站网页设计受专利保护，盗用者，必追究法律责任。版权所有：XXX。技术支持：万虎网络 备案号：XXX</span>
+                </p>
+            </div>
+            <div class="flogo floatRight text-right">
+                <a href=""><img src="images/fwexin.png" alt="" width="110" height="110"/></a>
+            </div>
+
+        </div>
+        <br>
+    </div>
+    <!--footer end-->
+    <div class="infd-width">
+        <div class="online">
+            <a href=""><img src="images/online.png" alt="" width="23" height="95"/></a>
+        </div>
+        <div class="infd">
+            <br><br>
+              <span class="text-center display">
+                  <img src="images/fwx.png" alt="" width="84" height="85"/>
+                  <span class="display text-center f10">关注我们有惊喜~</span>
+                  <ul class="fdul">
+                      <li><a href=""><img src="images/qe.png" alt="" width="20" height="20" class="vertical-align mr10"/>QQ直线咨询</a></li>
+                      <li><a href=""><img src="images/qe.png" alt="" width="20" height="20" class="vertical-align mr10"/>QQ直线咨询</a></li>
+                      <li><a href=""><img src="images/qe.png" alt="" width="20" height="20" class="vertical-align mr10"/>QQ直线咨询</a></li>
+                      <li><a href=""><img src="images/qe.png" alt="" width="20" height="20" class="vertical-align mr10"/>QQ直线咨询</a></li>
+                      <span class="fdjlin"><img src="images/fdjlin.png" width="142" height="2" alt=""/></span>
+                  </ul>
+                  <span class="shzx f12"><a href="" class="text-c90708">售后服务咨询</a></span>
+              </span>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+</body>
+</html>

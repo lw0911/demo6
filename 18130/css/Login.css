@@ -1,0 +1,104 @@
+*{margin:0px; padding:0px;}
+body{
+	width:100%;
+	height:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+#container{
+	width:960px;
+	height:auto;
+	margin:0 auto;
+}
+
+/*top*/
+#top{
+	width:auto;
+	height:30px;
+	margin:50px 0 20px 0;
+	background:url(../Account/images/login-top.jpg) repeat-x;
+}
+
+/*中间登录部分*/
+#middle{
+	height:350px;
+	background:url(../Account/images/login-middle.jpg) no-repeat;
+}
+/*登录框后面的白色背景*/
+.middleright{
+	float:right;
+	margin:40px 80px 0 0;
+	width:350px;
+	height:310px;
+	background-color:#FFFFFF;
+}
+/*登录框*/
+.login{
+	width:320px;
+	height:295px;
+	margin:15px 15px 0 15px;
+	background-color:#EEEEEE;
+}
+
+.title{
+	width:320px;
+	height:40px;
+	background:url(../Account/images/login-title.jpg) no-repeat;
+}
+.titlename{
+	color:#FF9900;
+	font-size:24px;
+	line-height:40px;
+	font-weight:bold;
+	margin:0 0 0 100px;
+}
+.loginmiddle{
+	margin:20px 0 0 30px;
+}
+.loginmiddle a:hover{
+	text-decoration:underline;
+}
+.q{
+	color:#006666;
+}
+.change{
+	color:blue;
+	text-decoration:none;
+}
+#btn{
+	color:#FF9900;
+	font-size:20px;
+	font-weight:bold;
+	width:150px;
+	height:30px;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	line-height:30px;
+	background:url(../Account/images/loginbtn.jpg) no-repeat;
+}
+
+.save{
+	color:#006666;
+}
+.helplogin{
+	color:#FF9900;
+	text-decoration:none;
+}
+
+
+
+/*foot*/
+#foot{
+	text-align:center;
+	line-height:40px;
+	margin:50px 0 0 0;
+}
+#foot a{
+	text-decoration:none;
+	color:#009999;
+	font-size:16px;
+}
+#foot a:hover{
+	text-decoration:underline;
+}

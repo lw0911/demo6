@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" contect="http://www.baidu.com">
+<title>十七</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link type="text/css" href="css/css.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript">
+ //导航定位
+ $(function(){
+	 //$(".nav li:eq(3) a:first").addClass("navCur")
+	 })
+</script>
+<!--产品滚动-->
+<script type="text/javascript" src="js/jquery.DB_gallery.js"></script>
+</head>
+
+<body>
+ <div class="header">
+  <div class="web-width">
+   <h1 class="logo fl"><a href="index.html"><img src="images/logo.png" width="133" height="59" /></a></h1>
+   <div class="phone fl"><span>免费咨询热线：</span><strong class="blue">400-081-6686</strong></div>
+   <div class="login-reg fl"><a href="reg.html">注册</a> / <a href="login.html">登录</a></div>
+   <div class="my-account fl">
+    <h2>我的账户</h2>
+    <ul>
+     <li><a href="user.html">个人中心</a></li>
+     <li><a href="user-oreder.html">已买宝贝</a></li>
+     <li><a href="user-address.html">收货地址</a></li>
+     <li><a href="user-pwd.html">修改密码</a></li>
+    </ul>
+   </div><!--my-account/-->
+   <div class="head-car fr"><a href="car.html" class="c">购物车(0)</a></div>
+   <div class="clears"></div>
+  </div><!--web-width/-->
+ </div><!--header/-->
+ <div class="nav-search">
+  <div class="web-width">
+   <ul class="nav fl">
+    <li class="nav-index"><a href="index.html">首页</a></li>
+    <li><a href="shopping.html">快速选购</a></li>
+    <li><a href="design.html">专业设计</a></li>
+    <li><a href="products.html">所有产品</a>
+     <div class="chilNav">
+      <a href="products.html">音响</a>
+      <a href="products.html">功放</a>
+      <a href="products.html">投影机</a>
+      <a href="products.html">投影幕</a>
+     </div>
+    </li>
+    <li><a href="case.html">关于我们</a>
+     <div class="chilNav">
+      <a href="case.html">成功案例</a>
+      <a href="designer.html">设计师团队</a>
+      <a href="engineer.html">工程师团队</a>
+      <a href="service.html">服务流程</a>
+      <a href="major.html">专业保障</a>
+     </div>
+    </li>
+    <li class="nav-last"><a href="video.html">影音社区</a></li>
+    <div class="clears"></div>
+   </ul>
+   <form action="#" method="get" class="search fr">
+    <input type="text" placeholder="请输入你所需的内容" class="sea-text border-radiuss" />
+    <input type="submit" value="搜索" class="sea-sub border-radiuss" />
+   </form>
+   <div class="clears"></div>
+  </div><!--web-width/-->
+ </div><!--nav-search/-->
+  <div class="content">
+   <div class="web-width">
+    <div class="positions">
+     <a href="index.html">首页</a> &gt; <a href="javascript:;">购物车</a>
+    </div><!--positions/-->
+    <div class="user">
+     <div class="user-left">
+      <h2 class="user-title">会员中心</h2>
+      <dl class="user-nav">
+       <dt class="usernav-cur"><a href="user.html">个人中心</a></dt>
+       <dt><a href="user-order.html">订单列表</a></dt>
+       <dt><a href="user-address.html">收货地址</a></dt>
+       <dt><a href="user-pwd.html">修改密码</a></dt>
+      </dl>
+     </div><!--user-left/-->
+     <div class="user-right">
+      <h3 class="vipright-title">修改头像</h3>
+     <form action="#" method="get">
+     <dl class="vip-touxiang">
+      <dt><img src="images/tx.jpg" width="100" height="100" /></dt>
+      <dd>
+       <h3><strong>点击选择文件上传头像</strong></h3>
+       <div class="sctx"><input type="file" /><a href="javascript:;">上传</a></div>
+       <p>图片格式：GIF、JPG、JPEG、PNG ，最适合尺寸100*100像素</p>
+      </dd>
+      <div class="clearfix"></div>
+     </dl><!--vip-touxiang/-->
+     </form>
+     <h3 class="vipright-title">修改资料</h3>
+     <table class="grinfo">
+        <tbody>
+        <tr>
+        <th>手机号：</th>
+        <td> <strong>18521032517</strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;"><span style="color:#888;cursor:pointer">(修改手机号)</span></a>
+        </td>
+        </tr>
+        <tr>
+        <th><span class="red">*</span> 昵称：</th>
+        <td>
+        <input class="inp inw" type="text" id="title" value="185****2517" maxlength="14">
+        </td>
+        </tr>
+        <tr>
+        <th><span class="red">*</span> 性 &nbsp; &nbsp;别：</th>
+        <td>
+        <input type="radio" value="2" id="rbSex1" name="sex">
+        <label for="rbSex1">女</label>
+        <input type="radio" value="1" id="rbSex2" name="sex">
+        <label for="rbSex2">男</label>
+        <span id="Sex_Tip"></span>
+        </td>
+        </tr>
+        <tr>
+        <th><span class="red"></span> 年 &nbsp; &nbsp;龄：</th>
+        <td>
+        <input class="inp inw" type="text" id="age" value="0" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+        </td>
+        </tr>
+        <tr>
+        <th>&nbsp;Q &nbsp; &nbsp;Q：</th>
+        <td>
+        <input class="inp inw" type="text" maxlength="15" value="" id="qq" onkeyup="return ValidateNumber(this,value)">
+        </td>
+        </tr>
+        
+        <tr>
+        <th valign="top">个性签名：</th>
+        <td>
+        <textarea id="sign" class="grtextarea"></textarea>
+        <br>
+        <span class="fgrey">(128字符以内)</span>
+        </td>
+        </tr>
+        <tr>
+        <th>&nbsp;</th>
+        <td colspan="2">
+        <label class="butt" id="butt">
+        <input type="submit" class="member_mod_buttom" onclick="mod_member()" value="完成修改" />
+        </label>
+        </td>
+        </tr>
+        </tbody>
+      </table>
+     </div><!--user-right/-->
+     <div class="clearfix"></div>
+    </div><!--user/-->
+   </div><!--web-width/-->
+  </div><!--content/-->
+  <div class="footNav">
+   <div class="web-width">
+    <ul>
+     <li class="ftTitle">成功案例</li>
+     <li><a href="javascript:;">家庭影院</a></li>
+     <li><a href="javascript:;">卡拉OK</a></li>
+     <li><a href="javascript:;">智能家居</a></li>
+     <li><a href="javascript:;">声学装修</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">影音定制</li>
+     <li><a href="javascript:;">入门级影院</a></li>
+     <li><a href="javascript:;">专业级影院</a></li>
+     <li><a href="javascript:;">发烧级影院</a></li>
+     <li><a href="javascript:;">奢品级影院</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">代理产品</li>
+     <li><a href="javascript:;">音响</a></li>
+     <li><a href="javascript:;">功放</a></li>
+     <li><a href="javascript:;">投影机</a></li>
+     <li><a href="javascript:;">投影幕</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">装修风格</li>
+     <li><a href="javascript:;">现代风格</a></li>
+     <li><a href="javascript:;">欧式风格</a></li>
+
+     <li><a href="javascript:;">美式风格</a></li>
+     <li><a href="javascript:;">中式风格</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">专业保障</li>
+     <li><a href="javascript:;">权威认证</a></li>
+     <li><a href="javascript:;">专业声学装修</a></li>
+     <li><a href="javascript:;">项目管理</a></li>
+     <li><a href="javascript:;">安装调试</a></li>
+     <li><a href="javascript:;">品质服务</a></li>
+    </ul>
+    <ul>
+     <li class="ftTitle">关于我们</li>
+     <li><a href="javascript:;">公司简介</a></li>
+     <li><a href="javascript:;">十七展厅</a></li>
+     <li><a href="javascript:;">服务流程</a></li>
+     <li><a href="javascript:;">十七资讯</a></li>
+     <li><a href="javascript:;">联系我们</a></li>
+    </ul>
+    <div class="footgz">
+     <table>
+      <tr>
+       <th>关注十七官方微博</th>
+       <td><a href="#" target="_blank"><img src="images/guanzhu.jpg" width="94" height="33" /></a></td>
+      </tr>
+      <tr>
+       <th>
+        扫一扫关注官方微信
+        <p>微信搜索“十七”或<br />
+直接扫描右侧二维码</p>
+       </th>
+       <td><img src="images/erweima.jpg" width="114" height="114" /></td>
+      </tr>
+     </table>
+    </div><!--footgz/-->
+    <div class="clears"></div>
+   </div><!--web-width/-->
+  </div><!--footnav/-->
+  <div class="footLink">
+   <div class="web-width">
+   <strong>友情链接：</strong>
+   <a href="javascript:;">百度网络</a>
+   <a href="javascript:;">谷歌</a>
+   <a href="javascript:;">百度</a>
+   <a href="javascript:;">360</a>
+   <a href="javascript:;">百度网络</a>
+   <a href="javascript:;">谷歌</a>
+   <a href="javascript:;">百度</a>
+   <a href="javascript:;">360</a>
+   <a href="javascript:;">百度网络</a>
+   <a href="javascript:;">谷歌</a>
+   </div>
+  </div><!--footLink /-->
+  <div class="copy">
+   <div class="web-width">
+    <div class="fl">版权所有@十七只能科技(上海)有限公司  Copyright (c)  2008-2014  沪ICP备13413514号-1</div>
+    <div class="fr">技术支持：<a href="http://www.baidu.com/" target="_blank">百度网络</a></div>
+    <div class="clears"></div>
+   </div>
+  </div><!--copy/-->
+</body>
+</html>

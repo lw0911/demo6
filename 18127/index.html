@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	var left = $("#left");
+	var right = $("#right");
+	var obj = $(".subBox ul");
+	var w = obj.find("li").innerWidth();
+	
+	left.click(function(){
+		obj.find("li:last").prependTo(obj);
+		obj.css("margin-left",-w);
+		obj.animate({"margin-left": 0});
+	});
+	
+	right.click(function(){
+		obj.animate({"margin-left": -w},function(){
+			obj.find("li:first").appendTo(obj);
+			obj.css("margin-left","0");
+		});
+	});
+	
+	var moving = setInterval(function(){right.click()},3000);
+	
+	obj.hover(function(){
+		clearInterval(moving);
+	},function(){
+		moving = setInterval(function(){right.click()},3000);
+	})
+	
+});
+</script>
+<!-- PNG背景透明 -->
+<script src="js/png.js"></script>
+<script>
+DD_belatedPNG.fix('.png_bg,img,.b');
+</script>
+<!-- PNG背景透明 -->
+
+<!--[if lte IE 6]>
+  <style type="text/css">
+    body { behavior:url("csshover.htc"); }
+  </style>
+<![endif]-->
+</head>
+<body>
+<div id="banner">
+  <div id="header">
+    <div class="top">
+      <div class="logo"><a href="#" title="康之桥健康管理中心"><img src="images/logo.png" /></a></div>
+      <div id="topnav" class="png_bg">
+        <div class="topnav"><a href="#">设为首页</a>|<a href="#">联系我们</a>|<a href="#">会员登录</a>|<a href="#">会员注册</a></div>
+        <div id="search_box">
+          <form id="search_form" method="post" action="#">
+            <input type="text" id="s" value="请输入关键字" class="swap_value" />
+            <input type="image" src="images/main_01_02.png" id="go" alt="Search" title="Search" />
+          </form>
+        </div>
+      </div>
+      <div class="top_tel">全国统一热线电话:<B>400-8888-0526</B></div>
+    </div>
+    <div id="nav" class="png_bg">
+      <div class="nav">
+        <UL>
+          <LI><a href="index.html" id="li">网站首页</a></LI>
+          <LI><a href="about.html">关于我们</a></LI>
+          <LI><a href="newsinfor.html">健康管理</a></LI>
+          <LI><a href="newslist.html">健康教育</a></LI>
+          <LI><a href="proinfor.html">老年托孤陪伴</a></LI>
+          <LI><a href="prolist.html">健康知识</a></LI>
+          <LI><a href="#">健康论坛</a></LI>
+          <LI><a href="#">会员专区</a></LI>
+          <LI><a href="#">会员注册</a></LI>
+        </UL>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div id="login" class="png_bg">
+      <div class="login">
+        <div class="loginbar">
+          <H1>用户名：</H1>
+          <input name="" type="text" id="loginbar" class="png_bg" />
+        </div>
+        <div class="loginbar">
+          <H1>密　码：</H1>
+          <input name="" type="text" id="loginbar" class="png_bg" />
+        </div>
+        <div class="btn"><a href="#" style="float:left;"><img src="images/ico_02.jpg" /></a><a href="#" style="float:right;"><img src="images/ico_01.jpg" /></a></div>
+      </div>
+      <div class="login">
+        <div class="list_bt">健康小贴士<I>/ Health Tips</I></div>
+        <div class="list_nei">
+          <UL>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+            <LI><span>[2013.03.15]</span><a href="#">老年人养生五忌</a></LI>
+          </UL>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content">
+  <div class="content">
+    <div id="content_bt" class="png_bg"></div>
+    <div class="content_nei">
+      <div class="about"><!-- 公司简介 -->
+        <div class="about_wen">
+          <h2>康之桥健康管理</h2>
+          <h3> 公司简介公司简介公司简介公司简介公司，简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公司，简介公司简介公司简介公司简介公司简介公司简介公司简介公司简介公。介公司简介介公司简公。。。</h3>
+          <P><a href="#">点击了解更多>></a></P>
+        </div>
+        <div class="about_img">
+          <div class="about_img_bt"><a href="#">MORE>></a></div>
+          <div class="about_img_nei">
+            <UL>
+              <LI><a href="#"><img src="images/main_09.png" /></a>
+                <P><a href="#">中心环境01</a>POST TIME:2013.03.15</P>
+              </LI>
+              <LI><a href="#"><img src="images/main_09.png" /></a>
+                <P><a href="#">中心环境01</a>POST TIME:2013.03.15</P>
+              </LI>
+              <LI><a href="#"><img src="images/main_09.png" /></a>
+                <P><a href="#">中心环境01</a>POST TIME:2013.03.15</P>
+              </LI>
+            </UL>
+          </div>
+        </div>
+      </div>
+      <div class="process"><!-- 健康管理 -->
+        <div class="process_left">
+          <div class="process_left_bt">健康管理流程<I>/ PROCESS</I></div>
+          <div class="process_left_nei"><img src="images/main_02_06.jpg" /></div>
+        </div>
+        <div class="process_right">
+          <div class="process_right_bt">我们的管理<I>/ OUR MANAGEMENT</I></div>
+          <div class="process_right_nei">
+            <div class="process_wen"> <B>康之桥健康管理</B>我们的管理我们，的管理我们的管理我们的管理我们的管理我们的管理我们的管理我们的，管理我们的管理我们的管理我们的管理我们的管理我们的管理我们的管理。我们的管理我们的管理我，们的管理我们的管理我们的管理的管理我们的管理我们的管，理我们的管理我们的管理我们的管理我们的管理我们的的... </div>
+            <div class="process_li">
+              <UL>
+                <LI><span>[高血脂]</span><a href="#">高脂血基本知识与预防保健</a></LI>
+                <LI><span>[脂肪肝]</span><a href="#">B超检查出“脂肪肝”怎么办？</a></LI>
+                <LI><span>[肥胖]</span><a href="#">医生提示女性减肥过度易致皮肤松弛</a></LI>
+                <LI><span>[冠心病]</span><a href="#">冠心病患者应该怎样调整饮食结构？</a></LI>
+                <LI><span>[消化系统]</span><a href="#">视力减退可能是肝功能衰弱先兆</a></LI>
+                <LI><span>[心血管系统]</span><a href="#">早期干预 杜绝“小中风”惹出的大麻烦</a></LI>
+                <LI><span>[脂肪肝]</span><a href="#">B超检查出“脂肪肝”怎么办？</a></LI>
+              </UL>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="process"><!-- 老年托孤陪伴 -->
+        <div class="process_left">
+          <div class="process_left_bt">老年托孤陪伴流程<I>/ PROCESS</I></div>
+          <div class="process_left_nei"><img src="images/main_02_06.jpg" /></div>
+        </div>
+        <div class="process_right">
+          <div class="process_right_bt">老年托孤陪伴<I>/ ELDERLY TUOGU ACCOMPANY</I></div>
+          <div class="process_right_nei">
+            <div class="process_p"> <B>服务内容：</B>服务内容详细介绍服务内容详细介绍，服务内容详细介绍服务内容详细介绍服务内容详细介绍服务内容详细介绍服务内容详细介绍服务内容，详细介绍服务内容详细介内容详细、介绍服内容...<A href="#">[详细内容]</A> </div>
+            <div class="process_img">
+              <div class="floatL" id="left"><img src="images/left.jpg" title="上一个" /></div>
+              <div class="subBox">
+                <ul>
+                  <li><A href="#"><img src="images/main_09_04_03.jpg" /></A></li>
+                  <li><A href="#"><img src="images/main_09_04_03.jpg" /></A></li>
+                  <li><A href="#"><img src="images/main_09_04_03.jpg" /></A></li>
+                </ul>
+              </div>
+              <div class="floatL" id="right"><img src="images/right.jpg" title="下一个" /></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="subnav">
+    <A href="#">网站首页</A>|<A href="#">关于我们</A>|<A href="#">健康管理</A>|<A href="#">健康教育</A>|<A href="#">老年托孤陪伴</A>|<A href="#">健康知识</A>|<A href="#">健康论坛</A>|<A href="#">会员专区</A>|<A href="#">会员注册</A>
+  </div>
+  <P>Copyright ? 2012 Jianerli.net All Rights Reserved 版权所有 健尔力 地址:南京市白下区虎踞南路40-8号1-4楼<br />联系电话：025-86530015 邮箱：service@jianerli.net 企业邮箱登录</P>
+</div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>素材网-仿微信公众平台(2018)</title>
+    <link href="public/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="public/css/common.css" type="text/css" rel="stylesheet">
+    <link href="public/css/index.css" type="text/css" rel="stylesheet">
+    <script src="public/js/jquery-3.2.1.min.js"></script>
+    <script src="public/js/alert.js"></script>
+</head>
+
+<body>
+    <div id="head" class="jzy_w_max jzy_h_80 br_h_0">
+        <div id="admin_head_body" class="at">
+            <img src="https://res.wx.qq.com/mpres/en_US/htmledition/modules/weui-desktopSkin/svg/buildless/bg_logo_primary3ac982.svg"
+                class="jzy_mg_top_20" />
+        </div>
+    </div>
+    <div id="admin_body" class="lt br_4 jzy_w_max">
+        <div id="admin_nav_body" class="lt">
+            <ul id="admin_nav_ul">
+                <li class=" jzy_mg_top_14 fs_16 nav_top_li">
+                    <span class="nav_top_title  jzy_h_30">
+                        <i class="fa fa-home fs_18"></i>
+                        <span>首页</span>
+                    </span>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 buttom_border">
+                    <span class="nav_top_title jzy_h_30">
+                        <i class="fa fa-reorder fs_18"></i>
+                        <span>功能</span>
+                    </span>
+
+                    <ul class="fs_13">
+                        <a href="beadded.html">
+                            <li class='nav_top_li nav_tow_li  jzy_mg_top_10'>自动回复</li>
+                        </a>
+                        <a href="menuAdmin.html">
+                            <li class='nav_top_li nav_tow_li'>自定义菜单</li>
+                        </a>
+                        <li class='nav_top_li nav_tow_li'>留言管理</li>
+                        <li class='nav_top_li nav_tow_li'>投票管理</li>
+                        <li class='nav_top_li nav_tow_li'>页面模板</li>
+                        <li class='nav_top_li nav_tow_li'>原创声明功能</li>
+                    </ul>
+                </li>
+                <li class=" jzy_mg_top_14 fs_16  buttom_border">
+                    <span class="nav_top_title jzy_h_30">
+                        <i class="fa fa-sun-o fs_18"></i>
+                        <span>管理</span>
+                    </span>
+                    <ul class="fs_13">
+                        <a href="userList.html">
+                            <li class='nav_top_li  nav_tow_li jzy_mg_top_10 '>用户管理</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 nav_top_li">
+                    <span class="nav_top_title jzy_h_30 ">
+                        <i class="fa fa-pie-chart fs_18"></i>
+                        <span>统计</span>
+                    </span>
+                </li>
+                <li class="jzy_mg_top_14 fs_16 buttom_border">
+                    <span class="nav_top_title jzy_h_30 ">
+                        <i class="fa fa-cogs fs_18"></i>
+                        <span>设置</span>
+                    </span>
+                    <ul class="fs_13">
+                        <a href="advanced.html">
+                            <li class='nav_top_li nav_tow_li jzy_mg_top_10 nav_top_title_chois'>基本配置</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="admin_main_body" class="jzy_mg_right_15">
+            <h2 class="fs_26 jzy_mg_bottom_20" style="font-weight: 400;line-height: 1;">基本配置</h2>
+            <div class="jzy_desktop_panel jzy_mg_top_40" style="padding:30px;padding-top:30px">
+                <h3 class="jzy_desktop_panel_title">公众号开发信息</h3>
+                <br>
+                <br>
+                <div class="weui-desktop-panel__bd">
+                    <div class="weui-desktop-form__control-group">
+                        <label for="" class="weui-desktop-form__label">开发者ID
+                            <span class="tips">(AppID)</span>
+                        </label>
+                        <div class="weui-desktop-form__controls weui-desktop-form__control-offset">
+                            <p>xxxx</p>
+                            <p class="weui-desktop-form__tips">开发者ID是公众号开发识别码，配合开发者密码可调用公众号的接口能力。</p>
+                        </div>
+                    </div>
+                    <div class="weui-desktop-form__control-group">
+                        <label for="" class="weui-desktop-form__label">开发者密码
+                            <span class="tips">(AppSecret)</span>
+                        </label>
+                        <div class="weui-desktop-form__controls">
+                            <span id="js_appkey" class="developer_info_value" style="display:none"></span>
+                            <a href="javascript:;" id="js_resetkey" class="extra_link">启用</a>
+                            <span class="mini_tips icon_after" id="reset_ask">
+                                <i class="icon-svg-common-ask"></i>
+                            </span>
+                            <span class="extra_link tips_global" id="reset_desc" style="display:none;">（为保障帐号安全，公众平台不再储存AppSecret；如果遗忘，请重置）</span>
+                            <p class="weui-desktop-form__tips">开发者密码是校验公众号开发者身份的密码，具有极高的安全性。切记勿把密码直接交给第三方开发者或直接存储在代码中。如需第三方代开发公众号，请使用授权方式接入。</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="jzy_desktop_panel_title">服务器配置</h3>
+                <div class="jzy_w_100 jzy_h_35 br_2 jzy_boy_5 cr_h_0 fs_14 jzy_text_center rt" style="position:relative;top:-40px"><span style="line-height: 35px">修改配置</span></div>
+                <br>
+                <br>
+                <div class="weui-desktop-panel__bd">
+                    <div class="weui-desktop-form__control-group">
+                        <label for="" class="weui-desktop-form__label">服务器地址
+                            <span class="tips">(URL)</span>
+                        </label>
+                        <div class="weui-desktop-form__controls">
+                            <p class="weui-desktop-form__tips">未填写</p>
+                        </div>
+                    </div>
+                    <div class="weui-desktop-form__control-group">
+                        <label for="" class="weui-desktop-form__label">令牌
+                            <span class="tips">(Token)</span>
+                        </label>
+                        <div class="weui-desktop-form__controls">
+                            <p class="weui-desktop-form__tips">未填写</p>
+                        </div>
+                    </div>
+                    <div class="weui-desktop-form__control-group">
+                        <label for="" class="weui-desktop-form__label">消息加解密密钥
+                            <span class="tips">(EncodingAESKey)</span>
+                        </label>
+                        <div class="weui-desktop-form__controls">
+                            <p class="weui-desktop-form__tips">未填写</p>
+                        </div>
+                    </div>
+                    <div class="weui-desktop-form__control-group">
+                        <label for="" class="weui-desktop-form__label">消息加解密方式
+                        </label>
+                        <div class="weui-desktop-form__controls">
+                            <p class="weui-desktop-form__tips">明文模式</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

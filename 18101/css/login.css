@@ -1,0 +1,611 @@
+a,img{border:none;
+      text-decoration:none;}
+body{background:#f9f9f9;}
+
+/*
+ index.html 登录界面
+*/
+
+/*@media screen and (min-width : 1000px) {   */          
+ .container{width:1000px;
+             margin: 0 auto;
+            font-family:"微软雅黑";}
+  
+ .header{height:103px;
+        width:1024px;
+        margin:0 auto;}
+  
+ .containerHeader{background:url(../images/headerbg.jpg) repeat-x;
+                 height:89px;
+                 overflow:hidden;}
+  
+ .header ul{width:228px;
+           float:right;
+           padding-top:30px;
+           
+}
+
+
+.header a{float:left;}
+
+
+.header ul li{float:left;
+              color:#000;
+              padding:5px;
+              line-height:24px;
+              text-align:right;
+              font-size:12px;}
+
+.header ul .lastli{padding-right:0px;background:url(../images/selectBtn.jpg) center right no-repeat;}
+
+.header ul li a{float:left;
+                color:#2e67ae;}
+
+.main{height:400px;
+      border:solid #ededed 4px;
+      border-radius:10px;
+      margin: 35px 0px;
+      overflow:hidden;
+      }
+
+.showbg{background:url(../images/show.jpg) no-repeat;
+       height:58px;
+       width:868px;
+       margin:0 auto;}
+
+.main .leftImg{float:left;
+               width:525px;
+               height:400px;
+               overflow:hidden;}
+
+.main .rightCon{float:left;
+                 width:315px;
+                height:270px;
+                margin:30px 0 0 80px;}
+
+.rightCon .list0{height:54px;
+                 font-size: 22px;
+                 color:#bcbcbc;}
+
+.rightCon .list3{height:30px;
+                 font-family: "宋体";
+                 color:red;
+                 line-height:30px;}
+
+.rightCon .enter{color:red;
+                 padding: 0 5px;
+                 cursor:pointer;}
+
+.rightCon .reg{font-size:18px;
+                padding: 0 5px;
+                color:#000;
+                cursor:pointer;}
+
+.list1{height:60px;}
+
+.list1 .cue{height:30px;
+            line-height:30px;
+             display:block;
+            color:red;
+            font-family:"宋体";}
+
+.list1 input{width:315px;
+             height:35px;
+             color:#666;
+             border:solid #ccc 1px;
+             line-height:30px;
+             padding-left:10px;
+            background:url(../images/peo.jpg) 297px 7px no-repeat}
+
+.list1 .password{background:url(../images/password.jpg) 297px 7px no-repeat}
+
+.list2{height:20px;}
+
+.list2 input{margin-top:0px;float:left;}
+.list2 .p0{float:left;color:#666;}
+.list2 .p1{float:right;}
+.list2 .p1 a{color:#2e67ae;}
+
+.rightCon .selectBtn,.mainPassword .selectBtn,.mainReg .selectBtn,.regsuccess .selectBtn{
+	height:35px;
+	 width:315px;
+	 background:url(../images/btnbg.jpg) repeat-x;
+	 text-align:center;
+	 line-height:35px;
+	 display:block;
+	 font-size:14px;
+	 color:#fff;
+	 margin-top:15px;
+	 border-radius:5px;
+	 cursor:pointer;
+     font-weight:bold;}
+.mainPassword .selectBtn,.regsuccess .selectBtn{
+	width:80px;
+	margin: 0 auto;
+    margin-left:376px;
+    margin-bottom:10px;
+	}
+.regsuccess .selectBtn{}
+
+.email  .selectBtn{width:180px;}
+
+.mainReg .selectBtn{width:254px;
+				    margin: 0 auto;
+}
+
+.findp .selectBtn{width:130px;}
+
+.findp .boldtext{height:60px;
+                line-height:120px;
+                display:block;}
+
+
+.footer{text-align: center;
+        margin: 0 auto;
+       padding:60px 0 20px 0;
+       line-height:25px;}
+
+.footer .col{color:#fc6d1e;}
+
+/*
+ findPassword.html 忘记密码
+*/
+
+.mainPassword{width:100%;
+              padding-bottom:10px;
+			  overflow:hidden;
+              background:#fff;
+              border:solid #d0d0d0 1px;
+              margin-top:30px;
+              text-align:center;}
+
+
+.mainPassword .find0{height:55px;
+                    padding:12px 0 0 20px;
+                   text-align:left;}
+
+.mainPassword .boldtext{font-size:16px;
+                       font-weight:bold;}
+
+.mainPassword .moresendli{width:500px;
+                         margin:95px 0 0 -100px;}
+
+.mainPassword .cue{font-size:12px;
+                   font-weight:normal;
+                   display:inline-block;
+                   line-height:30px;
+                  font-family:"宋体";
+                  text-align:left;
+                  margin-left:70px;
+                  width:100%;
+                  overflow:hidden}
+
+.mainPassword .cue1{
+                   color:red;
+                  border:solid #fff 1px;}
+
+.mainPassword .cue2{color:red;
+                    font-family:"宋体";
+                   margin-left:10px;
+                    }
+
+.mainPassword .find2{height:25px;
+                     width:400px;
+                     margin:30px auto 20px auto;
+                     }
+
+.mainPassword .find2 span{float:left;}
+
+.mainPassword .find3 a{margin:-6px 5px 0 5px;
+                       background:url(../images/getnumber.jpg) no-repeat;
+                       width:100px;
+                       height:27px;
+                       color:#94650b;
+                       line-height:27px;
+                       padding:5px 10px}
+
+.mainPassword .find3 a.grey{
+                       background:url(../images/getnumber0.jpg) no-repeat;
+                       color:#676767;}
+
+.mainPassword ul .set_2{
+						width:550px;
+						text-align:left;
+						margin-left:300px;
+                     }
+.mainPassword ul .set_2_msg{
+						width:500px;
+						text-align:left;
+						margin-left:320px;
+                        margin-bottom: 15px;
+                     }
+.mainPassword ul .set_2 a{
+	text-align:center;
+}
+.mainPassword .find3 input{width:100px;
+                           height:32px;
+                           background:#f5f5f5;
+                           border:solid #d0d0d0 1px;
+                           margin-left:5px;}
+                           
+/*
+ regindex.html 注册页面
+*/
+.mainReg li{height:70px;}
+
+.mainReg .liBtn{height:50px}
+
+.mainReg .ifagree{line-height: 20px;
+                 
+}
+
+.mainReg .ifagree input{vertical-align:middle;}
+
+.mainReg li input{width:220px;
+                 height:35px;
+                 line-height:35px;
+                 padding-left:10px;
+                 float:left;
+                 color:#666;
+                 border:solid #d0d0d0 1px;}
+
+.mainReg #username{color:#666;}
+
+.mainReg ul{width:320px;
+            overflow:hidden;
+            margin:0 auto;}
+
+.mainReg label{width:60px;
+               height:35px;
+               line-height:35px;
+               display:block;
+               text-align:right;
+               float:left;
+               font-size:12px;
+               font-family:"宋体";
+               margin-left:10px;}
+
+.mainReg .freereg{font-size:16px;
+                   font-weight:bold;
+                  margin:15px 0 22px 15px;
+                  text-align:left;}
+
+.mainReg .freereg1{height: 60px;
+                    line-height: 60px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    background: #f9f9f9;
+                    color:#333;
+                    margin-bottom: 20px; }
+
+.mainReg .tit_li{ height: 30px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color:#999;
+                    margin-bottom: 10px;}
+
+.mainReg .short{width:100px;
+	            float:left;
+	            margin-right:-28px}
+
+.mainReg .short1{width:100px;
+                  float:left;
+                  margin-right:-28px}
+
+
+/*
+ regsuccess.html 注册成功页面
+*/
+.regsuccess{width:100%;
+             background:#fff;
+             border:solid #d0d0d0 1px;
+             margin-top:30px;
+            }
+
+.regsuccess .find0{font-size:16px;
+                   font-weight:bold;
+                   padding:15px 0 20px 20px;}
+
+.regsuccess .find1{height:70px;
+                   text-align:center;}
+
+.regsuccess .find2{font-size:14px;
+                   font-weight:bold;
+                   text-align: center;
+                   line-height:24px;}
+
+.email .find2{margin-top:60px;}
+
+.regsuccess .normal{font-weight:normal;
+                    font-size:12px;}
+
+.regsuccess .textword{
+                      height:55px;
+                      line-height:22px;
+                      text-align:center;
+                      margin:0 auto;
+                      margin-top:10px;}
+
+.regsuccess .waitTime{ border-bottom:dashed #e9e9e9 1px;
+                       height:75px;
+                       line-height:75px;
+                       margin:0 auto;
+                       text-align:center}
+
+.regsuccess .waitTime a{font-weight:bold;
+                        color:#2e67ae;
+                        font-size:14px;}
+
+.regsuccess .gotoCenter{height:80px;
+                        line-height:80px;
+                        text-align:center;}
+
+.regsuccess .gotoCenter a{color:#2e67ae;}
+
+.email .textword{border-top:dashed #e9e9e9 1px;
+                 border-bottom:none;
+                padding-top:15px;}
+
+.regsuccess .linkText{text-align:center;
+                      margin-top:100px;
+                      line-height:45px;}
+
+.regsuccess .linkText span{font-size:14px;
+                            font-weight:bold;}
+.dlList{width:305px;
+        height:35px;
+        margin:15px auto;
+       }
+
+.dlList dl{width:130px;
+          height:32px;
+          float:left;
+          }
+
+.dlList dl dt{width:55px;
+              height:35px;
+              float:left;
+              background:url(../images/mail-phone.png) 0 -44px no-repeat;
+              } 
+
+.dlList dl dd{color:#000;
+              font-size:12px;
+              font-family:"宋体";
+             line-height:18px;}
+
+.dlList dl dd span{font-size:14px;
+                  font-weight:bold;}
+
+.dlList .phonedl{float:right;
+                 width:110px;}
+
+.dlList .curEle dt{background-position:0 0;}
+
+.dlList .curEle dd{color:#2e67ae;}
+
+.dlList .phonedl dt{background-position:0 -132px;
+                    width:42px;}
+
+.dlList .pcurEle dt{background-position:0 -88px;}
+
+.dlList .pcurEle dd{color:#2e67ae;} 
+                   
+/*重置密码*/
+.resetp{height:65px;
+        text-align:center;}
+ul .resetp2{height:65px;
+        text-align:left;
+        padding-left:330px;
+}
+ol .resetp2{height:65px;
+        text-align:left;
+        padding-left:330px;
+}
+.mainPassword ul li .flt{
+	float:left;
+}
+.mainPassword ul li .flt2{
+	float:left;
+	margin:2px 0 0 5px;
+}
+.resetp1{margin-top:55px;}
+
+.resetp .cue{margin-left:410px;}
+.resetp .err{margin-left:50px;}
+
+.resetp input{width:238px;
+              height:33px;
+              border:solid #ccc 1px;}
+.resetp input.short{width:100px;}
+
+.resetp .selectBtn{margin-top:0;}
+
+.mainPassword .resetok{margin:50px 0 10px 0;}
+
+.mainPassword .goindex a{color:#2e67ae;
+                        line-height:30px;}
+
+.mainPassword #resetlogin{margin-top:25px;}
+
+
+/*
+ 用户协议 useragreement.html
+*/
+.useragreement{width:964px;
+              height:600px;
+              background:#fff;
+              border:solid #d0d0d0 1px;
+              margin-top:30px;
+              font-family:"宋体";
+              font-size:12px;
+             line-height:26px;
+             padding:18px;}
+
+.useragreement h1{font-size:14px;
+                  font-weight:bold;
+                  color:#ae1414;
+                  margin-bottom:20px;
+                  text-align:center;}
+
+.useragreement h3{margin-bottom:35px;}
+.useragreement h2{font-weight:bold;
+                  margin:10px 0 ;
+}
+.useragreement strong{margin-left:12px;}
+
+.useragreement .textcon{height:600px;
+                        overflow:auto;
+                        padding-right:15px;
+}
+.useragreement .textcon p{
+  text-indent:24px;
+  line-height:26px;
+}
+.useragreement .textcon p strong{
+ font-weight:bold;
+}
+
+/*
+ 邮箱模块 emailpart.html
+*/
+.body{background:none;}
+
+.emailpart{width:734px;
+           height:448px;
+           
+           margin:100px auto;
+           padding:23px;
+           background:url(../images/emailbg.jpg) no-repeat;}
+
+.emailpart .logo{margin-bottom:15px;}
+
+.emailpart .text{height:50px;
+                 line-height:50px;}
+
+.emailpart .text span{font-weight:bold}
+
+.emailpart .textborder{height:35px;
+                      line-height:35px;
+                      border-top:dashed #ccc 1px;
+                      border-bottom:dashed #ccc 1px;}
+
+.emailpart .texta{height:40px;
+                 background:#f5f5f5;
+                 padding:20px;
+                 font-weight:bold;
+                 font-size:14px;
+                 line-height:25px;
+                 }
+
+.emailpart .texta a{color:#2e67ae;
+                    display:block;}
+
+.emailpart .textcc{color:#666;
+                   margin:15px 0 25px 0;}
+
+.emailpart .textbold{line-height:23px;
+                     font-weight:bold;}
+
+.emailpart .lia a{line-height: 27px;
+                  color:#2e67ae;
+                  font-weight:bold;}
+                  font-weight:bold;}
+
+.container .mainPassword  li.validType{
+	font-size:14px;
+	font-family:"宋体";
+	text-align: left;
+}
+.container .mainPassword .validType .validTitle{
+	font-size:12px;
+	margin:40px 0;
+	margin-left: 280px;
+}
+.container .mainPassword .validType .divType{
+	margin-left: 330px;
+	text-align: left;
+}
+.container .mainPassword .validType .divType div{
+	margin-bottom: 20px;
+}
+/*********add by xzz - 找回密码模块样式 - Begin**********/
+.container .mainPassword  li.validType{
+	font-size:14px;
+	font-family:"宋体";
+	text-align: left;
+}
+.container .mainPassword .validType .validTitle{
+	font-size:12px;
+	margin:40px 0;
+	margin-left: 280px;
+}
+.container .mainPassword .validType .divType{
+	margin-left: 330px;
+	text-align: left;
+}
+.container .mainPassword .validType .divType div{
+	margin-bottom: 20px;
+}
+.container .mainPassword .validType div.centCls{
+	margin: 40px 0 20px;
+	text-align:center;
+}
+/*********add by xzz - 找回密码模块样式 - End**********/
+
+
+
+
+
+
+
+
+
+
+/*第三方联合登陆*/
+.list4{ height: 30px;
+        line-height: 30px;
+        font-family: "宋体";
+        margin: 10px 0 3px 0;}
+
+.list5{ height: 32px;}
+
+.list5 div{ height: 32px;
+             width:32px;
+             display:block;
+             background:url(../images/others.png) no-repeat;
+             float:left;
+             margin-right:20px;
+             cursor:pointer}
+
+.list5 div:hover{background-position:0 -32px}
+
+.list5 div.qq{background-position:-52px 0}
+.list5 div.qq:hover{background-position:-52px -32px}
+
+.list5 div.pay{background-position:-104px 0}
+.list5 div.pay:hover{background-position:-104px -32px}
+
+.list5 div.wechat{background-position: -156px 0;}
+.list5 div.wechat:hover{background-position:-156px -32px}
+
+.list5 img{display:none}
+
+.list5 a{ height: 32px;
+         display: block;}
+
+
+.okbox{height:200px;padding-top:200px;text-align:center;line-height:30px;display:none}
+
+.okbox .spanw{font-weight:bold;font-size:14px;}
+
+.okbox a{font-weight:bold;font-size:14px;color:#2e67ae}
+
+.otherMain .cue{margin-left:70px;}
+
+.list5 .login_button_32{display:none}/*微博登陆后，隐藏多余标签*/
+
+
+
+
+

@@ -1,0 +1,108 @@
+.newitem{width:278px;
+         border:solid #d0d0d0 1px;
+         margin:0px auto;
+         margin-bottom:10px;
+         position:relative;
+         background:#fff;}
+
+.newitem .itemTitle{height:39px;
+		            border-bottom:solid #d0d0d0 1px;
+		            background:#eee;
+		            text-align:center;
+		            line-height: 40px;
+		            color:#686868;}
+
+.newitem .itemTitle h3{font-size:14px;
+                       color:#333;
+		               font-weight:bold;
+		               font-family:"微软雅黑";}
+
+.newitem .itemTitle .sh2{position:absolute;
+                       right:5px;
+                       top:0px;}
+
+.newitem ul{padding:10px 0 10px 20px;
+            list-style:square;
+            height:171px;
+            overflow:hidden;
+            width:253px;}
+
+.newitem ul{list-style:square;}
+
+.newitem ul li{ width:243px;
+               line-height:22px;
+               list-style:square;}
+
+.newitem ul li a:hover{color:#b00000;}
+
+.newitem .video{width:250px;
+               
+                }
+.newitem .video .videoImg img{
+  				width:279px;
+               
+                }
+
+.video div span{width: 0;
+                 height: 0;
+                 border:solid transparent 16px;
+                 border-left-color:#a4a4a4;
+                 display:block;
+                 position:absolute;
+                 top:10px;
+                 left:20px;
+                 cursor:pointer;}
+
+.newitem ol{width:255px;
+            margin:0 auto;}
+
+.newitem ol li{height:35px;
+               border-bottom:dashed #cfcfcf 1px;
+               line-height:35px;
+               overflow:hidden}
+
+.newitem ol li.cur{height:90px;
+                  padding-top:8px;}
+
+.newitem ol li.cur span{background:url(../images/redC.png);
+                        width:25px;
+                        height:25px;
+                        line-height:25px;
+                        display:inline-block;
+}
+.newitem ol li.cur .name{display: none}
+
+.newitem ol li span{width:25px;
+                    height:25px;
+                    line-height:25px;
+                    text-align: center;
+                    color:#fff;
+                   
+                    font-size: 14px;
+                    font-weight:bold;
+                    float:left;
+                    background: #b0b0b0;
+                    font-family:"微软雅黑";
+                    margin:8px 8px 0 0;
+                    background:url(../images/greyC.png);
+                   
+                    display:inline-block;
+   }
+
+.newitem ol li dl{float:left;
+                 height:85px;
+                 width:200px;
+                 float:left;
+                 }
+
+.newitem ol li dt{float:left;
+                  width: 70px;
+                  text-align: center;}
+
+.newitem ol li dd p{line-height: 20px;}
+
+.newitem ol li dd .sh3{line-height: 50px;
+                      font-size: 16px;
+                      color:#e10000;
+                      font-family: "微软雅黑";
+                      font-weight: bold;}
