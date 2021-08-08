@@ -1,0 +1,987 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="order by dede58.com"/>
+<title>无标题文档</title>
+<script src="jquery.js"></script>
+<style>
+/*重置属性*/
+*{ font-family:"微软雅黑"; font-size:14px; padding:0; margin:0;}
+img{ display:block;}
+a{ text-decoration:none;}
+ul{ list-style:none;}
+p,dl,dd{ margin:0; padding:0;}
+/*公共属性*/
+.clearfix{ clear:both;}
+.shadow{box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.2);}
+/*头部属性*/
+.top_box{ background-color:#333;}
+.nav{ width:1226px; margin:0 auto;}
+.nav ul{ float:left;}
+.nav li{ float:left; border-right:1px #424242 solid;margin-top:14px; margin-bottom:14px; }
+.nav a{ color:#9a9898; display:block; padding-left:10px; padding-right:10px; }
+.nav a:hover{ color:#fff;}
+.login{float:right;}
+.login .shop{ width:120px; height:48px; background-color:#424242; float:right;text-align:center;line-height:44px; position:relative; color:#9a9898; }
+.bg01{background-image:url(images/buy01.png);background-image:url(images/buy.png); background-repeat:no-repeat;background-position:17px center; text-indent:30px; }
+.bg02{background-image:url(images/buy.png);background-image:url(images/buy01.png); background-repeat:no-repeat;background-position:17px center; text-indent:30px;}
+.login .current{background-color:#fff; color:#ff6700;}
+.login .shop .car{ width:296px; height:98px; background-color:#fff; text-align:center; line-height:98px; color:#333; position:absolute;right:0;top:48px;}
+.shadow_lf{ box-shadow:-2px 2px 5px #eee;}
+.shadow_rt{ box-shadow:-2px 2px 5px #eee;}
+.login a{ color:#9a9898;  }
+
+
+/*导航属性*/
+.mainbav{ width:1226px; margin:0 auto;}
+.mainbav .LOGO{ float:left;margin-top:20px;width:240px;}
+.LOGO img{ float:left;}
+.mainbav ul{ float:left;}
+.mainbav ul li{ float:left; margin-le ft:16px; margin-right:16px; line-height:100px;}
+.mainbav li a{ font-size:16px; color:#333;}
+.mainbav li a:hover{ color:#ff6700;}
+.search{ width:294px; height:48px; border:1px #e0e0e0 solid; float:right; margin-top:25px;}
+.search .search_box{ width:50px; height:48px; border-left:1px #e0e0e0 solid; float:right;}
+.search .search_box img{margin-left:17px; margin-top:16px;}
+.search span{ float:right; font-size:12px; color:#757575; margin-top:14px; margin-right:10px; background-color:#eee; padding:3px 5px;}
+.search span:hover{ background-color:#ff6700; color:#fff;}
+
+/*广告属性*/
+.banner{ width:1226px; height:460px; background-color:#fe8729; margin:0 auto; margin-bottom:16px; position:relative; overflow:hidden;}
+.arrow-rtbtn,.arrow-lfbtn{ position:absolute; top:50%; margin-top:-50px;}
+.arrow-rtbtn{ right:0;}
+.arrow-lfbtn{ left:236px;}
+.banner .banner-bigbox{ width:6130px; float:left;}
+.banner-bigbox img{ float:left;}
+.circle-box{ position:absolute;right:36px; bottom:25px;}
+.circle{ width:10px; height:10px; border-radius:50%; border:3px solid #b8b8b8; background-color:#949494; float:left; margin-right:10px; }
+.circle-box .current{background-color:#fafafa;}
+.menu{ width:236px; height:440px; background-color:rgba(0,0,0,0.4); padding-top:20px; position:absolute;left:0;top:0;}
+.menu li{ width:206px; height:43px; line-height:43px; padding-left:30px; color:#fff; position:relative;}
+.menu span{ float:right; margin-right:25px;}
+.menu li .submenu{ width:530px; height:460px; background-color:#fff; padding-left:33px; padding-top:25px; position:absolute;right:0;top:-25px;margin-right:-563px;}
+.submenu a{ display:block; line-height:36px; margin-bottom:40px;}
+.submenu .xuangou{ width:60px; height:24px; border:1px #ff6700 solid;text-align:center; margin-bottom:50px;}
+.submenu .xuangou a{color:#ff6700; line-height:24px; }
+.menu .current{ background-color:#fe8729;}
+
+.subnav{ width:1226px; margin:0 auto; margin-bottom:45px;}
+.subnav .current{background-color: rgb(33, 150, 243); box-shadow: 0px 3px 20.79px 0.21px rgba(0, 0, 0, 0.35);}
+.left_nav{ width:236px; height:170px; background-color:#5f5750; float:left; margin-right:14px;}
+.subnav .box1,.subnav .box2,.subnav .box3{ width:316px; height:170px; float:left; margin-right:14px;}
+
+/*明星单品*/
+.star{ width:1226px; margin:0 auto; margin-bottom:40px;}
+.star .single{ float:left; margin-bottom:19px; width:1226px; font-size:24px; color:#333; overflow:hidden;}
+.single .right-btn{ float:right; width:35px; height:25px; border:1px solid #e0e0e0; text-align:center; line-height:25px;}
+.single .bg{ background-color:#666;}
+.single .left-btn{float:right; width:35px; height:25px; border-left:1px solid #e0e0e0;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0; text-align:center; line-height:25px;}
+.star .products-box{  margin-left:auto; margin-right:0;width:1226px; height:340px; overflow:hidden;}
+.products-box .products-bigbox{ width:2452px; height:340px; float:left;}
+.products-bigbox .products{ float:left; margin-right:14px; width:234px; height:340px; background-color:#fafafa; text-align:center;}
+.products-box p{ margin-top:230px; font-family:Arial,"宋体"，sanself; font-size:12px; color:#333;}
+.products-box .ziti{ font-size:14px; font-family:Arial,"微软雅黑"，sanself;}
+
+.bg{ width:100%;background-color:#f5f5f5;}
+
+/*智能硬件*/
+.hardware-box,.hardware{ margin-left:auto; margin-right:auto; width:1226px; }
+.hardware{ float:left; margin-bottom:19px;font-size:24px;color:#333; margin-top:76px;}
+.hardware a{ float:right; font-size:18px; margin-right:10px; color:#333;}
+.kidwatch{ width:234px; height:614px; float:left; margin-right:14px; background-image:url(images/haraware_kid.png); background-repeat:no-repeat; text-align:center;}
+.hardware-right{ width:978px; height:614px;  float:left;}
+.hardware-right .hardwareTopbox{ width:978px; height:300px; margin-bottom:14px;}
+.hardware-right .hardwareBottomBOX{ width:978px; height:300px; }
+.hardwareTopbox .content,.hardwareBottomBOX .content{ width:234px; height:300px; margin-right:14px; background-color:#fff; float:left; text-align:center;}
+.content p{ margin-top:200px; font-family:Arial,"宋体"，sanself; font-size:12px; color:#333;}
+.content .ziti{ font-size:14px; font-family:Arial,"微软雅黑"，sanself;}
+
+/*搭配和配件和周边*/
+.dapei-box,.dapei{margin-left:auto; margin-right:auto; width:1226px;}
+.dapei{float:left; margin-bottom:19px;font-size:24px;color:#333; margin-top:40px;}
+.dapei a{float:right; font-size:18px; color:#333;}
+.dapeiLeftBox{ width:234px; height:614px; float:left; margin-right:14px;}
+.dapeiRightBox{ width:978px; height:614px; float:left;}
+.dapeiLeftBox .content{width:234px; height:300px; background-color:#fff; margin-bottom:14px; text-align:center;}
+.dapeiRightBox .TopBox{ width:978px; height:300px; margin-bottom:14px; float:left;}
+.dapeiRightBox .BottomBox{ width:978px; height:300px; float:left;}
+.dapeiRightBox .content{width:234px; height:300px;text-align:center; margin-right:14px; float:left; position:relative;}
+.dapeiRightBox .content .jg{ position:absolute; bottom:0;}
+.dapei ul{ float:right;}
+.dapei li{ float:left; margin-right:30px; padding-bottom:2px; font-size:18px;}
+.dapei-box .current{ color:#ff6700; border-bottom:2px solid #ff6700; cursor:pointer; }
+.dapei .content-top{ width:234px; height:143px;}
+.content p{ margin-top:200px; font-family:Arial,"宋体"，sanself; font-size:12px; color:#333;}
+.content .ziti{ font-size:14px; font-family:Arial,"微软雅黑"，sanself;}
+
+
+/*热评产品*/
+.reping-box,.reping{margin-left:auto; margin-right:auto; width:1226px;}
+.reping{float:left; margin-bottom:19px;font-size:24px;color:#333; margin-top:40px;}
+.hotproduct{ float:left; width:296px; height:416px; background-color:#fff; margin-right:14px;}
+.hotproduct .judge{ width:240px; margin-top:34px; margin-left:auto; margin-right:auto;}
+.hotproduct p{ margin-bottom:35px;}
+.hotproduct h1{ font-size:12px; font-family:"宋体",sunself; color:#b0b0b0; display:block; margin-bottom:15px; font-weight:normal;}
+.hotproduct a{  border-right:1px solid #b0b0b0; padding-right:10px; margin-right:10px;}
+
+/*分类*/
+.classify-box,.classify{margin-left:auto; margin-right:auto; width:1226px;}
+.classify{float:left; margin-bottom:19px;font-size:24px;color:#333; margin-top:40px;}
+.classify-box .content{ width:296px; height:374px; background-color:#fff; float:left; margin-right:14px; padding-top:50px; text-align:center;}
+
+/*视频*/
+.video-box,.video{margin-left:auto; margin-right:auto; width:1226px; }
+.video-box{ padding-bottom:60px;}
+.video{float:left; margin-bottom:19px;font-size:24px;color:#333; margin-top:40px;}
+.video-box .content{ width:296px; height:290px; background-color:#fff; float:left; margin-right:14px; text-align:center; position:relative;}
+.content h1{ font-size:14px; font-weight:normal; color:#333; margin-top:30px; margin-bottom:12px;}
+.content h2{ font-size:12px; font-weight:normal; font-family:Arial,"宋体"; color:#b0b0b0;}
+.content .play{ position:absolute; left:20px; top:146px;}
+/*页脚*/
+.footer-box{ width:100%; background-color:#fff;}
+.footer{ width:1226px; margin-left:auto; margin-right:auto;}
+.footer ul{ margin-top:27px; margin-bottom:27px;}
+.footer li{ float:left; width:244px; height:26px; border-right:1px solid #e0e0e0; text-align:center;line-height:26px;}
+.footer li a{  color:#616161;}
+.footer li a:hover{ color:#ff6700;}
+.line{ width:1226px; height:1px; background-color:#e0e0e0; margin-bottom:40px;}
+.footer dl{ margin-right:104px; float:left; margin-bottom:25px;}
+.footer dd{  margin-bottom:15px; }
+.footer dd a{font-size:12px; font-family:"宋体";color:#757575;}
+.footer dd a:hover{ color:#ff6700;}
+.online{ width:246px; text-align:center; float:left;}
+.service{margin-left:auto; margin-right:auto; width:120px; height:30px; border:1px solid #ff6700; line-height:30px; text-align:center; color:#ff6700; font-weight:Arial,"微软雅黑"; font-size:12px;}
+
+/*合作*/
+.team-box{ width:100%; background-color:#f5f5f5; padding-top:33px;}
+.team{ width:1226px; margin-left:auto; margin-right:auto;}
+.team .logo{ float:left; margin-right:3px;}
+.team a{ border-right:1px solid #b0b0b0; line-height:12px; padding-left:5px; padding-right:5px; font-family:Arial,"宋体"; font-size:12px; color:#757575;}
+.team p{font-family:Arial,"宋体"; font-size:12px; margin-bottom:2px; float:left; color:#b0b0b0;}
+.team p a:hover{ color:#ff6700;}
+.team .safe{ float:left; width:285px;}
+.safe span{ float:left; width:60px; margin-right:4px;}
+.word{ width:1226px; margin-left:auto; margin-right:auto; text-align:center;font-family:"华文行楷",sunself; font-size:20px; color:#bababa; font-weight:normal; padding-bottom:30px;}
+</style>
+</head>
+<body>
+<!--头部属性-->
+<div class="top_box">
+	<div class="nav">
+    	<ul>
+        	<li style="margin-left:0; padding:0;"><a href="#">小米网</a></li>
+            <li><a href="#">MIUI</a></li>
+            <li><a href="#">米聊</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">多看阅读</a></li>
+            <li><a href="#">云服务</a></li>
+            <li><a href="#">小米网移动版</a></li>
+            <li><a href="#">问题反馈</a></li>
+            <li style="border:0;"><a href="#">Select Region</a></li>
+        </ul>
+        <div class="login">
+        	<div class="shop"><div class="bg01">购物车(0)</div>
+            	<div class="car">购物车中还没有商品，赶紧选购吧！</div>
+            </div>
+            <ul>
+            	<li><a href="#">登录</a></li>
+                <li  style="border:0;"><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!--主导航-->
+<div class="mainbav">
+	<div class="LOGO"><img src="images/LOGO.png"><img src="images/donghua.gif"></div>
+    <ul>
+    	<li><a href="#">小米盒子</a></li>
+        <li><a href="#">红米</a></li>
+        <li><a href="#">平板</a></li>
+        <li><a href="#">电视</a></li>
+        <li><a href="#">盒子</a></li>
+        <li><a href="#">路由器</a></li>
+        <li><a href="#">智能硬件</a></li>
+        <li><a href="#">服务</a></li>
+        <li ><a href="#">社区</a></li>
+    </ul>
+    <div class="search">
+    	<div class="search_box"><img src="images/search.png"></div>
+        <span>平衡车</span>
+        <span>小米手机4c</span>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<!--banner-->
+<div class="banner">
+	<div class="arrow-rtbtn"><img src="images/arrow_rightbtn01.png"></div>
+    <div class="arrow-lfbtn"><img src="images/arrow_leftbtn01.png"></div>
+	<div class="banner-bigbox">
+    	<img src="images/banner01.jpg">
+        <img src="images/banner02.jpg">
+        <img src="images/banner03.jpg">
+        <img src="images/banner04.jpg">
+        <img src="images/banner05.jpg">
+    </div>
+    <div class="circle-box">
+        <div class="circle current"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle" style=" margin-right:0;"></div>
+    </div>
+	<div class="menu">
+    		<ul>
+            	<li >手机 平板 电话卡<span>&gt;</span>
+                    <div class="submenu">
+                    <div style="float:left; margin-right:23px;"><img src="images/phone_img.png"></div>
+                    <div  style="float:left; margin-right:40px;"><a>小米手机5</a><a>小米手机4S</a><a>小米Note</a><a>小米手机4</a><a>小米手机4c</a><a>红米Note 3</a></div>
+                    <div  style="float:left; padding-top:5px; margin-right:34px;">
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                    </div>
+                    <div style="float:left; margin-right:15px;"><img src="images/phone_img01.png"></div>
+                    <div  style="float:left; margin-right:40px;"><a>红米手机3</a><a>小米平板2</a><a>电信版</a><a>合约机</a><a>对比手机</a><a>电话卡</a></div>
+                    <div  style="float:left; padding-top:5px; margin-right:34px;">
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                        <div class="xuangou"><a href="#">选购</a></div>
+                    </div>
+                </div>
+                </li>
+                <li>电视 盒子<span>&gt;</span></li>
+                <li>路由器 智能硬件<span>&gt;</span></li>
+                <li>移动电源 插线板<span>&gt;</span></li>
+                <li>耳机 音箱<span>&gt;</span></li>
+                <li>电池 存储卡<span>&gt;</span></li>
+                <li>保护套 后盖<span>&gt;</span></li>
+                <li>贴膜 其他配件<span>&gt;</span></li>
+                <li>米兔 服装<span>&gt;</span></li>
+                <li>箱包 其他周边<span>&gt;</span></li>
+            </ul>
+            
+    </div>
+</div>
+
+<div class="subnav">
+	<div class="left_nav"><img src="images/left.png"></div>
+    <div class="box1"><a href="#"><img src="images/subnav_icon01.png"></a></div>
+    <div class="box2"><a href="#"><img src="images/subnav_icon02.jpg"></a></div>
+    <div class="box3" style="margin-right:0;"><a href="#"><img src="images/subnav_icon03.png"></a></div>
+    <div class="clearfix"></div>
+</div>
+
+<!--明星单品-->
+<div class="star">
+	<div class="single">
+    		小米明星单品
+        <div class="right-btn">&gt;</div>
+        <div class="left-btn">&lt;</div>
+    </div>
+    <div class="products-box">
+    	<div class="products-bigbox">
+            <div class="products" style="border-top:1px solid #ffac13; background:#fafafa url(images/chazuo.png) center 66px no-repeat;">
+                <p class="ziti">小米智能插座 基础班</p>	
+                <p class="ziti" style=" margin-top:10px; color:#b0b0b6;">手机远程遥控，让普通电器变智能</p>
+                <p style="color:#ff6709; margin-top:15px;">49元</p>
+            </div>
+            <div class="products" style="border-top:1px solid #83c44e;background:#fafafa url(images/jinghuaqi.png) center 44px no-repeat;">
+                <p class="ziti">小米空气净化器2</p>	
+                <p style=" margin-top:10px; color:#b0b0b6;">净化能力高达310m3/h</p>
+                <p style="color:#ff6709; margin-top:15px;">699元</p>
+            </div>
+            <div class="products" style="border-top:1px solid #2196f3;background:#fafafa url(images/chaban.png) center 97px no-repeat;">
+                <p class="ziti">小米智能插线板</p>	
+                <p style=" margin-top:10px; color:#b0b0b6;">手机远程控制家中电器，智能节电</p>
+                <p style="color:#ff6709; margin-top:15px;">69元</p>
+            </div>
+            <div class="products" style="border-top:1px solid #e53935;background:#fafafa url(images/erji.png) center 56px no-repeat;">
+                <p class="ziti">小米圈铁耳机</p>	
+                <p style=" margin-top:10px; color:#b0b0b6;">动圈+动铁，双发声单元</p>
+                <p style="color:#ff6709; margin-top:15px;">69元</p>
+            </div>
+            <div class="products" style="margin-right:0;border-top:1px solid #00c0a5;background:#fafafa url(images/luyouqi.png) center 54px no-repeat;">
+                <p class="ziti">小米路由器 青春版</p>	
+                <p style=" margin-top:10px; color:#b0b0b6;">将高性能路由器，凝聚于掌心大小</p>
+                <p style="color:#ff6709; margin-top:15px;">79元</p>
+            </div>
+            <div class="products" style="border-top:1px solid #ffac13; background:#fafafa url(images/chazuo.png) center 66px no-repeat;">
+                <p class="ziti">小米智能插座 基础班</p>	
+                <p class="ziti" style=" margin-top:10px; color:#b0b0b6;">手机远程遥控，让普通电器变智能</p>
+                <p style="color:#ff6709; margin-top:15px;">49元</p>
+            </div>
+            <div class="products" style="border-top:1px solid #83c44e;background:#fafafa url(images/jinghuaqi.png) center 44px no-repeat;">
+                <p class="ziti">小米空气净化器2</p>	
+                <p style=" margin-top:10px; color:#b0b0b6;">净化能力高达310m3/h</p>
+                <p style="color:#ff6709; margin-top:15px;">699元</p>
+            </div>
+            <div class="products" style="border-top:1px solid #2196f3;background:#fafafa url(images/chaban.png) center 97px no-repeat;">
+                <p class="ziti">小米智能插线板</p>	
+                <p style=" margin-top:10px; color:#b0b0b6;">手机远程控制家中电器，智能节电</p>
+                <p style="color:#ff6709; margin-top:15px;">69元</p>
+            </div>
+            <div class="products" style="border-top:1px solid #e53935;background:#fafafa url(images/erji.png) center 56px no-repeat;">
+                <p class="ziti">小米圈铁耳机</p>	
+                <p style=" margin-top:10px; color:#b0b0b6;">动圈+动铁，双发声单元</p>
+                <p style="color:#ff6709; margin-top:15px;">69元</p>
+            </div>
+            <div class="products" style="margin-right:0;border-top:1px solid #00c0a5;background:#fafafa url(images/luyouqi.png) center 54px no-repeat;">
+                <p class="ziti">小米路由器 青春版</p>	
+                <p style=" margin-top:10px; color:#b0b0b6;">将高性能路由器，凝聚于掌心大小</p>
+                <p style="color:#ff6709; margin-top:15px;">79元</p>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+<div class="bg">
+	<!--智能硬件-->
+	<div class="hardware-box">
+    	<div class="hardware">
+        	智能硬件
+            <img style="float:right;" src="images/hardware_morebtn.png">
+            <a href="#">查看全部</a>
+        </div>
+        <div class="kidwatch">
+        	<p style="font-size:24px; font-weight:normal; margin-top:57px;">米兔儿童电话手表</p>
+            <p style="font-size:16px; margin-top:14px; color:#333;">安全防走失，宝贝的贴身护卫</p>
+            <p style="margin-top:34px; font-size:30px; color:#00a8ff; font-family:Century Gothic;">299<a style="font-size:14px;">元</a></p>
+        </div>
+        <div class="hardware-right">
+        	<div class="hardwareTopbox">
+                <div class="content" style="background:#fff url(images/haraware_tizhongcheng.png) center 115px no-repeat;">
+                    <p class="ziti">小米体重秤</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">高精度压力传感器，手机管理全家健康</p>
+                    <p style="color:#ff6709; margin-top:15px;">99元</p>
+                </div>
+                <div class="content" style="background:#fff url(images/haraware_luyouqi.png) center 20px no-repeat;">
+                    <p class="ziti">小米路由器3</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">更安全更稳定，安全发售</p>
+                    <p style="color:#ff6709; margin-top:15px;">149元</p>
+                </div>
+                <div class="content" style="background:#fff url(images/haraware_shouhuan.png) center 20px no-repeat;">
+                    <p class="ziti">小米手环 光感版</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">实时监测心率，科学运动</p>
+                    <p style="color:#ff6709; margin-top:15px;">99元</p>
+                </div>
+                <div class="content" style="margin-right:0; background:#fff url(images/haraware_anfang.png) center 20px no-repeat;">
+                    <p class="ziti">小米智能安防套装</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">智能警戒，为您的家增添一份安心</p>
+                    <p style="color:#ff6709; margin-top:15px;">699元</p>
+                </div>
+             </div>
+             <div class="hardwareBottomBOX">
+                <div class="content" style="background:#fff url(images/haraware_xiaoyi.png) center 20px no-repeat;">
+                    <p class="ziti">小米运动相机</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">边玩边录边拍，手机随时分享</p>
+                    <p style="color:#ff6709; margin-top:15px;">399元</p>
+                </div>
+                <div class="content" style="background:#fff url(images/haraware_xieya.png) center 20px no-repeat;">
+                    <p class="ziti">iHealth智能血压计（蓝牙版）</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">送给父母的健康礼物</p>
+                    <p style="color:#ff6709; margin-top:15px;">199元</p>
+                </div>
+                <div class="content" style="background:#fff url(images/haraware_shexiangtou.png) center 20px no-repeat;">
+                    <p class="ziti">小米智能摄像机 夜视版</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">能看能听能说，手机远程观看</p>
+                    <p style="color:#ff6709; margin-top:15px;">149元</p>
+                </div>
+                <div class="content" style="margin-right:0; background:#fff url(images/haraware_light.png) center 34px no-repeat;">
+                    <p class="ziti">Yeelight床头灯</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">触摸式操作，给卧室1600万种颜色</p>
+                    <p style="color:#ff6709; margin-top:15px;">699元</p>
+                </div>
+              </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--搭配-->
+    
+    <div class="dapei-box">
+    	<div class="dapei">
+        	搭配
+            <ul>
+            	<li class="current">热门</li>
+                <li>耳机音箱</li>
+                <li>电源</li>
+                <li style="margin-right:0;">电池储存卡</li>
+            </ul>
+        </div>
+        <div class="dapeiLeftBox">
+        	<div class="content">
+            	<img src="images/dapei_icon01.png">
+            </div>
+        	<div class="content">
+            	<img src="images/dapei_icon02.png">
+            </div>
+        </div>
+        <div class="dapeiRightBox">
+        	<div class="TopBox">
+                <div class="content" style="background:#fff url(images/dapei_icon03.png) center 46px no-repeat;">
+                    <p class="ziti">小米路由器3</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">更安全更稳定，安全发售</p>
+                    <p style="color:#ff6709; margin-top:15px;">149元</p>
+                    
+                </div>
+                <div class="content" style="background:#fff url(images/dapei_icon04.png) center 46px no-repeat;">
+                    <p class="ziti">小米手环 光感版</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">实时监测心率，科学运动</p>
+                    <p style="color:#ff6709; margin-top:15px;">99元</p>
+                </div>
+                <div class="content" style=" background:#fff url(images/dapei_icon05.png) center 100px no-repeat;">
+                    <p class="ziti">小米智能安防套装</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">智能警戒，为您的家增添一份安心</p>
+                    <p style="color:#ff6709; margin-top:15px;">699元</p>
+                </div>
+                <div class="content" style="margin-right:0;background:#fff url(images/dapei_icon06.png) center 46px no-repeat;">
+                    <p class="ziti">小米运动相机</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">边玩边录边拍，手机随时分享</p>
+                    <p style="color:#ff6709; margin-top:15px;">399元</p>
+                </div>
+            </div>
+            <div class="BottomBox">
+                <div class="content" style="background:#fff url(images/dapei_icon07.png) center 49px no-repeat;">
+                    <p class="ziti">小米智能摄像机 夜视版</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">能看能听能说，手机远程观看</p>
+                    <p style="color:#ff6709; margin-top:15px;">149元</p>
+                </div>
+                <div class="content" style="background:#fff url(images/dapei_icon08.png) center 55px no-repeat;">
+                    <p class="ziti">小米智能摄像机 夜视版</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">能看能听能说，手机远程观看</p>
+                    <p style="color:#ff6709; margin-top:15px;">149元</p>
+                </div>
+                <div class="content" style="background:#fff url(images/dapei_icon09.png) center 58px no-repeat;">
+                    <p class="ziti">小米智能摄像机 夜视版</p>	
+                    <p style=" margin-top:10px; color:#b0b0b6;">能看能听能说，手机远程观看</p>
+                    <p style="color:#ff6709; margin-top:15px;">149元</p>
+                </div>
+                <div class="content" style="margin-right:0; background-color:#f5f5f5;" >
+                    <div class="content-top" style="margin-bottom:14px;"><img src="images/content-top_icon01.png"></div>
+                    <div class="content-top"><img src="images/content-top_icon02.png"></div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+    
+     <!--周边-->
+    <div class="dapei-box">
+    		<div class="dapei">
+        	周边
+            <ul>
+            	<li class="current">热门</li>
+                <li>服装</li>
+                <li>米兔</li>
+                <li>生活周边</li>
+                <li style="margin-right:0;">箱包</li>
+            </ul>
+        </div>
+        <div class="dapeiLeftBox">
+        	<div class="content">
+            	<img src="images/peijian_icon01.png">
+            </div>
+        	<div class="content">
+            	<img src="images/peijian_icon02.png">
+            </div>
+        </div>
+        <div class="dapeiRightBox">
+        	<div class="TopBox">
+                <div class="content" style="background:#fff url(images/peijian_icon03.png) center 36px no-repeat;">
+            	<p class="ziti">小米金属鼠标垫 小号</p>	
+        		<p style="color:#ff6709; margin-top:10px;">49元</p>
+            	<p style=" margin-top:15px; color:#b0b0b6;">6483人评价</p>
+                
+            </div>
+            <div class="content" style="background:#fff url(images/peijian_icon04.png) center 36px no-repeat;">
+            	<p class="ziti">小米皮质记事本</p>	
+        		<p style="color:#ff6709; margin-top:10px;">19元</p>
+            	<p style=" margin-top:15px; color:#b0b0b6;">3050人评价</p>
+            </div>
+            <div class="content" style=" background:#fff url(images/peijian_icon05.png) center 36px no-repeat;">
+            	<p class="ziti">小米LED随身灯 增强版</p>	
+        		<p style="color:#ff6709; margin-top:10px;">19.9元</p>
+            	<p style=" margin-top:15px; color:#b0b0b6;">5.6万人评价</p>
+            </div>
+            <div class="content" style="margin-right:0;background:#fff url(images/peijian_icon06.png) center 36px no-repeat;">
+            	<p class="ziti">手机支架 小蜜蜂</p>	
+        		<p style="color:#ff6709; margin-top:10px;">19元</p>
+            	<p style=" margin-top:15px; color:#b0b0b6;">6.9万人评价</p>
+            </div>
+            </div>
+            <div class="BottomBox">
+               <div class="content" style="background:#fff url(images/peijian_icon07.png) center 45px no-repeat;">
+                    <p class="ziti">小米防尘塞 MI标</p>	
+                    <p style="color:#ff6709; margin-top:10px;">3.9元</p>
+                    <p style=" margin-top:15px; color:#b0b0b6;">5.6万人评价</p>
+                </div>
+                <div class="content" style="background:#fff url(images/peijian_icon08.png) center 45px no-repeat;">
+                    <p class="ziti">小米智能摄像机 夜视版</p>	
+                    <p style="color:#ff6709; margin-top:10px;">149元</p>
+                    <p style=" margin-top:15px; color:#b0b0b6;">8461人评价</p>
+                </div>
+                <div class="content" style="background:#fff url(images/peijian_icon09.png) center 45px no-repeat;">
+                    <p class="ziti">小米电源线收纳盒</p>	
+                    <p style="color:#ff6709; margin-top:10px;">39元</p>
+                    <p style=" margin-top:15px; color:#b0b0b6;">8461人评价</p>
+                </div>
+                <div class="content" style="margin-right:0; background-color:#f5f5f5;" >
+                    <div class="content-top" style="margin-bottom:14px;"><img src="images/peijian_icon10.png"></div>
+                    <div class="content-top"><img src="images/content-top_icon02.png"></div>
+                </div>
+              </div>
+        </div>
+            
+    </div>
+    
+     <!--配件-->
+   <div class="dapei-box">
+    
+        <div class="dapei">
+        	配件
+            <ul>
+            	<li class="current">热门</li>
+                <li>保护套</li>
+                <li>后盖</li>
+                <li>贴膜</li>
+                <li style="margin-right:0;">其他配件</li>
+            </ul>
+        </div>
+        <div class="dapeiLeftBox">
+        	<div class="content">
+            	<img src="images/zhoubian_icon01.png">
+            </div>
+        	<div class="content">
+            	<img src="images/zhoubian_icon02.png">
+            </div>
+        </div>
+        <div class="dapeiRightBox">
+        	<div class="TopBox">
+                <div class="content" style="background:#fff url(images/zhoubian_icon03.png) center 47px no-repeat;">
+            	<p class="ziti">小米自拍杆</p>	
+        		<p style="color:#ff6709; margin-top:10px;">49元</p>
+            	<p style=" margin-top:15px; color:#b0b0b6;">6.4万人评价</p>
+            </div>
+            <div class="content" style="background:#fff url(images/zhoubian_icon04.png) center 47px no-repeat;">
+            	<p class="ziti">小米手机5 钢化膜（0.22mm）</p>	
+        		<p style="color:#ff6709; margin-top:10px;">29元</p>
+            	<p style=" margin-top:15px; color:#b0b0b6;">1万人评价</p>
+            </div>
+            <div class="content" style=" background:#fff url(images/zhoubian_icon05.png) center 47px no-repeat;">
+            	<p class="ziti">红米手机Note3 钢化膜（0.22mm）</p>	
+        		<p style="color:#ff6709; margin-top:10px;">699元</p>
+            	<p style=" margin-top:15px; color:#b0b0b6;">5.6万人评价</p>
+            </div>
+            <div class="content" style="margin-right:0;background:#fff url(images/zhoubian_icon06.png) center 47px no-repeat;">
+            	<p class="ziti">小米Note 标准贴膜（2片装）</p>	
+        		<p style="color:#ff6709; margin-top:10px;">19元</p>
+            	<p style=" margin-top:15px; color:#b0b0b6;">2.1万人评价</p>
+            </div>
+            </div>
+            <div class="BottomBox">
+               <div class="content" style="background:#fff url(images/zhoubian_icon07.png) center 47px no-repeat;">
+                    <p class="ziti">小米随身WIFI</p>	
+                    <p style="color:#ff6709; margin-top:10px;">19.9元</p>
+                    <p style=" margin-top:15px; color:#b0b0b6;">30.1万人评价</p>
+                </div>
+                <div class="content" style="background:#fff url(images/zhoubian_icon08.png) center 47px no-repeat;">
+                    <p class="ziti">小米百变随身杯</p>	
+                    <p style="color:#ff6709; margin-top:10px;">39元</p>
+                    <p style=" margin-top:15px; color:#b0b0b6;">1.2万人评价</p>
+                </div>
+                <div class="content" style="background:#fff url(images/zhoubian_icon09.png) center 47px no-repeat;">
+                    <p class="ziti">小米手机5 硅胶保护套</p>	
+                    <p style="color:#ff6709; margin-top:10px;">69元</p>
+                    <p style=" margin-top:15px; color:#b0b0b6;">215人评价</p>
+                </div>
+                <div class="content" style="margin-right:0; background-color:#f5f5f5;" >
+                    <div class="content-top" style="margin-bottom:14px;"><img src="images/zhoubian_icon10.png"></div>
+                    <div class="content-top"><img src="images/content-top_icon02.png"></div>
+                </div>
+              </div>
+        </div>
+            
+    </div>
+    
+    <!--热评产品-->
+    <div class="reping-box">
+    	<div class="reping">
+        	热评产品   
+        </div>
+        <div class="hotproduct">
+        	<img src="images/hotproduct_icon01.png">
+            <div class="judge">
+            	<p>超值正品，再也不会担心头那里时间久了坏掉，感觉升级版萌萌哒，既好用又好看</p>
+                <h1>来自于 香草忘忧 的评价</h1>
+                <a>米兔手机U盘</a><span style="color:#ff6700;">49.9元</span>
+            </div>
+        </div>
+        <div class="hotproduct">
+        	<img src="images/hotproduct_icon02.png">
+            <div class="judge">
+            	<p style="margin-bottom:52px;">绝对5星，音质挺好，包装也不错，物流也快</p>
+                <h1>来自于 星星活火 的评价</h1>
+                <a>小米活塞耳机 标准版</a><span style="color:#ff6700;">49.9元</span>
+            </div>
+        </div>
+         <div class="hotproduct">
+        	<img src="images/hotproduct_icon03.png">
+            <div class="judge">
+            	<p style="margin-bottom:52px;">做工没的说，摸起来非常细腻，而且比传统的插板稳固</p>
+                <h1>来自于 林新城 的评价</h1>
+                <a>小米插线板</a><span style="color:#ff6700;">49元</span>
+            </div>
+        </div>
+        <div class="hotproduct" style="margin-right:0;"><img src="images/hotproduct_icon04.png">
+        	<div class="judge">
+            	<p style="margin-bottom:52px;">一如既往的发烧体验，炫酷外形，人性的设计，动听的音质！高低音表现平衡</p>
+                <h1>来自于 人生如戏 的评价</h1>
+                <a>小米头戴式耳机 标准版</a><span style="color:#ff6700;">499元</span>
+            </div>
+        </div>	
+    </div>
+    
+    <!--分类-->
+    <div class="classify-box">
+    	<div class="classify">内容</div>
+        <div class="content" style="border-top:1px solid #ffac13;">
+        	<ul>
+            	<li style="font-size:16px; color:#ffac13; margin-bottom:25px;">图书</li>
+                <li style=" margin-bottom:10px;"><a href="#" style="font-size:20px; color:#333;">阿弥陀佛，么么哒</a></li>
+                <li style="font-size:12px; color:#b0b0b0; font-family:'宋体'; margin-bottom:5px;">大冰新书，12个不舍得读完的、暖心</li>
+                <li style="font-size:12px; color:#b0b0b0; font-family:'宋体'; margin-bottom:20px;">的，真实的江湖故事</li>
+                <li>9.99元</li>
+                <li><img src="images/classify_icon01.png" style="margin-left:auto; margin-right:auto; margin-top:32px;"></li>
+            </ul>
+        </div>
+        <div class="content" style="border-top:1px solid #83c44e;">
+        	<ul>
+            	<li style="font-size:16px; color:#83c44e; margin-bottom:25px;">主题</li>
+                <li style=" margin-bottom:10px;"><a href="#" style="font-size:20px; color:#333;">主题市场</a></li>
+                <li style="font-size:12px; color:#b0b0b0; font-family:'宋体'; margin-bottom:5px;">众多个性主题、百变锁屏与自由桌面</li>
+                <li style="font-size:12px; color:#b0b0b0; font-family:'宋体'; margin-bottom:20px;">让你的手机与众不同！</li>
+                <li>MIUI</li>
+                <li><img src="images/classify_icon02.png" style="margin-left:auto; margin-right:auto; margin-top:15px;"></li>
+            </ul>
+        </div>
+        <div class="content" style="border-top:1px solid #e53935;">
+        	<ul>
+            	<li style="font-size:16px; color:#e53935; margin-bottom:25px;">游戏</li>
+                <li style=" margin-bottom:10px;"><a href="#" style="font-size:20px; color:#333;">米柚手游模拟器</a></li>
+                <li style="font-size:12px; color:#b0b0b0; font-family:'宋体'; margin-bottom:5px;"></li>
+                <li style="font-size:12px; color:#b0b0b0; font-family:'宋体'; margin-bottom:39px;">在电脑上玩遍小米所有手游</li>
+                <li>免费</li>
+                <li><img src="images/classify_icon03.png" style="margin-left:auto; margin-right:auto; margin-top:47px;"></li>
+            </ul>
+        </div>
+        <div class="content" style="margin-right:0; border-top:1px solid #2196f3;">
+        	<ul>
+            	<li style="font-size:16px; color:#2196f3; margin-bottom:25px;">应用</li>
+                <li style=" margin-bottom:10px;"><a href="#" style="font-size:20px; color:#333;">2015年度应用</a></li>
+                <li style="font-size:12px; color:#b0b0b0; font-family:'宋体'; margin-bottom:39px;">精彩世界，尽情下载</li>
+               
+                <li>免费</li>
+                <li><img  style="margin-left:auto; margin-right:auto; margin-top:46px;" src="images/classify_icon04.png"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--视频-->
+    <div class="video-box">
+    	
+    	<div class="video">
+        		视频
+        	 <img style="float:right;" src="images/hardware_morebtn.png">
+            <a href="#" style="float:right; font-size:18px; margin-right:10px; color:#333;">查看更多</a>
+        </div>
+        <div class="content">
+        	<img class="play" src="images/video_play.png">
+        	<img src="images/video_icon01.jpg">
+        	 <h1>笑喷了，沈腾爆笑出演，6集联播</h1>
+             <h2>小米Max沈腾爆笑预告全集</h2>
+        </div>
+        <div class="content">
+        	<img class="play" src="images/video_play.png">
+       		<img src="images/video_icon02.jpg">
+            <h1>小米2016春季新品发布会</h1>
+             <h2>小米5 十余项黑科技亮相</h2>
+        </div>
+        <div class="content">
+        	<img class="play" src="images/video_play.png">
+        	<img class="icon" src="images/video_icon03.jpg">
+            <h1>15秒了解小米5 有多快</h1>
+             <h2>华少用超快语速告诉你小米5 到底有多快</h2>
+        </div>
+        <div class="content" style="margin-right:0;">
+        	<img class="play" src="images/video_play.png">
+        	<img src="images/video_icon04.jpg">
+        		<h1>《去探索》 小米年度品牌视频</h1>
+             	<h2>与小米一起探索黑科技</h2>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+    <div class="clearfix"></div>
+</div>
+
+<!--页脚-->
+<div class="footer-box">
+	<div class="footer">
+    	<ul>
+        	<li style="background:url(images/footer_icon01.png) no-repeat 40px center;"><a href="#">1小时快修服务</a></li>
+            <li style="background:url(images/footer_icon02.png) no-repeat 40px center;"><a href="#">7天无理由退货</a></li>
+            <li style="background:url(images/footer_icon03.png) no-repeat 40px center;"><a href="#">15天免费换修</a></li>
+            <li style="background:url(images/footer_icon04.png) no-repeat 40px center;"><a href="#">满150元包邮</a></li>
+            <li style="background:url(images/footer_icon05.png) no-repeat 40px center;"><a href="#">520余家售后网点</a></li>
+            <div class="clearfix"></div>
+        </ul>
+        <div class="line"></div>
+        
+        <dl>
+        	<dd style="font-size:14px; font-family:'微软雅黑'; color:#424242; margin-bottom:28px;">帮助中心</dd>
+            <dd><a href="#">购物指南</a></dd>
+            <dd><a href="#">支付方式</a></dd>
+            <dd><a href="#">配送方式</a></dd>
+        </dl>
+        <dl>
+        	<dd style="font-size:14px; font-family:'微软雅黑'; color:#424242; margin-bottom:28px;">服务支持</dd>
+            <dd><a href="#">售后政策</a></dd>
+            <dd><a href="#">自助服务</a></dd>
+            <dd><a href="#">相关下载</a></dd>
+        </dl>
+        <dl>
+        	<dd style="font-size:14px; font-family:'微软雅黑'; color:#424242; margin-bottom:30px;">线下门店</dd>
+            <dd><a href="#">小米之家</a></dd>
+            <dd><a href="#">服务网点</a></dd>
+            <dd><a href="#">线下专区</a></dd>
+        </dl>
+        <dl>
+        	<dd style="font-size:14px; font-family:'微软雅黑'; color:#424242; margin-bottom:28px;">关于小米</dd>
+            <dd><a href="#">了解小米</a></dd>
+            <dd><a href="#">加入小米</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+        </dl>
+        <dl>
+        	<dd style="font-size:14px; font-family:'微软雅黑'; color:#424242; margin-bottom:28px;">关注我们</dd>
+            <dd><a href="#">新浪微博</a></dd>
+            <dd><a href="#">小米部落</a></dd>
+            <dd><a href="#">官方微信</a></dd>
+        </dl>
+        <dl style="margin-right:123px;">
+        	<dd style="font-size:14px; font-family:'微软雅黑'; color:#424242; margin-bottom:28px;">特色服务</dd>
+            <dd><a href="#">F码通道</a></dd>
+            <dd><a href="#">小米移动</a></dd>
+            <dd><a href="#">防伪查询</a></dd>
+        </dl>
+        <div style="width:1px; height:111px; float:left; background-color:#e0e0e0; margin-top:10px; "></div>
+        <div class="online">
+        	<p style="font-size:20px; color:#ff6700; margin-bottom:10px;">400-100-5678</p>
+            <p style="font-size:12px; font-family:Arial,'宋体'; color:#616161; margin-bottom:7px;">周一至周日 8:00-18:00</p>
+            <p style="font-size:12px; font-family:Arial,'宋体'; color:#616161; margin-bottom:18px;">（仅收市话费）</p>	
+            <div class="service">24小时在线客服</div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<!--合作-->
+<div class="team-box">
+	<div class="team">
+    	<div class="logo"><img src="images/team_logo.png"></div>
+        <div style="width:880px; float:left; margin-bottom:30px;">
+        	<p><a href="#">小米网</a><a href="#">MIUI</a><a href="#">米聊</a><a href="#">多看书城</a><a href="#">小米路由器</a><a href="#">视频电话</a>
+        	<a href="#">小米后院</a><a href="#">小米天猫店</a><a href="#">小米淘宝直营店</a><a href="#">小米网盟</a><a href="#">问题反馈</a>
+            <a href="#">Select Region</a>
+        </p>
+        <p style="margin-left:5px;">©mi.com京ICP证XXX号 京ICP备XXX号 京公网安备XXX号 京网文XXX号 违法和不良信息举报
+        	电话：XXX</p>
+        <p style="margin-left:5px;">本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</p>
+        <div class="clearfix"></div>
+        </div>
+        <div class="safe">
+        	<img style="float:left; margin-right:5px;" src="images/safe_icon01.png">
+            <span>诚信网站师范企业</span>
+            <img style="float:left; margin-right:5px;" src="images/safe_icon02.png">
+            <span>可信网站信用评价</span>
+            <img style="float:left; margin-right:5px;" src="images/safe_icon03.png">
+            <span style="margin-right:0;">网上交易保障中心</span>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="word">探索黑科技，小米为发烧而生</div>
+</div>
+<div style="height:20px; background-color:#fafafa;"></div>
+<script>
+/*页眉*/
+$(".top_box .shop .car").hide()
+$(".top_box .shop").mouseenter(
+	function(){
+		$(".login .shop").addClass("current")
+		$(".login .shop .car").stop(true.true).slideToggle()
+		$(".car").addClass("shadow_lf").addClass("shadow_rt")
+		$(".bg01").addClass("bg02")
+		}
+).mouseleave(
+	function(){
+		$(".top_box .shop .car").stop(true.true).slideToggle()
+		$(".top_box .shop ").removeClass("current")
+		$(".bg01").removeClass("bg02")
+		}
+)
+/*banner*/
+	/*菜单*/
+	$(".submenu").hide()
+	$(".menu li").mouseenter(
+		function(){
+			$(this).addClass("current").siblings().removeClass("current")
+			$(".submenu").show()
+			}
+	).mouseleave(
+		function(){
+			$(this).removeClass("current")
+			$(".submenu").hide()
+			}
+	)
+	/*banner*/
+	$(".circle").mouseenter(
+		function(){
+				$(this).addClass("current").siblings().removeClass("current")//鼠标经过当前的圆环，其添加背景颜色类变为白色，他的同胞颜色不变
+			}
+	)
+	$(".circle").click(
+		function(){
+			x=$(".circle").index($(this))//获取当前圆圈的位置
+			$(".banner-bigbox").animate({marginLeft:x*-1226},1000)//鼠标点击当前第x个的圆环，banner-bigbox停在距离中心点（0，0）marginLeft的位置
+			/*$(".banner-bigbox img").eq(x).show().siblings().hide()*///鼠标点击当前第x个的圆环，banner-bigbox的第x张图片显示，所有同胞隐藏
+			}
+	)
+	/*subnav*/
+	$(".subnav .box1,.subnav .box2,.subnav .box3").mouseenter(
+		function(){
+			$(this).addClass("current").siblings().removeClass("current")
+			}
+	).mouseleave(
+		function(){
+			$(this).removeClass("current")
+			}
+	)
+	/*arrow-btn*/
+	$(".arrow-rtbtn").mouseenter(
+		function(){
+			$(".arrow-rtbtn img").attr("src","images/arrow_rightbtn.png")//鼠标经过banner右箭头时，换图片
+			}
+	).mouseleave(
+		function(){
+			$(".arrow-rtbtn img").attr("src","images/arrow_rightbtn01.png")//鼠标经过banner右箭头时，变为原来的图片
+			}
+	)
+	$(".arrow-lfbtn").mouseenter(
+		function(){
+			$(".arrow-lfbtn img").attr("src","images/arrow_leftbtn.png")//鼠标经过banner左箭头时，换图片
+			}
+	).mouseleave(
+		function(){
+			$(".arrow-lfbtn img").attr("src","images/arrow_leftbtn01.png")//鼠标经过banner左箭头时，变为原来的图片
+			}
+	)
+	var t=0//赋值一个变量
+	$(".arrow-rtbtn").click(
+		function(){
+			if(t<4){t=t+1}//当t小于4时，让t加1
+			else{t=0}//否则把t值为0
+			$(".banner-bigbox").animate({marginLeft:t*-1226},1000)//点击banner右箭头时，点击一次banner-bigbox盒子向左移动1226px        
+			$(".circle").eq(t).addClass("current").siblings().removeClass("current")//盒子移动的同时，对应的圆圈增加current类
+			
+			}
+	)
+	$(".arrow-lfbtn").click(
+		function(){
+			if(t>0){t=t-1}//当t大于0时，让t减1
+			else{t=4}//否则把t值为4
+			$(".banner-bigbox").animate({marginLeft:t*-1226},1000)//点击banner左箭头时，点击一次banner-bigbox盒子向左移动1226px        
+			$(".circle").eq(t).addClass("current").siblings().removeClass("current")//盒子移动的同时，对应的圆圈增加current类
+			
+			}
+	)
+/*明星产品*/
+$(".right-btn,.left-btn").mouseenter(
+	function(){
+		$(this).addClass("bg")//鼠标点击右箭头，products-bigbox向左移动1226px
+		}
+).mouseleave(
+	function(){
+		$(this).removeClass("bg")
+		}
+)
+$(".right-btn").click(
+	function(){
+		$(".products-bigbox").animate({marginLeft:-1226},2000)//鼠标点击右箭头，products-bigbox向左移动1226px
+		}
+)
+$(".left-btn").click(
+	function(){
+		$(".products-bigbox").animate({marginLeft:0},2000)//鼠标点击左箭头，products-bigbox回到原位置
+		}
+)
+/*搭配--周边--配件*/
+$(".dapei li").mouseenter(
+	function(){
+		$(this).addClass("current").siblings().removeClass("current")
+		}
+)
+
+/***********************视频**************************/
+$(".hotproduct").mouseenter(
+	function(){
+		$(this).stop(false).animate({marginTop:-2})
+		$(this).addClass("shadow").siblings().removeClass("shadow")
+		}
+).mouseleave(
+	function(){
+		$(this).stop(false).animate({marginTop:0})
+		$(this).removeClass("shadow")
+		}
+)
+
+/***********************视频**************************/
+$(".content").mouseenter(
+	function(){
+		$(this).stop(false).animate({marginTop:-2})
+		$(this).addClass("shadow").siblings().removeClass("shadow")
+		}
+).mouseleave(
+	function(){
+		$(this).stop(false).animate({marginTop:0})
+		$(this).removeClass("shadow")
+		}
+)
+/***********************视频**************************/
+$(".video-box .content").mouseenter(
+	function(){
+		$(this).find(".play").attr("src","images/video_play01.png")
+		}
+).mouseleave(
+	function(){
+		$(this).find(".play").attr("src","images/video_play.png")
+		}
+)
+</script>
+<style>
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+<div class="copyrights">
+	Collect from <a href="http://www.cssmoban.com/"  title="网站模板">模板之家</a>
+	<a href="https://www.chazidian.com/"  title="查字典">查字典</a>
+</div>
+</body>
+</html>

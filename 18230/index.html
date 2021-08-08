@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="dx"></div>
+<div class="header">
+   <div class="wrap head">
+       <div class="logo fl"><a href="index.html"><img src="images/logo.jpg"></a></div>
+       <div class="nav fr">
+           <a href="index.html" class="nav-cut">关于我们</a>
+           <a href="investment.html">投资策略</a>
+           <a href="invest-team.html">投资团队</a>
+           <a href="enterprise.html">企业文化</a>
+           <a href="news.html">新闻中心</a>
+           <a href="contact.html">联系我们</a>
+       </div>
+   </div>
+</div>
+
+<div class="content">
+     <div class="idx">
+         <div class="wrap">
+                     <div  class="idx-a" >
+                             <ul>
+                                 <li><a href="index-company.html"><img src="images/idx-b1.png"></a>
+                                    <div class="op-inside">公司介绍</div>
+                                 </li>
+                                 <li><a href=""><img src="images/idx-b2.png"></a>
+                                    <div class="op-inside">联系我们</div>
+                                 </li>
+                                 <li><a href=""><img src="images/idx-c.png"></a>
+                                    <div class="op-inside">新闻中心</div>
+                                 </li>
+                             </ul>
+                             <div class="clearfix"></div>
+                     </div>  
+          </div>   
+     </div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+   $(".dx").animate({height:"0px"},5000)
+</script>
+<script>
+   $(".idx-a li").hover(function(){
+	  $(this).find(".op-inside").stop(false,true).fadeIn(300)
+	 },function(){
+	  $(this).find(".op-inside").stop(false,true).fadeOut(300)
+	 }
+	 )
+</script>
+</body>
+</html>

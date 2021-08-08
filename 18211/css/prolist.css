@@ -1,0 +1,108 @@
+.fsort{}
+.fsort li{ float: left;}
+.fsort li a{ display: block; float: left; height: 34px; line-height: 34px; text-align: center; font-size: 14px; color: #333333; border: 1px solid #efefef; padding: 0px 12px;}
+.fsort li a i{ width: 8px; height:15px; float: right; margin-top:10px; margin-right:6px;background-position:-1px -93px; margin-left: 3px;}
+.fsort li a:hover,.fsort li a.active{ background-color:#e23435; color: #ffffff; border-color: #e23435;}
+.fsort li a:hover i{background-position:-12px -93px; }
+/*web products start*/
+.piclist li{ margin:5px 2px; padding:5px 10px 6px 10px;float:left; _display:inline; overflow:hidden; text-align:center; width: 220px; position: relative;}
+.piclist li .pic{ text-align:center; display: block;overflow: hidden; height: auto; }
+.piclist li .pic a{ display: block;border: 1px solid #efefef; width: 218px;overflow: hidden;}
+.piclist li .pic img{ width:100%; display:block;}
+
+.piclist li a.crash{ background-position: -309px 0px; color: #f00000;}
+.piclist li .pic a:hover img{ padding-left: 10px; transition: all 0.8s;}
+.piclist li:hover{-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 8px 1px rgba(0,0,0,0.1);box-shadow:0px 0px 8px 1px rgba(0,0,0,0.1); top: -6px;}
+.piclist li:hover img{padding-left: 10px; transition: all 0.8s;}
+.piclistl li:hover .crash{background-position: -309px -32px; color: #ffffff;}
+/*web products end*/
+
+
+/* 猜你喜欢 */
+/* title */
+.layout{margin:30px auto 0 auto; width:1200px;}
+.layout .hd{height:42px;line-height:42px;position:relative; border:1px solid #efefef; position:relative;}
+.layout .hd h2{ display:inline-block;*display:inline;zoom:1; z-index:100;font-size:18px; padding-left:30px; color:#333333;}
+.layout .hd .changeBnt{width:85px;height:30px;background:#fff; position:absolute;top:6px;right:18px;text-indent:25px;line-height:30px;font-size:18px;color:#333333;}
+.layout .hd .changeBnt i{width:18px;height:18px;position:absolute;left:4px;top:6px; background:url(../images/icon_s.png) no-repeat 0px 0px;}
+.layout .hd .changeBnt:hover{background:#e55656;border:1px solid #e55656;color:#fff;text-decoration:none;}
+.layout .hd .changeBnt:hover i{background-position:-1px -26px;}
+/* content */
+.picLB{ width:1220px; margin-left:-10px;}
+.picLB li{height:325px;float:left; _display:inline; margin:15px 0px; overflow:hidden; text-align:center; width: 244px; position: relative; background-color:#ffffff;}
+.picLB{overflow:hidden;zoom:1;}
+.picLB li{float:left;display:inline;}
+.picDl{width:1220px;overflow:hidden;zoom:1; position:absolute;top:0;left:0 }
+.picDl dd{padding:5px 10px 6px 10px; margin:10px 2px; float:left;display:inline; width: 220px; overflow:hidden; position:relative; }
+.picLB .ftBox{overflow:hidden;zoom:1; height:auto;}
+.picLB li .picDl{ text-align:center; display: block;overflow: hidden; height: auto; }
+.picLB li .picDl a.pic{ display: block;border: 1px solid #efefef; width: 218px;overflow: hidden;}
+.picLB li .picDl a img{ width:100%; display:block;}
+.picLB .ftBox a{ display:block; width:220px;}
+.picLB .ftBox a h3{font-size:14px;line-height:20px;margin-top:10px; text-align:left; color:#787878; float:left;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.picLB .ftBox a span{ font-size:14px; color:#ff0000; display:block; width:100%; float:left; text-align:left; line-height:20px; margin-top:8px;} 
+.picLB .ftBox{position:relative;}
+.picLB li dl dd:hover{-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 8px 1px rgba(0,0,0,0.1);box-shadow:0px 0px 8px 1px rgba(0,0,0,0.1); top: -6px;}
+.picLB li dl dd:hover img{padding-left: 10px; transition: all 0.8s;}
+
+
+button, input, optgroup, select, textarea {	color: inherit;	font: inherit;	margin: 0}
+button {overflow: visible}
+button, select {text-transform: none}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {-webkit-appearance: button;cursor: pointer}
+button[disabled], html input[disabled] {cursor: default}
+button::-moz-focus-inner, input::-moz-focus-inner {border:0;padding:0}
+input {	line-height: normal}
+input[type="checkbox"], input[type="radio"] {box-sizing: border-box;padding: 0}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {height:auto}
+input[type="search"] {-webkit-appearance: textfield;-moz-box-sizing: content-box;-webkit-box-sizing: content-box;box-sizing: content-box}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {-webkit-appearance:none}
+
+
+
+
+.clearfix { zoom: 1; float:left; width:100%;}
+.ri-section .lf-list .brand-box .clearfix { margin-bottom: 1px;}
+
+
+.search-opt {width: 1198px;position: relative;z-index: 2;border: 1px solid #efefef;}
+.search-opt .opt-list {width: 100%;}
+.search-opt .opt-list dl {width: 100%;}
+.search-opt .opt-list dt {width: 138px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;line-height: 58px;color: #797979;float: left;font-size: 14px;text-align: center;}
+.search-opt .opt-list dd {width: 1021px;float: left;padding: 10px 20px;background: #FFF;border-left: 1px solid #efefef;}
+.search-opt .opt-list .brand-section {overflow: hidden;border: 1px solid #DDD !important;margin-top: -1px;zoom: 1}
+.ri-section .lf-list.ov-inh {overflow: inherit;}
+.ri-section .lf-list .brand-box .clearfix {margin-bottom: 1px}
+.ri-section .lf-list .brand-box a {width: 90px;	height: 30px;line-height: 30px;margin: 0 -1px -1px 0;border: 1px solid #eaeaea;padding: 10px;color: #666666;text-align: center;cursor: pointer;overflow: hidden;float: left;position: relative}
+.ri-section .lf-list .brand-box a.addhover-js, .ri-section .lf-list .brand-box a:hover {filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);opacity: .7;text-decoration: none;border: 2px solid #e23435;width: 88px;height: 28px;z-index: 9}
+.ri-section .lf-list .brand-box a.addhover-js>img, .ri-section .lf-list .brand-box a:hover>img {display: none}
+.ri-section .lf-list .brand-box a>img {width: 90px;height: 30px}
+.ri-section .lf-list .brand-box a span {_width: 88px;display: block;overflow: hidden;white-space: nowrap;color: #797979;cursor: pointer;text-overflow: ellipsis}
+.ri-section .lf-list{ width:920px; float:left;}
+.ri-section .lf-list .brand-list{ height:38px; overflow:hidden; position:relative;}
+.ri-section .lf-list .brand-list a {float: left;line-height:38px;margin-right: 20px;cursor: pointer;white-space: nowrap}
+.ri-section .lf-list .brand-list a label {width: 80px;float: left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;cursor: pointer}
+.ri-section .lf-list .brand-list a .shaix_la {float: left;position: relative;top:12px;margin-right: 2px;cursor: pointer}
+.ri-section .lr-more {float: right;width:101px; margin-top:10px;position: relative}
+.ri-section .lr-more a {position: relative;	border: 1px solid #EEE;	line-height: 18px;overflow: hidden;text-decoration: none;color: #333;padding: 3px 18px 3px 7px;margin: 0 5px}
+.ri-section .lr-more a i {top: 4px;position: absolute;-moz-transition-property: all;-o-transition-property: all;-webkit-transition-property: all;
+transition-property: all;-moz-transition-duration: 0.2s;-o-transition-duration: 0.2s;-webkit-transition-duration: 0.2s;transition-duration: 0.2s}
+.ri-section .lr-more a .litt-pluscr {top: 4px;right: 4px}
+.ri-section .lr-more a:hover .litt-pluscr {	background-position: 0 -93px}
+.ri-section .lr-more a:hover .litt-tcr {background-position: 0 -178px}
+.ri-section .lr-more a .litt-tcr {top: 7px;right: 3px}
+.ri-section .lr-more input[type="text"] {width: 40px;height: 22px;text-align: center;border: 1px solid #EEE;	outline: none}
+.ri-section .lr-more input[type="text"]:focus {	border-color: #e23435}
+.ri-section .lr-more input[type="submit"] {border: 1px solid #EEE;background-color: white;color: #999999;padding: 0 4px;outline: none}
+.ri-section .lr-more input[type="submit"]:hover {color: #888888}
+.ri-section .lf-list .brand-box .surclofix, .ri-section .lf-list .brand-list .surclofix {position: relative;left: 50%;right: 50%;margin-left: -62px;margin-top: 6px; height:20px;}
+.ri-section .lf-list .brand-box .surclofix a, .ri-section .lf-list .brand-list .surclofix a {border: 1px solid #ec4a4b;border: 1px solid rgba(236,74,75,0.62);display: inline-block;padding: 2px 8px;font-size: 12px;line-height: 1.2;border-radius: 6px;	color: #999999;height: inherit;width: inherit;margin: 0 10px}
+.ri-section .lf-list .brand-box .surclofix a:hover, .ri-section .lf-list .brand-list .surclofix a:hover {background: #ec4a4b;background: rgba(236,74,75,0.62);color: white;height: inherit;width: inherit}
+.sum_ov_inh .lf-list {overflow: inherit}
+.sum_ov_inh .lf-list .brand-box {overflow: inherit}
+.sum_ov_inh .lf-list .brand-box .addhover-js, .sum_ov_inh .lf-list .brand-box a:hover {filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);opacity: .7;text-decoration: none;border: 2px solid #e23435;width: 88px;height: 28px;z-index: 9}
+.sum_ov_inh .lf-list .brand-box .addhover-js>img, .sum_ov_inh .lf-list .brand-box a:hover>img {display: none}
+.sum_ov_inh .lf-list .brand-list {overflow: inherit}
+.sum_ov_inh .lf-list .brand-list .clearfix .red_hov_cli {color: #e23435}
+.sum_ov_inh .clearfix { margin-bottom: 1px; height:40px; overflow:hidden;}
+.sum_ov_inh .lf-list .brand-box a span {_width: 88px;display: block;overflow: hidden;white-space: nowrap;color: #797979;cursor: pointer;text-overflow: ellipsis}

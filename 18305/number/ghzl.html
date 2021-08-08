@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by dede58.com"/>
+<title>填写资料</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/ghzl.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
+<script type="text/javascript" src="../js/yuyue.js"></script>
+
+<script type="text/javascript">
+
+
+$(function(){
+	$(".xgbdz").click(function(){
+		$("#xgdz1").css("display","block");					   
+	})
+	$(".spanradio").click(function(){
+		$("#xgdz1").css("display","none");						   
+	})
+	$(".qrshdz li").click(function(){
+		if($("#xgdz2").css("display") == "block"){
+			$("#xgdz2").css("display","none")
+		}	
+	})
+})
+
+
+</script>
+
+
+
+</head>
+
+<body>
+<!--#include virtual="../include/top.html"-->
+<!--#include virtual="../include/top_menu.html"-->
+<div class="box">
+	
+    <div class="grzx_tip">手机旗舰店 &gt; <span>购买号码</span></div>
+    <div class="gh_title"><img src="../images/gh5.gif" alt="" style="float:right; margin-top:20px;"  ></div>
+    <div class="gh_main">
+    	<div class="gh_main1" style="padding-bottom:0">
+        	<p class="gh_p1"> <img src="../images/num1.gif" alt="" style=" margin:9px;vertical-align:middle"  >　填写收货人信息 <span style="font-size:12px; color:#999; margin-left:40px;">请正确填写以下信息，我们寄送时将核对这些信息，如果有误将无法向您配送货品。</span></p>
+			<div class="cartbox">
+     <ul class="qrshdz">
+       <li class="hover"> <span class="xgbdz "  onclick="show_xdz1()">修改本地址</span> 
+       <span class="jsz">寄送至</span> <span class="spanradio">安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心（张三收）15258586888</span> </li>
+       <li> <span class="xgbdz" onclick="show_xdz1()">修改本地址</span> <span class="jsz">寄送至</span><span class="spanradio">安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心（张三收）15258586888</span> <span class="mrdz" >设为默认地址</span> </li>
+       <li><span class="xgbdz" onclick="show_xdz1()">修改本地址</span> <span class="jsz">寄送至</span><span class="spanradio">安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心（张三收）15258586888</span> <span class="mrdz">设为默认地址</span></li>
+       <li><span class="xgbdz" onclick="show_xdz1()">修改本地址</span><span class="jsz">寄送至</span><span class="spanradio">安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心（张三收）15258586888</span> <span class="mrdz">设为默认地址</span></li>
+       <p style="line-height: 30px; padding-left:10px;">
+       <a href="#" class="othredzs add" onclick="show_xgdz2()" style=" margin-left:105px">+ 使用新地址</a>
+       
+       
+       </p>
+       </li>
+       <div id="xgdz2" style="display:none">
+         <table width="82%" border="0" align="center" cellpadding="0" cellspacing="6">
+           <tr>
+             <td width="11%" height="30" class="left_font"><span class="font red">*</span><span> 收货人姓名：</span></td>
+             <td width="89%"><input name="textfield22" type="text"  class="input" value="张三" /></td>
+           </tr>
+           <tr>
+             <td class="left_font"><span class="font red">*</span><span> 地市区域：</span></td>
+             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tr>
+                 <td width="6%" height="28">安徽省</td>
+                 <td width="11%" style="position:relative;"><select name="select" id="select">
+                   <option>选择城市</option>
+                 </select></td>
+                 <td width="11%" style="position:relative;"><select name="select2" id="select2">
+                   <option>选择区\县</option>
+                 </select></td>
+                 <td width="13%" style="position:relative;"><select name="select3" id="select3">
+                   <option>选择镇\村</option>
+                 </select></td>
+                 <td width="59%"><input name="textfield422" type="text" class="input" size="13" value="习友路" /></td>
+               </tr>
+             </table></td>
+           </tr>
+           <tr>
+             <td class="left_font"><span class="font red">* </span><span>收货人电话：</span></td>
+             <td><input name="textfield222" type="text" class="input" value="13695691987" /></td>
+           </tr>
+           <tr>
+             <td class="left_font">&nbsp;</td>
+             <td><img width="79" height="36" src="../images/qr_btn.gif" class="hand" onclick="show_xgdz(2);alert('当前信息已保存！')" /></td>
+           </tr>
+         </table>
+       </div>
+       <div id="xgdz1" style="display:none">
+         <table width="82%" border="0" align="center" cellpadding="0" cellspacing="6">
+           <tr>
+             <td width="11%" height="30" class="left_font"><span class="font red">*</span><span> 收货人姓名：</span></td>
+             <td width="89%"><input name="textfield22" type="text"  class="input" value="张三" /></td>
+           </tr>
+           <tr>
+             <td class="left_font"><span class="font red">*</span><span> 地市区域：</span></td>
+             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tr>
+                 <td width="6%" height="28">安徽省</td>
+                 <td width="10%" style="position:relative;"><select name="select6" id="select6">
+                   <option>选择城市</option>
+                 </select></td>
+                 <td width="11%" style="position:relative;"><select name="select5" id="select5">
+                   <option>选择区\县</option>
+                 </select></td>
+                 <td width="14%" style="position:relative;"><select name="select4" id="select4">
+                   <option>选择镇\村</option>
+                 </select></td>
+                 <td width="59%"><input name="textfield422" type="text" class="input" size="13" value="习友路" /></td>
+               </tr>
+             </table></td>
+           </tr>
+           <tr>
+             <td class="left_font"><span class="font red">* </span><span>收货人电话：</span></td>
+             <td><input name="textfield222" type="text" class="input" value="13695691987" /></td>
+           </tr>
+           <tr>
+             <td class="left_font">&nbsp;</td>
+             <td><img width="79" height="36" src="../images/log_btn_xg.gif" class="hand" onclick="show_xgdz(1);alert('当前信息已保存！')" /></td>
+           </tr>
+         </table>
+         <h3>&nbsp;</h3>
+       </div>
+     </ul>
+   </div>
+
+           <div class="clear"></div> 
+        </div>
+    
+    
+    
+    	<div class="gh_main1 mt20" style="border-bottom:none">
+        	<p class="gh_p1" style="border-top:1px solid #ddd"> <img src="../images/num2.gif" alt=""  style=" margin:9px;vertical-align:middle" >　商品清单
+            </p>
+            
+              <table width="90%" class="mt20" id="table02">
+				  <tr>
+				    <th>号码</th>
+				    <th>所属地市</th>
+				    <th>所选套餐</th>
+				    <th>所填身份证号</th>
+				    <th>赠品</th>
+				    <th>预存话费</th>
+				  </tr>
+				  <tr>
+				    <td>1362589865</td>
+				    <td>合肥市</td>
+				    <td>4G飞享套餐58元</td>
+				    <td>44010230201230213</td>
+				    <td>--</td>
+				    <td>100元</td>
+				  </tr>
+			  </table>
+
+        </div>
+    
+    
+         <div class="gh_main1 mt20" style=" border-bottom:1px solid #ddd;">
+        	<p class="gh_p1" style="border-top:1px solid #ddd"> <img src="../images/num3.gif" alt=""  style=" margin:9px;vertical-align:middle" >　结算信息
+            	
+            </p>
+           
+             <p style="margin-left:70px; height:50px; line-height:50px; font-size:16px;">
+             	商品金额  <span class="c0085d0">=</span>   卡费：0元 <span class="c0085d0">+</span> 预存：100元 <span class="c0085d0">+</span> 运费：0元  <span class="c0085d0">=</span> 100元
+             </p>
+             <p style="font-size:18px; margin-left:70px; font-weight:bold" class="c0085d0">应付总额：￥100元</p>
+            
+            
+            
+            
+        </div>
+        <p style="height:60px; line-height:60px; padding-left:70px;">
+        	<span class="pay_btn"><a href="gh_complete.html">去支付</a></span><span style="margin-left:20px;" class="c0085d0"><input class="pay_check" type="checkbox" /><a class="font14" href="#">新入网客户电子协议</a></span>
+        </p>
+        
+     
+        
+        
+</div>
+</div>
+<!--#include virtual="../include/foot_menu.html"-->
+</body>
+</html>

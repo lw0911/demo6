@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-01-12 16:46:58
+ * @version $Id$
+ */
+
+.banner-wrap{background: url(../image/member.jpg);padding: 30px 0; }
+.banner-wrap .banner{width:1124px;overflow:hidden;}
+.banner-wrap .banner .userface{height:170px;width:170px;border-radius:85px;border:2px solid #fff;box-shadow: 5px 5px 5px 0 #cbcbcb;overflow: hidden}
+.banner-wrap .banner .userinfo{width:600px;text-align:left;padding: 40px 50px 40px 30px;line-height: 25px;}
+.banner-wrap .banner .userinfo h2{display: inline-block;padding-right: 10px;}
+.banner-wrap .banner .userinfo .tabtext{width:500px;float:left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.banner-wrap .banner .useratten{width:245px;padding: 60px 0 40px 19px;}
+.banner-wrap .banner .useratten ul li{float: left;width: 80px;text-align: center;border-right:1px solid #999}
+.banner-wrap .banner .useratten ul li a{display: block}
+.banner-wrap .banner .useratten ul li strong{display: block;font-weight: bold;font-size:20px;line-height: 18px;width: 65px;overflow: hidden;}
+.container .subnav{height:40px;background:#f9f0df;box-shadow: 1px 1px 1px 0 #f4efdc;}
+.container .subnav ul{width:1124px;font-size:15px;}
+.container .subnav ul li{float: left;width:140px;line-height: 40px;border-right:1px solid #fff;cursor: pointer}
+.container .column .colwrap{margin-top:40px;width:1124px;}
+.container .column .colwrap .dress{float:left;width:259px;margin-right:26px;border:1px solid #CCC;background:#fff;}
+.mt{margin-top:15px;}
+.container .column .colwrap .dress .dresspic{width:259px;height: 261px;}
+.container .column .colwrap .dress .dressprice{width:225px;padding:5px 0px;border-bottom:1px dashed #CCC;text-align:left;}
+.container .column .colwrap .dress .dressprice .sr{line-height:30px;text-align: center; width: 40px;}
+.container .column .colwrap .dress .dressprice h1,h3{display:inline;}
+.container .column .colwrap .dress .dressdetail{padding:10px 0px;width: 225px;height:25px;}
+.container .column .colwrap .dress 	.sr{float:right;}
+.container .column .colwrap .dress 	.sr span{margin: 3px;}
+.container .column .colwrap .dress .dressdetail .sr em{font-style:normal;}
+
+.container .column .colwrap .dress 	.sl{float:left;}

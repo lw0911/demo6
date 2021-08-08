@@ -1,0 +1,101 @@
+/*dede58.com 做最好的织梦整站模板下载网站*/
+@charset "utf-8";
+/* CSS Document */
+
+
+/* 全屏滚动的轮播图flexslider banner*/
+.flexslider{position:relative;height:400px;overflow:hidden;background: url(../image/banner/loading.gif) 50% no-repeat;}
+.slides{position:relative;z-index:1;}
+.slides li{height:400px;}
+.slides li a{ display:block; width:100%; height:100%; text-align:left; text-indent:-9999px}
+.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(../image/banner/dot.png) right 0 no-repeat;cursor:pointer;}
+.flex-control-nav .flex-active{background-position:0 0;}
+.flex-direction-nav{position:absolute;z-index:3; left:0;width:100%;top:45%;}
+.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+.flex-direction-nav li a.flex-prev{left:60px;background:url(../image/banner/prev.png) center center no-repeat;}
+.flex-direction-nav li a.flex-next{right:60px;background:url(../image/banner/next.png) center center no-repeat;}
+
+/*右侧 回到顶部*/
+.bottom_tools{position:fixed;z-index:1070;right:40px;bottom:40px;}
+.bottom_tools>*{font:0/0 a;display:block;margin-top:5px;color:transparent;border:0;background-color:transparent;text-shadow:none}
+.qr_img{position:absolute;top:-189px;left:-183px;display:none;}
+#scrollUp{width:45px;height:45px;background-image:url(../image/backgrounds.32.png);background-position:-54px -53px;display:none;}
+#scrollUp:hover{background-image:url(../image/backgrounds.32.png);background-position:-100px -53px}
+#feedback{width:45px;height:45px;background-image:url(../image/backgrounds.32.png);background-position:-102px 0}
+#feedback:hover{background-image:url(../image/backgrounds.32.png);background-position:-146px -46px}
+.qr_tool{width:45px;height:45px;background-image:url(../image/backgrounds.32.png);background-position:-148px 0;cursor:pointer;}
+.qr_tool:hover {width: 45px;height: 45px;background-image: url(../image/backgrounds.32.png);background-position: -192px -46px;}
+/*鼠标经过图片 下方出现文字提示效果*/
+#tooltip{position:absolute;border:1px solid #CCC;display:none;color:#fff;}
+/*鼠标经过图片 出现放大图片效果*/
+.picbox {margin:0 auto; position:relative; }
+.pictext {width:228px;padding:10px;background-color:#fff; FILTER:alpha(opacity=60); opacity:0.7; -moz-opacity:0.7; position:absolute; left:0px; bottom:0px;text-align:left;}
+.pictext .text{width:230px;padding-bottom:10px;white-space: nowrap; text-overflow: ellipsis;overflow: hidden; font-size:14px;font-family:"黑体";color:#000;}
+
+/*公共样式*/
+
+
+
+/*主题购物*/
+.container{}
+.container .hotbox{width:1124px;margin:0 auto;padding-top:30px;}
+.container .hotbox .hot{float:left;width:130px;margin:0 auto;margin-right:21px;padding:15px 38px 15px 38px;background:#FFF;border:1px solid #CCC;cursor:pointer;}
+.container .hotbox .hot:hover{border:1px solid #ff3a27;}
+.container .hotbox .hot .icon{float:left;width:35px;height:40px;background-image:url(../image/hot.jpg);}
+.container .hotbox .hot .i1{background-position:2px 4px;}
+.container .hotbox .hot .i2{background-position:-30px 0;}
+.container .hotbox .hot .i3{background-position:-64px 0;}
+.container .hotbox .hot .i4{background-position:-96px 0;}
+.container .hotbox .hot .i5{background-position:-133px 0;}
+.container .column{margin:0 auto;margin-top:40px;width:1124px;}
+.container .column .colbox{height:30px;border-bottom:1px dashed #CCC;padding:10px 0 10px 0px;text-align:left;}
+.container .column .colbox .coltitle{float:left;width:804px;}
+.container .column .colbox .timer{width:344px;float:left;}
+.container .column .colbox h1{border-bottom:2px solid #ff3a27;float:left;height:29px;line-height:29px;padding-bottom:10px;}
+.container .column .colbox .tipword{line-height:39px;}
+/*今日爆款 推荐*/
+.container .column .goods{float:left;margin:30px 19px 0 0;width:340px;height:560px;border:1px solid #CCC;background:#FFF;padding:0 10px 0 10px;cursor:pointer;text-align:left;}
+.container .column .goods:hover{border:1px solid #ff3a27;}
+.container .column .goods .goodsname{padding:20px 0 ;text-align:left;font-size:14px; font-family:"黑体";}
+.container .column .goods .goodspic{height:350px;}
+.container .column .goods .goodsprice{text-align:left;padding:15px 0 5px 0;border-bottom:1px dashed #CCC;}
+.container .column .goods .goodsprice input{border:none;width:100px;height:30px;background:#ff3a27;color:#FFF;font-size:14px;float:right;cursor:pointer;}
+.container .column .goods .goodsdetail{padding:10px 0;color:#999;font-family:"黑体";}
+/*主题购物*/
+.container .column .colbox .colmore{color:#999;float:right;line-height:30px;font-family:"宋体";}
+.container .column .theme{width:360px;float:left;margin:30px 22px 0 0;background:#FFF;position:relative;cursor:pointer;}
+.container .column .theme .themenum{position:absolute;left:150px;top:164px;width:65px;height:65px;margin:0 auto;line-height:65px;border:1px solid #CCC;border-radius:50%; font-size:18px;background:#fff;}
+.container .column .theme .themename{margin:45px 20px 0px 20px ;padding-bottom:10px;border-bottom:1px dashed #CCC;}
+.container .column .theme .themebox{padding:10px 20px 20px 20px;}
+.container .column .theme .themebox .thegoods{width:55px;height:55px;float:left;margin-right:11px;}
+.container .column .theme .themebox .thegoodsnum{float:left;width:35px;height:35px;margin-right:0;padding:10px;}
+.container .column .theme .themebox .num{font-weight:bold;font-size:16px;color:#23c78a}
+/*热门标签*/
+.container .column .hotags{float:left;width:360px;margin:30px 22px 0 0;}
+.container .column .hotags .tagpic{float:left;width:55px;height:55px;border:1px solid #CCC;border-radius:50%;overflow:hidden;}
+.container .column .hotags .tagpicname{float:left;width:55px;height:55px;line-height:55px;color:#F00;}
+.container .column .hotags .tagtext{float:left;width:245px;line-height:55px;} 
+.container .column .hotags .tagtext a{padding:0 5px 0 5px;display:inline-block;}
+/*魅力女装*/
+.container .column .colbox .coltitle .coltag{float:left;padding:5px 0 5px 20px;}
+.container .column .colbox .coltitle .coltag .lab{display:inline-block;margin-left:20px;padding:3px 20px;border:1px solid #CCC;border-radius:10px;background:#FFF;}
+.container .column .colbox .coltitle .coltag a:hover{border:1px solid #ff5943;background:#ff5943;color:#FFF}
+
+.container .column .colbox .sorbar{float:right;padding:5px 0 5px 20px;}
+.container .column .colbox .sorbar .lab1{display:inline-block;padding:3px 20px;border:1px solid #999;border-radius:10px 0 0 10px;background:#999;color:#FFF;}
+.container .column .colbox .sorbar .lab2{display:inline-block;padding:3px 20px;margin-left:2px;border:1px solid #CCC;background:#FFF;}
+.container .column .colbox .sorbar .lab3{display:inline-block;padding:3px 20px;margin-left:2px;border:1px solid #CCC;border-radius:0 10px 10px 0;background:#FFF;}
+.container .column .colwrap{margin-top:30px;width:1124px;}
+.container .column .colwrap .dress{float:left;/*width:268px;*/width:248px\9;padding:10px 10px 30px 10px;margin-right:14px;border:1px solid #CCC;background:#fff;}
+.mt{margin-top:15px;}
+.container .column .colwrap .dress .dresspic{/*width:248px;height:300px;*/}
+.container .column .colwrap .dress .dressprice{padding:5px 0;border-bottom:1px dashed #CCC;text-align:left;}
+.container .column .colwrap .dress .dressprice .sr{line-height:30px;}
+.container .column .colwrap .dress .dressprice h1,h3{display:inline;}
+.container .column .colwrap .dress .dressdetail{padding:10px 0;}
+.container .column .colwrap .dress 	.sr{float:right;}
+.container .column .colwrap .dress .dressdetail .sr em{font-style:normal;}
+.container .column .colwrap .dress 	.sl{float:left;}
+

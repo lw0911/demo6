@@ -1,0 +1,113 @@
+@charset "utf-8";
+/*商城列表页CSS*/
+.box{ width:1200px; margin:0 auto; overflow:hidden;}
+.list_title { width:100%; background-color:#f7f7f7; height:40px; line-height:40px; text-indent:100px;}
+.list_left{ width:221px; float:left; overflow:hidden;}
+.paihang{ margin-top:10px;}
+.paihang .paihang_t{ height:30px; line-height:30px; background-color:#0085d0; color:#fff; font-weight:bold; text-indent:20px;}
+.paihang .paihang_c{ height:407px; border:1px solid #e6e6e6; border-top:none;}
+.paihang_c ul li{ font-size:14px;}
+.paihang_c ul li .title{ height:42px; line-height:42px; overflow:hidden; border-bottom:1px dashed #ccc; }
+.paihang_c ul li .title span.num{background:url(images/red.gif) no-repeat; width:20px; height:20px; float:left; margin:10px 10px 0 10px; color:#fff; font-weight:bold; line-height:20px; text-align:center}
+.paihang_c ul li .content{ height:145px; border-bottom:1px dashed #ccc}
+.paihang_c ul li .content .red{ float:left;background:url(images/red.gif) no-repeat;margin:10px 10px 0 10px; width:20px; height:20px;color:#fff; font-weight:bold; line-height:20px; text-align:center; display:inline}
+.paihang_c ul li .content .content_right{ float:left; overflow:hidden; margin-top:15px;}
+.paihang_c ul li .content .content_right .c_img{ float:left; width:45px; height:88px;}
+.paihang_c ul li .content .content_right .c_wenzi{ float:left; margin-left:10px;}
+.content .content_right .c_wenzi p { height:30px; line-height:30px;}
+.red_wz{ color:red; font-weight:bold}
+
+.view_ph{ margin-top:10px; overflow:hidden}
+.view_ph .paihang_t{ height:30px; line-height:30px; background-color:#0085d0; color:#fff; font-weight:bold; text-indent:20px;}
+
+.view_ph .view_ph_c{border:1px solid #e6e6e6; border-top:none; text-align:center; overflow:hidden; padding-top:20px;}
+.view_ph .view_ph_c ul li p{ line-height:20px; color:#333; font-size:14px; }
+
+
+.list_right{ float:right; overflow:hidden}
+.list_right .remai{ width:965px; height:264px; border:1px solid #e6e6e6; }
+.remai_t{ height:30px; line-height:30px; background:#f7f7f7; color:#333; font-size:16px; text-indent:20px; font-weight:bold}
+.remai ul{ padding-left:60px; }
+.remai ul li{ margin-top:30px; margin-right:55px; overflow:hidden; float: left; display:inline}
+.remai .remai_img{ float:left;}
+.remai .remai_c{ float:left; color:#666666; margin-left:20px; display:inline; font-size:16px; font-weight:400;}
+
+.list_right .sjsx{width:965px;border:1px solid #e6e6e6; margin-top:10px;}
+.sjsx_c{ padding:5px 15px; font-size:12px; overflow:hidden; position: relative}
+.sjsx_c dl{ display:block; overflow:hidden; height:30px; line-height:30px;}
+.sjsx_c dl dt{ font-weight:bold; color:#666; float:left; font-size:14px; width:70px}
+.sjsx_c dl dd { float:left}
+.sjsx_c dl dd a{ margin:0 5px; padding:2px 5px;}
+.sjsx_c dl dd a.hover{ background-color:#0085d0; color:#fff; font-weight:bold}
+.sjsx_more{ text-align:center}
+.sjsx_more .more{margin-top:-1px; background-color:#fff; padding:5px 10px; border:1px solid #e6e6e6; border-top:none; width:80px;  display:inline-block; position:relative; cursor:pointer }
+
+.sjsx_more .more span{background:url(images/arrow.gif) no-repeat; width:12px; height:12px; position:absolute; top:10px; right:5px}
+.sjsx_more .more h4{ font-size:12px; font-weight:normal}
+.sjsx_c dl.dl_none{ display:none}
+
+.list_main{ width:965px;border:1px solid #e6e6e6; margin-top:15px }
+.list_main_t{ height:40px; line-height:40px; border-bottom:1px solid #ccc;}
+.list_main_t ul{ float:left}
+.list_main_t ul li{ float:left; border-right:1px solid #ccc; padding:0 20px; background:url(images/arrow2.gif) no-repeat 55px center; font-size:14px;}
+
+.list_main_t_right{ float:right}
+.list_main_t_right span { float:left; display:block; margin-right:10px}
+.list_main_t_right span img{ margin-top:10px; cursor:pointer}
+
+.list_main_c{ overflow:hidden; width:965px; padding-top:10px; *padding-bottom:68px;}
+.list_main_c ul li{ float:left; width:175px;  text-align:center; margin:32px; display:inline }
+.main_wz{ text-align:left; padding-left:15px; line-height:20px; color:#333; font-size:14px; margin-top:10px}
+
+.list_main_c ul li p a.db{ display:inline-block; width:59px; height:21px;}
+.list_cnxh{ *height:300px; overflow:hidden}
+
+.list_cnxh ul li{ float:left; width:175px;  text-align:center; margin:32px; display:inline }
+
+
+.list_db{ position:fixed; left:150px; bottom:0; overflow:hidden; width:960px; background-color:#fff;}
+
+
+/*对比弹出层*/
+.lb_fddb{width:960px;z-index:20; display:none;_width:960px; background:#fff;_height:80px;}
+.lb_fddb_tit{ background:url(../css/images/lb_fddb_tit.gif) repeat-x;height:40px;}
+.lb_fddb_tit li{border:0;float:left;line-height:34px;font-size:14px;color:#5d625e; cursor:pointer;padding:3px 18px 3px 18px; background:none; cursor:pointer;}
+.lb_fddb_tit li.hover{ background:#fff;color:#0085d0;border:3px solid #0085d0;border-bottom:0;padding:0 15px 3px 15px;}
+.lb_fddb_tit a{color:#0085d0;float:right;margin-right:10px;line-height:40px;}
+.lb_fddb_tit a:hover{color:#0085d0;}
+.lb_fddb_nr{border:3px solid #0085d0;border-top:0; overflow:hidden; height:100px;}
+.lb_fddb_nr ul{overflow:hidden;padding:10px 0; background:#fff;}
+.lb_fddb_nr1 li{float:left;width:197px;border-right:1px dashed #c7e18f;padding:15px 5px;}
+.lb_fddb_nr1_l{float:left;width:50px;}
+.lb_fddb_nr1_r{float:right;width:140px;}
+.lb_fddb_nr1_r_1{height:25px;line-height:12px;overflow:hidden;}
+.lb_fddb_nr1_r_2{margin-top:5px;overflow:hidden;}
+.lb_fddb_nr1_l span,.lb_fddb_nr2_l span{height:44px;width:44px;margin:3px auto; display:block;line-height:44px; background:#f6f6f6;font-size:24px; font-family:"微软雅黑"; text-align:center;color:#cecdcb;}
+.lb_fddb_nr1 li.lb_fddb_an{width:112px;border:0; text-align:center;}
+.lb_fddb_nr2 li{float:left;width:227px;border-right:1px dashed #c7e18f;padding:15px 5px;}
+.lb_fddb_nr2_l{float:left;width:50px;}
+.lb_fddb_nr2_r{float:right;width:170px;}
+.lb_fddb_nr2{display:none;}
+
+/*底部版权*/
+
+.footer{ overflow:hidden; background-color:#f9f8f7; border-top:2px solid #0085d0; margin-top:10px;  font-size:14px; color:#666; font-weight:500;}
+.footer_box{ width:1050px; margin:0 auto; overflow:hidden; padding-top:20px; padding-bottom:20px; }
+
+.footer .footer_box ul { display:block; overflow:hidden; }
+.footer .footer_box ul li{ float:left;margin-right:80px;display:inline; _width:100px;}
+
+.footer ul li p.footer_p_tit{ font-weight:500;font-size:20px; height:40px; line-height:40px;}
+
+.footer .footer_box ul.copyright{ float:left }
+.footer .footer_box ul.copyright  li{ float:left; display:inline; border-right:1px solid #ccc; margin-right:10px; padding:0 10px 0 10px; height:14px; line-height:14px; _width:65px;}
+
+
+
+
+
+
+
+
+
+

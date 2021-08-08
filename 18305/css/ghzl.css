@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+.c0085d0{ color:#0085d0}
+.c0085d0 a{ color:#0085d0; text-decoration:underline}
+.red{ color:#ff0000; font-weight:bold}
+.yy_tip{ height:35px; line-height:35px; background-color:#f7f7f7; font-weight:bold; color:#666; }
+.yy_tip1{ width:1200px; margin:0 auto;}
+.banner{ margin-top:10px; width:1200px; height:236px;}
+.num_change{ width:1198px; border:1px solid #ddd; background-color:#fafafa;  margin-top:10px;}
+.change_c{ overflow:hidden;}
+.change_t{ height:40px; font-size:14px; padding-left:20px; border-bottom:2px solid #0085d0; }
+.change_t ul li{ float:left; width:90px; height:32px; line-height:32px; background: url(images/yy1.gif) no-repeat; text-align:center; font-size:14px; margin:8px 10px 0 0; display:inline; cursor:pointer; font-weight: 400; }
+.change_t ul li.hover{background: url(images/yy2.gif) no-repeat; position:relative;color:#0085d0; font-weight:bold}
+.change_t ul li.hover s{ width:88px; margin-left:1px; height:2px; background-color:#fafafa; position:absolute; left:0; top:32px; font-size:0; line-height:0; z-index:999;}
+.num_change .tj{ height:40px; line-height:40px; text-indent:30px; font-size:14px; border-bottom:1px solid #ddd;}
+.tj span.add_zone{ padding:0 10px; background-color:#fff; text-align:center; color:#0085d0; margin-right:10px;}
+.tj span.add_zone img{cursor:pointer; margin:14px 0 0 0; }
+
+
+.sjsx_c{ padding:5px 30px; font-size:12px; overflow:hidden; position: relative}
+.sjsx_c dl{ display:block; overflow:hidden; height:40px; line-height:30px;}
+.sjsx_c dl dt{ color:#666; float:left; font-size:14px; width:70px}
+.sjsx_c dl dd { float:left}
+.sjsx_c dl dd a{ margin:0 5px; padding:2px 5px; text-decoration:none}
+.sjsx_c dl dd a.hover{ background-color:#0085d0; color:#fff; font-weight:bold}
+.sjsx_more{ text-align:center}
+.sjsx_more .more{margin-top:-1px; background-color:#fff; padding:5px 10px; border:1px solid #ccc; border-top:none; width:80px;  display:inline-block; position:relative; cursor:pointer }
+.sjsx_more .more span{background:url(images/arrow.gif) no-repeat; width:12px; height:12px; position:absolute; top:10px; right:5px}
+.sjsx_more .more h4{ font-size:12px; font-weight:normal}
+.sjsx_c dl.dl_none{ display:none}
+.sjsx_c dl input{border:1px solid #ddd;margin-left:5px; vertical-align:middle; height:20px; line-height:20px;}
+.sjsx_c dl input.lh_text{ width:200px;  background-color:#fffcd7; color:#999; }
+.sjsx_c dl input.lh_btn{ width:70px; cursor:pointer}
+
+
+.number{ width:1168px; margin:0 auto; overflow: hidden; margin-top:10px;}
+.number ul{ width:1200px;}
+.number ul li{ width:238px; height:93px; border:1px solid #ddd; background-color:#fafafa; padding:0 20px 0 20px; float: left; margin-right:15px; margin-top:10px; display:inline; position:relative; cursor:pointer}
+.number ul li.hover{ border:1px solid #0085d0; background-color:#fff; }
+
+.number ul li h2{ height:60px; line-height:60px; color:#0085d0; font-size:24px; font-weight:normal}
+.number ul li h2 span{ color:#666;}
+.number ul li p.number_wz{ margin-left:10px; color:#828282}
+.number ul li img{ margin:21px; margin-right:11px; vertical-align:middle}
+.number ul li p.number_wz1{ background-color:#0085d0; color:#fff; font-size:14px; position:absolute; bottom:0; left:0; height:40px; line-height:40px; text-align:center; width:278px; zoom:1}
+.number ul li p.number_wz1 a{ color:#fff; text-decoration:none}
+
+.page{ height:40px; line-height:40px; margin-top:20px; padding-left:360px; text-align:right; font-size:12px; color:#404040; overflow:hidden}
+.page a{ padding:0 5px;}
+.page span.tz{ }
+.page input{ float:left; display:block; margin-top:10px;width:37px; height:15px; background:url(images/grzx_page1.gif) no-repeat; padding:3px}
+
+
+
+
+/*选号确认页*/
+.grzx_tip{ height:30px; line-height:30px; background:url(images/grzx_tip.gif) no-repeat 10px center; background-color:#efefef; border:1px solid #dddddd; color:#8b8b8b; font-weight:600; text-indent:40px;}
+.grzx_tip span{ color:#0085d0;}
+
+.title{ font-size:16px; height:50px; line-height:50px; color:#666; text-indent:30px;}
+.yy_main{ border:1px solid #ddd; padding:20px 20px; overflow:hidden;}
+.yy_main1{ overflow:hidden;border-bottom:2px dashed #666; padding-bottom:10px;}
+p.main_p1{ height:40px; line-height:40px; font-size:18px;}
+p.main_p1 img{ margin:3px; vertical-align:middle}
+p.main_p1 a{ color:#0085d0; text-decoration:underline; font-size:12px;}
+p.main_p2{ height:60px; padding-left:20px; line-height:60px; font-size:14px; }
+p.main_p2 img{ margin:12px; vertical-align:middle}
+p.main_p2 span{ font-size:12px;}
+p.main_p2 span a{ color:#0085d0; text-decoration:underline}
+p.main_p3{ margin-top:10px; height:40px; line-height:40px;font-size:16px;}
+p.main_p3 img{ margin:15px 5px 15px 15px; vertical-align:middle}
+p.main_p3 span{ width:110px;  text-align:right; float:left}
+p.main_p3 input{ height:24px; float:left; line-height:24px; border:1px solid #ddd; width:200px; margin-left:10px; vertical-align:middle; margin-top:8px;   }
+p.main_p3 span.main_p3_s{ margin-left:10px; text-align: left; width:200px; font-size:12px; color:#666;}
+
+.main_table{ width:1130px; margin:0 auto ; overflow:hidden;margin-top:20px;}
+.main_table_t { height:40px; line-height:40px; text-indent:20px; font-size:14px;  border:1px solid #ddd; }
+.main_table_t label{ font-weight:bold}
+.main_table_t  input,.main_table_t  select{ width:150px; border:1px solid #ddd; height:24px; line-height:24px; vertical-align:middle; background-color:#fffcd7; _margin:8px; margin-right:30px;}
+.main_table_t  input.btn{ width:50px; background:none; cursor:pointer}
+.main_table table{ border-collapse:collapse; border:1px solid #ddd; border-top:none}
+.main_table table th{border-collapse:collapse;border:1px solid #ddd; border-top:none; background-color:#f2f2f2; text-align:center; height:40px; line-height:40px; font-weight:bold; font-size:14px;}
+.main_table table td{ border-collapse:collapse; border:1px solid #ddd; text-align:center; height:40px; line-height:40px;}
+.main_table .table_left{ float:left; margin-left:40px;}
+.main_table .table_right{ float:right; color:#0085d0; margin-right:40px;}
+.main_table .table_right a{color:#0085d0; text-decoration:underline }
+
+.success_main{ width:950px; overflow:hidden; margin:20px auto; border:1px solid #ddd; padding:20px}
+.succ_title{ height:100px; line-height:100px; font-size:30px; color:#ee0000; text-align:center}
+.succ_title img{ vertical-align:middle; margin-right:20px;}
+.succ_message{ width:890px; overflow:hidden; background-color:#f8f8f8; padding:10px; border:1px solid #ddd;}
+.message_t{ height:30px; line-height:30px; font-size:14px;}
+.message_line{ height:2px; font-size:0; line-height:0; background-color:#ddd;}
+.message_line_left{ float:left; height:2px; width:30%; background-color:#ff6600;}
+.ff6600{ color:#ff6600; font-size:14px; font-weight:bold}
+
+
+
+
+
+/*购号*/
+.gh_title{ margin:10px 0; overflow:hidden; height:60px;}
+.gh_main{ border:1px solid #ddd;  overflow:hidden;}
+.gh_main1{  overflow:hidden; padding-bottom:10px; }
+p.gh_p1{ height:50px; line-height:50px; font-size:18px; border-bottom:1px solid #ddd;}
+.gh_tab{ height:30px; margin-top:10px; margin-left:10px;  }
+.gh_tab ul li{ width:125px; height:30px; line-height:30px; text-align:center; color:#000; font-size:14px; background-color:#efefef; float:left; cursor:pointer; display: inline-block; zoom:1; position:relative;}
+.gh_tab ul li.hover{ color:#fff;background:#ff6600; position:relative }
+.gh_tab ul li.hover s{  background:url(images/gh_bg1.gif) no-repeat; width:15px; height:12px; position:absolute; top:30px; left:54px;  }
+.gh_t{ margin:0 10px; height:40px; line-height:40px; font-size:14px; text-align:center; color:#000; font-weight:bold; background:#efefef}
+.gh_tab_c{ overflow:hidden}
+.gh_tab_c table{ border-collapse:collapse ; width:1178px; margin-left:10px; border:1px solid #ddd;}
+.gh_tab_c table td{ border:1px solid #ddd; text-align:center; height:40px; line-height:40px;}
+
+.gh_tab_c table tr.tr2 td{ border:none}
+.spanradio{ background:url(images/raidobg.gif) no-repeat 0 0; display:inline-block; overflow:hidden; margin-right:10px; vertical-align:middle }
+
+.bz{ background-color:#f9f9f9; overflow:hidden; padding:10px; margin-top:20px;}
+.gh_btn{ font-size:12px; background-color:#0085d0; text-align:center; color:#fff; cursor:pointer; padding:5px 10px; margin-left:20px;}
+
+table.table01{ width:1140px;border-collapse:collapse; margin:10px auto 0 auto; font-size:12px;}
+table.table01 th,table.table01 td{ border:1px solid #ddd; text-align: center; height:35px; line-height:35px;}
+table.table01 th{ background-color:#f8f8f8; font-weight:bold; font-size:14px; color:#404040}
+table.table01 td{ height:60px; line-height:60px;}
+table.table01 td a{ text-decoration:underline}
+.fffcd5{ background-color:#fffcd5}
+.ddxx{ height:50px;background-color:#fffcd5; width:1142px; margin:0 auto; padding-top:10px; } 
+.ddxx1{ margin-left:150px;}
+.ddxx1_img{ float:left; background:url(images/grzx_bg.gif) no-repeat; width:23px; height:38px; background-position:0 0;}
+.ddxx2_img{ float:left; background:url(images/grzx_bg.gif) no-repeat; width:27px; height:39px; background-position:0 -50px;}
+
+.ddxx3_img{ float:left; background:url(images/grzx_bg.gif) no-repeat; width:40px; height:42px; background-position:0 -100px;}
+
+.ddxx_c{ float: left; margin-left:10px; margin-top:-5px;}
+.fuhao{ background:url(images/grzx_bg.gif) no-repeat; width:11px; height:13px;  float:left; background-position:0 -150px; margin:15px 30px;}
+.fuhao#equal{background:url(images/grzx_bg.gif) no-repeat; width:14px; height:11px;  float:left; background-position:0 -170px; margin:15px 30px;}
+.bar{ width:957px; margin:20px auto; overflow:hidden}
+.ul_raido { overflow:hidden; display:block; height:60px; }
+.ul_raido li{ float:left; width:200px; height:60px; line-height:60px; margin-left:100px; display:inline; font-size:14px;}
+.ul_raido li span.spanradio{ vertical-align:middle; margin:15px;}
+.ul_raido li.hover .spanradio{ background:url(images/raidobgx.gif) no-repeat 0 0;}
+
+.taocan_main{ width:1160px; overflow:hidden; margin:0 auto}
+ul.taocan{ margin-top:10px; padding-left:20px; overflow:hidden}
+ul.taocan li{ float:left;  background:url(images/grzx_dd.gif) no-repeat; text-align: center; width:90px; height:32px; line-height:32px;  margin-right:5px; display:inline; font-size:14px; cursor:pointer}
+ul.taocan li.hover{background:url(images/grzx_dd1.gif) no-repeat; color:#0085d0; font-weight:bold}
+.taocan1{ width:1160px; overflow:hidden}
+.taocan1_t{ height:35px; line-height:35px; background-color:#efefef; border:1px solid #ddd}
+.taocan1_t ul{ padding-left:20px;}
+.taocan1_t ul li{ float:left; display: inline; text-align:center; font-size:14px; cursor:pointer; position:relative; width:80px; height:35px; line-height:35px;}
+.taocan1_t ul li.hover{ background-color:#fff; font-weight:bold}
+.taocan1_t ul li.hover s{ position:absolute; top:35px; left:0; height:1px; background-color:#fff; line-height:3px; font-size:0px; width:80px; }
+.taocan1_c{ border-top:none; overflow:hidden; }
+.taocan1_c_line{ height:15px; border-left:1px solid #ddd; border-right:1px solid #ddd; background-color:#fff; line-height:15px; font-size:0;}
+.taocan1_c table{ border-collapse:collapse}
+.taocan1_c table td,.taocan1_c table th{ border:1px solid #ddd; text-align:center}
+.taocan1_c table th{ background-color:#efefef; font-weight:bold; height:35px; line-height:35px;}
+
+.gh_main1 table{ margin:10px auto}
+.gh_main1 table td{ height:30px; line-height:30px; text-align:center}
+.gh_main1 table span{ margin-right:10px;}
+.gh_main1 table input{ vertical-align:middle}
+
+
+#table02{ border-collapse:collapse; margin:20px auto 0 auto}
+#table02 th{ background-color:#f2f2f2; height:35px; line-height:35px; text-align:center; font-weight:bold; border:1px solid #ddd;}
+#table02 td{ border:1px solid #ddd; height:50px; line-height:50px; text-align:center}
+
+.pay_btn{ color:#fff; font-weight:bold; font-size:16px; text-align:center; background-color:#0085d0; padding:5px 20px; cursor:pointer}
+
+.pay_check{ vertical-align:middle; margin:30px 5px 30px 30px;}
+
+
+
+
+
+.qrshdz{ padding:10px 20px}
+.qrshdz li { line-height:30px;  padding:2px 0}
+.qrshdz li .spanradio{ background:url(images/raidobg.gif) no-repeat left center; display:inline-block; padding-left:25px;margin-left:81px}
+.qrshdz li .jsz{ display:none}
+.qrshdz li .mrdz{display:none}
+.qrshdz li .xgbdz{display:none}
+.qrshdz li.hover{ background:#dcf0fe; padding-left:10px}
+.qrshdz li.hover .spanradio{ background:url(images/raidobgx.gif) no-repeat left center; margin-left:0}
+.qrshdz li.hover .jsz{ display:inline-block; background:url(images/dzico.gif) no-repeat left center; padding-left:25px; color:#ff6600; padding-right:10px}
+.qrshdz li.hover .mrdz{display:inline-block; margin-left:30px; color:#999}
+.qrshdz li.hover .xgbdz{display:inline-block; float:right; padding-right:10px; color:#0085d0; cursor:pointer}
+.qrshdz input{ border:#e6e6e6 solid 1px; height:28px; line-height:28px; width:300px;}
+.qrshdz a.add{ background:#E3FFFC; border:#9cdbff solid 1px; line-height:28px; padding:2px;}
+
+
+
+.qrshdz li .othredzs{margin-left:105px}
+.qrshdz li.hover .othredzs{margin-left:95px}
+.cartbox{ border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; width:1198px; margin:0 auto; }
+.cartboxtitle{border-bottom:1px solid #e6e6e6; padding:5px 10px;font-size:16px;}
+.cartboxtitle img{ vertical-align:middle;margin-left:10px; margin-right:10px}
+
+
+.cartboxtitle1{ border:1px solid #e6e6e6; width:1198px; margin:0 auto; margin-top:10px;padding:5px 0; font-size:16px}
+.cartboxtitle1 img{ vertical-align:middle; margin-left:10px; margin-right:10px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

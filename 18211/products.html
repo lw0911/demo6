@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="author" content="order by dede58.com"/>
+<title>XXX商城_产品列表页面</title>
+<meta name="keywords" content="XXX商城">
+<meta name="description" content="XXX商城">
+<meta name="author" content="山东商讯在线 http://www.sdsoon.com/">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/prolist.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<!--web-top start-->
+<div class="w-all w-minw bg-cf5f5f5 ovhidden">
+    <div class="w-main m-auto">
+        <div class="fl"> <span class="fs-14 line-h30 ftc-6b6b6b dsblock fl"> 送货至：山东省,济南市,市辖区 </span> <a href="#" class="tx-ind dsblock w-12 fl bg_icon add-sele m-l-5 hg-30">地址选择</a> <a href="#" class="dsblock fl line-h30 fs-14 ftc-e23435 m-l-40">Hi.请登录</a> </div>
+        <ul class="topnav fr">
+            <li class="fl"><a href="#" class="fs-14 ftc-6b6b6b line-h30 fl m-l-20 m-r-20">我的订单</a></li>
+            <i class="dsblock bg_icon topnav_line fl tx-ind w-1 hg-30">我的订单</i>
+            <li class="fl"><a href="#" class="fs-14 ftc-6b6b6b line-h30 fl m-l-20 m-r-20">我的收藏</a></li>
+            <i class="dsblock bg_icon topnav_line fl tx-ind w-1  hg-30">我的收藏</i>
+            <li class="fl"><a href="#" class="fs-14 ftc-6b6b6b line-h30 fl m-l-20 m-r-20">我的地址</a></li>
+            <i class="dsblock bg_icon topnav_line fl tx-ind w-1  hg-30">我的地址</i>
+            <li class="fl"><a href="#" class="fs-14 ftc-6b6b6b line-h30 fl m-l-20 m-r-20">帮助中心</a></li>
+            <i class="dsblock bg_icon topnav_line fl tx-ind w-1  hg-30">帮助中心</i>
+            <li class="fl"><a href="#" class="fs-14 ftc-6b6b6b line-h30 fl m-l-20">网站导航</a></li>
+        </ul>
+    </div>
+</div>
+<!--web-top end-->
+<div class="bg-cffffff w-minw ovhidden">
+    <div class="w-main m-auto m-t-30 m-b-16 ovhidden"> 
+        <!--web logo start--> 
+        <a href="#" class="logo_top fl"><img src="images/logo_top.gif" width="195" height="56" alt="XXX商城logo"/></a> 
+        <!--web logo end--> 
+        <!--web search start-->
+        <div class="search m-l-230 w-455 m-t-5 fl">
+            <form action="#" method="get" id="searchform" name="searchform" onSubmit="return checkSearchForm()" class="search-form">
+                <input class="w-380 p-l-8 fl fs-14 ftc-999999 bd-s-ce23435 line-h36 hg-36" type="text" name="keywords" id="keyword" value="请输入关键字" onfocus="if(this.value == '请输入关键字')this.value = ''" onblur="if(this.value == '')this.value='请输入关键字'" autocomplete="off">
+                <input type="hidden" value="k1" name="dataBi">
+                <button type="submit" class="w-65 line-h38 hg-38 bg-ce23435 bg_icon secbtn tx-ind fl">提交</button>
+            </form>
+            <div class="w-455 fl" id="hotkeywords"> <a href="#" class="hot-item ftc-4b4b4b fs-14 line-h30 m-r-15 fl">旅行包</a> <i class="dsblock bg_icon topnav_line fl tx-ind w-1 hg-30">旅行包</i> <a href="#" class="hot-item ftc-4b4b4b fs-14 line-h30 m-r-15 m-l-15 fl">皮鞋</a> <i class="dsblock bg_icon topnav_line fl tx-ind w-1  hg-30">皮鞋</i> <a href="#" class="hot-item ftc-4b4b4b fs-14 line-h30 m-r-15 m-l-15 fl">年货先到家</a> <i class="dsblock bg_icon topnav_line fl tx-ind w-1  hg-30">年货先到家</i> <a href="#" class="hot-item ftc-4b4b4b fs-14 line-h30 m-r-15 m-l-15 fl">皮革</a> </div>
+        </div>
+        <!--web search end--> 
+        <!--web Shopping Cart start--> 
+        <a class="w-160 bd-s-ce23435 line-h38 hg-38 fr curpter text-c m-t-5 fs-14 ftc-999999 dsblock"> <i class="dsblock bg_icon cart_icon w-26 curpter m-l-15 tx-ind fl">购物车</i> 我的购物车 <i class="dsblock  bg_icon cartnum w-17 curpter m-r-10 fr fs-12 ftc-ffffff">55</i> </a> 
+        <!--web Shopping Cart end--> 
+    </div>
+</div>
+
+<!--web nav start-->
+<div class="w-all w-minw ovhidden bg-cffffff bd-bs-ed4f2c">
+    <div class="w-main m-auto">
+        <div class="w-180 bg-c2b2b2b  text-c bd-bs-2b2b2b all-sort fl">
+            <h2><a href="" class="fs-15 ftc-ffffff line-45">全部商品分类</a></h2>
+        </div>
+        <ul class="nav fl">
+            <li class="fl"><a href="index.html" class="fl dsblock p-l-13 p-r-13 m-l-20 fs-16 ftc-626262 line-45">首页</a></li>
+            <li class="fl"><a href="商城_首页.html" class="fl dsblock p-l-13 p-r-13 m-l-20 fs-16 ftc-626262 line-45">XXX商城</a></li>
+            <li class="fl"><a href="#" class="fl dsblock p-l-13 p-r-13 m-l-20 fs-16 ftc-626262 line-45">活动专区</a></li>
+            <li class="fl"><a href="#" class="fl dsblock p-l-13 p-r-13 m-l-20 fs-16 ftc-626262 line-45">限时抢购</a></li>
+            <li class="fl"><a href="#" class="fl dsblock p-l-13 p-r-13 m-l-20 fs-16 ftc-626262 line-45">天天特价</a></li>
+            <li class="fl"><a href="#" class="fl dsblock p-l-13 p-r-13 m-l-20 fs-16 ftc-626262 line-45">优惠套餐</a></li>
+            <li class="fl"><a href="brand.html" class="fl dsblock p-l-13 p-r-13 m-l-20 fs-16 ftc-626262 line-45 navactive">品牌街</a></li>
+            <li class="fl"><a href="#" class="fl dsblock p-l-13 p-r-13 m-l-20 fs-16 ftc-626262 line-45">我能兑换</a></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+</div>
+<!--web nav end-->
+<div class="w-main m-auto fs-14 ftc-000000 line-50 m-b-15"> 全部结果  >  品牌街 </div>
+
+<!-- 筛选 start -->
+
+<div class="w-main m-auto m-b-40 search-opt troblect">
+    <div class="w-main">
+        <div class="opt-list"> 
+            
+            <!-- 属性筛选 start -->
+            <dl class="brand-section m-tr">
+                <dt>权益资产</dt>
+                <dd class="ri-section">
+                    <div class="lf-list">
+                        <div class="brand-list">
+                            <div class="clearfix p"> <a href="#" data-href="#" data-val='1-2000' data-key='#'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >1-2000</span> </a> <a href="#" data-href="#" data-val='2001-5000' data-key='#'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >2001-5000</span> </a> <a href="#" data-href="#" data-val='5001-10000' data-key='#'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >5001-10000</span> </a> <a href="#" data-href="#" data-val='100001-20000' data-key='#'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >100001-20000</span> </a> <a href="#" data-href="#" data-val='20001-50000' data-key='#'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >20001-50000</span> </a> <a href="#" data-href="#" data-val='50001以上' data-key='#'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >50001以上</span> </a> </div>
+                            <div class="surclofix p"> <a href="javascript:;" class="u-confirm"  onClick="submitMoreFilter('attr',this);">确定</a> <a href="javascript:;" class="u-cancel">取消</a> </div>
+                        </div>
+                    </div>
+                    <div class="lr-more"> <a href="javascript:void(0)"><span class="dx_choice">多选</span><i class="litt-pluscr"></i></a> </div>
+                </dd>
+            </dl>
+            <dl class="brand-section m-tr">
+                <dt>品牌</dt>
+                <dd class="ri-section">
+                    <div class="lf-list">
+                        <div class="brand-list">
+                            <div class="clearfix p"> <a href="#" data-href="#" data-val='华为' data-key='322'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >华为</span> </a> <a href="#" data-href="#" data-val='三星' data-key='322'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >三星</span> </a> <a href="#" data-href="#" data-val='VIVO' data-key='322'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >VIVO</span> </a> <a href="#" data-href="#" data-val='苹果' data-key='322'>
+                                <input class="shaix_la" type="checkbox" style="display: none"/>
+                                <span >苹果</span> </a> </div>
+                            <div class="surclofix p"> <a href="javascript:;" class="u-confirm"  onClick="submitMoreFilter('attr',this);">确定</a> <a href="javascript:;" class="u-cancel">取消</a> </div>
+                        </div>
+                    </div>
+                    <div class="lr-more"> <a href="javascript:void(0)"><span class="dx_choice">多选</span><i class="litt-pluscr"></i></a> </div>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!--筛选 start-->
+
+<div class="w-main m-auto">
+    <div class="p-t-5 p-b-5 p-l-10 p-r-10 ovhidden bd-s-efefef w-1178">
+        <ul class="fsort fl">
+            <li><a href="#" class="active">综合</a></li>
+            <li><a href="#">新品</a></li>
+            <li><a href="#">价格 <i class="dsblock bg_icon"></i> </a></li>
+        </ul>
+    </div>
+</div>
+
+<!--web home New Arrivals start-->
+<div class="w-1220 m-auto ovhidden">
+    <ul class="piclist m-t-10">
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum02.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum03.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum04.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum05.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum06.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum07.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum08.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum09.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum10.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+        <li>
+            <div class="pic fl"><a href="#"><img src="pics/sum01.jpg" /></a></div>
+            <div class="title w-all fl m-t-18"><a href="#" class="dsblock w-all fl">
+                <h3 class="fs-14 ftc-787878 text-l line-h18 tw_hidden fl">小米(MI) Air 12.5英寸全金属超轻薄笔记本电脑</h3>
+                <span class="dsblock fs-14 ftc-ff0000 fl line-h35">权益资产：3686</span></a></div>
+        </li>
+    </ul>
+</div>
+<!--web home New Arrivals end-->
+
+<div class="layout yxl">
+    <div class="hd">
+        <h2>猜你喜欢</h2>
+        <a href="javascript:;" class="changeBnt" id="xxlChg"><i></i>换一换</a> </div>
+    <div class="bd">
+        <ul class="picLB" id="picLBxxl">
+            <li>
+                <dl class="picDl huozhe">
+                    <dd> <a href="#" class="pic"><img src="pics/sum01.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum02.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum03.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="picDl jilu">
+                    <dd> <a href="#" class="pic"><img src="pics/sum04.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum05.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum06.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="picDl tuhua">
+                    <dd> <a href="#" class="pic"><img src="pics/sum07.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum08.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img nsrc="pics/sum09.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="picDl today">
+                    <dd> <a href="#" class="pic"><img src="pics/sum10.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum01.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum02.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="picDl yingzhan">
+                    <dd> <a href="#" class="pic"><img src="pics/sum03.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum04.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                    <dd> <a href="#" class="pic"><img src="pics/sum05.jpg" alt=""/></a>
+                        <div class="ftBox"> <a href="#">
+                            <h3>紫光电子9.7平板电脑八核2G运存高
+                                清IPS屏游戏GPS </h3>
+                            <span>权益资产：3686</span></a> </div>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script> 
+<script type="text/javascript" src="js/prolist.js"></script>
+<div class="w-all w-minw bd-ts-fbfbfb ovhidden p-t-15 p-b-15"> 
+    <!--web home Fiery scramble end-->
+    <div class="w-main m-auto">
+        <div class="w-main m-b-10">
+            <div class="w-82 fl m-l-10"> <img src="pics/icon01.png" alt=""/>
+                <p class="text-c fs-16 ftc-000000 line-h36">全正品</p>
+            </div>
+            <div class="w-82 fl m-l-195"> <img src="pics/icon02.png" alt=""/>
+                <p class="text-c fs-16 ftc-000000 line-h36">超保障</p>
+            </div>
+            <div class="w-82 fl m-l-195"> <img src="pics/icon03.png" alt=""/>
+                <p class="text-c fs-16 ftc-000000 line-h36">最放心</p>
+            </div>
+            <div class="w-82 fl m-l-195"> <img src="pics/icon04.png" alt=""/>
+                <p class="text-c fs-16 ftc-000000 line-h36">快捷付</p>
+            </div>
+            <div class="w-82 fr m-r-10"> <img src="pics/icon04.png" alt=""/>
+                <p class="text-c fs-16 ftc-000000 line-h36">限时达</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--web footer start-->
+<div class="w-all w-minw bg-c1d1d1d ovhidden p-t-15">
+    <div class="w-main m-auto footernav">
+        <dl class="fl w-100 m-l-30 m-r-50">
+            <dt><a href="#" class="fl dsblock fs-18 ftc-ffffff line-45 w-all text-c">新手上路</a></dt>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">售后流程</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">购物流程</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">订购方式</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">在线支付</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">公司转账</a></dd>
+        </dl>
+        <dl class="fl w-100 m-l-30 m-r-50">
+            <dt><a href="#" class="fl dsblock fs-18 ftc-ffffff line-45 w-all text-c">配送方式</a></dt>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">货到付款</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">区域配送</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">支付查询</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">支付方式说明</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">如何送礼</a></dd>
+        </dl>
+        <dl class="fl w-100 m-l-30 m-r-50">
+            <dt><a href="#" class="fl dsblock fs-18 ftc-ffffff line-45 w-all text-c">购物指南</a></dt>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">常见问题</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">订购流程</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">注册新会员</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">团购/机票</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">联系客服</a></dd>
+        </dl>
+        <dl class="fl w-100 m-l-30 m-r-50">
+            <dt><a href="#" class="fl dsblock fs-18 ftc-ffffff line-45 w-all text-c">售后服务</a></dt>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">退换货原则</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">售后服务保证</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">换货流程</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">退款说明</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">返修/退换货</a></dd>
+        </dl>
+        <dl class="fl w-100 m-l-30 m-r-50">
+            <dt><a href="#" class="fl dsblock fs-18 ftc-ffffff line-45 w-all text-c">关于我们</a></dt>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">网站故障报告</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">选机咨询</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">投诉与建议</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">节能补贴</a></dd>
+            <dd><a href="#" class="fl dsblock fs-14 ftc-c4c4c4 line-h36 w-all text-c">礼品</a></dd>
+        </dl>
+        <div class="w-180 fr m-r-50">
+            <h3 class="fs-18 ftc-ffffff line-45">联系我们</h3>
+            <p class="fs-20 ftc-ca0303 line-h36">XXX</p>
+            <p class="fs-14 ftc-ffffff line-h36"> 周一至周日8:00-18:00 <br/>
+                （仅收市话费）</p>
+            <p class="fs-14 ftc-e3393a line-40 bd-s-ce3393a ovhidden bg_icon tel_icon footer_tel">24小时在线客服</p>
+        </div>
+    </div>
+</div>
+<div class="w-all w-minw bg-c000000 ovhidden">
+    <div class="w-main m-auto text-c fs-14 ftc-777777 line-60"> © 2020 版权所有，并保留所有权利。 </div>
+</div>
+<!--web footer end-->
+<script type="text/javascript">
+
+//        更多
+         $('.gd_more').parent().click(function(){
+         	var jed = $(this).parents('.lr-more').siblings();
+         	jed.toggleClass('ov-inh').find('.brand-box').toggleClass('ov-inh');
+         	if(jed.toggleClass('ov-inh').find('.brand-list')){
+         		jed.toggleClass('ov-inh').find('.brand-list').toggleClass('ov-inh');
+         	}
+         	if(jed.hasClass('ov-inh')){
+         		$(this).find('.gd_more').html('收起');
+         	}else{
+         		$(this).find('.gd_more').html('更多');
+         	}
+         })
+        var cancelBtn = null;
+        /***多选 start*****/
+        $('.dx_choice').parent().click(function(){
+            var _this = this;
+            var st = 0;
+            var jed = $(_this).parents('.ri-section'); //当前选项层DIV
+
+            //关闭前一个多选框
+            if(cancelBtn != null){
+                $(cancelBtn).parent().siblings('.clearfix').find('a').each(function(i,o){
+                    $(o).removeClass('addhover-js').find('.litt-zd').hide(); //针对品牌筛选的红色边框和右下角对勾隐藏
+                    $(o).removeClass('red_hov_cli')    //针对纯文字型选项，隐藏筛选的选中状态
+                    .attr('href',$(o).data('href'))  //还原连接
+                    .children('input').prop('checked',false).hide(); //隐藏多选框
+                    $(o).unbind('click');
+                });
+                $(cancelBtn).parents('.lf-list').siblings('.lr-more').show(); //显示其它多选按钮
+                $(cancelBtn).parents('.ri-section').removeClass('sum_ov_inh'); //移除多选样式
+
+            }
+            cancelBtn = jed.find('.u-cancel'); //前一个取消按钮
+
+            //打开多选
+            jed.addClass('sum_ov_inh'); //添加这一行的样式
+            //遍历a标签
+            jed.find('.clearfix>a').each(function(i,o){
+                $(o).attr('href','javascript:;'); //移除连接
+                $(o).children('input').show();  //显示多选框
+                $(o).bind('click',function(){
+                    if($(o).hasClass('red_hov_cli')){
+                        //取消选中
+                        $(o).find('i').toggle()
+                        $(o).removeClass('addhover-js'); //针对品牌选项，改变筛选的选中状态
+                        $(o).removeClass('red_hov_cli')
+                        $(o).children('input').prop("checked",false);
+                        $(o).parent().siblings('.surclofix').children('.u-confirm').removeClass('u-confirm01');
+                        st--;
+                    }else{
+                        $(o).addClass('red_hov_cli')
+                        $(o).children('input').prop("checked",true);
+                        $(o).find('i').toggle()
+                        $(o).addClass('addhover-js');
+                        $(o).parent().siblings('.surclofix').children('.u-confirm').addClass('u-confirm01');
+                        st++;
+                    }
+                    //如果没有选中项,确定按钮点不了
+                    if(st==0){
+                        jed.find('.u-confirm').disabled=true;
+                    }
+                });
+            });
+            //隐藏当前多选按钮
+            $(_this).parent().hide();
+        });
+
+        /***多选 end*****/
+        //############   取消多选        ###########
+        $('.surclofix .u-cancel').each(function(){
+            $(this).click(function(){
+                var jed = $(this).parents('.ri-section');
+                //遍历a标签
+                jed.find('.clearfix>a').each(function(i,o){
+                    $(o).removeClass('addhover-js').find('.litt-zd').hide(); //针对品牌筛选的红色边框和右下角对勾隐藏
+                    $(o).removeClass('red_hov_cli')    //针对纯文字型选项，隐藏筛选的选中状态
+                     .attr('href',$(o).data('href'))  //还原连接
+                     .children('input').prop('checked',false).hide(); //隐藏多选框
+                    $(o).unbind('click');
+                });
+                jed.find('.lr-more').show(); //显示多选按钮
+                jed.removeClass('sum_ov_inh') //移除这一行的样式
+                $('.u-confirm').removeClass('u-confirm01'); //移除确定按钮可点击标识
+            });
+        })
+
+    $(function() {
+        favourite();
+        //左侧边栏JS
+//		ajax_hot_goods();
+//		ajax_sales_goods();
+    //############   更多类别属性筛选  start     ###########
+    $('.moreamore').click(function(){
+        $('.m-tr').each(function(i,o){
+            if(i >  7){
+                var attrdisplay = $(o).css('display');
+                if(attrdisplay == 'none'){
+                    $(o).css('display','block');
+                }
+                if(attrdisplay == 'block'){
+                    $(o).css('display','none');
+                }
+            }
+        });
+        if($(this).hasClass('checked')){
+            $(this).removeClass('checked').html('<a class="red">收起</a>');
+        }else{
+            $(this).addClass('checked').html('<a >更多选项</a>');
+        }
+    })
+    $('.moreamore').trigger('click').html('<a >更多选项</a>'); //  默认点击一下
+    //############   更多类别属性筛选   end    ###########
+
+     
+     
+   
+})
+ 
+
+        //############   点击多选确定按钮      ############
+// t 为类型  是品牌 还是 规格 还是 属性
+// btn 是点击的确定按钮用于找位置
+get_parment = {"id":"12"};
+function submitMoreFilter(t,btn)
+{
+    // 没有被勾选的时候
+    if(!$(btn).hasClass("u-confirm01")){
+        return false;
+    }
+
+    // 获取现有的get参数
+    var key = ''; // 请求的 参数名称
+    var val = new Array(); // 请求的参数值
+    $(btn).parent().siblings(".clearfix").find(".red_hov_cli").each(function(i,o){
+        key = $(o).data('key');
+        val.push($(o).data('val'));
+    });
+    //parment = key+'_'+val.join('_');
+//        return false;
+    // 品牌
+    if(t == 'brand')
+    {
+        get_parment.brand_id = val.join('_');
+    }
+    // 规格
+    if(t == 'spec')
+    {
+        if(get_parment.hasOwnProperty('spec'))
+        {
+            get_parment.spec += '@'+key+'_'+val.join('_');
+        }
+        else
+        {
+            get_parment.spec = key+'_'+val.join('_');
+        }
+    }
+    // 属性
+    if(t == 'attr')
+    {
+        if(get_parment.hasOwnProperty('attr'))
+        {
+            get_parment.attr += '@'+key+'_'+val.join('_');
+        }
+        else
+        {
+            get_parment.attr = key+'_'+val.join('_');
+        }
+    }
+    // 组装请求的url
+    var url = '';
+    for ( var k in get_parment )
+    {
+        url += "&"+k+'='+get_parment[k];
+    }
+    console.log('get_parment',get_parment);
+    location.href ="/index.php?m=Home&c=Goods&a=goodsList"+url;
+}
+ 
+</script>
+</body>
+</html>

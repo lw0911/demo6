@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* CSS top_ygl 2014|9|20*/
+.wid380{ width:380px;}
+.wid340{ width:340px;}
+.wid310{ width:310px;}
+.wid260{ width:260px;}
+.wid200{ width:200px;}
+.wid180{ width:180px;}
+.wid80{ width:80px;}
+.wid70{ width:70px;}
+.wid610{ width:610px;}
+.li30{ line-height:30px;}
+
+.li40{ line-height:40px;}
+
+.ll_no{ border-left:none;}
+
+.fc41{ color:#414141;}
+.tab_lin{ border:#e6e6e6 solid 1px;}
+.xia_lin{ border-bottom:#e6e6e6 solid 1px;}
+.lodin_gw{ background:url(images/buy_lod_03.png); width:1200px; height:62px; margin:20px auto;}
+.lodin_dd{ background:url(images/buy_lod_02.png); width:1200px; height:62px; margin:20px auto;}
+.buy_tab{border-top:#0080cc solid 3px; border-right:#e6e6e6 solid 1px; border-left:#e6e6e6 solid 1px; }
+.buy_tab th{ background:#eef9ff;}
+.buy_tab td { border-bottom:#e6e6e6 solid 1px;}
+.buy_tab td.no_lin{ border-bottom:none;}
+.buy_tab td.no_t{border-top:none;}
+
+
+.buy_tab_gys{border-right:#e6e6e6 solid 1px; border-left:#e6e6e6 solid 1px; }
+.buy_tab_gys th{ background:#eef9ff;}
+.buy_tab_gys td { border-bottom:#e6e6e6 solid 1px;}
+.buy_tab_gys td.no_lin{ border-bottom:none;}
+.buy_tab_gys span{ display:block}
+
+.t_line{border-top:#e6e6e6 solid 1px; }
+.buy_tab td.x_line{ border-bottom:#e6e6e6 solid 1px; }
+.buy_tab td.l_line{border-left:#e6e6e6 solid 1px; }
+.buy_tab td.r_line{border-right:#e6e6e6 solid 1px;}
+.buy_tab .tr_th{ background:#e2f2ff;  height:30px; line-height:30px;  border-left:#fff solid 1px;}
+.buy_tab span{ display:block; float:left; }
+.buy_tab input{ border:#e6e6e6 solid 1px; color:#666; line-height:25px; height:25px; font-size:12px;}
+.buy_tab .add{ display:block; width:20px; border:#e6e6e6 solid 1px; margin:5px; height:15px; line-height:15px;}
+.buy_tab .nub{ width:40px; border:#e6e6e6 solid 1px; height:25px; line-height:25px;} 
+.buy_tab img.sj{border:#e6e6e6 solid 1px;}
+.buy_jx_bt{ background:url(images/buy_18.jpg); width:73px; height:39px; float:left; display:block}
+.buy_js_bt{ background:url(images/buy_21_nex.jpg); width:108px; height:37px; float:left; display:block}
+
+.buy_js_tj{ background:url(images/cion_tj_31.jpg); width:108px; height:37px; display:block}
+
+
+/* CSS shdz2014*/
+.qrshdz{ padding:10px 20px}
+.qrshdz li { line-height:30px;  padding:2px 0}
+.qrshdz li .spanradio{ background:url(images/raidobg.gif) no-repeat left center; display:inline-block; padding-left:25px;margin-left:81px}
+.qrshdz li .jsz{ display:none}
+.qrshdz li .mrdz{display:none}
+.qrshdz li .xgbdz{display:none}
+.qrshdz li.hover{ background:#dcf0fe; padding-left:10px}
+.qrshdz li.hover .spanradio{ background:url(images/raidobgx.gif) no-repeat left center; margin-left:0}
+.qrshdz li.hover .jsz{ display:inline-block; background:url(images/dzico.gif) no-repeat left center; padding-left:25px; color:#ff6600; padding-right:10px}
+.qrshdz li.hover .mrdz{display:inline-block; margin-left:30px; color:#999}
+.qrshdz li.hover .xgbdz{display:inline-block; float:right; padding-right:10px; color:#0085d0; cursor:pointer}
+.qrshdz input{ border:#e6e6e6 solid 1px; height:28px; line-height:28px; width:300px; font-size:12px;}
+.qrshdz a.add{ background:#E3FFFC; border:#9cdbff solid 1px; line-height:28px; padding:2px;}
+
+
+
+.qrshdz li .othredzs{margin-left:105px}
+.qrshdz li.hover .othredzs{margin-left:95px}
+.cartbox{ border-top:#0085d0 solid 2px; border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; width:1198px; margin:0 auto; }
+.cartbox1{  border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; width:1198px; margin:0 auto; }
+.cartboxtitle{border-bottom:1px solid #e6e6e6; padding:5px 10px;font-size:16px;}
+.cartboxtitle img{ vertical-align:middle;margin-left:10px; margin-right:10px}
+
+
+.cartboxtitle1{ border:1px solid #e6e6e6; width:1198px; margin:0 auto; margin-top:10px;padding:5px 0; font-size:16px}
+.cartboxtitle1 img{ vertical-align:middle; margin-left:10px; margin-right:10px}
+
+
+/* CSS tanchu*/
+.tc_tjdd{ width:280px;background:#ffffff; border:#e6e6e6 solid 1px;}
+
+
+.tc_tjdd h3{ display:block; height:40px; line-height:40px; background:#f9f9f9; font-size:16px; padding-left:20px;}
+.tc_tjdd .clos_zf{ background:url(images/zf_close_img_03.gif); display:block; width:14px; height:16px; margin-top:10px; float:right; margin-right:10px;}
+
+.tc_tjdd p.txt{ font-size:20px; line-height:40px; display:block; width:250px; margin:0 auto; text-align:center; font-weight:bold; color:#333;}
+
+.tc_tjdd a{ display:block; background:url(images/ts_tj_pc_07.gif); width:100px; height:36px; margin:0 auto}

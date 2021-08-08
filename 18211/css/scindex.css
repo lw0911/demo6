@@ -1,0 +1,35 @@
+/*dede58.com 做最好的织梦整站模板下载网站*/
+@charset "utf-8";
+/* XXX商城 common css by nissachang chang QQ:2801528062 */
+
+/*1F right products list start*/
+.pro li{ float:left; width:200px; padding:6px 12px 0px 12px; background-color:#ffffff;margin:0px 5px; overflow:hidden; padding-bottom:5px; position:relative; margin-bottom:10px;}
+.pro li .pic{ text-align:center; display: block;overflow: hidden; height: auto; }
+.pro li .pic a{ display: block;border: 1px solid #f2f2f2; width: 198px;overflow: hidden;}
+.pro li .pic img{ width:100%; display:block;}
+.pro li a.crash{ background-position: -309px 0px; color: #f00000;}
+.pro li .pic a:hover img{ padding-left: 10px; transition: all 0.8s;}
+.pro li:hover{-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 8px 1px rgba(0,0,0,0.1);box-shadow:0px 0px 8px 1px rgba(0,0,0,0.1); top: -6px;}
+.pro li:hover img{padding-left: 10px; transition: all 0.8s;}
+.pro li:hover .crash{background-position: -309px -32px; color: #ffffff;}
+
+/*2f right products list start*/
+.pro2f li{ float:left; width:460px;background-color:#ffffff;margin:0px 5px; overflow:hidden;position:relative; margin-bottom:10px;}
+.pro2f li:hover{-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.1);-moz-box-shadow:0px 0px 8px 1px rgba(0,0,0,0.1);box-shadow:0px 0px 8px 1px rgba(0,0,0,0.1); top: -6px;}
+.pro2f li:hover img{padding-left: 10px; transition: all 0.8s;}
+
+/*1F left img start*/
+.sphomead{ position: relative; overflow: hidden; z-index: 9;}
+.sphomead img{width: 252px; height: 530px; position: absolute; top: 0px; left: 0px; z-index: 10;}
+.sphomead:hover img{ top:-132.5px; left:-63px; width: 378px; height:795px; transition: all 0.5s;}
+
+
+
+
+
+
+
+
+
+
+

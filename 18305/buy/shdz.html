@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by dede58.com"/>
+<title>安徽移动商城列表页——</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/buy.css" rel="stylesheet" type="text/css" />
+
+<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/cart.js"></script>
+<script type="text/javascript" src="../js/layerModel/jquery.layerModel.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../js/layerModel/layerModel.css"/>
+<script type="text/javascript">
+
+$(function(){
+	
+		$(".buy_js_tj").click(function(){
+			$("#tanch_xtts").layerModel({
+				"head" : false,
+				"staySame" : true,
+				"bgColor" : "#000",
+				"opacity" : "0.7"
+		
+			});	
+			
+			
+		})
+$(function(){
+	$(".xgbdz").click(function(){
+		$("#xgdz1").css("display","block");					   
+	})
+	$(".spanradio").click(function(){
+		$("#xgdz1").css("display","none");						   
+	})
+	$(".qrshdz li").click(function(){
+		if($("#xgdz2").css("display") == "block"){
+			$("#xgdz2").css("display","none")
+		}	
+	})
+})
+
+
+	
+})
+</script>
+</head>
+
+<body>
+<!--#include virtual="../include/top.html"-->
+<!--#include virtual="../include/top_no.html"-->
+<!--购物车页面-->
+<div class="lodin_dd marginauto"></div>
+   <div class="box fc41 pt10">
+   
+     <h2 class="font14 block li40">
+     	<span>收货信息</span>
+       <span class="blue pl10">管理收货地址</span>
+     
+     </h2>
+   	
+   	
+
+            
+</div>
+   <div class="cartbox">
+     <ul class="qrshdz">
+       <li class="hover"> <span class="xgbdz "  onclick="show_xdz1()">修改本地址</span> 
+       <span class="jsz">寄送至</span> <span class="spanradio">安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心（张三收）15258586888</span> </li>
+       <li> <span class="xgbdz" onclick="show_xdz1()">修改本地址</span> <span class="jsz">寄送至</span><span class="spanradio">安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心（张三收）15258586888</span> <span class="mrdz" >设为默认地址</span> </li>
+       <li><span class="xgbdz" onclick="show_xdz1()">修改本地址</span> <span class="jsz">寄送至</span><span class="spanradio">安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心（张三收）15258586888</span> <span class="mrdz">设为默认地址</span></li>
+       <li><span class="xgbdz" onclick="show_xdz1()">修改本地址</span><span class="jsz">寄送至</span><span class="spanradio">安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心（张三收）15258586888</span> <span class="mrdz">设为默认地址</span></li>
+       <p style="line-height: 30px; padding-left:10px;">
+       <a href="#" class="othredzs add" onclick="show_xgdz2()" style=" margin-left:105px">+ 使用新地址</a>
+       
+       
+       </p>
+       </li>
+       <div id="xgdz2" style="display:none">
+         <table width="82%" border="0" align="center" cellpadding="0" cellspacing="6">
+           <tr>
+             <td width="11%" height="30" class="left_font"><span class="font red">*</span><span> 收货人姓名：</span></td>
+             <td width="89%"><input name="textfield22" type="text"  class="input" value="张三" /></td>
+           </tr>
+           <tr>
+             <td class="left_font"><span class="font red">*</span><span> 地市区域：</span></td>
+             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tr>
+                 <td width="6%" height="28">安徽省</td>
+                 <td width="11%" style="position:relative;"><select name="select" id="select">
+                   <option>选择城市</option>
+                 </select></td>
+                 <td width="11%" style="position:relative;"><select name="select2" id="select2">
+                   <option>选择区\县</option>
+                 </select></td>
+                 <td width="13%" style="position:relative;"><select name="select3" id="select3">
+                   <option>选择镇\村</option>
+                 </select></td>
+                 <td width="59%"><input name="textfield422" type="text" class="input" size="13" value="习友路" /></td>
+               </tr>
+             </table></td>
+           </tr>
+           <tr>
+             <td class="left_font"><span class="font red">* </span><span>收货人电话：</span></td>
+             <td><input name="textfield222" type="text" class="input" value="13695691987" /></td>
+           </tr>
+           <tr>
+             <td class="left_font">&nbsp;</td>
+             <td><img width="79" height="36" src="../images/qr_btn.gif" class="hand" onclick="show_xgdz(2);alert('当前信息已保存！')" /></td>
+           </tr>
+         </table>
+       </div>
+       <div id="xgdz1" style="display:none">
+         <table width="82%" border="0" align="center" cellpadding="0" cellspacing="6">
+           <tr>
+             <td width="11%" height="30" class="left_font"><span class="font red">*</span><span> 收货人姓名：</span></td>
+             <td width="89%"><input name="textfield22" type="text"  class="input" value="张三" /></td>
+           </tr>
+           <tr>
+             <td class="left_font"><span class="font red">*</span><span> 地市区域：</span></td>
+             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+               <tr>
+                 <td width="6%" height="28">安徽省</td>
+                 <td width="10%" style="position:relative;"><select name="select6" id="select6">
+                   <option>选择城市</option>
+                 </select></td>
+                 <td width="11%" style="position:relative;"><select name="select5" id="select5">
+                   <option>选择区\县</option>
+                 </select></td>
+                 <td width="14%" style="position:relative;"><select name="select4" id="select4">
+                   <option>选择镇\村</option>
+                 </select></td>
+                 <td width="59%"><input name="textfield422" type="text" class="input" size="13" value="习友路" /></td>
+               </tr>
+             </table></td>
+           </tr>
+           <tr>
+             <td class="left_font"><span class="font red">* </span><span>收货人电话：</span></td>
+             <td><input name="textfield222" type="text" class="input" value="13695691987" /></td>
+           </tr>
+           <tr>
+             <td class="left_font">&nbsp;</td>
+             <td><img width="79" height="36" src="../images/log_btn_xg.gif" class="hand" onclick="show_xgdz(1);alert('当前信息已保存！')" /></td>
+           </tr>
+         </table>
+         <h3>&nbsp;</h3>
+       </div>
+     </ul>
+   </div> 
+
+<div class="box fc41 pt10">
+   
+  <h2 class="font14 block li40">
+   	 <span class=" block wid140 left">已选购商品清单</span>
+     
+     <span class="block wid140 right">返回修改购物车</span>
+     <div class="clear"></div>
+  </h2>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="buy_tab">
+  <tr>
+    <th width="14%" height="35"  bgcolor="#EEF9FF" >商品名称</th>
+    <th width="34%" gcolor="#EEF9FF" >手机简介</th>
+    <th width="14%" align="center" bgcolor="#EEF9FF" >支付方式 </th>
+    <th width="28%" height="35" align="center" bgcolor="#EEF9FF" class="t_line x_line">单价（元）</th>
+    <th width="10%" align="center" bgcolor="#EEF9FF" class="t_line x_line r_line">数量</th>
+    </tr>
+  <tr>
+    <td height="39" colspan="5" bgcolor="#f8f8f8" class="t_line "><span class="pl10">供应商：中国移动XXXXXXXX</span> <span class="pl10 pt5"><img src="../images/buy_img_10.jpg" width="26" height="27" /></span></td>
+    </tr>
+  <tr>
+    <td height="17" bgcolor="#f8f8f8" >
+    <span class="pl20 tcenter"> SAMSUNG/三星GALAXY
+    </span></td>
+    <td align="center" bgcolor="#f8f8f8" >黑色、安卓</td>
+    <td align="center" bgcolor="#f8f8f8">在线支付</td>
+    <td height="17" align="center" bgcolor="#f8f8f8" >￥5588.00</td>
+    <td align="center" bgcolor="#f8f8f8">1</td>
+  </tr>
+  <tr>
+    <td height="111" align="right" valign="top" bgcolor="#f8f8f8" class="  pt10">给卖家留言：</td>
+    <td height="111" colspan="4" align="left" valign="top" bgcolor="#f8f8f8" ><textarea name="textfield2" class="mt10"cols="50" rows="4" id="textfield2" style="color:#d0d0d0;">请输入主题，字数在3-20字以内</textarea></td>
+  </tr>
+  <tr>
+    <td height="48" colspan="5" align="right" ><table width="100%" border="0" cellspacing="0" cellpadding="0" >
+      <tr>
+        <td height="42" bgcolor="#FBFEFF" class="no_lin"><p class="block wid180 li40 right"><span class="block left  text_r">应付总额：</span><font class="red font20 left text_l">￥3488.00</font></p></td>
+      </tr>
+    </table></td>
+  </tr>
+  
+ 
+  </table>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="buy_tab_gys">
+    <tr class="buy_tab">
+      <td height="39" colspan="5" bgcolor="#f8f8f8" ><span class="pl10">供应商：中国移动XXXXXXXX</span> 
+      <span class="pl10 pt5"><img src="../images/buy_img_10.jpg" width="26" height="27" /></span></td>
+    </tr>
+    <tr>
+      <td height="35" bgcolor="#f8f8f8" class="l_line x_line"><span class="pl20 tcenter"> SAMSUNG/三星GALAXY
+      </span></td>
+      <td align="center" bgcolor="#f8f8f8" class=" x_line">黑色、安卓</td>
+      <td align="center" bgcolor="#f8f8f8" class=" x_line">在线支付</td>
+      <td height="35" align="center" bgcolor="#f8f8f8" class=" fonttb x_line">￥5588.00</td>
+      <td align="center" bgcolor="#f8f8f8" class="  x_line">1</td>
+    </tr>
+    <tr>
+      <td width="14%" height="35" bgcolor="#f8f8f8" class=" l_line x_line"><span class="pl20  tcenter"> SAMSUNG/三星GALAXY
+      </span></td>
+      <td width="34%" align="center" bgcolor="#f8f8f8" class=" x_line">黑色、安卓</td>
+      <td width="16%" align="center" bgcolor="#f8f8f8" class=" x_line">在线支付</td>
+      <td width="12%" height="35" align="center" bgcolor="#f8f8f8" class=" fonttb x_line">￥5588.00</td>
+      <td width="24%" align="center" bgcolor="#f8f8f8" class="  x_line">1</td>
+    </tr>
+    <tr>
+      <td height="125" align="right" valign="top" bgcolor="#f8f8f8" class=" l_line  pt10">给卖家留言：</td>
+      <td height="125" colspan="4" align="left" valign="top" bgcolor="#f8f8f8" ><textarea name="textfield3" class="mt10" cols="50" rows="4" id="textfield3" style="color:#d0d0d0;">请输入主题，字数在3-20字以内</textarea></td>
+    </tr>
+    <tr>
+      <td height="42" colspan="5" align="right"  class=" no_lin "><table width="100%" border="0" cellspacing="0" cellpadding="0" class=" pb10">
+        <tr>
+          <td height="42" bgcolor="#FBFEFF" ><p class="block wid180 li40 right"><span class="block left  text_r">应付总额：</span><font class="red font20 left text_l">￥3488.00</font></p></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <div class="cartbox1">
+    <div class="cartboxtitle"> <span class="left">订单结算</span>
+      <div class="clear"></div>
+    </div>
+    <div class="pb20 pt20 pl10 pr10 font14">
+      <p><span class="left">商品合计：</span><span class="right">￥1899</span> </p>
+      <div class="clear"></div>
+      </p>
+      <p><span class="left">运费合计：</span><span class="right">￥0</span></p>
+      <div class="clear"></div>
+      </p>
+      <p class="text_r red">使用优惠券<img src="../images/yhq.gif" width="13" height="13" alt="" class="ml2" style="vertical-align:middle" /></p>
+    </div>
+    <div class="" style="background:#f4fafe; padding:20px; border-top:1px dashed #EFEFEF; text-align:right; line-height:30px">
+      <p>实付款：<span class="font18 red">¥21899</span></p>
+      <p> 寄送至：安徽省 合肥市 蜀山区 习友路与金桂路交叉口移动客服中心</p>
+      <p> 收货人：张三 152****6302</p>
+      <p>
+        <input name="input" type="checkbox" value="" />
+        <a href="#">购机协议</a></p>
+      <p class="block right"><a href="#" class="buy_js_tj ml10  mt10" ></a></p>
+      <p class="mt15">&nbsp;</p>
+    </div>
+  </div>
+ 
+</div>
+<div>
+</div>
+
+<!--弹出层-->
+<div class="tc_tjdd" id="tanch_xtts" style="display:none">
+	<h3>
+        <span class="left wid140 block">系统提示</span>
+        <a href="#" class="left clos_zf" onClick="$('#tanch_xtts').close()"></a>
+    </h3>
+    <p class="txt pb20 pt20">
+  订单提交成功</p>
+  <p class="a_zf pb20">
+    
+   	<a href="../grzx/grzx.html" class="zfwc"></a></p>
+<div class="clear"></div>
+
+</div>
+
+
+   
+<!--#include virtual="../include/foot_menu.html"-->
+
+</body>
+
+
+
+
+</html>

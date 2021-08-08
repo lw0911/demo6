@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by dede58.com"/>
+<title>安徽移动商城列表页——</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css" />
+<link href="../css/cart.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/cart.js"></script>
+</head>
+<body>
+<!--#include virtual="../include/top.html"-->
+<!--#include virtual="../include/top_menu.html"-->
+<div class="box">
+<div class="grzx_tip mt10">手机旗舰店 > <span> 预约手机</span></div>
+  
+ <div class="ml20 font16 mt15 pb10">确认合约选择营业厅</div>
+
+
+<!--选合约 开始-->
+<div class="cartbox">
+  <div class="cartboxtitle"> <img src="../images/num1.gif" width="30" height="30" alt="" />选合约 </div>
+  <div class="xhybox">
+    
+    <dl>
+      <dt>合约期限：</dt>
+      <dd>
+        <ul class="hyqx">
+          <li  id="thre2" class="hover" onclick="setTab('thre',2,2)">24月套餐</li>
+          <li  id="thre1" onclick="setTab('thre',1,2)">36月套餐</li>
+        </ul>
+      </dd>
+    </dl>
+    <dl>
+      <dt>套餐类型：</dt>
+      <dd>
+        <div id="con_thre_2" class="qiu_tab1 mylisttable" >
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th rowspan="2">选择</th>
+                <th rowspan="2">购机款</th>
+                <th colspan="2">赠送话费</th>
+                <th rowspan="2">赠送赠品</th>
+                <th rowspan="2">协议期</th>
+                <th rowspan="2">月最低消费</th>
+                <th rowspan="2">总支付费用</th>
+                <th rowspan="2" class="rightline">操作</th>
+              </tr>
+              <tr>
+                <th>当月到账</th>
+                <th>分月到账</th>
+              </tr>
+            </thead>
+            <tr>
+              <td><input name="radio_20" type="radio"/></td>
+              <td>5488元</td>
+              <td>16元话费</td>
+              <td>5472元(152元*36个月)</td>
+              <td>300M省内流量免费一个月 </td>
+              <td>36个月</td>
+              <td>458元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="javascript:;" class="service_detail">查看</a></td>
+            </tr>
+            <tr class="tips_tr">
+             <td colspan="10" ><span class="s_tips"><strong> 详情:</strong> 购机款884元+普通预存0元+分月返还24月*114元=4988元(月最低消费228元)</span> <span class="zp_tips"><strong class="red">赠品:</strong>30元手机支付券</span></td>
+              </tr>
+            <tr>
+              <td><input name="radio_20" type="radio"  /></td>
+              <td>5488元</td>
+              <td>0元话费</td>
+              <td>4788元(133元*36个月)</td>
+              <td>300M省内流量免费一个月 </td>
+              <td>36个月</td>
+              <td>368元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="javascript:;" class="service_detail">查看</a></td>
+            </tr>
+            <tr class="tips_tr">
+              <td colspan="9" >
+              	<span class="s_tips"><strong>详情:</strong> 购机款884元+普通预存0元+分月返还24月*114元=4988元(月最低消费228元)</span> <span class="zp_tips"><strong class="red">赠品:</strong>30元手机支付券</span></td>
+              </tr>
+            <tr >
+              <td><input name="radio_20" type="radio"  /></td>
+              <td>5488元</td>
+              <td>0元话费</td>
+              <td>3600元(100元*36个月)</td>
+              <td>300M省内流量免费一个月 </td>
+              <td>36个月</td>
+              <td>268元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="javascript:;" class="service_detail">查看</a></td>
+            </tr>
+            <tr class="tips_tr">
+              <td colspan="9" ><span class="s_tips"><strong>详情:</strong> 购机款884元+普通预存0元+分月返还24月*114元=4988元(月最低消费228元)</span> <span class="zp_tips"><strong class="red">赠品:</strong>30元手机支付券</span></td>
+              </tr>
+            <tr>
+              <td><input name="radio_20" type="radio"  /></td>
+              <td>5488元</td>
+              <td>0元话费</td>
+              <td>2556元(71元*36个月)</td>
+              <td>300M省内流量免费一个月 </td>
+              <td>36个月</td>
+              <td>188元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="javascript:;" class="service_detail">查看</a></td>
+            </tr>
+            <tr class="tips_tr">
+              <td colspan="9"><span class="s_tips"><strong>详情:</strong> 购机款884元+普通预存0元+分月返还24月*114元=4988元(月最低消费228元)</span> <span class="zp_tips"><strong class="red">赠品:</strong>30元手机支付券</span></td>
+              </tr>
+            <tr>
+              <td><input name="radio_20" type="radio"  /></td>
+              <td>5488元</td>
+              <td>0元话费</td>
+              <td>2268元(63元*36个月)</td>
+              <td>300M省内流量免费一个月</td>
+              <td>36个月</td>
+              <td>158元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="javascript:;" class="service_detail">查看</a></td>
+            </tr>
+            <tr class="tips_tr">
+              <td colspan="9"><span class="s_tips"><strong>详情:</strong> 购机款884元+普通预存0元+分月返还24月*114元=4988元(月最低消费228元)</span> <span class="zp_tips"><strong class="red">赠品:</strong>30元手机支付券</span></td>
+              </tr>
+            <tr>
+              <td class="xialine"><input name="radio_20" type="radio"  /></td>
+              <td class="xialine">5488元</td>
+              <td class="xialine">0元话费</td>
+              <td class="xialine">1944元(54元*36个月)</td>
+              <td>300M省内流量免费一个月</td>
+              <td class="xialine">36个月</td>
+              <td class="xialine">138元</td>
+              <td class="xialine">5488元</td>
+              <td class="rightline xialine"><a href="javascript:;" class="service_detail">查看</a></td>
+            </tr>
+            <tr class="tips_tr">
+              <td colspan="9" class="xialine" ><span class="s_tips"><strong>详情:</strong> 购机款884元+普通预存0元+分月返还24月*114元=4988元(月最低消费228元)</span> <span class="zp_tips"><strong class="red">赠品:</strong>30元手机支付券</span></td>
+              </tr>
+          </table>
+          <div class="s_cur" id="lowest_fee">您已选择:三星I9508，星空黑，购机送话费36个月,月最低消费<span id="lowest_fee">111元</span></div>
+          <div class="tips_word pt10">
+            <h3>温馨提示:</h3>
+            <div class="tips_ovfl">
+              <p>1、每个移动手机号码仅限购一部手机，已通过网站、热线或短信成功预订的客户优先购买，数量有限，先到先得。购买Iphone合约机的用户，后续如果出现了机卡分离（即非购机号码使用），话费将不予返还，感谢您对Iphone移动版的支持。<br />
+                2、购买合约机的客户需办理相应的最低消费，购机当月生效，如客户已有最低消费则购机的最低消费与前期已有的最低消费顺延执行，协议期内需达到最低消费要求且此期间内不可以预销/销号/过户。购机时如您之前已有分月返还或保留预存，则购机之后分月返还顺延执行。<br />
+                3、合肥和芜湖客户，在收到手机后，请前往<a href="http://ah.10086.cn/shop/resources/html/opt4g/index.htm" target="_blank">指定营业厅</a>免费办理&ldquo;更换Nano USIM卡&rdquo;业务，同时办理相应的&ldquo;4G飞享套餐或自选套餐&rdquo;，享受极速4G服务。其他客户，在收到手机后，请前往当地沟通100营业厅免费办理&ldquo;更换Nano SIM卡&rdquo;业务，享受3G服务。<br />
+                4、活动期间，购机客户在营业厅换卡后，办理&ldquo;iphone购机送流量套餐&rdquo;（仅限裸机购买），可免费赠送400MB流量,免费使用3个月，办理后立即生效。合肥和芜湖客户购买裸机或合约机，均可同时再办理&ldquo;移动数据流量体验套餐&rdquo;，免费赠送安徽省内移动4G单模数据流量，办理后可免费体验至2014年2月28日。</p>
+            </div>
+            <div class="text_r pt10"></div>
+          </div>
+        </div>
+        <div id="con_thre_1" class="qiu_tab1 mylisttable" style="display:none;">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th rowspan="2">选择</th>
+                <th rowspan="2">购机款</th>
+                <th colspan="2">赠送话费</th>
+                <th rowspan="2">赠送赠品</th>
+                <th rowspan="2">协议期</th>
+                <th rowspan="2">月最低消费</th>
+                <th rowspan="2">总支付费用</th>
+                <th rowspan="2" class="rightline">操作</th>
+              </tr>
+              <tr>
+                <th>当月到账</th>
+                <th>分月到账</th>
+              </tr>
+            </thead>
+            <tr>
+              <td><input name="radio_24" type="radio"/></td>
+              <td>5488元</td>
+              <td>16元话费</td>
+              <td>5472元(152元*36个月)</td>
+              <td>300M省内流量免费一个月 </td>
+              <td>36个月</td>
+              <td>458元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="http://ah.10086.cn/shop/mobiledetails/details.shtml?productId=8a18cb93438aef08014398d8e2c80a82&amp;type=3G#">查看</a></td>
+            </tr>
+            <tr>
+              <td><input name="radio_24" type="radio"  /></td>
+              <td>5488元</td>
+              <td>0元话费</td>
+              <td>4788元(133元*36个月)</td>
+              <td>300M省内流量免费一个月 </td>
+              <td>36个月</td>
+              <td>368元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="http://ah.10086.cn/shop/mobiledetails/details.shtml?productId=8a18cb93438aef08014398d8e2c80a82&amp;type=3G#">查看</a></td>
+            </tr>
+            <tr>
+              <td><input name="radio_24" type="radio"  /></td>
+              <td>5488元</td>
+              <td>0元话费</td>
+              <td>3600元(100元*36个月)</td>
+              <td>300M省内流量免费一个月 </td>
+              <td>36个月</td>
+              <td>268元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="http://ah.10086.cn/shop/mobiledetails/details.shtml?productId=8a18cb93438aef08014398d8e2c80a82&amp;type=3G#">查看</a></td>
+            </tr>
+            <tr>
+              <td><input name="radio_24" type="radio"  /></td>
+              <td>5488元</td>
+              <td>0元话费</td>
+              <td>2556元(71元*36个月)</td>
+              <td>300M省内流量免费一个月 </td>
+              <td>36个月</td>
+              <td>188元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="http://ah.10086.cn/shop/mobiledetails/details.shtml?productId=8a18cb93438aef08014398d8e2c80a82&amp;type=3G#">查看</a></td>
+            </tr>
+            <tr>
+              <td><input name="radio_24" type="radio"  /></td>
+              <td>5488元</td>
+              <td>0元话费</td>
+              <td>2268元(63元*36个月)</td>
+              <td>300M省内流量免费一个月</td>
+              <td>36个月</td>
+              <td>158元</td>
+              <td>5488元</td>
+              <td class="rightline"><a href="http://ah.10086.cn/shop/mobiledetails/details.shtml?productId=8a18cb93438aef08014398d8e2c80a82&amp;type=3G#">查看</a></td>
+            </tr>
+            <tr>
+              <td class="xialine"><input name="radio_24" type="radio"  /></td>
+              <td class="xialine">5488元</td>
+              <td class="xialine">0元话费</td>
+              <td class="xialine">1944元(54元*36个月)</td>
+              <td>300M省内流量免费一个月</td>
+              <td class="xialine">36个月</td>
+              <td class="xialine">138元</td>
+              <td class="xialine">5488元</td>
+              <td class="rightline xialine"><a href="http://ah.10086.cn/shop/mobiledetails/details.shtml?productId=8a18cb93438aef08014398d8e2c80a82&amp;type=3G#">查看</a></td>
+            </tr>
+          </table>
+          <div class="s_cur">您已选择:苹果 5S 16G(4G)，<span id="ruleSimpeTips">灰，购机送话费36个月</span><span id="lowest_fee2">，月最低消费458元</span></div>
+          <div class="tips_word pt10">
+            <h3>温馨提示:</h3>
+            <div class="tips_ovfl">
+              <p>1、每个移动手机号码仅限购一部手机，已通过网站、热线或短信成功预订的客户优先购买，数量有限，先到先得。购买Iphone合约机的用户，后续如果出现了机卡分离（即非购机号码使用），话费将不予返还，感谢您对Iphone移动版的支持。<br />
+                2、购买合约机的客户需办理相应的最低消费，购机当月生效，如客户已有最低消费则购机的最低消费与前期已有的最低消费顺延执行，协议期内需达到最低消费要求且此期间内不可以预销/销号/过户。购机时如您之前已有分月返还或保留预存，则购机之后分月返还顺延执行。<br />
+                3、合肥和芜湖客户，在收到手机后，请前往<a href="http://ah.10086.cn/shop/resources/html/opt4g/index.htm" target="_blank">指定营业厅</a>免费办理&ldquo;更换Nano USIM卡&rdquo;业务，同时办理相应的&ldquo;4G飞享套餐或自选套餐&rdquo;，享受极速4G服务。其他客户，在收到手机后，请前往当地沟通100营业厅免费办理&ldquo;更换Nano SIM卡&rdquo;业务，享受3G服务。<br />
+                4、活动期间，购机客户在营业厅换卡后，办理&ldquo;iphone购机送流量套餐&rdquo;（仅限裸机购买），可免费赠送400MB流量,免费使用3个月，办理后立即生效。合肥和芜湖客户购买裸机或合约机，均可同时再办理&ldquo;移动数据流量体验套餐&rdquo;，免费赠送安徽省内移动4G单模数据流量，办理后可免费体验至2014年2月28日。</p>
+            </div>
+            <div class="text_r pt10"> <a href="#" class="blue">合约详情说明</a> </div>
+          </div>
+        </div>
+      </dd>
+    </dl>
+  </div>
+  <div class="clear"></div>
+  <div class="butlm pb20">
+    <input name="input" type="button" value="确定" class="butbleucartd mr15 fonttb xhyqd" onclick="location.href='sjyy_1.html';"/>
+  </div>
+</div>
+<!--选合约 结束-->
+<!--选营业厅 开始-->
+<div class="cartbox">
+<div class="cartboxtitle"> <img src="../images/num2.gif" width="30" height="30" alt="" />选营业厅 </div>
+<div class="pl10 pr10 pt10 pb10">
+<div class="pb20">
+请输入地址关键字：<input name="" type="text" class="inputbox vmi" /> 区县：<select name="" class="vmi">
+  <option>请选择区/县</option>
+</select>
+<a href="#"><img src="../images/ssbox.gif" width="45" height="24" alt="" class=" vmi" /></a></div>
+<div class="clear"></div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="spqdtable">
+<thead>
+<tr>
+    <td></td>
+    <td>地市</td>
+    <td>所在区/县</td>
+    <td>营业厅名称</td>
+    <td>营业厅地址</td>
+  </tr>
+  </thead>
+  <tr>
+    <td><input name="radio" type="radio" value="" onclick="location.href='yy_yyt.html';"/></td>
+    <td>合肥</td>
+    <td>合肥</td>
+    <td>蜀山区井岗镇移动客服</td>
+    <td><span class="left ml10" style=" width:90px; text-align:left">合肥1号楼</span>
+    <span style=" display:block; text-align:center; width:130px; line-height:30px; height:30px; position:relative; float:right"><a href="#" class="blue time_tel">查看营业时间和电话</a>
+    
+    
+    
+     <span class="listmod_img hand">
+                                              
+            <div class="popu" style="display:none;"  >
+                 <b class="arrow"></b>
+                        <ul>
+                               <li><span>营业时间:</span><span></span></li>
+                               <li><span>营业厅电话：</span><span>13966730484</span></li>
+                          
+                        </ul>
+            </div>
+     </span></span>        
+      
+     
+    </td>
+    
+
+    
+    
+  </tr>
+   <tr>
+    <td><input name="radio" type="radio" value="" onclick="location.href='yy_yyt.html';"/></td>
+    <td>合肥</td>
+    <td>合肥</td>
+    <td>蜀山区井岗镇移动客服</td>
+    <td><span class="left ml10" style=" width:90px; text-align:left">合肥1号楼</span>
+    <span style=" display:block; text-align:center; width:130px; line-height:30px; height:30px; position:relative; float:right"><a href="#" class="blue time_tel">查看营业时间和电话</a>
+    
+    
+    
+     <span class="listmod_img hand">
+                                              
+            <div class="popu" style="display:none;"  >
+                 <b class="arrow"></b>
+                        <ul>
+                               <li><span>营业时间:</span><span></span></li>
+                               <li><span>营业厅电话：</span><span>13966730484</span></li>
+                          
+                        </ul>
+            </div>
+     </span></span>    
+    </td>
+  </tr>
+   <tr>
+    <td><input name="radio" type="radio" value="" onclick="location.href='yy_yyt.html';"/></td>
+    <td>合肥</td>
+    <td>合肥</td>
+    <td>蜀山区井岗镇移动客服</td>
+    <td><span class="left ml10" style=" width:90px; text-align:left">合肥1号楼</span>
+    <span style=" display:block; text-align:center; width:130px; line-height:30px; height:30px; position:relative; float:right"><a href="#" class="blue time_tel">查看营业时间和电话</a>
+    
+    
+    
+     <span class="listmod_img hand">
+                                              
+            <div class="popu" style="display:none;"  >
+                 <b class="arrow"></b>
+                        <ul>
+                               <li><span>营业时间:</span><span></span></li>
+                               <li><span>营业厅电话：</span><span>13966730484</span></li>
+                          
+                        </ul>
+            </div>
+     </span></span>    
+    </td>
+  </tr>
+   <tr>
+    <td><input name="radio" type="radio" value="" onclick="location.href='yy_yyt.html';"/></td>
+    <td>合肥</td>
+    <td>合肥</td>
+    <td>蜀山区井岗镇移动客服</td>
+    <td>
+    <span class="left ml10" style=" width:90px; text-align:left">合肥1号楼</span>
+    <span style=" display:block; text-align:center; width:130px; line-height:30px; height:30px; position:relative; float:right"><a href="#" class="blue time_tel">查看营业时间和电话</a>
+    
+    
+    
+     <span class="listmod_img hand">
+                                              
+            <div class="popu" style="display:none;"  >
+                 <b class="arrow"></b>
+                        <ul>
+                               <li><span>营业时间:</span><span></span></li>
+                               <li><span>营业厅电话：</span><span>13966730484</span></li>
+                          
+                        </ul>
+            </div>
+     </span></span>    </td>
+  </tr>
+   <tr>
+    <td><input name="radio" type="radio" value="" onclick="location.href='yy_yyt.html';"/></td>
+    <td>合肥</td>
+    <td>合肥</td>
+    <td>蜀山区井岗镇移动客服</td>
+    <td><span class="left ml10" style=" width:90px; text-align:left">合肥1号楼</span>
+    <span style=" display:block; text-align:center; width:130px; line-height:30px; height:30px; position:relative; float:right"><a href="#" class="blue time_tel">查看营业时间和电话</a>
+    
+    
+    
+     <span class="listmod_img hand">
+                                              
+            <div class="popu" style="display:none;"  >
+                 <b class="arrow"></b>
+                        <ul>
+                               <li><span>营业时间:</span><span></span></li>
+                               <li><span>营业厅电话：</span><span>13966730484</span></li>
+                          
+                        </ul>
+            </div>
+     </span></span>    
+    </td>
+  </tr>
+   <tr>
+    <td><input name="radio" type="radio" value="" onclick="location.href='yy_yyt.html';"/></td>
+    <td>合肥</td>
+    <td>合肥</td>
+    <td>蜀山区井岗镇移动客服</td>
+    <td><span class="left ml10" style=" width:90px; text-align:left">合肥1号楼</span>
+    <span style=" display:block; text-align:center; width:130px; line-height:30px; height:30px; position:relative; float:right"><a href="#" class="blue time_tel">查看营业时间和电话</a>
+    
+    
+    
+     <span class="listmod_img hand">
+                                              
+            <div class="popu" style="display:none;"  >
+                 <b class="arrow"></b>
+                        <ul>
+                               <li><span>营业时间:</span><span></span></li>
+                               <li><span>营业厅电话：</span><span>13966730484</span></li>
+                          
+                        </ul>
+            </div>
+     </span></span>    
+    </td>
+  </tr>
+   <tr>
+    <td><input name="radio" type="radio" value="" onclick="location.href='yy_yyt.html';"/></td>
+    <td>合肥</td>
+    <td>合肥</td>
+    <td>蜀山区井岗镇移动客服</td>
+    <td><span class="left ml10" style=" width:90px; text-align:left">合肥1号楼</span>
+    <span style=" display:block; text-align:center; width:130px; line-height:30px; height:30px; position:relative; float:right"><a href="#" class="blue time_tel">查看营业时间和电话</a>
+    
+    
+    
+     <span class="listmod_img hand">
+                                              
+            <div class="popu" style="display:none;"  >
+                 <b class="arrow"></b>
+                        <ul>
+                               <li><span>营业时间:</span><span></span></li>
+                               <li><span>营业厅电话：</span><span>13966730484</span></li>
+                          
+                        </ul>
+            </div>
+     </span></span>    
+    </td>
+  </tr>
+</table>
+ <div class="page pl20 pt20 tcenter">共<span class="red">20</span>条记录 共<span class="red">2</span>页 <a href="#">首页</a>   <a href="#">上一页</a> <span class="red">1</span> <a href="#">2</a> <a href="#">下一页</a> <a href="#">末页</a> 每页<span class="red">10</span>条 跳转：<input type="text" class="inputbox vmi" style="width:40px;" />
+ <a href="#"><img src="../images/go.gif" width="32" height="18" alt="" class="vmi" /></a></div>
+</div>
+
+<p class="pt20"><span class="left pl50"><input name="" type="checkbox" value="" /> <a href="#">购机协议</a></span>
+  <input class="butbleucartd butbleucart fonttb ml20 left" type="button" value="确定" onclick="location.href='sjyy_cg.html';"/>
+<div class="clear"></div>
+</p>
+<p>&nbsp;</p>
+</div>
+<!--选营业厅 结束-->
+
+
+
+<p>&nbsp;</p>
+</div>
+<!--#include virtual="../include/foot_menu.html"-->
+</body>
+</html>

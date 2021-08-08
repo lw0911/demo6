@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery1.42.min.js" type="text/javascript"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="js/publicNav.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="logo_blk">
+	<div class="logo">
+		<img src="images/logogs.gif" width="260" height="75">
+	</div>
+</div>
+<div class="jdCont" style="background: #f5f5f5;height: 390px;width: 1015px;">
+<div class="login_box">
+	<div class="pic">
+	        <img src="images/login_bg.jpg"/>
+	</div>
+	<div class="login_form">
+		<h3><a href="register.html">注册</a>登录地友素品</h3>
+		<div class="login_list">
+			<p class="login_cont">
+				<input id="login_user"class="login_txt style_border"type="text"value="邮箱/手机号/昵称"autocomplete="off" name="login" maxlength="20"onfocus="javascript:loginf();" onblur="javascript:loginb(this.value);">				
+				<span class="user_icon"></span>
+				<div id="loginusername" class="msg_error"></div>
+			</p>
+		</div>
+		<div class="login_list">					
+			<p class="login_cont">
+				<input  class="login_txt style_border"type="password" value="" name="password" maxlength="20" id="pwd_login" onfocus="javascript:checkloginpwdf();" onblur="javascript:checkloginpwdb(this.value);"/>
+	 			<label for="pwd_login" class="prompt_login1">密码</label>					
+				<span></span>					
+				<span class="pwd_icon"></span>	
+				<div id="loginpwdname" class="msg_error"></div>
+			</p>					
+		</div>
+		<div class="login_btn_wrap">
+			<input type="submit" class="login_btn" value="立即登录">					
+		</div>
+
+		<div class="fast_login">					
+			<h3>合作网站账户登录</h3>				
+			<div class="fast_way">				
+				<a href="javascript:;" class="qq_way"></a>					
+				<a href="javascript:;" class="sina_way"></a>				
+				<a href="javascript:;" class="weixin_way"></a>			
+			</div>	
+			<!-- <div class="more_way_wrap">
+				<h4>更多登录方式&gt;&gt;</h4>	
+			</div> -->
+		</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+ $(function(){
+		$(".login_txt").focus(function(){
+			  $(this).addClass("login_focus");
+			  $(this).removeClass("style_border");
+			   if($(this).val() ==this.defaultValue){  
+                  $(this).val("");           
+			  }
+		}).blur(function(){
+			 $(this).removeClass("login_focus");
+			 $(this).addClass("style_border");
+			  if ($(this).val() == '') {
+                $(this).val(this.defaultValue);
+             }
+		});
+    })
+
+ 	function loginf(){
+		document.getElementById("loginusername").innerHTML="请输入您的用户名或注册邮箱";
+
+	}
+
+	function loginb(login_user){
+		if(login_user==null||login_user==''){
+			document.getElementById("loginusername").innerHTML="";
+		}else if(login_user.length<1){
+			document.getElementById("loginusername").innerHTML="请输入您的用户名或注册邮箱";
+		}else{
+			// document.getElementById("loginusername").innerHTML="<img src='images/right.gif'></img>";
+			document.getElementById("loginusername").innerHTML="";
+		}
+	}
+	function checkloginpwdf(){
+		document.getElementById("loginpwdname").innerHTML="请输入密码";
+		$('.prompt_login1').css('display','none');
+	}
+
+	function checkloginpwdb(pwd_login){
+		if(pwd_login==null||pwd_login==''){
+			document.getElementById("loginpwdname").innerHTML="";
+			$('.prompt_login1').css('display','block');
+		}else if(pwd_login.length<6){
+			document.getElementById("loginpwdname").innerHTML="请输入至少6位以字母开头，数字或符号";
+			$('.prompt_login1').css('display','none');
+		}else{
+			// document.getElementById("loginpwdname").innerHTML="<img src='images/right.gif'></img>";
+			document.getElementById("loginpwdname").innerHTML="";
+		}
+	}
+</script>
+
+<!--footer搜索-->
+<div class="indexContFooter" style="height: auto;">
+  <!--底层foot-start-->
+    <div class="footer_center" style="margin-top: 10px;">
+        <div class="links">
+          <a href="javascript:;">关于我们</a>|
+          <a href="javascript:;">联系我们</a>|
+          <a href="javascript:;">友情链接</a>|
+          <a href="javascript:;">免责条款</a>|
+          <a href="javascript:;">广告服务</a>|
+          <a href="javascript:;">食品流通许可证</a>|
+          <a href="javascript:;">营业执照</a>
+        </div>
+  </div>
+  <div class="footer_copyright">
+    <p> Copyright (c) 2014-2019 5RICE.吾米网 版权所有 黑ICP备11002788号 保留一切权利。 客服热线：400-400-5555 </p>
+    <p>京公网安备 110105001608 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</p>
+  </div>
+  <div class="footer_cx">
+      <p>
+        <a href="javascript:;"><img src="images/footerbomC.png" width="112"height="40"></a>
+        <a href="javascript:;"><img src="images/footerbomX.gif" width="112"height="40"></a>
+        
+      </p>
+  </div>
+  </div>
+  <!--底层foot]]-->
+</body>
+</html>

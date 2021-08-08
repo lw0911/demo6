@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<<div class="header">
+   <div class="wrap head">
+       <div class="logo fl"><a href="index.html"><img src="images/logo.jpg"></a></div>
+       <div class="nav fr">
+           <a href="index.html">关于我们</a>
+           <a href="investment.html" class="nav-cut">投资策略</a>
+           <a href="invest-team.html">投资团队</a>
+           <a href="enterprise.html">企业文化</a>
+           <a href="news.html">新闻中心</a>
+           <a href="contact.html" >联系我们</a>
+       </div>
+   </div>
+</div>
+
+<div class="content">
+    <div class="inves">
+          <div class="inv wrap">
+              <div class="inv-title">
+                  <div class="line fl"></div>
+                  <div class="inv-a fl">投资策略</div>
+                  <div class="line fl"></div>
+              </div>
+              <div class="inv-b">INVESTMENT STRATEGY</div>
+              <div class="inv-d">
+                  <ul>
+                      <li><a href="invest-vc.html"><img src="images/inv-d1.png"></a>
+                          <div class="kl-inside">投资策略-VC</div>
+                      </li>
+                      <li><a href="invest-vc.html"><img src="images/inv-d2.png"></a>
+                          <div class="kl-inside">投资策略-AV</div>
+                      </li>
+                      <li><a href="invest-vc.html"><img src="images/inv-d4.png"></a>
+                          <div class="kl-inside">夹层基金</div>
+                      </li>
+                      <li><a href="invest-vc.html"><img src="images/inv-d3.png"></a>
+                          <div class="kl-inside">并购基金</div>
+                      </li>
+                  </ul>
+              </div>
+              
+              <div class="inv-e">合作、团结、发展、交流、共赢</div>
+              <div class="inv-f">COOPERATION, SOLIDANITY, DEVELOPMENT, COMMUNICATION AND WIN-WIN</div
+          
+          ></div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+   $(".inv-d li").hover(function(){
+	  $(this).find(".kl-inside").stop(false,true).fadeIn(300)
+	 },function(){
+	  $(this).find(".kl-inside").stop(false,true).fadeOut(300)
+	 }
+	 )
+</script>
+</body>
+</html>

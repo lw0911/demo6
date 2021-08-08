@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-01-08 11:33:43
+ * @version $Id$
+ */
+*{color:#666;}
+.red{border-bottom: 2px solid #ff3a27;cursor: pointer;}
+.head{width:1000px;height:55px;text-align:left;padding:15px 25px;}
+.head .logo{width:200px;}
+.head .nav{width:800px;!important}
+.head .nav ul{width:610px;text-align: center;line-height: 55px;margin-left:166px;}
+.head .nav ul li{float:left;color:#a6a5a5;}
+.head .nav ul li a:hover{color:#ff3a27;}
+#scrollbox{}
+#scrollbox ul {height:350px;position:absolute;}
+#scrollbox ul li{float: left}
+.container{background: none repeat scroll 0 0 #fafafa;padding:75px 0;}
+.container .content{width:950px;}
+.container .content #scrollbox{width:350px;height:350px;overflow:hidden;margin:0 auto;position:relative;padding:90px 25px 25px 25px;}
+.container .content #scrollbox ul {position:absolute;}
+.container .content #scrollbox ul li{float: left}
+.container .content #scrollbox ol{position: absolute;left:40%;top:90%;}
+.container .content #scrollbox ol li{width:13px;height:13px;margin-left:10px;overflow:hidden;float:left;background: url(../image/banner/dot.png) no-repeat;background-position: -13px 0;}
+.container .content #scrollbox ol .curdot{background: url(../image/banner/dot.png) no-repeat;background-position: 0 0;}
+.container .loginbox{}
+.container .loginbox .hd{line-height: 40px;border-bottom:2px solid #fafafa;}
+.container .loginbox .hd li{float:left;cursor: pointer}
+.cur{border-bottom:2px solid #ff3a27;}
+.container .loginbox .bd{background: #fff;padding:50px 0;border:1px solid #ccc}
+.container .loginbox .bd #login .tbox{width: 313px;height:50px;border:1px solid #ccc}
+.container .loginbox .bd #login .username label{width:20px;height:30px;margin-top:10px;background:url(../image/icon/icon_login.png);background-position: 0 6px;display: inline-block;}
+.container .loginbox .bd #login .pwd label{width:20px;height:30px;margin-top:10px;background:url(../image/icon/icon_login.png);background-position: 0 -22px;display: inline-block;}
+.container .loginbox .bd #login .logtext{width:260px;height:50px;line-height:50px;border:none;float: right;font-size: 16px;font-family: "微软雅黑"}
+.container .loginbox .bd .auto-login{width:315px;padding: 18px 0 29px 0}
+.container .loginbox .bd .auto-login .autol{width: 260px;text-align: left}
+.container .loginbox .bd .auto-login a:hover{text-decoration: underline;;color:#ff3a27;}
+.container .loginbox .bd  input[type=submit]{width: 313px;height:40px;line-height:35px;font-size:16px;color:#fff;background: #ff3a27;border:1px;border-radius: 5px;font-family: "微软雅黑"}
+.container .loginbox .bd  #login .linebox{width:348px;margin-top:40px;}
+.container .loginbox .bd  #login .linebox .linewrap{width:150px;line-height: 4px;}
+.container .loginbox .bd  #login .linebox .line{width:115px;height:2px;display:inline-block;border-top: 1px dotted #6f6f6f;border-bottom: 1px dotted #6f6f6f;}
+.container .loginbox .bd #register dl{width:316px;height:60px;clear:both;line-height: 30px;font-size: 16px}
+.container .loginbox .bd #register dl dt{width:90px;float:left;text-align:right;}
+.container .loginbox .bd #register dl dd{width:224px;float:left;text-align: left}
+.container .loginbox .bd #register dl input{width:222px;height:30px;font-size: 16px;border:1px solid #ccc}
+
+.container .loginbox .bd ul.partner{margin: 25px auto 0;width:358px;}
+.container .loginbox .bd ul.partner li{float: left;width:89px;text-align:center;}
+.container .loginbox .bd ul.partner li a{width: 50px;margin: 0 auto;display: block}
+.container .loginbox .bd ul.partner li a i{width:50px;height:50px;display: block;background:url(../image/icon/icon_login.png);}
+.container .loginbox .bd ul.partner li a i.pq{background-position: -26px 0;}
+.container .loginbox .bd ul.partner li a i.px{background-position: -84px 0;}
+.container .loginbox .bd ul.partner li a i.pw{background-position: -141px 0;}
+.container .loginbox .bd ul.partner li a i.pm{background-position: -197px 0;}
+

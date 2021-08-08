@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-01-10 16:18:05
+ * @version $Id$
+ */
+.container .themebox{width: 1124px;padding-bottom:50px;}
+.container .themebox .theme-pic .headline{padding: 15px 30px 10px;color:#fff;}
+.container .themebox .theme-pic .headline .numbox{border-top: 1px solid #fff;border-bottom:1px solid #fff;margin-bottom:15px;}
+.container .themebox .theme-pic .headline b{font-size: 55px;}
+.container .themebox .theme-pic .goodlist{height:358px;}
+.container .themebox .theme-pic .goodlist ul li{width:113px;height:113px;}
+.container .themebox .theme-pic .goodlist ul li.count{width:113px;height:auto;margin-top:9px;padding: 24px 0;}
+.container .themebox .theme-pic .goodlist ul li.count .num{color:#23c78a;font-size: 30px;}
+.container .themebox .theme-pic .show-pic{position: relative;overflow: hidden;cursor: pointer;}
+.container .themebox .theme-pic .show-pic .light{width:611px;height:358px;position: absolute;top:0;left:0;cursor: pointer;}
+.container .themebox .theme-pic .show-pic:hover .light{	
+					background-image: -webkit-radial-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0));
+					background-image: -moz-radial-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0));
+					background-image: -o-radial-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0));
+					background-image: -ms-radial-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0));
+					background-image: radial-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0));}	    
+.container .themebox .theme-textbox{}
+.container .themebox .theme-textbox .theme-text{width:839px;text-align: left;padding-left:148px;padding-bottom:50px;}
+.container .themebox .theme-textbox .theme-text .title{line-height:80px;font-size: 25px;font-weight: bold}
+.container .themebox .theme-textbox .theme-text p{width:700px;float:left;line-height:20px;color:#6f6f6f;}
+.container .themebox .theme-textbox .entbtn{padding: 50px 0}
+.container .themebox .theme-textbox .entbtn input{border:none;width:137px;height:40px;font-size: 16px;color:#fff;border-radius: 5px;font-family: "微软雅黑";}
+.container .themebox .theme-textbox .line{height:2px;border-top: 1px dotted #6f6f6f;border-bottom: 1px dotted #6f6f6f;margin-left: 147px;}

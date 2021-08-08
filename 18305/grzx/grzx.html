@@ -1,0 +1,1138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by dede58.com"/>
+<title>个人中心</title>
+<link href="../css/public.css" rel="stylesheet" type="text/css"/>
+<link href="../css/grzx.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/grzx.js"></script>
+<script type="text/javascript" src="../js/layerModel/jquery.layerModel.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../js/layerModel/layerModel.css"/>
+<script type="text/javascript">
+
+$(function(){
+	
+		$(".dd_qr").click(function(){
+			$("#dd_qr").layerModel({
+				"head" : false,
+				"staySame" : true,
+				"bgColor" : "#000",
+				"opacity" : "0.7"
+		
+			});	
+			
+			
+		})
+		})
+</script>
+
+</head>
+
+<body>
+<!--#include virtual="../include/top.html"-->
+<!--#include virtual="../include/top_menu.html"-->
+<div class="box">
+  <div class="grzx_tip">手机旗舰店 > 
+  <span>个人中心</span></div>
+  <div class="grzx_text">
+  	1、通过网上选择预约的客户，生成的预约单最多为您保留24小时， 24小时内您可点击“撤销订单”进行撤单。在线支付订单24小时内如您的订单未处理也可点击“撤单”按钮撤单（机卡一体和配件订单不支持撤单）。<br />
+2、点击订单号可以查看您的订单详情，如需其它帮助，请咨询“在线客服”。<br />
+3、购买手机用户，请您在点击“立即购买”按钮20分钟内完成订单支付，如超时后再次支付将重新判断库存。未完成的在线支付订单可进入“个人中心”查看，未完成订单最多为您保留72小时。团购手机订单最多为<br />&nbsp;&nbsp;&nbsp;&nbsp;您保留30分钟，超时订单失效。<br />
+4、购买号码用户，或手机和号码一起购买的用户，请您在选择完号码填写入网资料后1个小时内完成订单支付，如超时则号码已经释放，系统不保留未完成支付的订单继续支付状态。机卡一体订单不支持撤单。<br />
+5、撤单后，您已支付的金额将在申请退费后的7个工作日内返还到您的银行账户上。<br />
+6、如果您的订单已出库，您可以登录顺丰官网实时查询物流状态。<br />
+7、已在移动公司参加过优惠购机活动的用户，在协议期内不能再次参加购机活动。您可以选择使用新号码参加购机活动。
+  </div>
+</div>
+<div class="box" style="margin-top:10px;">
+	<div class="grzx_left">
+    	<div class="left_t" >
+        	<p><img src="../images/grzx1.gif" /></p>
+        </div>
+        <div class="left_c">
+        	<ul>
+            	<li class="hover" id="sctwq1" onmouseover="setTab('sctwq',1,4)"><span>我的订单　　　></span></li>
+                <li id="sctwq2" onmouseover="setTab('sctwq',2,4)"><span>我的资料　　　></span></li>
+                <li id="sctwq3" onmouseover="setTab('sctwq',3,4)"><span>我的评价　　　></span></li>
+                <li id="sctwq4" onmouseover="setTab('sctwq',4,4)"><span>我的投诉　　　></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="grzx_right"  id="con_sctwq_1">
+  		<div class="grzx_right_title">
+        	<div class="title1">我的订单</div>
+	        <div class="dd_tit">
+	        	<ul>
+	            	<li class="hover" id="sctwo1" onmouseover="setTab('sctwo',1,5)">全部订单</li>
+	                <li id="sctwo2" onmouseover="setTab('sctwo',2,5)">手机订单</li>
+	                <li id="sctwo3" onmouseover="setTab('sctwo',3,5)">号码订单</li>
+	                <li id="sctwo4" onmouseover="setTab('sctwo',4,5)">换卡订单</li>
+	                <li id="sctwo5" onmouseover="setTab('sctwo',5,5)">配件订单</li>
+	            </ul>
+	        </div>
+        </div>
+        
+        <div class="dd_table" id="con_sctwo_1" >
+          <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <th width="175">订单编号</th>
+    <th width="84">订单金额</th>
+    <th width="84">配送方式</th>
+    <th width="158">下单时间</th>
+    <th width="96">订单类型</th>
+    <th width="85">订单状态</th>
+    <th width="88">物流状态</th>
+    <th width="79">支付方式</th>
+    <th width="114">操作</th>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="tgdd.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>裸机购买订单 </td>
+    <td>已撤销</td>
+    <td>未发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a>  <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a></td>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="hmyyxq.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>号码预约 </td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td>
+      <a class="c0085d0" href="#">撤销</a>  
+      <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a>
+      <a href="#" class="c0085d0 dd_qr">确认</a>
+    </td>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="ljzxxq.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>机卡一体订单</td>
+    <td>已撤销</td>
+    <td>未发货</td>
+    <td>在线支付</td>
+    <td>
+    <a class="c0085d0 logistic_ck" href="#nogo">查看物流</a>  
+    
+    
+    
+    <div  class="cklogistic">
+ 	<div class="cklogistic_nr">
+     	<div class="wl_close"></div>
+     	
+     		<span></span>
+     	
+     	
+     	<li class="wlbt">运单号：1036547329408</li>
+     		
+     		<ul>
+         	<li class="wlbt">
+             	<p class="wl_clsj">处理时间</p>
+                 <p class="wl_cldd">处理地点</p>
+                 <p class="wl_clzt">处理状态</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-18  15:45:00</p>
+                 <p class="wl_cldd">合肥速递公司电子商务营业部</p>
+                 <p class="wl_clzt">收寄</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-18  15:45:11</p>
+                 <p class="wl_cldd">合肥速递公司电子商务营业部</p>
+                 <p class="wl_clzt">揽收</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-18  18:58:28</p>
+                 <p class="wl_cldd">合肥速递公司电子商务营业部</p>
+                 <p class="wl_clzt">离开处理中心,发往安徽省物流集散中心</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-18  19:04:51</p>
+                 <p class="wl_cldd">安徽省物流集散中心</p>
+                 <p class="wl_clzt">到达处理中心,来自合肥速递公司电子商务营业部</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-18  19:45:09</p>
+                 <p class="wl_cldd">安徽省物流集散中心</p>
+                 <p class="wl_clzt">离开处理中心,发往六安市</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-19  08:08:03</p>
+                 <p class="wl_cldd">六安市</p>
+                 <p class="wl_clzt">到达处理中心,来自安徽省物流集散中心</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-19  08:28:00</p>
+                 <p class="wl_cldd">六安市分公司城西揽投站</p>
+                 <p class="wl_clzt">安排投递</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-19  08:35:13</p>
+                 <p class="wl_cldd">六安市</p>
+                 <p class="wl_clzt">离开处理中心,发往六安市分公司城西揽投站</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-19  08:54:05</p>
+                 <p class="wl_cldd">六安市分公司城西揽投站</p>
+                 <p class="wl_clzt">到达处理中心,来自六安市</p>
+             </li>
+             	
+             	<li>
+                 <p class="wl_clsj">2014-06-19  11:05:00</p>
+                 <p class="wl_cldd">六安市分公司城西揽投站</p>
+                 <p class="wl_clzt">妥投</p>
+             </li>
+             	
+         </ul>
+     	
+     	
+     </div>
+     <div class="pos_a pb-r">
+         <b class="b1"></b>
+         <b class="b2"></b>
+         <b class="b3"></b>
+     </div>
+ </div>
+    
+    
+    
+    
+    <a class="c0085d0" href="#">撤销</a>
+    <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付 </a></td>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="tgdd.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td><p >团购订单</p></td>
+    <td>已撤销</td>
+    <td>未发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a>  <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a></td>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="tgdd.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>未发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a>  <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a></td>
+  </tr>
+   <tr>
+    <td><a class="c0085d0" href="hdfk.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td><p >货到付款订单</p></td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a> <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a> <a href="#" class="c0085d0 dd_qr">确认</a></td>
+  </tr>
+   <tr>
+    <td><a class="c0085d0" href="ljyy.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td><p >裸机预约订单</p></td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a> <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a> <a href="#" class="c0085d0 dd_qr">确认</a></td>
+  </tr>
+   <tr>
+    <td><a class="c0085d0" href="tgdd.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td><p >裸机购买订单</p></td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a> <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a> <a href="#" class="c0085d0 dd_qr">确认</a></td>
+  </tr>
+   <tr>
+    <td><a class="c0085d0" href="ljyy.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td><p >终端预约订单</p></td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a> <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a> <a href="#" class="c0085d0 dd_qr">确认</a></td>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="hmzfxq.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td><p >号码购买订单</p></td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a> <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a> <a href="#" class="c0085d0 dd_qr">确认</a></td>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="tgdd.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td><p >外呼手机订单</p></td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a> <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a> <a href="#" class="c0085d0 dd_qr">确认</a></td>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="ljyy.html">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td><p >外呼预约订单</p></td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="#">撤销</a> <a href="../cart/pay_zf.html" target="_blank" class="c0085d0">支付</a> <a href="#" class="c0085d0 dd_qr">确认</a></td>
+  </tr>
+          </table>
+
+
+<div class="page">
+        	<div style=" float:left">
+            共<span class="c005bab">29</span>条记录　<span class="c005bab">共32</span>页　<a href="###">首页</a><a href="###">上一页</a><a class="c005bab" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a><a href="###">5</a><a href="###">6</a><a href="###">下一页</a><a href="###">末页</a>　每页<span class="c005bab">10</span>条　跳转：
+            </div>
+            <input type="text"/>
+            <p class="left mt10 ml10" style="cursor:pointer"><img src="../images/grzx_page2.gif" /></p>
+        </div>
+
+        </div>
+        
+        
+        
+        
+        <div class="dd_table none" id="con_sctwo_2">
+          <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <th>订单编号2</th>
+    <th>订单金额2</th>
+    <th>配送方式2</th>
+    <th>下单时间</th>
+    <th>订单类型</th>
+    <th>订单状态</th>
+    <th>物流状态</th>
+    <th>支付方式</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+</table>
+
+
+<div class="page">
+        	<div style=" float:left">
+            共<span class="c005bab">29</span>条记录　<span class="c005bab">共32</span>页　<a href="###">首页</a><a href="###">上一页</a><a class="c005bab" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a><a href="###">5</a><a href="###">6</a><a href="###">下一页</a><a href="###">末页</a>　每页<span class="c005bab">10</span>条　跳转：
+            </div>
+            <input type="text"/>
+            <p class="left mt10 ml10" style="cursor:pointer"><img src="../images/grzx_page2.gif" /></p>
+        </div>
+
+        </div>
+        
+        
+        
+        <div class="dd_table none" id="con_sctwo_3" >
+          <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <th>订单编号3</th>
+    <th>订单金额3</th>
+    <th>配送方式3</th>
+    <th>下单时间</th>
+    <th>订单类型</th>
+    <th>订单状态</th>
+    <th>物流状态</th>
+    <th>支付方式</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+</table>
+
+
+<div class="page">
+        	<div style=" float:left">
+            共<span class="c005bab">29</span>条记录　<span class="c005bab">共32</span>页　<a href="###">首页</a><a href="###">上一页</a><a class="c005bab" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a><a href="###">5</a><a href="###">6</a><a href="###">下一页</a><a href="###">末页</a>　每页<span class="c005bab">10</span>条　跳转：
+            </div>
+            <input type="text"/>
+            <p class="left mt10 ml10" style="cursor:pointer"><img src="../images/grzx_page2.gif" /></p>
+        </div>
+
+        </div>
+        
+        
+        
+        <div class="dd_table none" id="con_sctwo_5" >
+          <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <th>订单编号3</th>
+    <th>订单金额3</th>
+    <th>配送方式3</th>
+    <th>下单时间</th>
+    <th>订单类型</th>
+    <th>订单状态</th>
+    <th>物流状态</th>
+    <th>支付方式</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+</table>
+
+
+<div class="page">
+        	<div style=" float:left">
+            共<span class="c005bab">29</span>条记录　<span class="c005bab">共32</span>页　<a href="###">首页</a><a href="###">上一页</a><a class="c005bab" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a><a href="###">5</a><a href="###">6</a><a href="###">下一页</a><a href="###">末页</a>　每页<span class="c005bab">10</span>条　跳转：
+            </div>
+            <input type="text"/>
+            <p class="left mt10 ml10" style="cursor:pointer"><img src="../images/grzx_page2.gif" /></p>
+        </div>
+
+        </div>
+        
+        
+        <div class="dd_table none" id="con_sctwo_4" >
+          <table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <th>订单编号3</th>
+    <th>订单金额3</th>
+    <th>配送方式3</th>
+    <th>下单时间</th>
+    <th>订单类型</th>
+    <th>订单状态</th>
+    <th>物流状态</th>
+    <th>支付方式</th>
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td><a class="c0085d0" href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+   <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+  <tr>
+    <td><a href="###">20140901181212121</a></td>
+    <td>￥394.00 </td>
+    <td>送货上门</td>
+    <td>2014-09-08  18:22:22</td>
+    <td>手机订单</td>
+    <td>已撤销</td>
+    <td>已发货</td>
+    <td>在线支付</td>
+    <td><a class="c0085d0" href="###">撤销</a>  <a class="c0085d0" href="###">支付</a></td>
+  </tr>
+</table>
+
+
+<div class="page">
+        	<div style=" float:left">
+            共<span class="c005bab">29</span>条记录　<span class="c005bab">共32</span>页　<a href="###">首页</a><a href="###">上一页</a><a class="c005bab" href="###">1</a><a href="###">2</a><a href="###">3</a><a href="###">4</a><a href="###">5</a><a href="###">6</a><a href="###">下一页</a><a href="###">末页</a>　每页<span class="c005bab">10</span>条　跳转：
+            </div>
+            <input type="text"/>
+            <p class="left mt10 ml10" style="cursor:pointer"><img src="../images/grzx_page2.gif" /></p>
+        </div>
+
+        </div>
+        
+        
+        
+    </div>
+    
+    
+    <div id="con_sctwq_2" class="grzx_right" style="display:none">
+    	<div class="grzx_right_title">
+        	<div class="title1">我的资料</div>
+	        <div class="dd_tit" style="height:60px">
+	        	<p>已保存有效地址</p>
+                <p>地址只能保存<span class="c005bab">10</span>条，请仔细添加</p>
+	        </div>
+        </div>
+    	<div class="dd_table" >
+        	<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <th>收货人</th>
+    <th width="40%" >地市区域</th>
+    <th>手机号码</th>
+    <th>备用联系方式</th>
+   
+    <th>操作</th>
+  </tr>
+  <tr>
+    <td>某某</td>
+    <td >安徽省合肥市蜀山区合作化南路166号移动设计
+院  三楼989室....... </td>
+    <td>15806636666</td>
+    <td>15806636666</td>
+   
+    <td><a class="c0085d0" href="###">删除</a> | <a class="c0085d0" href="###">修改</a></td>
+  </tr>
+
+  
+   
+</table>
+<div class="shxx">
+	<p style="margin-left:30px;">请填写收货人信息</p>
+    <p class="mt10"><label>*收货人姓名</label><input type="text" /></p>
+    <p class="mt10">
+    	<label>*地市区域</label> 
+   		<select name="select" id="select">
+    		<option>请选择省</option>
+ 	    </select>
+        <select name="select" id="select">
+    		<option>请选择地区</option>
+ 	    </select>
+        <select name="select" id="select">
+    		<option>请选择区县</option>
+ 	    </select>
+        <select name="select" id="select">
+    		<option>请选择村镇</option>
+ 	    </select>
+        <input style="width:120px;" type="text" />
+	</p>
+	<p class="mt10"><label>*收货人手机号码</label><input type="text" /></p>
+	<p class="mt10"><label>备用联系方式</label><input type="text" /></p>
+    <p class="mt20" style="margin-left:230px;"><a href="###"><img src="../images/qr_btn.gif" /></a></p>	
+</div>
+        </div>
+    </div>
+    
+    
+    <div class="grzx_right none"  id="con_sctwq_3">
+    	<div class="grzx_right_title">
+        	<div class="title1">我的评价</div>
+	        <div class="dd_tit" style="height:0px; font-size:0; line-height:0px;"></div>
+        </div>
+        <div class="dd_table" >
+        	<table width="100%" cellpadding="0" cellspacing="0">
+			  <tr>
+			    <th>订单编号</th>
+			    <th>商品名称</th>
+			    <th>订单金额</th>
+			    <th>下单时间</th>
+			    <th>评价</th>
+			  </tr>
+			  <tr>
+			    <td><a class="c005bab" href="###">20140901181212121</a></td>
+			    <td >酷派8180 </td>
+			    <td>￥5899  </td>
+			    <td>2014-09-20  22:11:22 </td>
+			   
+			    <td><a class="c005bab" href="###">发表评价</a></td>
+			  </tr>
+              <tr>
+			    <td><a class="c005bab" href="###">20140901181212121</a></td>
+			    <td >酷派8180 </td>
+			    <td>￥5899  </td>
+			    <td>2014-09-20  22:11:22 </td>
+			   
+			    <td><a class="c005bab" href="###">发表评价</a></td>
+			  </tr>
+			</table>
+            <div class="pingjia">
+            	<div class="title1" style="background-color:#fff">发表评价</div>
+               
+                
+                <p class="star">商品评分：<span onmouseover="rate(this,event)"><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="差" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="较差" /><img src="../images/star_hui.gif" style="vertical-align:middle;cursor:pointer;" title="还行" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="好" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="非常好" /></span><span class="pl20">服务态度：</span><span onmouseover="rate(this,event)"><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="差" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="较差" /><img src="../images/star_hui.gif" style="vertical-align:middle;cursor:pointer;" title="还行" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="好" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="非常好" /></span><span class="pl20">物流速度：</span><span onmouseover="rate(this,event)"><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="差" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="较差" /><img src="../images/star_hui.gif" style="vertical-align:middle;cursor:pointer;" title="还行" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="好" /><img style="vertical-align:middle;cursor:pointer;" src="../images/star_hui.gif" title="非常好" /></span></p>
+                <p class="pj_btn" ><a href="###"><img src="../images/pj_btn.gif" width="121" height="36" /></a></p>
+            </div>
+            <div class="pj_bottom">
+            	评价说明：<br />
+1、请在订单签收后7天内发表评价，超过7天系统默认为好评。点击星星可以修改评分哦。<br />
+2、评价发表后不可再次修改。
+            </div>
+    	</div>
+    </div>
+    
+    
+    
+    <div class="grzx_right none"  id="con_sctwq_4">
+    	<div class="grzx_right_title">
+        	<div class="title1">我的投诉</div>
+	        <div class="dd_tit" style="height:0px; font-size:0; line-height:0px;"></div>
+        </div>
+        <div class="dd_table" >
+        	<table width="100%" cellpadding="0" cellspacing="0">
+			  <tr>
+			    <th>订单编号</th>
+			    <th>商品名称</th>
+			    <th>订单金额</th>
+			    <th>下单时间</th>
+			    <th>评价</th>
+			  </tr>
+			  <tr>
+			    <td><a class="c005bab" href="###">20140901181212121</a></td>
+			    <td >酷派8180 </td>
+			    <td>￥5899  </td>
+			    <td>2014-09-20  22:11:22 </td>
+			   
+			    <td><a class="c005bab wyts" href="###">我要投诉</a><img style="vertical-align:middle; margin-left:5px;" src="../images/tousu.gif"  /></td>
+			  </tr>
+              <tr>
+			    <td><a class="c005bab" href="###">20140901181212121</a></td>
+			    <td >酷派8180 </td>
+			    <td>￥5899  </td>
+			    <td>2014-09-20  22:11:22 </td>
+			   
+			    <td><a class="c005bab wyts" href="###">我要投诉</a><img style="vertical-align:middle; margin-left:5px;" src="../images/tousu.gif"  /></td>
+			  </tr>
+			</table>
+             <div class="pingjia none" id="ts_c">
+            	<div class="title1" style="background-color:#fff">投诉内容</div>
+                
+                <textarea></textarea>
+                <p class="pj_btn" ><a href="###"><img src="../images/tousu_btn.gif" width="120" height="37" /></a></p>
+                
+            </div>
+            <div class="pj_bottom">
+            	投诉说明：<br />
+1、投诉时，请说明投诉内容，不要带有侮辱、过激言语。<br />
+2、提交后我们将在最短的时间内给予答复，谢谢合作。
+            </div>z
+      </div>
+    </div>
+    
+    
+</div>
+
+<div class="clear"></div>
+<!--弹出层-->
+<div id="dd_qr" class="tc_tjdd pb20" style="display:none">
+	<h3>
+        <span class="left wid140 block">系统提示</span>
+        <a href="#" class="left clos_zf" onClick="$('#dd_qr').close()"></a>
+    </h3>
+    <p class="txt pb20 pt20">您好 , 　请点击“确认”按钮，收货成功！ </p>
+    <p class=" tstxt">
+  您将获赠的“5*6”元话费包当月到账、30M流量包当月到账，如有问题请咨询10086，感谢您的支持。</p>
+  <p class="a_zf">
+  
+    
+   	<a href="../grzx/grzx.html"><img src="../images/dd_qr.jpg" width="100" height="36" /></a>
+    	<a href="../grzx/grzx.html" class=" ml15" onClick="$('#dd_qr').close()"><img src="../images/but_pc_33.jpg" width="100" height="36" /></a>
+        
+    
+    </p>
+<div class="clear"></div>
+
+</div>
+
+
+<!--#include virtual="../include/foot_menu.html"-->
+
+<script type="text/javascript">
+//滑动星星评分
+function rate(obj,oEvent){
+var imgSrc = '../images/star_hui.gif';
+var imgSrc_2 = '../images/star_huang.gif';
+if(obj.rateFlag) return;
+var e = oEvent || window.event;
+var target = e.target || e.srcElement; 
+var imgArray = obj.getElementsByTagName("img");
+for(var i=0;i<imgArray.length;i++){
+   imgArray[i]._num = i;
+   imgArray[i].onmouseover=function(){
+    if(obj.rateFlag) return;
+    var n=this._num+1;
+	/*switch(n)
+   {
+	   case 1:
+		 document.getElementById("result").innerHTML="较差"
+		 break
+	 case 2:
+		 document.getElementById("result").innerHTML="&nbsp;&nbsp;差"
+		 break	
+	 case 3:
+		 document.getElementById("result").innerHTML="还行"
+		 break	
+	 case 4:
+		 document.getElementById("result").innerHTML="推荐"
+		 break	
+	 case 5:
+		 document.getElementById("result").innerHTML="力荐"
+		 break	
+		 
+	   default:
+		 return;
+   }*/
+	var inputid=this.parentNode.previousSibling
+	inputid.value=this._num+1;
+   }
+}
+if(target.tagName=="IMG"){
+   for(var j=0;j<imgArray.length;j++){
+    
+    if(j<=target._num){
+     imgArray[j].src=imgSrc_2;
+    } else {
+     imgArray[j].src=imgSrc;
+    }
+	target.parentNode.onmouseout=function(){
+	var imgnum=parseInt(target.parentNode.previousSibling.value);
+		for(n=0;n<imgArray.length;n++){
+			imgArray[n].src=imgSrc;
+		}
+		for(n=0;n<imgnum;n++){
+			imgArray[n].src=imgSrc_2;
+		}
+		
+	}
+   }
+} else {
+	 return false;
+}
+}
+</script>
+
+</body>
+</html>

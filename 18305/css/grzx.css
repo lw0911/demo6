@@ -1,0 +1,119 @@
+@charset "utf-8";
+/*个人中心CSS by 魏彬*/
+
+.grzx_tip{ height:30px; line-height:30px; background:url(images/grzx_tip.gif) no-repeat 10px center; background-color:#efefef; border:1px solid #dddddd; color:#8b8b8b; font-weight:600; text-indent:40px;}
+.grzx_tip span{ color:#0085d0;}
+.grzx_text{ margin-top:10px;padding:15px 20px; background-color:#f8f8f8; color:#757575;border:1px solid #dddddd; font-size:12px;}
+.grzx_left{ width:220px; float:left; overflow:hidden;}
+.grzx_left .left_t{ width:220px; height:39px;}
+.grzx_left .left_c{ height:311px; border:1px solid #0085d0; border-top:none; background-color:#f8f8f8;  color:#4c4c4c}
+.left_c ul li{ height:37px; line-height:37px;  background:url(images/grzx_line.gif) no-repeat 0 bottom; cursor:pointer; border-top:1px solid #f8f8f8; border-bottom:1px solid #f8f8f8;}
+.left_c ul li span{ margin-left:40px;}
+.left_c ul li.hover{ background-image:none; background-color:#fff; border-top:1px solid #0085d0; border-bottom:1px solid #0085d0;}
+.grzx_right{ float:right; width:965px; }
+.grzx_right_title{ width:963px; overflow:hidden; border:1px solid #dddddd;}
+.grzx_right .title1{ height:45px; line-height:40px; color:#8fc320 ; background-color:#f8f8f8 ; text-indent:10px; font-size:16px; font-weight:600; }
+.dd_tit{ height:32px; padding-left:20px; overflow:hidden; background-color:#f8f8f8; border-bottom:2px solid #0085d0;}
+.dd_tit ul li{ width:90px; height:32px; line-height:32px; float:left; margin-right:10px;  background:url(images/grzx_dd.gif) no-repeat; font-size:16px; text-align:center; cursor:pointer; color:#404040; font-weight:500 }
+
+.dd_tit ul li.hover{background:url(images/grzx_dd1.gif) no-repeat;}
+.dd_table table{ width:965px;border-collapse:collapse; margin-top:-1px; font-size:12px;}
+.dd_table table th,.dd_table table td{ border:1px solid #ddd; text-align: center; height:35px; line-height:35px;}
+.dd_table table th{ background-color:#f8f8f8; font-weight:bold; font-size:14px; color:#404040}
+.dd_table table td a{ text-decoration:underline}
+.c0085d0{ color:#0085d0}
+.page{ height:40px; line-height:40px; margin-top:20px; padding-left:360px; text-align:right; font-size:12px; color:#404040; overflow:hidden}
+.page a{ padding:0 5px;}
+.page span.tz{ }
+.page input{ float:left; display:block; margin-top:10px;width:37px; height:15px; background:url(images/grzx_page1.gif) no-repeat; padding:3px}
+.shxx{ border:1px solid #ccc; border-top:none; padding:20px 0 ;}
+.shxx p{ margin-left:100px; height:30px; line-height:30px;}
+.shxx input{ border:1px solid #ddd; width:200px; height:20px; line-height:20px; vertical-align:middle; margin-left:10px; float:left; margin-top:5px;}
+.shxx select{ height:23px; line-height:20px; vertical-align:middle; margin-left:10px; float:left;margin-top:5px;width:120px; }
+.shxx label{ width:120px; text-align:right; float:left }
+.pingjia{ border:1px solid #ddd; overflow:hidden; border-top:none; width:963px;}
+.pingjia .pj{ height:60px; line-height:54px; cursor:pointer}
+.radio_btn  img{ vertical-align:middle; margin-right:10px; }
+.pingjia .star{ margin-left:100px; height:40px; line-height:40px;}
+p.pj_btn{ margin-left:170px; height:60px; cursor:pointer}
+p.pj_btn img{ margin-top:10px;}
+.pj_bottom{ padding:20px; border:1px solid #ddd; border-top:none; font-size:12px;}
+.pingjia textarea{ width:933px; height:162px; margin-left:12px;overflow-y:scroll}
+.pj_btn{ float:right; height:40px; line-height:40px; margin-right:20px; display:inline}
+
+/*个人中心新增订单详情*/
+
+.grzx_dd_tip{ font-size:12px; height:30px; line-height:30px;}
+.dd_status{ height:45px; line-height:45px; border:1px solid #ddd; text-indent:20px;}
+.red{ color:#ff0000; font-weight:bold}
+.dd_main { border:1px solid #ddd; overflow:hidden; margin-top:10px; }
+.dd_main  .dd_main_t{ text-indent:20px; font-size:15px; font-weight:bold; height:35px; line-height:35px; border-bottom:1px solid #ddd;}
+.dd_main_c{ overflow:hidden; padding:20px;}
+.dd_main_c dl{ overflow:hidden;  height:auto ; zoom:1; margin-top:10px;}
+.dd_main_c dt,.dd_main_c dd{ float:left}
+.dd_main_c dt{ font-size:14px; color:#ff0000; font-weight:bold; width:120px;}
+.dd_main_c dd{ font-size:12px;}
+.dd_main_c dd em{ color:red; vertical-align:middle}
+
+.dd_main_c dd table{ width:1140px;border-collapse:collapse; margin:10px auto 0 auto; font-size:12px;}
+.dd_main_c dd table th,.dd_main_c  table td{ border:1px solid #ddd; text-align: center; height:35px; line-height:35px;}
+.dd_main_c dd table th{ background-color:#f8f8f8; font-weight:bold; font-size:14px; color:#404040}
+.dd_main_c dd table td{ height:60px; line-height:60px;}
+.dd_main_c dd table td a{ text-decoration:underline}
+.fffcd5{ background-color:#fffcd5}
+.ddxx{ height:50px;background-color:#fffcd5; width:1142px; margin:0 auto; padding-top:10px; } 
+.ddxx1{ margin-left:250px;}
+.ddxx1_img{ float:left; background:url(images/grzx_bg.gif) no-repeat; width:23px; height:38px; background-position:0 0;}
+.ddxx2_img{ float:left; background:url(images/grzx_bg.gif) no-repeat; width:27px; height:39px; background-position:0 -50px;}
+
+.ddxx3_img{ float:left; background:url(images/grzx_bg.gif) no-repeat; width:40px; height:42px; background-position:0 -100px;}
+
+.ddxx_c{ float: left; margin-left:10px; margin-top:-5px;}
+.fuhao{ background:url(images/grzx_bg.gif) no-repeat; width:11px; height:13px;  float:left; background-position:0 -150px; margin:15px 30px;}
+.fuhao#equal{background:url(images/grzx_bg.gif) no-repeat; width:14px; height:11px;  float:left; background-position:0 -170px; margin:15px 30px;}
+.bar{ width:957px; margin:20px auto; overflow:hidden}
+
+
+/* CSS tanchu*/
+
+.tc_tjdd{ width:480px; background:#fff; border:#e6e6e6 solid 1px;}
+
+
+.tc_tjdd h3{ display:block; height:40px; line-height:40px; background:#f9f9f9; font-size:16px; padding-left:20px;}
+.tc_tjdd .clos_zf{ background:url(images/zf_close_img_03.gif); display:block; width:14px; height:16px; margin-top:10px; float:right; margin-right:10px;}
+
+.tc_tjdd p.txt{ font-size:18px; line-height:40px; display:block; width:390px; margin:0 auto; text-align:center;  color:#333; padding-left:6px; font-weight:bold}
+.tc_tjdd p.tstxt{ font-size:16px; line-height:30px; display:block; width:400px; margin:0 auto; text-align:left;  color:#333; border-top:#e6e6e6 dashed 1px; padding-top:10px; padding-bottom:10px; text-align:center}
+.tc_tjdd .a_zf{ width:250px; margin:0 auto; isplay:block; }
+.tc_tjdd .a_zf a{ display:block;   float:left;}
+
+
+
+/*物流 add by ygl 20141023*/
+.cklogistic{background:#e0f1f8;border:1px solid #d9f2fa;border-radius: 1px 1px 1px 1px;box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15); position:absolute;padding:9px; display:none;}
+.cklogistic_nr{background:#FFFFFF;border: 1px solid #96d5ea;color: #333333;min-height: 235px;_height:235px;overflow:hidden;padding:10px;text-align:left;}
+.cklogistic_nr li{overflow:hidden;line-height:18px;padding:3px 0;width:410px;}
+.cklogistic_nr li.wlbt{border-bottom:1px solid #D7D6D6;padding-bottom:0;margin-bottom:5px;}
+.cklogistic_nr1{background:#FFFFFF;border: 1px solid #FFE6BC;color: #333333;min-height: 235px;_height:235px;overflow:hidden;padding:10px;text-align:left;}
+.cklogistic_nr1 li{overflow:hidden;line-height:18px;padding:3px 0;width:410px;}
+.cklogistic_nr1 li.wlbt{border-bottom:1px solid #D7D6D6;padding-bottom:0;margin-bottom:5px;}
+.wl_clsj{width:120px;float:left;margin-right:5px;_margin-right:3px;}
+.wl_cldd{width:120px;float:left;margin:0 5px;_margin:0 2px;}
+.wl_clzt{width:150px;float:left;margin-left:5px;_margin-left:3px;}
+.wl_close{position:absolute;right:3px;top:3px;background:url(images/wl_close.gif);width:19px;height:19px; cursor:pointer}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

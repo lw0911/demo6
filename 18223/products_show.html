@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by dede58.com"/>
+<title>产品详情页面</title>
+<link rel="stylesheet" type="text/css" href="css/asale.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="siteNav">
+  <div class="bodyMain">
+    <div class="L Welogin"> 您好，欢迎来到<span class="activespan">爱尚礼品官网</span>！ </div>
+    <ul id="JsQuickMemu" class="R">
+      <li> <a href="#" target="_blank">【 登 录 】</a><span>|</span> </li>
+      <li> <a href="#" target="_blank">【 免费注册 】</a><span>|</span> </li>
+      <li> <a href="#" target="_blank">会员中心</a><span>|</span> </li>
+      <li> <a href="#" target="_blank">我的订单</a> </li>
+      <li> <a href="#" target="_blank" class="cart">购物车（0）</a><span>|</span> </li>
+      <li> <a href="#" target="_blank">帮助中心</a> </li>
+    </ul>
+  </div>
+</div>
+<div class="bodyMain header"> <a href="index.html" class="L logo" target="_blank"><img src="images/logo.gif" width="160" height="90" alt="爱尚商城logo"/></a>
+  <div class="phcSearch L">
+    <form action="search.php" method="get" id="searchForm" name="searchForm" onSubmit="return checkSearchForm()" class="search-form">
+      <input class="search_input L" type="text" name="keywords" id="keyword" value="请输入您想要的商品" autocomplete="off">
+      <input type="hidden" value="k1" name="dataBi">
+      <button type="submit" class="submit_btn L"></button>
+    </form>
+    <div class="search-hot" id="hotKeywordsShow"> <a href="#" class="hot-item">U盘定制</a> <a href="#" class="hot-item">展会礼品</a> <a href="#" class="hot-item">地产礼品</a> <a href="#" class="hot-item">小米礼品定制</a> <a href="#" class="hot-item">水杯定制</a> <a href="#" class="hot-item">双肩包定制</a></div>
+  </div>
+  <div class="R tel"><img src="images/tel.gif" width="215" height="65" alt="爱尚商城电话"/></div>
+</div>
+<div class="pageMenu">
+  <div class="menu">
+    <div class="all-sort">
+      <h2><a href="">全部商品分类</a></h2>
+    </div>
+    <div class="nav">
+      <ul class="clearfix">
+        <li><a href="#" class="current">首页</a></li>
+        <li><a href="#">礼品定制</a></li>
+        <li><a href="#">客户案例</a></li>
+        <li><a href="#">定制流程</a></li>
+        <li><a href="#">礼品专题</a></li>
+        <li><a href="#" class="on">联系我们</a></li>
+        <li><a href="#" class="on">云集广告</a></li>
+      </ul>
+    </div>
+    <!--所有分类 Start--> 
+  </div>
+</div>
+<!--导航 End-->
+<div class="nav_subnav">
+  <div class="wrap">
+    <div class="all-sort-list">
+      <div class="item bo">
+        <h3><span></span><a href="#">价格筛选</a></h3>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">品牌折扣</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">家居家纺</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">家纺</a></dt>
+              <dd><a href="#">毛绒玩具</a><a href="#">太空枕</a><a href="#">空调被</a><a href="#">被子</a><a href="#">枕头</a><a href="#">凉席</a><a href="#">床品件套</a> <a href="#">毛毯</a><a href="#">抱枕</a><a href="#">抱枕被</a><a href="#">U型枕</a><a href="#">野餐垫/毯</a><a href="#">骨头枕</a><a href="#">广告毛巾</a> <a href="#">浴巾</a><a href="#">靠垫</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">家居</a></dt>
+              <dd><a href="#">时钟/挂钟</a><a href="#">台灯</a><a href="#">收纳盒</a><a href="#">雨伞</a><a href="#">收纳凳</a><a href="#">购物篮</a><a href="#">化妆包</a> <a href="#">沐浴套装</a><a href="#">烟具/烟具套装</a><a href="#">暖手宝</a><a href="#">秤</a><a href="#">温度计/湿度计</a><a href="#">化妆镜</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">餐具厨具</a></dt>
+              <dd><a href="#">锅具/套装</a><a href="#">便当盒/套装</a><a href="#">便当包</a><a href="#">保鲜盒/套装</a><a href="#">碗（套装）/盘子（套装）</a><a href="#">餐具/套装</a><a href="#">厨房工具/套装</a> <a href="#">调味罐/盒</a><a href="#">密封罐油壶/套装</a><a href="#">果蔬蓝/滴水筛</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore4">
+              <dt><a href="#">品牌家居</a></dt>
+              <dd><a href="#">洁丽雅</a><a href="#">苏泊尔</a><a href="#">乐扣乐扣</a><a href="#">美的</a><a href="#">十八子</a><a href="#">德世朗</a><a href="#">寇可</a><a href="#">其他</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">杯子茶具</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">水杯</a></dt>
+              <dd><a href="#">真空保温杯</a><a href="#">玻璃杯</a><a href="#">陶瓷杯</a><a href="#">广告塑料杯</a><a href="#">咖啡杯</a><a href="#">马克变色杯</a><a href="#">杯子套装</a> <a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">水壶</a></dt>
+              <dd><a href="#">茶/水壶</a><a href="#">保温壶/套装</a><a href="#">太空壶</a><a href="#">运动水壶</a><a href="#">、焖烧罐/壶</a><a href="#">旅行壶</a><a href="#">儿童水壶</a> <a href="#">酒壶</a><a href="#">水壶套杯</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">茶具</a></dt>
+              <dd><a href="#">真空保温杯</a><a href="#">玻璃杯</a><a href="#">陶瓷杯</a><a href="#">广告塑料杯</a><a href="#">咖啡杯</a><a href="#">马克变色杯</a><a href="#">杯子套装</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore4">
+              <dt><a href="#">品牌杯子</a></dt>
+              <dd><a href="#">膳魔师</a><a href="#">沃奇</a><a href="#">佳嘉丽</a><a href="#">欧诺</a><a href="#">象印杯子</a><a href="#">富光拾喜</a></dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">定做皮具箱包</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">皮具</a></dt>
+              <dd><a href="#">钱夹/钱包</a><a href="#">名片包/卡包</a><a href="#">、钥匙/零钱包</a><a href="#">票证包</a><a href="#">CD包/夹</a><a href="#">手包</a><a href="#">行李牌</a> <a href="#">皮带</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">箱包</a></dt>
+              <dd><a href="#">电脑包</a><a href="#">双肩包</a><a href="#">单肩包</a><a href="#">拉杆箱/包</a><a href="#">托运/旅行包</a><a href="#">公文包</a><a href="#">冰包/冰桶</a> <a href="#">IPAD包</a><a href="#">购物车</a><a href="#">折叠袋</a><a href="#">洗漱包</a><a href="#">儿童包</a><a href="#">野餐包</a><a href="#">登山包</a> <a href="#">腰包/胸包/挎包</a><a href="#">帆布袋</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌箱包</a></dt>
+              <dd><a href="#">Swissgear</a><a href="#">新秀丽</a><a href="#">法国乐上LEXON</a><a href="#">外交官Diploma</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">家居家纺</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">杯子茶具</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">皮具箱包</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">汽车用品</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">办公用品</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">工艺礼品</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">运动健康</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3><span></span><a href="">户外汽车</a></h3>
+        <div class="item-list clearfix">
+          <div class="subitem">
+            <dl class="fore1">
+              <dt><a href="#">数码电子</a></dt>
+              <dd><a href="#">U盘</a><a href="#">移动电源</a><a href="#">音箱</a><a href="#">鼠标</a><a href="#">键盘</a><a href="#">数码相框</a><a href="#">读卡器</a> <a href="#">MP3播放器</a><a href="#">车载充电器</a><a href="#">耳机</a><a href="#">转换插座</a><a href="#">USB集线器</a><a href="#">USB风扇</a><a href="#">万年历</a> <a href="#">笔筒</a><a href="#">时计产品</a><a href="#">广告手表</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore2">
+              <dt><a href="#">小家电</a></dt>
+              <dd><a href="#">电热水壶</a><a href="#">酸奶机</a><a href="#">豆浆机</a><a href="#">咖啡机</a><a href="#">手电筒</a><a href="#">榨汁搅拌机</a><a href="#">蒸蛋器</a> <a href="#">空气净化器</a><a href="#">空气加湿器</a><a href="#">灯具</a><a href="#">剃须刀</a><a href="#">电吹风</a><a href="#">吸尘器</a><a href="#">电烤箱</a> <a href="#">电饼铛</a><a href="#">电磁炉</a><a href="#">其他</a> </dd>
+            </dl>
+            <dl class="fore3">
+              <dt><a href="#">品牌数码</a></dt>
+              <dd><a href="#">品胜</a><a href="#">小米</a><a href="#">小狗吸尘器</a><a href="#">莱克吸尘</a><a href="#">科 沃斯</a><a href="#">华为WATCH</a><a href="#">苹果WATCH</a> <a href="#">爱国者</a><a href="#">迷你音响</a><a href="#">飞利浦</a><a href="#">罗技</a><a href="#">荣事达</a><a href="#">小鸭</a><a href="#">奔腾电器</a> <a href="#">朗科</a><a href="#">sandisk闪迪</a><a href="#">小熊电器</a><a href="#">幻响</a> </dd>
+            </dl>
+          </div>
+          <div class="cat-right">
+            <ul>
+              <li><a href="#"><img src="images/ad1.jpg" width="256" height="463" alt="品牌折扣广告"/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--所有分类 End-->
+<style>
+.all-sort-list{ display:none;}
+
+</style>
+<script>
+/*left nav start*/
+$('.all-sort-list > .item').hover(function(){
+	var eq = $('.all-sort-list > .item').index(this),				//获取当前滑过是第几个元素
+		h = $('.all-sort-list').offset().top,						//获取当前下拉菜单距离窗口多少像素
+		s = $(window).scrollTop(),									//获取游览器滚动了多少高度
+		i = $(this).offset().top,									//当前元素滑过距离窗口多少像素
+		item = $(this).children('.item-list').height(),				//下拉菜单子类内容容器的高度
+		sort = $('.all-sort-list').height();						//父类分类列表容器的高度
+		$(this).addClass('itemon');
+		$(this).children('.item-list').css('display','block');
+	},function(){
+		$(this).removeClass('itemon');
+		$(this).children('.item-list').css('display','none');
+	});
+
+</script>
+<div class="bodyMain">
+  <ul class="activeNav">
+    <span class="pageHome">您的位置：</span> <a href="#" class="NavOn"> 首页</a><span></span><a href="#"> 数码家电 </a><span></span><a href="#"> 数码电子 </a><span></span><a href="#"> 移动电源 </a><span></span><a href="#"> 创意鹅卵石充电宝定制10400毫安通用小巧便携移动电源定制 </a>
+  </ul>
+</div>
+<div class="bodyMain ProductShow">
+  <div class="top_slide_wrap L">
+    <div class="bx-wrapper">
+      <ul class="slide_box">
+        <li><a href="#"><img src="images/s1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/s2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/s1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/s3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/s4.jpg" alt=""></a></li>
+      </ul>
+      <ul class="bx-controls">
+        <li> <a class="actives" href="#"> <img src="images/ss1.jpg" alt=""> </a> </li>
+        <li> <a href="#"> <img src="images/ss2.jpg" alt=""> </a> </li>
+        <li> <a href="#"> <img src="images/ss1.jpg" alt=""> </a> </li>
+        <li> <a href="#"> <img src="images/ss3.jpg" alt=""> </a> </li>
+        <li> <a href="#"> <img src="images/ss4.jpg" alt=""> </a> </li>
+      </ul>
+    </div>
+    <a class="options pre" href="javascript:;" data-drec="pre"><i class="pre"></i></a> <a class="options next" href="javascript:;" data-drex="next"><i class="next"></i></a> </div>
+  <div class="ProductshowTxt R">
+    <h3>创意鹅卵石充电宝定制10400毫安通用小巧便携移动电源定制</h3>
+    <div class="infoTxt L"> <span class="delete">市场价：103.50元</span>
+      <p><span>￥69.00</span>/元</p>
+    </div>
+    <div class="infoAtt L"> <span>货       号：A51048</span> <span>定做周期：5 </span> <span>起订量：50</span> <span>总    价：¥3450</span> </div>
+    <div class="infoTxt L">
+      <div class="FormNum L"> <span>购买数量：</span>
+        <div class="proForm L">
+          <input type="text" value="10000" class="goodsNumber" name="number" id="product_amount">
+          <div class="click"> <a class="JS_add" href="javascript:"></a> <a class="JS_minus" href="javascript:" id="reduce"></a> </div>
+          个 </div>
+      </div>
+      <div class="proSever R"> 订购量低于起订量，请联系客服 
+        或拔打客服热线:<span>400-800-1196</span> </div>
+    </div>
+    <ul class="infoTxt L">
+      <li> <span></span> <img src="images/proSmall01.gif" width="38" height="38" alt=""/> </li>
+      <li> <span></span> <img src="images/proSmall01.gif" width="38" height="38" alt=""/> </li>
+      <li> <span class="prOrderOn"></span> <img src="images/proSmall01.gif" width="38" height="38" alt=""/> </li>
+      <li> <span></span> <img src="images/proSmall01.gif" width="38" height="38" alt=""/> </li>
+      <li> <span></span> <img src="images/proSmall01.gif" width="38" height="38" alt=""/> </li>
+      <a href="#" class="proCart R"> 查看购物车（<span>10</span>件商品） </a>
+    </ul>
+    <ul class="infoCart L">
+      <a href="#" class="JS_goods_buy"> 立即购买 </a> <a href="#" class="JS_goods_add"> 加入购物车 </a>
+    </ul>
+  </div>
+</div>
+<div class="ProInfoShow"> 
+  <script>
+window.onload = function ()
+{
+	var oLi = document.getElementById("tab").getElementsByTagName("li");
+	var oUl = document.getElementById("content").getElementsByTagName("ul");
+	
+	for(var i = 0; i < oLi.length; i++)
+	{
+		oLi[i].index = i;
+		oLi[i].onmouseover = function ()
+		{
+			for(var n = 0; n < oLi.length; n++) oLi[n].className="";
+			this.className = "current";
+			for(var n = 0; n < oUl.length; n++) oUl[n].style.display = "none";
+			oUl[this.index].style.display = "block"
+		}	
+	}
+}
+</script>
+  <div id="outer">
+    <div class="ProInfoTitle">
+      <ul id="tab" class="bodyMain">
+        <li class="current">详情描述</li>
+        <li>商品咨询（10000）</li>
+      </ul>
+    </div>
+    <div id="content">
+      <ul style="display:block;">
+        <div style="text-align:center;"><img src="images/procontent.gif" width="1075" height="1621"/></div>
+      </ul>
+      <ul>
+        <li><a href="#">
+          <h3>怎么不出款可以充电的电池</h3>
+          <p>您好，官网下单的产品，单笔订单实际支付满150元包邮，订单实际支付金额不足150元，需按照10元/单标准支付邮费，小米电视、净水器、体重秤等产品因商品特殊性不参与满150元。</p>
+          <span>2016年5月29日</span> </a></li>
+        <li><a href="#">
+          <h3>怎么不出款可以充电的电池</h3>
+          <p>您好，官网下单的产品，单笔订单实际支付满150元包邮，订单实际支付金额不足150元，需按照10元/单标准支付邮费，小米电视、净水器、体重秤等产品因商品特殊性不参与满150元。</p>
+          <span>2016年5月29日</span> </a></li>
+        <li><a href="#">
+          <h3>怎么不出款可以充电的电池</h3>
+          <p>您好，官网下单的产品，单笔订单实际支付满150元包邮，订单实际支付金额不足150元，需按照10元/单标准支付邮费，小米电视、净水器、体重秤等产品因商品特殊性不参与满150元。</p>
+          <span>2016年5月29日</span> </a></li>
+        <li><a href="#">
+          <h3>怎么不出款可以充电的电池</h3>
+          <p>您好，官网下单的产品，单笔订单实际支付满150元包邮，订单实际支付金额不足150元，需按照10元/单标准支付邮费，小米电视、净水器、体重秤等产品因商品特殊性不参与满150元。</p>
+          <span>2016年5月29日</span> </a></li>
+        <li><a href="#">
+          <h3>怎么不出款可以充电的电池</h3>
+          <p>您好，官网下单的产品，单笔订单实际支付满150元包邮，订单实际支付金额不足150元，需按照10元/单标准支付邮费，小米电视、净水器、体重秤等产品因商品特殊性不参与满150元。</p>
+          <span>2016年5月29日</span> </a></li>
+        <li><a href="#">
+          <h3>怎么不出款可以充电的电池</h3>
+          <p>您好，官网下单的产品，单笔订单实际支付满150元包邮，订单实际支付金额不足150元，需按照10元/单标准支付邮费，小米电视、净水器、体重秤等产品因商品特殊性不参与满150元。</p>
+          <span>2016年5月29日</span> </a></li>
+         <div class="allMes">
+         	<a href="#">查看所有商品咨询 ></a>
+         </div>
+         <div class="writeMes">
+         	<div class="WriteMesTit">
+            	<h2>商品咨询</h2>
+            	<h3>标题：创意鹅卵石充电宝定制10400毫安通用小巧便携移动电源定制</h3>
+            </div>
+            
+            	<form action="javascript:;" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
+
+                <div class="WriteMesTit">
+                <label>咨询内容：</label>
+                <textarea name="content" class="inputBorder" ></textarea>
+                 </div>
+                 <div class="WriteMesTit">
+                <label>联系方式：</label>
+                <input type="text" name="contactway" value="" class="contactway">
+                <span>（可以是电话，QQ，email，微信号等）</span>
+                 </div>
+                   <div class="WriteMesTit">
+                   <input type="submit" class="red_btn" value="提交咨询">
+                   </div>
+                </form>
+           
+         </div>
+      </ul>
+    </div>
+  </div>
+  
+  <!--定制专区 start-->
+  <div class="bodyMain Activity">
+    <div class="title2">
+      <h2>活动专区</h2>
+    </div>
+    <ul class="ActivityList">
+      <li><a href="#"><img src="images/dzzhuanqu.gif" width="275" height="150" alt="定制专区"/></a></li>
+      <li><a href="#"><img src="images/hdzhuti.gif" width="275" height="150" alt="活动主题"/></a></li>
+      <li><a href="#"><img src="images/diy.gif" width="275" height="150" alt="diy专区"/></a></li>
+      <li><a href="#"><img src="images/yjad.gif" width="275" height="150" alt="云集广告"/></a></li>
+      <div class="clear"></div>
+    </ul>
+  </div>
+</div>
+<div class="footer">
+  <div class="bodyMain">
+    <div class="footer_link L">
+      <dl>
+        <dt><a href="#">关于我们</a></dt>
+        <dd><a href="#">公司简介</a></dd>
+        <dd><a href="#">诚聘英才</a></dd>
+        <dd><a href="#">网站地图</a></dd>
+        <dd><a href="#">联系我们</a></dd>
+        <div class="clear"></div>
+      </dl>
+      <dl>
+        <dt><a href="#">定制流程</a></dt>
+        <dd><a href="#">自助定制</a></dd>
+        <dd><a href="#">样品及打样</a></dd>
+        <dd><a href="#">定制工艺</a></dd>
+        <div class="clear"></div>
+      </dl>
+      <dl>
+        <dt><a href="#">服务及售后</a></dt>
+        <dd><a href="#">服务承诺</a></dd>
+        <dd><a href="#">售后保障</a></dd>
+        <dd><a href="#">退换货政策</a></dd>
+        <div class="clear"></div>
+      </dl>
+      <dl>
+        <dt><a href="#">会员中心</a></dt>
+        <dd><a href="#">用户协议</a></dd>
+        <dd><a href="#">会员注册</a></dd>
+        <dd><a href="#">账户管理</a></dd>
+        <dd><a href="#">积分制度</a></dd>
+        <div class="clear"></div>
+      </dl>
+      <dl>
+        <dt><a href="#">积分制度</a></dt>
+        <dd><a href="#">支付方式</a></dd>
+        <dd><a href="#">发票制度</a></dd>
+        <dd><a href="#">配送及运费</a></dd>
+        <dd><a href="#">交付及验收</a></dd>
+        <div class="clear"></div>
+      </dl>
+      <div class="footer_ewm L"> <img src="images/eweima.jpg" width="84" height="84" alt=""/> <span>扫描手机二维码</span> </div>
+    </div>
+    <div class="footer_tel R"> <img src="images/footer_tel.png" width="313" height="185" alt=""/> </div>
+  </div>
+  <div class="bodyMain">
+    <div class="link"> <span>友情链接：</span> <a href="#">工作服定做</a><span>|</span> <a href="#">VR眼镜定制</a><span>|</span><a href="#">礼品网</a><span>|</span><a href="#">礼品</a><span>|</span><a href="#">鲜花速递</a><span>|</span><a href="#">创意礼品</a><span>|</span><a href="#">定制T恤</a><span>|</span><a href="#">创意礼物</a><span>|</span><a href="#">手表定做</a><span>|</span><a href="#">创意礼品店</a><span>|</span><a href="#">促销活动</a><span>|</span><a href="#">办公耗材</a><span>|</span><a href="#">蜜芽纸尿裤</a><span>|</span><a href="#">阳光印网</a><span>|</span><a href="#">毛巾品牌</a><span>|</span><a href="#">礼品册</a><span>|</span><a href="#">天然水晶</a><span>|</span><a href="#">可穿戴设备</a><span>|</span><a href="#">饰品招商</a><span>|</span><a href="#">印刷公司</a><span>|</span><a href="#">景德镇陶瓷</a><span>|</span><a href="#">礼品册</a><span>|</span> <a href="#">工作服定做</a><span>|</span> <a href="#">VR眼镜定制</a><span>|</span><a href="#">礼品网</a><span>|</span><a href="#">礼品</a><span>|</span><a href="#">鲜花速递</a><span>|</span><a href="#">创意礼品</a><span>|</span><a href="#">定制T恤</a><span>|</span><a href="#">创意礼物</a><span>|</span><a href="#">手表定做</a><span>|</span><a href="#">创意礼品店</a><span>|</span><a href="#">促销活动</a><span>|</span><a href="#">办公耗材</a><span>|</span><a href="#">蜜芽纸尿裤</a><span>|</span><a href="#">阳光印网</a><span>|</span><a href="#">毛巾品牌</a><span>|</span><a href="#">礼品册</a><span>|</span><a href="#">天然水晶</a><span>|</span><a href="#">可穿戴设备</a><span>|</span><a href="#">饰品招商</a><span>|</span><a href="#">印刷公司</a><span>|</span><a href="#">景德镇陶瓷</a><span>|</span><a href="#">礼品册</a><span>|</span><a href="#">更多链接</a><span>|</span><a href="#"> 友情链接申请QQ2355468767</a> </div>
+  </div>
+  <div class="bodyMain">
+    <div class="copyright">
+      <p> © 2008-2015 优礼品-中国专业礼品定制,商务礼品、企业礼品定制网站隶属于北京优创未来科技有限公司版权所有，并保留所有权利。ICP备案证书号:京ICP备XXX号 京公网安备XXX号<br/>
+        北京公司：XXX 电话：XXX 上海公司：XXX 电话：XXX<br/>
+        深圳公司：XXX </p>
+      <ul class="banuqna R">
+        <li><a href="#"><img src="images/banquan01.jpg" width="82" height="27" alt=""/></a></li>
+        <li><a href="#"><img src="images/banquan02.jpg" width="82" height="27" alt=""/></a></li>
+        <li><a href="#"><img src="images/banquan01.jpg" width="82" height="27" alt=""/></a></li>
+        <li><a href="#"><img src="images/banquan02.jpg" width="82" height="27" alt=""/></a></li>
+        <li><a href="#"><img src="images/banquan01.jpg" width="82" height="27" alt=""/></a></li>
+        <li><a href="#"><img src="images/banquan02.jpg" width="82" height="27" alt=""/></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="side">
+  <ul>
+    <li><a href="#">
+      <div class="sidebox"><img src="images/side_icon01.png">客服中心</div>
+      </a></li>
+    <li><a href="#">
+      <div class="sidebox"><img src="images/side_icon02.png">客户案例</div>
+      </a></li>
+    <li><a href="javascript:void(0);" >
+      <div class="sidebox"><img src="images/side_icon04.png">QQ客服</div>
+      </a></li>
+    <li><a href="javascript:void(0);" >
+      <div class="sidebox"><img src="images/side_icon03.png">新浪微博</div>
+      </a></li>
+    <li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="images/side_icon05.png"></a></li>
+  </ul>
+</div>
+<div class="DiyOpen"> <img src="images/DiyOpen.png" width="140" height="95" alt=""/> </div>
+<div class="DiyForm">
+  <div class="bodyMain DiyFroMain">
+    <div class="DFrom R">
+      <form method="post">
+        <select>
+          <option value="1">价格区间</option>
+          <option value="2">0-10元</option>
+          <option value="3">10-30元</option>
+          <option value="4">30-50元</option>
+          <option value="5">50-100元</option>
+          <option value="6">100-300元</option>
+          <option value="7">300-500元</option>
+          <option value="8">500-1000元</option>
+          <option value="9">1000-2000元</option>
+          <option value="10">2000元以上</option>
+        </select>
+        <select>
+          <option value="1">应用场景</option>
+          <option value="2">站长素材 2</option>
+          <option value="3">站长素材 3</option>
+          <option value="4">站长素材 4</option>
+          <option value="5">站长素材 5</option>
+          <option value="6">站长素材 6</option>
+          <option value="7">站长素材 7</option>
+          <option value="8">站长素材 8</option>
+          <option value="9">站长素材 9</option>
+          <option value="10">站长素材 10</option>
+          <option value="11">站长素材 11</option>
+          <option value="12">站长素材 12</option>
+          <option value="13">站长素材 13</option>
+          <option value="14">站长素材 14</option>
+          <option value="15">站长素材 15</option>
+          <option value="16">站长素材 16</option>
+        </select>
+        <select>
+          <option value="1">礼品特征</option>
+          <option value="2">站长素材 2</option>
+          <option value="3">站长素材 3</option>
+          <option value="4">站长素材 4</option>
+          <option value="5">站长素材 5</option>
+          <option value="6">站长素材 6</option>
+          <option value="7">站长素材 7</option>
+          <option value="8">站长素材 8</option>
+          <option value="9">站长素材 9</option>
+          <option value="10">站长素材 10</option>
+          <option value="11">站长素材 11</option>
+          <option value="12">站长素材 12</option>
+          <option value="13">站长素材 13</option>
+          <option value="14">站长素材 14</option>
+          <option value="15">站长素材 15</option>
+          <option value="16">站长素材 16</option>
+        </select>
+        <select>
+          <option value="1">定制预算</option>
+          <option value="2">站长素材 2</option>
+          <option value="3">站长素材 3</option>
+          <option value="4">站长素材 4</option>
+          <option value="5">站长素材 5</option>
+          <option value="6">站长素材 6</option>
+          <option value="7">站长素材 7</option>
+          <option value="8">站长素材 8</option>
+          <option value="9">站长素材 9</option>
+          <option value="10">站长素材 10</option>
+          <option value="11">站长素材 11</option>
+          <option value="12">站长素材 12</option>
+          <option value="13">站长素材 13</option>
+          <option value="14">站长素材 14</option>
+          <option value="15">站长素材 15</option>
+          <option value="16">站长素材 16</option>
+        </select>
+        <select>
+          <option value="1">定制数量</option>
+          <option value="2">50以内</option>
+          <option value="3">100以内</option>
+          <option value="4">300以内</option>
+          <option value="5">500以内</option>
+          <option value="6">1000以内</option>
+          <option value="7">3000以内</option>
+          <option value="8">5000以内</option>
+          <option value="9">10000以内</option>
+        </select>
+        <input type="submit" value="提交" class="submit" />
+      </form>
+    </div>
+    <div class="DiyClose"> <img src="images/close.png" width="17" height="17" alt=""/> </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/productshow.js"></script>
+</body>
+</html>

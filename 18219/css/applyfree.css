@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-01-31 10:49:13
+ * @version $Id$
+ */
+ .sidebox{position:absolute;top:600px;right:250px;z-index:2;}
+ .sidebox div{width:50px;height:50px;border:1px solid #e3deda;border-radius: 25px;overflow: hidden;}
+.sidebox .tip{background: url(../image/icon/totop.png) no-repeat;}
+ .sidebox  a{width:50px;height:50px;display: inline-block;}
+.sidebox .qq{background-position: 0 0;}.sidebox .qq:hover{background-position: -51px 1px;}
+.sidebox .wx{background-position: 0 -50px}.sidebox .wx:hover{background-position: -51px -49px}
+.sidebox .set{background-position: 0 -100px}.sidebox .set:hover{background-position: -50px -99px}
+
+.sidebox .totop{background:#fff;}
+.sidebox .totop a{padding:8px 0;}
+.sidebox .totop a:hover{color:#fff;background:#fe5842;}
+.container .bg1{background: url(../image/apply/bg1.png) no-repeat;width:1536px;height:275px;position: relative;left:61px;}
+.container .bg2{background: url(../image/apply/bg2.png) no-repeat;width:1536px;height:325px;position: relative;left:61px;}
+.container .content{width: 1024px;height: 1340px;background: #f6b176;padding-top:60px;}
+.container .content .linkbox{width:795px;text-align: left;}
+.container .content .linkbox .linktitle{background:url(../image/apply/linkline.png) no-repeat right;height: 55px;}
+.container .content .linkbox .linktitle strong{font-size: 40px;color:#fff;}
+.container .content .linkbox .link{width:793px;height:60px;line-height:60px;border:1px solid #ffcb8e;margin-top:5px;}
+.container .content .linkbox .link input{width: 793px;height:60px;line-height:60px;border:none;font-size:20px;text-indent: 1em;color:#d6d4d5;}
+.container .content .linkbox .linkcontent{height:325px;padding: 60px 0;border-bottom:1px dashed #b88260;}
+.container .content .linkbox .linkcontent .linkimage{width:325px;height:325px;background: #fff;}
+.container .content .linkbox .linkcontent .linkinfo{width:440px;height:325px;padding-left:30px;}
+.container .content .linkbox .linkcontent .linkinfo .title{width:440px;background: url(../image/apply/linkline2.png) no-repeat right bottom;}
+.container .content .linkbox .linkcontent .linkinfo .text{width:438px;height:50px;border:1px solid #ffcb8e}
+
+.container .content .linkbox .linkcontent .linkinfo .text .linktext2{width:440px;height:50px;line-height:50px;border:0;}
+.container .content .linkbox .linkcontent .linkinfo strong{color:#fff;font-size:22px;}
+.container .content .linkbox .linkcontent .linkinfo .text2{width:438px;height:55px;}
+.container .content .linkbox .linkcontent .linkinfo .text2 div{width:206px;background: #ffd5a8}
+.container .content .linkbox .linkcontent .linkinfo .text2 label{width:85px;height:55px;line-height:55px;padding:0 17px;font-size:22px;color: #86684c;}
+.container .content .linkbox .linkcontent .linkinfo .text2 input{width: 125px;height:56px;line-height:56px;margin-bottom:2px;border:1px solid #fdcc92;}
+.container .content .linkbox .linkcontent .linkinfo input[type=button]{width:187px;height:60px;border-radius:10px;border:none;color:#fff;font-size: 22px;}
+.container .content .linkbox .linkcontent .linkinfo .btnup{background:#947259;}
+.container .content .linkbox .linkcontent .linkinfo .btnshare{background:#ff3737;margin-left:62px;}
+.container .content .rule{width:795px;padding-top: 60px;}
+.container .content .rule .ruledetail{width:380px;padding:35px;text-align:left;background: #fce6c1}
+.container .content .rule .rankbox{width:310px;margin-left:35px;position: relative;margin-top:22px;}
+.container .content .rule .tab{width:269px;height:55px;line-height:55px;background:url(../image/icon/rank.png);position: absolute;left:20px;top:-27px;font-weight: bold;font-size: 20px}
+.container .content .rule .tab span.colored{color:red;}.container .content .rule .tab span.colorgray{color:#452731;}
+.container .content .rule .ranklist{background:#fefde1;padding:30px 10px 0px;}
+.container .content .rule .ranklist table{width:290px;font-size: 14px;border-collapse:collapse; }
+.container .content .rule .ranklist table thead tr{height:50px;border-bottom: 1px dashed #b88260;}
+.container .content .rule .ranklist table tbody tr{height:70px;line-height: 70px;}
+.container .content .rule .ranklist table tbody tr td{word-break:break-all;}
+.container .content .rule .ranklist table tbody tr td span.num{font-weight: bold;color:red;font-size:20px;}
+.container .content .rule .ranklist table tbody tr td span.pic{width:50px;height:50px;overflow:hidden;vertical-align:middle;display: inline-block;border:2px solid #fa984d;border-radius: 25px;background:url(../image/apply/userface.png);}
+.container .content .rule .ruledetail .box{ border-bottom: 1px dashed #b88260;height:65px;}
+.container .content .rule .ruledetail .text{line-height: 25px;padding-top:25px;}
+.container .content .rule .ruledetail h3{font-size:38px;color:#57392e;}
+.container .applyfind{position: relative;}
+.container .applyfind .findpo{position: absolute;left:888px;top:-65px;}

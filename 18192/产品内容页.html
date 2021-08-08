@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<meta name="keywords" content="[!--pagekey--]" />
+<meta name="description" content="[!--pagedes--]" />
+<link href="css/master.css" type="text/css" rel="stylesheet" />
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/SuperSlide.js?v2.1"></script>
+<script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script>
+</head>
+
+<body>
+<header>
+  <div class="head">
+    <div class="menu yh">
+      <ul class="block clearfix">
+        <li class="look"><a href="">查看所有商品</a></li>
+        <li><a href="">首页</a></li>
+        <li><a href="">所有产品</a></li>
+        <li><a href="">天天特价</a></li>
+        <li><a href="">新鲜水果</a></li>
+        <li><a href="">蔬菜</a></li>
+        <li><a href="">购物须知</a></li>
+        <li><a href="">手机APP</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div class="block cp-list ofHidden box-shadow cp-content">
+  <div class="pd5 clearfix ofHidden">
+    <div class="snav yh"><a href="">首页</a> > 产品名称 </div>
+    <div class="content-nr clearfix mb20"> 
+      
+      <!--内容页图片集-->
+      <div id="myFocus" class="fleft">
+        <div class="loading"></div>
+        <div class="pic">
+          <ul>
+            <li><a href="#"><img src="images/fruit1.jpg" thumb="" alt="美军F-15E战机很能装：小直径制导炸弹能挂20枚" text="" /></a></li>
+            <li><a href="#"><img src="images/fruit2.jpg" thumb="" alt="俄坦克大战选拔赛奖品不错：金色小坦克小战车" text="" /></a></li>
+            <li><a href="#"><img src="images/fruit3.jpg" thumb="" alt="揭秘世界第一位女中将聂力" text="" /></a></li>
+            <li><a href="#"><img src="images/fruit4.jpg" thumb="" alt="【图说神枪手的“神”】“神枪手”的人生四季" text="" /></a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!--内容页产品参数-->
+      <div class="cp-mc fright">
+        <div class="title">这里是产品名称这里是产品名称</div>
+        <div class="jg clearfix"><span class="cred">￥<font>119</font></span><span class="pd5 radius4 ml10">1.1折</span><span class="sc ml30">市场价：400</span></div>
+        <div class="zhekou clearfix"><span class="zk1">折扣</span><span class="zk2">由市场价与实际价的比得出</span></div>
+        <div class="peis yh clearfix">
+          <input type="radio" class="fleft">
+          <span class="fleft">自取</span>
+          <input type="radio" class="fleft">
+          <span class="fleft">送货上门</span></div>
+        <p>产地：湖南</p>
+        <p>净重：500G</p>
+        <div class="num yh"> <span>数量：</span>
+          <input type="button" id="jian" value="-">
+          <div id="num">1</div>
+          <input type="button" id="add" value="+">
+        </div>
+        <div class="by cred yh mt20">新鲜保证 低价保证  以上两条不符退货保障</div>
+      </div>
+    </div>
+    
+    <!--看过该产品的客户还看了-->
+    <div class="kghk mb20">
+      <p class="f16 bold yh mt20 mb20">看过该产品的客户还看了:</p>
+      <div class="scrollBox" style="margin:0 auto">
+        <div class="ohbox">
+          <ul class="piclist">
+            <li><a href="#" target="_blank"><img src="images/cp2.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp3.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp2.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp3.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp2.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp3.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp2.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp3.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp2.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp3.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp2.jpg" /><span>产品名称</span></a></li>
+            <li><a href="#" target="_blank"><img src="images/cp3.jpg" /><span>产品名称</span></a></li>
+          </ul>
+        </div>
+        <div class="pageBtn"> <span class="prev">&lt;</span> <span class="next">&gt;</span>
+          <ul class="list">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="zuo fleft">
+      <div class="dnss">
+        <div class="title">店内搜索</div>
+        <div class="nr">
+          <form name="searchform" method="post" action="/e/search/index.php">
+            <input name='ecmsfrom' type='hidden' value='9'>
+            <!--这里更改返回路径-->
+            <input type="hidden" name="show" value="title,newstext">
+            <p><font>关键词：</font>
+              <input class="index_srh" name="keyboard" >
+            </p>
+            <p><font>价格：</font>
+              <input type="text" class="price">
+              -
+              <input type="text" class="price">
+            </p>
+            <p>
+              <input class="search" type="submit" name="submit" value="搜索">
+            </p>
+            <p><b>热门搜索：</b> <a href="">苹果</a> <a href="">牛肉</a> <a href="">鱼</a> <a href="">虾</a> <a href="">牛奶</a></p>
+          </form>
+        </div>
+      </div>
+      <div class="slideTxtBox mt20">
+        <div class="hd yh">
+          <ul>
+            <li>销售排行</li>
+            <li>最新上架</li>
+          </ul>
+        </div>
+        <div class="bd">
+          <ul>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+            <li>
+              <div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sideMenu mt20">
+        <h3><em></em>优惠特选</h3>
+        <ul>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+          <li><a href="">优惠特选</a></li>
+        </ul>
+        <h3><em></em>优选热卖</h3>
+        <ul>
+          <li><a href="">好评商品</a></li>
+          <li><a href="">新鲜上架</a></li>
+        </ul>
+        <h3><em></em>优选热卖</h3>
+        <ul>
+          <li><a href="">好评商品</a></li>
+          <li><a href="">新鲜上架</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!--右侧开始-->
+    <div class="cp-nr fright yh">
+      <div class="title"></div>
+      <div class="cs clearfix">
+      	<ul>
+        	<li>商品名称：[多美汁]水果 新鲜芒果 四川攀</li>
+            <li>商品编号：1166963030</li>
+            <li>店铺：<a href="">多美汁专营店</a></li>
+            <li>上架时间：2014-05-30</li>
+            <li>商品毛重：5.5kg</li>
+            <li>商品产地：中国大陆</li>
+            <li>配送区域：全国</li>
+            <li>品种：芒果</li>
+        </ul>
+      </div>
+      <p>如果您发现商品信息不准确，<a href="">欢迎纠错</a></p>
+      
+      <p>这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情
+      这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情这里直接显示商品详情</p>
+      
+    </div>
+    <div class="clearfix"></div>
+    
+    <!--大家都在看-->
+    <div class="clearfix djzk mt20">
+      <div class="title clearfix"><a href="" class="fright pr20">MORE+</a><span>大家都在看Recomend</span></div>
+      <table class="common-table">
+        <tbody>
+          <tr>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+          </tr>
+          <tr>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+            <td><div class="fleft"><a href=""><img src="images/cp-small.jpg"></a></div>
+              <div class="fright">
+                <p><a href="#">[顺丰优选]天谱乐食 进口 澳洲牛腱</a></p>
+                <p class="cred">￥75.00</p>
+              </div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <!--客服中心-->
+  <div class="kfzx mt30 clearfix">
+    <div class="clearfix"> <span class="sp1">长株潭统一服务热线：0731－89966888</span> <span class="sp2">服务时间：09：00－20：00</span> </div>
+    <p class="clearfix"><font class="cred">温馨提示：</font>由于购实惠经营的商品包含生鲜类商品，为保证商品的质量，除特殊情况外，本店所有商品，一经售出概不退款。订单处理以<font class="cred">当日24点</font>为时间节点，当日<font class="cred">0点起至24点</font>，所下的单，均为次日提货。具体提货时间以当地直营点的实际情况为信。</p>
+    <div class="button1"><a href="">返回购实惠首页</a></div>
+  </div>
+  
+  <!--底部-->
+  <div class="foot clearfix">
+    <div class="top clearfix">
+      <div class="left fleft">
+        <dl class="fwbz">
+          <dt>服务保障</dt>
+          <dd><a href="">100%品质保证</a></dd>
+          <dd><a href="">当面退货</a></dd>
+          <dd><a href="">7X24小时客服服务</a></dd>
+          <p>总裁邮箱：</p>
+          <p>CEO@89966888.com</p>
+        </dl>
+        <dl class="sybz">
+          <dt>使用帮助</dt>
+          <dd><a href="">新手指南</a></dd>
+          <dd><a href="">常见问题</a></dd>
+          <dd><a href="">帮助中心</a></dd>
+          <dd><a href="">用户协议</a></dd>
+          <dd><a href="">企业用户团购</a></dd>
+        </dl>
+        <dl class="zfss">
+          <dt>支付方式</dt>
+          <dd><a href="">新手指南</a></dd>
+          <dd><a href="">常见问题</a></dd>
+          <dd><a href="">帮助中心</a></dd>
+          <dd><a href="">用户协议</a></dd>
+          <dd><a href="">企业用户团购</a></dd>
+        </dl>
+        <dl class="psfs">
+          <dt>配送方式</dt>
+          <dd><a href="">新手指南</a></dd>
+          <dd><a href="">常见问题</a></dd>
+          <dd><a href="">帮助中心</a></dd>
+          <dd><a href="">用户协议</a></dd>
+          <dd><a href="">企业用户团购</a></dd>
+        </dl>
+        <dl class="shfw">
+          <dt>售后服务</dt>
+          <dd><a href="">新手指南</a></dd>
+          <dd><a href="">常见问题</a></dd>
+          <dd><a href="">帮助中心</a></dd>
+          <dd><a href="">用户协议</a></dd>
+          <dd><a href="">企业用户团购</a></dd>
+        </dl>
+      </div>
+      <div class="right fleft">
+        <dl>
+          <dt>手机购实惠</dt>
+          <dd class="img"><img src="images/erwei.jpg"></dd>
+          <dd>下载移动客户端</dd>
+        </dl>
+        <dl>
+          <dt>手机购实惠</dt>
+          <dd class="img"><img src="images/erwei.jpg"></dd>
+          <dd>下载移动客户端</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="mid clearfix yh">
+      <ul>
+        <li><a href=""><img src="images/foot1.png"></a>
+          <p>行业领先</p>
+          <p>蔬果商城</p>
+        </li>
+        <li><a href=""><img src="images/foot2.png"></a>
+          <p>创新购买</p>
+          <p>体验实惠</p>
+        </li>
+        <li><a href=""><img src="images/foot3.png"></a>
+          <p>新鲜送达</p>
+          <p>品质保障</p>
+        </li>
+        <li><a href=""><img src="images/foot4.png"></a>
+          <p>有问题</p>
+          <p>无条件退换</p>
+        </li>
+        <li><a href=""><img src="images/foot5.png"></a>
+          <p>自有冷库</p>
+          <p>贴心呵护</p>
+        </li>
+        <li><a href=""><img src="images/foot6.png"></a>
+          <p>多种取货方式</p>
+          <p>只为方便客户</p>
+        </li>
+        <li><a href=""><img src="images/foot7.png"></a>
+          <p>长株谭</p>
+          <p>超人气聚集</p>
+        </li>
+        <li><a href=""><img src="images/foot8.png"></a>
+          <p>生活居家</p>
+          <p>掌事人首选</p>
+        </li>
+        <li><a href=""><img src="images/foot9.png"></a>
+          <p>行业领先</p>
+          <p>蔬果商城</p>
+        </li>
+      </ul>
+    </div>
+    <div class="foot-menu yh">
+      <ul>
+        <li><a href="">关于购实惠</a></li>
+        <li><a href="">品牌合作专区</a></li>
+        <li><a href="">网站联盟</a></li>
+        <li><a href="">商务合作</a></li>
+        <li><a href="">友情链接</a></li>
+      </ul>
+    </div>
+    <p class="tcenter">copyright © 2010-2014 长沙购实惠电子商务有限公司 89966888.com 保留一切权利 客服热线：0371－89966888</p>
+    <p class="tcenter">京公安备 108888888 | 京ICP证1110333号 | 食品流通许可证SP11111 | 营业热照</p>
+  </div>
+</div>
+<script src="js/all.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.shop_main{width:1200px; margin:0 auto;}
+a.head{ display:block; float:left; }
+a.txt{display:block; float:left; width:850px; line-height:50px;}
+
+.shop_box{ border:#e6e6e6 solid 1px; height:398px;}
+.shop_box .left{ width:474px; height:336px; margin:30px 0px 30px 100px;display: inline;}
+.shop_box .right{ width:409px; height:326px; margin:30px 100px 30px 0px; display:inline; box-shadow:0px 1px 5px #ccc; border:#e6e6e6 solid 1px;}
+.login_title a{display:block; width:191px; height:40px; float:left; font-weight:bold; line-height:40px; text-align:center; border-bottom:#e6e6e6 solid 1px; border-left:#e6e6e6 solid 1px;border-right:#e6e6e6 solid 1px;  background:url(images/login_b2b.gif); font-size:14px;}
+
+.login_title a.hover{ display:block; width:384px; height:40px; float:left; color:#0089da; background:#fff; border:none; text-decoration:none; font-size:14px;}
+
+
+.box_form{ margin-top:30px; margin-left:20px; display:block; color:#333333; }
+
+.box_form label{ width:80px; display:block; text-align:right; float:left;}
+.box_form p{ display:block; height:33px; }
+.box_form p a.a007cb{ color:#007acb}
+.box_form p a.ff4401{ color:#ff4401}
+.box_form input{ display:block; float:left; height:22px; line-height:22px; font-size:12px; color:#333333; }
+.box_form select{width:202px; font-size:12px; color:#333333; padding:3px; border:#dfdfdf solid 1px;}
+.forwidht{ width:200px;  border:#dfdfdf solid 1px;}
+.yanzhen_widht{ width:115px;  border:#dfdfdf solid 1px;}
+.box_form span{ display:block; line-height:30px; height:30px;float:left;}
+.box_form a.denlu{ width:179px; height:36px; background:url(images/login_btn.gif); display:block; margin:10px 0px 20px 85px;}
+
+
+
+.cor_box{background:url(images/ip.jpg) no-repeat center left; text-indent:20px;}
+.l_footer{width:100%; height:80px;}
+
+.l_footer_main{width:950px; margin:20PX auto; height:50px;}
+
+.spanleft{display: block;float: left;width: 200px;}
+.spanright{display: block;float: right;}

@@ -1,0 +1,49 @@
+*,
+*:after,*:before { box-sizing: border-box;}
+
+ul,li{ margin:0px; padding:0px; list-style:none;}
+body,a,div,p,span,form,input,button,select,option,h1,h2,h3,h4,h5,h6{ margin:0px; padding:0px; font-family:"微软雅黑";}
+a,img,input,button,select,option{ border:0;}
+a{ text-decoration:none; }
+a:hover{ color:#ff0d03;}
+h1,h2,h3,h4,h5,h6{ font-weight:100;}
+
+
+.carousel {width:1200px;overflow: hidden; position: relative; margin:100px auto; padding-top:40px;}
+.carousel:before,.carousel:after {content: ""; display: table;}
+.carousel:after {clear: both;}
+
+#slide {color: #fff; float: left; font-size: 20px; height:320px; line-height: 11; text-align: center; width:295px;margin-right:5px;}
+#slide .pic{ text-align:center; width:295px; height:210px; }
+#slide .pic a{ display:block; width:295px; float:left; overflow:hidden; }
+#slide .pic img{ width:295px; height:210px; display:block;}
+#slide .pic a:hover img{ padding-left:10px; }
+#slide .title{ line-height:24px; height:95px;    }
+#slide .title a{ display:block; width:295px; height:95px; padding-top:15px; float:left;}
+#slide .title h2{ line-height:25px; text-align:center; font-size:14px; color:#666666; font-weight:100;}
+#slide .title p{ font-size:12px; color:#b0b0b0; text-align:center;}
+#slide .title span{ font-size:14px; color:#fe6754; text-align:center; font-family:Arial; margin-top:12px;}
+
+#carousel-default li.keynote{ border-top:2px solid #ffa201;}
+#carousel-default li.keynote2{border-top:2px solid #86e94f;background-color:#f9f9f9;}
+#carousel-default li.keynote3{ border-top:2px solid #2196f3;}
+#carousel-default li.keynote4{border-top:2px solid #e53935;background-color:#f9f9f9;}
+
+
+
+.purejscarousel { overflow: hidden;}
+.purejscarousel-slides-container:before,.purejscarousel-slides-container:after {  content: ""; display: table;}
+.purejscarousel-slides-container:after { clear: both;}
+.purejscarousel-slide {float: left;}
+.purejscarousel-btn { background: transparent;border: 0;box-shadow: none;outline: none;cursor: pointer; height:13px;width:9px; position:absolute; top:0px; right:10px; background-repeat:no-repeat;}
+.purejscarousel-btn-next {right: 5px; background-image:url(../images/icoRight.gif); background-position:right top;}
+.purejscarousel-btn-prev {right:75px; background-image:url(../images/icoLeft.gif); background-position:left top;}
+.purejscarousel-dots-container {text-align: center;width:70px; position:absolute; top:5px; right:10px;}
+.purejscarousel-dot {background-color:#b2b2b2; border: 0; border-radius: 50%; box-shadow: none; cursor: pointer; height:5px; outline: none; margin: 0 5px; width:5px;}
+.active.purejscarousel-dot { cursor: default; background-color:#ef0626;}
+
+
+
+
+
+

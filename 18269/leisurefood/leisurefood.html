@@ -1,0 +1,1282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>休闲食品_专区</title>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/jquery1.42.min.js" type="text/javascript"></script>
+<script src="../jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+<script src="../publicNav.js" type="text/javascript"></script>
+<script src="../index.js" type="text/javascript"></script>
+<link href="../css/base.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<!--顶部top-->
+<div class="topMenu">
+  <div class="indexCont">
+    <ul class="fl tW tL" style="width:190px;">
+      <li class="b1"><i></i><a href="javascript:;">收藏我买网</a></li>
+      <li class="b2"><i></i><a href="javascript:;">移动客户端</a></li>
+    </ul>
+    <div class="fr tW">
+      <ul class="fl">
+        <li class="login" style="white-space:nowrap;height:32px;line-height:32px;"> <b>您好，欢迎您来到顺丰优选</b> <a href="javascript:;">登录</a> <a href="javascript:;">注册</a> <a href="userOrder.html">我的订单</a> </li>
+      </ul>
+      <ul id="tMenu" class="fr tW tmCont">
+        <li class="webnav"> <strong class="top_icon"><a href="javascript:;"> 我的素品 </a></strong>
+          <div class="top_hidebox wdsp">
+            <div class=""> <a href="../userOrder.html">我的订单</a> </div>
+            <div> <a href="javascript:;">我的积分</a> </div>
+            <div> <a href="javascript:;">我的收藏</a> </div>
+            <div> <a href="javascript:;">账户余额</a> </div>
+            <div> <a href="javascript:;">我的选项卡</a> </div>
+            <div> <a href="javascript:;">我的优惠券</a> </div>
+          </div>
+        </li>
+        <li class="webnav"> <strong class="top_icon"><a href="javascript:;"> 服务中心 </a></strong>
+          <div class="top_hidebox">
+            <div class=""> <a href="javascript:;">购物指南</a> </div>
+            <div> <a href="javascript:;">配送服务</a> </div>
+            <div> <a href="javascript:;">支付方式</a> </div>
+            <div> <a href="javascript:;">售后服务</a> </div>
+            <div> <a href="javascript:;">客服邮箱</a> </div>
+            <div> <a href="javascript:;">投诉与建议</a> </div>
+          </div>
+        </li>
+        <li class="webnavdh" style="background:none"> <strong class="top_icon"><a href="javascript:;"> 网站导航 </a></strong>
+          <div class="top_hidebox"> 
+            <ul class="dh-list">
+              <li class="dh_title">
+                <a  href="javascript:;"style="padding-left:0;">生鲜食品</a>
+                <a href="javascript:;">酒水饮料</a>
+                <a  href="javascript:;">粮油副食</a>
+                <a href="javascript:;">休闲食品</a>
+                <a  href="javascript:;">营养养生</a>
+              </li>
+              <li class="line"></li>
+              <li class="dh_wenzi">
+                <h4>饼干点心</h4>
+                <a class="dh_oneTle"href="javascript:;">服饰</a><s>|</s>
+                <a href="javascript:;">图书</a><s>|</s>
+                <a href="javascript:;">办公直通车</a><s>|</s>
+                <a href="javascript:;">视频购物</a><s>|</s>
+                <a href="javascript:;">品牌街</a><s>|</s>
+                <a href="javascript:;">礼品卡</a><s>|</s>
+                <a href="javascript:;">电子书</a><s>|</s>
+                <a href="javascript:;">运动馆</a>
+              </li>
+
+              <li class="line"></li>
+
+              <li class="dh_wenzi">
+              <h4>冲调茶饮</h4>
+                  <a   class="dh_oneTle"href="javascript:;">商旅</a><s>|</s>
+                  <a   href="javascript:;">保险</a><s>|</s>
+                  <a   href="javascript:;">彩票</a><s>|</s>
+                  <a   href="javascript:;">水电煤</a><s>|</s>
+                  <a   href="javascript:;">游戏</a><s>|</s>
+                  <a   href="javascript:;">PPTV下载</a>
+              </li>
+              <li class="line"></li>
+              <li class="dh_wenzi">
+              <h4>美食用品</h4>
+                  <a   class="dh_oneTle"href="javascript:;">应用商店</a><s>|</s>
+                  <a   href="javascript:;">苏宁云</a><s>|</s>
+                  <a   href="javascript:;">社区</a><s>|</s>
+                  <a   href="javascript:;">客户端</a><s>|</s>
+                  <a   href="javascript:;">对公销售</a><s>|</s>
+                  <a   href="javascript:;">会员联盟</a><s>|</s>
+                  <a   href="javascript:;">商家入驻</a>
+              </li>
+              </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--顶部top]]-->
+<!--头部top-->
+<div class="header">
+  <div class="logo"> <img src="../images/logogs.gif" width="260" height="75"/>
+  <div class="logo-text"><font>融创</font>旗下朔源产品在线商城</div>
+  </div>
+  <div class="search"> 
+    <script type="text/javascript">
+                function checkSearchForm()
+                {
+                  if(document.getElementById('keywords').value)
+                  {
+                    return true;
+                  }
+                  else
+                  {
+                    alert("请输入搜索关键词！");
+                    return false;
+                  }
+                }
+            </script>
+    <form onsubmit="return checkSearchForm()"method="get">
+      <input id="keywords" class="keyword " type="text" value="请输入你要查找的商品" placeholder="请输入你要查找的商品"onclick="javascript:this.value=''"/>
+      <input class="btsearch" type="submit" value="搜索"/>
+    </form>
+    <div class="search_hot">
+      <dl>
+        <dt>热门搜索：</dt>
+        <dd><a href="javascript:;">香米</a></dd>
+        <dd><a href="javascript:;">水果</a></dd>
+        <dd><a href="javascript:;">饼干</a></dd>
+        <dd><a href="javascript:;">牛肉</a></dd>
+        <dd><a href="javascript:;">鲜鱼</a></dd>
+        <dd><a href="javascript:;">哈密瓜</a></dd>
+      </dl>
+    </div>
+  </div>
+  
+  <!--**********购物车*********************-->
+  <div class="shopCar">
+    <ul class="shopCont">
+      <li class="webnav">
+
+        <span class="total-num-box" id="J_total_num_box">
+          <b class="total-num J_cart_total_num" id="showTotalQty">2</b>
+          <span class="total-num-bg-box">
+            <em></em>
+            <i></i>
+          </span>
+        </span>
+
+        <strong>
+          <a href="javascript:;" class="shopClick down-hover"><span>购物车</span></a>
+        </strong>
+        <div class="shopBox" style="display:none;">
+        <div class="shopBady">最近加入的宝贝</div>
+        <ul>
+          <li class="clearfix sList"> <a class="sImg" href="#"><img src="../images/zzrcarfa.jpg" alt="" /></a>
+            <div class="shopName">
+              <div class="shopName1">小保养小保养小保养...</div>
+              <div class="shopName2">东昊养护店</div>
+            </div>
+            <div class="shopRemove">
+              <div class="shopjg">￥118</div>
+              <div class="removeBtn">删除</div>
+            </div>
+          </li>
+          <li class="clearfix sList"> <a class="sImg" href="#"><img src="../images/zzrcarfa.jpg" alt="" /></a>
+            <div class="shopName">
+              <div class="shopName1">小保养小保养小保养...</div>
+              <div class="shopName2">东昊养护店</div>
+            </div>
+            <div class="shopRemove">
+              <div class="shopjg">￥118</div>
+              <div class="removeBtn">删除</div>
+            </div>
+          </li>
+        </ul>
+        <div class="lookSBtn"><a href="cart.html">查看我的购物车</a></div></div>
+      </li>
+    </ul>
+  </div>
+  <script type="text/javascript" src="js/shopCar.js"></script>
+  <!--*********购物车**********************--> 
+  
+</div>
+<!--头部top]]-->
+<!--********* 导航菜单**********************--> 
+  <!--菜单划过显示隐藏-->
+  <script type="text/javascript">
+    $(function(){
+        $('#nav').hover(function(){
+            $('.tit').show();
+        },function(){
+            $('.tit').hide(); 
+        
+        })
+    })
+    </script>
+    <!--菜单划过显示隐]]-->
+<div class="menuScroll" style="height: auto;width:1200px;">
+<div class="indexCont mainNavMenu" style="float: left;width: 1200px;height:auto">
+<div class="warpper tenWap">
+  <div class="menu">
+      <ul class="leftMenu">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../crazyTime.html">限时秒杀</a><span class="hot"></span></li>
+          <li><a href="../advanceGood.html">限量预售</a></li>
+          <li><a href="../tenDollar.html"  style="color: #669900;">十元尝鲜</a><span class="hot"></span></li>
+          <li><a href="#">创业众筹</a></li>
+      </ul>
+      <ul class="cuxiao">
+            <li><a href="#">促销</a></li>
+            <li><a href="#">营养养生</a></li>
+      </ul>
+    </div>
+    <div id="nav" style="float:left;">
+      <div class="mod_cate_hd">全部商品分类</div>
+      <ul class="tit" style="display:none;">
+          <li class="mod_cate">
+              <h2><i class="arrow_dot fr"></i><a href="#">生鲜/水果</a><a class="hot_sub" href="#">进品蔬菜</a></h2>
+                <p class="mod_cate_r"><a href="#">进品猪肉</a><a href="#">虾</a><a href="#">农家蔬菜</a></p>
+                <div class="mod_subcate">
+                  <div class="mod_subcate_main">
+                      <dl>
+                          <dt>新鲜肉类</dt>
+                            <dd>
+                              <a href="#">猪肉</a>
+                              <a href="#">牛肉</a>
+                                <i class="mod_subcate_line"></i>
+                                <a href="#">羊肉</a>
+                                <a href="#">禽类</a>
+                                <a href="#">肉品礼盒</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>海鲜水产</dt>
+                            <dd>
+                              <a href="#">鱼</a><a href="#" class="org">虾</a><a href="#">加工水产</a><a href="#">水产礼盒</a><a href="#">械</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>冷藏奶品饮品</dt>
+                            <dd>
+                              <a href="#" class="org">移动电源</a><a href="#" class="org">蓝牙耳机</a><a href="#">手机套/外壳</a><a href="#">贴膜</a><a href="#">电池</a><a href="#">充电器</a><a href="#">数据线</a><a href="#">手机耳机/耳麦</a><a href="#">车载</a><a href="#">创意配件</a><a href="#">其他配件</a><a href="#">iPhone配件</a><a href="#">TF卡</a><a href="#">蓝牙音响</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>数码摄像</dt>
+                            <dd>
+                              <a href="#">数码相机</a><a href="#" class="org">微电/微单相机</a><a href="#">摄像机</a><a href="#">拍立得</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>单反/镜头</dt>
+                            <dd>
+                              <a href="#">全部</a><a href="#">佳能</a><a href="#">尼康</a><a href="#">宾得</a><a href="#">更多></a>
+                                <i class="mod_subcate_line"></i>
+                                <a href="#">单反镜头</a><a href="#">微单镜头</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>数码摄像</dt>
+                            <dd>
+                              <a href="#">数码相机</a><a href="#" class="org">微电/微单相机</a><a href="#">摄像机</a><a href="#">拍立得</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>数码配件</dt>
+                            <dd>
+                              <a href="#" class="org">存储卡</a><a href="#" class="org">U盘</a><a href="#">相机包</a><a href="#">相机电池</a><a href="#">贴膜</a><a href="#">滤镜</a><a href="#">三脚架</a><a href="#">闪光灯</a><a href="#">遮光罩</a><a href="#">专业配件</a><a href="#">清洁用品</a><a href="#">望远镜</a><a href="#">移动硬盘</a><a href="#" class="org">移动电源</a><a href="#">读卡器</a><a href="#">干电池</a><a href="#">充电电池</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>苹果专区</dt>
+                            <dd>
+                              <a href="#">iphone</a><a href="#">ipad</a><a href="#">Mac</a><a href="#">ipod</a><a href="#">iphone配件</a><a href="#">ipad配件</a><a href="#">功能类配件</a><a href="#">苹果电脑配件</a><a href="#">ipod配件</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>娱乐影音</dt>
+                            <dd>
+                              <a href="#" class="org">智能穿戴</a><a href="#">MP3和MP4</a><a href="#">插卡音箱</a><a href="#">潮流电玩</a><a href="#">数码相框</a><a href="#">收音/收录机</a><a href="#">高清播放器</a><a href="#">耳机</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>电子教育</dt>
+                            <dd>
+                              <a href="#">电纸书</a><a href="#">录音笔</a><a href="#">电子词典</a><a href="#">智能学习/点读</a><a href="#">幼儿教育</a>
+                            </dd>
+                        </dl>
+                      <div class="mod_subcate_channel"><a class="mod_btn_arrow" href="#"><b>手机/配件频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="#"><b>相机、数码、苹果频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                      <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                          <li><a href="#"><img src="../images/1.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/2.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/3.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/4.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/5.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/6.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/7.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/8.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                          <li><a href="#">华为3X独家首发</a></li>
+                            <li><a href="#">青橙手机贺新春 直降400！</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="#"><img src="../images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+          <li class="mod_cate">
+              <h2><i class="arrow_dot fr"></i><a href="#">粮油副食</a><a class="hot_sub" href="#">直产大米</a></h2>
+                <p class="mod_cate_r"><a href="#">五常大米</a><a href="#">橄榄油</a><a href="#">厨房调料</a></p>
+                <div class="mod_subcate">
+                  <div class="mod_subcate_main">
+                      <dl>
+                          <dt>热门推荐</dt>
+                            <dd>
+                              <a href="#">ipad air</a><a href="#">mini</a><a href="#">Surface</a><a href="3">移动硬盘1TB</a><a href="#">无线键盘</a><a href="#">游戏鼠标</a>
+                            </dd>
+                        </dl>
+                      <div class="mod_subcate_channel"><a class="mod_btn_arrow" href="#"><b>电脑整机频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="#"><b>硬件/外设频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="#"><b>电脑附件频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="#"><b>音频馆</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="#"><b>腾讯周边</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                      <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                          <li><a href="#"><img src="../images/9.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/10.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/11.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/12.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/13.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/14.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/15.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/16.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/17.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/18.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/19.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                          <li><a href="#">神舟新春最惠 全场最高直降500！</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="#"><img src="../images/00.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+          <li class="mod_cate">
+              <h2><i class="arrow_dot fr"></i><a href="#">内类海鲜</a></h2>
+                <p class="mod_cate_r"><a href="#">猪肉</a><a href="#">羊肉</a><a href="#">鱼</a></p>
+                <div class="mod_subcate">
+                  <div class="mod_subcate_main">
+                      <dl>
+                          <dt>电视</dt>
+                            <dd>
+                              <a href="#">全部</a><a href="#">创维</a><a class="org" href="#">海信</a><a href="3">TCL</a><a href="#">康佳</a><a href="#">长虹</a><a class="org" href="#">夏普</a><a href="#">三星</a><a class="org" href="#">索尼</a><a href="#">乐华</a><a href="#">LG</a><a href="#">联想</a><a href="#">熊猫</a><a href="#">三洋</a><a href="#">东芝</a><a class="org" href="#">乐视</a><a href="#">更多></a>
+                                <i class="mod_subcate_line"></i>
+                                <a href="#">32英寸</a><a href="#">39-40英寸</a><a href="#">42-43英寸</a><a class="org" href="#">46-48英寸</a><a href="#">50-55英寸</a><a href="#">60英寸以上</a><a href="#">32英寸以下</a>
+                            </dd>
+                        </dl>
+                      <div class="mod_subcate_channel"><a class="mod_btn_arrow" href="#"><b>彩电影音/空调冰洗频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                      <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                          <li><a href="#"><img src="../images/20.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/21.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/22.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/23.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/24.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/25.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                          <li><a href="#">TCL春节提前抢</a></li>
+                            <li><a href="#">海信彩电跨年聚惠</a></li>
+                            <li><a href="#">联想智能电视机马年钜惠</a></li>
+                            <li><a href="#">三星喜迎新春马上有礼</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="#"><img src="../images/000.jpg" /></a> 
+                    </div>
+                </div>
+            </li>
+          <li class="mod_cate">
+              <h2><i class="arrow_dot fr"></i><a href="#">休闲食品</a><a href="#">小吃零食</a></h2>
+                <p class="mod_cate_r"><a href="#">饼干</a><a href="#">糖果</a><a href="#">火腿肠</a></p>
+                <div class="mod_subcate">
+                  <div class="mod_subcate_main">
+                      <dl>
+                          <dt>生活小电</dt>
+                            <dd>
+                              <a class="org" href="#">空气净化器</a><a class="org" href="#">取暖设备</a><a class="org" href="#">电热油汀</a><a href="#">快热炉</a><a href="#">暖风机</a><a href="#">小太阳</a>
+                            </dd>
+                        </dl>
+                      <div class="mod_subcate_channel"><a class="mod_btn_arrow" href="#"><b>厨卫电器频道</b><i class="arrow_dot"></i></a><a class="mod_btn_arrow" href="#"><b>生活电器频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                      <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                          <li><a href="#"><img src="../images/1.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/2.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/3.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/4.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/5.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/6.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/7.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/8.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                          <li><a href="#">华为3X独家首发</a></li>
+                            <li><a href="#">青橙手机贺新春 直降400！</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="#"><img src="../images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+          <li class="mod_cate">
+              <h2><i class="arrow_dot fr"></i><a href="#">冲调/奶茶/</a><a class="hot_sub" href="#">奶粉</a></h2>
+                <p class="mod_cate_r"><a href="#">蜂蜜</a><a href="#">麦片</a><a href="#">水果饮料</a><a href="#">咖啡</a></p>
+                <div class="mod_subcate">
+                  <div class="mod_subcate_main">
+                      <dl>
+                          <dt>进口食品饮料</dt>
+                            <dd>
+                              <a href="#">全部</a><a href="#">饮料冲调</a>
+                            </dd>
+                        </dl>
+                      <dl>
+                          <dt>休闲零食</dt>
+                            <dd>
+                              <a href="#">全部</a><a href="#">传统糕饼</a><a href="#">西式糕点</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="mod_subcate_side">
+                      <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                          <li><a href="#"><img src="../images/1.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/2.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/3.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/4.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/5.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/6.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/7.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/8.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                          <li><a href="#">华为3X独家首发</a></li>
+                            <li><a href="#">青橙手机贺新春 直降400！</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="#"><img src="../images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+          <li class="mod_cate">
+              <h2><i class="arrow_dot fr"></i><a href="#">营养保健/养生</a></h2>
+                <p class="mod_cate_r"><a href="#">维生素</a><a href="#">膳食纤维</a><a href="#">礼盒</a></p>
+                <div class="mod_subcate">
+                  <div class="mod_subcate_main">
+                      <dl>
+                          <dt>热门推荐</dt>
+                            <dd>
+                              <a href="#">手表</a><a href="#">羽绒服</a>
+                            </dd>
+                        </dl>
+                      <div class="mod_subcate_channel"><a class="mod_btn_arrow" href="#"><b>家居日用频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                      <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                          <li><a href="#"><img src="../images/1.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/2.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/3.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/4.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/5.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/6.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/7.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/8.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                          <li><a href="#">华为3X独家首发</a></li>
+                            <li><a href="#">青橙手机贺新春 直降400！</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="#"><img src="../images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+          <li class="mod_cate">
+              <h2><i class="arrow_dot fr"></i><a href="#">其他</a><a class="hot_sub" href="#">年会礼品</a></h2>
+                <p class="mod_cate_r"><a href="#">打印设备</a><a href="#">耗材</a><a href="#">办公文具</a></p>
+                <div class="mod_subcate">
+                  <div class="mod_subcate_main">
+                      <dl>
+                          <dt>打印设备</dt>
+                            <dd>
+                              <a class="org" href="#">激光打印机</a><a href="#">喷墨打印机</a><a href="#">针式打印机</a>
+                            </dd>
+                        </dl>
+                      <div class="mod_subcate_channel"><a class="mod_btn_arrow" href="#"><b>文具周边/办公用品频道</b><i class="arrow_dot"></i></a></div>
+                    </div>
+                    <div class="mod_subcate_side">
+                      <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="mod_subcate_side_brand clearfix">
+                          <li><a href="#"><img src="../images/1.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/2.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/3.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/4.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/5.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/6.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/7.jpg" /></a></li>
+                            <li><a href="#"><img src="../images/8.jpg" /></a></li>
+                        </ul>
+                        <div class="mod_subcate_side_hd">热门活动</div>
+                        <ul class="mod_subcate_side_hotlist">
+                          <li><a href="#">华为3X独家首发</a></li>
+                            <li><a href="#">青橙手机贺新春 直降400！</a></li>
+                        </ul>
+                        <a class="mod_subcate_gg" href="#"><img src="../images/0.jpg" /></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+       <!-- <div class="mod_cate2">
+            <h2><a href="#">QQ网购</a><a class="yel" href="#">彩票</a><a href="#">充值</a></h2>
+            <p class="mod_cate_r"><a href="#">美妆</a><a href="#">旅游</a><a href="#">票务</a><a class="yel" href="#">腾讯周边</a></p>
+        </div> -->
+    </div>
+</div>
+<script type="text/javascript">
+  $(function(){
+    $("#nav .tit").slide({
+      type:"menu",
+      titCell:".mod_cate",
+      targetCell:".mod_subcate",
+      delayTime:0,
+      triggerTime:10,
+      defaultPlay:false,
+      returnDefault:true
+    })
+  })
+</script>
+<!--[[正文菜单处-->
+<div class="ur_here blank">您当前所在的位置: <a href="../index.html"target="_top">首页</a><code>&gt;</code>休闲食品_专区</div>
+<div class="linkNavList">
+  <!--[[left-box-->
+	<div class="left-box">
+		<div class="catlist">
+    <div class="navBarCon">
+        <h3>休闲食品</h3>
+        <ul class="expmenu">
+          <li>
+            <h4>饼干</h4>
+            <div class="list-item hide">
+              <p><a href="javascript:;">海鲜水产</a></p>
+              <p><a href="javascript:;">海鲜水产</a></p>
+            </div>
+          </li>
+          <li>
+            <h4>糖果</h4>
+            <div class="list-item hide">
+              <p><a href="javascript:;">海鲜水产</a></p>
+              <p><a href="javascript:;">海鲜水产</a></p>
+              <p><a href="javascript:;">海鲜水产</a></p>
+            </div>
+          </li>
+          <li>
+            <h4>巧克力</h4>
+            <div class="list-item hide">
+              <p><a href="javascript:;">海鲜水产</a></p>
+              <p><a href="javascript:;">海鲜水产</a></p>
+            </div>
+          </li>
+          <li>
+            <h4>糕点</h4>
+            <div class="list-item hide">
+              <p><a href="javascript:;">海鲜水产</a></p>
+              <p><a href="javascript:;">海鲜水产</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+        navList(12);
+        function navList(id) {
+            var $obj = $(".expmenu");
+            $obj.find("h4").hover(function () {
+                $(this).addClass("hover");
+            }, function () {
+                $(this).removeClass("hover");
+            });
+            $obj.find("p").hover(function () {
+                if ($(this).hasClass("on")) { return; }
+                $(this).addClass("hover");
+            }, function () {
+                if ($(this).hasClass("on")) { return; }
+                $(this).removeClass("hover");
+            });
+            $obj.find("h4").click(function () {
+                var $div = $(this).siblings(".list-item");
+                if ($(this).parent().hasClass("curr")) {
+                    $div.slideUp(400);
+                    $(this).parent().removeClass("curr");
+                }
+                if ($div.is(":hidden")) {
+                    $(".expmenu li").find(".list-item").slideUp(400);
+                    $(".expmenu li").removeClass("curr");
+                    $(this).parent().addClass("curr");
+                    $div.slideDown(400);
+
+                } else {
+                    $div.slideUp(400);
+                }
+            });
+        }
+      </script>
+    </div>
+
+    <!--[[热卖-->
+    <div class="hotProducts">
+      <h2 class="search_title">热卖推荐</h2>
+      <div class="sidlist_box">
+        <ul class="h_Cont">
+          <li class="item-list">
+            <div class="item-inner">
+              <div class="pic">
+                <a href="#"><img src="../images/ahimg33.jpg" width="160" height="160"></a>
+              </div>
+              <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+              <div class="item-price">
+                  <i>yen</i><em>48.9</em>
+              </div>
+            </div>
+          </li>
+          <li class="item-list">
+            <div class="item-inner">
+              <div class="pic">
+                <a href="#"><img src="../images/floor4left.jpg" width="160" height="160"></a>
+              </div>
+              <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+              <div class="item-price">
+                  <i>yen</i><em>48.9</em>
+              </div>
+            </div>
+          </li>
+          <li class="item-list">
+            <div class="item-inner">
+              <div class="pic">
+                <a href="#"><img src="../images/ahimg55.jpg" width="160" height="160"></a>
+              </div>
+              <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+              <div class="item-price">
+                  <i>yen</i><em>48.9</em>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <!--热卖]]-->
+	</div>
+	 <script type="text/javascript">
+$(document).ready(function(){
+						   
+	/* 滑动/展开 */
+	$("ul.expmenu li > div.f-header").click(function(){
+												   
+		var arrow = $(this).find("span.arrow");
+	
+		if(arrow.hasClass("up")){
+			arrow.removeClass("up");
+			arrow.addClass("down");
+		}else if(arrow.hasClass("down")){
+			arrow.removeClass("down");
+			arrow.addClass("up");
+		}
+	
+		$(this).parent().find("ul.catitem").slideToggle();
+		
+	});
+	
+});
+</script>
+<script language="JavaScript">
+<!--//
+function ShowMenu(obj,n){
+ var Nav = obj.parentNode;
+ if(!Nav.id){
+  var BName = Nav.getElementsByTagName("ol");
+  var HName = Nav.getElementsByTagName("h2");
+  var t = 2;
+ }else{
+  var BName = document.getElementById(Nav.id).getElementsByTagName("span");
+  var HName = document.getElementById(Nav.id).getElementsByTagName(".f-header");
+  var t = 1;
+ }
+ for(var i=0; i<HName.length;i++){
+  HName[i].innerHTML = HName[i].innerHTML.replace("-","+");
+  HName[i].className = "";
+ }
+ obj.className = "h" + t;
+ for(var i=0; i<BName.length; i++){if(i!=n){BName[i].className = "no";}}
+ if(BName[n].className == "no"){
+  BName[n].className = "";
+  obj.innerHTML = obj.innerHTML.replace("+","-");
+ }else{
+  BName[n].className = "no";
+  obj.className = "";
+  obj.innerHTML = obj.innerHTML.replace("-","+");
+ }
+}
+//-->
+</script>
+
+<!--left-box]]-->
+
+	<div class="right-box">
+		<div class="filterContent">
+      <ul class="select">
+        <li class="select-list" style="border-top:0;">
+          <dl id="select1">
+            <dt>品牌：</dt>
+            <dd class="fList ">
+              <span class="L01">
+                <a class="select-all selected"href="#">全部</a>
+                <a title="全部" href="#">欢乐果园</a>
+                <a title="全部" href="#">柠檬</a>
+                <a title="全部" href="#">桃</a>
+                <a title="全部" href="#">山竹</a>
+                <a title="全部" href="#">提子</a>
+                <a title="全部" href="#">芒果</a>
+                <a title="全部" href="#">樱桃</a>
+                <a title="全部" href="#">苹果</a>
+                <a title="全部" href="#">其它</a>
+              </span>
+            </dd>
+          </dl>
+        </li>
+        <li class="select-list">
+          <dl id="select2">
+            <dt>规格：</dt>
+            <dd class="fList ">
+              <span class="L01">
+                <a class="select-all selected"href="#">全部</a>
+                <a title="全部" href="#">500g</a>
+                <a title="全部" href="#">1kg</a>
+                <a title="全部" href="#">5kg</a>
+                <a title="全部" href="#">2kg</a>
+              </span>
+            </dd>
+          </dl>
+        </li>
+        <!-- <li class="select-list">
+          <dl id="select3">
+            <dt>裙装：</dt>
+            <dd class="fList ">
+              <span class="L01">
+                <a class="select-all selected"href="#">全部</a>
+                <a href="#">连衣裙</a>
+                <a href="#">半身裙</a>
+                <a href="#">长袖连衣裙</a>
+                <a href="#">中长款连衣裙</a>
+              </span>
+            </dd>
+          </dl>
+        </li> -->
+        <li class="select-result">
+          <dl>
+            <dt>已选条件：</dt>
+            <dd>
+              <a class="select-no">暂时没有选择过滤条件</a>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+		</div>
+		<!--[[排序-->
+		<div class="p-filter">
+			<div id="div_sort">
+	            <div class="price-2" id="sortFilter">
+	            	<dl>
+	            		<dt>排序：</dt>
+	            		<dd>
+	            			<a href="javascript:;" hidefocus="true" class="listup on" style="background-image:none;padding-left:10px" id="0" name="0">
+			                      默认</a> 
+			                <a href="javascript:;" hidefocus="true" class="listup" id="1" name="2">
+			                     时间</a> 
+			                <a href="javascript:;" hidefocus="true" class="listup" id="7" name="8">
+			                       销量</a>
+			                <a href="javascript:;" hidefocus="true" class="listup" id="3" name="4">
+			                      价格</a>
+			                <a href="javascript:;" hidefocus="true" class="listup" id="5" name="6">
+			                     评论</a>
+	            		</dd>
+                    </dl>        
+	            </div>
+        	</div>
+        	<script type="text/javascript">
+	        	$(function(){
+					 $("#sortFilter a").click(function () {
+						var listdonw = $(this).hasClass("listdonw")
+						$(this).addClass("listdonw").siblings().removeClass("listdonw");
+						 $("#div_sort a").removeClass("on");
+				        $("#div_sort a").removeClass("listdonw");
+				        $("#div_sort a").removeClass("addSortfilter");
+				        $("#div_sort a").addClass("listup");
+						if (listdonw == false) {
+							 $(this).addClass("listdonw on");
+						} else {
+				            $(this).addClass("on addSortfilter"); 
+				        }
+				    })
+
+				})
+        	</script>
+        	<div class="num_right">
+        		<div class="total_good">共<span>53</span>个商品</div>
+        		<div class="page_box">
+        			<a href="javascript:;" class="p_prev"><span class="icon-prev-disable"></span>  </a>
+        			<span class="page_s"><strong class="h">1</strong>/96</span>
+        			
+        			<a href="javascript:;" class="p_next"><span class="icon-next"></span></a>
+        		</div>
+        	</div>
+        	<!--排序]]-->
+
+          <script type="text/javascript">
+          $(document).ready(function(){
+                        
+            $("#select1 dd a").click(function () {
+              $(this).addClass("selected").siblings().removeClass("selected");
+              if ($(this).hasClass("select-all")) {
+                $("#selectA").remove();
+              } else {
+                var copyThisA = $(this).clone();
+                if ($("#selectA").length > 0) {
+                  $("#selectA").html($(this).text());
+                } else {
+                  $(".select-result dl dd").append(copyThisA.attr("id", "selectA"));
+                }
+              }
+            });
+            
+            $("#select2 dd a").click(function () {
+              $(this).addClass("selected").siblings().removeClass("selected");
+              if ($(this).hasClass("select-all")) {
+                $("#selectB").remove();
+              } else {
+                var copyThisB = $(this).clone();
+                if ($("#selectB").length > 0) {
+                  $("#selectB").html($(this).text());
+                } else {
+                  $(".select-result dl dd").append(copyThisB.attr("id", "selectB"));
+                }
+              }
+            });
+            
+            // $("#select3 dd a").click(function () {
+            //   $(this).addClass("selected").siblings().removeClass("selected");
+            //   if ($(this).hasClass("select-all")) {
+            //     $("#selectC").remove();
+            //   } else {
+            //     var copyThisC = $(this).clone();
+            //     if ($("#selectC").length > 0) {
+            //       $("#selectC").html($(this).text());
+            //     } else {
+            //       $(".select-result dl dd").append(copyThisC.attr("id", "selectC"));
+            //     }
+            //   }
+            // });
+            
+            $("#selectA").live("click", function () {
+              $(this).remove();
+              $("#select1 .select-all").addClass("selected").siblings().removeClass("selected");
+            });
+            
+            $("#selectB").live("click", function () {
+              $(this).remove();
+              $("#select2 .select-all").addClass("selected").siblings().removeClass("selected");
+            });
+            
+            // $("#selectC").live("click", function () {
+            //   $(this).remove();
+            //   $("#select3 .select-all").addClass("selected").siblings().removeClass("selected");
+            // });
+            
+            $(".select dd").live("click", function () {
+              if ($(".select-result dd a").length > 1) {
+                $(".select-no").hide();
+              } else {
+                $(".select-no").show();
+              }
+            });
+            
+          });
+
+          </script>
+		</div>
+
+
+
+    <div class="contain_box">
+      <ul class="J_AllContent">
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian1.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian2.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian3.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian4.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian5.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian6.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian7.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian8.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian9.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian10.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian11.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-list">
+          <div class="item-inner">
+            <div class="pic">
+              <a href="#"><img src="../images/tenxiuxian12.jpg" width="210" height="210"></a>
+            </div>
+            <div class="title"><a>三星手机 GT-I9508v (炭灰)支持五模；极速网络；四核2.3GHz处理器</a></div>
+            <div class="item-price">
+                <i>yen</i><em>48.9</em>
+            </div>
+            <div class="frc">
+              <!--[[good-plus-->
+              <div class="g-num"> 
+                <span class="num_minus">-</span>
+                <input type="text" value="1">
+                <span class="num_plus">+</span>
+              </div>
+              <!--good-plus]]-->
+              <div class="g-btn">
+                <a href="javascript:;">加入购物车</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+<script type="text/javascript">
+  $(function() {
+    if (window.PIE) {
+        $('.rounded').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+
+</script>
+
+
+	</div>
+</div>
+<!--正文菜单处]]-->
+</div>
+</div>
+<!--********* 导航菜单]]**********************--> 
+
+<!--footer搜索-->
+<div class="indexContFooter">
+  <!--footer搜索end-->
+  <!--底层foot-start-->
+  <div class="footer">
+    <div class="foot-cont">
+        <dl class="fore1">
+          <dt><b></b><strong>购物指南</strong></dt>
+          <dd>
+            <div><a href="#">购物流程</a></div>
+            <div><a href="#">会员介绍</a></div>
+            <div><a href="#">团购/机票</a></div>
+            <div><a href="#">常见问题</a></div>
+            <div><a href="#">大家电</a></div>
+            <div><a href="#">联系客服</a></div>
+          </dd>
+        </dl>
+        <dl class="fore2">    
+          <dt><b></b><strong>配送方式</strong></dt>
+          <dd>
+            <div><a href="#">上门自提</a></div>
+            <div><a href="#">211限时达</a></div>
+            <div><a href="#">配送服务查询</a></div>
+            <div><a href="#">配送费收取标准</a></div>
+            <div><a href="#">海外配送</a></div>
+          </dd>
+        </dl>
+        <dl class="fore3">
+        <dt><b></b><strong>支付方式</strong></dt>
+        <dd>
+          <div><a href="javascript:;">货到付款</a></div>
+          <div><a href="javascript:;" >在线支付</a></div>
+          <div><a href="javascript:;" >分期付款</a></div>
+          <div><a href="javascript:;" >邮局汇款</a></div>
+          <div><a href="javascript:;" >公司转账</a></div>
+        </dd>
+      </dl>
+      <dl class="fore4">    
+      <dt><b></b><strong>售后服务</strong></dt>
+      <dd>
+        <div><a href="javascript:;" >售后政策</a></div>
+        <div><a href="javascript:;">价格保护</a></div>
+        <div><a href="javascript:;">退款说明</a></div>
+        <div><a href="javascript:;">返修/退换货</a></div>
+        <div><a href="javascript:;">取消订单</a></div>
+      </dd>
+    </dl>
+    </div>
+    <div class="footer_center">
+        <div class="links">
+          <a href="javascript:;">关于我们</a>|
+          <a href="javascript:;">联系我们</a>|
+          <a href="javascript:;">友情链接</a>|
+          <a href="javascript:;">免责条款</a>|
+          <a href="javascript:;">广告服务</a>|
+          <a href="javascript:;">食品流通许可证</a>|
+          <a href="javascript:;">营业执照</a>
+        </div>
+  </div>
+  <div class="footer_copyright">
+    <p> Copyright (c) 2014-2019 5RICE.吾米网 版权所有 黑ICP备11002788号 保留一切权利。 客服热线：400-400-5555 </p>
+    <p>京公网安备 110105001608 | 京ICP证111033号 | 食品流通许可证 SP1101051110165515（1-1） | 营业执照</p>
+  </div>
+  <div class="footer_cx">
+      <p>
+        <a href="javascript:;"><img src="../images/footerbomC.png" width="112"height="40"></a>
+        <a href="javascript:;"><img src="../images/footerbomX.gif" width="112"height="40"></a>
+        
+      </p>
+  </div>
+  </div>
+  </div>
+  <!--底层foot]]-->
+</body>
+</html>

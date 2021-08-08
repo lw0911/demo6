@@ -1,0 +1,167 @@
+/*dede58.com 做最好的织梦整站模板下载网站*/
+@charset "utf-8";
+
+/* CSS top_ygl 2014|9|16*/
+
+.box h1{ display:block; display: inline-block; height:30px; line-height:30px; margin-top:10px; color:#666666; border-bottom:#0085d0 solid 2px; padding-left:10px; width:1190px;}
+.box h1 span{ line-height:30px;}
+
+.sp_ban{ width:932px; height:270px;}
+
+.shops-focus{width:932px; height:270px;position:relative; overflow:hidden;}
+.shops-focus .imgbox{position:relative;}
+.shops-focus img ,.shops-focus .imgbox li{height:270px;width:932px;overflow:hidden;/*position:absolute;*/z-index:0;}
+.shops-focus .imgwarpper{height:270px;width:932px;}
+.shops-focus .imgbox li{left:0;top:0;}
+.shops-focus .numbox{position:absolute;height:3px;top:240px; width:100%;}
+.shops-focus .numbox p{right:10px; position:absolute;}
+.shops-focus .numbox span{display:inline-block; width:21px; height:3px; background:#233d48; margin-right:5px;overflow:hidden;}
+.shops-focus .numbox span.pptOn{background:#fbbc00;}
+
+.shops-focus2{width:278px; height:134px;position:relative; overflow:hidden;}
+.shops-focus2 .imgbox{position:relative;}
+.shops-focus2 img ,.shops-focus2 .imgbox li{height:134px;width:278px;overflow:hidden;/*position:absolute;*/z-index:0;}
+.shops-focus2 .imgwarpper{height:134px;width:278px;}
+.shops-focus2 .imgbox li{left:0;top:0;}
+.shops-focus2 .numbox{position:absolute;height:3px;top:110px; width:100%;}
+.shops-focus2 .numbox p{right:10px; position:absolute;}
+.shops-focus2 .numbox span{display:inline-block; width:21px; height:3px; background:#233d48; margin-right:5px;overflow:hidden;}
+.shops-focus2 .numbox span.pptOn{background:#fbbc00;}
+
+
+
+
+
+.sp_ban_r{width:260px;}
+.sp_ban_r .time {width:238px; font-size:14px; color:#666666; height:40px; border-bottom: #e6e6e6 solid 1px; border-right: #e6e6e6 solid 1px; border-left: #e6e6e6 solid 1px;}
+.sp_ban_r .time font{ display:block;  float:left}
+.sp_ban_r .time span{display:block; width:17px; float:left; height:21px; background:url(images/time_bg_11.jpg); color:#F00; text-align:center; line-height:21px;}
+.sp_ban_r .img_dd{ width:90px; text-align:center}
+.sp_ban_r dt.s1{ height:26px; background:#f9f9f9}
+.sp_ban_r h2{  line-height:30px; color:#fff; height:30px; background:#0085d0; padding-left:10px;}
+.sp_ban_r dl{ width:258px; border-bottom:#e6e6e6 solid 1px; border-right:#e6e6e6 solid 1px; border-left:#e6e6e6 solid 1px; display:block;  padding-bottom:10px; }
+.sp_ban_r dl dd{ line-height:23px}
+.sp_ban_r dl .txlin{ border-top:#e6e6e6 solid 1px;}
+.rlin{ border-right:#e6e6e6 solid 1px;}
+.sp_ban_r a.gm_bot{ background:url(images/sp_gm_qn_60.jpg); width:132px; height:30px; display:block;}
+
+.l_zt_zjt{background:url(images/cion_jt_50.jpg) no-repeat; width:10px; height:12px; display:block}
+.r_zt_rjt{ background:url(images/cion_jt_47.jpg); width:8px; height:15px;display:block}
+.txt_bt{ font-size:16px; width:200px; text-align:center; color:#666666}
+
+
+
+
+/* CSS 广告位 2014|9|17*/
+
+
+.box_img{width:1200px; margin:10px auto; }
+
+/* CSS 1F排行样式 2014|9|17*/
+
+.box ul.lou_oner{ width:258px; height:30px; display:block; float:left; background:#0085d0}
+.box ul.lou_oner li{ width:128px; float:left; line-height:30px; text-align:center; font-weight:bold; color:#fff; font-weight:bold; font-size:14px; cursor:pointer;}
+.box ul.lou_oner li.hover{ background:#fff; color:#666; display:block}
+.paihang_c{ border:1px solid #e6e6e6; border-top:none; border-left:none;}
+.paihang_c ul li{ font-size:14px;}
+.paihang_c ul li .title{ height:42px; line-height:42px; overflow:hidden; border-bottom:1px dashed #e6e6e6; }
+.paihang_c ul li .title span.num{background:url(images/red.gif) no-repeat; width:20px; height:20px; float:left; margin:10px 10px 0 10px; color:#fff; font-weight:bold; line-height:20px; text-align:center}
+.paihang_c ul li .content{ height:110px; *height:110px; _height:108px; border-bottom:1px dashed #e6e6e6}
+.paihang_c ul li .content .red{ float:left;background:url(images/red.gif) no-repeat;margin:10px 10px 0 10px; width:20px; height:20px;color:#fff; font-weight:bold; line-height:20px; text-align:center; display:inline}
+.paihang_c ul li .content .content_right{ float:left; overflow:hidden; margin-top:15px;}
+.paihang_c ul li .content .content_right .c_img{ float:left; width:45px; height:88px;}
+.paihang_c ul li .content .content_right .c_wenzi{ float:left; margin-left:10px;}
+
+/* CSS 2F合约机样式 2014|9|17*/
+.hy_box{ width:1200px;}
+
+.hy_box .hy_l{ width:220px; float:left; height:532px;}
+.hy_l .tit_r{  width:218px; border-right:#e6e6e6 solid 1px; border-left:#e6e6e6 solid 1px; border-bottom:#e6e6e6 solid 1px; text-align:center}
+.hy_l h4{height:30px; color:#666; font-weight:bold; text-align:center; font-size:14px; display:block; background:#f4f4f4; line-height:30px; width:218px; border-left:#e6e6e6 solid 1px; border-right:#e6e6e6 solid 1px;}
+.hy_l a.gj{ display:block; background:#fead00; text-align:center; width:83px; height:31px; line-height:30px; color:#fff; font-size:14px; font-weight:bold; margin:15px auto; }
+.hy_l .hy_gg{ width:218px; height:196px; border-right:#e6e6e6 solid 1px; text-align:center;  border-top:#e6e6e6 solid 1px; border-bottom:#e6e6e6 solid 1px;}
+
+
+.hy_box .hy_r{ width:979px; float:right; height:532px;}
+.hy_box .hy_r dl{ width:243px; float:left; padding-top:10px;}
+.hy_box .hy_r dl dt{ width:243px; height:187px; text-align:center;}
+.hy_box .hy_r dl dd{ color:#666; font-size:14px; line-height:23px;}
+
+
+
+/* CSS 3F裸机特惠样式 2014|9|17*/
+.lou_l{ width:220px;float:left; height:560px;}
+
+.lou_l ul.qh li{ width:188px; height:102px; text-align:center; padding-left:30px; font-size:16px; line-height:102px; background:#f4f4f4; border-top:#e6e6e6 solid 1px; border-left:#e6e6e6 solid 1px; border-right:#e6e6e6 solid 1px;}
+.qh_li_bg1{background:url(images/qh_cion_tu.png) -20px 25px no-repeat; }
+.bl_w51{display:block; width:51px; height:90px; float:right}
+
+
+.qh_li_bg2{ background:url(images/qh_cion_tu.png) -25px -70px no-repeat;}
+.qh_li_bg3{ background:url(images/qh_cion_tu.png) -25px -160px no-repeat;}
+.qh_li_bg4{ background:url(images/qh_cion_tu.png) -25px -250px no-repeat;}
+.lou_l ul.qh li.hover{ background:#fff;  border-left:#0085d0 solid 2px; color:#0085d0; border-right:none; border-top:none; cursor:pointer;}
+
+
+.lou_l ul.news{ padding-left:10px; color:#666; padding-top:5px;  border-right:#e6e6e6 solid 1px;border-left:#e6e6e6 solid 1px;  border-bottom:#e6e6e6 solid 1px;}
+.lou_l ul.news li{ line-height:24px;}
+.free_lou{border-bottom:#e6e6e6 solid 1px; border-right:#e6e6e6 solid 1px;}
+
+
+
+
+
+
+
+
+.lou_r{ width:979px;float:right; height:560px; }
+
+.lou_r dl{ width:243px; float:left; padding-top:10px;}
+.lou_r dl dt{ width:243px; height:187px; text-align:center;}
+.lou_r dl dd{ color:#666; font-size:14px; line-height:23px;}
+
+
+/* CSS 4F4G专区样式 2014|9|17*/
+.four_gl{ width:220px; float:left;}
+.four_gl .spng_up{ width:220px; height:405px;}
+.four_gl .spng_dow{ width:220px; height:180px;}
+.four_gr{width:980px;float:right}
+
+.four_gr dl{ width:243px; float:left; padding-top:10px;}
+.four_gr dl dt{ width:243px; height:187px; text-align:center;}
+.four_gr dl dd{ color:#666; font-size:14px; line-height:23px;}
+
+
+/* CSS 5F地市专享 2014|9|17*/
+.zhyx_qh{font-size:16px; font-weight:bold;margin-left:10px;width:350px;}
+.fiv_r{ width:220px; float:left;}
+.fiv_r .gg_up{ display:block; width:220px; height:152px; }
+.fiv_r .gg_dow{display:block; width:220px; height:150px;}
+
+
+.fiv_l{width:980px;float:right;}
+
+.fiv_l dl{ width:243px; float:left; padding-top:10px;}
+.fiv_l dl dt{ width:243px; height:187px; text-align:center;}
+.fiv_l dl dd{ color:#666; font-size:14px; line-height:23px;}
+
+
+/*切换地市*/
+.ahyx_qhds{display:none;width:215px;background:#ffffff;top:33px;border:2px solid #0085d0; top:30px; }
+
+.ahyx_qhds ul{width:215px;padding:10px 0px; overflow:hidden}
+.ahyx_qhds li{float:left;width:40px;text-align:center;height:20px;line-height:20px;color:#767676;cursor:pointer;margin-left:2px;display:inline;  font-weight:normal; font-size:12px;}
+.ahyx_qhds li.hover{background:#0085d0;color:#fff;}
+
+/* CSS six yinyou 2014|9|17*/
+
+.six{ border-bottom:#e6e6e6 solid 1px;  border-right:#e6e6e6 solid 1px;  border-left:#e6e6e6 solid 1px; height:302px; display:block; width:1198px;}
+.six li{width:238px; text-align:center; float:left; border-left:#e6e6e6 dashed 1px; display:block; color:#666}
+.six img{ width:220px; height:230px;}
+
+
+
+
+
+
+

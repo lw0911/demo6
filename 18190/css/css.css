@@ -1,0 +1,52 @@
+div#MainPromotionBanner{
+	width:135px;
+	height:330px;
+	
+}
+#MainPromotionBanner #SlidePlayer {
+	position:relative;
+	margin: 0 auto;
+}
+#MainPromotionBanner .Slides{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	height:330px;
+	overflow: hidden;
+}
+#MainPromotionBanner .Slides li {
+	float: left;
+	width:135px;
+	height:330px;
+}
+
+#MainPromotionBanner .Slides img{
+	border:0;
+	display: block;
+	width:135px;
+	height:330px;	
+}
+
+#MainPromotionBanner .SlideTriggers{
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+	position: absolute; 
+	top: 240px; 
+	right: 0px;
+	z-index: 10;
+	height: 25px;
+	display:none;	
+}
+
+#MainPromotionBanner .SlideTriggers li.Current{ 
+	color:#fff; 
+	display:none;
+	border:0; 
+	font-weight:bold;
+	font-size: 1.4em;
+	line-height: 21px;
+	height: 21px;
+	width: 21px;
+	margin:0 6px; 
+}
