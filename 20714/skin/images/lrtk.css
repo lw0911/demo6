@@ -1,0 +1,47 @@
+/* 格展网络模板（91084.com）做专业的网站模板、网站建设平台 */
+.box {
+	width: 300px;
+	margin-right: 20px;
+	float: left;
+}
+.left-pro .t1 {
+	width: 100px;
+	float: left
+}
+.left-pro .t2 {
+	width: 300px;
+	text-indent: 0;
+	float: left;
+}
+.left-pro .t2 img {
+	text-indent: 0;
+}
+#showArea img {
+	cursor: pointer;
+	display: block;
+	margin-bottom: 5px;
+	width: 68px;
+	padding: 1px;
+	border: 1px solid #ccc;
+	height: 68px;
+	float: left
+}
+#main_img {
+	cursor: pointer;
+	display: block
+}
+#gotop {
+	cursor: pointer;
+	display: block;
+	margin-left: 9px
+}
+#gobottom {
+	cursor: pointer;
+	display: block;
+	margin-left: 9px
+}
+#showArea {
+	height: 379px;
+	margin: 10px;
+	overflow: hidden
+}

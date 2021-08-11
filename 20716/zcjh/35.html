@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta name="force-rendering" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+<meta name="applicable-device" content="pc,mobile">
+<title>织梦CMS整站源码通用安装教程_创业资讯博客类网站织梦模板</title>
+<meta name="keywords" content="网站建设,织梦安装" />
+<meta name="description" content="今天先跟大家介绍一下dedecms织梦系统安装的方法步骤，以及织梦数据库还原的教程。详细请看图文讲解： 1.运行 http://域名/install/index.php(比如你的域名是：http://www.91084.com/，就输入http://" />
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="../style/css/font-awesome.min.css"  type="text/css">
+<link rel="stylesheet" href="../style/css/style.css"  type="text/css">
+<!--[if lt IE 9]>
+<div><p class="ie9">您的IE浏览器版本过低</p></div>
+<![endif]-->
+<script src="../style/js/jquery-2.2.4.min.js"  type="text/javascript"></script>
+<script src="../style/js/zblogphp.js"  type="text/javascript"></script>
+<script src="../style/js/c_html_js_add.js"  type="text/javascript"></script>
+</head>
+<body class="home blog col-2cl chrome new-title-style side-right-collapse">
+<header id="header">
+  <nav class="nav-container group hidden-sm-md-lg" id="nav-topbar">
+    <div class="nav-toggle"> <i class="fa fa-bars"></i> </div>
+    <div class="nav-text"> </div>
+    <div class="nav-wrap container top-wrap">
+      <div class="container-inner">
+        <ul class="nav container-inner group">
+          <li class="current-menu-item">您好，欢迎您访问我们的网站，一个专注于SEO的网站！</li>
+        </ul>
+        <ul class="login-register">
+          <li><a rel="nofollow" title="联系我们" href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=6364544&site=qq&menu=yes  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ���544&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=6364544&site=qq&menu=yes" target="_blank"><i class="iconfont icon-user"></i>联系我们</a></li>
+          <li style="padding-left:10px;"><a href="javascript:window.external.AddFavorite('https://478.yingzicms.com','创业资讯博客类网站织梦模板')">加入收藏</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/#nav-topbar-->
+  <div class="group">
+    <div class="group-wrap" id="h-wrap">
+      <div id="m-logo" class="hidden-xl"> <a href="../index.htm"  title="创业资讯博客类网站织梦模板(自适应手机端)"><img src="../style/images/logo_default.png"  alt="创业资讯博客类网站织梦模板(自适应手机端)" title="创业资讯博客类网站织梦模板(自适应手机端)"></a> </div>
+      <div class="container-inner group pad hidden-sm-md-lg">
+        <h1 class="site-title"> <a href="../index.htm"  title="创业资讯博客类网站织梦模板(自适应手机端)"><img src="../style/images/logo_default.png"  alt="创业资讯博客类网站织梦模板(自适应手机端)" title="创业资讯博客类网站织梦模板(自适应手机端)"></a> </h1>
+      </div>
+      <nav class="nav-container group nav-header" id="nav-header">
+        <div class="nav-toggle"> <i class="fa fa-bars"></i> </div>
+        <div class="nav-text"> </div>
+        <div id="monavber" class="nav-wrap container" data-type="index" data-infoid="index">
+          <ul id="menu-header" class="nav container-inner navbar">
+            <li id="navbar-category-2" ><a href="../index.htm" >网站首页</a></li>
+            
+            <li id="navbar-category-2"><a href="../cyzt/index.htm" >创业资讯</a></li>
+            
+            <li id="navbar-category-2"><a href="../cyzd/index.htm" >创业指导</a></li>
+            
+            <li id="navbar-category-2"><a href="../cygs/index.htm" >创业故事</a></li>
+            
+            <li id="navbar-category-2"><a href="../cydz/index.htm" >创业点子</a></li>
+            <li class='active' id='navbar-category-2'><a href="index.htm"  >职场江湖</a> </li>
+            <li id="navbar-category-2"><a href="../guanyuwomen/index.htm" >关于我们</a></li>
+            
+          </ul>
+        </div>
+        <div class="container">
+          <div class="container-inner">
+            <div class="toggle-search"> <i class="fa fa-search"></i> </div>
+            <div class="search-expand">
+              <div class="search-expand-inner">
+                <form method="post" class="searchform themeform" action="https://478.yingzicms.com/plus/search.php">
+                  <div>
+                    <input type="hidden" name="kwtype" value="0" />
+                    <input type="text" class="search" name="q" onblur="if(this.value=='')this.value='输入并按回车键';" onfocus="if(this.value=='输入并按回车键')this.value='';" value="输入并按回车键" x-webkit-speech/>
+                    <button type="submit" id="submit-bt" title="搜索"><i class="fa fa-search"></i> </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--/.container-inner--> 
+        </div>
+        <!--/.container--> 
+      </nav>
+      <!--/#nav-header--> 
+    </div>
+    <!--/.container-inner--> 
+  </div>
+</header>
+<div class="container">
+<div class="container-inner">
+  <div class="main">
+    <div id="breadcrumb"> <i class="fa fa-home"></i> <a href="../index.htm" >首页</a> > <a href="index.htm" >职场江湖</a> >  > 文章正文</div>
+    <div class="clear"></div>
+    <div class="main-inner group">
+      <section class="content">
+      <div class="pad group">
+        <div id="post">
+          <article>
+          <div class="post-inner group">
+            <h1 class="post-article-title">织梦CMS整站源码通用安装教程</h1>
+            <p class="post-meta"> <span><i class="fa fa-user"></i><a>本站原创</a></span> <span class="time"><i class="fa fa-clock-o"></i>2019-07-25 09:21:40</span> <span class="cat"><i class="fa fa-folder-open-o"></i><a href="index.htm"  target="_blank">职场江湖</a></span> <span class="eye"><i class="fa fa-eye"></i><script src="../plus/count.php-view=yes&aid=35&mid=1"  type='text/javascript' language="javascript"></script> </span> </p>
+            <!-- 广告位ad3  -->
+            <div class="clear"></div>
+          </div>
+          <div class="entry">
+            <div class="entry-inner">
+              <p><p>
+	今天先跟大家介绍一下dedecms织梦系统安装的方法步骤，以及织梦数据库还原的教程。详细请看图文讲解：</p>
+<p>
+	1.运行 http://域名/install/index.php(比如你的域名是：http://www.91084.com/，就输入http://www.91084.com/install/index.php)</p>
+<p>
+	&nbsp;</p>
+<center>
+	<img alt="" height="663" src="../uploads/allimg/190601/0R1151P7-0.jpg"  width="869" /></center>
+<p>
+	&nbsp;</p>
+<p>
+	(注)输入网址 http://域名/install安装页面出现dir,没有出现安装界面怎么回事，</p>
+<p>
+	把install文件夹下的index.html删掉，，你再看看install文件夹下有没有install_lock.txt ，index.php.bak，module-install.php.bak 这3个文件，如果有把</p>
+<p>
+	install_lock.txt 文件删掉，index.php.bak 改名改为index.php，module-install.php.bak 改名改为module-install.php。在刷新清除浏览器缓存!</p>
+<p>
+	2.点击继续，填写相关数据库信息。</p>
+<p>
+	&nbsp;</p>
+<center>
+	<img alt="" height="655" src="../uploads/allimg/190601/0R115MS-1.jpg"  width="861" /></center>
+<p>
+	&nbsp;</p>
+<p>
+	(注)这里大家经常会出现的问题是&ldquo;数据库服务器或登录密码无效，无法连接数据库，请重新设定&rdquo;，出现这个问题是上面的选项您没有填写正确，一般只需填写四项，第一：数据库主机，(数据库主机一般的空间默认是localhost，如果您的空间的数据库主机是localhost，那就不需要填写，如果不是默认的localhost，就填写你的数据库主机)第二：数据库用户，第三：数据库密码，第四：数据库名称，在这说明一下，数据库前缀请勿修改!如果上面的信息您不是很清楚或者不知道，请咨询你购买空间的空间商!</p>
+<p>
+	3.安装完成，点击进入后台。(如出现错误页面可 直接 域名/dede进入后台｝</p>
+<p>
+	&nbsp;</p>
+<center>
+	<img alt="" height="281" src="../uploads/allimg/190601/0R11521R-2.jpg"  width="562" /></center>
+<p>
+	&nbsp;</p>
+<p>
+	(注)织梦登录后台的用户名和密码都是默认的：admin，很多用户到进入后台这一步以后，以为能进后台就是安装完成了，还没有，请看下一步!</p>
+<p>
+	4.进入后台，点击&ldquo;系统&rdquo;-&ldquo;数据库备份/还原&quot;,执行&ldquo;数据还原&rdquo;即可。</p>
+<p>
+	&nbsp;</p>
+<center>
+	<img alt="" height="554" src="../uploads/allimg/190601/0R115GK-3.jpg"  width="837" /></center>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<center>
+	<img alt="" height="877" src="../uploads/allimg/190601/0R1151925-4.png"  width="1906" /></center>
+<p>
+	&nbsp;</p>
+<p>
+	(注)这一步大家需要注意的是，你点击的是&ldquo;开始还原数据&rdquo;按钮，开始还原的时候，请大家耐心等待几分钟，让系统提示还原数据库完成!</p>
+<p>
+	5.数据库还原完成以后，点击 系统参数，在站点根网址上填上你的网址。</p>
+<p>
+	&nbsp;</p>
+<center>
+	<img alt="" height="513" src="../uploads/allimg/190601/0R1151562-5.jpg"  width="906" /></center>
+<p>
+	&nbsp;</p>
+<p>
+	(注)：请大家仔细看，这一步尤其重要，因为如果这一步如果没做完成，经常会出现&ldquo;模板文件不存在，无法解析文档&rdquo;，这个问题是大家经常会出现的，安装完成以后为什么在后台生成的时候会出现这个问题，就是因为大家还没确认站点根网址，例如你的网址是：http://www.91084.com，你就填上http://www.91084.com，再按&ldquo;确定&rdquo;，注意在网址后面别加&ldquo;/&rdquo;,(例如：http://www.91084.com/ 这是错误的填写方法)，很多用户会问说，我在本地安装的，或者我用的是临时域名安装的，还有我是用IP地址安装的，没有网址呢，如果你不确定你的网址或者不知道你的网址，那你可以把站点根网址的地址删除掉，留空，就是什么都不需要填，再按&ldquo;确定&rdquo;，等你正式域名上线的时候再填写上去就可以了!</p>
+<p>
+	6. 生成 &mdash;&mdash; 一键更新网站</p>
+<p>
+	&nbsp;</p>
+<center>
+	<img alt="" height="603" src="../uploads/allimg/190601/0R1154Y1-6.png"  width="1678" /></center>
+<p>
+	&nbsp;</p>
+<p>
+	(注)：到这一步网站就基本安装完成了，到这一步只要后台点击&ldquo;生成&rdquo;按钮，把上图的五项从上往下全部生成过就可以了!</p>
+<p>
+	后记：织梦的安装很简单，只要大家仔细认真一点，把上面的步骤一步步走完，就不会有什么问题!</p>
+<p>
+	文字教程：</p>
+<p>
+	主站安装流程(请严格按照这个流程来)</p>
+<p>
+	1.把文件上传到你的站点的根目录，然后运行 http://你的域名/install/index.php 安装，根据提示填写好相关信息，点&ldquo;下一步&rdquo;...即可完成安装。(注：若提示无法安装，页面出现DIY字样。请进入install文件夹，将install_lock.txt文件删掉。把index.php.bak文件改为index.php即可!)</p>
+<p>
+	2.安装好后，在后台&ldquo;系统&rdquo;&mdash;&ldquo;数据库备份/恢复&rdquo;，点右上角&ldquo;还原数据&rdquo;&mdash;&ldquo;开始还原数据&rdquo;，恢复数据库。</p>
+<p>
+	3.还原数据库后。在系统设置&mdash;系统用户设置-设置你的用户名和密码。。(注意)</p>
+<p>
+	4.进 系统&mdash;系统基本参数&mdash;填好你的根网址 。。记住后面别加 / 和其他的参数。</p>
+<p>
+	5.进 生成&mdash;一键生成全站&mdash;生成首页(生成首页时。看看首页模板路径对不对)</p>
+<p>
+	这样安装完成。</p>
+<br /><p>
+	本文地址：https://www.91084.com/dedecms/az/11.html/</p>
+</p>
+            </div>
+            <p class="post-tags"> <span>标签：<a href="../tag/wangzhanjianshe.html"  target="_blank">网站建设(8)</a><a href="../tag/zhimenganzhuang.html"  target="_blank">织梦安装(1)</a></span> </p>
+            </article>
+            <!-- 广告位ad4  -->
+            
+            <div class="clear"></div>
+            <div class="post-navigation">
+              <div class="post-previous"> 上一篇：没有了  </div>
+              <div class="post-next"> 下一篇：<a href="36.html" >原创花卉养殖新闻资讯织梦模板(带手机站)</a>  </div>
+            </div>
+            <div id="related-posts">
+              <h3 class="box-title"><span>相关文章</span></h3>
+              <div class="post-list group">
+                 <article class="small-thumb group post-20574 post type-post status-publish format-standard hentry category-news tag-wordpress-4-2">
+                  <div class="post-inner post-hover">
+                    <div class="post-thumbnail4"> <a href="57.html"  title="有关Canonical标签的一些说明"> <img src="../uploads/allimg/190601/0Z6041L9-0-lp.jpg"  alt="有关Canonical标签的一些说明"/> </a> </div>
+                    <!--/.post-thumbnail-->
+                    <h3 class="related"><a href="57.html"  title="有关Canonical标签的一些说明">有关Canonical标签的一些说明</a></h3>
+                    <div class="post-meta1"> <span><i class="fa fa-clock-o"></i>2019-06-01</span> <span><i class="fa fa-eye"></i>154</span> </div>
+                    <div class="clear"> </div>
+                  </div>
+                </article>
+<article class="small-thumb group post-20574 post type-post status-publish format-standard hentry category-news tag-wordpress-4-2">
+                  <div class="post-inner post-hover">
+                    <div class="post-thumbnail4"> <a href="56.html"  title="防止域名被泛解析的有效方法"> <img src="../uploads/allimg/190601/0Z515N34-0-lp.jpg"  alt="防止域名被泛解析的有效方法"/> </a> </div>
+                    <!--/.post-thumbnail-->
+                    <h3 class="related"><a href="56.html"  title="防止域名被泛解析的有效方法">防止域名被泛解析的有效方法</a></h3>
+                    <div class="post-meta1"> <span><i class="fa fa-clock-o"></i>2019-06-01</span> <span><i class="fa fa-eye"></i>188</span> </div>
+                    <div class="clear"> </div>
+                  </div>
+                </article>
+<article class="small-thumb group post-20574 post type-post status-publish format-standard hentry category-news tag-wordpress-4-2">
+                  <div class="post-inner post-hover">
+                    <div class="post-thumbnail4"> <a href="55.html"  title="域名备案与否对网站seo的影响分析"> <img src="../uploads/allimg/190601/0Z4293P3-0-lp.jpg"  alt="域名备案与否对网站seo的影响分析"/> </a> </div>
+                    <!--/.post-thumbnail-->
+                    <h3 class="related"><a href="55.html"  title="域名备案与否对网站seo的影响分析">域名备案与否对网站seo的影响分析</a></h3>
+                    <div class="post-meta1"> <span><i class="fa fa-clock-o"></i>2019-06-01</span> <span><i class="fa fa-eye"></i>119</span> </div>
+                    <div class="clear"> </div>
+                  </div>
+                </article>
+
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <aside class="sidebar side-right hide-sidebar">
+          <dl class="function" id="about_intro">
+            <dt style="display:none;"></dt>
+            <dd class="function_c">
+              <div>
+                <div id="newcomments-2" class="widget-box widget widget-recent-comments">
+                  <div class="about-bg"> <img src="../style/images/about.jpg" > </div>
+                  <div class="widget-about-img"> <img src="../style/images/about_avatar.png" > </div>
+                  <h3 class="widget-about-title"><a>关于本站</a></h3>
+                  <p class="widget-about-detail">河南格展网络科技有限公司创建于2019年，发展至今已有着丰富的网站建设经验，成立至今，已经成功为3000多家企事业单位和个人提 供了网站建设，网站推广等相关电子商务解决方案。
+</p>
+                  <ul class="widget-about-num">
+                    <li><span>文章总数</span><span class="l">72</span></li>
+                    <li><span>浏览次数</span><span class="l">9345</span></li>
+                    <li><span>当日更新</span><span class="l">0</span></li>
+                  </ul>
+                </div>
+              </div>
+            </dd>
+          </dl>
+          <dl class="function" id="aside_hot">
+            <dt class="function_t">热门文章</dt>
+            <dd class="function_c">
+              <ul>
+                <li>
+                  <div class="widget-thumb group"> <a class="post-thumbnail post-thumbnail3" href="../cyzt/60.html"  title="阿里云提示织梦DedeCMS v5.7 注册用户任"><img src="../images/defaultpic.gif"  alt="阿里云提示织梦DedeCMS v5.7 注册用户任"></a>
+                    <div class="post-info"> <a href="../cyzt/60.html"  title="阿里云提示织梦DedeCMS v5.7 注册用户任">阿里云提示织梦DedeCMS v5.7 注册用户任</a> </div>
+                  </div>
+                </li>
+<li>
+                  <div class="widget-thumb group"> <a class="post-thumbnail post-thumbnail3" href="../cygs/33.html"  title="单页SEO排名后期稳定排名操作之长尾"><img src="../uploads/allimg/190601/0QSG4N-0-lp.png"  alt="单页SEO排名后期稳定排名操作之长尾"></a>
+                    <div class="post-info"> <a href="../cygs/33.html"  title="单页SEO排名后期稳定排名操作之长尾">单页SEO排名后期稳定排名操作之长尾</a> </div>
+                  </div>
+                </li>
+<li>
+                  <div class="widget-thumb group"> <a class="post-thumbnail post-thumbnail3" href="../cyzt/71.html"  title="个体户或个人可以申请商标吗"><img src="../images/defaultpic.gif"  alt="个体户或个人可以申请商标吗"></a>
+                    <div class="post-info"> <a href="../cyzt/71.html"  title="个体户或个人可以申请商标吗">个体户或个人可以申请商标吗</a> </div>
+                  </div>
+                </li>
+<li>
+                  <div class="widget-thumb group"> <a class="post-thumbnail post-thumbnail3" href="../cygs/23.html"  title="讨论一个大家都关注的SEO话题，搜索"><img src="../uploads/allimg/190601/0P94J427-0-lp.png"  alt="讨论一个大家都关注的SEO话题，搜索"></a>
+                    <div class="post-info"> <a href="../cygs/23.html"  title="讨论一个大家都关注的SEO话题，搜索">讨论一个大家都关注的SEO话题，搜索</a> </div>
+                  </div>
+                </li>
+<li>
+                  <div class="widget-thumb group"> <a class="post-thumbnail post-thumbnail3" href="../cydz/66.html"  title="夜息seo视频教程：技术驱动的SEO"><img src="../uploads/191119/1-191119120F0107.jpg"  alt="夜息seo视频教程：技术驱动的SEO"></a>
+                    <div class="post-info"> <a href="../cydz/66.html"  title="夜息seo视频教程：技术驱动的SEO">夜息seo视频教程：技术驱动的SEO</a> </div>
+                  </div>
+                </li>
+
+              </ul>
+            </dd>
+          </dl>
+          <dl class="function" id="divTags">
+            <dt class="function_t">标签列表</dt>
+            <dd class="function_c">
+              <ul>
+                <li><a href="../tag/seojiaocheng.html" >seo教程(19)</a></li> <li><a href="../tag/seorumen.html" >seo入门(1)</a></li> <li><a href="../tag/seokecheng.html" >SEO课程(2)</a></li> <li><a href="../tag/chuangban.html" >创办(1)</a></li> <li><a href="../tag/seowailian.html" >seo外链(2)</a></li> <li><a href="../tag/seowaibao.html" >seo外包(1)</a></li> <li><a href="../tag/seosuanfa.html" >seo算法(11)</a></li> <li><a href="../tag/narongcaiji.html" >内容采集(1)</a></li> <li><a href="../tag/yidongduanseo.html" >移动端seo(1)</a></li> <li><a href="../tag/wangzhanshangxian.html" >网站上线(1)</a></li> <li><a href="../tag/wangzhanpinpai.html" >网站品牌(1)</a></li> <li><a href="../tag/youhuacelue.html" >优化策略(1)</a></li> <li><a href="../tag/wangzhanjiangquan.html" >网站降权(1)</a></li> <li><a href="../tag/wangzhanmiaopai.html" >网站秒排(1)</a></li> <li><a href="../tag/danyepaiming.html" >单页排名(1)</a></li> <li><a href="../tag/seoanli.html" >seo案例(9)</a></li> <li><a href="../tag/seotuandui.html" >seo团队(1)</a></li> <li><a href="../tag/wangzhanyouhua.html" >网站优化(2)</a></li> <li><a href="../tag/seogainian.html" >seo概念(2)</a></li> <li><a href="../tag/seojishu.html" >seo技术(12)</a></li> <li><a href="../tag/paimingyouhua.html" >排名优化(2)</a></li> <li><a href="../tag/wangzhankuaipai.html" >网站快排(2)</a></li> <li><a href="../tag/youhuaruanjian.html" >优化软件(2)</a></li> <li><a href="../tag/paimingruanjian.html" >排名软件(2)</a></li> <li><a href="../tag/shandianpaiming.html" >闪电排名(2)</a></li> <li><a href="../tag/xinzhanpaiming.html" >新站排名(2)</a></li> <li><a href="../tag/seopeixun.html" >SEO培训(10)</a></li> <li><a href="../tag/seopaiming.html" >SEO排名(5)</a></li> <li><a href="../tag/seoyouhua.html" >seo优化(3)</a></li> <li><a href="../tag/tuiguangfangan.html" >推广方案(1)</a></li> 
+              </ul>
+            </dd>
+          </dl>
+          <dl class="function" id="divLinkage">
+            <dt class="function_t">友情链接</dt>
+            <dd class="function_c">
+              <ul>
+                <li><a href="javascript:if(confirm('https://www.91084.com/  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�dow.location='https://www.91084.com/'" tppabs="https://www.91084.com/" target='_blank'>织梦模板</a> </li><li><a href="javascript:if(confirm('http://www.91084.com/ask/  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ��λ����ʼ��ַ�������������?'))window.location='http://www.91084.com/ask/'" tppabs="http://www.91084.com/ask/" target='_blank'>织梦问答</a> </li><li><a href="javascript:if(confirm('https://www.gezhanca ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='https://www.gezhancn.com/'" tppabs="https://www.gezh建设</a> </li><li><a href="javascript:if(confirm('https://bbs.91084.com/  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))windo" tppabs="https://bbs.91084.com/" target='_blank'>站长论坛</a> </li><li><a href="javascript:if(confirm('https://www.yingzicms.com/  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n.location='https://www.yingzicms.com/'" tppabs="https://www.yingzicms.com/" target='_blank'>网站建设</a> </li><li><a href="javascript:if(confirm('https://www.dns.la/  \Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='https://www.dns.la/'" tppabs="https://www.dns.la/" target='_blank'>智能DNS</a> </li><li><a href="javascript:if(confirm('https://www.zhaodede.com/  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�  \n\n����Ҫ�ӷ�����������?'))window.location='https://www.zhaodede.com/'" tppabs="https://www.zhaodede.com/" target='_blank'>云服务器</a> </li>
+              </ul>
+            </dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>
+<footer id="theme-footer" class="hidden-sm-md-lg">
+  <div id="footer-widget-area" class="footer-3c">
+    <div id="footer-first" class="footer-widgets-box">
+      <div id="text-12" class="footer-widget widget_text">
+        <div class="footer-widget-top">
+          <h4>服务内容</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div class="textwidget">
+            <ul>
+              
+              <li><a href="../cyzt/index.htm" >创业资讯</a></li>
+              
+              <li><a href="../cyzd/index.htm" >创业指导</a></li>
+              
+              <li><a href="../cygs/index.htm" >创业故事</a></li>
+              
+              <li><a href="../cydz/index.htm" >创业点子</a></li>
+              
+              <li><a href="index.htm" >职场江湖</a></li>
+              
+              <li><a href="../guanyuwomen/index.htm" >关于我们</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-second" class="footer-widgets-box">
+      <div id="text-9" class="footer-widget widget_text">
+        <div class="footer-widget-top">
+          <h4>联系我们</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div class="textwidget">
+            <p> 有合作等事宜，可联系我们： </p>
+            <ul>
+              <ul>
+                <li>邮箱：<a class="__yjs_email__" href="../cdn-cgi/l/email-protection"  data-yjsemail="2647424b4f48661f17161e120845494b">[email&#160;protected]</a><script data-yjshash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-yjshash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-yjsemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></li>
+                <li>Q Q：6364544</li>
+                <li>微博：http://www.weibo.com </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-third" class="footer-widgets-box" style="float:right; width:25%">
+      <div id="text-11" class="footer-widget widget_text">
+        <div class="footer-widget-top">
+          <h4>关注交流</h4>
+        </div>
+        <div class="footer-widget-container">
+          <div class="textwidget">
+            <p> <img class="aligncente size-full wp-image-73288 wdp-appear" src="../style/images/ewm_default.png"  alt="关注交流" width="232" height="140"> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"> </div>
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="alignleft"> Copyright &copy; 2002-2021  新闻资讯文章博客 版权所有 <a href="javascript:if(confirm('https://www.91084.com/  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ��λ����ʼ��ַ�����õı߽���������·���С�dow.location='https://www.91084.com/'" tppabs="https://www.91084.com/" target='_blank'>91084</a> <a rel="nofollow" href="javascript:if(confirm('http://www.beian.miit.gov.cn/  \n\n���ļ�δ�� Teleport Ultra ���أ���Ϊ ��λ����ʼ��ַ���������?'))window.location='http://www.beian.miit.gov.cn/'" tppabs="http://www.beian.miit.gov.cn/" target="_blank"> 豫ICP备xxxxxx号 </a> </div>
+    <div class="clear"> </div>
+  </div>
+</div>
+<script type='text/javascript' src="../style/js/base.js" ></script> 
+<script type='text/javascript' src="../style/js/owl.carousel.min.js" ></script> 
+<script>
+    jQuery(document).ready(function ($) {
+        $("#left-carousel").owlCarousel({
+            autoPlay: 5000,
+            singleItem: true,
+            navigation: true,
+            stopOnHover: true,
+            navigationText: ["", ""],
+            lazyLoad: true,
+            afterInit: attachEvent
+        });
+        function attachEvent(elem) {
+            document.getElementById("left-carousel").style.display = "block";
+        }
+    });
+</script> 
+<script>
+    jQuery(document).ready(function ($) {
+        $("#scroll-1").owlCarousel({
+            autoPlay: 5000,
+            items: 3,
+            scrollPerPage: true,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [979, 2],
+            itemsTablet: [768, 1],
+            itemsMobile: [479, 1],
+            stopOnHover: true,
+            navigation: true,
+            lazyLoad: true,
+            navigationText: ["", ""]
+        });
+    });
+</script>
+<div id="toTop"> <i class="fa fa-angle-up"></i> </div>
+</body>
+</html>

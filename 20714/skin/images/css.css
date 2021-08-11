@@ -1,0 +1,63 @@
+/* 格展网络模板（91084.com）做专业的网站模板、网站建设平台 */
+.jqzoom {
+	width: 620px;
+	height: 737px;
+	position: relative;
+	overflow: hidden;
+}
+.jqzoom a p {
+	text-align: center;
+	line-height: 30px;
+	font-size: 15px;
+	height: 30px;
+}
+#spec-n5 {
+	width: 620px;
+	height: 100px;
+	padding-top: 6px;
+	overflow: hidden;
+}
+#spec-left {
+	background: url("images/left.png"/*tpa=https://474.yingzicms.com/skin/images/images/left.png*/) no-repeat;
+	width: 15px;
+	height: 85px;
+	float: left;
+	cursor: pointer;
+}
+#spec-right {
+	background: url("images/right.png"/*tpa=https://474.yingzicms.com/skin/images/images/right.png*/) no-repeat;
+	width: 15px;
+	height: 85px;
+	float: left;
+	cursor: pointer;
+}
+#spec-list ul li {
+	float: left;
+	margin-right: 0px;
+	display: inline;
+	width: 104px;
+}
+#spec-list ul li img {
+	padding: 2px;
+	border: 1px solid #ccc;
+	width: 90px;
+	height: 80px;
+}
+#spec-list {
+	position: relative;
+	margin-right: 6px;
+	width: 580px;
+	float: left;
+	overflow: hidden;
+	margin-left: 2px;
+	display: inline;
+	padding-right: 0px
+}
+#spec-list div {
+	margin-top: 0;
+	margin-left: -32px;
+*margin-left:0;
+	margin-right: 0;
+	padding-right: 0px;
+	padding-right: 30px
+}
